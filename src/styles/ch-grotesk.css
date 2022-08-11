@@ -1,0 +1,155 @@
+@font-face {
+	font-family: 'CH Grotesk';
+	src: url('/fonts/LDGrotesk-Heavy.eot');
+	src: local('LD Grotesk Heavy'), local('LDGrotesk-Heavy'),
+	url('/fonts/LDGrotesk-Heavy.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/LDGrotesk-Heavy.woff2') format('woff2'),
+	url('/fonts/LDGrotesk-Heavy.woff') format('woff'),
+	url('/fonts/LDGrotesk-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CH Grotesk';
+	src: url('/fonts/LDGrotesk-BoldOblique.eot');
+	src: local('LD Grotesk Bold Oblique'), local('LDGrotesk-BoldOblique'),
+	url('/fonts/LDGrotesk-BoldOblique.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/LDGrotesk-BoldOblique.woff2') format('woff2'),
+	url('/fonts/LDGrotesk-BoldOblique.woff') format('woff'),
+	url('/fonts/LDGrotesk-BoldOblique.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CH Grotesk';
+	src: url('/fonts/LDGrotesk-MediumOblique.eot');
+	src: local('LD Grotesk Medium Oblique'), local('LDGrotesk-MediumOblique'),
+	url('/fonts/LDGrotesk-MediumOblique.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/LDGrotesk-MediumOblique.woff2') format('woff2'),
+	url('/fonts/LDGrotesk-MediumOblique.woff') format('woff'),
+	url('/fonts/LDGrotesk-MediumOblique.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CH Grotesk Ultra';
+	src: url('/fonts/LDGrotesk-UltraLightOblique.eot');
+	src: local('LD Grotesk Ultra Light Oblique'), local('LDGrotesk-UltraLightOblique'),
+	url('/fonts/LDGrotesk-UltraLightOblique.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/LDGrotesk-UltraLightOblique.woff2') format('woff2'),
+	url('/fonts/LDGrotesk-UltraLightOblique.woff') format('woff'),
+	url('/fonts/LDGrotesk-UltraLightOblique.ttf') format('truetype');
+	font-weight: 200;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CH Grotesk';
+	src: url('/fonts/LDGrotesk-HeavyOblique.eot');
+	src: local('LD Grotesk Heavy Oblique'), local('LDGrotesk-HeavyOblique'),
+	url('/fonts/LDGrotesk-HeavyOblique.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/LDGrotesk-HeavyOblique.woff2') format('woff2'),
+	url('/fonts/LDGrotesk-HeavyOblique.woff') format('woff'),
+	url('/fonts/LDGrotesk-HeavyOblique.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CH Grotesk';
+	src: url('/fonts/LDGrotesk-RegularOblique.eot');
+	src: local('LD Grotesk Regular Oblique'), local('LDGrotesk-RegularOblique'),
+	url('/fonts/LDGrotesk-RegularOblique.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/LDGrotesk-RegularOblique.woff2') format('woff2'),
+	url('/fonts/LDGrotesk-RegularOblique.woff') format('woff'),
+	url('/fonts/LDGrotesk-RegularOblique.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CH Grotesk';
+	src: url('/fonts/LDGrotesk-LightOblique.eot');
+	src: local('LD Grotesk Light Oblique'), local('LDGrotesk-LightOblique'),
+	url('/fonts/LDGrotesk-LightOblique.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/LDGrotesk-LightOblique.woff2') format('woff2'),
+	url('/fonts/LDGrotesk-LightOblique.woff') format('woff'),
+	url('/fonts/LDGrotesk-LightOblique.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CH Grotesk';
+	src: url('/fonts/LDGrotesk-Bold.eot');
+	src: local('LD Grotesk Bold'), local('LDGrotesk-Bold'),
+	url('/fonts/LDGrotesk-Bold.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/LDGrotesk-Bold.woff2') format('woff2'),
+	url('/fonts/LDGrotesk-Bold.woff') format('woff'),
+	url('/fonts/LDGrotesk-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CH Grotesk';
+	src: url('/fonts/LDGrotesk-Medium.eot');
+	src: local('LD Grotesk Medium'), local('LDGrotesk-Medium'),
+	url('/fonts/LDGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/LDGrotesk-Medium.woff2') format('woff2'),
+	url('/fonts/LDGrotesk-Medium.woff') format('woff'),
+	url('/fonts/LDGrotesk-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CH Grotesk Ultra';
+	src: url('/fonts/LDGrotesk-UltraLight.eot');
+	src: local('LD Grotesk Ultra Light'), local('LDGrotesk-UltraLight'),
+	url('/fonts/LDGrotesk-UltraLight.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/LDGrotesk-UltraLight.woff2') format('woff2'),
+	url('/fonts/LDGrotesk-UltraLight.woff') format('woff'),
+	url('/fonts/LDGrotesk-UltraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CH Grotesk';
+	src: url('/fonts/LDGrotesk-Regular.eot');
+	src: local('LD Grotesk Regular'), local('LDGrotesk-Regular'),
+	url('/fonts/LDGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/LDGrotesk-Regular.woff2') format('woff2'),
+	url('/fonts/LDGrotesk-Regular.woff') format('woff'),
+	url('/fonts/LDGrotesk-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'CH Grotesk';
+	src: url('/fonts/LDGrotesk-Light.eot');
+	src: local('LD Grotesk Light'), local('LDGrotesk-Light'),
+	url('/fonts/LDGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/LDGrotesk-Light.woff2') format('woff2'),
+	url('/fonts/LDGrotesk-Light.woff') format('woff'),
+	url('/fonts/LDGrotesk-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}

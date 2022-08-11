@@ -1,0 +1,52 @@
+[cmdk-root] {
+	z-index: 9999;
+	max-width: 620px;
+	overflow: hidden;
+}
+
+[cmdk-overlay] {
+	background-color: black;
+	opacity: 0.5;
+}
+
+
+[cmdk-item] {
+	color: hsl(252, 4.0%, 57.3%);
+	background-color: transparent;
+	border-radius: 6px;
+	padding-left: 8px;
+	padding-right: 8px;
+
+	user-select: none;
+	will-change: background, color;
+	transition: all 150ms ease;
+	transition-property: none;
+}
+
+[cmdk-item][aria-selected='true'] {
+	color: hsl(252, 4.0%, 44.8%);
+	background-color: hsl(283, 4.4%, 91.3%);
+	border-radius: 6px;
+}
+
+
+[cmdk-group-items] {
+
+}
+
+[cmdk-group-heading] {
+	font-family: 'CH Grotesk', sans-serif !important;
+	font-size: 12px !important;
+	font-weight: 500 !important;
+	color: #ff3333;
+	user-select: none;
+	padding: 4px 8px 4px 8px;
+}
+
+* + [cmdk-group] {
+	margin-top: 8px;
+}
+
+[cmdk-item] {
+	content-visibility: auto;
+}

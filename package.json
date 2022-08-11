@@ -1,0 +1,50 @@
+{
+  "name": "chvndler.ch",
+  "packageManager": "yarn@3.2.2",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Chandler Chappell <chan@ady.world> (https://chvndler.ch)",
+  "license": "MIT",
+  "homepage": "https://github.com/chvndler/me#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chvndler/chvndler.ch.git"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "stitches": "yarn add @stitches/react stitches-mixins @radix-ui/colors @radix-ui/react-icons"
+  },
+  "dependencies": {
+    "@radix-ui/colors": "^0.1.8",
+    "@radix-ui/react-alert-dialog": "^1.0.0",
+    "@radix-ui/react-icons": "^1.1.1",
+    "@radix-ui/react-popover": "^1.0.0",
+    "@radix-ui/react-switch": "^1.0.0",
+    "@stitches/react": "^1.2.8",
+    "cmdk": "^0.1.18",
+    "next": "^12.2.3",
+    "next-themes": "^0.2.0",
+    "react": "^18.2.0",
+    "react-cmdk": "^1.3.5",
+    "react-dom": "^18.2.0",
+    "stitches-mixins": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^18.6.3",
+    "@types/prettier": "2.7.0",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.21.0",
+    "eslint-config-next": "^12.2.3",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "lodash.merge": "^4.6.2",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}

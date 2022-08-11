@@ -1,1 +1,3 @@
-# chvndler.ch
+# chvndler.ch/
+
+Personal brand, software portfolio and blog.
