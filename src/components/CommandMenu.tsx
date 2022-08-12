@@ -1,5 +1,45 @@
-import { styled } from '@/lib/stitches.config';
+import React from 'react';
+import { keyframes, styled } from '@/lib/stitches.config';
 import { Command } from 'cmdk';
+import { blackA } from '@radix-ui/colors';
+import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog';
+
+const overlayShow = keyframes({
+  '0%': { opacity: 0 },
+  '100%': { opacity: 1 },
+});
+
+const contentShow = keyframes({
+  '0%': { opacity: 0, transform: 'translate(-50%, -48%) scale(.96)' },
+  '100%': { opacity: 1, transform: 'translate(-50%, -50%) scale(1)' },
+});
+
+const StyledOverlay = styled(AlertDialogPrimitive.Overlay, {
+  backgroundColor: blackA.blackA9,
+  position: 'fixed',
+  inset: 0,
+  '@media (prefers-reduced-motion: no-preference)': {
+    animation: `${overlayShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
+  },
+});
+
+const StyledContent = styled(AlertDialogPrimitive.Content, {
+  backgroundColor: 'white',
+  borderRadius: 6,
+  boxShadow: 'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
+  position: 'fixed',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '90vw',
+  maxWidth: '500px',
+  maxHeight: '85vh',
+  padding: 25,
+  '@media (prefers-reduced-motion: no-preference)': {
+    animation: `${contentShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
+  },
+  '&:focus': { outline: 'none' },
+});
 
 
 const StyledDialog = styled(Command.Dialog, {
@@ -19,9 +59,9 @@ const StyledDialog = styled(Command.Dialog, {
   paddingBottom: 10,
   paddingLeft: 10,
   paddingRight: 10,
-  
+
   overflow: 'scroll',
-  
+
   '&:focus': { outline: 'none' },
 });
 
@@ -46,7 +86,7 @@ const StyledInput = styled(Command.Input, {
   paddingBottom: '0',
   outline: 'none',
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',
-  
+
   '&::placeholder': {
     color: '$mauve7',
     fontFamily: '$pragmaticaExtended',
@@ -55,27 +95,27 @@ const StyledInput = styled(Command.Input, {
     letterSpacing: 'normal',
     paddingLeft: '4px',
   },
-  
+
   '&::before': {
     boxSizing: 'border-box',
   },
   '&::after': {
     boxSizing: 'border-box',
   },
-  
+
   '&:-webkit-autofill::first-line': {
     fontSize: '13px',
   },
-  
+
   '&:focus': {
     backgroundColor: '$loContrast',
     boxShadow: 'inset 0px 0px 0px 1px $colors$sky7, 0px 0px 0px 1px $colors$sky8',
   },
-  
+
   '&:-webkit-autofill': {
     boxShadow: 'inset 0 0 0 1px $colors$blue6, inset 0 0 0 100px $colors$blue3',
   },
-  
+
   '&:disabled': {
     pointerEvents: 'none',
     backgroundColor: '$slate2',
@@ -85,7 +125,7 @@ const StyledInput = styled(Command.Input, {
       color: '$slate7',
     },
   },
-  
+
   '&:read-only': {
     backgroundColor: '$slate2',
     '&:focus': {
@@ -102,12 +142,12 @@ const StyledList = styled(Command.List, {
   backgroundColor: 'transparent',
   color: '$mauve12',
   padding: 0,
-  
+
   minHeight: '300px',
   height: 'auto',
   maxHeight: '500px',
   transition: 'height 100ms ease',
-  
+
   marginTop: '8px',
   marginBottom: '8px',
 });
@@ -123,12 +163,12 @@ const StyledNoResults = styled(Command.Empty, {
   fontSize: '13px',
   letterSpacing: '0.01rem',
   lineHeight: '25px',
-  
+
   padding: '8px 14px 8px 14px',
   width: '100%',
-  
+
   marginTop: '8px',
-  
+
 });
 
 const StyledGroup = styled(Command.Group, {
@@ -136,7 +176,7 @@ const StyledGroup = styled(Command.Group, {
   color: '$mauve12',
   lineHeight: '28px',
   overflowY: 'scroll',
-  
+
   maxHeight: '160px',
   height: 'auto',
 });
@@ -150,16 +190,16 @@ const StyledItem = styled(Command.Item, {
   fontSize: '13px',
   letterSpacing: 'normal',
   lineHeight: '28px',
-  
-  
+
+
   padding: '0px 14px 0px 14px',
-  
+
   userSelect: 'none',
   willChange: 'background, color',
   transition: 'all 150ms ease',
   transitionProperty: 'none',
-  
-  
+
+
 });
 
 const StyledSeparator = styled(Command.Separator, {
@@ -187,3 +227,13 @@ export const CommandGroup = StyledGroup;
 export const CommandList = StyledList;
 export const CommandItem = StyledItem;
 export const CommandSeparator = StyledSeparator;
+
+
+export const CommandContent = ({ children, ...props }) => {
+  return (
+    <AlertDialogPrimitive.Portal>
+      <StyledOverlay />
+      <CommandDialog {...props}>{children}</CommandDialog>
+    </AlertDialogPrimitive.Portal>
+  );
+};

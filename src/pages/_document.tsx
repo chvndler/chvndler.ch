@@ -12,22 +12,22 @@ export default function Document() {
         <link rel='amphtml' href='https://chvn.me' />
         <link rel='canonical' href='https://chvn.me' />
 
-        <link rel='apple-touch-icon' sizes='57x57' href='/apple-icon-57x57.png' />
-        <link rel='apple-touch-icon' sizes='60x60' href='/apple-icon-60x60.png' />
-        <link rel='apple-touch-icon' sizes='72x72' href='/apple-icon-72x72.png' />
-        <link rel='apple-touch-icon' sizes='76x76' href='/apple-icon-76x76.png' />
-        <link rel='apple-touch-icon' sizes='114x114' href='/apple-icon-114x114.png' />
-        <link rel='apple-touch-icon' sizes='120x120' href='/apple-icon-120x120.png' />
-        <link rel='apple-touch-icon' sizes='144x144' href='/apple-icon-144x144.png' />
-        <link rel='apple-touch-icon' sizes='152x152' href='/apple-icon-152x152.png' />
-        <link rel='apple-touch-icon' sizes='180x180' href='/apple-icon-180x180.png' />
-        <link rel='icon' type='image/png' sizes='192x192' href='/android-icon-192x192.png' />
-        <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
-        <link rel='icon' type='image/png' sizes='96x96' href='/favicon-96x96.png' />
-        <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
+        <link rel='apple-touch-icon' sizes='57x57' href='ico/apple-icon-57x57.png' />
+        <link rel='apple-touch-icon' sizes='60x60' href='ico/apple-icon-60x60.png' />
+        <link rel='apple-touch-icon' sizes='72x72' href='ico/apple-icon-72x72.png' />
+        <link rel='apple-touch-icon' sizes='76x76' href='ico/apple-icon-76x76.png' />
+        <link rel='apple-touch-icon' sizes='114x114' href='ico/apple-icon-114x114.png' />
+        <link rel='apple-touch-icon' sizes='120x120' href='ico/apple-icon-120x120.png' />
+        <link rel='apple-touch-icon' sizes='144x144' href='ico/apple-icon-144x144.png' />
+        <link rel='apple-touch-icon' sizes='152x152' href='ico/apple-icon-152x152.png' />
+        <link rel='apple-touch-icon' sizes='180x180' href='ico/apple-icon-180x180.png' />
+        <link rel='icon' type='image/png' sizes='192x192' href='ico/android-icon-192x192.png' />
+        <link rel='icon' type='image/png' sizes='32x32' href='ico/favicon-32x32.png' />
+        <link rel='icon' type='image/png' sizes='96x96' href='ico/favicon-96x96.png' />
+        <link rel='icon' type='image/png' sizes='16x16' href='ico/favicon-16x16.png' />
         <link rel='manifest' href='/manifest.json' />
         <meta name='msapplication-TileColor' content='#ffffff' />
-        <meta name='msapplication-TileImage' content='/ms-icon-144x144.png' />
+        <meta name='msapplication-TileImage' content='ico/ms-icon-144x144.png' />
         <meta name='theme-color' content='#ffffff' />
 
         {/* <!-- Preload Jetbrains for CodeBlocks
@@ -37,9 +37,9 @@ export default function Document() {
         <meta name='googlebot' content='follow, index, noarchive' />
         <meta name='robots' content='follow, index, noarchive' />
         <meta name='msapplication-config' content='/browserconfig.xml' />
-        <meta name='description' content='Chandler Chappell Official Site' />
+        <meta name='description' content='chvndler.ch' />
 
-        <meta property='og:title' content='chvn®' />
+        <meta property='og:title' content='chvndler®' />
         <meta property='og:url' content='https://chvn.me' />
         <meta property='og:image' content='https://cdn.ady.systems/chvn/assets/social.jpg' />
         <meta property='og:image:secure_url' content='https://cdn.ady.systems/chvn/assets/social.jpg' />

@@ -6,7 +6,7 @@ import { CmndK } from '@/components/CmndK';
 
 const backdrop = css({
   // backgroundColor: '$rhythm',
-  backgroundColor: '$mauve2',
+  backgroundColor: '$mauve1',
   minWidth: '100vw',
   minHeight: '100vh',
   padding: '0',
@@ -26,23 +26,22 @@ const Begin = () => {
           <Container
             size='2'
             css={{
-              color: '$mauve1',
               margin: 'auto',
               justifyContent: 'center',
               display: 'flex',
               flexDirection: 'column',
             }}
           >
-
-
-            <Text css={{
-              textAlign: 'center',
-              fontFamily: '$pragmaticaExtended',
-              fontSize: '14px',
-              fontWeight: '500',
-              color: '$mauve11',
-              paddingBottom: '10px',
-            }}>
+            <Text
+              css={{
+                textAlign: 'center',
+                fontFamily: '$pragmaticaExtended',
+                fontSize: '14px',
+                fontWeight: '500',
+                color: '$mauve11',
+                paddingBottom: '10px',
+              }}
+            >
               tap [ ⌘k ] to navigate.
             </Text>
             <Box
@@ -57,8 +56,6 @@ const Begin = () => {
             >
               <ChvndlerCh width='300' />
             </Box>
-
-
           </Container>
         </Canvas>
 
