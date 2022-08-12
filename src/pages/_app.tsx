@@ -1,4 +1,4 @@
-import { CmndK } from '@/components/CmndK';
+// import { CmndK } from '@/components/CmndK';
 import { css, globalCss } from '@/lib/stitches.config';
 import '@/styles/ch-grotesk.css';
 import '@/styles/command.css';
@@ -16,14 +16,14 @@ const globalStyles = globalCss(res, {
     padding: 0,
     overflowX: 'hidden',
     backgroundColor: '$mauve1',
-    
+
     minHeight: '-webkit-fill-available',
   },
   body: {
     margin: 0,
     color: '$hiContrast',
     WebkitTextSizeAdjust: '100%',
-    
+
     minHeight: '-webkit-fill-available',
   },
 });
@@ -35,7 +35,7 @@ const appWrapper = css({
 
 const App = ({ Component, pageProps }: AppProps) => {
   globalStyles();
-  
+
   return (
     <>
       <ThemeProvider

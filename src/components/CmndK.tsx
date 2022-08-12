@@ -7,14 +7,12 @@ import {
   CommandList,
   CommandSeparator,
 } from '@/components/CommandMenu';
-import * as Popover from '@radix-ui/react-popover'
 import { darkTheme, styled } from '@/lib/stitches.config';
-import { Box, Canvas, Flex } from '@/ui';
+import { Box, Flex } from '@/ui';
 import { ChatBubbleIcon, CubeIcon, GitHubLogoIcon, SwitchIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import { Command } from 'cmdk';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
-import {blackA, violet} from "@radix-ui/colors";
 
 /**
  * -- styled(); --
@@ -27,7 +25,7 @@ const CommandBottomBar = styled('div', {
   height: '32px',
   backgroundColor: 'transparent',
   borderTop: '1px solid $mauve3',
-  
+
   padding: '0px',
   margin: 'auto',
   display: 'flex',
@@ -44,21 +42,6 @@ const CommandFooterText = styled('p', {
   textAlign: 'center',
 });
 
-const IconButton = styled('button', {
-  all: 'unset',
-  fontFamily: 'inherit',
-  borderRadius: '100%',
-  height: 35,
-  width: 35,
-  display: 'inline-flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  color: 'mauve11',
-  backgroundColor: 'white',
-  boxShadow: `0 2px 10px $black10`,
-  '&:hover': { backgroundColor: 'sky9' },
-  '&:focus': { boxShadow: `0 0 0 2px black` },
-});
 
 /**
  * ⌘k...
@@ -67,59 +50,47 @@ export const CmndK = () => {
   const [search, setSearch] = React.useState('');
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState('blog');
-  
+
   React.useEffect(() => {
     const down = (e) => {
       if (e.key === 'k' && e.metaKey) {
         setOpen((open) => !open);
       }
     };
-    
+
     document.addEventListener('keydown', down);
     return () => document.removeEventListener('keydown', down);
   }, []);
-  
-  
+
+
   return (
     <>
-
-      <Popover.Root>
-        <Popover.Trigger>
-          <IconButton>popover</IconButton>
-        </Popover.Trigger>
-
-        <Popover.Content>
       <Command shouldFilter={true} value={value} onValueChange={setValue}>
-        {/*<Canvas>*/}
-          <CommandDialog open={open} onOpenChange={setOpen} label='Global Command Menu'>
-            <CommandInput value={search} onValueChange={setSearch} autoFocus placeholder='keyword' />
-            <CommandList>
-              <CommandGroup heading='index'>
-                <Blog />
-                <Projects />
-                <Twitter />
-                <GitHub />
-              </CommandGroup>
-              <CommandSeparator />
-              <CommandGroup heading='settings'>
-                <SystemAppearance />
-              </CommandGroup>
-              <CommandEmpty>
-                .. no results found. try another keyword.
-              </CommandEmpty>
-            </CommandList>
-            <CommandBottomBar>
-              <CommandFooterText>chvndler.ch</CommandFooterText>
-            </CommandBottomBar>
-          </CommandDialog>
-        {/*</Canvas>*/}
+        <CommandDialog open={open} onOpenChange={setOpen} label='Global Command Menu'>
+          <CommandInput value={search} onValueChange={setSearch} autoFocus placeholder='keyword' />
+          <CommandList>
+            <CommandGroup heading='index'>
+              <Blog />
+              <Projects />
+              <Twitter />
+              <GitHub />
+            </CommandGroup>
+            <CommandSeparator />
+            <CommandGroup heading='settings'>
+              <SystemAppearance />
+            </CommandGroup>
+            <CommandEmpty>
+              .. no results found. try another keyword.
+            </CommandEmpty>
+          </CommandList>
+          <CommandBottomBar>
+            <CommandFooterText>chvndler.ch</CommandFooterText>
+          </CommandBottomBar>
+        </CommandDialog>
       </Command>
-        </Popover.Content>
-      </Popover.Root>
     </>
   );
 };
-
 
 
 /**
@@ -128,7 +99,7 @@ export const CmndK = () => {
  */
 const Blog = () => {
   const router = useRouter();
-  
+
   return (
     <CommandItem value='blog' onSelect={() => router.push('/about')}>
       <Flex css={{
@@ -154,7 +125,7 @@ const Blog = () => {
  */
 const Projects = () => {
   const router = useRouter();
-  
+
   return (
     <CommandItem value='projects' onSelect={() => router.push('/projects')}>
       <Flex css={{
@@ -181,7 +152,7 @@ const Projects = () => {
  */
 const GitHub = () => {
   const router = useRouter();
-  
+
   return (
     <CommandItem value='github-icon' onSelect={() => router.push('https://github.com/chvndler')}>
       <Flex css={{
@@ -208,7 +179,7 @@ const GitHub = () => {
  */
 const Twitter = () => {
   const router = useRouter();
-  
+
   return (
     <CommandItem value='twitter' onSelect={() => router.push('https://twitter.com/chv_ndler')}>
       <Flex css={{
@@ -235,13 +206,13 @@ const Twitter = () => {
  */
 const SystemAppearance = () => {
   const [theme, setTheme] = useState('theme-default');
-  
+
   React.useEffect(() => {
     document.body.classList.remove('theme-default', darkTheme);
     document.body.classList.add(theme);
   }, [theme]);
-  
-  
+
+
   return (
     <CommandItem value='system appearance'
                  onSelect={() => setTheme(theme === 'theme-default' ? darkTheme : 'theme-default')}>
