@@ -1,9 +1,10 @@
 import { ChvnLogoFixed } from '@/components/ChvnLogoFixed';
 import { ColorBar } from '@/components/ColorBar';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import { Box, Section, Text } from '@/ui';
+import { Box, Section, Text, Canvas } from '@/ui';
 import Head from 'next/head';
 import React from 'react';
+import {CmndK} from "../components/CmndK";
 
 
 const Developing = () => {
@@ -44,6 +45,10 @@ const Developing = () => {
             </Text>
           </Section>
         </Box>
+
+        <Canvas css={{ alignItems: 'center', margin: 'auto', justifyContent: 'center', textAlign: 'center' }}>
+          <CmndK />
+        </Canvas>
         
         
         <ChvnLogoFixed />

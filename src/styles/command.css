@@ -1,6 +1,12 @@
+/**
+ * cmdk - resets and global styles
+ * @pacocoursey/cmdk
+ * https://cmdk.paco.me
+ */
+
 [cmdk-root] {
-	z-index: 9999;
-	max-width: 620px;
+	z-index: 9999 !important;
+	max-width: 620px !important;
 	overflow: hidden;
 }
 
@@ -29,10 +35,7 @@
 	border-radius: 6px;
 }
 
-
-[cmdk-group-items] {
-
-}
+[cmdk-group-items] {}
 
 [cmdk-group-heading] {
 	font-family: 'CH Grotesk', sans-serif !important;

@@ -7,12 +7,14 @@ import {
   CommandList,
   CommandSeparator,
 } from '@/components/CommandMenu';
+import * as Popover from '@radix-ui/react-popover'
 import { darkTheme, styled } from '@/lib/stitches.config';
 import { Box, Canvas, Flex } from '@/ui';
 import { ChatBubbleIcon, CubeIcon, GitHubLogoIcon, SwitchIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import { Command } from 'cmdk';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
+import {blackA, violet} from "@radix-ui/colors";
 
 /**
  * -- styled(); --
@@ -42,6 +44,22 @@ const CommandFooterText = styled('p', {
   textAlign: 'center',
 });
 
+const IconButton = styled('button', {
+  all: 'unset',
+  fontFamily: 'inherit',
+  borderRadius: '100%',
+  height: 35,
+  width: 35,
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: 'mauve11',
+  backgroundColor: 'white',
+  boxShadow: `0 2px 10px $black10`,
+  '&:hover': { backgroundColor: 'sky9' },
+  '&:focus': { boxShadow: `0 0 0 2px black` },
+});
+
 /**
  * ⌘k...
  **/
@@ -64,46 +82,40 @@ export const CmndK = () => {
   
   return (
     <>
+
+      <Popover.Root>
+        <Popover.Trigger>
+          <IconButton>popover</IconButton>
+        </Popover.Trigger>
+
+        <Popover.Content>
       <Command shouldFilter={true} value={value} onValueChange={setValue}>
-        <Canvas>
+        {/*<Canvas>*/}
           <CommandDialog open={open} onOpenChange={setOpen} label='Global Command Menu'>
             <CommandInput value={search} onValueChange={setSearch} autoFocus placeholder='keyword' />
             <CommandList>
-              
-              {/**
-               * <!-- Command.Group: Index -->
-               **/}
               <CommandGroup heading='index'>
                 <Blog />
                 <Projects />
                 <Twitter />
                 <GitHub />
               </CommandGroup>
-              
               <CommandSeparator />
-              
-              {/**
-               * <!-- Command.Group: Settings -->
-               **/}
               <CommandGroup heading='settings'>
                 <SystemAppearance />
               </CommandGroup>
-              
               <CommandEmpty>
                 .. no results found. try another keyword.
               </CommandEmpty>
             </CommandList>
-            
-            
             <CommandBottomBar>
               <CommandFooterText>chvndler.ch</CommandFooterText>
             </CommandBottomBar>
-          
           </CommandDialog>
-        </Canvas>
-      
+        {/*</Canvas>*/}
       </Command>
-    
+        </Popover.Content>
+      </Popover.Root>
     </>
   );
 };

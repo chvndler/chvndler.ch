@@ -23,7 +23,7 @@ const StyledThumb = styled(SwitchPrimitive.Thumb, {
 	display: 'block',
 	width: 13,
 	height: 13,
-	backgroundColor: '$volt',
+	backgroundColor: '$tartOrange',
 	borderRadius: '9999px',
 	boxShadow: `0 2px 2px $mauveA7`,
 	transition: 'transform 100ms',

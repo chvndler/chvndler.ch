@@ -51,7 +51,7 @@ const App = ({ Component, pageProps }: AppProps) => {
             })}
           >
             <Component {...pageProps} />
-            <CmndK />
+
           </div>
         </Box>
       </ThemeProvider>

@@ -80,6 +80,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       sand: '#dedac7',
       opal: '#a7bfc2',
       mist: '#eeeeee',
+      rhythm: '#413a3c',
       
       white: 'hsl(0, 0%, 100%)',
       crimson: '#d64045',
