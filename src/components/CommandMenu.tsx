@@ -1,8 +1,6 @@
-import React from 'react';
 import { keyframes, styled } from '@/lib/stitches.config';
 import { Command } from 'cmdk';
-import { blackA } from '@radix-ui/colors';
-import * as AlertDialogPrimitive from '@radix-ui/react-alert-dialog';
+import React from 'react';
 
 const overlayShow = keyframes({
   '0%': { opacity: 0 },
@@ -12,33 +10,6 @@ const overlayShow = keyframes({
 const contentShow = keyframes({
   '0%': { opacity: 0, transform: 'translate(-50%, -48%) scale(.96)' },
   '100%': { opacity: 1, transform: 'translate(-50%, -50%) scale(1)' },
-});
-
-const StyledOverlay = styled(AlertDialogPrimitive.Overlay, {
-  backgroundColor: blackA.blackA9,
-  position: 'fixed',
-  inset: 0,
-  '@media (prefers-reduced-motion: no-preference)': {
-    animation: `${overlayShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
-  },
-});
-
-const StyledContent = styled(AlertDialogPrimitive.Content, {
-  backgroundColor: 'white',
-  borderRadius: 6,
-  boxShadow: 'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
-  position: 'fixed',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: '90vw',
-  maxWidth: '500px',
-  maxHeight: '85vh',
-  padding: 25,
-  '@media (prefers-reduced-motion: no-preference)': {
-    animation: `${contentShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
-  },
-  '&:focus': { outline: 'none' },
 });
 
 
@@ -63,6 +34,9 @@ const StyledDialog = styled(Command.Dialog, {
   overflow: 'scroll',
 
   '&:focus': { outline: 'none' },
+  '@media (prefers-reduced-motion: no-preference)': {
+    animation: `${contentShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
+  },
 });
 
 const StyledInput = styled(Command.Input, {
@@ -168,7 +142,6 @@ const StyledNoResults = styled(Command.Empty, {
   width: '100%',
 
   marginTop: '8px',
-
 });
 
 const StyledGroup = styled(Command.Group, {
@@ -191,15 +164,12 @@ const StyledItem = styled(Command.Item, {
   letterSpacing: 'normal',
   lineHeight: '28px',
 
-
   padding: '0px 14px 0px 14px',
 
   userSelect: 'none',
   willChange: 'background, color',
   transition: 'all 150ms ease',
   transitionProperty: 'none',
-
-
 });
 
 const StyledSeparator = styled(Command.Separator, {
@@ -210,7 +180,6 @@ const StyledSeparator = styled(Command.Separator, {
   marginBottom: '6px',
   padding: 0,
 });
-
 
 /**
  * pass exports to Cmndk();
@@ -227,13 +196,3 @@ export const CommandGroup = StyledGroup;
 export const CommandList = StyledList;
 export const CommandItem = StyledItem;
 export const CommandSeparator = StyledSeparator;
-
-
-export const CommandContent = ({ children, ...props }) => {
-  return (
-    <AlertDialogPrimitive.Portal>
-      <StyledOverlay />
-      <CommandDialog {...props}>{children}</CommandDialog>
-    </AlertDialogPrimitive.Portal>
-  );
-};

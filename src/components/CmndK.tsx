@@ -42,6 +42,21 @@ const CommandFooterText = styled('p', {
   textAlign: 'center',
 });
 
+const CommandOverlay = styled('div', {
+  zIndex: '1',
+  position: 'absolute',
+  top: '0',
+  left: '0',
+  right: '0',
+  bottom: '0',
+  minHeight: '100vh',
+  minWidth: '100vw',
+  padding: '0',
+  margin: '0',
+  opacity: '0.5',
+  backgroundColor: '$mauve5',
+});
+
 
 /**
  * ⌘k...
@@ -87,6 +102,8 @@ export const CmndK = () => {
             <CommandFooterText>chvndler.ch</CommandFooterText>
           </CommandBottomBar>
         </CommandDialog>
+
+        <CommandOverlay />
       </Command>
     </>
   );
