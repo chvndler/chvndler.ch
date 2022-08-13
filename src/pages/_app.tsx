@@ -1,5 +1,6 @@
 // import { CmndK } from '@/components/CmndK';
 import { css, globalCss } from '@/lib/stitches.config';
+import '@/styles/miumiu.css';
 import '@/styles/ch-grotesk.css';
 import '@/styles/command.css';
 import '@/styles/global.css';

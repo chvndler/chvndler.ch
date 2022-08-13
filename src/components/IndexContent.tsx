@@ -1,15 +1,15 @@
 import React from 'react';
-import { ThemeToggle } from '@/components/ThemeToggle';
 import { ProjectGrid } from '@/components/ProjectGrid';
 import { IntroSection } from '@/components/IntroSection';
 import { ConnectSection } from '@/components/ConnectSection';
-import { Box, Section, Space } from '@/ui';
+import { Box } from '@/ui';
+import { AppBar } from '@/components/AppBar';
 
 
 export const IndexContent = () => {
   return (
     <>
-      <ThemeToggle />
+      <AppBar />
       <Box css={{
         position: 'absolute',
         top: 0,
@@ -37,16 +37,12 @@ export const IndexContent = () => {
         },
       }}>
 
-        <Section size={2}>
-          <IntroSection />
-          <ProjectGrid />
-        </Section>
 
-        <Space size={1} />
+        <IntroSection />
+        <ProjectGrid />
 
-        <Section size={2}>
-          <ConnectSection />
-        </Section>
+
+        <ConnectSection />
 
 
       </Box>

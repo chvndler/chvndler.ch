@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'MIU MIU';
+	src: url('/fonts/miumiu.eot');
+	src: local('LD Grotesk Heavy'), local('miumiu'),
+	url('/fonts/miumiu.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/miumiu.woff2') format('woff2'),
+	url('/fonts/miumiu.woff') format('woff'),
+	url('/fonts/miumiuy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}

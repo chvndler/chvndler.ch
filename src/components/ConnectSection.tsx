@@ -1,4 +1,4 @@
-import { Badge, Box, Container, Flex, Space, Text } from '@/ui';
+import { Badge, Box, Container, Flex, Section, Space, Text } from '@/ui';
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
 import React from 'react';
@@ -7,60 +7,64 @@ import React from 'react';
 export const ConnectSection = () => {
   return (
     <>
-      <Container size={3}>
-        <Badge size={1} variant='tartOrange'>connect</Badge>
-        <Space size={1} />
 
-        {/* <!-- hold blog until complete -->
+
+      <Section size={2}>
+        <Container size={3}>
+          <Badge size={1} variant='tartOrange'>connect</Badge>
+          <Space size={1} />
+
+          {/* <!-- hold blog until complete -->
           <Text css={{ fontFamily: '$pragmaticaExtended', fontSize: '13px', fontWeight: '500', color: '$mauve11', lineHeight: '18px' }}>
             blog
           </Text>
           --> */}
 
-        <Box css={{ marginTop: '4px', marginBottom: '4px', paddingLeft: '4px' }}>
-          <Link href='https://www.twitter.com/chv_ndler' passHref>
-            <Text as='a' target='_blank' rel='noreferrer noopener' css={{
-              fontFamily: '$pragmaticaExtended',
-              fontSize: '13px',
-              fontWeight: '400',
-              color: '$mauve11',
-              lineHeight: 'normal',
-            }}>
-              twitter
-            </Text>
-          </Link>
-        </Box>
+          <Box css={{ marginTop: '4px', marginBottom: '4px', paddingLeft: '4px' }}>
+            <Link href='https://www.twitter.com/chv_ndler' passHref>
+              <Text as='a' target='_blank' rel='noreferrer noopener' css={{
+                fontFamily: '$pragmaticaExtended',
+                fontSize: '13px',
+                fontWeight: '400',
+                color: '$mauve11',
+                lineHeight: 'normal',
+              }}>
+                twitter
+              </Text>
+            </Link>
+          </Box>
 
-        <Box css={{ marginTop: '4px', marginBottom: '4px', paddingLeft: '4px' }}>
-          <Link href='https://www.instagram.com/chv.ndler' passHref>
-            <Text as='a' target='_blank' rel='noreferrer noopener' css={{
-              fontFamily: '$pragmaticaExtended',
-              fontSize: '13px',
-              fontWeight: '400',
-              color: '$mauve11',
-              lineHeight: 'normal',
-            }}>
-              instagram
-            </Text>
-          </Link>
-        </Box>
-        <Box css={{ marginTop: '4px', marginBottom: '4px', paddingLeft: '4px' }}>
-          <Link href='https://www.instagram.com/chv.ndler' passHref>
-            <Text as='a' target='_blank' rel='noreferrer noopener' css={{
-              fontFamily: '$pragmaticaExtended',
-              fontSize: '13px',
-              fontWeight: '400',
-              color: '$mauve11',
-              lineHeight: 'normal',
-            }}>
-              email
-            </Text>
-          </Link>
-        </Box>
-        <Box css={{ marginTop: '4px', marginBottom: '4px' }}>
-          <GitHub />
-        </Box>
-      </Container>
+          <Box css={{ marginTop: '4px', marginBottom: '4px', paddingLeft: '4px' }}>
+            <Link href='https://www.instagram.com/chv.ndler' passHref>
+              <Text as='a' target='_blank' rel='noreferrer noopener' css={{
+                fontFamily: '$pragmaticaExtended',
+                fontSize: '13px',
+                fontWeight: '400',
+                color: '$mauve11',
+                lineHeight: 'normal',
+              }}>
+                instagram
+              </Text>
+            </Link>
+          </Box>
+          <Box css={{ marginTop: '4px', marginBottom: '4px', paddingLeft: '4px' }}>
+            <Link href='https://www.instagram.com/chv.ndler' passHref>
+              <Text as='a' target='_blank' rel='noreferrer noopener' css={{
+                fontFamily: '$pragmaticaExtended',
+                fontSize: '13px',
+                fontWeight: '400',
+                color: '$mauve11',
+                lineHeight: 'normal',
+              }}>
+                email
+              </Text>
+            </Link>
+          </Box>
+          <Box css={{ marginTop: '4px', marginBottom: '4px' }}>
+            <GitHub />
+          </Box>
+        </Container>
+      </Section>
     </>
   );
 };

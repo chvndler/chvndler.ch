@@ -1,9 +1,9 @@
-import { ChvnLogoFixed } from '@/components/ChvnLogoFixed';
 import { ColorBar } from '@/components/ColorBar';
 import { IndexContent } from '@/components/IndexContent';
 import { Box } from '@/ui';
 import Head from 'next/head';
 import React from 'react';
+import { FixedFooter } from '@/components/FixedFooter';
 
 const About = () => {
   return (
@@ -22,7 +22,7 @@ const About = () => {
         backgroundColor: '$mauve1',
       }}>
         <IndexContent />
-        <ChvnLogoFixed />
+        <FixedFooter />
       </Box>
     </>
   );

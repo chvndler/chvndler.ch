@@ -128,6 +128,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     fonts: {
       inter: '"Inter", sans-serif',
       chGrotesk: '"CH Grotesk", sans-serif',
+      miu: '"MIU MIU", sans-serif',
       pragmaticaExtended: '"pragmatica-extended", sans-serif',
       pragmatica: '"pragmatica", sans-serif',
       untitled: '"-apple-system", "Helvetica Neue", sans-serif',
