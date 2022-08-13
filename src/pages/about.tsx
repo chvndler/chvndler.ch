@@ -13,7 +13,14 @@ const About = () => {
       </Head>
       <ColorBar />
 
-      <Box css={{ minWidth: '100vw', minHeight: '100vh', padding: 0, margin: 0, backgroundColor: '$mauve1' }}>
+      <Box css={{
+        width: '100vw',
+        height: '100vh',
+        padding: 0,
+        margin: 0,
+        overflow: 'auto',
+        backgroundColor: '$mauve1',
+      }}>
         <IndexContent />
         <ChvnLogoFixed />
       </Box>

@@ -9,7 +9,14 @@ import {
 } from '@/components/CommandMenu';
 import { darkTheme, styled } from '@/lib/stitches.config';
 import { Box, Flex } from '@/ui';
-import { ChatBubbleIcon, CubeIcon, GitHubLogoIcon, SwitchIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
+import {
+  ChatBubbleIcon,
+  CubeIcon,
+  GitHubLogoIcon,
+  SwitchIcon,
+  TwitterLogoIcon,
+  VideoIcon,
+} from '@radix-ui/react-icons';
 import { Command } from 'cmdk';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
@@ -42,21 +49,6 @@ const CommandFooterText = styled('p', {
   textAlign: 'center',
 });
 
-const CommandOverlay = styled('div', {
-  zIndex: '1',
-  position: 'absolute',
-  top: '0',
-  left: '0',
-  right: '0',
-  bottom: '0',
-  minHeight: '100vh',
-  minWidth: '100vw',
-  padding: '0',
-  margin: '0',
-  opacity: '0.5',
-  backgroundColor: '$mauve5',
-});
-
 
 /**
  * ⌘k...
@@ -87,6 +79,7 @@ export const CmndK = () => {
             <CommandGroup heading='index'>
               <Blog />
               <Projects />
+              <Film />
               <Twitter />
               <GitHub />
             </CommandGroup>
@@ -102,8 +95,6 @@ export const CmndK = () => {
             <CommandFooterText>chvndler.ch</CommandFooterText>
           </CommandBottomBar>
         </CommandDialog>
-
-        <CommandOverlay />
       </Command>
     </>
   );
@@ -136,6 +127,7 @@ const Blog = () => {
   );
 };
 
+
 /**
  * Command.Item.Projects
  * value = 'projects'
@@ -157,6 +149,32 @@ const Projects = () => {
           <CubeIcon />
         </Box>
         <span>projects</span>
+      </Flex>
+    </CommandItem>
+  );
+};
+
+/**
+ * Command.Item.Film
+ * value = 'film'
+ */
+const Film = () => {
+  const router = useRouter();
+
+  return (
+    <CommandItem value='film' onSelect={() => router.push('/directed')}>
+      <Flex css={{
+        boxSizing: 'border-box',
+        display: 'inline-flex',
+        direction: 'row',
+        padding: 0,
+        margin: 'auto',
+        verticalAlign: 'middle',
+      }}>
+        <Box css={{ paddingTop: '6.2px', paddingRight: '5px', lineHeight: 'normal' }}>
+          <VideoIcon />
+        </Box>
+        <span>film</span>
       </Flex>
     </CommandItem>
   );

@@ -57,7 +57,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       ...lime,
       ...yellow,
       ...gold,
-      
+
       // Alphas..
       ...grayA,
       ...mauveA,
@@ -68,10 +68,10 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       ...limeA,
       ...yellowA,
       ...goldA,
-      
+
       ...whiteA,
       ...blackA,
-      
+
       blur: 'rgba(240,240,240,0.7)',
       overlay: 'hsl(206 22% 7% / 35%)',
       midnight: '#152023',
@@ -81,33 +81,44 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       opal: '#a7bfc2',
       mist: '#eeeeee',
       rhythm: '#413a3c',
-      
+
       white: 'hsl(0, 0%, 100%)',
       crimson: '#d64045',
       air: '#477194',
       sky2: '#28c2ff',
       maximumBlue: '#5e7ce2',
       volt: '#7cff5c',
-      
-      
+      crayola: '#ED254E',
+      pinky: '#ff206e',
+      pinkyA: 'hsla(339, 100%, 56%, 0.6)',
+
+      // chvn...
+      chvn0: '#FEFEFE',
+      chvn1: '#E2E4EB',
+      chvn2: '#A3ABC0',
+      chvn3: '#828DA9',
+      chvn4: '#667394',
+      chvn5: '#525D77',
+
+
       // Translucent Alphas..
       light100: 'rgba(240, 240, 240, 0.7)',
       light50: 'rgba(240, 240, 240, 0.8)',
       clear100: 'rgba(240, 240, 240, 0.2)',
-      
+
       // Neons..
       superYellow: '#F6F930',
       superLime: '#96F550',
       slime: '#FFFD8E',
       lime9Alpha: 'rgba(153,213,42, 0.2)',
       sky9Alpha: 'rgba(104,221,253,0.3)',
-      
+
       // Semantics..
       hiContrast: '$slate12',
       semiTransparent: '$light100',
       loContrast: '$slate1',
       panel: '$gray12',
-      
+
       // Lo Contrast..
       canvas: 'hsl(0 0% 93%)',
       transparentPanel: 'hsl(0 0% 0% / 97%)',
@@ -184,17 +195,17 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
   media: {
     // primary..
     xs: '(max-width: 520px)',
-    sm: '(max-width: 750px)',
-    md: '(max-width: 1200px)',
-    lg: '(max-width: 2000px)',
-    xl: '(min-width: 2001px)',
-    
+    sm: '(max-width: 650px)',
+    md: '(max-width: 820px)',
+    lg: '(max-width: 1200px)',
+    xl: '(min-width: 1400px)',
+
     // secondary..
     bp1: '(min-width: 520px)',
     bp2: '(min-width: 900px)',
     bp3: '(min-width: 1200px)',
     bp4: '(min-width: 1800px)',
-    
+
     // prefers..
     motion: '(prefers-reduced-motion)',
     hover: '(any-hover: hover)',
@@ -256,14 +267,14 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       marginTop: value,
       marginBottom: value,
     }),
-    
+
     ta: (value: Stitches.PropertyValue<'textAlign'>) => ({ textAlign: value }),
-    
+
     fd: (value: Stitches.PropertyValue<'flexDirection'>) => ({
       flexDirection: value,
     }),
     fw: (value: Stitches.PropertyValue<'flexWrap'>) => ({ flexWrap: value }),
-    
+
     ai: (value: Stitches.PropertyValue<'alignItems'>) => ({
       alignItems: value,
     }),
@@ -279,11 +290,11 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       flexShrink: value,
     }),
     fb: (value: Stitches.PropertyValue<'flexBasis'>) => ({ flexBasis: value }),
-    
+
     bc: (value: Stitches.PropertyValue<'backgroundColor'>) => ({
       backgroundColor: value,
     }),
-    
+
     br: (value: Stitches.PropertyValue<'borderRadius'>) => ({
       borderRadius: value,
     }),
@@ -308,7 +319,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     }),
     ox: (value: Stitches.PropertyValue<'overflowX'>) => ({ overflowX: value }),
     oy: (value: Stitches.PropertyValue<'overflowY'>) => ({ overflowY: value }),
-    
+
     pe: (value: Stitches.PropertyValue<'pointerEvents'>) => ({
       pointerEvents: value,
     }),
@@ -316,17 +327,17 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       WebkitUserSelect: value,
       userSelect: value,
     }),
-    
+
     userSelect: (value: Stitches.PropertyValue<'userSelect'>) => ({
       WebkitUserSelect: value,
       userSelect: value,
     }),
-    
+
     size: (value: Stitches.PropertyValue<'width'>) => ({
       width: value,
       height: value,
     }),
-    
+
     appearance: (value: Stitches.PropertyValue<'appearance'>) => ({
       WebkitAppearance: value,
       appearance: value,
@@ -351,7 +362,7 @@ export const darkTheme = createTheme('darkTheme', {
     ...limeDark,
     ...yellowDark,
     ...goldDark,
-    
+
     ...grayDarkA,
     ...mauveDarkA,
     ...slateDarkA,
@@ -361,9 +372,9 @@ export const darkTheme = createTheme('darkTheme', {
     ...limeDarkA,
     ...yellowDarkA,
     ...goldDarkA,
-    
+
     blur: 'rgba(0, 0, 0, 0.7)',
-    
+
     // Semantic colors..
     hiContrast: '$slate12',
     loContrast: '$slate1',
@@ -372,7 +383,7 @@ export const darkTheme = createTheme('darkTheme', {
     transparentPanel: 'hsl(0 100% 100% / 97%)',
     shadowLight: 'hsl(206 22% 7% / 35%)',
     shadowDark: 'hsl(206 22% 7% / 20%)',
-    
+
     // CUSTOM FOR DARK
     superLime: '#7A306C',
     slime: '#c9cccd',

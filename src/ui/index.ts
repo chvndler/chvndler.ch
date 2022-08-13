@@ -1,3 +1,4 @@
+export * from './design-system/Badge';
 export * from './design-system/Box';
 export * from './design-system/Button';
 export * from './design-system/IconButton';

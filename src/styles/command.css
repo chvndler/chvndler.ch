@@ -6,7 +6,7 @@
 
 [cmdk-root] {
 	z-index: 9999 !important;
-	max-width: 620px !important;
+	max-width: 600px !important;
 	overflow: hidden;
 }
 
@@ -22,7 +22,7 @@
 	border-radius: 6px;
 	padding-left: 8px;
 	padding-right: 8px;
-
+	
 	user-select: none;
 	will-change: background, color;
 	transition: all 150ms ease;
@@ -35,7 +35,8 @@
 	border-radius: 6px;
 }
 
-[cmdk-group-items] {}
+[cmdk-group-items] {
+}
 
 [cmdk-group-heading] {
 	font-family: 'CH Grotesk', sans-serif !important;
@@ -43,7 +44,7 @@
 	font-weight: 500 !important;
 	color: #ff3333;
 	user-select: none;
-	padding: 4px 8px 4px 8px;
+	padding: 2px 6px 2px 6px;
 }
 
 * + [cmdk-group] {

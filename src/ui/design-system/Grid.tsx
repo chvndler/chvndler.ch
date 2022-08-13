@@ -34,6 +34,9 @@ export const Grid = styled('div', {
       between: {
         justifyContent: 'space-between',
       },
+      stretch: {
+        justifyContent: 'stretch',
+      },
     },
     flow: {
       row: {

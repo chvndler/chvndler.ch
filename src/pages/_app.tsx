@@ -8,6 +8,7 @@ import { Box } from '@/ui';
 import { ThemeProvider } from 'next-themes';
 import { AppProps } from 'next/app';
 import React from 'react';
+import Head from 'next/head';
 
 
 const globalStyles = globalCss(res, {
@@ -23,7 +24,7 @@ const globalStyles = globalCss(res, {
     margin: 0,
     color: '$hiContrast',
     WebkitTextSizeAdjust: '100%',
-
+    backgroundColor: '$mauve1',
     minHeight: '-webkit-fill-available',
   },
 });
@@ -38,6 +39,9 @@ const App = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
+      <Head>
+        <meta name='viewport' content='width=device-width, user-scalable=no' />
+      </Head>
       <ThemeProvider
         disableTransitionOnChange
         attribute='class'
@@ -51,7 +55,6 @@ const App = ({ Component, pageProps }: AppProps) => {
             })}
           >
             <Component {...pageProps} />
-
           </div>
         </Box>
       </ThemeProvider>

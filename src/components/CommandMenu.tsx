@@ -1,6 +1,5 @@
 import { keyframes, styled } from '@/lib/stitches.config';
 import { Command } from 'cmdk';
-import React from 'react';
 
 const overlayShow = keyframes({
   '0%': { opacity: 0 },
@@ -24,18 +23,29 @@ const StyledDialog = styled(Command.Dialog, {
   transform: 'translate(-50%, -50%)',
   width: '100%',
   height: 'auto',
-  maxWidth: '620px',
+  maxWidth: '600px',
   maxHeight: '85vh',
   paddingTop: 10,
   paddingBottom: 10,
   paddingLeft: 10,
   paddingRight: 10,
+  animation: `${overlayShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
 
   overflow: 'scroll',
 
   '&:focus': { outline: 'none' },
   '@media (prefers-reduced-motion: no-preference)': {
     animation: `${contentShow} 150ms cubic-bezier(0.16, 1, 0.3, 1)`,
+  },
+
+
+  '@sm': {
+    minHeight: '80vh',
+    maxWidth: '100vw',
+    border: 'none',
+    top: '70%',
+    bottom: '0%',
+    boxShadow: 'hsl(232, 13%, 45%) 0px 8px 15px 1px, hsl(206 22% 7% / 20%) 0px 0px 0px 0px',
   },
 });
 
@@ -150,7 +160,7 @@ const StyledGroup = styled(Command.Group, {
   lineHeight: '28px',
   overflowY: 'scroll',
 
-  maxHeight: '160px',
+  maxHeight: '190px',
   height: 'auto',
 });
 

@@ -1,10 +1,10 @@
 import { ChvnLogoFixed } from '@/components/ChvnLogoFixed';
 import { ColorBar } from '@/components/ColorBar';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import { Box, Canvas, Section, Text } from '@/ui';
+import { Box, Canvas, Text } from '@/ui';
 import Head from 'next/head';
 import React from 'react';
-import { CmndK } from '../components/CmndK';
+import { CmndK } from '@/components/CmndK';
 
 const Developing = () => {
   return (
@@ -39,11 +39,17 @@ const Developing = () => {
             },
           }}
         >
-          <Section size={2}>
-            <Text css={{ fontFamily: '$pragmaticaExtended', fontSize: '18px', fontWeight: '500', color: '$opal' }}>
+          <Box css={{ paddingTop: '16px' }}>
+            <Text css={{
+              fontFamily: '$pragmaticaExtended',
+              fontSize: '18px',
+              fontWeight: '500',
+              color: '$opal',
+              '@sm': { fontSize: '14px' },
+            }}>
               chvn.me/developing
             </Text>
-          </Section>
+          </Box>
         </Box>
 
         <Canvas css={{ alignItems: 'center', margin: 'auto', justifyContent: 'center', textAlign: 'center' }}>
