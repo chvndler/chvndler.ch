@@ -5,7 +5,11 @@ import { css } from '@/lib/stitches.config';
 import { CmndK } from '@/components/CmndK';
 
 const backdrop = css({
-  // backgroundColor: '$rhythm',
+  position: 'fixed',
+  top: '0',
+  left: '0',
+  right: '0',
+  bottom: '0',
   backgroundColor: '$mauve1',
   minWidth: '100vw',
   minHeight: '100vh',
@@ -56,6 +60,7 @@ const Begin = () => {
             >
               <ChvndlerCh width='300' />
             </Box>
+
           </Container>
         </Canvas>
 
