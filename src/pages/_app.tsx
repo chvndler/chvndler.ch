@@ -4,6 +4,7 @@ import '@/styles/miumiu.css';
 import '@/styles/ch-grotesk.css';
 import '@/styles/command.css';
 import '@/styles/global.css';
+import '@/styles/dracula.css';
 import { res } from '@/styles/res';
 import { Box } from '@/ui';
 import { ThemeProvider } from 'next-themes';
@@ -41,6 +42,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
+        <title>__</title>
         <meta name='viewport' content='width=device-width, user-scalable=no' />
       </Head>
       <ThemeProvider
