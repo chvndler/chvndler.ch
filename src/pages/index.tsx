@@ -5,7 +5,7 @@ const Index = () => {
   const router = useRouter();
   useEffect(() => {
     // redirect...
-    router.replace('/begin');
+    router.replace('/enter');
   });
 
   return null;

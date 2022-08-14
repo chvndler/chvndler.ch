@@ -7,14 +7,14 @@ const StyledSwitch = styled(SwitchPrimitive.Root, {
   all: 'unset',
   width: 34,
   height: 19,
-  backgroundColor: '$mauve6',
+  backgroundColor: '$mauve3',
   borderRadius: '9999px',
   position: 'relative',
   boxShadow: `0 2px 4px $colors$mauveA2`,
   WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
   '&:focus': { boxShadow: `0 0 0 2px $colors$mauve12` },
   '&[data-state="checked"]': {
-    backgroundColor: '$mauve5',
+    backgroundColor: '$mauve7',
   },
 });
 
@@ -22,18 +22,16 @@ const StyledThumb = styled(SwitchPrimitive.Thumb, {
   display: 'block',
   width: 16,
   height: 16,
-  backgroundColor: '$mauve2',
+  backgroundColor: '$mauve5',
   borderRadius: '9999px',
-  // border: '1px solid $mauve8',
-  // boxShadow: `0 3px 2px $colors$mauveA7`,
-  boxShadow: `0 1px 2px $colors$pinkyA`,
+  boxShadow: `0 0 2px 0px $colors$voltYellow`,
   transition: 'transform 100ms',
   transform: 'translateX(2px)',
   willChange: 'transform',
   '&[data-state="checked"]': {
-    transform: 'translateX(18px)',
-    backgroundColor: '$volt',
-    boxShadow: `0px 0px 3px 0px $colors$voltYellow`,
+    transform: 'translateX(17px)',
+    backgroundColor: '$mauve12',
+    boxShadow: `0px 0px 4px 1px $colors$voltYellow`,
   },
 });
 

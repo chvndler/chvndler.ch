@@ -3,6 +3,7 @@ import { Box, Canvas, Container, Text } from '@/ui';
 import { ChvndlerCh } from '@/components/logo/ChvndlerCh';
 import { css } from '@/lib/stitches.config';
 import { CmndK } from '@/components/CmndK';
+import { ThemeButton } from '@/components/ThemeButton';
 
 const backdrop = css({
   position: 'fixed',
@@ -17,9 +18,8 @@ const backdrop = css({
   margin: '0',
 });
 
-// import { CmndK } from "@/components/CmndK";
 
-const Begin = () => {
+const Enter = () => {
   return (
     <>
       <Head>
@@ -59,15 +59,29 @@ const Begin = () => {
               }}
             >
               <ChvndlerCh width='300' />
+
+
             </Box>
 
           </Container>
         </Canvas>
 
         <CmndK />
+        <Box css={{
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+          right: 0,
+          paddingBottom: '20px',
+          margin: 'auto',
+          textAlign: 'center',
+          alignItems: 'center',
+        }}>
+          <ThemeButton />
+        </Box>
       </Box>
     </>
   );
 };
 
-export default Begin;
+export default Enter;

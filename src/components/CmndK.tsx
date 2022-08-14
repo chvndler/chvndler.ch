@@ -7,7 +7,7 @@ import {
   CommandList,
   CommandSeparator,
 } from '@/components/CommandMenu';
-import { darkTheme, styled } from '@/lib/stitches.config';
+import { styled } from '@/lib/stitches.config';
 import { Box, Flex } from '@/ui';
 import {
   ChatBubbleIcon,
@@ -19,7 +19,8 @@ import {
 } from '@radix-ui/react-icons';
 import { Command } from 'cmdk';
 import { useRouter } from 'next/router';
-import React, { useState } from 'react';
+import React from 'react';
+import { useTheme } from 'next-themes';
 
 /**
  * -- styled(); --
@@ -51,57 +52,6 @@ const CommandFooterText = styled('p', {
 
 
 /**
- * ⌘k...
- **/
-export const CmndK = () => {
-  const [search, setSearch] = React.useState('');
-  const [open, setOpen] = React.useState(false);
-  const [value, setValue] = React.useState('blog');
-
-  React.useEffect(() => {
-    const down = (e) => {
-      if (e.key === 'k' && e.metaKey) {
-        setOpen((open) => !open);
-      }
-    };
-
-    document.addEventListener('keydown', down);
-    return () => document.removeEventListener('keydown', down);
-  }, []);
-
-
-  return (
-    <>
-      <Command shouldFilter={true} value={value} onValueChange={setValue}>
-        <CommandDialog open={open} onOpenChange={setOpen} label='Global Command Menu'>
-          <CommandInput value={search} onValueChange={setSearch} autoFocus placeholder='keyword' />
-          <CommandList>
-            <CommandGroup heading='index'>
-              <Blog />
-              <Projects />
-              <Film />
-              <Twitter />
-              <GitHub />
-            </CommandGroup>
-            <CommandSeparator />
-            <CommandGroup heading='settings'>
-              <SystemAppearance />
-            </CommandGroup>
-            <CommandEmpty>
-              .. no results found. try another keyword.
-            </CommandEmpty>
-          </CommandList>
-          <CommandBottomBar>
-            <CommandFooterText>chvndler.ch</CommandFooterText>
-          </CommandBottomBar>
-        </CommandDialog>
-      </Command>
-    </>
-  );
-};
-
-
-/**
  * Command.Item.Blog
  * value = 'blog'
  */
@@ -109,7 +59,7 @@ const Blog = () => {
   const router = useRouter();
 
   return (
-    <CommandItem value='blog' onSelect={() => router.push('/about')}>
+    <CommandItem value='blog' onSelect={() => router.push('/blog')}>
       <Flex css={{
         boxSizing: 'border-box',
         display: 'inline-flex',
@@ -240,17 +190,11 @@ const Twitter = () => {
  * darkTheme();
  */
 const SystemAppearance = () => {
-  const [theme, setTheme] = useState('theme-default');
-
-  React.useEffect(() => {
-    document.body.classList.remove('theme-default', darkTheme);
-    document.body.classList.add(theme);
-  }, [theme]);
-
+  const { theme, setTheme } = useTheme();
 
   return (
     <CommandItem value='system appearance'
-                 onSelect={() => setTheme(theme === 'theme-default' ? darkTheme : 'theme-default')}>
+                 onSelect={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}>
       <Flex css={{
         boxSizing: 'border-box',
         display: 'inline-flex',
@@ -265,5 +209,56 @@ const SystemAppearance = () => {
         <span>system appearance</span>
       </Flex>
     </CommandItem>
+  );
+};
+
+
+/**
+ * ⌘k...
+ **/
+export const CmndK = () => {
+  const [search, setSearch] = React.useState('');
+  const [open, setOpen] = React.useState(false);
+  const [value, setValue] = React.useState('blog');
+
+  React.useEffect(() => {
+    const down = (e) => {
+      if (e.key === 'k' && e.metaKey) {
+        setOpen((open) => !open);
+      }
+    };
+
+    document.addEventListener('keydown', down);
+    return () => document.removeEventListener('keydown', down);
+  }, []);
+
+
+  return (
+    <>
+      <Command shouldFilter={true} value={value} onValueChange={setValue}>
+        <CommandDialog open={open} onOpenChange={setOpen} label='Global Command Menu'>
+          <CommandInput value={search} onValueChange={setSearch} autoFocus placeholder='keyword' />
+          <CommandList>
+            <CommandGroup heading='index'>
+              <Blog />
+              <Projects />
+              <Film />
+              <Twitter />
+              <GitHub />
+            </CommandGroup>
+            <CommandSeparator />
+            <CommandGroup heading='settings'>
+              <SystemAppearance />
+            </CommandGroup>
+            <CommandEmpty>
+              .. no results found. try another keyword.
+            </CommandEmpty>
+          </CommandList>
+          <CommandBottomBar>
+            <CommandFooterText>chvndler.ch</CommandFooterText>
+          </CommandBottomBar>
+        </CommandDialog>
+      </Command>
+    </>
   );
 };

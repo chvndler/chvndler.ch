@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Box } from '@/ui';
 import { AtelierSwitch } from '@/components/Switch';
-import { darkTheme } from '@/lib/stitches.config';
+import { useTheme } from 'next-themes';
+
 
 export function ThemeToggle() {
-  // const [theme, setTheme] = React.useState('theme-default');
-  const [theme, setTheme] = useState('theme-default');
+  // const [theme, setTheme] = useState('theme-default');
+  const { theme, setTheme } = useTheme();
 
+  /*
   React.useEffect(() => {
     document.body.classList.remove('theme-default', darkTheme);
     document.body.classList.add(theme);
   }, [theme]);
+
+   */
 
   return (
     <Box css={{
@@ -26,8 +30,7 @@ export function ThemeToggle() {
       margin: 0,
     }}>
       <AtelierSwitch
-        onCheckedChange={() => setTheme(theme === 'theme-default' ? darkTheme : 'theme-default')}
-        css={{}}
+        onCheckedChange={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}
       />
     </Box>
   );

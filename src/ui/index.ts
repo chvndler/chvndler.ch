@@ -9,4 +9,5 @@ export * from './design-system/Flex';
 export * from './design-system/Grid';
 export * from './design-system/Space';
 export * from './design-system/Text';
+export * from './design-system/TextField';
 export * from './design-system/Paragraph';

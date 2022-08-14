@@ -1,5 +1,5 @@
 // import { CmndK } from '@/components/CmndK';
-import { css, globalCss } from '@/lib/stitches.config';
+import { css, darkTheme, globalCss } from '@/lib/stitches.config';
 import '@/styles/miumiu.css';
 import '@/styles/ch-grotesk.css';
 import '@/styles/command.css';
@@ -46,7 +46,8 @@ const App = ({ Component, pageProps }: AppProps) => {
       <ThemeProvider
         disableTransitionOnChange
         attribute='class'
-        value={{ theme: 'default-theme' }}
+        value={{ light: 'light-theme', dark: darkTheme.className }}
+        defaultTheme='system'
       >
         <Box css={{ zIndex: '0', backgroundColor: 'transparent' }}>
           <div
