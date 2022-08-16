@@ -4,24 +4,23 @@ export const IconButton = styled('button', {
   boxSizing: 'border-box',
   position: 'relative',
   display: 'inline-flex',
-  jc: 'center',
-  ai: 'center',
-  width: 25,
-  height: 25,
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: 28,
+  height: 28,
   background: 'none',
   padding: 0,
   margin: 0,
   outline: 0,
   borderRadius: '$2',
   color: '$hiContrast',
-  
-  // Make it larger than it looks
-  border: '2px solid transparent',
+  border: '1px solid $mauveA4',
   backgroundClip: 'padding-box',
+  // backgroundColor: '$grayA3',
   
   '@hover': {
     '&:hover': {
-      bc: '$grayA4',
+      backgroundColor: '$grayA4',
     },
   },
   '&:active': {

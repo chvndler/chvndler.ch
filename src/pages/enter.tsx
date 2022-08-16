@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import { Box, Canvas, Container, Text } from '@/ui';
+import { Box, Canvas, Container, Text, Flex } from '@/ui';
 import { ChvndlerCh } from '@/components/logo/ChvndlerCh';
 import { css } from '@/lib/stitches.config';
 import { CmndK } from '@/components/CmndK';
 import { ThemeButton } from '@/components/ThemeButton';
+import { MobileCmd } from '@/components/MobileCmd';
 
 const backdrop = css({
   position: 'fixed',
@@ -36,6 +37,18 @@ const Enter = () => {
               flexDirection: 'column',
             }}
           >
+            <Box
+              css={{
+                width: '100%',
+                color: '$mauve9',
+                margin: 'auto',
+                display: 'flex',
+                justifyContent: 'center',
+                paddingBottom: '10px',
+              }}
+            >
+              <ChvndlerCh width='300' />
+            </Box>
             <Text
               css={{
                 textAlign: 'center',
@@ -48,27 +61,12 @@ const Enter = () => {
             >
               tap [ ⌘k ] to navigate.
             </Text>
-            <Box
-              css={{
-                width: '100%',
-                color: '$mauve9',
-                margin: 'auto',
-                display: 'flex',
-                justifyContent: 'center',
-                paddingBottom: '10px',
-              }}
-            >
-              <ChvndlerCh width='300' />
-
-
-            </Box>
-
           </Container>
         </Canvas>
 
         <CmndK />
         <Box css={{
-          position: 'absolute',
+          position: 'fixed',
           bottom: 0,
           left: 0,
           right: 0,
@@ -76,8 +74,16 @@ const Enter = () => {
           margin: 'auto',
           textAlign: 'center',
           alignItems: 'center',
+
+          '@sm': {
+            paddingBottom: '30px',
+          },
         }}>
+
+          <Flex direction="row" css={{ gap: '4px', alignItems: 'center', justifyContent: 'center' }}>
+          <MobileCmd />
           <ThemeButton />
+          </Flex>
         </Box>
       </Box>
     </>
