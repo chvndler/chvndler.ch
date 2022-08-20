@@ -1,5 +1,5 @@
 import { ColorBar } from '@/components/ColorBar';
-import { Box, Canvas, Text } from '@/ui';
+import { Canvas } from '@/ui';
 import Head from 'next/head';
 import React from 'react';
 import { CmndK } from '@/components/CmndK';

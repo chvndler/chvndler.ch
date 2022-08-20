@@ -2,7 +2,7 @@ import * as React from 'react';
 import { IconProps } from './types';
 
 export const MnmlLight = React.forwardRef<SVGSVGElement, IconProps>(
-  ({ color = 'currentColor', ...props }, forwardedRef) => {
+  ({ ...props }, forwardedRef) => {
     return (
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -75,3 +75,6 @@ c1.015,0,2.174,0.101,3.007,0.385c1.195,0.426,1.34,1.034,1.376,1.338h4.637V13.031
     );
   },
 );
+
+
+MnmlLight.displayName = 'minimal-light-logo';
