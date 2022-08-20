@@ -21,7 +21,7 @@ export const IntroSection = () => {
               color: '$mauve12',
               lineHeight: 'normal',
             }}>
-            I&apos;m Chandler, most call me Chan.<br />
+            I&apos;m Chandler, most call me Chan.<br /><br />
             Front-end developer & designer based in Charlotte, NC– I am currently
             building AtelierDesign®
             to calm the noise within design culture. I enjoy exploring– finding, and learning new tech advancements,

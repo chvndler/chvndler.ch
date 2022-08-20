@@ -100,6 +100,11 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       chvn4: '#667394',
       chvn5: '#525D77',
 
+      chvn6: '#484349',
+      chvn7: '#f7f0f0',
+      chvn8: '#5e7ce2',
+      chvn9: '#87b37a',
+
 
       // Translucent Alphas..
       light100: 'rgba(240, 240, 240, 0.7)',

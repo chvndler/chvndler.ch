@@ -5,29 +5,19 @@ import { useTheme } from 'next-themes';
 
 
 export function ThemeToggle() {
-  // const [theme, setTheme] = useState('theme-default');
   const { theme, setTheme } = useTheme();
-
-  /*
-  React.useEffect(() => {
-    document.body.classList.remove('theme-default', darkTheme);
-    document.body.classList.add(theme);
-  }, [theme]);
-
-   */
 
   return (
     <Box css={{
+      display: 'flex',
       zIndex: '999',
-      position: 'absolute',
-      top: 0,
-      right: 0,
+      position: 'relative',
       width: 'auto',
       height: 'auto',
-      paddingTop: '24px',
-      paddingLeft: '20px',
-      paddingRight: '20px',
-      margin: 0,
+      margin: 'auto',
+      alignItems: 'right',
+      textAlign: 'right',
+      justifyContent: 'flex-end'
     }}>
       <AtelierSwitch
         onCheckedChange={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}

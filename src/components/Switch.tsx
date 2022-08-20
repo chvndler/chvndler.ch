@@ -22,7 +22,7 @@ const StyledThumb = styled(SwitchPrimitive.Thumb, {
   display: 'block',
   width: 16,
   height: 16,
-  backgroundColor: '$mauve5',
+  backgroundColor: '$mauve1',
   borderRadius: '9999px',
   boxShadow: `0 0 2px 0px $colors$voltYellow`,
   transition: 'transform 100ms',
@@ -30,7 +30,7 @@ const StyledThumb = styled(SwitchPrimitive.Thumb, {
   willChange: 'transform',
   '&[data-state="checked"]': {
     transform: 'translateX(17px)',
-    backgroundColor: '$mauve12',
+    backgroundColor: '$chvn3',
     boxShadow: `0px 0px 4px 1px $colors$voltYellow`,
   },
 });

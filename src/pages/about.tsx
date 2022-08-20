@@ -3,7 +3,7 @@ import { IndexContent } from '@/components/IndexContent';
 import { Box } from '@/ui';
 import Head from 'next/head';
 import React from 'react';
-import { FixedFooter } from '@/components/FixedFooter';
+import { NavBar } from '@/components/NavBar';
 
 const About = () => {
   return (
@@ -11,8 +11,9 @@ const About = () => {
       <Head>
         <title>chvn.me/about</title>
       </Head>
-      <ColorBar />
 
+      <NavBar />
+      <ColorBar />
       <Box css={{
         width: '100vw',
         height: '100vh',
@@ -22,7 +23,6 @@ const About = () => {
         backgroundColor: '$mauve1',
       }}>
         <IndexContent />
-        <FixedFooter />
       </Box>
     </>
   );

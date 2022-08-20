@@ -3,16 +3,14 @@ import { ProjectGrid } from '@/components/ProjectGrid';
 import { IntroSection } from '@/components/IntroSection';
 import { ConnectSection } from '@/components/ConnectSection';
 import { Box } from '@/ui';
-import { AppBar } from '@/components/AppBar';
 
 
 export const IndexContent = () => {
   return (
     <>
-      <AppBar />
       <Box css={{
         position: 'absolute',
-        top: 0,
+        top: 50,
         left: 0,
         width: '50vw',
         height: 'auto',
