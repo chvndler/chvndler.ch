@@ -41,8 +41,8 @@ export default function Document() {
 
         <meta property='og:title' content='chvndler®' />
         <meta property='og:url' content='https://chvn.me' />
-        <meta property='og:image' content='https://cdn.ady.systems/chvn/assets/social.jpg' />
-        <meta property='og:image:secure_url' content='https://cdn.ady.systems/chvn/assets/social.jpg' />
+        <meta property='og:image' content='https://cdn.ady.systems/chvn/assets/socialnash.jpg' />
+        <meta property='og:image:secure_url' content='https://cdn.ady.systems/chvn/assets/socialnash.jpg' />
         <meta property='og:image:type' content='image/jpeg' />
         <meta property='og:image:width' content='1600' />
         <meta property='og:image:height' content='900' />
@@ -55,7 +55,7 @@ export default function Document() {
         <meta property='og:locale' content='en_us' />
         <meta property='og:site_name' content='chvn.me' />
         <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://chvn.me' />
+        <meta property='og:url' content='https://chvndler.ch' />
       </Head>
 
       <body>
