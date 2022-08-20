@@ -1,7 +1,7 @@
 import { Box, Container, Paragraph, Section, Text } from '@/ui';
 import { ColorBar } from '@/components/ColorBar';
 import { NavBar } from '@/components/NavBar';
-import { ChvndlerCh } from '@/components/logo/ChvndlerCh';
+import { MnmlLight } from '@/components/logo/mnml-light';
 
 
 const Nash = () => {
@@ -13,7 +13,13 @@ const Nash = () => {
         <Section size='3'>
           <Container size='2' css={{ paddingTop: '40px', paddingBottom: '40px' }}>
             <Text
-              css={{ fontSize: '14px', fontWeight: 'bold', paddingBottom: '40px', fontFamily: '$pragmaticaExtended' }}>
+              css={{
+                color: '$blueblue',
+                fontSize: '16px',
+                fontWeight: 'bold',
+                paddingBottom: '40px',
+                fontFamily: '$pragmaticaExtended',
+              }}>
               NASHELLY MORONTA®
             </Text>
             <Paragraph size='1' css={{ lineHeight: 'normal', fontFamily: '$pragmaticaExtended', fontWeight: 'normal' }}>
@@ -49,23 +55,23 @@ const Nash = () => {
 
             <br /><br />
             <Paragraph size='1' css={{ lineHeight: 'normal', fontFamily: '$pragmaticaExtended', fontWeight: 'normal' }}>
-              Im not someone to fall in love quick. to love quick... yes. I love things about a person quick. and I
-              eventually love enough things about a person to say, "I love you".
+              i'm not someone to fall in love quick. to love quick... yes. I love things about a person quick. and I
+              eventually love enough things about a person to say, "i love you".
 
               with previous relationships, i always noticed that, if i was being honest with chvn®, I knew it wasnt it,
-              they didnt inspire me, push me, or even make me feel.
+              they didn't inspire me, push me, or even make me feel.
             </Paragraph>
 
             <br /><br />
             <Paragraph size='1' css={{ lineHeight: 'normal', fontFamily: '$pragmaticaExtended', fontWeight: 'normal' }}>
               Ever since the day i knew i loved you. Since the day i gave you the first kiss. My only goal was
-              to be "More" with you..
+              to be "more" with you..
             </Paragraph>
 
             <br /><br />
             <Paragraph size='1' css={{ lineHeight: 'normal', fontFamily: '$pragmaticaExtended', fontWeight: 'normal' }}>
               I know what we've been through has been hard on you, your family, your friends, and your heart. and i know
-              sometimes you may feel like you shouldnt have done it.
+              sometimes you may feel like you shouldn't have done it.
               maybe small regrets..
             </Paragraph>
 
@@ -102,11 +108,18 @@ const Nash = () => {
               below are my promises to you nash.
             </Paragraph>
             <br /><br />
+            <br /><br />
             <Text
-              css={{ fontSize: '14px', fontWeight: 'bold', paddingBottom: '40px', fontFamily: '$pragmaticaExtended' }}>
+              css={{
+                color: '$pinky',
+                fontSize: '16px',
+                fontWeight: 'bold',
+                paddingBottom: '5px',
+                fontFamily: '$pragmaticaExtended',
+              }}>
               MY PROMISES©
             </Text>
-            <br /><br />
+
             <Paragraph size='1' css={{ lineHeight: 'normal', fontFamily: '$pragmaticaExtended', fontWeight: 'normal' }}>
               <ul>
                 <li>to always be myself.</li>
@@ -128,21 +141,46 @@ const Nash = () => {
 
             <br /><br />
             <Text
-              css={{ fontSize: '14px', fontWeight: 'bold', paddingBottom: '40px', fontFamily: '$pragmaticaExtended' }}>
-              Chicas, <br />will you be more with me?
+              css={{
+                fontSize: '14px',
+                fontWeight: 'normal',
+                paddingBottom: '40px',
+                fontFamily: '$pragmaticaExtended',
+              }}>
+              Chicas,<br />will you be more with me?
             </Text>
             <br /><br />
-            <Paragraph size='1' css={{ lineHeight: 'normal', fontFamily: '$pragmaticaExtended', fontWeight: 'normal' }}>
-              lets set goals together.
+            <Paragraph size='1' css={{
+              textAlign: 'center',
+              lineHeight: 'normal',
+              fontFamily: '$pragmaticaExtended',
+              fontWeight: 'normal',
+            }}>
+              let's set goals together.
             </Paragraph>
-            <br /><br />
-            <Paragraph size='1' css={{ lineHeight: 'normal', fontFamily: '$pragmaticaExtended', fontWeight: 'normal' }}>
-              lets fucking move together.
+            <Paragraph size='1' css={{
+              textAlign: 'center',
+              lineHeight: 'normal',
+              fontFamily: '$pragmaticaExtended',
+              fontWeight: 'normal',
+            }}>
+              let's fucking move together.
             </Paragraph>
-
-
-            <br /><br />
-            <Paragraph size='1' css={{ lineHeight: 'normal', fontFamily: '$pragmaticaExtended', fontWeight: 'normal' }}>
+            <Paragraph size='1' css={{
+              textAlign: 'center',
+              lineHeight: 'normal',
+              fontFamily: '$pragmaticaExtended',
+              fontWeight: 'normal',
+            }}>
+              let's change the wrld together.
+            </Paragraph>
+            <br />
+            <Paragraph size='1' css={{
+              textAlign: 'center',
+              lineHeight: 'normal',
+              fontFamily: '$pragmaticaExtended',
+              fontWeight: 'normal',
+            }}>
               i love you like i love you, always.
             </Paragraph>
 
@@ -154,12 +192,12 @@ const Nash = () => {
               color: '$mauve9',
               margin: 'auto',
               display: 'flex',
-              justifyContent: 'left',
+              justifyContent: 'center',
               paddingBottom: '10px',
-              paddingLeft: '25px',
             }}
           >
-            <ChvndlerCh width='200' />
+
+            <MnmlLight width='160' />
           </Box>
         </Section>
       </Box>

@@ -90,6 +90,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       volt: '#7cff5c',
       crayola: '#ED254E',
       pinky: '#ff206e',
+      blueblue: '#0151f5',
       pinkyA: 'hsla(339, 100%, 56%, 0.6)',
 
       // chvn...
@@ -172,11 +173,11 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       9: '80px',
     },
     fontSizes: {
-      1: '12px',
-      2: '13px',
-      3: '15px',
-      4: '17px',
-      5: '19px',
+      1: '10px',
+      2: '12px',
+      3: '13px',
+      4: '15px',
+      5: '17px',
       6: '21px',
       7: '27px',
       8: '35px',

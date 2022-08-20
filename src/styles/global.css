@@ -20,3 +20,7 @@ a {
 * {
 	box-sizing: border-box;
 }
+
+ul {
+	padding-top: none,
+}
