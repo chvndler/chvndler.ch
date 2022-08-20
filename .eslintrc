@@ -8,6 +8,7 @@
     "prettier"
   ],
   "rules": {
+    "react/no-unescaped-entities": "off",
     "@next/next/no-img-element": "off",
     "camelcase": "off",
     "import/prefer-default-export": "off",
