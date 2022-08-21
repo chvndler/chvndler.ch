@@ -8,12 +8,13 @@ import React from 'react';
 
 const Title = styled('div', {
   color: '$mauve10',
-  fontFamily: '$chGrotesk',
-  fontSize: '18px',
+  fontFamily: '$pragmaticaExtended',
+  fontSize: '14px',
   fontWeight: '700',
   marginBottom: '10px',
   lineHeight: '0.6',
-  letterSpacing: '-0.05rem',
+  letterSpacing: '-0.02rem',
+  textTransform: 'uppercase',
 });
 
 const Description = styled('div', {
@@ -48,11 +49,10 @@ const Card = styled('div', {
 
 export const ProjectEntry = ({ title, description, href, key }) => {
   // const [ref, inView] = useInView({ triggerOnce: true });
-  
+
   return (
     <>
       <Box css={{ paddingTop: '0px', paddingBottom: '0px' }}>
-        {/* <!-- Grid Will Render this asChild.. --> */}
         <Card
           key={key}
           css={{
@@ -67,7 +67,7 @@ export const ProjectEntry = ({ title, description, href, key }) => {
               WebkitBackdropFilter: 'blur(222px)',
               saturate: '200%',
             },
-            
+
             '&::before': {},
             '&::after': {},
           }}>
@@ -83,7 +83,7 @@ export const ProjectEntry = ({ title, description, href, key }) => {
                   position: 'absolute',
                   bottom: '0',
                   left: '0',
-                  
+
                   marginLeft: '18px',
                   marginRight: '18px',
                   marginBottom: '20px',
