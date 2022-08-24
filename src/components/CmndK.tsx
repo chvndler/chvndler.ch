@@ -8,7 +8,7 @@ import {
   CommandSeparator,
 } from '@/components/CommandMenu';
 import { styled } from '@/lib/stitches.config';
-import { Box, Flex } from '@/ui';
+import { Box, Flex, IconButton, Text } from '@/ui';
 import {
   ChatBubbleIcon,
   CubeIcon,
@@ -21,6 +21,7 @@ import { Command } from 'cmdk';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { useTheme } from 'next-themes';
+import { ThemeButton } from '@/components/ThemeButton';
 
 /**
  * -- styled(); --
@@ -259,6 +260,30 @@ export const CmndK = () => {
           </CommandBottomBar>
         </CommandDialog>
       </Command>
+
+
+      <Box css={{
+        position: 'fixed',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        paddingBottom: '20px',
+        margin: 'auto',
+        textAlign: 'center',
+        alignItems: 'center',
+        '@sm': {
+          paddingBottom: '30px',
+        },
+      }}>
+        <Flex direction='row' css={{ gap: '4px', alignItems: 'center', justifyContent: 'center' }}>
+          <IconButton title='⌘K' aria-label='Invoke Cmd+k Menu' onClick={() => setOpen(true)}>
+            <Text css={{ fontSize: '11px', color: '$hiContrast' }}>
+              ⌘K
+            </Text>
+          </IconButton>
+          <ThemeButton />
+        </Flex>
+      </Box>
     </>
   );
 };

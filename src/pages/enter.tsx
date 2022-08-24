@@ -1,10 +1,9 @@
 import Head from 'next/head';
-import { Box, Canvas, Container, Text, Flex } from '@/ui';
+import { Box, Canvas, Container, Text } from '@/ui';
 import { ChvndlerCh } from '@/components/logo/ChvndlerCh';
 import { css } from '@/lib/stitches.config';
 import { CmndK } from '@/components/CmndK';
-import { ThemeButton } from '@/components/ThemeButton';
-import { MobileCmd } from '@/components/MobileCmd';
+import React from 'react';
 
 const backdrop = css({
   position: 'fixed',
@@ -65,26 +64,6 @@ const Enter = () => {
         </Canvas>
 
         <CmndK />
-        <Box css={{
-          position: 'fixed',
-          bottom: 0,
-          left: 0,
-          right: 0,
-          paddingBottom: '20px',
-          margin: 'auto',
-          textAlign: 'center',
-          alignItems: 'center',
-
-          '@sm': {
-            paddingBottom: '30px',
-          },
-        }}>
-
-          <Flex direction="row" css={{ gap: '4px', alignItems: 'center', justifyContent: 'center' }}>
-          <MobileCmd />
-          <ThemeButton />
-          </Flex>
-        </Box>
       </Box>
     </>
   );
