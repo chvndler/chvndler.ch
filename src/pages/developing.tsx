@@ -1,5 +1,5 @@
 import { ColorBar } from '@/components/ColorBar';
-import { Canvas } from '@/ui';
+import { Box, Canvas } from '@/ui';
 import Head from 'next/head';
 import React from 'react';
 import { CmndK } from '@/components/CmndK';
@@ -14,7 +14,9 @@ const Developing = () => {
       <NavBar />
       <ColorBar />
       <Canvas css={{ alignItems: 'center', margin: 'auto', justifyContent: 'center', textAlign: 'center' }}>
-        <CmndK />
+        <Box css={{ padding: '40px' }}>
+          <CmndK />
+        </Box>
       </Canvas>
     </>
   );

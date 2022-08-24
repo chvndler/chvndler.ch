@@ -22,6 +22,7 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import { useTheme } from 'next-themes';
 import { ThemeButton } from '@/components/ThemeButton';
+import { DropMenu } from '@/components/DropMenu';
 
 /**
  * -- styled(); --
@@ -276,11 +277,53 @@ export const CmndK = () => {
         },
       }}>
         <Flex direction='row' css={{ gap: '4px', alignItems: 'center', justifyContent: 'center' }}>
-          <IconButton title='⌘K' aria-label='Invoke Cmd+k Menu' onClick={() => setOpen(true)}>
+          <IconButton
+            title='⌘K'
+            aria-label='Invoke Cmd+k Menu'
+            onClick={() => setOpen(true)}
+            css={{
+              '@xl': {
+                display: 'block',
+              },
+              '@lg': {
+                display: 'block',
+              },
+              '@md': {
+                display: 'block',
+              },
+              '@sm': {
+                display: 'none',
+              },
+              '@xs': {
+                display: 'none',
+              },
+            }}>
             <Text css={{ fontSize: '11px', color: '$hiContrast' }}>
               ⌘K
             </Text>
           </IconButton>
+
+          <Box
+            css={{
+              '@xl': {
+                display: 'none',
+              },
+              '@lg': {
+                display: 'none',
+              },
+              '@md': {
+                display: 'none',
+              },
+              '@sm': {
+                display: 'block',
+              },
+              '@xs': {
+                display: 'block',
+              },
+            }}>
+            <DropMenu />
+          </Box>
+
           <ThemeButton />
         </Flex>
       </Box>

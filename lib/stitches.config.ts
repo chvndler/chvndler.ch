@@ -396,6 +396,20 @@ export const darkTheme = createTheme('darkTheme', {
     slime: '#c9cccd',
     light100: 'rgba(0, 0, 0, 0.4)',
     light50: 'rgba(0, 0, 0, 0.8)',
+
+
+    // chvn...
+    chvn0: '#525D77',
+    chvn1: '#667394',
+    chvn2: '#828DA9',
+    chvn3: '#A3ABC0',
+    chvn4: '#E2E4EB',
+    chvn5: '#FEFEFE',
+
+    chvn6: '#484349',
+    chvn7: '#f7f0f0',
+    chvn8: '#5e7ce2',
+    chvn9: '#87b37a',
   },
   utils: {},
 });
