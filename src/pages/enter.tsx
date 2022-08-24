@@ -16,6 +16,8 @@ const backdrop = css({
   minHeight: '100vh',
   padding: '0',
   margin: '0',
+
+  // backgroundImage: 'linear-gradient(25deg, #002b3e, #57444f, #9c5c61, #e37472)',
 });
 
 
