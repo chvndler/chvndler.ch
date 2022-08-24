@@ -40,11 +40,15 @@ const StyledDialog = styled(Command.Dialog, {
 
 
   '@sm': {
-    minHeight: '80vh',
+    position: 'relative',
+    minHeight: '100vh',
+    maxHeight: '100vh',
+    height: '100%',
     maxWidth: '100vw',
+    width: '100%',
     border: 'none',
-    top: '70%',
-    bottom: '0%',
+    top: '0',
+    bottom: '0',
     boxShadow: 'hsl(232, 13%, 45%) 0px 8px 15px 1px, hsl(206 22% 7% / 20%) 0px 0px 0px 0px',
   },
 });

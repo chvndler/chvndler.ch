@@ -10,9 +10,19 @@
 	overflow: hidden;
 }
 
+@media (max-width: 650px) {
+	[cmdk-root] {
+		z-index: 9999 !important;
+		max-width: 100% !important;
+		width: 100%;
+		overflow: hidden;
+	}
+}
+
 [cmdk-overlay] {
 	background-color: black;
 	opacity: 0.5;
+	z-index: auto;
 }
 
 
