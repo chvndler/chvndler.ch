@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { IconProps } from '@/components/logo/types';
 
-export const CommandIcon = React.forwardRef<SVGSVGElement, IconProps>(
+const CommandIcon = React.forwardRef<SVGSVGElement, IconProps>(
   ({ color = 'currentColor', ...props }, forwardedRef) => {
     return (
       <svg

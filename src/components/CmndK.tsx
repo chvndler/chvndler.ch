@@ -8,9 +8,10 @@ import {
   CommandSeparator,
 } from '@/components/CommandMenu';
 import { styled } from '@/lib/stitches.config';
-import { Box, Flex, IconButton, Text } from '@/ui';
+import { Box, Flex, IconButton } from '@/ui';
 import {
   ChatBubbleIcon,
+  CornersIcon,
   CubeIcon,
   GitHubLogoIcon,
   SwitchIcon,
@@ -276,20 +277,19 @@ export const CmndK = () => {
           paddingBottom: '30px',
         },
       }}>
-        <Flex direction='row' css={{ gap: '4px', alignItems: 'center', justifyContent: 'center' }}>
+        <Flex direction='row' css={{ gap: '4px', alignItems: 'center', justifyContent: 'center', margin: 'auto' }}>
           <IconButton
             title='⌘K'
-            aria-label='Invoke Cmd+k Menu'
             onClick={() => setOpen(true)}
             css={{
               '@xl': {
-                display: 'block',
+                display: 'inline-flex',
               },
               '@lg': {
-                display: 'block',
+                display: 'inline-flex',
               },
               '@md': {
-                display: 'block',
+                display: 'inline-flex',
               },
               '@sm': {
                 display: 'none',
@@ -298,9 +298,7 @@ export const CmndK = () => {
                 display: 'none',
               },
             }}>
-            <Text css={{ fontSize: '11px', color: '$hiContrast' }}>
-              ⌘K
-            </Text>
+            <CornersIcon />
           </IconButton>
 
           <Box
@@ -323,7 +321,6 @@ export const CmndK = () => {
             }}>
             <DropMenu />
           </Box>
-
           <ThemeButton />
         </Flex>
       </Box>

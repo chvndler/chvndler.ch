@@ -1,6 +1,7 @@
 import React from 'react';
 import { IconButton } from '@/ui';
 import { useTheme } from 'next-themes';
+import { LightningBoltIcon } from '@radix-ui/react-icons';
 
 export const ThemeButton = (props) => {
   const { theme, setTheme } = useTheme();
@@ -12,6 +13,8 @@ export const ThemeButton = (props) => {
       {...props}
       aria-label='toggle a light and dark color scheme'
     >
+
+      {/* <!--
       <svg
         xmlns='http://www.w3.org/2000/svg'
         width='15'
@@ -47,6 +50,8 @@ export const ThemeButton = (props) => {
           fill='currentColor'
         />
       </svg>
+--> */}
+      <LightningBoltIcon />
     </IconButton>
   );
 };

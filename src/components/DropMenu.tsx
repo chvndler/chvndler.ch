@@ -3,16 +3,16 @@ import { keyframes, styled } from '@stitches/react';
 import { mauve, violet } from '@radix-ui/colors';
 import {
   ChatBubbleIcon,
+  CornersIcon,
   CubeIcon,
   GitHubLogoIcon,
   GlobeIcon,
-  HamburgerMenuIcon,
   SwitchIcon,
   TwitterLogoIcon,
   VideoIcon,
 } from '@radix-ui/react-icons';
 import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
-import { Flex, IconButton } from '@/ui';
+import { Box, Flex, IconButton } from '@/ui';
 import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
 
@@ -113,8 +113,9 @@ function Content({ children, ...props }) {
   );
 }
 
-const StyledSubContent = styled(DropdownMenuPrimitive.SubContent, { ...contentStyles });
 
+/*
+const StyledSubContent = styled(DropdownMenuPrimitive.SubContent, { ...contentStyles });
 function SubContent(props) {
   return (
     <DropdownMenuPrimitive.Portal>
@@ -122,6 +123,7 @@ function SubContent(props) {
     </DropdownMenuPrimitive.Portal>
   );
 }
+ */
 
 const itemStyles = {
   all: 'unset',
@@ -158,6 +160,10 @@ const itemStyles = {
 };
 
 const StyledItem = styled(DropdownMenuPrimitive.Item, { ...itemStyles });
+
+
+/*
+
 const StyledCheckboxItem = styled(DropdownMenuPrimitive.CheckboxItem, { ...itemStyles });
 const StyledRadioItem = styled(DropdownMenuPrimitive.RadioItem, { ...itemStyles });
 const StyledSubTrigger = styled(DropdownMenuPrimitive.SubTrigger, {
@@ -167,6 +173,17 @@ const StyledSubTrigger = styled(DropdownMenuPrimitive.SubTrigger, {
   },
   ...itemStyles,
 });
+
+const StyledItemIndicator = styled(DropdownMenuPrimitive.ItemIndicator, {
+  position: 'absolute',
+  left: 0,
+  width: 25,
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+});
+
+ */
 
 const StyledLabel = styled(DropdownMenuPrimitive.Label, {
   fontFamily: '$pragmaticaExtended',
@@ -182,32 +199,25 @@ const StyledSeparator = styled(DropdownMenuPrimitive.Separator, {
   margin: 5,
 });
 
-const StyledItemIndicator = styled(DropdownMenuPrimitive.ItemIndicator, {
-  position: 'absolute',
-  left: 0,
-  width: 25,
-  display: 'inline-flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-});
 
 // Exports
 export const DropdownMenu = DropdownMenuPrimitive.Root;
 export const DropdownMenuTrigger = DropdownMenuPrimitive.Trigger;
 export const DropdownMenuContent = Content;
 export const DropdownMenuItem = StyledItem;
+export const DropdownMenuLabel = StyledLabel;
+export const DropdownMenuSeparator = StyledSeparator;
+
+
+/*
 export const DropdownMenuCheckboxItem = StyledCheckboxItem;
 export const DropdownMenuRadioGroup = DropdownMenuPrimitive.RadioGroup;
 export const DropdownMenuRadioItem = StyledRadioItem;
 export const DropdownMenuItemIndicator = StyledItemIndicator;
-export const DropdownMenuLabel = StyledLabel;
-export const DropdownMenuSeparator = StyledSeparator;
 export const DropdownMenuSub = DropdownMenuPrimitive.Sub;
 export const DropdownMenuSubTrigger = StyledSubTrigger;
 export const DropdownMenuSubContent = SubContent;
-
-// Your app...
-const Box = styled('div', {});
+*/
 
 
 /**
@@ -416,7 +426,7 @@ export const DropMenu = () => {
 
         <DropdownMenuTrigger asChild>
           <IconButton aria-label='Customise options'>
-            <HamburgerMenuIcon />
+            <CornersIcon />
           </IconButton>
         </DropdownMenuTrigger>
 

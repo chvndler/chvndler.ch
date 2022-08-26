@@ -1,16 +1,14 @@
-import { IconButton, Text } from '@/ui';
+import { IconButton } from '@/ui';
+import CommandIcon from '@/components/icons/CommandIcon';
 import React from 'react';
 
 
 export const MobileCmd = () => {
-
   return (
     <>
-    <IconButton aria-label="Invoke Cmd+k Menu">
-      <Text css={{ fontSize: '11px', color: '$hiContrast' }}>
-        ⌘K
-      </Text>
-    </IconButton>
+      <IconButton aria-label='Invoke Cmd+k Menu'>
+        <CommandIcon />
+      </IconButton>
     </>
   );
 };
