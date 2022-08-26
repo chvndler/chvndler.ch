@@ -205,7 +205,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     sm: '(max-width: 650px)',
     md: '(max-width: 820px)',
     lg: '(max-width: 1200px)',
-    xl: '(min-width: 1400px)',
+    xl: '(min-width: 1201px)',
 
     // secondary..
     bp1: '(min-width: 520px)',
