@@ -71,8 +71,12 @@
 	padding: 12px !important;
 	background-color: transparent;
 	border-radius: 16px !important;
+	
+	
+	/*
 	backdrop-filter: blur(10px) !important;
-	-webkit-backdrop-filter: blur(10px) !important;;
+	-webkit-backdrop-filter: blur(10px) !important;
+	 */
 	position: absolute !important;
 	left: 0 !important;
 	right: 0 !important;

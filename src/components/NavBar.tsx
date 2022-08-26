@@ -16,13 +16,12 @@ export const NavBar = () => {
         position: 'fixed',
         margin: '0',
         width: '100vw',
-        // backdropFilter: 'blur(12px)',
-        // WebkitBackdropFilter: 'blur(12px)',
-        // saturate: '200%',
+        backdropFilter: 'blur(20px)',
+        WebkitBackdropFilter: 'blur(20px)',
+        saturate: '150%',
         zIndex: '9999',
 
-        // backgroundColor: '$translucent',
-        // backgroundColor: '$chvn2',
+        backgroundColor: '$translucent',
 
         '@sm': {
           paddingLeft: '16px',
@@ -33,7 +32,7 @@ export const NavBar = () => {
 
       <Box
         css={{
-          paddingTop: '6px',
+          paddingTop: '2px',
           lineHeight: '45px',
           width: 'auto',
           margin: '0',
@@ -43,7 +42,7 @@ export const NavBar = () => {
             boxShadow: 'none',
           },
         }}>
-        <MnmlLight width='160' />
+        <MnmlLight width='150' />
       </Box>
 
 

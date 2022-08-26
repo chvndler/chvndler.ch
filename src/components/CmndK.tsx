@@ -24,6 +24,7 @@ import React from 'react';
 import { useTheme } from 'next-themes';
 import { ThemeButton } from '@/components/ThemeButton';
 import { DropMenu } from '@/components/DropMenu';
+import { BottomButtons } from '@/components/BottomButtons';
 
 /**
  * -- styled(); --
@@ -263,6 +264,55 @@ export const CmndK = () => {
         </CommandDialog>
       </Command>
 
+      <BottomButtons>
+        <IconButton
+          title='⌘K'
+          onClick={() => setOpen(true)}
+          css={{
+            '@xl': {
+              display: 'inline-flex',
+            },
+            '@lg': {
+              display: 'inline-flex',
+            },
+            '@md': {
+              display: 'inline-flex',
+            },
+            '@sm': {
+              display: 'none',
+            },
+            '@xs': {
+              display: 'none',
+            },
+          }}>
+          <CornersIcon />
+        </IconButton>
+
+        <Box
+          css={{
+            '@xl': {
+              display: 'none',
+            },
+            '@lg': {
+              display: 'none',
+            },
+            '@md': {
+              display: 'none',
+            },
+            '@sm': {
+              display: 'block',
+            },
+            '@xs': {
+              display: 'block',
+            },
+          }}>
+          <DropMenu />
+        </Box>
+        <ThemeButton />
+      </BottomButtons>
+
+
+      {/*
 
       <Box css={{
         position: 'fixed',
@@ -323,7 +373,9 @@ export const CmndK = () => {
           </Box>
           <ThemeButton />
         </Flex>
-      </Box>
+        */}
+
+
     </>
   );
 };

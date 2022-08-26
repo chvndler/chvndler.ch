@@ -21,7 +21,7 @@ export const ConnectSection = () => {
           --> */}
 
           <Box css={{ marginTop: '4px', marginBottom: '4px', paddingLeft: '4px' }}>
-            <Link href='https://www.twitter.com/chv_ndler' passHref>
+            <Link href='https://www.twitter.com/chvndlerch' passHref>
               <Text as='a' target='_blank' rel='noreferrer noopener' css={{
                 fontFamily: '$pragmaticaExtended',
                 fontSize: '13px',
@@ -72,13 +72,11 @@ export const ConnectSection = () => {
 
 function GitHub() {
   return (
-
     <Flex css={{ display: 'inline-flex', direction: 'row', padding: '4px', margin: 'auto' }}>
       <Box css={{ color: '$lime10' }}>
         <GitHubLogoIcon />
       </Box>
-
-
+      
       <Link href='https://github.com/chvndler/chvndler.ch' passHref>
         <Text as='a' target='_blank' rel='noopener noreferrer' css={{
           fontFamily: '$pragmaticaExtended',

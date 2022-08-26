@@ -186,13 +186,13 @@ export const ProjectGrid = () => {
           <Box css={{}}>
             <Link href='/projects' passHref>
               <Text as='a' css={{
-                fontSize: '11px',
+                fontSize: '13px',
                 fontFamily: '$pragmaticaExtended',
                 fontWeight: '400',
                 color: '$mauve11',
                 lineHeight: 'normal',
                 paddingLeft: '5px',
-                paddingTop: '15px',
+                paddingTop: '20px',
                 paddingBottom: '15px',
                 '&:hover': { textDecoration: 'underline' },
               }}>

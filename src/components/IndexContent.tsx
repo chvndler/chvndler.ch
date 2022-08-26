@@ -10,7 +10,7 @@ export const IndexContent = () => {
     <>
       <Box css={{
         position: 'absolute',
-        top: 50,
+        top: 40,
         left: 0,
         width: '50vw',
         height: 'auto',
@@ -18,31 +18,27 @@ export const IndexContent = () => {
         paddingRight: '10px',
         margin: 0,
         '@xl': {
-          width: '40vw',
+          width: '50vw',
         },
         '@lg': {
-          width: '70vw',
+          width: '75vw',
         },
         '@md': {
           width: '70vw',
           paddingLeft: '0',
           paddingRight: '0',
+          paddingBottom: '60px',
         },
         '@sm': {
           width: '100vw',
           paddingLeft: '0',
           paddingRight: '0',
+          paddingBottom: '100px',
         },
       }}>
-
-
         <IntroSection />
         <ProjectGrid />
-
-
         <ConnectSection />
-
-
       </Box>
     </>
   );

@@ -23,7 +23,7 @@ const Enter = () => {
   return (
     <>
       <Head>
-        <title>__</title>
+        <title>©</title>
       </Head>
       <Box className={backdrop()}>
         <Canvas>
