@@ -1,9 +1,20 @@
 import React from 'react';
 import { keyframes, styled } from '@stitches/react';
 import { mauve, violet } from '@radix-ui/colors';
-import { HamburgerMenuIcon } from '@radix-ui/react-icons';
+import {
+  ChatBubbleIcon,
+  CubeIcon,
+  GitHubLogoIcon,
+  GlobeIcon,
+  HamburgerMenuIcon,
+  SwitchIcon,
+  TwitterLogoIcon,
+  VideoIcon,
+} from '@radix-ui/react-icons';
 import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
-import { IconButton } from '@/ui';
+import { Flex, IconButton } from '@/ui';
+import { useRouter } from 'next/router';
+import { useTheme } from 'next-themes';
 
 const slideUpAndFade = keyframes({
   '0%': { opacity: 0, transform: 'translateY(2px)' },
@@ -25,16 +36,24 @@ const slideLeftAndFade = keyframes({
   '100%': { opacity: 1, transform: 'translateX(0)' },
 });
 
+
 const contentStyles = {
-  minWidth: '100vw',
+  margin: '0',
+  justifyContent: 'center',
+  alignItems: 'center',
   backgroundColor: '$mauve2',
-  borderRadius: '16px',
-  padding: 10,
-  boxShadow: 'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
+  borderRadius: '12px',
+  border: '2px solid $mauve6',
+  minWidth: '80vw',
+  paddingLeft: '15px',
+  paddingRight: '15px',
+  paddingTop: '20px',
+  paddingBottom: '50px',
+  boxShadow: 'hsl(206 22% 7% / 35%) 0px 0px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
 
 
   '@media (prefers-reduced-motion: no-preference)': {
-    animationDuration: '400ms',
+    animationDuration: '900ms',
     animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
     willChange: 'transform, opacity',
     '&[data-state="open"]': {
@@ -45,6 +64,36 @@ const contentStyles = {
     },
   },
 };
+
+
+/**
+ * -- styled(); --
+ */
+const MenuBottomBar = styled('div', {
+  position: 'absolute',
+  bottom: '0',
+  left: '0',
+  right: '0',
+  height: '32px',
+  backgroundColor: 'transparent',
+  borderTop: '1px solid $mauve3',
+
+  padding: '0px',
+  margin: 'auto',
+  display: 'flex',
+  justifyContent: 'center',
+});
+
+
+const DropMenuFooterText = styled('p', {
+  fontFamily: '$pragmaticaExtended',
+  fontWeight: '400',
+  fontSize: '10px',
+  letterSpacing: '0.02rem',
+  color: '$mauve8',
+  lineHeight: 'normal',
+  textAlign: 'center',
+});
 
 const StyledContent = styled(DropdownMenuPrimitive.Content, { ...contentStyles });
 
@@ -76,18 +125,24 @@ function SubContent(props) {
 
 const itemStyles = {
   all: 'unset',
-  fontSize: '18px',
+  fontSize: '14px',
   fontFamily: '$chGrotesk',
-  lineHeight: 'normal',
-  color: '$chvn4',
-  borderRadius: '8px',
+  fontWeight: '500',
+  letterSpacing: 'normal',
+  lineHeight: '28px',
+  color: '$mauve9',
+  borderRadius: '6px',
   display: 'flex',
   alignItems: 'center',
-  height: 35,
-  padding: '0 14px',
+  height: 28,
+  padding: '0px 8px 0px 8px',
   position: 'relative',
-  paddingLeft: '14px',
   userSelect: 'none',
+  width: 'auto',
+
+  willChange: 'background, color',
+  transition: 'all 150ms ease',
+  transitionProperty: 'none',
 
   '&[data-disabled]': {
     color: mauve.mauve8,
@@ -98,6 +153,8 @@ const itemStyles = {
     backgroundColor: '$chvn3',
     color: violet.violet1,
   },
+
+
 };
 
 const StyledItem = styled(DropdownMenuPrimitive.Item, { ...itemStyles });
@@ -112,8 +169,9 @@ const StyledSubTrigger = styled(DropdownMenuPrimitive.SubTrigger, {
 });
 
 const StyledLabel = styled(DropdownMenuPrimitive.Label, {
-  paddingLeft: '16px',
-  fontSize: 12,
+  fontFamily: '$pragmaticaExtended',
+  fontSize: '11px',
+  paddingLeft: '8px',
   lineHeight: '25px',
   color: '$tartOrange',
 });
@@ -151,24 +209,210 @@ export const DropdownMenuSubContent = SubContent;
 // Your app...
 const Box = styled('div', {});
 
-/*
-const RightSlot = styled('div', {
-  marginLeft: 'auto',
-  paddingLeft: 20,
-  color: mauve.mauve11,
-  '[data-highlighted] > &': { color: 'white' },
-  '[data-disabled] &': { color: mauve.mauve8 },
-});
 
+/**
+ * MOBILE ONLY
+ * DropMenu.Blog.Item
  */
-
-
-export const DropMenu = () => {
+const MobileBlog = () => {
+  const router = useRouter();
 
   return (
-    <Box>
-      <DropdownMenu>
+    <DropdownMenuItem onSelect={() => router.push('/blog')}>
+      <Flex css={{
+        boxSizing: 'border-box',
+        display: 'inline-flex',
+        direction: 'row',
+        // padding: 0,
+        margin: 'auto',
+        width: '100%',
+        verticalAlign: 'middle',
+      }}>
+        <Box css={{ paddingTop: '6.5px', paddingLeft: 0, paddingRight: 5, lineHeight: 'normal' }}>
+          <ChatBubbleIcon />
+        </Box>
+        <span>blog</span>
+      </Flex>
+    </DropdownMenuItem>
+  );
+};
 
+
+/**
+ * MOBILE ONLY
+ * DropMenu.Projects.Item
+ */
+const MobileProjects = () => {
+  const router = useRouter();
+
+  return (
+    <DropdownMenuItem onSelect={() => router.push('/projects')}>
+      <Flex css={{
+        boxSizing: 'border-box',
+        display: 'inline-flex',
+        direction: 'row',
+        margin: 'auto',
+        width: '100%',
+        verticalAlign: 'middle',
+      }}>
+        <Box css={{ paddingTop: '6.5px', paddingLeft: 0, paddingRight: 5, lineHeight: 'normal' }}>
+          <CubeIcon />
+        </Box>
+        <span>projects</span>
+      </Flex>
+    </DropdownMenuItem>
+  );
+};
+
+
+/**
+ * MOBILE ONLY
+ * DropMenu.Film.Item
+ */
+const MobileFilm = () => {
+  const router = useRouter();
+
+  return (
+    <DropdownMenuItem onSelect={() => router.push('/film')}>
+      <Flex css={{
+        boxSizing: 'border-box',
+        display: 'inline-flex',
+        direction: 'row',
+        margin: 'auto',
+        width: '100%',
+        verticalAlign: 'middle',
+      }}>
+        <Box css={{ paddingTop: '6.5px', paddingLeft: 0, paddingRight: 5, lineHeight: 'normal' }}>
+          <VideoIcon />
+        </Box>
+        <span>film</span>
+      </Flex>
+    </DropdownMenuItem>
+  );
+};
+
+/**
+ * MOBILE ONLY
+ * DropMenu.GitHub.Item
+ */
+const MobileGithub = () => {
+  const router = useRouter();
+
+  return (
+    <DropdownMenuItem onSelect={() => router.push('https://github.com/chvndler')}>
+      <Flex css={{
+        boxSizing: 'border-box',
+        display: 'inline-flex',
+        direction: 'row',
+        margin: 'auto',
+        width: '100%',
+        verticalAlign: 'middle',
+      }}>
+        <Box css={{ paddingTop: '6.5px', paddingLeft: 0, paddingRight: 5, lineHeight: 'normal' }}>
+          <GitHubLogoIcon />
+        </Box>
+        <span>github</span>
+      </Flex>
+    </DropdownMenuItem>
+  );
+};
+
+
+/**
+ * MOBILE ONLY
+ * DropMenu.Twitter.Item
+ */
+const MobileTwitter = () => {
+  const router = useRouter();
+
+  return (
+    <DropdownMenuItem onSelect={() => router.push('https://twitter.com/chv_ndler')}>
+      <Flex css={{
+        boxSizing: 'border-box',
+        display: 'inline-flex',
+        direction: 'row',
+        margin: 'auto',
+        width: '100%',
+        verticalAlign: 'middle',
+      }}>
+        <Box css={{ paddingTop: '6.5px', paddingLeft: 0, paddingRight: 5, lineHeight: 'normal' }}>
+          <TwitterLogoIcon />
+        </Box>
+        <span>twitter</span>
+      </Flex>
+    </DropdownMenuItem>
+  );
+};
+
+
+/**
+ * MOBILE ONLY
+ * DropMenu.SystemAppearance.Item
+ */
+const MobileSystemAppearanceToggle = () => {
+  const { theme, setTheme } = useTheme();
+
+  return (
+    <DropdownMenuItem onSelect={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}>
+      <Flex css={{
+        boxSizing: 'border-box',
+        display: 'inline-flex',
+        direction: 'row',
+        margin: 'auto',
+        width: '100%',
+        verticalAlign: 'middle',
+      }}>
+        <Box css={{ paddingTop: '6.5px', paddingLeft: 0, paddingRight: 5, lineHeight: 'normal' }}>
+          <SwitchIcon />
+        </Box>
+        <span>toggle system appearance</span>
+      </Flex>
+    </DropdownMenuItem>
+  );
+};
+
+
+/**
+ * MOBILE ONLY
+ * DropMenu.Index.Item
+ */
+const MobileIndex = () => {
+  const router = useRouter();
+
+  return (
+    <DropdownMenuItem onSelect={() => router.push('/')}>
+      <Flex css={{
+        boxSizing: 'border-box',
+        display: 'inline-flex',
+        direction: 'row',
+        margin: 'auto',
+        width: '100%',
+        verticalAlign: 'middle',
+      }}>
+        <Box css={{ paddingTop: '6.5px', paddingLeft: 0, paddingRight: 5, lineHeight: 'normal' }}>
+          <GlobeIcon />
+        </Box>
+        <span>index</span>
+      </Flex>
+    </DropdownMenuItem>
+  );
+};
+
+
+/**
+ *
+ * ...Export app...
+ * ...DROPMENU ©2022...
+ *
+ * ...Created by @chvndler
+ *
+ */
+
+export const DropMenu = () => {
+  return (
+    <>
+
+      <DropdownMenu>
 
         <DropdownMenuTrigger asChild>
           <IconButton aria-label='Customise options'>
@@ -176,37 +420,23 @@ export const DropMenu = () => {
           </IconButton>
         </DropdownMenuTrigger>
 
-
-        <DropdownMenuContent sideOffset={5}>
+        <DropdownMenuContent sideOffset={40} data-align-center>
           <DropdownMenuLabel>index</DropdownMenuLabel>
-          <DropdownMenuItem>
-            blog
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            journal
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            projects
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            film
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            twitter
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            github
-          </DropdownMenuItem>
-
-
+          <MobileBlog />
+          <MobileProjects />
+          <MobileFilm />
+          <MobileGithub />
+          <MobileTwitter />
           <DropdownMenuSeparator />
-
           <DropdownMenuLabel>settings</DropdownMenuLabel>
-          <DropdownMenuItem>
-            system appearance
-          </DropdownMenuItem>
+          <MobileSystemAppearanceToggle />
+          <MobileIndex />
+
+          <MenuBottomBar>
+            <DropMenuFooterText>chvndler.ch</DropMenuFooterText>
+          </MenuBottomBar>
         </DropdownMenuContent>
       </DropdownMenu>
-    </Box>
+    </>
   );
 };

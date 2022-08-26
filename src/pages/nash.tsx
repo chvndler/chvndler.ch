@@ -196,7 +196,6 @@ const Nash = () => {
               paddingBottom: '10px',
             }}
           >
-
             <MnmlLight width='160' />
           </Box>
         </Section>
