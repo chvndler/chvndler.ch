@@ -43,7 +43,6 @@ import { createStitches } from '@stitches/react';
 import { mixins } from 'stitches-mixins';
 
 export type { VariantProps } from '@stitches/react';
-
 export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes, config } = createStitches({
   theme: {
     colors: {
