@@ -6,6 +6,7 @@ import { CmndK } from '@/components/CmndK';
 import React from 'react';
 
 const backdrop = css({
+  zIndex: 0,
   position: 'fixed',
   top: '0',
   left: '0',
@@ -62,7 +63,6 @@ const Enter = () => {
             </Text>
           </Container>
         </Canvas>
-
         <CmndK />
       </Box>
     </>

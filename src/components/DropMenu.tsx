@@ -421,9 +421,7 @@ const MobileIndex = () => {
 export const DropMenu = () => {
   return (
     <>
-
       <DropdownMenu>
-
         <DropdownMenuTrigger asChild>
           <IconButton aria-label='Customise options'>
             <CornersIcon />
