@@ -1,4 +1,3 @@
-import { NavBar } from '@/components/NavBar';
 import { ColorBar } from '@/components/ColorBar';
 import { Project } from '@/components/projects/Project';
 import { Box, Container, Section } from '@/ui';
@@ -11,7 +10,6 @@ const Projects = () => {
       <Head>
         <title>/projects</title>
       </Head>
-      <NavBar />
       <ColorBar />
 
       <Box>

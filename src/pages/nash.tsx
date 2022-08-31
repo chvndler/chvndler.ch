@@ -1,6 +1,5 @@
 import { Box, Container, Paragraph, Section, Text } from '@/ui';
 import { ColorBar } from '@/components/ColorBar';
-import { NavBar } from '@/components/NavBar';
 import { MnmlLight } from '@/components/logo/mnml-light';
 
 
@@ -8,7 +7,6 @@ const Nash = () => {
   return (
     <>
       <Box css={{ backgroundColor: '$mauve1' }}>
-        <NavBar />
         <ColorBar />
         <Section size='3'>
           <Container size='2' css={{ paddingTop: '40px', paddingBottom: '40px' }}>

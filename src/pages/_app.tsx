@@ -11,6 +11,7 @@ import { ThemeProvider } from 'next-themes';
 import { AppProps } from 'next/app';
 import React from 'react';
 import Head from 'next/head';
+import { NavBar } from '@/components/NavBar';
 
 
 const globalStyles = globalCss(res, {
@@ -58,6 +59,7 @@ const App = ({ Component, pageProps }: AppProps) => {
               flexDirection: 'column',
             })}
           >
+            <NavBar />
             <Component {...pageProps} />
           </div>
         </Box>

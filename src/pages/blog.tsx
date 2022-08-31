@@ -5,7 +5,7 @@ import BlogPost from '@/components/blog/BlogPost';
 import { InferGetStaticPropsType } from 'next';
 import { pick } from '@/lib/utils';
 import { allBlogs } from 'contentlayer/generated';
-import { Badge, Box, Section, Text, TextField } from '@/ui';
+import { Badge, Box, Container, Paragraph, Section, Text, TextField } from '@/ui';
 
 export default function Blog({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [searchValue, setSearchValue] = useState('');
@@ -18,146 +18,132 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
           <title>Blog - chvn.me/</title>
         </Head>
 
-        <Box css={{ paddingTop: '100px', paddingBottom: '80px' }}>
+        <Box css={{ paddingTop: '60px', paddingBottom: '80px' }}>
           <BlogContainer title='Blog – Chandler Chappell' description='Notes, thoughts, and ideas.'>
-            <Box css={{ paddingTop: '0px', paddingBottom: '0px' }}>
+            <Box css={{ padding: 0 }}>
               <Section
                 size='1'
                 css={{
-                  paddingBottom: '0px',
-                  '@xl': {
-                    maxWidth: '70% !important',
-                  },
-                  '@lg': {
-                    maxWidth: '70% !important',
-                  },
-                  '@md': {
-                    maxWidth: '70% !important',
-                  },
-                  '@sm': {
-                    minWidth: '100%',
-                    maxWidth: '100% !important',
-                    width: '100%',
-                  },
-                  '@xs': {
-                    minWidth: '100%',
-                    maxWidth: '100%',
-                    width: '100%',
-                  },
+                  padding: 0,
+                  width: '100%',
                 }}>
-                <Text
-                  size='2'
-                  css={{
-                    color: '$mauve12',
-                    fontFamily: '$pragmatica',
-                    fontWeight: '700',
-                    lineHeight: '1.5',
-                    paddingBottom: '18px',
-                  }}>
-                  journal
-                </Text>
+                <Container size='3'>
 
-                <Text
-                  css={{
-                    color: '$mauve10',
-                    fontFamily: '$pragmatica',
-                    fontSize: '13px',
-                    fontWeight: '500',
-                    lineHeight: '1.5',
-                    marginBottom: '20px',
-                  }}>
-                  This journal will document my thoughts, ideas, notes, and any resources that have shaped me as a
-                  designer & developer. I plan to
-                  also use this space as my own knowledge base for all things dev. My favorite posts are pinned to the
-                  top under &quot;Popular&quot;.
-                  <br />
-                  <br />© Copyright 2022. All Rights Reserved.
-                </Text>
-                <Text
-                  css={{
-                    color: '$mauve11',
-                    fontSize: '14px',
-                    fontWeight: '500',
-                    lineHeight: '1.3',
-                  }}>{`entry count: 00${posts.length}`}</Text>
 
-                <Text size='1' css={{
-                  paddingTop: '20px',
-                  fontSize: '15px',
-                  color: '$chvn7',
-                  fontWeight: '500',
-                  lineHeight: '2.2',
-                }}>
-                  Use the search bar to filter by title.
-                </Text>
+                  {/* <!-- Journal Heading --> */}
+                  <Text
+                    size='7'
+                    css={{
+                      color: '$air',
+                      fontFamily: '$pragmaticaExtended',
+                      fontWeight: '700',
+                      lineHeight: '1.5',
+                      paddingBottom: '18px',
+                    }}>
+                    journal
+                  </Text>
+
+                  <Paragraph
+                    size='1'
+                    css={{
+                      color: '$mauve12',
+                      fontFamily: '$chGrotesk',
+                      fontSize: '15px',
+                      fontWeight: '500',
+                      lineHeight: '1.5',
+                      marginBottom: '20px',
+                    }}>
+                    This journal will document my thoughts, ideas, notes, and any resources that have shaped me as a
+                    developer. I plan to also use this space as my own knowledge base for all things dev.
+                    My favorite posts are pinned to the top under &quot;Popular&quot;.
+                  </Paragraph>
+
+
+                  <Text
+                    css={{
+                      color: '$chvn9',
+                      fontFamily: '$pragmaticaExtended',
+                      fontSize: '10px',
+                      fontWeight: '600',
+                      lineHeight: '1.3',
+                    }}>
+                    {`ENTRIES: 0${posts.length}`}
+                  </Text>
+                </Container>
               </Section>
             </Box>
 
-            <Section size='1'>
-              <Box css={{ position: 'relative' }}>
-                <TextField
-                  size='3'
-                  aria-label='Search articles'
-                  type='text'
-                  onChange={e => setSearchValue(e.target.value)}
-                  placeholder='Search posts'
-                />
-              </Box>
+            <Section size='1' css={{ padding: 0 }}>
+              <Container size='3' css={{ paddingTop: '10px', paddingBottom: '10px' }}>
+                <Box css={{ position: 'relative' }}>
+                  <TextField
+                    size='2'
+                    aria-label='Search articles'
+                    type='text'
+                    onChange={e => setSearchValue(e.target.value)}
+                    placeholder='Use the search bar to filter by title.'
+                  />
+                </Box>
+              </Container>
             </Section>
 
             {!searchValue && (
               <>
-                <Section size='2'>
-                  <Badge
-                    size='2'
-                    css={{ border: '1px solid $chvn4', borderRadius: '8px', py: '14px', px: '10px' }}>
-                    <Text
+                <Section size='1' css={{ padding: 0 }}>
+                  <Container size='3' css={{ paddingTop: '10px', paddingBottom: '10px' }}>
+                    <Badge
                       size='2'
-                      css={{
-                        padding: '4px',
-                        fontFamily: '$inter',
-                        color: '$chvn4',
-                        fontSize: '13px',
-                        fontWeight: '800',
-                        letterSpacing: '-0.02rem',
-                        lineHeight: 'normal',
-                      }}>
-                      Popular Posts
-                    </Text>
-                  </Badge>
-                  <BlogPost
-                    title='How I Got Into Code.'
-                    summary='Learn more about who I am, and what led me down the path of all things tech.'
-                    slug='about'
-                  />
+                      css={{ border: '1px solid $chvn4', borderRadius: '8px', py: '14px', px: '10px' }}>
+                      <Text
+                        size='2'
+                        css={{
+                          padding: '4px',
+                          fontFamily: '$inter',
+                          color: '$chvn4',
+                          fontSize: '13px',
+                          fontWeight: '800',
+                          letterSpacing: '-0.02rem',
+                          lineHeight: 'normal',
+                        }}>
+                        Popular Posts
+                      </Text>
+                    </Badge>
+                    <BlogPost
+                      title='How I Got Into Code.'
+                      summary='Learn more about who I am, and what led me down the path of all things tech.'
+                      slug='about'
+                    />
+                  </Container>
                 </Section>
               </>
             )}
 
-            <Section size='1'>
-              <Badge size='2' css={{ border: '1px solid $chvn4', borderRadius: '8px', py: '14px', px: '10px' }}>
-                <Text
-                  size='2'
-                  css={{
-                    padding: '4px',
-                    fontFamily: '$inter',
-                    color: '$chvn4',
-                    fontSize: '13px',
-                    fontWeight: '800',
-                    letterSpacing: '-0.02rem',
-                    lineHeight: 'normal',
-                  }}>
-                  All Posts
-                </Text>
-              </Badge>
-              {!filteredBlogPosts.length && (
-                <Text size='2' css={{ lineHeight: '1.2' }}>
-                  No posts found.
-                </Text>
-              )}
-              {filteredBlogPosts.map(post => (
-                <BlogPost key={post.title} {...post} />
-              ))}
+            <Section size='1' css={{ padding: 0 }}>
+              <Container size='3' css={{ paddingTop: '10px', paddingBottom: '10px' }}>
+                <Badge size='2' css={{ border: '1px solid $chvn4', borderRadius: '8px', py: '14px', px: '10px' }}>
+                  <Text
+                    size='2'
+                    css={{
+                      padding: '4px',
+                      fontFamily: '$inter',
+                      color: '$chvn4',
+                      fontSize: '13px',
+                      fontWeight: '800',
+                      letterSpacing: '-0.02rem',
+                      lineHeight: 'normal',
+                    }}>
+                    All Posts
+                  </Text>
+                </Badge>
+                {!filteredBlogPosts.length && (
+                  <Text size='2' css={{ lineHeight: '1.2' }}>
+                    No posts found.
+                  </Text>
+                )}
+                {filteredBlogPosts.map(post => (
+                  <BlogPost key={post.title} {...post} />
+                ))}
+              </Container>
             </Section>
           </BlogContainer>
         </Box>

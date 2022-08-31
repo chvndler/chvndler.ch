@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Box, Flex } from '@/ui';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { MnmlLight } from '@/components/logo/mnml-light';
@@ -30,20 +31,23 @@ export const NavBar = () => {
       }}>
 
 
-      <Box
-        css={{
-          paddingTop: '2px',
-          lineHeight: '45px',
-          width: 'auto',
-          margin: '0',
-          display: 'inline-flex',
-          textDecoration: 'none',
-          '&:focus': {
-            boxShadow: 'none',
-          },
-        }}>
-        <MnmlLight width='150' />
-      </Box>
+      <Link href='/' passHref>
+        <Box
+          as='a'
+          css={{
+            paddingTop: '2px',
+            lineHeight: '45px',
+            width: 'auto',
+            margin: '0',
+            display: 'inline-flex',
+            textDecoration: 'none',
+            '&:focus': {
+              boxShadow: 'none',
+            },
+          }}>
+          <MnmlLight width='150' />
+        </Box>
+      </Link>
 
 
       <Box

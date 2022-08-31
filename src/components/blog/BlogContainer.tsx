@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import { styled } from '@/lib/stitches.config';
+import { Section } from '@/ui';
 
 // Container..
 const BlogWidthContainer = styled('div', {
@@ -14,7 +15,7 @@ const BlogWidthContainer = styled('div', {
   // Custom
   ml: 'auto',
   mr: 'auto',
-  px: '$5',
+  px: '$1',
   mt: '0',
 });
 
@@ -36,7 +37,9 @@ export default function BlogContainer(props) {
         <meta property='og:type' content={meta.type} />
       </Head>
       <main>
-        <BlogWidthContainer>{children}</BlogWidthContainer>
+        <Section size='1' css={{ padding: 0 }}>
+          <BlogWidthContainer>{children}</BlogWidthContainer>
+        </Section>
       </main>
     </>
   );
