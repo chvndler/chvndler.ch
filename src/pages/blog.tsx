@@ -6,6 +6,7 @@ import { InferGetStaticPropsType } from 'next';
 import { pick } from '@/lib/utils';
 import { allBlogs } from 'contentlayer/generated';
 import { Badge, Box, Container, Paragraph, Section, Text, TextField } from '@/ui';
+import { NavBar } from '@/components/NavBar';
 
 export default function Blog({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [searchValue, setSearchValue] = useState('');
@@ -14,6 +15,7 @@ export default function Blog({ posts }: InferGetStaticPropsType<typeof getStatic
   return (
     <>
       <Box css={{}}>
+        <NavBar />
         <Head>
           <title>Blog - chvn.me/</title>
         </Head>
