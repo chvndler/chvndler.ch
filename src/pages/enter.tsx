@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import { Box, Canvas, Container, Text } from '@/ui';
+import { Box, Canvas, Container } from '@/ui';
 import { ChvndlerCh } from '@/components/logo/ChvndlerCh';
 import { css } from '@/lib/stitches.config';
 import { CmndK } from '@/components/CmndK';
 import React from 'react';
+import { ColorBar } from '@/components/ColorBar';
 
 const backdrop = css({
   zIndex: 0,
@@ -23,46 +24,38 @@ const backdrop = css({
 const Enter = () => {
   return (
     <>
-      <Head>
-        <title>©</title>
-      </Head>
-      <Box className={backdrop()}>
-        <Canvas>
-          <Container
-            size='2'
-            css={{
-              margin: 'auto',
-              justifyContent: 'center',
-              display: 'flex',
-              flexDirection: 'column',
-            }}
-          >
-            <Box
+      <Box>
+        <Head>
+          <title>©</title>
+        </Head>
+
+        <ColorBar />
+        <Box className={backdrop()}>
+          <Canvas>
+            <Container
+              size='2'
               css={{
-                width: '100%',
-                color: '$mauve9',
                 margin: 'auto',
-                display: 'flex',
                 justifyContent: 'center',
-                paddingBottom: '10px',
+                display: 'flex',
+                flexDirection: 'column',
               }}
             >
-              <ChvndlerCh width='300' />
-            </Box>
-            <Text
-              css={{
-                textAlign: 'center',
-                fontFamily: '$pragmaticaExtended',
-                fontSize: '14px',
-                fontWeight: '500',
-                color: '$mauve11',
-                paddingBottom: '10px',
-              }}
-            >
-              tap [ ⌘k ] to navigate.
-            </Text>
-          </Container>
-        </Canvas>
+              <Box
+                css={{
+                  width: '100%',
+                  color: '$mauve9',
+                  margin: 'auto',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  paddingBottom: '10px',
+                }}
+              >
+                <ChvndlerCh width='300' />
+              </Box>
+            </Container>
+          </Canvas>
+        </Box>
         <CmndK />
       </Box>
     </>
