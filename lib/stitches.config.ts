@@ -75,7 +75,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       overlay: 'hsl(206 22% 7% / 35%)',
       midnight: '#152023',
       tartOrange: '#ff3333',
-      voltYellow: '#e7fe26',
+      voltYellow: '#ff206e',
       sand: '#dedac7',
       opal: '#a7bfc2',
       mist: '#eeeeee',
@@ -409,6 +409,8 @@ export const darkTheme = createTheme('darkTheme', {
     chvn7: '#f7f0f0',
     chvn8: '#5e7ce2',
     chvn9: '#87b37a',
+
+    voltYellow: '#e7fe26',
   },
   utils: {},
 });
