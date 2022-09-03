@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "chvndler.ch",
   "packageManager": "yarn@3.2.2",
   "version": "1.0.0",
