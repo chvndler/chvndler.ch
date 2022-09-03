@@ -9,10 +9,8 @@ const Nash = () => {
     <>
       <Box css={{ backgroundColor: '$mauve1' }}>
         <ColorBar />
-
         <MenuDrop />
         <Section size='3'>
-
           <Box
             css={{
               width: '100%',

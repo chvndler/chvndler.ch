@@ -26,9 +26,8 @@ const Enter = () => {
     <>
       <Box>
         <Head>
-          <title>©</title>
+          <title>Chandler Ch.</title>
         </Head>
-
         <ColorBar />
         <Box className={backdrop()}>
           <Canvas>
@@ -53,6 +52,8 @@ const Enter = () => {
               >
                 <ChvndlerCh width='300' />
               </Box>
+
+              
             </Container>
           </Canvas>
         </Box>
