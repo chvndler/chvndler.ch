@@ -1,7 +1,7 @@
 import { styled } from '@/lib/stitches.config';
 
+
 export const Text = styled('span', {
-  // Reset
   lineHeight: '1',
   margin: '0',
   fontWeight: 400,

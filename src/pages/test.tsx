@@ -1,16 +1,25 @@
-import { Box, Section } from '@/ui';
+import { Box, Container, Section } from '@/ui';
+import { Badge } from 'atelier.ds';
 import { ColorBar } from '@/components/ColorBar';
 import { MnmlLight } from '@/components/logo/mnml-light';
-import { MenuDrop } from '@/components/MenuDrop';
 
 
-const Nash = () => {
+const Test = () => {
   return (
     <>
       <Box css={{ backgroundColor: '$mauve1' }}>
+
         <ColorBar />
-        <MenuDrop />
+
         <Section size='3'>
+
+          <Container size='2' css={{ paddingRight: '0', paddingTop: '15px', paddingBottom: '15px' }}>
+            <Badge size='2' variant='lime'>
+              atelier badge
+            </Badge>
+          </Container>
+
+
           <Box
             css={{
               width: '100%',
@@ -30,4 +39,4 @@ const Nash = () => {
 };
 
 
-export default Nash;
+export default Test;
