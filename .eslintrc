@@ -16,6 +16,7 @@
     "react/jsx-props-no-spreading": "off",
     "react/no-unused-prop-types": "off",
     "react/require-default-props": "off",
+    "react/no-unknown-property": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
