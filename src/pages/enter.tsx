@@ -20,7 +20,6 @@ const backdrop = css({
   margin: '0',
 });
 
-
 const Enter = () => {
   return (
     <>
@@ -52,8 +51,6 @@ const Enter = () => {
               >
                 <ChvndlerCh width='300' />
               </Box>
-
-              
             </Container>
           </Canvas>
         </Box>
