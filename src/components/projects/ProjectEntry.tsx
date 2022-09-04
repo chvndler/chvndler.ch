@@ -14,14 +14,16 @@ const Title = styled('div', {
   marginBottom: '10px',
   lineHeight: '0.6',
   letterSpacing: '-0.02rem',
-  textTransform: 'uppercase',
+  '&:hover': {
+    color: '$chvn2',
+  },
 });
 
 const Description = styled('div', {
   fontFamily: '$chGrotesk',
-  fontWeight: '500',
+  fontWeight: '400',
   fontSize: '13px',
-  lineHeight: '0.8',
+  lineHeight: '16px',
   color: '$mauve9',
 });
 
@@ -30,21 +32,27 @@ const EntryLink = styled('a', {
   display: 'block',
   textDecoration: 'none',
   outline: 'none',
+  '&:hover': {
+    color: '$chvn4',
+  },
 });
 
 const Card = styled('div', {
   transition: 'all .6s ease-in-out',
   display: 'flex',
   backgroundColor: 'transparent',
-  border: 'solid 1px $mauve5',
+  border: 'solid 1px $tartOrange',
   position: 'relative',
-  borderRadius: '12px',
+  borderRadius: 12,
   marginTop: '0',
   marginBottom: '0',
   padding: '18px',
   alignItems: 'left',
   webkitScrollbar: 'none',
   height: '120px',
+  '&:hover': {
+    color: '$chvn4',
+  },
 });
 
 export const ProjectEntry = ({ title, description, href, key }) => {

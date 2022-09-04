@@ -1,10 +1,11 @@
 import Head from 'next/head';
-import { Box, Canvas, Container } from '@/ui';
+import { Box, Canvas, Container, Grid, Text } from '@/ui';
 import { ChvndlerCh } from '@/components/logo/ChvndlerCh';
 import { css } from '@/lib/stitches.config';
-import { CmndK } from '@/components/CmndK';
 import React from 'react';
 import { ColorBar } from '@/components/ColorBar';
+import { EnterFooter } from '@/components/EnterFooter';
+import Link from 'next/link';
 
 const backdrop = css({
   zIndex: 0,
@@ -42,7 +43,7 @@ const Enter = () => {
               <Box
                 css={{
                   width: '100%',
-                  color: '$mauve9',
+                  color: '$volt',
                   margin: 'auto',
                   display: 'flex',
                   justifyContent: 'center',
@@ -51,10 +52,81 @@ const Enter = () => {
               >
                 <ChvndlerCh width='300' />
               </Box>
+
+              <Grid
+                css={{
+                  gap: 6,
+                  gridTemplateColumns: '1fr 1fr 1fr',
+                  maxWidth: '300px',
+                  margin: 'auto',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  paddingTop: '15px',
+                  '@md': {
+                    gridTemplateColumns: '1fr 1fr 1fr',
+                  },
+                  '@sm': {
+                    gridTemplateColumns: '1fr',
+                  },
+                }}>
+                <Link href='/about' passHref>
+                  <Text
+                    as='a'
+                    css={{
+                      textAlign: 'center',
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      paddingTop: '4px',
+                      paddingBottom: '4px',
+                      color: '$mauve12',
+                      fontFamily: '$pragmaticaExtended',
+                      fontSize: '14px',
+                    }}
+                  >
+                    about
+                  </Text>
+                </Link>
+
+                <Link href='/projects' passHref>
+                  <Text
+                    as='a'
+                    css={{
+                      textAlign: 'center',
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      paddingTop: '4px',
+                      paddingBottom: '4px',
+                      color: '$mauve12',
+                      fontFamily: '$pragmaticaExtended',
+                      fontSize: '14px',
+                    }}
+                  >
+                    projects
+                  </Text>
+                </Link>
+
+                <Link href='/blog' passHref>
+                  <Text
+                    as='a'
+                    css={{
+                      textAlign: 'center',
+                      paddingLeft: 0,
+                      paddingRight: 0,
+                      paddingTop: '4px',
+                      paddingBottom: '4px',
+                      color: '$mauve12',
+                      fontFamily: '$pragmaticaExtended',
+                      fontSize: '14px',
+                    }}
+                  >
+                    journal
+                  </Text>
+                </Link>
+              </Grid>
             </Container>
           </Canvas>
         </Box>
-        <CmndK />
+        <EnterFooter />
       </Box>
     </>
   );

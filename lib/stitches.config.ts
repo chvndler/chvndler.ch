@@ -86,10 +86,9 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       air: '#477194',
       sky2: '#28c2ff',
       maximumBlue: '#5e7ce2',
-      volt: '#7cff5c',
+      volt: '#5e7ce2',
       crayola: '#ED254E',
       pinky: '#ff206e',
-      blueblue: '#0151f5',
       pinkyA: 'hsla(339, 100%, 56%, 0.6)',
 
       // chvn...
@@ -411,6 +410,7 @@ export const darkTheme = createTheme('darkTheme', {
     chvn9: '#87b37a',
 
     voltYellow: '#e7fe26',
+    volt: '#7cff5c',
   },
   utils: {},
 });

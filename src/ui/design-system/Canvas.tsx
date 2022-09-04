@@ -14,7 +14,7 @@ export const Canvas = styled('div', {
   padding: '0',
 
   '@sm': {
-    top: '45%',
+    top: '50%',
     left: '50%',
   },
 });

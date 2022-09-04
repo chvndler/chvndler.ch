@@ -11,3 +11,4 @@ export * from './design-system/Space';
 export * from './design-system/Text';
 export * from './design-system/TextField';
 export * from './design-system/Paragraph';
+export * from './design-system/AppBar';

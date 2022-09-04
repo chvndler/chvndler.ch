@@ -12,12 +12,11 @@ export function ThemeToggle() {
       display: 'flex',
       zIndex: '999',
       position: 'relative',
-      width: 'auto',
       height: 'auto',
-      margin: 'auto',
+      margin: 0,
       alignItems: 'right',
       textAlign: 'right',
-      justifyContent: 'flex-end'
+      justifyContent: 'flex-end',
     }}>
       <AtelierSwitch
         onCheckedChange={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}

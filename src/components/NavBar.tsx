@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Box, Flex } from '@/ui';
-import { ThemeToggle } from '@/components/ThemeToggle';
+import { ThemeButton } from '@/components/ThemeButton';
 import { MnmlLight } from '@/components/logo/mnml-light';
 
 
@@ -52,10 +52,10 @@ export const NavBar = () => {
 
       <Box
         css={{
-          paddingTop: '6px',
+          paddingTop: '12px',
           lineHeight: '45px',
           width: 'auto',
-          margin: '0',
+          margin: 0,
           display: 'inline-flex',
           justifyContent: 'flex-end',
           alignItems: 'right',
@@ -64,7 +64,7 @@ export const NavBar = () => {
             boxShadow: 'none',
           },
         }}>
-        <ThemeToggle />
+        <ThemeButton />
       </Box>
     </Flex>
   );

@@ -1,4 +1,5 @@
 import { ColorBar } from '@/components/ColorBar';
+import { NavBar } from '@/components/NavBar';
 import { Project } from '@/components/projects/Project';
 import { Box, Container, Section } from '@/ui';
 import Head from 'next/head';
@@ -10,8 +11,8 @@ const Projects = () => {
       <Head>
         <title>/projects</title>
       </Head>
+      <NavBar />
       <ColorBar />
-
       <Box>
         <Section size={2} css={{ paddingTop: '80px' }}>
           <Container size={3} css={{}}>
