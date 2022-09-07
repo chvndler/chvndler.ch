@@ -2514,6 +2514,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axios@npm:^0.21.2":
+  version: 0.21.4
+  resolution: "axios@npm:0.21.4"
+  dependencies:
+    follow-redirects: ^1.14.0
+  checksum: 44245f24ac971e7458f3120c92f9d66d1fc695e8b97019139de5b0cc65d9b8104647db01e5f46917728edfc0cfd88eb30fc4c55e6053eef4ace76768ce95ff3c
+  languageName: node
+  linkType: hard
+
 "axobject-query@npm:^2.2.0":
   version: 2.2.0
   resolution: "axobject-query@npm:2.2.0"
@@ -2783,6 +2792,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.32.0
     are.na: ^0.1.5
     atelier.ds: ^0.0.2
+    axios: ^0.21.2
     cmdk: ^0.1.18
     contentlayer: ^0.2.7
     date-fns: ^2.29.1
@@ -2790,6 +2800,7 @@ __metadata:
     eslint-config-next: ^12.2.5
     eslint-config-prettier: ^8.5.0
     eslint-plugin-prettier: ^4.2.1
+    follow-redirects: ^1.14.8
     lodash.merge: ^4.6.2
     moment: ^2.29.4
     next: ^12.2.5
@@ -4346,6 +4357,16 @@ __metadata:
   dependencies:
     debug: =3.1.0
   checksum: 0edc4b74e37e7b88ee716188a8f2a790238877c1d954f00c7b78d560f3bef40061c130536d13bee8e47b4e8e71edf1175a2de2729e51ab8206e4646b2370e484
+  languageName: node
+  linkType: hard
+
+"follow-redirects@npm:^1.14.0, follow-redirects@npm:^1.14.8":
+  version: 1.15.1
+  resolution: "follow-redirects@npm:1.15.1"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: 6aa4e3e3cdfa3b9314801a1cd192ba756a53479d9d8cca65bf4db3a3e8834e62139245cd2f9566147c8dfe2efff1700d3e6aefd103de4004a7b99985e71dd533
   languageName: node
   linkType: hard
 
