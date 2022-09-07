@@ -17,6 +17,10 @@
     "start": "next start",
     "stitches": "yarn add @stitches/react stitches-mixins @radix-ui/colors @radix-ui/react-icons"
   },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
   "dependencies": {
     "@headlessui/react": "^1.6.6",
     "@radix-ui/colors": "^0.1.8",
@@ -27,7 +31,6 @@
     "@radix-ui/react-switch": "^1.0.0",
     "@stitches/react": "^1.2.8",
     "are.na": "^0.1.5",
-    "atelier.ds": "^0.0.2",
     "cmdk": "^0.1.18",
     "contentlayer": "^0.2.7",
     "date-fns": "^2.29.1",
@@ -57,6 +60,7 @@
     "follow-redirects": "^1.14.8",
     "lodash.merge": "^4.6.2",
     "prettier": "^2.7.1",
+    "prop-types": "^15.8.1",
     "rehype": "^12.0.1",
     "rehype-autolink-headings": "^6.1.1",
     "rehype-code-titles": "^1.1.0",
