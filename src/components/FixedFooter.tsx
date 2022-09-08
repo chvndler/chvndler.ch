@@ -6,6 +6,8 @@ export function FixedFooter() {
     <>
       <Box
         css={{
+          backgroundColor: '$mauve6',
+          height: '64px',
           position: 'fixed',
           bottom: '0',
           right: '0',
@@ -19,7 +21,13 @@ export function FixedFooter() {
         }}
       >
         <Text
-          css={{ fontFamily: '$miu', fontSize: '10px', color: '$mauve9', letterSpacing: '0.05rem' }}>CHVNDLER.CH</Text>
+          css={{
+            fontFamily: '$miu',
+            fontSize: '10px',
+            color: '$mauve9',
+            letterSpacing: '0.05rem',
+            lineHeight: '22px',
+          }}>CHVNDLER.CH</Text>
       </Box>
     </>
   );

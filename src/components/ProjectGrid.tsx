@@ -41,7 +41,7 @@ export const ProjectGrid = () => {
               width: 'auto',
               '&:hover': { backgroundColor: '$mauve4', cursor: 'pointer' },
             }}>
-              <Link href='https://www.github.com/chvndler/chvn.me' passHref>
+              <Link href='https://www.github.com/chvndler/chvndler.ch' passHref>
                 <Text as='a' target='_blank' rel='noreferrer noopener' css={{
                   paddingLeft: '18px',
                   paddingRight: '18px',
@@ -52,7 +52,7 @@ export const ProjectGrid = () => {
                   textAlign: 'center',
                   lineHeight: '30px',
                 }}>
-                  CHVN.ME
+                  CHVNDLER.CH
                 </Text>
               </Link>
             </Box>
@@ -66,7 +66,7 @@ export const ProjectGrid = () => {
               width: 'auto',
               '&:hover': { backgroundColor: '$mauve4', cursor: 'pointer' },
             }}>
-              <Link href='https://www.github.com/AtelierDesign/rhythm.color' passHref>
+              <Link href='https://www.github.com/AtelierDesign/rhythm' passHref>
                 <Text as='a' target='_blank' rel='noreferrer noopener' css={{
                   paddingLeft: '18px',
                   paddingRight: '18px',

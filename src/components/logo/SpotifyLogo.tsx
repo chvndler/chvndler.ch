@@ -21,4 +21,5 @@ export const SpotifyLogo = React.forwardRef<SVGSVGElement, IconProps>(
     );
   });
 
+SpotifyLogo.displayName = 'spotify-logo';
 export default SpotifyLogo;

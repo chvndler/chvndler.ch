@@ -2,21 +2,25 @@ import React, { ReactNode } from 'react';
 import Head from 'next/head';
 import { NavBar } from '@/components/NavBar';
 import { styled } from '@/lib/stitches.config';
+import { ColorBar } from '@/components/ColorBar';
+import { FixedFooter } from '@/components/FixedFooter';
 
 type Props = {
   children?: ReactNode
   title?: string
 }
 
-
 const LayoutContainer = styled('div', {
   display: 'flex',
+  margin: 'auto',
+  flexDirection: 'column',
+  justifyContent: 'center',
   height: 'calc(100vh - 64px)',
   backgroundColor: '$mauve2',
+  maxWidth: '800px',
 });
 
-
-const Layout = ({ children, title = 'Chandler Chappell®' }: Props) => (
+export const Layout = ({ children, title = 'Chandler Chappell®' }: Props) => (
   <>
     <Head>
       <title>{title}</title>
@@ -24,8 +28,10 @@ const Layout = ({ children, title = 'Chandler Chappell®' }: Props) => (
       <meta name='viewport' content='initial-scale=1.0, width=device-width, user-scalable=no' />
     </Head>
     <NavBar />
+    <ColorBar />
     <LayoutContainer>
       <main>{children}</main>
     </LayoutContainer>
+    <FixedFooter />
   </>
 );

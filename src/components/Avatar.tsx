@@ -294,3 +294,5 @@ export const Avatar = React.forwardRef<React.ElementRef<typeof StyledAvatar>, Av
     );
   },
 );
+
+Avatar.displayName = 'atelier-avatar';
