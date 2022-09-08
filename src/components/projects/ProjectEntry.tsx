@@ -1,10 +1,13 @@
 import { styled } from '@/lib/stitches.config';
-// import { useInView } from 'react-intersection-observer';
-// import 'intersection-observer';
 import { Box } from '@/ui';
 import React from 'react';
 
-// const imagePrefix = `https://cdn.ady.systems/ady.images`;
+/*
+* import { useInView } from 'react-intersection-observer';
+* import 'intersection-observer';
+* const imagePrefix = `https://cdn.ady.systems/ady.images`;
+ */
+
 
 const Title = styled('div', {
   color: '$mauve10',
