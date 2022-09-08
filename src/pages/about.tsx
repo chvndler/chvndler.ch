@@ -4,7 +4,6 @@ import { Box } from '@/ui';
 import Head from 'next/head';
 import React from 'react';
 import { NavBar } from '@/components/NavBar';
-import { CmndK } from '@/components/CmndK';
 
 const About = () => {
   return (
@@ -24,7 +23,6 @@ const About = () => {
         backgroundColor: '$mauve1',
       }}>
         <IndexContent />
-        <CmndK />
       </Box>
     </>
   );

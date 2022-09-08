@@ -1,4 +1,3 @@
-// import { CmndK } from '@/components/CmndK';
 import { css, darkTheme, globalCss } from '@/lib/stitches.config';
 import '@/styles/miumiu.css';
 import '@/styles/ch-grotesk.css';
@@ -11,6 +10,7 @@ import { ThemeProvider } from 'next-themes';
 import { AppProps } from 'next/app';
 import React from 'react';
 import Head from 'next/head';
+import { CmndK } from '@/components/CmndK';
 
 
 const globalStyles = globalCss(res, {
@@ -59,6 +59,7 @@ const App = ({ Component, pageProps }: AppProps) => {
             })}
           >
             <Component {...pageProps} />
+            <CmndK />
           </div>
         </Box>
       </ThemeProvider>

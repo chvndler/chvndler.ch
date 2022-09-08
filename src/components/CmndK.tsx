@@ -8,10 +8,9 @@ import {
   CommandSeparator,
 } from '@/components/CommandMenu';
 import { styled } from '@/lib/stitches.config';
-import { Box, Flex, IconButton } from '@/ui';
+import { Box, Flex } from '@/ui';
 import {
   ChatBubbleIcon,
-  CornersIcon,
   CubeIcon,
   GitHubLogoIcon,
   SwitchIcon,
@@ -22,9 +21,6 @@ import { Command } from 'cmdk';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { useTheme } from 'next-themes';
-import { ThemeButton } from '@/components/ThemeButton';
-import { DropMenu } from '@/components/DropMenu';
-import { BottomButtons } from '@/components/BottomButtons';
 
 /**
  * -- styled(); --
@@ -263,119 +259,6 @@ export const CmndK = () => {
           </CommandBottomBar>
         </CommandDialog>
       </Command>
-
-      <BottomButtons>
-        <IconButton
-          title='⌘K'
-          onClick={() => setOpen(true)}
-          css={{
-            '@xl': {
-              display: 'inline-flex',
-            },
-            '@lg': {
-              display: 'inline-flex',
-            },
-            '@md': {
-              display: 'inline-flex',
-            },
-            '@sm': {
-              display: 'none',
-            },
-            '@xs': {
-              display: 'none',
-            },
-          }}>
-          <CornersIcon />
-        </IconButton>
-
-        <Box
-          css={{
-            '@xl': {
-              display: 'none',
-            },
-            '@lg': {
-              display: 'none',
-            },
-            '@md': {
-              display: 'none',
-            },
-            '@sm': {
-              display: 'block',
-            },
-            '@xs': {
-              display: 'block',
-            },
-          }}>
-          <DropMenu />
-        </Box>
-        <ThemeButton />
-      </BottomButtons>
-
-
-      {/*
-
-      <Box css={{
-        position: 'fixed',
-        bottom: 0,
-        left: 0,
-        right: 0,
-        paddingBottom: '20px',
-        margin: 'auto',
-        textAlign: 'center',
-        alignItems: 'center',
-        '@sm': {
-          paddingBottom: '30px',
-        },
-      }}>
-        <Flex direction='row' css={{ gap: '4px', alignItems: 'center', justifyContent: 'center', margin: 'auto' }}>
-          <IconButton
-            title='⌘K'
-            onClick={() => setOpen(true)}
-            css={{
-              '@xl': {
-                display: 'inline-flex',
-              },
-              '@lg': {
-                display: 'inline-flex',
-              },
-              '@md': {
-                display: 'inline-flex',
-              },
-              '@sm': {
-                display: 'none',
-              },
-              '@xs': {
-                display: 'none',
-              },
-            }}>
-            <CornersIcon />
-          </IconButton>
-
-          <Box
-            css={{
-              '@xl': {
-                display: 'none',
-              },
-              '@lg': {
-                display: 'none',
-              },
-              '@md': {
-                display: 'none',
-              },
-              '@sm': {
-                display: 'block',
-              },
-              '@xs': {
-                display: 'block',
-              },
-            }}>
-            <DropMenu />
-          </Box>
-          <ThemeButton />
-        </Flex>
-        */}
-
-
     </>
   );
 };

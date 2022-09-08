@@ -1,8 +1,7 @@
 import { ColorBar } from '@/components/ColorBar';
-import { Box, Canvas } from '@/ui';
+import { Canvas } from '@/ui';
 import Head from 'next/head';
 import React from 'react';
-import { CmndK } from '@/components/CmndK';
 
 const Developing = () => {
   return (
@@ -12,9 +11,6 @@ const Developing = () => {
       </Head>
       <ColorBar />
       <Canvas css={{ alignItems: 'center', margin: 'auto', justifyContent: 'center', textAlign: 'center' }}>
-        <Box css={{ padding: '40px' }}>
-          <CmndK />
-        </Box>
       </Canvas>
     </>
   );
