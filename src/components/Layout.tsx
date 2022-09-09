@@ -12,14 +12,14 @@ type Props = {
 
 const LayoutContainer = styled('div', {
   display: 'flex',
-  margin: 'auto',
   flexDirection: 'column',
+  padding: 0,
+  margin: 'auto',
   justifyContent: 'center',
   height: 'calc(100vh - 64px)',
-  backgroundColor: '$mauve2',
+  backgroundColor: '$mauve1',
   maxWidth: '800px',
 });
-
 
 export const Layout = ({ children, title = 'Chandler Chappell®' }: Props) => (
   <>

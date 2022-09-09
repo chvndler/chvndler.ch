@@ -1,6 +1,6 @@
 import { Box, Section } from '@/ui';
 import { Layout } from '@/components/Layout';
-import { MnmlLight } from '@/components/logo/mnml-light';
+import { IntroSection } from '@/components/IntroSection';
 
 
 const Test = () => {
@@ -19,7 +19,7 @@ const Test = () => {
                 paddingBottom: '10px',
               }}
             >
-              <MnmlLight width='160' />
+              <IntroSection />
             </Box>
           </Section>
         </Layout>

@@ -5,9 +5,7 @@ import React from 'react';
 export const IntroSection = () => {
   return (
     <>
-
-
-      <Section size={2} css={{ paddingTop: '50px' }}>
+      <Section size={2} css={{}}>
         <Container size={3}>
           <Space size={1} />
           <Badge size={1} variant='tartOrange'>about</Badge>
@@ -33,7 +31,6 @@ export const IntroSection = () => {
           </Paragraph>
         </Container>
       </Section>
-
     </>
   );
 };

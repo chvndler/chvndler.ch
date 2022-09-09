@@ -1,5 +1,4 @@
 import { AppBar, Box, Text } from '@/ui';
-import { TimeCode } from '@/components/TimeCode';
 import { ThemeToggle } from '@/components/ThemeToggle';
 
 
@@ -50,24 +49,6 @@ export const EnterFooter = () => {
           </Text>
         </Box>
 
-
-        {/* <!-- ENTER SYSTEM --> */}
-        <Box
-          css={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            width: '150px',
-            padding: '0',
-            margin: '0',
-            '@sm': {
-              display: 'none',
-            },
-          }}
-        >
-          <TimeCode />
-        </Box>
-        {/* <!-- END ! SYSTEM --> */}
 
         {/* <!-- THEME SWITCH --> */}
         <Box
