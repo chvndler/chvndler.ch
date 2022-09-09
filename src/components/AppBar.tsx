@@ -17,12 +17,8 @@ export function AppBar() {
           flexDirection: 'row',
           justifyContent: 'stretch',
         }}>
-
         <Text css={{ fontSize: '13px' }}>chvndler.ch</Text>
-
         <ThemeToggle />
-
-
       </Box>
     </>
   );

@@ -20,6 +20,7 @@ const LayoutContainer = styled('div', {
   maxWidth: '800px',
 });
 
+
 export const Layout = ({ children, title = 'Chandler Chappell®' }: Props) => (
   <>
     <Head>
