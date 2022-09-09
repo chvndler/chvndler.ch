@@ -1,0 +1,56 @@
+{
+  "cacheItemsMap": {
+    "blog/about.mdx": {
+      "document": {
+        "title": "more about me.",
+        "publishedAt": "2021-03-22",
+        "summary": "Chandler Chappell, most call me Chan.",
+        "image": "",
+        "body": {
+          "raw": "\nHi, I'm Chandler Chappell, most call me Chan.\n\nI am a front-end developer, designer, and director located in Charlotte, NC. As of when the post is being typed, I am currently building ( ady )® _Atelier Design Yield_, to calm the noise within the design culture.\nI spend most of my time writing code, tweeting, and learning about things that interest me.\n\nThis journal will document my thoughts, ideas, and any resources that have shaped me as a designer and story-teller. I plan to also use this space as my own knowledge base for all things dev.\n\nThank you for reading this.\n\nConnect with me:\n\n<BlogFlex>\n  <BlogLink href=\"https://twitter.com/chv_ndler\">twitter</BlogLink>\n  <BlogLink href=\"https://github.com/chvndler\">github</BlogLink>\n  <BlogLink href=\"https://instagram.com/chv.ndler\">instagram</BlogLink>\n  <BlogLink href=\"https://are.na/chvndler-ch\">are.na</BlogLink>\n</BlogFlex>\n",
+          "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var w=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),x=(n,e)=>{for(var r in e)a(n,r,{get:e[r],enumerable:!0})},s=(n,e,r,i)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let o of g(e))!f.call(n,o)&&o!==r&&a(n,o,{get:()=>e[o],enumerable:!(i=p(e,o))||i.enumerable});return n};var y=(n,e,r)=>(r=n!=null?m(u(n)):{},s(e||!n||!n.__esModule?a(r,\"default\",{value:n,enumerable:!0}):r,n)),b=n=>s(a({},\"__esModule\",{value:!0}),n);var h=w((I,l)=>{l.exports=_jsx_runtime});var v={};x(v,{default:()=>_,frontmatter:()=>C});var t=y(h()),C={title:\"more about me.\",publishedAt:\"2021-03-22\",summary:\"Chandler Chappell, most call me Chan.\",image:\"\"};function d(n){let e=Object.assign({p:\"p\",em:\"em\"},n.components),{BlogFlex:r,BlogLink:i}=e;return r||c(\"BlogFlex\",!0),i||c(\"BlogLink\",!0),(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(e.p,{children:\"Hi, I'm Chandler Chappell, most call me Chan.\"}),`\n`,(0,t.jsxs)(e.p,{children:[\"I am a front-end developer, designer, and director located in Charlotte, NC. As of when the post is being typed, I am currently building ( ady )\\xAE \",(0,t.jsx)(e.em,{children:\"Atelier Design Yield\"}),`, to calm the noise within the design culture.\nI spend most of my time writing code, tweeting, and learning about things that interest me.`]}),`\n`,(0,t.jsx)(e.p,{children:\"This journal will document my thoughts, ideas, and any resources that have shaped me as a designer and story-teller. I plan to also use this space as my own knowledge base for all things dev.\"}),`\n`,(0,t.jsx)(e.p,{children:\"Thank you for reading this.\"}),`\n`,(0,t.jsx)(e.p,{children:\"Connect with me:\"}),`\n`,(0,t.jsxs)(r,{children:[(0,t.jsx)(i,{href:\"https://twitter.com/chv_ndler\",children:\"twitter\"}),`\n`,(0,t.jsx)(i,{href:\"https://github.com/chvndler\",children:\"github\"}),`\n`,(0,t.jsx)(i,{href:\"https://instagram.com/chv.ndler\",children:\"instagram\"}),`\n`,(0,t.jsx)(i,{href:\"https://are.na/chvndler-ch\",children:\"are.na\"})]})]})}function j(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,Object.assign({},n,{children:(0,t.jsx)(d,n)})):d(n)}var _=j;function c(n,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+n+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return b(v);})();\n;return Component;"
+        },
+        "_id": "blog/about.mdx",
+        "_raw": {
+          "sourceFilePath": "blog/about.mdx",
+          "sourceFileName": "about.mdx",
+          "sourceFileDir": "blog",
+          "contentType": "mdx",
+          "flattenedPath": "blog/about"
+        },
+        "type": "Blog",
+        "tweetIds": [],
+        "slug": "about"
+      },
+      "documentHash": "1660573679228",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    },
+    "blog/reproduction-code.mdx": {
+      "document": {
+        "title": "building a starter project.",
+        "publishedAt": "2022-05-22",
+        "summary": "Building an opinionated reproducible code-base.",
+        "image": "",
+        "body": {
+          "raw": "\nAd anim sint consectetur consequat reprehenderit non laborum veniam quis incididunt fugiat esse cupidatat excepteur\nnostrud. Duis elit dolor aute reprehenderit id exercitation. Aliqua dolor tempor aute sint id laboris. Ipsum in\nproident aute commodo ipsum dolore culpa commodo fugiat non deserunt nostrud magna qui. Anim amet dolore minim voluptate\net nulla in officia cillum in occaecat ipsum in esse. Aute proident mollit consectetur laboris cillum ullamco irure\ndeserunt eiusmod. Do consectetur ullamco quis ut officia officia occaecat laboris laborum est elit voluptate.\nConsectetur cillum id anim nisi adipisicing ipsum in dolore commodo ad nisi irure ad aliqua tempor. Qui sunt ex in elit.\nAliquip nostrud excepteur commodo nisi in enim in esse et fugiat est exercitation laborum ad.\n\nConnect with me:\n\n<BlogFlex>\n  <BlogLink href=\"https://twitter.com/chv_ndler\">twitter</BlogLink>\n  <BlogLink href=\"https://github.com/chvndler\">github</BlogLink>\n  <BlogLink href=\"https://instagram.com/chv.ndler\">instagram</BlogLink>\n  <BlogLink href=\"https://are.na/chvndler-ch\">are.na</BlogLink>\n</BlogFlex>\n",
+          "code": "var Component=(()=>{var m=Object.create;var a=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var h=Object.getOwnPropertyNames;var f=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var x=(e,t)=>()=>(t||e((t={exports:{}}).exports,t),t.exports),b=(e,t)=>{for(var n in t)a(e,n,{get:t[n],enumerable:!0})},c=(e,t,n,o)=>{if(t&&typeof t==\"object\"||typeof t==\"function\")for(let r of h(t))!g.call(e,r)&&r!==n&&a(e,r,{get:()=>t[r],enumerable:!(o=p(t,r))||o.enumerable});return e};var j=(e,t,n)=>(n=e!=null?m(f(e)):{},c(t||!e||!e.__esModule?a(n,\"default\",{value:e,enumerable:!0}):n,e)),_=e=>c(a({},\"__esModule\",{value:!0}),e);var u=x((y,s)=>{s.exports=_jsx_runtime});var A={};b(A,{default:()=>w,frontmatter:()=>v});var i=j(u()),v={title:\"building a starter project.\",publishedAt:\"2022-05-22\",summary:\"Building an opinionated reproducible code-base.\",image:\"\"};function l(e){let t=Object.assign({p:\"p\"},e.components),{BlogFlex:n,BlogLink:o}=t;return n||d(\"BlogFlex\",!0),o||d(\"BlogLink\",!0),(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(t.p,{children:`Ad anim sint consectetur consequat reprehenderit non laborum veniam quis incididunt fugiat esse cupidatat excepteur\nnostrud. Duis elit dolor aute reprehenderit id exercitation. Aliqua dolor tempor aute sint id laboris. Ipsum in\nproident aute commodo ipsum dolore culpa commodo fugiat non deserunt nostrud magna qui. Anim amet dolore minim voluptate\net nulla in officia cillum in occaecat ipsum in esse. Aute proident mollit consectetur laboris cillum ullamco irure\ndeserunt eiusmod. Do consectetur ullamco quis ut officia officia occaecat laboris laborum est elit voluptate.\nConsectetur cillum id anim nisi adipisicing ipsum in dolore commodo ad nisi irure ad aliqua tempor. Qui sunt ex in elit.\nAliquip nostrud excepteur commodo nisi in enim in esse et fugiat est exercitation laborum ad.`}),`\n`,(0,i.jsx)(t.p,{children:\"Connect with me:\"}),`\n`,(0,i.jsxs)(n,{children:[(0,i.jsx)(o,{href:\"https://twitter.com/chv_ndler\",children:\"twitter\"}),`\n`,(0,i.jsx)(o,{href:\"https://github.com/chvndler\",children:\"github\"}),`\n`,(0,i.jsx)(o,{href:\"https://instagram.com/chv.ndler\",children:\"instagram\"}),`\n`,(0,i.jsx)(o,{href:\"https://are.na/chvndler-ch\",children:\"are.na\"})]})]})}function q(e={}){let{wrapper:t}=e.components||{};return t?(0,i.jsx)(t,Object.assign({},e,{children:(0,i.jsx)(l,e)})):l(e)}var w=q;function d(e,t){throw new Error(\"Expected \"+(t?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return _(A);})();\n;return Component;"
+        },
+        "_id": "blog/reproduction-code.mdx",
+        "_raw": {
+          "sourceFilePath": "blog/reproduction-code.mdx",
+          "sourceFileName": "reproduction-code.mdx",
+          "sourceFileDir": "blog",
+          "contentType": "mdx",
+          "flattenedPath": "blog/reproduction-code"
+        },
+        "type": "Blog",
+        "tweetIds": [],
+        "slug": "reproduction-code"
+      },
+      "documentHash": "1661823087584",
+      "hasWarnings": false,
+      "documentTypeName": "Blog"
+    }
+  }
+}
