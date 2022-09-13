@@ -35,6 +35,9 @@
       "@/interface/*": [
         "./src/interface/*"
       ],
+      "@/hooks/*": [
+        "./src/hooks/*"
+      ],
       "@/lib/*": [
         "./lib/*"
       ],

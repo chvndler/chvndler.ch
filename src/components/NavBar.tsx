@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Box, Flex } from '@/ui';
 import { ThemeButton } from '@/components/ThemeButton';
 import { MnmlLight } from '@/components/logo/mnml-light';
+import * as React from 'react';
 
 
 export const NavBar = () => {
@@ -69,3 +70,5 @@ export const NavBar = () => {
     </Flex>
   );
 };
+
+export type NavBarProps = React.ComponentProps<typeof NavBar>;

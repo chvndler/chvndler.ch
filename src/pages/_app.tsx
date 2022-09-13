@@ -12,6 +12,13 @@ import React from 'react';
 import Head from 'next/head';
 import { CmndK } from '@/components/CmndK';
 
+import { atelierLog, isClient, isDev, isProd } from '@/lib/constants';
+
+// TODO delete this basement log if not a basement project.
+if (isProd && isClient && isDev) {
+  // eslint-disable-next-line no-console
+  console.log(atelierLog);
+}
 
 const globalStyles = globalCss(res, {
   html: {
@@ -38,6 +45,10 @@ const appWrapper = css({
 
 const App = ({ Component, pageProps }: AppProps) => {
   globalStyles();
+
+  React.useEffect(() => {
+    if (isDev) return;
+  });
 
   return (
     <>

@@ -1,4 +1,5 @@
 // NOTE The functionality below (incl. TS types) will soon become part of Contentlayer itself. Please don't mind its existence. 😎
+import { isClient } from '@/lib/constants';
 
 type ConvertUndefined<T> = OrUndefined<{
   [K in keyof T as undefined extends T[K] ? K : never]-?: T[K];
@@ -15,3 +16,6 @@ export const pick = <Obj, Keys extends keyof Obj>(obj: Obj, keys: Keys[]): Conve
     return acc;
   }, {} as any);
 };
+
+
+export const isApiSupported = (api: string) => isClient && api in window;
