@@ -8,12 +8,13 @@ export const Container = React.forwardRef<HTMLDivElement, JSX.IntrinsicElements[
         {...props}
         className={clsx(
           // TODO: Put some padding, max width, and margin-x auto in here!
-          className
+          className,
         )}
         ref={ref}
       />
     );
-  }
+  },
 );
 
 export type ContainerProps = React.ComponentProps<typeof Container>;
+Container.displayName = 'container';

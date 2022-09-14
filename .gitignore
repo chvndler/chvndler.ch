@@ -31,4 +31,4 @@ yarn-error.log*
 .contentlayer
 
 # misc
-.env
+.env.local

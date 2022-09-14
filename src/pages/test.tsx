@@ -80,7 +80,6 @@ const Test = () => {
                 <Badge size={1} variant='tartOrange'>connect</Badge>
                 <Space size={1} />
 
-
                 <Box css={{ marginTop: '4px', marginBottom: '4px', paddingLeft: '4px' }}>
                   <Link href='https://www.twitter.com/chvndlerch' passHref>
                     <Text as='a' target='_blank' rel='noreferrer noopener' css={{
@@ -108,6 +107,7 @@ const Test = () => {
                     </Text>
                   </Link>
                 </Box>
+
                 <Box css={{ marginTop: '4px', marginBottom: '4px', paddingLeft: '4px' }}>
                   <Link href='https://www.instagram.com/chv.ndler' passHref>
                     <Text as='a' target='_blank' rel='noreferrer noopener' css={{
@@ -121,9 +121,11 @@ const Test = () => {
                     </Text>
                   </Link>
                 </Box>
+
                 <Box css={{ marginTop: '4px', marginBottom: '4px' }}>
                   <GitHub />
                 </Box>
+
               </Container>
             </Section>
 
