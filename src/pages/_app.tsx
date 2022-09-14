@@ -1,8 +1,5 @@
 import { css, darkTheme, globalCss } from '@/lib/stitches.config';
-import '@/styles/miumiu.css';
-import '@/styles/ch-grotesk.css';
-import '@/styles/command.css';
-import '@/styles/global.css';
+import '@/styles/global.scss';
 import '@/styles/dracula.css';
 import { res } from '@/styles/res';
 import { Box } from '@/ui';
@@ -69,8 +66,8 @@ const App = ({ Component, pageProps }: AppProps) => {
               flexDirection: 'column',
             })}
           >
-            <Component {...pageProps} />
             <CmndK />
+            <Component {...pageProps} />
           </div>
         </Box>
       </ThemeProvider>

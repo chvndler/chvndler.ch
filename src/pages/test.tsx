@@ -3,9 +3,10 @@ import { PageLayout } from '@/components/layout/page';
 import { styled } from '@/lib/stitches.config';
 import React from 'react';
 import { prjcts as items } from '@/lib/prjcts';
-import { ProjectEntry } from '@/components/projects/ProjectEntry';
+import { ProjectEntry, ProjectProps } from '@/components/projects/ProjectEntry';
 import Link from 'next/link';
-import { GitHubLogoIcon } from '@radix-ui/react-icons';
+import { GitHubLogoIcon, InstagramLogoIcon, PaperPlaneIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
+import NowPlaying from '@/components/NowPlaying';
 
 const ContentContent = styled('div', {
   boxSizing: 'border-box',
@@ -28,13 +29,13 @@ const AboutContent = styled('div', {
   },
 });
 
-const Test = () => {
+const Test = ({ ...props }: ProjectProps) => {
   return (
     <>
       <Box css={{ backgroundColor: '$mauve1' }}>
         <PageLayout title='Test'>
           <ContentContent>
-            <Section size={2} css={{ padding: 0 }}>
+            <Section size={2} css={{ paddingTop: 30 }}>
               <Container size={3} css={{ padding: 0 }}>
                 <Space size={1} />
                 <Badge size={2} variant='tartOrange'>about</Badge>
@@ -66,8 +67,8 @@ const Test = () => {
                   }}>
 
                   {items.map(entry => {
-                    return <ProjectEntry key={entry.key} title={entry.title} href={entry.url}
-                                         description={entry.description} />;
+                    return <ProjectEntry {...props} title={entry.title} href={entry.url}
+                                         description={entry.description} key={entry.key} />;
                   })}
                 </Grid>
               </Container>
@@ -77,54 +78,35 @@ const Test = () => {
             <Section size={2} css={{ padding: 0 }}>
               <Container size={3} css={{ padding: 0 }}>
                 <Space size={3} />
-                <Badge size={1} variant='tartOrange'>connect</Badge>
+                <Badge size={2} variant='tartOrange'>connect</Badge>
                 <Space size={1} />
 
-                <Box css={{ marginTop: '4px', marginBottom: '4px', paddingLeft: '4px' }}>
-                  <Link href='https://www.twitter.com/chvndlerch' passHref>
-                    <Text as='a' target='_blank' rel='noreferrer noopener' css={{
-                      fontFamily: '$pragmaticaExtended',
-                      fontSize: '13px',
-                      fontWeight: '400',
-                      color: '$mauve11',
-                      lineHeight: 'normal',
-                    }}>
-                      twitter
-                    </Text>
-                  </Link>
+                <Box css={{ marginTop: '4px', marginBottom: '4px' }}>
+                  <Twitter />
                 </Box>
 
-                <Box css={{ marginTop: '4px', marginBottom: '4px', paddingLeft: '4px' }}>
-                  <Link href='https://www.instagram.com/chv.ndler' passHref>
-                    <Text as='a' target='_blank' rel='noreferrer noopener' css={{
-                      fontFamily: '$pragmaticaExtended',
-                      fontSize: '13px',
-                      fontWeight: '400',
-                      color: '$mauve11',
-                      lineHeight: 'normal',
-                    }}>
-                      instagram
-                    </Text>
-                  </Link>
-                </Box>
-
-                <Box css={{ marginTop: '4px', marginBottom: '4px', paddingLeft: '4px' }}>
-                  <Link href='https://www.instagram.com/chv.ndler' passHref>
-                    <Text as='a' target='_blank' rel='noreferrer noopener' css={{
-                      fontFamily: '$pragmaticaExtended',
-                      fontSize: '13px',
-                      fontWeight: '400',
-                      color: '$mauve11',
-                      lineHeight: 'normal',
-                    }}>
-                      email
-                    </Text>
-                  </Link>
+                <Box css={{ marginTop: '4px', marginBottom: '4px' }}>
+                  <Instagram />
                 </Box>
 
                 <Box css={{ marginTop: '4px', marginBottom: '4px' }}>
                   <GitHub />
                 </Box>
+
+                <Box css={{ marginTop: '4px', marginBottom: '4px' }}>
+                  <ContactEmail />
+                </Box>
+
+              </Container>
+            </Section>
+
+            <Section size={2} css={{ paddingBottom: 30 }}>
+              <Container size={3} css={{ padding: 0 }}>
+                <Space size={3} />
+                <Badge size={2} variant='tartOrange'>spotify</Badge>
+                <Space size={1} />
+
+                <NowPlaying />
 
               </Container>
             </Section>
@@ -154,12 +136,84 @@ function GitHub() {
 
           paddingLeft: '6px',
         }}>
-          @chvndler/chvndler.ch
+          github
         </Text>
       </Link>
     </Flex>
   );
 }
 
+
+function Twitter() {
+  return (
+    <Flex css={{ display: 'inline-flex', direction: 'row', padding: '4px', margin: 'auto' }}>
+      <Box css={{ color: '$lime10' }}>
+        <TwitterLogoIcon />
+      </Box>
+
+      <Link href='https://github.com/chvndler/chvndler.ch' passHref>
+        <Text as='a' target='_blank' rel='noopener noreferrer' css={{
+          fontFamily: '$pragmaticaExtended',
+          fontSize: '13px',
+          fontWeight: '400',
+          color: '$mauve8',
+          lineHeight: 'normal',
+
+          paddingLeft: '6px',
+        }}>
+          twitter
+        </Text>
+      </Link>
+    </Flex>
+  );
+}
+
+function Instagram() {
+  return (
+    <Flex css={{ display: 'inline-flex', direction: 'row', padding: '4px', margin: 'auto' }}>
+      <Box css={{ color: '$lime10' }}>
+        <InstagramLogoIcon />
+      </Box>
+
+      <Link href='https://github.com/chvndler/chvndler.ch' passHref>
+        <Text as='a' target='_blank' rel='noopener noreferrer' css={{
+          fontFamily: '$pragmaticaExtended',
+          fontSize: '13px',
+          fontWeight: '400',
+          color: '$mauve8',
+          lineHeight: 'normal',
+
+          paddingLeft: '6px',
+        }}>
+          instagram
+        </Text>
+      </Link>
+    </Flex>
+  );
+}
+
+function ContactEmail() {
+  return (
+    <Flex css={{ display: 'inline-flex', direction: 'row', padding: '4px', margin: 'auto' }}>
+      <Box css={{ color: '$lime10' }}>
+        <PaperPlaneIcon />
+      </Box>
+
+      <Link href='https://github.com/chvndler/chvndler.ch' passHref>
+        <Text as='a' target='_blank' rel='noopener noreferrer' css={{
+          fontFamily: '$pragmaticaExtended',
+          fontSize: '13px',
+          fontWeight: '400',
+          color: '$mauve8',
+          lineHeight: 'normal',
+
+          paddingLeft: '6px',
+        }}>
+          email me
+        </Text>
+      </Link>
+    </Flex>
+  );
+}
 
 export default Test;

@@ -109,3 +109,5 @@ export const ProjectEntry = ({ title, description, href, key }) => {
     </>
   );
 };
+
+export type ProjectProps = React.ComponentProps<typeof ProjectEntry>;

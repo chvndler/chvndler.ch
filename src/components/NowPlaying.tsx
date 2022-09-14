@@ -12,7 +12,7 @@ export default function NowPlaying() {
 
   return (
     <>
-      <Flex css={{ padding: '10px' }}>
+      <Flex css={{ padding: 0 }}>
         <Box css={{ width: 'auto' }}>
           <Flex css={{ flexDirection: 'row' }}>
             {data?.songUrl ? (
