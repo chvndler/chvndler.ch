@@ -18,14 +18,26 @@ const ContentContent = styled('div', {
   paddingTop: '52px',
 });
 
-const AboutContent = styled('div', {
-  fontFamily: '$inter',
-  fontSize: '25px',
+const AboutHeader = styled('div', {
+  fontFamily: '$space',
+  fontSize: 80,
   fontWeight: '600',
   letterSpacing: '-0.03rem',
   color: '$mauve12',
   '@sm': {
-    fontSize: 22,
+    fontSize: 55,
+  },
+});
+
+const AboutContent = styled('div', {
+  fontFamily: '$space',
+  fontSize: 22,
+  fontWeight: '400',
+  textTransform: 'uppercase',
+  letterSpacing: '-0.03rem',
+  color: '$mauve12',
+  '@sm': {
+    fontSize: 20,
   },
 });
 
@@ -37,9 +49,9 @@ const Test = ({ ...props }: ProjectProps) => {
           <ContentContent>
             <Section size={2} css={{ paddingTop: 30 }}>
               <Container size={3} css={{ padding: 0 }}>
-                <Space size={1} />
-                <Badge size={2} variant='tartOrange'>about</Badge>
-                <Space size={1} />
+                <AboutHeader>
+                  WHX®
+                </AboutHeader>
                 <AboutContent>
                   Front-end developer & designer based in Charlotte, NC– I am currently
                   building AtelierDesign®
@@ -53,6 +65,10 @@ const Test = ({ ...props }: ProjectProps) => {
               <Container size={3} css={{ padding: 0 }}>
                 <Space size={3} />
                 <Badge size={2} variant='tartOrange'>projects</Badge>
+                <Space size={1} />
+                <AboutHeader>
+                  PRXJ.ECTS
+                </AboutHeader>
                 <Space size={1} />
                 <Grid
                   css={{

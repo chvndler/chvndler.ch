@@ -131,6 +131,9 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     },
     fonts: {
       inter: '"Inter", sans-serif',
+      space: '"Space Grotesk", sans-serif',
+      rox: 'Roxborough CF Italic',
+      roo: '"Roo", sans-serif',
       chGrotesk: '"CH Grotesk", sans-serif',
       miu: '"MIU MIU", sans-serif',
       pragmaticaExtended: '"pragmatica-extended", sans-serif',
