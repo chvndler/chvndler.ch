@@ -99,11 +99,14 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       chvn4: '#667394',
       chvn5: '#525D77',
 
-      chvn6: '#484349',
+      chvn6: '#5e7ce2',
       chvn7: '#f7f0f0',
       chvn8: '#5e7ce2',
       chvn9: '#87b37a',
 
+      twitter: '#1DA1F2',
+      github: '#6cc644',
+      githubAlt: '#6e5494',
 
       // Translucent Alphas..
       light100: 'rgba(240, 240, 240, 0.7)',
@@ -397,7 +400,6 @@ export const darkTheme = createTheme('darkTheme', {
     slime: '#c9cccd',
     light100: 'rgba(0, 0, 0, 0.4)',
     light50: 'rgba(0, 0, 0, 0.8)',
-
 
     // chvn...
     chvn0: '#525D77',

@@ -1,25 +1,20 @@
 import { styled } from '@/lib/stitches.config';
 
 export const Container = styled('div', {
-  // Reset
   boxSizing: 'border-box',
   flexShrink: 0,
-
-  // Custom
   marginLeft: 'auto',
   marginRight: 'auto',
-  paddingLeft: '$5',
-  paddingRight: '$5',
-
+  paddingLeft: 20,
+  paddingRight: 20,
   '@sm': {
-    paddingLeft: '$4',
-    paddingRight: '$4',
+    paddingLeft: 18,
+    paddingRight: 18,
   },
-
   variants: {
     size: {
       '1': {
-        maxWidth: '430px',
+        maxWidth: '470px',
       },
       '2': {
         maxWidth: '715px',
