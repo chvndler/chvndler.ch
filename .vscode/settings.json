@@ -1,0 +1,50 @@
+{
+  "files.autoSave": "onWindowChange",
+  "editor.fontSize": 11,
+  "editor.fontFamily": "SF Mono, monospace",
+  "editor.tabSize": 2,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.colorTheme": "Copilot Theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "editor.formatOnPaste": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "window.zoomLevel": 1,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liquid.format": true,
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.fontLigatures": false,
+  "editor.fontWeight": "400",
+  "editor.formatOnSave": true,
+  "keyboard.touchbar.enabled": false,
+  "editor.cursorStyle": "line-thin",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.accessibilityPageSize": 11,
+  "terminal.explorerKind": "external",
+  "eslint.alwaysShowStatus": true,
+  "prettier.bracketSameLine": true,
+  "prettier.insertPragma": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 140,
+  "prettier.resolveGlobalModules": true,
+  "prettier.singleQuote": true,
+  "prettyxml.settings.formatOnSave": true,
+  "prettyxml.settings.useSingleQuotes": true,
+  "refreshBrowser.browser": "Safari",
+  "workbench.activityBar.visible": false,
+  "workbench.iconTheme": "ayu",
+  "explorer.compactFolders": false,
+  "extensions.closeExtensionDetailsOnViewChange": true
+}
