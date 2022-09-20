@@ -32,7 +32,7 @@ const Enter = () => {
         <Box className={backdrop()}>
           <Canvas>
             <Container
-              size='2'
+              size="2"
               css={{
                 margin: 'auto',
                 justifyContent: 'center',
@@ -50,7 +50,7 @@ const Enter = () => {
                   paddingBottom: '10px',
                 }}
               >
-                <ChvndlerCh width='300' />
+                <ChvndlerCh width="300" />
               </Box>
 
               <Grid
@@ -68,10 +68,11 @@ const Enter = () => {
                   '@sm': {
                     gridTemplateColumns: '1fr',
                   },
-                }}>
-                <Link href='/about' passHref>
+                }}
+              >
+                <Link href="/about" passHref>
                   <Text
-                    as='a'
+                    as="a"
                     css={{
                       textAlign: 'center',
                       paddingLeft: 0,
@@ -87,9 +88,9 @@ const Enter = () => {
                   </Text>
                 </Link>
 
-                <Link href='/projects' passHref>
+                <Link href="/projects" passHref>
                   <Text
-                    as='a'
+                    as="a"
                     css={{
                       textAlign: 'center',
                       paddingLeft: 0,
@@ -105,9 +106,9 @@ const Enter = () => {
                   </Text>
                 </Link>
 
-                <Link href='/blog' passHref>
+                <Link href="/blog" passHref>
                   <Text
-                    as='a'
+                    as="a"
                     css={{
                       textAlign: 'center',
                       paddingLeft: 0,
