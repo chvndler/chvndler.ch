@@ -3,12 +3,12 @@ import { styled } from '@/lib/stitches.config';
 export const InlineLink = styled('a', {
   lineHeight: 'inherit',
   fontSize: 'inherit',
-  color: '$chvn8',
+  color: '$chvn500',
 
   textDecoration: 'underline',
   textUnderlineOffset: 2,
 
   '&:hover': {
-    color: '$chvn3',
+    color: '$chvn300',
   },
 });

@@ -9,7 +9,7 @@ const backdrop = css({
   left: '0',
   right: '0',
   bottom: '0',
-  backgroundColor: '$mauve1',
+  backgroundColor: '$chvn000',
   minWidth: '100vw',
   minHeight: '100vh',
   padding: '0',
@@ -21,7 +21,8 @@ const Developing = () => {
     <>
       <div className={backdrop()}>
         <Canvas>
-          <Container size="1" css={{ padding: 20 }}>
+    <Container size="1" css = {{ padding: 20 }}>
+            
             <Text
               size="2"
               css={{
@@ -34,21 +35,22 @@ const Developing = () => {
               }}
             >
               hi, i'm <strong>chandler</strong>.
-            </Text>
-            <Paragraph css={{ fontSize: 15.5, fontFamily: '$inter', lineHeight: '22px', color: '$mauve12' }}>
+                </Text>
+                
+            <Paragraph css={{ fontSize: 16, fontFamily: '$chGrotesk', lineHeight: '22px', color: '$chvn400' }}>
               i am a front-end developer, designer, and director currently living in Charlotte, NC, USA.
             </Paragraph>
-            <Space size="1" />
-            <Paragraph css={{ fontSize: 15.5, fontFamily: '$inter', lineHeight: '22px', color: '$mauve12' }}>
+            <Space size = "1" />
+            <Paragraph css={{ fontSize: 16, fontFamily: '$chGrotesk', lineHeight: '22px', color: '$chvn400' }}>
               i'm currently building <InlineLink href="https://atlrdsgn.com/">Atelier® Design Yield</InlineLink> to calm the noise within
               the design culture. I enjoy finding, learning, and testing new tech evolvements, creating beautiful UI, and building cool
               brands.
             </Paragraph>
-            <Space size="1" />
-            <Paragraph css={{ fontSize: 15.5, fontFamily: '$inter', lineHeight: '22px', color: '$mauve12' }}>
-              feel free to say <InlineLink href="/">hello</InlineLink>, I am currently looking for my next role.
+            <Space size = "1" />
+            <Paragraph css={{ fontSize: 16, fontFamily: '$chGrotesk', lineHeight: '22px', color: '$chvn400' }}>
+              say <InlineLink href="/">hello</InlineLink>, I am currently looking for my next role.
             </Paragraph>
-            <Space size="2" />
+            <Space size = "2" />
             <Flex css={{ flexDirection: 'row', gap: 18, display: 'inline-flex' }}>
               <InlineLink
                 href="https://twitter.com/chvndlerch/"
@@ -57,7 +59,7 @@ const Developing = () => {
                   fontWeight: 'bold',
                   fontSize: 14,
                   textDecoration: 'none',
-                  color: '$twitter',
+                  color: '$chvn500',
                 }}
               >
                 twitter
@@ -70,11 +72,12 @@ const Developing = () => {
                   fontWeight: 'bold',
                   fontSize: 14,
                   textDecoration: 'none',
-                  color: '$mauve10',
+                  color: '$chvn300',
                 }}
               >
                 github
               </InlineLink>
+                
 
               <InlineLink
                 href="https://github.com/chvndler/"
@@ -83,7 +86,20 @@ const Developing = () => {
                   fontWeight: 'bold',
                   fontSize: 14,
                   textDecoration: 'none',
-                  color: '$chvn3',
+                  color: '$chvn700',
+                }}
+              >
+                gram
+              </InlineLink>
+                
+              <InlineLink
+                href="https://github.com/chvndler/"
+                css={{
+                  fontFamily: '$pragmaticaExtended',
+                  fontWeight: 'bold',
+                  fontSize: 14,
+                  textDecoration: 'none',
+                  color: '$chvn600',
                 }}
               >
                 linkedin
@@ -99,7 +115,7 @@ const Developing = () => {
                   fontWeight: 'normal',
                   fontSize: 14,
                   textDecoration: 'none',
-                  color: '$chvn2',
+                  color: '$chvn400',
                 }}
               >
                 chvndler.ch@gmail

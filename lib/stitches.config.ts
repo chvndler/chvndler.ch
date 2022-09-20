@@ -108,6 +108,20 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       github: '#6cc644',
       githubAlt: '#6e5494',
 
+      jet: '#323031', 
+      jet2: '#3d3b3c', 
+      jet3: '#7f7979',
+      jet4: '#c1bdb3', 
+      jet5: '#5f5b6b',
+      chvn000: 'hsla(0, 0%, 11%, 1)',
+      chvn100: 'hsla(0, 0%, 18%, 1)',
+      chvn200: 'hsla(290, 4%, 27%, 1)',
+      chvn300: 'hsla(292, 14%, 59%, 1)',
+      chvn400: 'hsla(0, 0%, 96%, 1)',
+      chvn500: 'hsla(206, 88%, 55%, 1)',
+      chvn600: 'hsla(226, 69%, 63%, 1)',
+      chvn700: 'hsla(0, 100%, 60%, 1)',
+
       // Translucent Alphas..
       light100: 'rgba(240, 240, 240, 0.7)',
       light50: 'rgba(240, 240, 240, 0.8)',
@@ -419,3 +433,4 @@ export const darkTheme = createTheme('darkTheme', {
   },
   utils: {},
 });
+
