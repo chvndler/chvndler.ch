@@ -1,6 +1,7 @@
 export * from './box';
 export * from './button';
 export * from './canvas';
+export * from './card';
 export * from './container';
 export * from './flex';
 export * from './grid';

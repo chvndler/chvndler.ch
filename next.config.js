@@ -8,9 +8,20 @@ const config = {
     reactStrictMode: false,
     swcMinify: true,
     images: {
-        formats: ['image/avif', 'image/webp']
+        formats: ['image/avif', 'image/webp'],
+        domains: ['cdn.ady.systems', 'pbs.twimg.com']
     },
-    experimental: {}
+    experimental: {},
+
+    webpack(config) {
+        config.module.rules.push({
+            test: /\.svg$/i,
+            issuer: /\.[jt]sx?$/,
+            use: ['@svgr/webpack'],
+        })
+
+        return config
+    }
 };
 
 module.exports = (_phase, { defaultConfig: _ }) => {

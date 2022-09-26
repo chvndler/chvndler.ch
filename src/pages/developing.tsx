@@ -1,41 +1,26 @@
-import { Box, Container, Heading } from '@/components/ds';
+import { Container, Canvas } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
-import { CardHero } from '@/components/sections/card-hero';
-import { ProjectOne } from '@/components/sections/projexts/one';
+
+import { Tweet } from '@/components/primitives/tweet';
 
 const DevelopingPage = () => {
   return (
     <PageLayout>
       {/* <!-- HERO CONTAINER --> */}
-      <Box css={{ bc: '$loContrast', height: 'auto' }}>
-        <CardHero>
-          <Container size="3" css={{ textAlign: 'center' }}>
-            <Heading
-              css={{
-                // backgroundColor: '$chxn8',
-                fontSize: '3rem',
-                fontFamily: '$neueMontreal',
-                color: '$chxn5',
-                fontWeight: 'normal',
-                letterSpacing: '-0.05rem',
-                lineHeight: '30px',
-                padding: 0,
-                margin: 0,
-                width: 'auto',
-                '@md': {
-                  fontSize: '3rem',
-                  letterSpacing: '-0.08rem',
-                  lineHeight: '30px'
-                }
-              }}
-            >
-              PROJEXTS
-            </Heading>
-          </Container>
-        </CardHero>
-
-        <ProjectOne />
-      </Box>
+      <Canvas>
+        <Container size="3" css={{ display: 'flex', alignItems: 'center', margin: 'auto', justifyContent: 'center' }}>
+          <Tweet
+            userUrl="https://twitter.com/chvndlerch"
+            avatar="https://pbs.twimg.com/profile_images/1570572396913999872/eu5obCWK_reasonably_small.jpg"
+            url="https://twitter.com/chvndlerch/status/1572055841225703426"
+            author="chan"
+            username="chvndlerch"
+            date="8:07 PM · Sep 19, 2022 · Twitter for iPhone"
+          >
+            i love twitter.
+          </Tweet>
+        </Container>
+      </Canvas>
       {/*END HERO CONTAINER*/}
     </PageLayout>
   );
