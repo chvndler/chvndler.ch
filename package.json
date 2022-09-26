@@ -41,9 +41,7 @@
         "react-device-detect": "^2.2.2",
         "react-dom": "^18.2.0",
         "react-merge-refs": "^2.0.1",
-        "react-static-tweets": "^0.8.0",
         "react-use-measure": "^2.1.1",
-        "static-tweets": "^0.8.0",
         "zustand": "^4.0.0-rc.1"
     },
     "devDependencies": {

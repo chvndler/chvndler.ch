@@ -1,10 +1,11 @@
-import { GitHubLogoIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
-import { CardHero } from '@/components/sections/card-hero';
 import { Box, Container, Flex, Heading, Text } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
 import { HeroSection } from '@/components/sections/hero';
 import { ContentSlider } from '@/components/primitives/off-canvas/slider';
+import { SliderCard } from '@/components/primitives/off-canvas/slider-card';
+import { AtlrDsLogo } from '@/components/logos';
+import { Icxn } from '@/components/icons/icxn';
 
 const ProjectsPage = () => {
   return (
@@ -16,7 +17,7 @@ const ProjectsPage = () => {
               fontSize: 62,
               fontFamily: '$neueMontreal',
               color: '$chxn4',
-              fontWeight: 'bold',
+              fontWeight: 'normal',
               lineHeight: '60px',
               letterSpacing: '-0.07rem',
               padding: 0,
@@ -28,80 +29,73 @@ const ProjectsPage = () => {
               }
             }}
           >
-            PROJEXTS©
+            PROJECTS
           </Heading>
-          <Flex
-            css={{
-              width: '100%',
-              flexDirection: 'row',
-              gap: 5,
-              display: 'inline-flex',
-              textAlign: 'center',
-              alignItems: 'center',
-              justifyContent: 'center',
-              margin: 'auto',
-              '@md': {
-                textAlign: 'left',
-                alignItems: 'left',
-                justifyContent: 'flex-start'
-              }
-            }}
-          >
-            <Link href="https://github.com/chvndler" passHref>
-              <Text
-                as="a"
-                css={{
-                  // backgroundColor: '$twitter',
-                  fontSize: 16,
-                  fontFamily: '$telegraf',
-                  color: '$chxn3',
-                  fontWeight: '600',
-                  lineHeight: '15px',
-                  letterSpacing: '-0.04rem',
-                  marginRight: 10,
-                  '&:hover': {
-                    color: 'white'
-                  }
-                }}
-              >
-                view on github
-              </Text>
-            </Link>
-
-            <Box css={{ lineHeight: '15px' }}>
-              <GitHubLogoIcon />
-            </Box>
-          </Flex>
         </Container>
       </HeroSection>
 
-      <ContentSlider />
+      <ContentSlider>
+        <SliderCard>
+          <AtlrDsLogo />
+        </SliderCard>
 
-      <CardHero>
-        <Container size="3" css={{ textAlign: 'center' }}>
-          <Heading
-            css={{
-              // backgroundColor: '$chxn8',
-              fontSize: '3rem',
-              fontFamily: '$neueMontreal',
-              color: '$chxn5',
-              fontWeight: 'normal',
-              letterSpacing: '-0.05rem',
-              lineHeight: '30px',
-              padding: 0,
-              margin: 0,
-              width: 'auto',
-              '@md': {
-                fontSize: '3rem',
-                letterSpacing: '-0.08rem',
-                lineHeight: '30px'
-              }
-            }}
-          >
-            PROJEXTS
-          </Heading>
-        </Container>
-      </CardHero>
+        <SliderCard>
+          <AtlrDsLogo />
+        </SliderCard>
+
+        <SliderCard>
+          <AtlrDsLogo />
+        </SliderCard>
+
+        <SliderCard>
+          <AtlrDsLogo />
+        </SliderCard>
+      </ContentSlider>
+
+      <Container size="1" css={{ padding: 20 }}>
+        <Flex
+          css={{
+            width: '100%',
+            flexDirection: 'row',
+            gap: 5,
+            display: 'inline-flex',
+            textAlign: 'center',
+            alignItems: 'center',
+            justifyContent: 'center',
+            margin: 'auto',
+            '@md': {
+              textAlign: 'left',
+              alignItems: 'left',
+              justifyContent: 'flex-start'
+            }
+          }}
+        >
+          <Box css={{ lineHeight: '15px' }}>
+            <Icxn variant="GitHub" />
+          </Box>
+
+          <Link href="https://github.com/chvndler" passHref>
+            <Text
+              as="a"
+              css={{
+                // backgroundColor: '$twitter',
+                fontSize: 13,
+                fontFamily: '$neueMontreal',
+                color: '$chxn3',
+                fontWeight: 'normal',
+                lineHeight: '15px',
+                letterSpacing: 'normal',
+                marginRight: 10,
+                '&:hover': {
+                  color: '$gray12'
+                }
+              }}
+            >
+              View all projects on GitHub →
+            </Text>
+          </Link>
+        </Flex>
+      </Container>
     </PageLayout>
   );
 };
