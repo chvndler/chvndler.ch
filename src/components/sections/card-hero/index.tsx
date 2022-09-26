@@ -21,7 +21,18 @@ const CardCanvas = styled('div', {
 
 export const CardHero = ({ children }: CardHeroProps) => {
   return (
-    <Section size="4" css={{ zIndex: 10, height: '50vh', backgroundColor: '$chxn3' }}>
+    <Section
+      size="4"
+      css={{
+        zIndex: 10,
+        height: '50vh',
+        backgroundColor: 'transparent',
+        border: '1px solid $chxn3',
+        borderTopWidth: 0,
+        borderLeftWidth: 0,
+        borderRightWidth: 0
+      }}
+    >
       <CardCanvas>{children}</CardCanvas>
     </Section>
   );
