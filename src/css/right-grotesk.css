@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'PP Right Grotesk';
+    src: url('/fonts/right-grotesk/PPRightGrotesk-Bold.eot');
+    src: local('PP Right Grotesk'), local('PPRightGrotesk-Bold'), url('/fonts/right-grotesk/PPRightGrotesk-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/right-grotesk/PPRightGrotesk-Bold.woff2') format('woff2'), url('/fonts/right-grotesk/PPRightGrotesk-Bold.woff') format('woff'), url('/fonts/right-grotesk/PPRightGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Right Grotesk';
+    src: url('/fonts/right-grotesk/PPRightGrotesk-BoldItalic.eot');
+    src: local('PP Right Grotesk'), local('PPRightGrotesk-BoldItalic'), url('/fonts/right-grotesk/PPRightGrotesk-BoldItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/right-grotesk/PPRightGrotesk-BoldItalic.woff2') format('woff2'), url('/fonts/right-grotesk/PPRightGrotesk-BoldItalic.woff') format('woff'), url('/fonts/right-grotesk/PPRightGrotesk-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* Right Grotesk Wide */
+
+@font-face {
+    font-family: 'PP Right Grotesk Wide';
+    src: url('/fonts/right-grotesk/PPRightGrotesk-WideBlack.eot');
+    src: local('PP Right Grotesk Wide Black'), local('PPRightGrotesk-WideBlack'), url('/fonts/right-grotesk/PPRightGrotesk-WideBlack.eot?#iefix') format('embedded-opentype'), url('/fonts/right-grotesk/PPRightGrotesk-WideBlack.woff2') format('woff2'), url('/fonts/right-grotesk/PPRightGrotesk-WideBlack.woff') format('woff'), url('/fonts/right-grotesk/PPRightGrotesk-WideBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Right Grotesk Wide';
+    src: url('/fonts/right-grotesk/PPRightGrotesk-WideMedium.eot');
+    src: local('PP Right Grotesk Wide Medium'), local('PPRightGrotesk-WideMedium'), url('/fonts/right-grotesk/PPRightGrotesk-WideMedium.eot?#iefix') format('embedded-opentype'), url('/fonts/right-grotesk/PPRightGrotesk-WideMedium.woff2') format('woff2'), url('/fonts/right-grotesk/PPRightGrotesk-WideMedium.woff') format('woff'), url('/fonts/right-grotesk/PPRightGrotesk-WideMedium.ttf') format('truetype');
+    font-weight: 470;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Right Grotesk Wide';
+    src: url('/fonts/right-grotesk/PPRightGrotesk-WideMediumItalic.eot');
+    src: local('PP Right Grotesk Wide Medium Italic'), local('PPRightGrotesk-WideMediumItalic'), url('/fonts/right-grotesk/PPRightGrotesk-WideMediumItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/right-grotesk/PPRightGrotesk-WideMediumItalic.woff2') format('woff2'), url('/fonts/right-grotesk/PPRightGrotesk-WideMediumItalic.woff') format('woff'), url('/fonts/right-grotesk/PPRightGrotesk-WideMediumItalic.ttf') format('truetype');
+    font-weight: 470;
+    font-style: italic;
+}
+
+
+/* Right Grotesk Wide Text */
+
+@font-face {
+    font-family: 'PP Right Grotesk Text Wide';
+    src: url('/fonts/right-grotesk/PPRightGroteskText-WideBold.eot');
+    src: local('PP Right Grotesk Text Wide Bold'), local('PPRightGroteskText-WideBold'), url('/fonts/right-grotesk/PPRightGroteskText-WideBold.eot?#iefix') format('embedded-opentype'), url('/fonts/right-grotesk/PPRightGroteskText-WideBold.woff2') format('woff2'), url('/fonts/right-grotesk/PPRightGroteskText-WideBold.woff') format('woff'), url('/fonts/right-grotesk/PPRightGroteskText-WideBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Right Grotesk Text Wide';
+    src: url('/fonts/right-grotesk/PPRightGroteskText-WideBoldItalic.eot');
+    src: local('PP Right Grotesk Text Wide Bold Italic'), local('PPRightGroteskText-WideBoldItalic'), url('/fonts/right-grotesk/PPRightGroteskText-WideBoldItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/right-grotesk/PPRightGroteskText-WideBoldItalic.woff2') format('woff2'), url('/fonts/right-grotesk/PPRightGroteskText-WideBoldItalic.woff') format('woff'), url('/fonts/right-grotesk/PPRightGroteskText-WideBoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}

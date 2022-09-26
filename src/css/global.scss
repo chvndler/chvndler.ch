@@ -1,0 +1,86 @@
+@import './helpers';
+@import './reset.css';
+@import './inter.css';
+@import './switzer.css';
+@import './aero.css';
+@import './ettika.css';
+@import './pragmatica.css';
+@import './right-grotesk.css';
+@import './telegraf.css';
+@import './neue-montreal.css';
+@import './antarctican-mono.css';
+@import './neue-bit.css';
+:root {
+    --font-system: -apple-system, blinkmacsystemfont, segoe ui, roboto, oxygen, ubuntu, cantarell, fira sans, droid sans, helvetica neue, sans-serif;
+    --font-body: 'Inter', var(--font-system), sans-serif;
+    --inspect-color: #5aec95;
+}
+
+*,
+*:active,
+*:focus {
+    box-sizing: border-box;
+    outline: none;
+    /* cursor: none; */
+}
+
+html {
+    line-height: 1.5;
+    box-sizing: border-box;
+    text-rendering: geometricprecision;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-body);
+    transition: opacity #{$duration / 3 + 's'} ease-in;
+}
+
+body.inspect * {
+    outline: 0.5px dashed var(--inspect-color) !important;
+}
+
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+    outline: none;
+}
+
+// WARNING: if you don't want to use a fade in for the body, you can remove
+// this chunk of CSS. But ALSO make sure you remove the style tag in the body in _document.tsx
+// and the transition property on the body as well. thx.
+html.fonts-loaded body {
+    opacity: 1 !important;
+}
+
+::selection {
+    background-color: white;
+    color: black;
+    -webkit-text-fill-color: black;
+}
+
+.invert-selection::selection,
+.invert-selection *::selection {
+    background-color: black;
+    color: white;
+    -webkit-text-fill-color: white;
+}
+
+.ss01 {
+    font-feature-settings: 'ss01' on;
+}
+
+.ss02 {
+    font-feature-settings: 'ss02' on;
+}
+
+.ss03 {
+    font-feature-settings: 'ss03' on;
+}
+
+// end warning

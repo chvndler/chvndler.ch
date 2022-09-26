@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'ETTIKA GOZA';
+    src: url('/fonts/ettika/ETTIKAGOZA-Regular.eot');
+    src: local('ETTIKA GOZA Regular'), local('ETTIKAGOZA-Regular'), url('/fonts/ettika/ETTIKAGOZA-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/ettika/ETTIKAGOZA-Regular.woff2') format('woff2'), url('/fonts/ettika/ETTIKAGOZA-Regular.woff') format('woff'), url('/fonts/ettika/ETTIKAGOZA-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,75 +1,124 @@
-import { css, darkTheme, globalCss } from '@/lib/stitches.config';
-import '@/styles/global.scss';
-import '@/styles/dracula.css';
-import { res } from '@/styles/res';
-import { Box } from '@/ui';
+import '@/css/global.scss';
+import type { NextComponentType, NextPageContext } from 'next';
+import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
-import { AppProps } from 'next/app';
-import React from 'react';
-import Head from 'next/head';
-import { CmndK } from '@/components/CmndK';
-
+import * as React from 'react';
+import { createContext, useContext } from 'react';
+import { darkTheme, globalCss } from 'stitches.config';
+import { useAppStore } from '@/context/use-app-store';
 import { atelierLog, isClient, isDev, isProd } from '@/lib/constants';
 
+const Context = createContext<{ fontsLoaded: boolean }>({ fontsLoaded: false });
+export const useAppContext = () => useContext(Context);
+
 // TODO delete this basement log if not a basement project.
-if (isProd && isClient && isDev) {
+if (isProd && isClient) {
   // eslint-disable-next-line no-console
   console.log(atelierLog);
 }
 
-const globalStyles = globalCss(res, {
+export type Page<P = Record<string, unknown>> = NextComponentType<NextPageContext, Record<string, unknown>, P> & {
+  getLayout?: GetLayoutFn<P>;
+};
+
+export type GetLayoutFn<P = Record<string, unknown>> = (
+  props: Omit<AppProps<P>, 'pageProps'> & { pageProps: P }
+) => React.ReactNode;
+
+// apply globalCss..
+const globalStyles = globalCss({
   html: {
     margin: 0,
     padding: 0,
     overflowX: 'hidden',
-    backgroundColor: '$mauve1',
-
-    minHeight: '-webkit-fill-available',
+    backgroundColor: '$chxn1',
+    minHeight: '-webkit-fill-available'
   },
   body: {
     margin: 0,
-    color: '$hiContrast',
     WebkitTextSizeAdjust: '100%',
-    backgroundColor: '$mauve1',
-    minHeight: '-webkit-fill-available',
-  },
+    backgroundColor: '$chxn1',
+    minHeight: '-webkit-fill-available'
+  }
 });
 
-
-const appWrapper = css({
-  include: ['box', 'minHeightScreen'],
-});
-
-const App = ({ Component, pageProps }: AppProps) => {
+// App Begin...
+const App = ({ Component, pageProps, ...rest }: AppProps) => {
   globalStyles();
 
   React.useEffect(() => {
-    if (isDev) return;
-  });
+    if (!isDev) return;
+    let mousetrapRef: Mousetrap.MousetrapInstance | undefined = undefined;
+    import('mousetrap').then(({ default: mousetrap }) => {
+      mousetrapRef = mousetrap.bind(['command+i', 'ctrl+i', 'alt+i'], () => {
+        document.body.classList.toggle('inspect');
+      });
+    });
+
+    return () => {
+      mousetrapRef?.unbind(['command+i', 'ctrl+i', 'alt+i']);
+    };
+  }, []);
+
+  React.useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      if (event.code === `Tab`) {
+        document.body.classList.add('user-is-tabbing');
+      }
+    }
+
+    function handleMouseDown() {
+      document.body.classList.remove('user-is-tabbing');
+    }
+
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('mousedown', handleMouseDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('mousedown', handleMouseDown);
+    };
+  }, []);
+
+  React.useEffect(() => {
+    const maxWaitTime = 1500; // tweak this as needed.
+
+    const timeout = window.setTimeout(() => {
+      onReady();
+    }, maxWaitTime);
+
+    function onReady() {
+      window.clearTimeout(timeout);
+      useAppStore.setState({ fontsLoaded: true });
+      document.documentElement.classList.add('fonts-loaded');
+    }
+
+    try {
+      document.fonts.ready
+        .then(() => {
+          onReady();
+        })
+        .catch((error: unknown) => {
+          console.error(error);
+          onReady();
+        });
+    } catch (error) {
+      console.error(error);
+      onReady();
+    }
+  }, []);
+
+  const getLayout: GetLayoutFn =
+    (Component as any).getLayout || (({ Component, pageProps }) => <Component {...pageProps} />);
 
   return (
     <>
-      <Head>
-        <title>__</title>
-        <meta name='viewport' content='width=device-width, user-scalable=no' />
-      </Head>
       <ThemeProvider
         disableTransitionOnChange
-        attribute='class'
+        attribute="class"
         value={{ light: 'light-theme', dark: darkTheme.className }}
-        defaultTheme='system'
+        defaultTheme="system"
       >
-        <Box css={{ zIndex: '0', backgroundColor: 'transparent' }}>
-          <div
-            className={appWrapper({
-              display: 'flex',
-              flexDirection: 'column',
-            })}
-          >
-            <CmndK />
-            <Component {...pageProps} />
-          </div>
-        </Box>
+        {getLayout({ Component, pageProps, ...rest })}
       </ThemeProvider>
     </>
   );

@@ -1,0 +1,94 @@
+/* AT HAUSS AERO */
+
+@font-face {
+    font-family: 'At Hauss Aero';
+    src: url('/fonts/aero/AtHaussAero-Regular.eot');
+    src: local('At Hauss Aero Regular'), local('AtHaussAero-Regular'), url('/fonts/aero/AtHaussAero-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/aero/AtHaussAero-Regular.woff2') format('woff2'), url('/fonts/aero/AtHaussAero-Regular.woff') format('woff'), url('/fonts/aero/AtHaussAero-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'At Hauss Aero';
+    src: url('/fonts/aero/AtHaussAero-RegularItalic.eot');
+    src: local('At Hauss Aero Regular Italic'), local('AtHaussAero-RegularItalic'), url('/fonts/aero/AtHaussAero-RegularItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/aero/AtHaussAero-RegularItalic.woff2') format('woff2'), url('/fonts/aero/AtHaussAero-RegularItalic.woff') format('woff'), url('/fonts/aero/AtHaussAero-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/* AT HAUSS STD */
+
+@font-face {
+    font-family: 'At Hauss Std Retina';
+    src: url('/fonts/aero/AtHaussStd-Retina.eot');
+    src: local('At Hauss Std Retina'), local('AtHaussStd-Retina'), url('/fonts/aero/AtHaussStd-Retina.eot?#iefix') format('embedded-opentype'), url('/fonts/aero/AtHaussStd-Retina.woff2') format('woff2'), url('/fonts/aero/AtHaussStd-Retina.woff') format('woff'), url('/fonts/aero/AtHaussStd-Retina.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'At Hauss Std Retina';
+    src: url('/fonts/aero/AtHaussStd-RetinaItalic.eot');
+    src: local('At Hauss Std Retina Italic'), local('AtHaussStd-RetinaItalic'), url('/fonts/aero/AtHaussStd-RetinaItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/aero/AtHaussStd-RetinaItalic.woff2') format('woff2'), url('/fonts/aero/AtHaussStd-RetinaItalic.woff') format('woff'), url('/fonts/aero/AtHaussStd-RetinaItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'At Hauss Std';
+    src: url('/fonts/aero/AtHaussStd-Regular.eot');
+    src: local('At Hauss Std Regular'), local('AtHaussStd-Regular'), url('/fonts/aero/AtHaussStd-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/aero/AtHaussStd-Regular.woff2') format('woff2'), url('/fonts/aero/AtHaussStd-Regular.woff') format('woff'), url('/fonts/aero/AtHaussStd-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'At Hauss Std';
+    src: url('/fonts/aero/AtHaussStd-RegularItalic.eot');
+    src: local('At Hauss Std Regular Italic'), local('AtHaussStd-RegularItalic'), url('/fonts/aero/AtHaussStd-RegularItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/aero/AtHaussStd-RegularItalic.woff2') format('woff2'), url('/fonts/aero/AtHaussStd-RegularItalic.woff') format('woff'), url('/fonts/aero/AtHaussStd-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'At Hauss Std';
+    src: url('/fonts/aero/AtHaussStd-Medium.eot');
+    src: local('At Hauss Std Medium'), local('AtHaussStd-Medium'), url('/fonts/aero/AtHaussStd-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/aero/AtHaussStd-Medium.woff2') format('woff2'), url('/fonts/aero/AtHaussStd-Medium.woff') format('woff'), url('/fonts/aero/AtHaussStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'At Hauss Std';
+    src: url('/fonts/aero/AtHaussStd-MediumItalic.eot');
+    src: local('At Hauss Std Medium Italic'), local('AtHaussStd-MediumItalic'), url('/fonts/aero/AtHaussStd-MediumItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/aero/AtHaussStd-MediumItalic.woff2') format('woff2'), url('/fonts/aero/AtHaussStd-MediumItalic.woff') format('woff'), url('/fonts/aero/AtHaussStd-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'At Hauss Std';
+    src: url('/fonts/aero/AtHaussStd-Bold.eot');
+    src: local('At Hauss Std Bold'), local('AtHaussStd-Bold'), url('/fonts/aero/AtHaussStd-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/aero/AtHaussStd-Bold.woff2') format('woff2'), url('/fonts/aero/AtHaussStd-Bold.woff') format('woff'), url('/fonts/aero/AtHaussStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'At Hauss Std';
+    src: url('/fonts/aero/AtHaussStd-BoldItalic.eot');
+    src: local('At Hauss Std Bold Italic'), local('AtHaussStd-BoldItalic'), url('/fonts/aero/AtHaussStd-BoldItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/aero/AtHaussStd-BoldItalic.woff2') format('woff2'), url('/fonts/aero/AtHaussStd-BoldItalic.woff') format('woff'), url('/fonts/aero/AtHaussStd-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}

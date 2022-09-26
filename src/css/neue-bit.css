@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'PP Neue Bit';
+    src: url('/fonts/neue-bit/PPNeueBit-Bold.eot');
+    src: local('PP Neue Bit Bold'), local('PPNeueBit-Bold'), url('/fonts/neue-bit/PPNeueBit-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/neue-bit/PPNeueBit-Bold.woff2') format('woff2'), url('/fonts/neue-bit/PPNeueBit-Bold.woff') format('woff'), url('/fonts/neue-bit/PPNeueBit-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Neue Bit';
+    src: url('/fonts/neue-bit/PPNeueBit-Regular.eot');
+    src: local('PP Neue Bit Regular'), local('PPNeueBit-Regular'), url('/fonts/neue-bit/PPNeueBit-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/neue-bit/PPNeueBit-Regular.woff2') format('woff2'), url('/fonts/neue-bit/PPNeueBit-Regular.woff') format('woff'), url('/fonts/neue-bit/PPNeueBit-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

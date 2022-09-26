@@ -1,25 +1,36 @@
-import React from 'react';
-import { NavBar, NavBarProps } from '@/components/NavBar';
-import { Meta } from '@/components/common/meta';
-import Head from 'next/head';
+import { styled } from 'stitches.config';
 
-type Props = {
+import { AppFooter } from '@/components/layout/app-footer';
+import { AppNavbar } from '@/components/layout/app-navbar';
+
+type LayoutProps = {
   children?: React.ReactNode;
-  navbarProps?: NavBarProps;
-  title?: string;
+
+  // TODO after implementing header, footer
+  // headerProps?: HeaderProps
+  // footerProps?: FooterProps
 };
 
-export const PageLayout = ({ children, title = '' }: Props) => {
+const AppBox = styled('div', {
+  zIndex: '1',
+  height: 'auto',
+  width: '100vw',
+  padding: 0,
+  margin: 0
+});
+
+export const PageLayout = ({ children }: LayoutProps) => {
   return (
     <>
-      <Head>
-        <title>{title}</title>
-        <meta charSet='utf-8' />
-        <meta name='viewport' content='initial-scale=1.0, width=device-width, user-scalable=no' />
-      </Head>
-      <Meta />
-      <NavBar />
-      <main>{children}</main>
+      <AppBox>
+        <AppNavbar />
+        {/* TODO Header */}
+        {/* <Header /> */}
+        <main>{children}</main>
+        {/* TODO Footer */}
+        {/* <Footer /> */}
+        <AppFooter />
+      </AppBox>
     </>
   );
 };
