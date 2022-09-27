@@ -1,7 +1,7 @@
 {
   "files.autoSave": "onWindowChange",
-  "editor.fontSize": 10,
-  "editor.fontFamily": "At Hauss Mono, monospace",
+  "editor.fontSize": 11,
+  "editor.fontFamily": "Associate Mono, monospace",
   "editor.tabSize": 2,
   "workbench.colorTheme": "Copilot Theme",
   "workbench.productIconTheme": "fluent-icons",
@@ -9,7 +9,7 @@
   "window.zoomLevel": 1,
   "vsicons.dontShowNewVersionMessage": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.fontLigatures": false,
+  "editor.fontLigatures": true,
   "editor.fontWeight": "400",
   "editor.formatOnSave": true
 }

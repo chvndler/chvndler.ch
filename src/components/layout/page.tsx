@@ -12,8 +12,8 @@ type LayoutProps = {
 };
 
 const AppBox = styled('div', {
-  zIndex: '1',
-  height: 'auto',
+  zIndex: '9',
+  height: '100vh',
   width: '100vw',
   padding: 0,
   margin: 0
@@ -22,15 +22,9 @@ const AppBox = styled('div', {
 export const PageLayout = ({ children }: LayoutProps) => {
   return (
     <>
-      <AppBox>
-        <AppNavbar />
-        {/* TODO Header */}
-        {/* <Header /> */}
-        <main>{children}</main>
-        {/* TODO Footer */}
-        {/* <Footer /> */}
-        <AppFooter />
-      </AppBox>
+      <AppNavbar />
+      <AppBox>{children}</AppBox>
+      <AppFooter />
     </>
   );
 };

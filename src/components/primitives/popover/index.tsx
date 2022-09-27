@@ -1,14 +1,16 @@
-import { mauve } from '@radix-ui/colors';
+import Link from 'next/link';
 import * as PopoverPrimitive from '@radix-ui/react-popover';
 import React from 'react';
 import { CSS, keyframes, styled } from 'stitches.config';
 
 import { Box, Text } from '@/components/ds';
 
+/*
 const slideUpAndFade = keyframes({
   '0%': { opacity: 0, transform: 'translateY(2px)' },
   '100%': { opacity: 1, transform: 'translateY(0)' }
 });
+*/
 
 const slideRightAndFade = keyframes({
   '0%': { opacity: 0, transform: 'translateX(-2px)' },
@@ -29,7 +31,7 @@ const StyledPopover = styled(PopoverPrimitive.Root, {
   zIndex: '99999',
   borderRadius: 0,
   padding: 0,
-  margin: 0,
+  margin: 20,
   overflow: 'hidden',
   width: '100vw',
   height: '100vh'
@@ -38,21 +40,27 @@ const StyledPopover = styled(PopoverPrimitive.Root, {
 const StyledContent = styled(PopoverPrimitive.Content, {
   zIndex: '99999',
   borderRadius: 0,
-  padding: 30,
+  paddingTop: 40,
+  paddingBottom: 40,
   paddingLeft: 18,
+  paddingRight: 18,
   margin: 0,
+  marginTop: 10,
   overflow: 'hidden',
   width: '100vw',
   height: '100vh',
-  backgroundColor: '$chxn11',
+  backgroundColor: '$blur',
+  backdropFilter: 'blur(20px)',
+  WebkitBackdropFilter: 'blur(40px)',
+  saturate: '200%',
   '@media (prefers-reduced-motion: no-preference)': {
-    animationDuration: '600ms',
+    animationDuration: '900ms',
     animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
     willChange: 'transform, opacity',
     '&[data-state="open"]': {
       '&[data-side="top"]': { animationName: slideDownAndFade },
       '&[data-side="right"]': { animationName: slideLeftAndFade },
-      '&[data-side="bottom"]': { animationName: slideUpAndFade },
+      '&[data-side="bottom"]': { animationName: slideDownAndFade },
       '&[data-side="left"]': { animationName: slideRightAndFade }
     }
   }
@@ -77,9 +85,8 @@ const StyledClose = styled(PopoverPrimitive.Close, {
   display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'center',
-  color: '$chxn8',
   position: 'absolute',
-  top: 30,
+  top: 25,
   right: 18,
   '&:hover': {
     color: '$chxn8'
@@ -97,7 +104,7 @@ const Flex = styled('div', { display: 'flex' });
 
 const ItemItem = styled('div', {
   margin: 0,
-  color: mauve.mauve12,
+  color: '$chxn4',
   fontSize: 15,
   lineHeight: '19px',
   variants: {
@@ -133,16 +140,16 @@ export const PopoverComponent = () => (
     </PopoverTrigger>
     <PopoverContent>
       <Flex css={{ flexDirection: 'column', gap: 10 }}>
-        <ItemItem bold faded css={{ marginBottom: 20, fontFamily: '$neueMontreal', fontSize: '2rem' }}>
-          PROJECTS©
+        <ItemItem bold css={{ marginBottom: 20, fontFamily: '$neueMontreal', fontSize: '2rem' }}>
+          <Link href="/projects">PROJECTS</Link>
         </ItemItem>
 
-        <ItemItem bold faded css={{ marginBottom: 20, fontFamily: '$neueMontreal', fontSize: '2rem' }}>
-          ABOUT
+        <ItemItem bold css={{ marginBottom: 20, fontFamily: '$neueMontreal', fontSize: '2rem' }}>
+          <Link href="/about">ABOUT</Link>
         </ItemItem>
 
-        <ItemItem bold faded css={{ marginBottom: 20, fontFamily: '$neueMontreal', fontSize: '2rem' }}>
-          NOTES
+        <ItemItem bold css={{ marginBottom: 20, fontFamily: '$neueMontreal', fontSize: '2rem' }}>
+          <Link href="/notes">NOTES</Link>
         </ItemItem>
       </Flex>
       <PopoverClose aria-label="Close">
@@ -153,9 +160,9 @@ export const PopoverComponent = () => (
               fontSize: 14,
               fontWeight: 'bold',
               textAlign: 'right',
-              color: '$chxn1',
+              color: '$chxn4',
               '&:hover': {
-                color: '$chxn4',
+                color: '$chxn9',
                 cursor: 'pointer'
               }
             }}

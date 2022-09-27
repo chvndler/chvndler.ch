@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import { styled } from 'stitches.config';
 
-import { Flex, Text } from '@/components/ds';
+import { Flex, Text, Box } from '@/components/ds';
 
 import { PopoverComponent } from '@/components/primitives/popover';
+import { CursorData } from '@/components/sxripts';
 
 const StyledNavbar = styled('div', {
   zIndex: '20',
@@ -131,6 +132,12 @@ export const AppNavbar = () => {
             </Text>
             --> */}
           </Flex>
+        </ContentBox>
+
+        <ContentBox alignment="center">
+          <Box css={{ '@md': { display: 'none' } }}>
+            <CursorData />
+          </Box>
         </ContentBox>
 
         <ContentBox alignment="end">

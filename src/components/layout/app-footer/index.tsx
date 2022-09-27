@@ -3,12 +3,9 @@ import { styled } from 'stitches.config';
 
 import { Text, Flex } from '@/components/ds';
 import { ThemeButton } from '@/components/primitives/theme-button';
-import { CursorData } from '@/components/sxripts';
 
 const StyledFooter = styled('footer', {
-  zIndex: '10',
-  position: 'fixed',
-  bottom: 0,
+  position: 'relative',
   boxSizing: 'border-box',
   display: 'flex',
   gap: 2,
@@ -128,7 +125,6 @@ export const AppFooter = () => {
 
         <ContentBox alignment="center">
           <Flex css={{ flexDirection: 'column' }}>
-            <CursorData />
             <Text
               css={{
                 color: '$chxn3',
