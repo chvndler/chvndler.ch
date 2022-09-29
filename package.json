@@ -109,7 +109,8 @@
         ],
         "ignorePatterns": [
             "next.config.js",
-            "next-sitemap.js"
+            "next-sitemap.js",
+            "src/lib/gsap/*"
         ],
         "extends": [
             "eslint:recommended",
