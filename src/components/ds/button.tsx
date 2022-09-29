@@ -30,8 +30,12 @@ export const Button = styled('button', {
     size: {
       '1': {
         margin: 0,
-        borderRadius: '6px',
-        px: '$2'
+        borderRadius: 11,
+        paddingLeft: '20px',
+        paddingRight: '20px',
+        height: 'auto',
+        fontSize: 13,
+        lineHeight: '40px'
       },
       '2': {
         borderRadius: '8px',
@@ -149,6 +153,22 @@ export const Button = styled('button', {
         color: '$chxn3',
         '&:hover': {
           color: '$chxn6'
+        },
+        '&:active': {
+          // backgroundColor: 'hsla(0,100%,100%,.3)'
+        },
+        '&:focus': {
+          // boxShadow: 'inset 0 0 0 1px hsla(0,100%,100%,.35), 0 0 0 1px hsla(0,100%,100%,.35)'
+        }
+      },
+      clear: {
+        height: 'auto',
+        fontFamily: '$telegraf',
+        backgroundColor: 'transparent',
+        color: '$chxn3',
+        '&:hover': {
+          color: '$tartOrange',
+          backgroundColor: '$blur'
         },
         '&:active': {
           // backgroundColor: 'hsla(0,100%,100%,.3)'

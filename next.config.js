@@ -11,17 +11,7 @@ const config = {
         formats: ['image/avif', 'image/webp'],
         domains: ['cdn.ady.systems', 'pbs.twimg.com']
     },
-    experimental: {},
-
-    webpack(config) {
-        config.module.rules.push({
-            test: /\.svg$/i,
-            issuer: /\.[jt]sx?$/,
-            use: ['@svgr/webpack'],
-        })
-
-        return config
-    }
+    experimental: {}
 };
 
 module.exports = (_phase, { defaultConfig: _ }) => {
