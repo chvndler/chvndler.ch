@@ -37,6 +37,7 @@ const globalStyles = globalCss({
     minHeight: '-webkit-fill-available'
   },
   body: {
+    opacity: 0,
     margin: 0,
     WebkitTextSizeAdjust: '100%',
     backgroundColor: '$chxn1',

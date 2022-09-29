@@ -168,7 +168,7 @@ export const Button = styled('button', {
         color: '$chxn3',
         '&:hover': {
           color: '$tartOrange',
-          backgroundColor: '$blur'
+          backgroundColor: '$appbarButton'
         },
         '&:active': {
           // backgroundColor: 'hsla(0,100%,100%,.3)'

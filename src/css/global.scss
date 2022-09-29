@@ -38,7 +38,7 @@ html {
 
 body {
     font-family: var(--font-body);
-    transition: opacity #{$duration / 3 + 's'} ease-in;
+    transition: opacity #{$duration / 6 + 's'} ease-in;
 }
 
 body.inspect * {

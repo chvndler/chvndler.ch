@@ -1,14 +1,14 @@
 import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
 import { getCssText, reset } from 'stitches.config';
 
-// stitches setup...
+// setup & resets...
 const getCssAndReset = () => {
   const css = getCssText();
   reset();
   return css;
 };
 
-class CodeBoxDocument extends Document {
+class ChDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
     return { ...initialProps };
@@ -28,4 +28,4 @@ class CodeBoxDocument extends Document {
   }
 }
 
-export default CodeBoxDocument;
+export default ChDocument;

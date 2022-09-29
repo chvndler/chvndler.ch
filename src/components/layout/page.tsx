@@ -23,7 +23,9 @@ export const PageLayout = ({ children }: LayoutProps) => {
   return (
     <>
       <AppBar />
-      <AppBox>{children}</AppBox>
+      <AppBox>
+        <main>{children}</main>
+      </AppBox>
       <AppFooter />
     </>
   );

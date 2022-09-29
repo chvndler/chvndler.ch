@@ -3,7 +3,7 @@ import type { LxgoProps } from './types';
 export const CDCRLogo = ({ ...props }: LxgoProps) => {
   return (
     <>
-      <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 34" width="98" height="" {...props}>
+      <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 34" width="94" height="" {...props}>
         <path
           d="M79.4,7c3.6,0,4.8,2.1,5.1,3.6h10.6c-0.6-3.7-2.7-5.9-5.4-7.1l5.9-1.7h-15c0,0,0,0-0.1,0c-0.4,0-0.8,0-1.1,0
 		c-5.2,0-14.3,0.3-16,8.2c-0.4-2.7-1.5-4.7-3.2-6l7.8-2.2H51.1H38.5h-5.1h-0.6H18.8c0,0-0.1,0-0.2,0c-0.1,0-0.2,0-0.3,0c0,0,0,0,0,0

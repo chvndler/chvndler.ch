@@ -39,6 +39,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       background: '#101010',
       black: '#000000',
       blur: 'rgba(240,240,240,0.3)',
+      appbarButton: 'rgba(0, 0, 0, 0.03)',
       table: 'transparent',
       white: '#ffffff',
 

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { styled } from 'stitches.config';
 
 import { CDCLogo } from '@/components/logos/cdc';
@@ -27,7 +28,7 @@ const StyledBar = styled('div', {
   position: 'relative',
   width: '100%',
   borderRadius: 16,
-  backgroundColor: 'transparent',
+  // backgroundColor: 'transparent',
   backdropFilter: 'blur(80px)',
   WebkitBackdropFilter: 'blur(80px)',
   lineHeight: '23px',
@@ -35,6 +36,7 @@ const StyledBar = styled('div', {
 
   // developer tools
   // use 'black' border for viewability
+  backgroundColor: 'rgba(0, 0, 0, 0.03)',
   border: '1px solid transparent'
 });
 
@@ -139,7 +141,9 @@ export const AppBar = () => {
           </ContentBox>
 
           <ContentBox alignment="center">
-            <CDCLogo />
+            <Link href="/ch" passHref>
+              <CDCLogo />
+            </Link>
           </ContentBox>
 
           <ContentBox alignment="end">

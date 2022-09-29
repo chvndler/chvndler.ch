@@ -1,5 +1,6 @@
 import { Canvas, Container } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
+import { ContextComponent } from '@/components/primitives/context-menu';
 import { Tweet } from '@/components/primitives/tweet';
 
 const DevelopingPage = () => {
@@ -18,6 +19,10 @@ const DevelopingPage = () => {
           >
             i love twitter.
           </Tweet>
+        </Container>
+
+        <Container size="3" css={{ display: 'flex', alignItems: 'center', margin: 'auto', justifyContent: 'center' }}>
+          <ContextComponent />
         </Container>
       </Canvas>
       {/*END HERO CONTAINER*/}

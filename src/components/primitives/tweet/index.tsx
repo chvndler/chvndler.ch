@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 import { Box, Card, Flex, InlineLink, Text } from '@/components/ds';
@@ -17,11 +18,7 @@ type TweetType = {
 export const Tweet = ({ url, userUrl, children, avatar, author, username, date }: TweetType) => {
   return (
     <Card
-      as="a"
       variant="interactive"
-      target="_blank"
-      rel="noopener noreferrer"
-      href={url}
       css={{
         width: '80vw',
         maxWidth: 400,
@@ -65,7 +62,9 @@ export const Tweet = ({ url, userUrl, children, avatar, author, username, date }
         </Flex>
         <Box css={{ color: '$gray10' }}>
           <Box className="icon-toggle" css={{ transition: 'opacity 50ms linear', color: '$twitter' }}>
-            <Icxn variant="Twitter" />
+            <Link href={url} passHref>
+              <Icxn variant="Twitter" />
+            </Link>
           </Box>
         </Box>
       </Flex>
