@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
 import { Box, Text } from '@/components/ds';
-import { useState } from 'react';
 
 const Value = () => {
   const [display, setDisplay] = useState('');
 
-  React.useEffect(() => {
+  useEffect(() => {
     const format = (num: string | number, pad: number) => {
       return num.toString().padStart(pad, '0');
     };

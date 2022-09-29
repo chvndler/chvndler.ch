@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Box, Card, Flex, InlineLink, Text } from '@/components/ds';
 import { Icxn } from '@/components/icons/icxn';
+import { Avatar } from '@/components/primitives/avatar';
 
 type TweetType = {
   url: string;

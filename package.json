@@ -107,7 +107,10 @@
             "simple-import-sort",
             "@typescript-eslint"
         ],
-        "ignorePatterns": [],
+        "ignorePatterns": [
+            "next.config.js",
+            "next-sitemap.js"
+        ],
         "extends": [
             "eslint:recommended",
             "plugin:import/recommended",
