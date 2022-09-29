@@ -2,27 +2,40 @@ import { styled } from 'stitches.config';
 
 import { CDCLogo } from '@/components/logos/cdc';
 
+const StyledNavContainer = styled('div', {
+  boxSizing: 'border-box',
+  display: 'block',
+  transform: 'translateY(0px) translateX(-50%)',
+  WebkitFontSmoothing: 'antialiased',
+  position: 'fixed',
+  top: '1rem',
+  width: 'calc(100% - 2rem)',
+  maxWidth: '400px',
+  left: '50%',
+  zIndex: 99999
+});
+
 const StyledBar = styled('div', {
   boxSizing: 'border-box',
+  overflow: 'hidden',
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'space-between',
   alignItems: 'center',
   padding: 4,
   margin: 'auto',
-  position: 'fixed',
-  top: 16,
-  left: 0,
-  right: 0,
+  position: 'relative',
   width: '100%',
-  maxWidth: '400px',
-  border: '1px solid transparent',
   borderRadius: 16,
   backgroundColor: 'transparent',
-  backdropFilter: 'blur(30px)',
-  WebkitBackdropFilter: 'blur(30px)',
+  backdropFilter: 'blur(80px)',
+  WebkitBackdropFilter: 'blur(80px)',
   lineHeight: '23px',
-  height: 48
+  height: 48,
+
+  // developer tools
+  // use 'black' border for viewability
+  border: '1px solid transparent'
 });
 
 const NavButton = styled('a', {
@@ -111,28 +124,31 @@ const ContentBox = styled('div', {
   }
 });
 
+export const NavContainer = StyledNavContainer;
 export const AppNav = StyledBar;
 
 export const AppBar = () => {
   return (
     <>
-      <AppNav>
-        <ContentBox alignment="start">
-          <NavButton as="a" href="/projects">
-            Projects
-          </NavButton>
-        </ContentBox>
+      <NavContainer>
+        <AppNav>
+          <ContentBox alignment="start">
+            <NavButton as="a" href="/projects">
+              Projects
+            </NavButton>
+          </ContentBox>
 
-        <ContentBox alignment="center">
-          <CDCLogo />
-        </ContentBox>
+          <ContentBox alignment="center">
+            <CDCLogo />
+          </ContentBox>
 
-        <ContentBox alignment="end">
-          <NavButton as="a" href="/projects">
-            Notes
-          </NavButton>
-        </ContentBox>
-      </AppNav>
+          <ContentBox alignment="end">
+            <NavButton as="a" href="/projects">
+              Notes
+            </NavButton>
+          </ContentBox>
+        </AppNav>
+      </NavContainer>
     </>
   );
 };

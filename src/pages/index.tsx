@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { Box, Canvas, Container, Flex, Heading, InlineLink, Paragraph, Space, Text } from '@/components/ds';
+import { Box, Canvas, Container, Flex, InlineLink, Paragraph, Space, Text } from '@/components/ds';
 import { Icxn } from '@/components/icons/icxn';
 import { PageLayout } from '@/components/layout/page';
 import { HeroSection } from '@/components/sections/hero';
@@ -12,7 +12,6 @@ const HomePage = () => {
         <HeroSection size="1" color="default" alignment="center" css={{ padding: 0 }}>
           <Container size="1" css={{ padding: 20 }}>
             <HeadingHero />
-            <Space size="0" />
             <AboutParagraph />
             <Space size="2" />
             <Flex
@@ -50,34 +49,33 @@ export default HomePage;
 const HeadingHero = () => {
   return (
     <>
-      <Heading
+      <Text
         css={{
-          // backgroundColor: '$chxn8',
-          fontSize: '4rem',
-          fontFamily: '$pragExtended',
+          fontSize: '0.8rem',
+          fontFamily: '$telegraf',
           color: '$chxn5',
           fontWeight: 'bold',
-          letterSpacing: '-0.3rem',
-          lineHeight: '30px',
+          letterSpacing: 'normal',
+          lineHeight: '1',
           padding: 0,
           margin: 0,
           width: 'auto',
+          opacity: '0.04',
           '@md': {
-            fontSize: '3rem',
-            letterSpacing: '-0.2rem',
-            lineHeight: '30px'
+            fontSize: '1rem',
+            letterSpacing: '-0.05rem',
+            lineHeight: '1'
           }
         }}
       >
-        I'M CHAN.
-      </Heading>
+        CHANDLER CHAPPELL
+      </Text>
       <Text
         css={{
-          // backgroundColor: '$chxn8',
           fontSize: '1rem',
           fontFamily: '$telegraf',
           color: '$chxn5',
-          fontWeight: 'normal',
+          fontWeight: 'bold',
           letterSpacing: 'normal',
           lineHeight: '30px',
           padding: 10,

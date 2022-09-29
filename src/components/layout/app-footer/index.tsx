@@ -5,7 +5,8 @@ import { Flex, Text } from '@/components/ds';
 import { ThemeButton } from '@/components/primitives/theme-button';
 
 const StyledFooter = styled('footer', {
-  position: 'relative',
+  position: 'fixed',
+  bottom: 0,
   boxSizing: 'border-box',
   display: 'flex',
   gap: 2,

@@ -45,7 +45,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       // CHXN.v01
       chxn1: '#f7f0f0',
       chxn2: '#bcc1cd',
-      chxn3: '#858b8f',
+      chxn3: '#A09FA6',
       chxn4: '#484349',
       chxn5: '#2b2a30',
       chxn6: '#5e7ce2',
