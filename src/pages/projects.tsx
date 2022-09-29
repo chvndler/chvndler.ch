@@ -1,11 +1,12 @@
 import Link from 'next/link';
+
 import { Box, Container, Flex, Heading, Text } from '@/components/ds';
+import { Icxn } from '@/components/icons/icxn';
 import { PageLayout } from '@/components/layout/page';
-import { HeroSection } from '@/components/sections/hero';
+import { AtlrDsLogo } from '@/components/logos';
 import { ContentSlider } from '@/components/primitives/off-canvas/slider';
 import { SliderCard } from '@/components/primitives/off-canvas/slider-card';
-import { AtlrDsLogo } from '@/components/logos';
-import { Icxn } from '@/components/icons/icxn';
+import { HeroSection } from '@/components/sections/hero';
 
 const ProjectsPage = () => {
   return (

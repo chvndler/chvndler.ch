@@ -1,7 +1,6 @@
 import type * as Polymorphic from '@radix-ui/react-polymorphic';
 import clsx from 'clsx';
 import { forwardRef } from 'react';
-
 // Styles
 import { styled } from 'stitches.config';
 

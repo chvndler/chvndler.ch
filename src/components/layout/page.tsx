@@ -1,7 +1,7 @@
 import { styled } from 'stitches.config';
 
+import { AppBar } from '@/components/layout/app-bar';
 import { AppFooter } from '@/components/layout/app-footer';
-import { AppNavbar } from '@/components/layout/app-navbar';
 
 type LayoutProps = {
   children?: React.ReactNode;
@@ -22,7 +22,7 @@ const AppBox = styled('div', {
 export const PageLayout = ({ children }: LayoutProps) => {
   return (
     <>
-      <AppNavbar />
+      <AppBar />
       <AppBox>{children}</AppBox>
       <AppFooter />
     </>

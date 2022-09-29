@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-import { Box, Canvas, Container, Flex, Heading, Paragraph, Space, Text, InlineLink } from '@/components/ds';
+import { Box, Canvas, Container, Flex, Heading, InlineLink, Paragraph, Space, Text } from '@/components/ds';
+import { Icxn } from '@/components/icons/icxn';
 import { PageLayout } from '@/components/layout/page';
 import { HeroSection } from '@/components/sections/hero';
-import { Icxn } from '@/components/icons/icxn';
 
 const HomePage = () => {
   return (

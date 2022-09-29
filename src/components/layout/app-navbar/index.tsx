@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import { styled } from 'stitches.config';
 
-import { Flex, Text, Box } from '@/components/ds';
-
+import { Box, Flex, Text } from '@/components/ds';
 import { PopoverComponent } from '@/components/primitives/popover';
 import { CursorData } from '@/components/sxripts';
 

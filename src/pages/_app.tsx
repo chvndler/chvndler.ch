@@ -1,10 +1,12 @@
 import '@/css/global.scss';
+
 import type { NextComponentType, NextPageContext } from 'next';
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
 import * as React from 'react';
 import { createContext, useContext } from 'react';
 import { darkTheme, globalCss } from 'stitches.config';
+
 import { useAppStore } from '@/context/use-app-store';
 import { atelierLog, isClient, isDev, isProd } from '@/lib/constants';
 

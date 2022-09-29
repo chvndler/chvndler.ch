@@ -1,6 +1,5 @@
-import { Container, Canvas } from '@/components/ds';
+import { Canvas, Container } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
-
 import { Tweet } from '@/components/primitives/tweet';
 
 const DevelopingPage = () => {

@@ -1,4 +1,5 @@
 import { styled } from 'stitches.config';
+
 import { CDCLogo } from '@/components/logos/cdc';
 
 const StyledBar = styled('div', {

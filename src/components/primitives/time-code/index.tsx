@@ -1,9 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
 import * as React from 'react';
+import { styled } from 'stitches.config';
 
 import { Box } from '@/components/ds';
-
-import { styled } from 'stitches.config';
 
 const StyledTime = styled('div', {
   border: 'none',

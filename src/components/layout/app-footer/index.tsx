@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { styled } from 'stitches.config';
 
-import { Text, Flex } from '@/components/ds';
+import { Flex, Text } from '@/components/ds';
 import { ThemeButton } from '@/components/primitives/theme-button';
 
 const StyledFooter = styled('footer', {

@@ -1,6 +1,6 @@
 import { Box, Container, Heading } from '@/components/ds';
-import { HeroSection } from '@/components/sections/hero';
 import { AppBar } from '@/components/layout/app-bar';
+import { HeroSection } from '@/components/sections/hero';
 
 const TestPage = () => {
   return (

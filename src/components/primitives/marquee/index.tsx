@@ -1,6 +1,6 @@
 import React from 'react';
-import { keyframes, styled } from 'stitches.config';
 import Marquee from 'react-fast-marquee';
+import { keyframes, styled } from 'stitches.config';
 const scroll = keyframes({
     from: {
       '0%': {
@@ -44,6 +44,7 @@ type MarqueeContentPrimitiveProps = React.ComponentProps<typeof Marquee>;
 export const MarqueeContainer = StyledMarqueeContainer;
 export const MarqueeContent: React.ForwardRefExoticComponent<
   React.PropsWithoutRef<MarqueeContentPrimitiveProps> & React.RefAttributes<React.ElementRef<typeof StyledContent>>
+  // eslint-disable-next-line import/no-named-as-default-member
 > = React.forwardRef<React.ElementRef<typeof StyledContent>, MarqueeContentPrimitiveProps>(
   ({ children, ...props }, forwardedRef) => (
     <StyledMarqueeContainer>

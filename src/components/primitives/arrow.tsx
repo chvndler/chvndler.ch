@@ -1,4 +1,5 @@
 import { styled } from 'stitches.config';
+
 import IconArrowDown from '@/components/icons/arrow-hero.svg';
 import IconArrowUp from '@/components/icons/arrow-up.svg';
 

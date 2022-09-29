@@ -1,5 +1,5 @@
-import { styled } from 'stitches.config';
 import React from 'react';
+import { styled } from 'stitches.config';
 
 type SliderProps = {
   children?: React.ReactNode;

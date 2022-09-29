@@ -1,7 +1,8 @@
 import React from 'react';
-import { Avatar } from '@/components/primitives/avatar';
-import { Box, Text, Flex, Card, InlineLink } from '@/components/ds';
+
+import { Box, Card, Flex, InlineLink, Text } from '@/components/ds';
 import { Icxn } from '@/components/icons/icxn';
+import { Avatar } from '@/components/primitives/avatar';
 
 type TweetType = {
   url: string;
