@@ -27,13 +27,29 @@ const StyledInlineLink = styled('a', {
     '&:hover': {
       color: '$maxBlue'
     }
+  },
+
+  variants: {
+    color: {
+      inherit: {
+        color: 'inherit'
+      },
+      tartOrange: {
+        color: '$tartOrange'
+      },
+      twitter: {
+        color: '$twitter'
+      }
+    }
   }
 });
+
+export const InheritedLink = StyledInlineLink;
 
 export const InlineLink = ({ href, children, ...props }: InlineProps) => {
   return (
     <Link href={href} passHref target="_blank" rel="norefferer noopener">
-      <StyledInlineLink {...props}>{children}</StyledInlineLink>
+      <InheritedLink {...props}>{children}</InheritedLink>
     </Link>
   );
 };

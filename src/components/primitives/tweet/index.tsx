@@ -50,13 +50,7 @@ export const Tweet = ({ url, userUrl, children, avatar, author, username, date }
               {author}
             </Text>
             <Text variant="gray" size="2" css={{ color: '$gray10' }}>
-              @{username} ·{' '}
-              <InlineLink
-                href={userUrl}
-                css={{ textDecoration: 'none', fontWeight: '500', color: '$chxn4', '&:hover': { color: '$twitter' } }}
-              >
-                Follow
-              </InlineLink>
+              @{username} · <InlineLink href={userUrl}>Follow</InlineLink>
             </Text>
           </Box>
         </Flex>
