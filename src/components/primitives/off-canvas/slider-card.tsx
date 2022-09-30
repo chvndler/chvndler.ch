@@ -46,8 +46,8 @@ const ContentCard = styled('div', {
   display: 'flex',
   justifyContent: 'flex-start',
   textAlign: 'left',
-  alignContent: 'center',
-  alignItems: 'center',
+  alignContent: 'left',
+  alignItems: 'left',
   verticalAlign: 'middle',
   WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
 

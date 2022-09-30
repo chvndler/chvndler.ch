@@ -7,6 +7,7 @@ import { AtlrColorLogo, AtlrDsLogo, AtlrIcxnsLogo, CDCLogo } from '@/components/
 import { ContentSlider } from '@/components/primitives/off-canvas/slider';
 import { ProjectDisplay } from '@/components/primitives/project-display';
 import { HeroSection } from '@/components/sections/hero';
+import { AtlrTypeLogo } from '~/components/logos/atlr.typesxript';
 
 const ProjectsPage = () => {
   return (
@@ -44,6 +45,13 @@ const ProjectsPage = () => {
           <CDCLogo />
         </ProjectDisplay>
         <ProjectDisplay
+          projectUrl="https://github.com/AtelierDesign/atlr.typesxript"
+          title="@AtelierDesign / atlr.typesxript →"
+          description="This website is built with Next.js and Stitches. It is hosted on Vercel."
+        >
+          <AtlrTypeLogo />
+        </ProjectDisplay>
+        <ProjectDisplay
           projectUrl="https://github.com/AtelierDesign/atlr.ds"
           title="@AtelierDesign / atlr.ds"
           description="This website is built with Next.js and Stitches. It is hosted on Vercel."
@@ -60,7 +68,7 @@ const ProjectsPage = () => {
         <ProjectDisplay
           projectUrl="https://github.com/AtelierDesign/atlr.color"
           title="@AtelierDesign / atlr.color"
-          description="A minimal color system built on top of Stitches x Radix-UI, for a complete brand guide."
+          description="A minimal color system built on top of Stitches x Radix-UI."
         >
           <AtlrColorLogo />
         </ProjectDisplay>

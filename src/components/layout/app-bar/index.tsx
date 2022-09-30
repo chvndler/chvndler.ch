@@ -71,7 +71,8 @@ const NavButton = styled('a', {
 
   '&:hover': {
     color: '$chxn4',
-    backgroundColor: '$blur'
+    backgroundColor: '$blur',
+    cursor: 'pointer'
   },
   '&:active': {
     // backgroundColor: 'hsla(0,100%,100%,.3)'
