@@ -1,53 +1,12 @@
 import Link from 'next/link';
-import { styled } from 'stitches.config';
 
 import { Box, Container, Flex, Heading, Text } from '@/components/ds';
 import { Icxn } from '@/components/icons/icxn';
 import { PageLayout } from '@/components/layout/page';
 import { AtlrColorLogo, AtlrDsLogo, AtlrIcxnsLogo, CDCLogo } from '@/components/logos';
 import { ContentSlider } from '@/components/primitives/off-canvas/slider';
-import { SliderCard, SvgBox } from '@/components/primitives/off-canvas/slider-card';
+import { ProjectDisplay } from '@/components/primitives/project-display';
 import { HeroSection } from '@/components/sections/hero';
-import { LogoLink } from '~/components/ds/logo-link';
-
-const ProjectDetails = styled('div', {
-  boxSizing: 'content-box',
-  display: 'flex',
-  flexDirection: 'column',
-  position: 'absolute',
-  textAlign: 'left',
-  padding: 20,
-  margin: 'auto',
-  bottom: 10,
-  left: 0
-});
-
-const SubTitle = styled('div', {
-  position: 'relative',
-  fontSize: 16,
-  fontFamily: '$telegraf',
-  fontWeight: 'normal',
-  lineHeight: '40px',
-  textAlign: 'left',
-  textTransform: 'uppercase',
-  padding: 0,
-  margin: 0,
-
-  color: '$chxn4'
-});
-
-const Description = styled('p', {
-  position: 'relative',
-  fontSize: 14,
-  fontFamily: '$neueMontreal',
-  fontWeight: 'normal',
-  lineHeight: 'normal',
-  textAlign: 'left',
-  padding: 0,
-  margin: 0,
-
-  color: '$chxn3'
-});
 
 const ProjectsPage = () => {
   return (
@@ -77,55 +36,34 @@ const ProjectsPage = () => {
       </HeroSection>
 
       <ContentSlider>
-        {/* <!-- PROJECT #001 --> */}
-        {/* <!-- PROJECT #001 --> */}
-        <LogoLink variant="box">
-          <SliderCard>
-            <CDCLogo />
-            <ProjectDetails>
-              <SubTitle>
-                @chvndler / <strong>chvndler.ch</strong>
-              </SubTitle>
-              <Description>
-                Consequat laborum laborum adipisicing officia tempor ullamco anim elit elit in aliqua laborum nisi
-                consectetur.
-              </Description>
-            </ProjectDetails>
-          </SliderCard>
-        </LogoLink>
-        {/* <!-- END ! PROJECT #001 --> */}
-        {/* <!-- END ! PROJECT #001 --> */}
-
-        {/* <!-- PROJECT #002 --> */}
-        {/* <!-- PROJECT #002 --> */}
-        <SliderCard>
-          <SvgBox color="maxBlue">
-            <AtlrDsLogo />
-          </SvgBox>
-          <ProjectDetails>
-            <SubTitle>
-              @AtelierDesign / <strong>atlr.ds</strong>
-            </SubTitle>
-            <Description>
-              Consequat laborum laborum adipisicing officia tempor ullamco anim elit elit in aliqua laborum nisi
-              consectetur.
-            </Description>
-          </ProjectDetails>
-        </SliderCard>
-        {/* <!-- END ! PROJECT #002 --> */}
-        {/* <!-- END ! PROJECT #002 --> */}
-
-        <SliderCard>
+        <ProjectDisplay
+          projectUrl="https://github.com/chvndler/chvndler.ch"
+          title="@chvndler / chvndler.ch →"
+          description="This website is built with Next.js and Stitches. It is hosted on Vercel."
+        >
+          <CDCLogo />
+        </ProjectDisplay>
+        <ProjectDisplay
+          projectUrl="https://github.com/AtelierDesign/atlr.ds"
+          title="@AtelierDesign / atlr.ds"
+          description="This website is built with Next.js and Stitches. It is hosted on Vercel."
+        >
           <AtlrDsLogo />
-        </SliderCard>
-
-        <SliderCard>
+        </ProjectDisplay>
+        <ProjectDisplay
+          projectUrl="https://github.com/AtelierDesign/atlr.icxns"
+          title="@AtelierDesign / atlr.icxns"
+          description="A simple a crisp icon library, built for quickness and minimal design."
+        >
           <AtlrIcxnsLogo />
-        </SliderCard>
-
-        <SliderCard>
+        </ProjectDisplay>
+        <ProjectDisplay
+          projectUrl="https://github.com/AtelierDesign/atlr.color"
+          title="@AtelierDesign / atlr.color"
+          description="A minimal color system built on top of Stitches x Radix-UI, for a complete brand guide."
+        >
           <AtlrColorLogo />
-        </SliderCard>
+        </ProjectDisplay>
       </ContentSlider>
 
       <Container size="1" css={{ padding: 20 }}>

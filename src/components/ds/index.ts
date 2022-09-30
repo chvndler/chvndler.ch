@@ -8,6 +8,7 @@ export * from './grid';
 export * from './heading';
 export * from './icon-button';
 export * from './inline-link';
+export * from './logo-link';
 export * from './paragraph';
 export * from './section';
 export * from './space';

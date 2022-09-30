@@ -8,7 +8,7 @@ type SliderProps = {
 };
 
 const StyledSvgBox = styled(Box, {
-  transition: 'color 0.4s ease',
+  transition: 'color 0.6s ease',
   color: 'inherit',
 
   '& svg': {
@@ -38,7 +38,6 @@ const StyledSvgBox = styled(Box, {
 const ContentCard = styled('div', {
   zIndex: '4',
   appearance: 'none',
-  // border: '1px solid $chxn3',
   borderRadius: 20,
   boxSizing: 'border-box',
   outline: 'none',
@@ -57,14 +56,12 @@ const ContentCard = styled('div', {
   color: 'inherit',
   flexShrink: 0,
   position: 'relative',
-
-  minHeight: '300px',
-  minWidth: '350px'
-  /*
-  '&:hover': {
-    backgroundColor: '$grayA4'
-  }
-  */
+  height: '100%',
+  width: '100%',
+  minHeight: '296px',
+  minWidth: '320px',
+  maxHeight: '296px',
+  maxWidth: '320px'
 });
 
 export const SvgBox = StyledSvgBox;

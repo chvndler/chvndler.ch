@@ -1,6 +1,7 @@
 import { styled } from 'stitches.config';
 
 export const LogoLink = styled('a', {
+  boxSizing: 'border-box',
   display: 'block',
   outline: 0,
   color: '$hiContrast',
@@ -9,9 +10,9 @@ export const LogoLink = styled('a', {
 
   '@hover': {
     color: '$chxn4',
-    transition: '120ms color',
+    transition: 'color 0.6s ease',
     '&:hover': {
-      color: '$chxn7'
+      color: '$maxBlue'
     }
   },
 
@@ -27,7 +28,8 @@ export const LogoLink = styled('a', {
   variants: {
     variant: {
       box: {
-        //boxShadow: '0 0 0 1px $colors$slate6',
+        backgroundColor: '$mauve5',
+        boxShadow: '0 0 0 1px $colors$gray8',
         '&::before': {
           content: '',
           borderRadius: 20,
@@ -37,7 +39,8 @@ export const LogoLink = styled('a', {
           transition: '120ms opacity',
           inset: 0,
           opacity: 0,
-          boxShadow: '0 0 0 1px $colors$grayA5'
+          backgroundColor: '$mauve6',
+          boxShadow: '0 0 0 1px $colors$grayA6'
         },
         '&:hover::before': {
           opacity: 1
