@@ -25,6 +25,14 @@
     /* cursor: none; */
 }
 
+.fullWidth {
+    width: calc(var(--vw) * 100);
+}
+
+.fullHeight {
+    height: calc(var(--vh) * 100);
+}
+
 html {
     line-height: 1.5;
     box-sizing: border-box;

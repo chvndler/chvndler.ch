@@ -39,6 +39,7 @@ const ContentCard = styled('div', {
   zIndex: '4',
   appearance: 'none',
   borderRadius: 20,
+  border: 'none',
   boxSizing: 'border-box',
   outline: 'none',
   padding: 20,

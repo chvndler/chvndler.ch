@@ -1,15 +1,21 @@
-import { Container } from '@/components/ds';
-import { HeroSection } from '@/components/sections/hero';
-import { PageLayout } from '~/components/layout/page';
+import { Canvas, Container } from '@/components/ds';
+import { UseFullViewport } from '~/components/common/viewport/alt';
+import { AppBar } from '~/components/layout/app-bar';
+import { AppFooter } from '~/components/layout/app-footer';
+import { CDCLogo } from '~/components/logos';
 
 const TestPage = () => {
   return (
     <>
-      <PageLayout>
-        <HeroSection size="1" color="default" alignment="responsiveLeft" css={{ padding: 0, height: '200vh' }}>
-          <Container size="1" css={{ padding: 20, paddingTop: '100px' }}></Container>
-        </HeroSection>
-      </PageLayout>
+      <AppBar />
+      <UseFullViewport>
+        <Canvas>
+          <Container css={{ alignContent: 'center', margin: 'auto', display: 'flex', justifyContent: 'center' }}>
+            <CDCLogo />
+          </Container>
+        </Canvas>
+      </UseFullViewport>
+      <AppFooter />
     </>
   );
 };

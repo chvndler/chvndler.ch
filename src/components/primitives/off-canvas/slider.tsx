@@ -21,15 +21,9 @@ export const ContentSlider = ({ children }: SlideProps) => {
           '&::-webkit-scrollbar': {
             display: 'none'
           }
-
-          // dev
-          // backgroundColor: '$grayA2',
-          // border: '1px solid $grayA3',
-          // borderLeftWidth: 0,
-          // borderRightWidth: 0
         }}
       >
-        <Grid flow="column" align="center" justify="start" gap="2">
+        <Grid flow="column" align="center" justify="start" gap="2" css={{ marginRight: 10 }}>
           {children}
         </Grid>
       </Section>

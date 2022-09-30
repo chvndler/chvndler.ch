@@ -2,6 +2,7 @@ import '@/css/global.scss';
 
 import type { NextComponentType, NextPageContext } from 'next';
 import type { AppProps } from 'next/app';
+import { RealViewportProvider } from 'next-real-viewport';
 import { ThemeProvider } from 'next-themes';
 import * as React from 'react';
 import { createContext, useContext } from 'react';
@@ -121,7 +122,7 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
         value={{ light: 'light-theme', dark: darkTheme.className }}
         defaultTheme="system"
       >
-        {getLayout({ Component, pageProps, ...rest })}
+        <RealViewportProvider>{getLayout({ Component, pageProps, ...rest })}</RealViewportProvider>
       </ThemeProvider>
     </>
   );

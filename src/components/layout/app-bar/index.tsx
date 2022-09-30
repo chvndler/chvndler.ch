@@ -27,7 +27,7 @@ const StyledBar = styled('div', {
   margin: 'auto',
   position: 'relative',
   width: '100%',
-  boxShadow: `0 1px 8px 1px rgba(0,0,0,0.02)`,
+  // boxShadow: `0 1px 8px 1px rgba(0,0,0,0.02)`,
   borderRadius: 16,
   backgroundColor: 'transparent',
   backdropFilter: 'blur(80px)',
@@ -35,10 +35,7 @@ const StyledBar = styled('div', {
   lineHeight: '23px',
   height: 48,
 
-  // developer tools
-  // use 'black' border for viewability
-  // backgroundColor: 'rgba(0, 0, 0, 0.03)',
-  border: '1px solid transparent'
+  border: '1px solid $mauve2'
 });
 
 const NavButton = styled('a', {
