@@ -80,46 +80,20 @@ export const AppFooter = () => {
                 color: '$chxn3',
                 fontFamily: '$neueMontreal',
                 fontSize: 13,
-                fontWeight: 'normal',
-                lineHeight: 'normal',
-                letterSpacing: '-0.01rem',
-                margin: 0,
-                marginRight: 10,
-                '@md': {
-                  display: 'none',
-                  lineHeight: 'normal',
-                  fontSize: 12,
-                  letterSpacing: '-0.01rem'
-                },
-                '&:hover': {
-                  color: '$chxn6'
-                }
-              }}
-            >
-              PROJECTS
-            </Text>
-          </Link>
-          <Link href="/" passHref>
-            <Text
-              as="a"
-              css={{
-                color: '$chxn3',
-                fontFamily: '$neueMontreal',
-                fontSize: 13,
                 fontWeight: '500',
                 lineHeight: 'normal',
                 letterSpacing: '-0.01rem',
                 margin: 0,
                 marginRight: 10,
-                '@xl': {
+                '@md': {
                   display: 'none'
                 },
                 '&:hover': {
-                  color: '$chxn6'
+                  color: '$chxn2'
                 }
               }}
             >
-              NOTES
+              © All rights reserved.
             </Text>
           </Link>
         </ContentBox>
@@ -131,13 +105,9 @@ export const AppFooter = () => {
                 color: '$chxn3',
                 fontFamily: '$neueMontreal',
                 fontSize: 13,
-                fontWeight: 'normal',
+                fontWeight: '500',
                 lineHeight: 'normal',
-                letterSpacing: '0.02rem',
-                '@md': {
-                  fontSize: 12,
-                  letterSpacing: 'normal'
-                }
+                letterSpacing: '0.02rem'
               }}
             >
               SOMETHING LIKE THIS BUT NOT THIS™

@@ -2015,6 +2015,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-navigation-menu@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@radix-ui/react-navigation-menu@npm:1.0.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/primitive": 1.0.0
+    "@radix-ui/react-collection": 1.0.0
+    "@radix-ui/react-compose-refs": 1.0.0
+    "@radix-ui/react-context": 1.0.0
+    "@radix-ui/react-direction": 1.0.0
+    "@radix-ui/react-dismissable-layer": 1.0.0
+    "@radix-ui/react-id": 1.0.0
+    "@radix-ui/react-presence": 1.0.0
+    "@radix-ui/react-primitive": 1.0.0
+    "@radix-ui/react-use-callback-ref": 1.0.0
+    "@radix-ui/react-use-controllable-state": 1.0.0
+    "@radix-ui/react-use-layout-effect": 1.0.0
+    "@radix-ui/react-use-previous": 1.0.0
+    "@radix-ui/react-visually-hidden": 1.0.0
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  checksum: 7bceb17ba58559e30c3968e3ce3709511d1905a9c28ee0a56802e2c844dd8ddac93592a379390fe969c02dc059fbad21070d0f9d613f8249c7e951d5d4fd4b48
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-polymorphic@npm:^0.0.14":
   version: 0.0.14
   resolution: "@radix-ui/react-polymorphic@npm:0.0.14"
@@ -2191,6 +2217,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-use-previous@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@radix-ui/react-use-previous@npm:1.0.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+  checksum: b45bbc8a7e7dbe29f4c11922e807666ec98979ec7a2696618ceb2c60ade44f695892216a90e1f5d7a457b458b3c95f0a4ce971d5143a6a80646b6b00fda16fb5
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-use-rect@npm:1.0.0":
   version: 1.0.0
   resolution: "@radix-ui/react-use-rect@npm:1.0.0"
@@ -2212,6 +2249,19 @@ __metadata:
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
   checksum: b319564668512bb5c8c64530e3c12810c4b7c75c19a00d5ef758c246e8d85cd5015df19688e174db1cc44b0584c8d7f22411eb00af5f8ac6c2e789aa5c8e34f5
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-visually-hidden@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@radix-ui/react-visually-hidden@npm:1.0.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/react-primitive": 1.0.0
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  checksum: af10e54db17d208877b873f110ad071640038e17b4431854008d257ae9794650b0cd415b04c8beec0c0d00a1b48087c4156f0efa9eda62f4338f63ec87592806
   languageName: node
   linkType: hard
 
@@ -3250,6 +3300,7 @@ __metadata:
     "@radix-ui/react-context-menu": ^1.0.0
     "@radix-ui/react-dropdown-menu": ^1.0.0
     "@radix-ui/react-icons": ^1.1.1
+    "@radix-ui/react-navigation-menu": ^1.0.0
     "@radix-ui/react-polymorphic": ^0.0.14
     "@radix-ui/react-popover": ^1.0.0
     "@stitches/react": ^1.2.8

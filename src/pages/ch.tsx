@@ -18,7 +18,7 @@ const Home = () => {
               css={{
                 width: '100%',
                 flexDirection: 'row',
-                gap: 5,
+                gap: 6,
                 display: 'inline-flex',
                 textAlign: 'center',
                 alignItems: 'center',
@@ -33,7 +33,6 @@ const Home = () => {
             >
               <TwitterLink />
               <GitHubLink />
-              <ProjectLink />
             </Flex>
           </Container>
         </HeroSection>
@@ -49,30 +48,9 @@ const HeadingHero = () => {
     <>
       <Text
         css={{
-          fontSize: '0.8rem',
-          fontFamily: '$telegraf',
-          color: '$chxn5',
-          fontWeight: 'bold',
-          letterSpacing: 'normal',
-          lineHeight: '1',
-          padding: 0,
-          margin: 0,
-          width: 'auto',
-          opacity: '0.04',
-          '@md': {
-            fontSize: '1rem',
-            letterSpacing: '-0.05rem',
-            lineHeight: '1'
-          }
-        }}
-      >
-        CHANDLER CHAPPELL
-      </Text>
-      <Text
-        css={{
-          fontSize: '1rem',
-          fontFamily: '$telegraf',
-          color: '$chxn5',
+          fontSize: '1.8rem',
+          fontFamily: '$neueMontreal',
+          color: '$chxn4',
           fontWeight: 'bold',
           letterSpacing: 'normal',
           lineHeight: '30px',
@@ -80,13 +58,14 @@ const HeadingHero = () => {
           margin: 0,
           width: 'auto',
           '@md': {
-            fontSize: '1rem',
-            letterSpacing: '-0.05rem',
+            fontSize: '1.5rem',
+            letterSpacing: '-0.01rem',
             lineHeight: '30px'
           }
         }}
       >
-        Front-end Developer & Director
+        FRONT-END DEVELOPER
+        {/* Front-end Developer & Director */}
       </Text>
     </>
   );
@@ -99,13 +78,13 @@ const AboutParagraph = () => {
         css={{
           fontFamily: '$neueMontreal',
           fontSize: 14,
-          fontWeight: 'normal',
+          fontWeight: '500',
           lineHeight: '22px',
-          color: '$chxn3',
+          color: '$chxn4',
           textTransform: 'uppercase',
           letterSpacing: '0.04rem',
-          '@sm': {
-            fontSize: 16,
+          '@md': {
+            fontSize: 14,
             lineHeight: '20px'
           }
         }}
@@ -122,30 +101,31 @@ const AboutParagraph = () => {
 const TwitterLink = () => {
   return (
     <>
-      <Box css={{ lineHeight: '15px' }}>
-        <Icxn variant="Twitter" />
-      </Box>
+      <Box css={{ display: 'inline-flex', lineHeight: '16px', marginRight: 6 }}>
+        <Box css={{ lineHeight: '15px', color: '$twitter', marginRight: 6 }}>
+          <Icxn variant="Twitter" />
+        </Box>
 
-      <Link href="https://twitter.com/chvndlerch" passHref>
-        <Text
-          as="a"
-          css={{
-            // backgroundColor: '$twitter',
-            fontSize: 14,
-            fontFamily: '$telegraf',
-            color: '$twitter',
-            fontWeight: '600',
-            lineHeight: '15px',
-            letterSpacing: '-0.04rem',
-            marginRight: 10,
-            '&:hover': {
-              color: '$chxn4'
-            }
-          }}
-        >
-          twitter
-        </Text>
-      </Link>
+        <Link href="https://twitter.com/chvndlerch" passHref>
+          <Text
+            as="a"
+            css={{
+              // backgroundColor: '$twitter',
+              fontSize: 14,
+              fontFamily: '$aero',
+              color: '$chxn4',
+              fontWeight: '600',
+              lineHeight: '15px',
+              letterSpacing: '-0.04rem',
+              '&:hover': {
+                color: '$chxn3'
+              }
+            }}
+          >
+            twitter
+          </Text>
+        </Link>
+      </Box>
     </>
   );
 };
@@ -153,61 +133,30 @@ const TwitterLink = () => {
 const GitHubLink = () => {
   return (
     <>
-      <Box css={{ lineHeight: '15px' }}>
-        <Icxn variant="GitHub" />
+      <Box css={{ display: 'inline-flex', lineHeight: '16px', marginLeft: 6 }}>
+        <Box css={{ lineHeight: '15px', color: '$github', marginRight: 6 }}>
+          <Icxn variant="GitHub" />
+        </Box>
+
+        <Link href="https://github.com/chvndler" passHref>
+          <Text
+            as="a"
+            css={{
+              fontSize: 14,
+              fontFamily: '$aero',
+              color: '$chxn4',
+              fontWeight: '600',
+              lineHeight: '15px',
+              letterSpacing: '-0.04rem',
+              '&:hover': {
+                color: '$chxn3'
+              }
+            }}
+          >
+            github
+          </Text>
+        </Link>
       </Box>
-
-      <Link href="https://github.com/chvndler" passHref>
-        <Text
-          as="a"
-          css={{
-            // backgroundColor: '$twitter',
-            fontSize: 14,
-            fontFamily: '$telegraf',
-            color: '$chxn3',
-            fontWeight: '600',
-            lineHeight: '15px',
-            letterSpacing: '-0.04rem',
-            marginRight: 10,
-            '&:hover': {
-              color: '$chxn4'
-            }
-          }}
-        >
-          github
-        </Text>
-      </Link>
-    </>
-  );
-};
-
-const ProjectLink = () => {
-  return (
-    <>
-      <Box css={{ lineHeight: '15px' }}>
-        <Icxn variant="Project" />
-      </Box>
-
-      <Link href="/projects" passHref>
-        <Text
-          as="a"
-          css={{
-            // backgroundColor: '$twitter',
-            fontSize: 14,
-            fontFamily: '$telegraf',
-            color: '$chxn9',
-            fontWeight: '600',
-            lineHeight: '15px',
-            letterSpacing: '-0.04rem',
-            marginRight: 0,
-            '&:hover': {
-              color: '$chxn4'
-            }
-          }}
-        >
-          projexts
-        </Text>
-      </Link>
     </>
   );
 };

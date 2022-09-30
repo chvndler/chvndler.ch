@@ -1,7 +1,7 @@
-import Link from 'next/link';
 import { styled } from 'stitches.config';
 
 import { CDCLogo } from '@/components/logos/cdc';
+import { PassLink } from '@/components/primitives/pass-link';
 
 const StyledNavContainer = styled('div', {
   boxSizing: 'border-box',
@@ -28,7 +28,7 @@ const StyledBar = styled('div', {
   position: 'relative',
   width: '100%',
   borderRadius: 16,
-  // backgroundColor: 'transparent',
+  backgroundColor: 'transparent',
   backdropFilter: 'blur(80px)',
   WebkitBackdropFilter: 'blur(80px)',
   lineHeight: '23px',
@@ -36,7 +36,7 @@ const StyledBar = styled('div', {
 
   // developer tools
   // use 'black' border for viewability
-  backgroundColor: 'rgba(0, 0, 0, 0.03)',
+  // backgroundColor: 'rgba(0, 0, 0, 0.03)',
   border: '1px solid transparent'
 });
 
@@ -48,7 +48,7 @@ const NavButton = styled('a', {
 
   height: '38px',
   fontSize: 15,
-  fontWeight: 'normal',
+  fontWeight: '600',
   fontFamily: '$neueMontreal',
 
   display: 'inline-flex',
@@ -69,7 +69,7 @@ const NavButton = styled('a', {
   color: '$chxn4',
 
   '&:hover': {
-    color: '$tartOrange',
+    color: '$chxn4',
     backgroundColor: '$blur'
   },
   '&:active': {
@@ -100,9 +100,10 @@ const ContentBox = styled('div', {
   margin: 'auto',
   padding: 0,
   color: '$chxn4',
+  transition: 'color 0.4s ease',
 
   '&:hover': {
-    color: '$tartOrange'
+    color: '$maxBlue'
   },
 
   variants: {
@@ -141,13 +142,13 @@ export const AppBar = () => {
           </ContentBox>
 
           <ContentBox alignment="center">
-            <Link href="/ch" passHref>
+            <PassLink href="/ch">
               <CDCLogo />
-            </Link>
+            </PassLink>
           </ContentBox>
 
           <ContentBox alignment="end">
-            <NavButton as="a" href="/projects">
+            <NavButton as="a" href="/notes">
               Notes
             </NavButton>
           </ContentBox>

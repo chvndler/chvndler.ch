@@ -38,7 +38,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       // defaults
       background: '#101010',
       black: '#000000',
-      blur: 'rgba(240,240,240,0.3)',
+      blur: 'rgba(72,67,73,0.1)',
       appbarButton: 'rgba(0, 0, 0, 0.03)',
       table: 'transparent',
       white: '#ffffff',
@@ -58,6 +58,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       chxn12: '#222222',
 
       tartOrange: '#ff3333',
+      maxBlue: '#5e7ce2',
       twitter: '#1DA1F2',
       github: '#6cc644',
       githubAlt: '#6e5494'
@@ -196,7 +197,7 @@ export const darkTheme = createTheme('dark-theme', {
     ...limeDark,
     ...limeDarkA,
 
-    chxn1: '#30323d',
+    chxn1: '#2b2a30',
     chxn2: '#3f4b54',
     chxn3: '#919191',
     chxn4: '#f1f1f1',
@@ -209,75 +210,10 @@ export const darkTheme = createTheme('dark-theme', {
     chxn11: '#93827f',
     chxn12: '#222222',
 
-    blur: 'rgba(0, 0, 0, 0.3)',
+    blur: 'rgba(0, 0, 0, 0.1)',
 
-    tartOrange: '#ff3333'
+    tartOrange: '#5e7ce2',
+    maxBlue: '#72719b'
   },
   utils: {}
-});
-
-const spinLoad = keyframes({
-  '0%': { transform: 'rotate(0deg)' },
-  '100%': { transform: 'transform: rotate(360deg)' }
-});
-
-export const loadingStyle = css({
-  body: {
-    display: 'block'
-  },
-  '&[data-loader-screen]': {
-    position: 'fixed',
-    zIndex: '1700',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    display: 'flex',
-    width: '100%',
-    height: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '$chxn3'
-  },
-  '&.globalLoader': {
-    position: 'fixed',
-    zIndex: '1700',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    display: 'flex',
-    width: '100%',
-    height: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '$chxn3'
-  },
-  '&.laoder': {
-    color: '#3498db',
-    width: 50,
-    height: 50,
-    position: 'relative',
-
-    '&:nth-child(1)': {
-      content: '""',
-      position: 'absolute',
-      top: '-10px',
-      left: '-10px',
-      width: '100%',
-      height: '100%',
-      borderRadius: '100%',
-      border: '10px solid transparent',
-
-      animation: `${spinLoad} 1s infinite`
-    },
-    '&:nth-child(2)': {
-      content: '""',
-      position: 'absolute',
-      top: '-10px',
-      left: '-10px',
-      width: '100%',
-      height: '100%',
-      borderRadius: '100%',
-      border: '10px solid transparent'
-    }
-  }
 });
