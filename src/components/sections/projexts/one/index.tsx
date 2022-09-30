@@ -1,5 +1,7 @@
-import { Container, Text, Box } from '@/components/ds';
 import { css } from 'stitches.config';
+
+import { Box, Container, Text } from '@/components/ds';
+
 import { CardHero } from '../../card-hero';
 
 const ProjectOneDrop = css({

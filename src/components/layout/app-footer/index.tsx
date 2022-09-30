@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { styled } from 'stitches.config';
 
 import { Flex, Text } from '@/components/ds';
-import { ThemeButton } from '@/components/primitives/theme-button';
+import { ThemeToggle } from '~/components/primitives/ui-switch/theme-toggle';
 
 const StyledFooter = styled('footer', {
   position: 'fixed',
@@ -116,7 +116,7 @@ export const AppFooter = () => {
         </ContentBox>
 
         <ContentBox alignment="end" css={{}}>
-          <ThemeButton />
+          <ThemeToggle />
         </ContentBox>
       </Footer>
     </>

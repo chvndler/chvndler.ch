@@ -1,12 +1,53 @@
 import Link from 'next/link';
+import { styled } from 'stitches.config';
 
 import { Box, Container, Flex, Heading, Text } from '@/components/ds';
 import { Icxn } from '@/components/icons/icxn';
 import { PageLayout } from '@/components/layout/page';
 import { AtlrColorLogo, AtlrDsLogo, AtlrIcxnsLogo, CDCLogo } from '@/components/logos';
 import { ContentSlider } from '@/components/primitives/off-canvas/slider';
-import { SliderCard } from '@/components/primitives/off-canvas/slider-card';
+import { SliderCard, SvgBox } from '@/components/primitives/off-canvas/slider-card';
 import { HeroSection } from '@/components/sections/hero';
+import { LogoLink } from '~/components/ds/logo-link';
+
+const ProjectDetails = styled('div', {
+  boxSizing: 'content-box',
+  display: 'flex',
+  flexDirection: 'column',
+  position: 'absolute',
+  textAlign: 'left',
+  padding: 20,
+  margin: 'auto',
+  bottom: 10,
+  left: 0
+});
+
+const SubTitle = styled('div', {
+  position: 'relative',
+  fontSize: 16,
+  fontFamily: '$telegraf',
+  fontWeight: 'normal',
+  lineHeight: '40px',
+  textAlign: 'left',
+  textTransform: 'uppercase',
+  padding: 0,
+  margin: 0,
+
+  color: '$chxn4'
+});
+
+const Description = styled('p', {
+  position: 'relative',
+  fontSize: 14,
+  fontFamily: '$neueMontreal',
+  fontWeight: 'normal',
+  lineHeight: 'normal',
+  textAlign: 'left',
+  padding: 0,
+  margin: 0,
+
+  color: '$chxn3'
+});
 
 const ProjectsPage = () => {
   return (
@@ -36,9 +77,43 @@ const ProjectsPage = () => {
       </HeroSection>
 
       <ContentSlider>
+        {/* <!-- PROJECT #001 --> */}
+        {/* <!-- PROJECT #001 --> */}
+        <LogoLink variant="box">
+          <SliderCard>
+            <CDCLogo />
+            <ProjectDetails>
+              <SubTitle>
+                @chvndler / <strong>chvndler.ch</strong>
+              </SubTitle>
+              <Description>
+                Consequat laborum laborum adipisicing officia tempor ullamco anim elit elit in aliqua laborum nisi
+                consectetur.
+              </Description>
+            </ProjectDetails>
+          </SliderCard>
+        </LogoLink>
+        {/* <!-- END ! PROJECT #001 --> */}
+        {/* <!-- END ! PROJECT #001 --> */}
+
+        {/* <!-- PROJECT #002 --> */}
+        {/* <!-- PROJECT #002 --> */}
         <SliderCard>
-          <CDCLogo />
+          <SvgBox color="maxBlue">
+            <AtlrDsLogo />
+          </SvgBox>
+          <ProjectDetails>
+            <SubTitle>
+              @AtelierDesign / <strong>atlr.ds</strong>
+            </SubTitle>
+            <Description>
+              Consequat laborum laborum adipisicing officia tempor ullamco anim elit elit in aliqua laborum nisi
+              consectetur.
+            </Description>
+          </ProjectDetails>
         </SliderCard>
+        {/* <!-- END ! PROJECT #002 --> */}
+        {/* <!-- END ! PROJECT #002 --> */}
 
         <SliderCard>
           <AtlrDsLogo />

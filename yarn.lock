@@ -1985,6 +1985,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-label@npm:1.0.0":
+  version: 1.0.0
+  resolution: "@radix-ui/react-label@npm:1.0.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/react-compose-refs": 1.0.0
+    "@radix-ui/react-context": 1.0.0
+    "@radix-ui/react-id": 1.0.0
+    "@radix-ui/react-primitive": 1.0.0
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  checksum: 707a222b86c3ad5dd75e7116e1e4f451a91b7d96175d05c017f290299b7550401616204a8c77e749dc70c0971dd061e333e7a4489b4fab0fc124403833e489c7
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-menu@npm:1.0.0":
   version: 1.0.0
   resolution: "@radix-ui/react-menu@npm:1.0.0"
@@ -2168,6 +2184,26 @@ __metadata:
   peerDependencies:
     react: ^16.8 || ^17.0 || ^18.0
   checksum: 60c0190ebdca21785b4f8b58a0c52717600c98953fc49da9580870519c60f52d5cf873dffa05446f4bb539066326ccec0827f4ca252b02ec4ff1a4ae203f59d7
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-switch@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@radix-ui/react-switch@npm:1.0.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/primitive": 1.0.0
+    "@radix-ui/react-compose-refs": 1.0.0
+    "@radix-ui/react-context": 1.0.0
+    "@radix-ui/react-label": 1.0.0
+    "@radix-ui/react-primitive": 1.0.0
+    "@radix-ui/react-use-controllable-state": 1.0.0
+    "@radix-ui/react-use-previous": 1.0.0
+    "@radix-ui/react-use-size": 1.0.0
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  checksum: 7b5096c11e07062acce6e37bd6fcdd65adf1e7f468c67b61d9691c786e0d2b3775c389f32a37fd65d57cef9ed00cd98499806be64ab564cc4e984eb484e477f7
   languageName: node
   linkType: hard
 
@@ -3303,6 +3339,7 @@ __metadata:
     "@radix-ui/react-navigation-menu": ^1.0.0
     "@radix-ui/react-polymorphic": ^0.0.14
     "@radix-ui/react-popover": ^1.0.0
+    "@radix-ui/react-switch": ^1.0.0
     "@stitches/react": ^1.2.8
     "@svgr/webpack": ^6.3.1
     "@types/css-font-loading-module": 0.0.7
