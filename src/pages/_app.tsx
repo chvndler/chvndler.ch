@@ -34,14 +34,18 @@ const globalStyles = globalCss({
     margin: 0,
     padding: 0,
     overflowX: 'hidden',
+    minHeight: '-webkit-fill-available',
+
     backgroundColor: '$chxn1',
-    minHeight: '-webkit-fill-available'
+
+    '&[data-theme=`dark`]': {
+      backgroundColor: '$chxn1'
+    }
   },
   body: {
     opacity: 0,
     margin: 0,
     WebkitTextSizeAdjust: '100%',
-    backgroundColor: '$chxn1',
     minHeight: '-webkit-fill-available'
   }
 });

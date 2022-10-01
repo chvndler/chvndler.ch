@@ -27,6 +27,16 @@ export const Space = styled('div', {
         height: '80px',
         width: '100%',
         maxWidth: '100vw'
+      },
+      4: {
+        height: '120px',
+        width: '100%',
+        maxWidth: '100vw'
+      },
+      5: {
+        height: '200px',
+        width: '100%',
+        maxWidth: '100vw'
       }
     },
     color: {

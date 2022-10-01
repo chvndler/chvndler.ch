@@ -33,9 +33,9 @@ const StyledBar = styled('div', {
   backdropFilter: 'blur(80px)',
   WebkitBackdropFilter: 'blur(80px)',
   lineHeight: '23px',
-  height: 48,
+  height: 48
 
-  border: '1px solid $mauve2'
+  // border: '1px solid $mauve2'
 });
 
 const NavButton = styled('a', {

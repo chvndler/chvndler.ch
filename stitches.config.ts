@@ -168,6 +168,10 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
      */
   },
   utils: {
+    font: (value: Stitches.PropertyValue<'fontFamily'>) => ({
+      // example font: , == fontFamily: ;
+      fontFamily: value
+    }),
     linearGradient: () => (value: Stitches.PropertyValue<'padding'>) => ({
       backgroundImage: `linear-gradient(${value})`
     }),

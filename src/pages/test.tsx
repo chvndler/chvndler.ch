@@ -1,8 +1,8 @@
-import { Canvas, Container } from '@/components/ds';
+import { Box, Canvas, Container, Text } from '@/components/ds';
 import { UseFullViewport } from '~/components/common/viewport/alt';
 import { AppBar } from '~/components/layout/app-bar';
 import { AppFooter } from '~/components/layout/app-footer';
-import { CDCLogo } from '~/components/logos';
+import { GridStyle } from '~/components/primitives/project-display/grid-style';
 
 const TestPage = () => {
   return (
@@ -10,8 +10,21 @@ const TestPage = () => {
       <AppBar />
       <UseFullViewport>
         <Canvas>
-          <Container css={{ alignContent: 'center', margin: 'auto', display: 'flex', justifyContent: 'center' }}>
-            <CDCLogo />
+          <Container size="3">
+            <GridStyle>
+              <Box
+                css={{
+                  // backgroundColor: '$chxn3',
+                  width: 'auto',
+                  height: 'auto',
+                  border: '1px solid $mauve5',
+                  borderRadius: 20,
+                  padding: 20
+                }}
+              >
+                <Text css={{ font: '$telegraf' }}>PROJECTS</Text>
+              </Box>
+            </GridStyle>
           </Container>
         </Canvas>
       </UseFullViewport>
