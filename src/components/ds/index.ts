@@ -1,3 +1,4 @@
+export * from './blur-canvas';
 export * from './box';
 export * from './button';
 export * from './canvas';

@@ -1,6 +1,6 @@
 # chvndler.ch
 
-![cover image](https://github.com/basementstudio/next-typescript/raw/main/public/og.png 'We Make Cool Sh*t That Performs')
+![cover image](https://atelierdesign.s3.us-east-1.amazonaws.com/chvn/assets/chvn.og-image.png 'We Make Cool Sh*t That Performs')
 Personal website, journal, knowledge base, and playground.
 
 ## Stack

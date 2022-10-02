@@ -2,12 +2,11 @@ import Link from 'next/link';
 import { styled } from 'stitches.config';
 
 import { Flex, Text } from '@/components/ds';
-import { ThemeToggle } from '~/components/primitives/ui-switch/theme-toggle';
+import { ThemeToggle } from '@/components/primitives/ui-switch/theme-toggle';
 
 const StyledFooter = styled('footer', {
   zIndex: '999',
-  position: 'fixed',
-  bottom: 0,
+  position: 'relative',
   boxSizing: 'border-box',
   display: 'flex',
   gap: 2,
@@ -69,7 +68,7 @@ const ContentBox = styled('div', {
 
 export const Footer = StyledFooter;
 
-export const AppFooter = () => {
+export const RelativeFooter = () => {
   return (
     <>
       <Footer>

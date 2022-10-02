@@ -47,6 +47,9 @@ export const HeroSection = styled('div', {
       },
       default: {
         backgroundColor: '$chxn1'
+      },
+      clear: {
+        backgroundColor: 'transparent'
       }
     },
     alignment: {

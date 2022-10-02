@@ -1,7 +1,5 @@
-import { styled } from 'stitches.config';
-
+import { UseFullViewport } from '@/components/common/viewport/alt';
 import { AppBar } from '@/components/layout/app-bar';
-import { AppFooter } from '@/components/layout/app-footer';
 
 type LayoutProps = {
   children?: React.ReactNode;
@@ -11,22 +9,13 @@ type LayoutProps = {
   // footerProps?: FooterProps
 };
 
-const AppBox = styled('div', {
-  zIndex: '9',
-  height: '100vh',
-  width: '100vw',
-  padding: 0,
-  margin: 0
-});
-
 export const PageLayout = ({ children }: LayoutProps) => {
   return (
     <>
-      <AppBar />
-      <AppBox>
+      <UseFullViewport>
+        <AppBar />
         <main>{children}</main>
-      </AppBox>
-      <AppFooter />
+      </UseFullViewport>
     </>
   );
 };
