@@ -36,11 +36,7 @@ const globalStyles = globalCss({
     overflowX: 'hidden',
     minHeight: '-webkit-fill-available',
 
-    backgroundColor: '$chxn1',
-
-    '&[data-theme=`dark`]': {
-      backgroundColor: '$chxn1'
-    }
+    backgroundColor: '$chxn1'
   },
   body: {
     opacity: 0,

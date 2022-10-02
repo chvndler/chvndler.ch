@@ -1,6 +1,7 @@
 import { UseFullViewport } from '@/components/common/viewport/alt';
 import { AppBar } from '@/components/layout/app-bar';
 
+import { Meta } from '../common/meta';
 import { AppFooter } from './app-footer';
 
 type LayoutProps = {
@@ -14,6 +15,7 @@ type LayoutProps = {
 export const PageLayout = ({ children }: LayoutProps) => {
   return (
     <>
+      <Meta />
       <UseFullViewport>
         <AppBar />
         <main>{children}</main>

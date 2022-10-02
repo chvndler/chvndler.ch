@@ -36,12 +36,12 @@ export const atelierLog = `
 
 // TODO: update this data
 export const defaultMeta = {
-  title: 'atelier.typesxript | AtelierDesign',
-  description: `A minimalist's boilerplate — Next.js with TypeScript.`,
+  title: 'Chandler Chappell',
+  description: `Personal Site.`,
   ogImage: `${siteOrigin}/og.png`,
   twitter: {
-    handle: '@basementstudio',
-    site: '@basementstudio'
+    handle: '@chvndlerch',
+    site: '@chvndlerch'
   }
 };
 

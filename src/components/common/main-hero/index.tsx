@@ -48,7 +48,7 @@ const HeadingHero = () => {
           color: '$chxn4',
           fontWeight: 'bold',
           letterSpacing: 'normal',
-          lineHeight: '30px',
+          lineHeight: '40px',
           padding: 10,
           margin: 0,
           width: 'auto',
@@ -72,20 +72,20 @@ const AboutParagraph = () => {
       <Paragraph
         css={{
           fontFamily: '$neueMontreal',
-          fontSize: 14,
-          fontWeight: '500',
+          fontSize: 16,
+          fontWeight: 'normal',
           lineHeight: '22px',
           color: '$chxn4',
-          textTransform: 'uppercase',
+          // textTransform: 'uppercase',
           letterSpacing: '0.04rem',
           '@md': {
-            fontSize: 14,
+            fontSize: 16,
             lineHeight: '20px'
           }
         }}
       >
         The focus in the moment is building <InlineLink href="/">Atelier® Design</InlineLink>, to silence the noise in
-        design culture. My passion is to build great online experiences, to change the world. <br />
+        design culture. My passion is to make simple, beautiful and performant web experiences. <br />
         <br />
         Currently searching for my next role. <InlineLink href="/">Let's build</InlineLink>.
       </Paragraph>

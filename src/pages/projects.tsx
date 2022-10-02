@@ -30,14 +30,14 @@ const ProjectsPage = () => {
           <AtlrTypeLogo />
         </ProjectDisplay>
         <ProjectDisplay
-          projectUrl="https://github.com/AtelierDesign/atlr.ds"
+          projectUrl="https://developer.atlrdsgn.com/"
           title="@AtelierDesign / atlr.ds"
           description="This website is built with Next.js and Stitches. It is hosted on Vercel."
         >
           <AtlrDsLogo />
         </ProjectDisplay>
         <ProjectDisplay
-          projectUrl="https://github.com/AtelierDesign/atlr.icxns"
+          projectUrl="https://developer.atlrdsgn.com/"
           title="@AtelierDesign / atlr.icxns"
           description="A simple a crisp icon library, built for quickness and minimal design."
         >
