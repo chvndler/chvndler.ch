@@ -24,6 +24,42 @@ const TestPage = () => {
               >
                 <Text css={{ font: '$telegraf' }}>PROJECTS</Text>
               </Box>
+              <Box
+                css={{
+                  // backgroundColor: '$chxn3',
+                  width: 'auto',
+                  height: 'auto',
+                  border: '1px solid $mauve5',
+                  borderRadius: 20,
+                  padding: 20
+                }}
+              >
+                <Text css={{ font: '$telegraf' }}>PROJECTS</Text>
+              </Box>
+              <Box
+                css={{
+                  // backgroundColor: '$chxn3',
+                  width: 'auto',
+                  height: 'auto',
+                  border: '1px solid $mauve5',
+                  borderRadius: 20,
+                  padding: 20
+                }}
+              >
+                <Text css={{ font: '$telegraf' }}>PROJECTS</Text>
+              </Box>
+              <Box
+                css={{
+                  // backgroundColor: '$chxn3',
+                  width: 'auto',
+                  height: 'auto',
+                  border: '1px solid $mauve5',
+                  borderRadius: 20,
+                  padding: 20
+                }}
+              >
+                <Text css={{ font: '$telegraf' }}>PROJECTS</Text>
+              </Box>
             </GridStyle>
           </Container>
         </Canvas>

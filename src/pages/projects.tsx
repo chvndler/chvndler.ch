@@ -1,42 +1,18 @@
 import Link from 'next/link';
 
-import { Box, Container, Flex, Heading, Section, Space, Text } from '@/components/ds';
+import { ProjectHero } from '@/components/common/project-hero';
+import { Box, Container, Flex, Text } from '@/components/ds';
 import { Icxn } from '@/components/icons/icxn';
 import { PageLayout } from '@/components/layout/page';
 import { AtlrColorLogo, AtlrDsLogo, AtlrIcxnsLogo, CDCLogo } from '@/components/logos';
 import { AtlrTypeLogo } from '@/components/logos/atlr.typesxript';
 import { ContentSlider } from '@/components/primitives/off-canvas/slider';
 import { ProjectDisplay } from '@/components/primitives/project-display';
-import { GridStyle } from '@/components/primitives/project-display/grid-style';
-import { Tweet } from '@/components/primitives/tweet';
-import { HeroSection } from '@/components/sections/hero';
 
 const ProjectsPage = () => {
   return (
     <PageLayout>
-      <HeroSection size="1" color="default" alignment="center" css={{ padding: 0, paddingTop: '100px' }}>
-        <Container size="1" css={{ padding: 20 }}>
-          <Heading
-            css={{
-              fontSize: '2.2rem',
-              fontFamily: '$telegraf',
-              color: '$chxn4',
-              fontWeight: '600',
-              lineHeight: '60px',
-              letterSpacing: '-0.01rem',
-              padding: 0,
-              margin: 0,
-              width: 'auto',
-              '@md': {
-                fontSize: '1.8rem',
-                lineHeight: '40px'
-              }
-            }}
-          >
-            PROJECTS
-          </Heading>
-        </Container>
-      </HeroSection>
+      <ProjectHero />
 
       <ContentSlider>
         <ProjectDisplay
@@ -115,74 +91,6 @@ const ProjectsPage = () => {
           </Link>
         </Flex>
       </Container>
-
-      <Section size="3">
-        <Container
-          size="3"
-          css={{ display: 'flex', alignItems: 'center', margin: 'auto', justifyContent: 'center', paddingTop: 40 }}
-        >
-          <Tweet
-            userUrl="https://twitter.com/chvndlerch"
-            avatar="https://pbs.twimg.com/profile_images/1570572396913999872/eu5obCWK_reasonably_small.jpg"
-            url="https://twitter.com/chvndlerch/status/1572055841225703426"
-            author="chan"
-            username="chvndlerch"
-            date="8:07 PM · Sep 19, 2022 · Twitter for iPhone"
-          >
-            i love twitter.
-          </Tweet>
-        </Container>
-        <Space size="5" />
-      </Section>
-
-      <Section>
-        <Container size="3" css={{ padding: 20 }}>
-          <GridStyle>
-            <Box
-              css={{
-                backgroundColor: '$chxn2',
-                width: 'auto',
-                height: '240px',
-                border: '1px solid $mauve5',
-                borderRadius: 20,
-                padding: 6
-              }}
-            />
-
-            <Box
-              css={{
-                backgroundColor: '$chxn2',
-                width: 'auto',
-                height: '240px',
-                border: '1px solid $mauve5',
-                borderRadius: 20,
-                padding: 6
-              }}
-            />
-            <Box
-              css={{
-                backgroundColor: '$chxn2',
-                width: 'auto',
-                height: '240px',
-                border: '1px solid $mauve5',
-                borderRadius: 20,
-                padding: 6
-              }}
-            />
-            <Box
-              css={{
-                backgroundColor: '$chxn2',
-                width: 'auto',
-                height: '240px',
-                border: '1px solid $mauve5',
-                borderRadius: 20,
-                padding: 6
-              }}
-            />
-          </GridStyle>
-          <Space size="5" />
-        </Container>
-      </Section>
     </PageLayout>
   );
 };
