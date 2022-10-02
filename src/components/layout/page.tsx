@@ -1,6 +1,8 @@
 import { UseFullViewport } from '@/components/common/viewport/alt';
 import { AppBar } from '@/components/layout/app-bar';
 
+import { AppFooter } from './app-footer';
+
 type LayoutProps = {
   children?: React.ReactNode;
 
@@ -15,6 +17,7 @@ export const PageLayout = ({ children }: LayoutProps) => {
       <UseFullViewport>
         <AppBar />
         <main>{children}</main>
+        <AppFooter />
       </UseFullViewport>
     </>
   );

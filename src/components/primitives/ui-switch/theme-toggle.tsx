@@ -13,7 +13,6 @@ export const ThemeToggle = () => {
       <Flex css={{ alignItems: 'center' }}>
         <Switch
           onCheckedChange={() => (theme === 'dark' ? setTheme('light') : setTheme('dark'))}
-          defaultChecked
           aria-label="Change Theme"
           id="s1"
         >

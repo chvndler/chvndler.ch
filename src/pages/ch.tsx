@@ -1,12 +1,12 @@
 import { PageLayout } from '@/components/layout/page';
+import { MainHero } from '~/components/common/main-hero';
 import { Canvas } from '~/components/ds';
-import { CoverGrid } from '~/components/layout/cover-grid';
 
 const Home = () => {
   return (
     <PageLayout>
       <Canvas>
-        <CoverGrid />
+        <MainHero />
       </Canvas>
     </PageLayout>
   );

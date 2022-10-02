@@ -11,10 +11,10 @@ export const ThemeButton = () => {
       size="1"
       color="nothing"
       onClick={() => (theme === 'dark' ? setTheme('light') : setTheme('dark'))}
-      aria-label="toggle light and dark color theme"
+      aria-label="Toggle Theme"
       css={{ fontWeight: 'bold', fontSize: 12.5, lineHeight: 'normal', height: 'auto' }}
     >
-      CHANGE THEME
+      THEME
     </Button>
   );
 };

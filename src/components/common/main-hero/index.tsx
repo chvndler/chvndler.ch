@@ -43,7 +43,7 @@ const HeadingHero = () => {
     <>
       <Text
         css={{
-          fontSize: '1.8rem',
+          fontSize: '2.5rem',
           fontFamily: '$neueMontreal',
           color: '$chxn4',
           fontWeight: 'bold',
@@ -53,13 +53,13 @@ const HeadingHero = () => {
           margin: 0,
           width: 'auto',
           '@md': {
-            fontSize: '1.5rem',
+            fontSize: '2rem',
             letterSpacing: '-0.01rem',
             lineHeight: '30px'
           }
         }}
       >
-        FRONT-END DEVELOPER
+        Hi, I'm Chan.
         {/* Front-end Developer & Director */}
       </Text>
     </>
