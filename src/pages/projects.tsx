@@ -8,12 +8,12 @@ import { AtlrColorLogo, AtlrDsLogo, AtlrIcxnsLogo, CDCLogo } from '@/components/
 import { AtlrTypeLogo } from '@/components/logos/atlr.typesxript';
 import { ContentSlider } from '@/components/primitives/off-canvas/slider';
 import { ProjectDisplay } from '@/components/primitives/project-display';
+import { RelativeFooter } from '~/components/layout/app-footer/relative-footer';
 
 const ProjectsPage = () => {
   return (
     <PageLayout>
       <ProjectHero />
-
       <ContentSlider>
         <ProjectDisplay
           projectUrl="https://github.com/chvndler/chvndler.ch"
@@ -91,6 +91,7 @@ const ProjectsPage = () => {
           </Link>
         </Flex>
       </Container>
+      <RelativeFooter />
     </PageLayout>
   );
 };

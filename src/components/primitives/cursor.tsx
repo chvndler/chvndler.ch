@@ -1,11 +1,9 @@
-import React, { createContext, useContext, useEffect, useRef, useState } from 'react';
-import { isMobile as _isMobile } from 'react-device-detect';
-
-// Stitches
-import { styled } from 'stitches.config';
-
 // GSAP Stuff
 import gsap from 'gsap';
+import React, { createContext, useContext, useEffect, useRef, useState } from 'react';
+import { isMobile as _isMobile } from 'react-device-detect';
+// Stitches
+import { styled } from 'stitches.config';
 
 const CursorFollower = styled('div', {
   $$size: '16px',

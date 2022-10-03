@@ -1,6 +1,7 @@
 {
     "name": "chvndler.ch",
     "version": "0.0.1",
+    "private": true,
     "description": "personal site.",
     "author": "Chandler Chappell <chan@ady.world> (https://chvndler.ch)",
     "license": "MIT",
@@ -9,7 +10,6 @@
         "type": "git",
         "url": "git+https://github.com/chvndler/chvndler.ch.git"
     },
-    "private": true,
     "scripts": {
         "prepare": "husky install",
         "dev": "next",
