@@ -75,7 +75,7 @@
         "eslint-plugin-simple-import-sort": "7.0.0",
         "husky": "^7.0.4",
         "lint-staged": "^11.2.6",
-        "next-sitemap": "^2.5.14",
+        "next-sitemap": "2.5.28",
         "next-transpile-modules": "^9.0.0",
         "prettier": "2.5.1",
         "sass": "1.49.9",
