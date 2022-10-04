@@ -16,7 +16,7 @@ const StyledProjectDetails = styled('div', {
   flexDirection: 'column',
   position: 'absolute',
   textAlign: 'left',
-  padding: 20,
+  padding: 26,
   margin: 'auto',
   bottom: 10,
   left: 0
@@ -29,7 +29,6 @@ const StyledTitle = styled('div', {
   fontWeight: '500',
   lineHeight: '40px',
   textAlign: 'left',
-  // textTransform: 'uppercase',
   padding: 0,
   margin: 0,
 
@@ -50,7 +49,7 @@ const StyledDescription = styled('p', {
 });
 
 const StyledSvg = styled('div', {
-  paddingBottom: 30
+  paddingBottom: 18
 });
 
 export const IfIcxn = StyledIcxn;

@@ -44,7 +44,7 @@ export const NoteTitle = StyledNoteTitle;
 const NotesPage = () => {
   return (
     <PageLayout>
-      <HeroSection size="1" color="default" alignment="center" css={{ padding: 0, paddingTop: '100px' }}>
+      <HeroSection size="1" color="default" alignment="center" css={{ padding: 0 }}>
         <Container size="1" css={{ padding: 20 }}>
           <Heading
             css={{

@@ -27,15 +27,14 @@ const StyledBar = styled('div', {
   margin: 'auto',
   position: 'relative',
   width: '100%',
-  // boxShadow: `0 1px 8px 1px rgba(0,0,0,0.02)`,
   borderRadius: 16,
   backgroundColor: 'transparent',
   backdropFilter: 'blur(80px)',
   WebkitBackdropFilter: 'blur(80px)',
+  saturate: '180%',
   lineHeight: '23px',
-  height: 48
-
-  // border: '1px solid $mauve2'
+  height: 48,
+  border: '1px solid transparent'
 });
 
 const NavButton = styled('a', {

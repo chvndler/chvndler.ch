@@ -23,7 +23,7 @@ export const ContentSlider = ({ children }: SlideProps) => {
           }
         }}
       >
-        <Grid flow="column" align="center" justify="start" gap="2" css={{ marginRight: 10 }}>
+        <Grid flow="column" align="center" justify="start" gap="3" css={{ marginRight: 10 }}>
           {children}
         </Grid>
       </Section>

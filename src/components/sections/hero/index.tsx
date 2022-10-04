@@ -21,12 +21,12 @@ export const HeroSection = styled('div', {
     size: {
       1: {
         height: 'auto',
-        paddingTop: '30px',
+        paddingTop: '10px',
         paddingBottom: '30px'
       },
       2: {
         height: 'auto',
-        paddingTop: '50px',
+        paddingTop: '20px',
         paddingBottom: '50px'
       },
       3: {
