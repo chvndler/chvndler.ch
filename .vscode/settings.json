@@ -1,7 +1,7 @@
 {
   "files.autoSave": "onWindowChange",
   "editor.fontSize": 10,
-  "editor.fontFamily": "JetBrains Mono, monospace",
+  "editor.fontFamily": "DM Mono, monospace",
   "editor.tabSize": 2,
   "workbench.colorTheme": "Copilot Theme",
   "workbench.productIconTheme": "fluent-icons",
