@@ -1,3 +1,5 @@
+import { styled } from 'stitches.config';
+
 import { AppBar } from '@/components/layout/app-bar';
 
 import { Meta } from '../common/meta';
@@ -10,12 +12,27 @@ type LayoutProps = {
   // footerProps?: FooterProps
 };
 
+const AppBox = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  height: '100%',
+  width: '100vw',
+  overflow: 'auto',
+  paddingTop: '150px',
+  paddingBottom: '200px',
+  paddingLeft: 0,
+  paddingRight: 0,
+  margin: 0
+});
+
 export const PageLayout = ({ children }: LayoutProps) => {
   return (
     <>
       <Meta />
-      <AppBar />
-      <main>{children}</main>
+      <AppBox>
+        <AppBar />
+        <main>{children}</main>
+      </AppBox>
     </>
   );
 };

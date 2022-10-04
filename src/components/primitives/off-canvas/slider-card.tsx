@@ -52,6 +52,8 @@ const ContentCard = styled('div', {
   verticalAlign: 'middle',
   WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
 
+  boxShadow: 'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px',
+
   backgroundColor: 'transparent',
   textDecoration: 'none',
   color: 'inherit',
@@ -59,10 +61,19 @@ const ContentCard = styled('div', {
   position: 'relative',
   height: '100%',
   width: '100%',
-  minHeight: '296px',
-  minWidth: '320px',
-  maxHeight: '296px',
-  maxWidth: '320px'
+  minHeight: '250px',
+  minWidth: '420px',
+  maxHeight: '250px',
+  maxWidth: '420px',
+
+  '@md': {
+    height: '100%',
+    width: '100%',
+    minHeight: '350px',
+    minWidth: '320px',
+    maxHeight: '350px',
+    maxWidth: '320px'
+  }
 });
 
 export const SvgBox = StyledSvgBox;

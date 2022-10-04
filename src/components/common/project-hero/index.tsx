@@ -3,7 +3,7 @@ import { HeroSection } from '@/components/sections/hero';
 
 export const ProjectHero = () => {
   return (
-    <HeroSection size="1" color="default" alignment="center" css={{ padding: 0, paddingTop: '100px' }}>
+    <HeroSection size="1" color="default" alignment="center" css={{ padding: 0 }}>
       <Container size="1" css={{ padding: 20 }}>
         <Heading
           css={{
