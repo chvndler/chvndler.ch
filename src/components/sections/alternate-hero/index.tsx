@@ -1,18 +1,15 @@
 import Image from 'next/image';
-
-// Layout
-import { Section, Canvas, Container } from '@/components/ds';
-
-// Primitives
-import Button from '@/components/primitives/button';
-
 // Styles
 import { styled } from 'stitches.config';
 
+// Layout
+import { Canvas, Container, Section } from '@/components/ds';
+import { ArrowDown } from '@/components/primitives/arrow';
+// Primitives
+import Button from '@/components/primitives/button';
+
 // Images
 import label from '../../../../public/images/labelhero.png';
-
-import { ArrowDown } from '@/components/primitives/arrow';
 
 const Title = styled('h1', {
   color: '$chxn4',

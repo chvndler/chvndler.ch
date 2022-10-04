@@ -1,4 +1,5 @@
 import type * as Polymorphic from '@radix-ui/react-polymorphic';
+// eslint-disable-next-line import/no-named-as-default
 import clsx from 'clsx';
 import { forwardRef } from 'react';
 // Styles
