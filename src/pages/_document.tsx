@@ -1,7 +1,6 @@
 import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
 import { getCssText, reset } from 'stitches.config';
 
-// setup & resets...
 const getCssAndReset = () => {
   const css = getCssText();
   reset();
