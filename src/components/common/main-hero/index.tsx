@@ -9,7 +9,6 @@ export const MainHero = () => {
     <Canvas>
       <HeroSection size="1" color="clear" alignment="center" css={{ padding: 0 }}>
         <Container size="1" css={{ padding: 20, backgroundColor: 'transparent' }}>
-          <HeadingHero />
           <AboutParagraph />
           <Space size="2" />
           <Flex
@@ -35,34 +34,6 @@ export const MainHero = () => {
         </Container>
       </HeroSection>
     </Canvas>
-  );
-};
-
-const HeadingHero = () => {
-  return (
-    <>
-      <Text
-        css={{
-          fontSize: '2.5rem',
-          fontFamily: '$neueMontreal',
-          color: '$chxn4',
-          fontWeight: 'bold',
-          letterSpacing: 'normal',
-          lineHeight: '40px',
-          padding: 10,
-          margin: 0,
-          width: 'auto',
-          '@md': {
-            fontSize: '2rem',
-            letterSpacing: '-0.01rem',
-            lineHeight: '30px'
-          }
-        }}
-      >
-        Hi, I'm Chan.
-        {/* Front-end Developer & Director */}
-      </Text>
-    </>
   );
 };
 

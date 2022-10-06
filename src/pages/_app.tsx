@@ -8,16 +8,10 @@ import { createContext, useContext } from 'react';
 import { darkTheme, globalCss } from 'stitches.config';
 
 import { useAppStore } from '@/context/use-app-store';
-import { atelierLog, isClient, isDev, isProd } from '@/lib/constants';
+import { isDev } from '@/lib/constants';
 
 const Context = createContext<{ fontsLoaded: boolean }>({ fontsLoaded: false });
 export const useAppContext = () => useContext(Context);
-
-// TODO delete this basement log if not a basement project.
-if (isProd && isClient) {
-  // eslint-disable-next-line no-console
-  console.log(atelierLog);
-}
 
 export type Page<P = Record<string, unknown>> = NextComponentType<NextPageContext, Record<string, unknown>, P> & {
   getLayout?: GetLayoutFn<P>;
