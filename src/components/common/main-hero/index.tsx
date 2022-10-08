@@ -19,7 +19,7 @@ export const MainHero = () => {
               display: 'inline-flex',
               textAlign: 'center',
               alignItems: 'center',
-              justifyContent: 'center',
+              justifyContent: 'flex-start',
               margin: 'auto',
               '@md': {
                 textAlign: 'center',
@@ -42,6 +42,7 @@ const AboutParagraph = () => {
     <>
       <Paragraph
         css={{
+          textAlign: 'left',
           fontFamily: '$neueMontreal',
           fontSize: 16,
           fontWeight: 'normal',
