@@ -39,7 +39,7 @@ export const CursorDataValue = () => {
     const setFromEvent = (event: { clientX: string | number; clientY: string | number }) => {
       const x = format(event.clientX, 4);
       const y = format(event.clientY, 4);
-      setDisplay(`X, Y:  ${x},${y}`);
+      setDisplay(`X,Y:  ${x},${y}`);
     };
 
     window.addEventListener('mousemove', setFromEvent);

@@ -7,10 +7,10 @@ import { TimePlusCursorData } from '~/components/primitives/time-x-cursor-data';
 const Home = () => {
   return (
     <PageLayout>
+      <TimePlusCursorData />
       <Canvas>
         <MainHero />
       </Canvas>
-      <TimePlusCursorData />
       <AppFooter />
     </PageLayout>
   );
