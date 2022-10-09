@@ -231,3 +231,7 @@ export const Text = styled('span', {
     variant: 'contrast'
   }
 });
+
+export const Code = styled(Text, {
+  fontFamily: '$antarcticanMono'
+});

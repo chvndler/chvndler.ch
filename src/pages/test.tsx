@@ -1,6 +1,7 @@
 import { Section } from '@/components/ds';
 import { AppFooter } from '~/components/layout/app-footer';
 import { PageLayout } from '~/components/layout/page';
+import { GlowButton } from '~/components/primitives/glow-button';
 import { Reveal } from '~/components/primitives/reveal';
 
 const TestPage = () => {
@@ -10,8 +11,12 @@ const TestPage = () => {
         <Section>
           <Reveal />
         </Section>
-        <AppFooter />
+
+        <Section>
+          <GlowButton>Glow button</GlowButton>
+        </Section>
       </PageLayout>
+      <AppFooter />
     </>
   );
 };
