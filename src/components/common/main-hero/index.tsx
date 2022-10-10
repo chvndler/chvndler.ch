@@ -43,7 +43,7 @@ const AboutParagraph = () => {
       <Paragraph
         css={{
           textAlign: 'left',
-          fontFamily: '$neueMontreal',
+          fontFamily: '$switzer',
           fontSize: 16,
           fontWeight: 'normal',
           lineHeight: '22px',

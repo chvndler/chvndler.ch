@@ -26,30 +26,13 @@ const AppBox = styled('div', {
   margin: 0
 });
 
-const AppContent = styled('div', {
-  zIndex: '2',
-  backgroundColor: '$chxn6s',
-  display: 'flex',
-  flexDirection: 'column',
-  height: '100%',
-  maxWidth: 800,
-  alignContent: 'center',
-  alignItems: 'center',
-  justifyContent: 'center',
-  overflow: 'auto',
-  padding: 0,
-  margin: 'auto'
-});
-
 export const PageLayout = ({ children }: LayoutProps) => {
   return (
     <>
       <Meta />
       <AppBox>
         <AppBar />
-        <AppContent>
-          <main>{children}</main>
-        </AppContent>
+        <main>{children}</main>
       </AppBox>
     </>
   );
