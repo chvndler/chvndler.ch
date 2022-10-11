@@ -12,9 +12,9 @@ export const ThemeButton = () => {
       color="nothing"
       onClick={() => (theme === 'dark' ? setTheme('light') : setTheme('dark'))}
       aria-label="Toggle Theme"
-      css={{ fontWeight: 'bold', fontSize: 12.5, lineHeight: 'normal', height: 'auto' }}
+      css={{ fontFamily: '$neueMontreal', fontWeight: 'normal', fontSize: 12, lineHeight: 'normal', height: 'auto' }}
     >
-      THEME
+      Theme
     </Button>
   );
 };

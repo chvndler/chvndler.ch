@@ -72,6 +72,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     fonts: {
       untitled: '"Inter", -apple-system, system-ui, sans-serif',
       inter: '"Inter", sans-serif',
+      druk: '"Druk Wide", sans-serif',
       switzer: '"Switzer-Variable", sans-serif',
       aero: '"At Hauss Aero", sans-serif',
       pragExtended: '"Pragmatica Extended", sans-serif',

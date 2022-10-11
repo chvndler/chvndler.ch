@@ -80,7 +80,7 @@ export const AppFooter = () => {
               css={{
                 color: '$chxn3',
                 fontFamily: '$neueMontreal',
-                fontSize: 13,
+                fontSize: 12,
                 fontWeight: '500',
                 lineHeight: 'normal',
                 letterSpacing: '-0.01rem',
@@ -94,7 +94,7 @@ export const AppFooter = () => {
                 }
               }}
             >
-              © All rights reserved.
+              © MIT. All rights reserved.
             </Text>
           </Link>
         </ContentBox>
@@ -103,15 +103,14 @@ export const AppFooter = () => {
           <Flex css={{ flexDirection: 'column' }}>
             <Text
               css={{
-                color: '$chxn3',
-                fontFamily: '$neueMontreal',
-                fontSize: 13,
-                fontWeight: '500',
-                lineHeight: 'normal',
-                letterSpacing: '0.02rem'
+                color: '$chxn10',
+                fontFamily: '$druk',
+                fontSize: 10,
+                fontWeight: 500,
+                lineHeight: 'normal'
               }}
             >
-              SOMETHING LIKE THIS BUT NOT THIS™
+              SOMETHING LIKE THIS BUT NOT THIS©
             </Text>
           </Flex>
         </ContentBox>
