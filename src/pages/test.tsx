@@ -14,10 +14,10 @@ const TestPage = () => {
                 fontFamily: '$druk',
                 fontSize: 10,
                 fontWeight: 'bold',
-                textAlign: 'center'
+                textAlign: 'left'
               }}
             >
-              DEVELOPING PAGE
+              INDEX
             </Text>
           </Container>
         </Section>
@@ -65,6 +65,20 @@ const TestPage = () => {
             >
               Notes
             </Text>
+
+            <Text
+              css={{
+                color: '$sage10',
+                fontFamily: '$neueMontreal',
+                fontSize: 40,
+                fontWeight: 500,
+                // letterSpacing: '-0.02rem',
+                textAlign: 'left',
+                lineHeight: '45px'
+              }}
+            >
+              About
+            </Text>
             <Space size="3" />
             <Text
               css={{
@@ -82,36 +96,33 @@ const TestPage = () => {
             <Text
               css={{
                 color: '$sage9',
-                fontFamily: '$aero',
-                fontSize: 18,
-                fontWeight: 600,
+                fontFamily: '$neueMontreal',
+                fontSize: 12,
+                fontWeight: 500,
                 textAlign: 'left',
                 lineHeight: '30px',
-                letterSpacing: '-0.05rem',
-
                 '&:hover': {
                   color: '$twitter'
                 }
               }}
             >
-              twitter
+              TWITTER
             </Text>
 
             <Text
               css={{
                 color: '$sage9',
-                fontFamily: '$aero',
-                fontSize: 18,
-                fontWeight: 600,
+                fontFamily: '$neueMontreal',
+                fontSize: 12,
+                fontWeight: 500,
                 textAlign: 'left',
                 lineHeight: '30px',
-                letterSpacing: '-0.05rem',
                 '&:hover': {
                   color: '$github'
                 }
               }}
             >
-              github
+              GITHUB
             </Text>
           </Container>
         </Section>

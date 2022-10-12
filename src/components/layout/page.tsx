@@ -19,7 +19,7 @@ const AppBox = styled('div', {
   height: '100%',
   width: '100vw',
   overflow: 'auto',
-  paddingTop: '150px',
+  paddingTop: '100px',
   paddingBottom: '200px',
   paddingLeft: 0,
   paddingRight: 0,
