@@ -9,9 +9,6 @@ const Home = () => {
     <>
       <PageLayout>
         <TimePlusCursorData />
-        <Canvas>
-          <MainHero />
-        </Canvas>
       </PageLayout>
       <AppFooter />
     </>
