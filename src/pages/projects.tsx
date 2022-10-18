@@ -9,8 +9,8 @@ const ProjectsPage = () => {
       <PageLayout>
         <Section>
           <Container size="2">
-            <Text css={{ fontFamily: '$druk', fontSize: 20, fontWeight: 'bold', letterSpacing: '-0.05rem' }}>
-              NOTES
+            <Text css={{ fontFamily: '$neueMonteal', fontSize: 20, fontWeight: 'normal', letterSpacing: '-0.05rem' }}>
+              Projects
             </Text>
           </Container>
           <Reveal />

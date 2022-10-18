@@ -1,14 +1,19 @@
-import { Canvas, Container } from '@/components/ds';
+import { AboutMe } from '@/components/common/about-header';
+import { Box, Container } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
-import { ContextComponent } from '@/components/primitives/context-menu';
 import { Tweet } from '@/components/primitives/tweet';
 
 const DevelopingPage = () => {
   return (
     <PageLayout>
       {/* <!-- HERO CONTAINER --> */}
-      <Canvas>
-        <Container size="3" css={{ display: 'flex', alignItems: 'center', margin: 'auto', justifyContent: 'center' }}>
+      <AboutMe />
+
+      <Box css={{ display: 'none' }}>
+        <Container
+          size="3"
+          css={{ display: 'flex', alignItems: 'center', margin: 'auto', justifyContent: 'center', paddingTop: '100px' }}
+        >
           <Tweet
             userUrl="https://twitter.com/chvndlerch"
             avatar="https://pbs.twimg.com/profile_images/1570572396913999872/eu5obCWK_reasonably_small.jpg"
@@ -20,11 +25,8 @@ const DevelopingPage = () => {
             i love twitter.
           </Tweet>
         </Container>
+      </Box>
 
-        <Container size="3" css={{ display: 'flex', alignItems: 'center', margin: 'auto', justifyContent: 'center' }}>
-          <ContextComponent />
-        </Container>
-      </Canvas>
       {/*END HERO CONTAINER*/}
     </PageLayout>
   );

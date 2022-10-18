@@ -1,4 +1,4 @@
-import { Container, Section, Space, Text } from '@/components/ds';
+import { Badge, Container, Section, Space, Text } from '@/components/ds';
 import { AppFooter } from '~/components/layout/app-footer';
 import { PageLayout } from '~/components/layout/page';
 
@@ -7,18 +7,13 @@ const TestPage = () => {
     <>
       <PageLayout>
         <Section>
-          <Container size="2">
-            <Text
-              css={{
-                color: '$tartOrange',
-                fontFamily: '$druk',
-                fontSize: 10,
-                fontWeight: 'bold',
-                textAlign: 'left'
-              }}
-            >
+          <Container
+            size="2"
+            css={{ margin: 'auto', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}
+          >
+            <Badge size="1" variant="orange" css={{ fontFamily: '$druk', lineHeight: '22px' }}>
               INDEX
-            </Text>
+            </Badge>
           </Container>
         </Section>
         <Space size="3" />
