@@ -16,6 +16,10 @@ import {
   sageA,
   sageDark,
   sageDarkA,
+  slate,
+  slateA,
+  slateDark,
+  slateDarkA,
   whiteA
 } from '@radix-ui/colors';
 import type * as Stitches from '@stitches/react';
@@ -36,6 +40,8 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       ...mauveA,
       ...lime,
       ...limeA,
+      ...slate,
+      ...slateA,
       ...sage,
       ...sageA,
       ...whiteA,
@@ -207,6 +213,8 @@ export const darkTheme = createTheme('dark-theme', {
     ...mauveDarkA,
     ...limeDark,
     ...limeDarkA,
+    ...slateDark,
+    ...slateDarkA,
     ...sageDark,
     ...sageDarkA,
 

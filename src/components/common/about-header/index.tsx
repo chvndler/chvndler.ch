@@ -1,14 +1,39 @@
 import Link from 'next/link';
 import React from 'react';
+import { styled } from 'stitches.config';
 
-import { Box, Container, Flex, Grid, InlineLink, Paragraph, Section, Text } from '@/components/ds';
+import { Box, Container, Flex, Grid, InlineLink, Paragraph, Section } from '@/components/ds';
 import { Icxn } from '@/components/icons/icxn';
 import { Avatar } from '@/components/primitives/avatar';
+
+const StyledProjectTitle = styled('a', {
+  fontSize: 18,
+  fontFamily: '$rightGroteskText',
+  fontWeight: 'normal',
+  lineHeight: '2',
+  color: '$slate12',
+
+  '&:hover': {
+    color: '$chxn6',
+    cursor: 'pointer',
+    textDecoration: 'underline'
+  }
+});
+
+const StyledProjectDescription = styled('p', {
+  fontSize: 14,
+  fontFamily: '$rightGroteskText',
+  lineHeight: '1.4',
+  color: '$slate10'
+});
+
+export const ProjectTitle = StyledProjectTitle;
+export const ProjectDescription = StyledProjectDescription;
 
 export const AboutMe = () => {
   return (
     <>
-      <Container size="2" css={{ marginBottom: 20, backgroundColor: '$chxn3' }}>
+      <Container size="1" css={{ marginBottom: 40 }}>
         <Flex
           css={{
             flexDirection: 'row',
@@ -21,7 +46,7 @@ export const AboutMe = () => {
           <Link href="/" passHref>
             <Box as="a" css={{}}>
               <Avatar
-                size="2"
+                size="3"
                 alt="Chandler Chappell"
                 src="https://pbs.twimg.com/profile_images/1570572396913999872/eu5obCWK_reasonably_small.jpg"
                 fallback="C"
@@ -34,16 +59,29 @@ export const AboutMe = () => {
               <Icxn variant="Twitter" />
             </Box>
           </Link>
+
+          <Link href="https://twitter.com/chvndlerch" passHref target="_blank" rel="norefferer">
+            <Box as="a" css={{ color: '$github' }}>
+              <Icxn variant="GitHub" />
+            </Box>
+          </Link>
+
+          <Link href="https://twitter.com/chvndlerch" passHref target="_blank" rel="norefferer">
+            <Box as="a" css={{ color: '$mauve9' }}>
+              <Icxn variant="Are.na" />
+            </Box>
+          </Link>
         </Flex>
       </Container>
 
-      <Container size="2" css={{}}>
+      <Container size="1" css={{}}>
         <Paragraph
           css={{
+            color: '$slate11',
             fontFamily: '$rightGroteskText',
-            fontSize: 18,
+            fontSize: 22,
             fontWeight: '600',
-            lineHeight: 1.2,
+            lineHeight: 1.4,
             textAlign: 'center'
           }}
         >
@@ -52,7 +90,7 @@ export const AboutMe = () => {
         </Paragraph>
       </Container>
 
-      <Section size="2" css={{}}>
+      <Section size="2" css={{ paddingTop: 100 }}>
         <Container size="1" css={{}}>
           <Grid
             align="stretch"
@@ -68,20 +106,39 @@ export const AboutMe = () => {
               }
             }}
           >
+            {/* <!-- P1 --> */}
             <Box as="a" css={{}}>
-              <Text css={{}}>ONE</Text>
-            </Box>
-            <Box as="a" css={{}}>
-              <Text css={{ fontSize: 16, fontFamily: '$rightGroteskText', fontWeight: 'bold', lineHeight: '2' }}>
-                Project 2
-              </Text>
-              <Text css={{ fontSize: 12, fontFamily: '$rightGroteskText', lineHeight: '1.2' }}>
+              <ProjectTitle>Atelier® DS →</ProjectTitle>
+              <ProjectDescription>
                 My passion is to make simple, beautiful and performant web experiences.
-              </Text>
+              </ProjectDescription>
             </Box>
+            {/* <!-- P1 --> */}
+
+            {/* <!-- P2 --> */}
             <Box as="a" css={{}}>
-              <Text css={{}}>THREE</Text>
+              <ProjectTitle>Typesxript →</ProjectTitle>
+              <ProjectDescription>
+                My passion is to make simple, beautiful and performant web experiences.
+              </ProjectDescription>
             </Box>
+            {/* <!-- P2 --> */}
+
+            {/* <!-- P3 --> */}
+            <Box as="a" css={{}}>
+              <ProjectTitle>atlr.icxns →</ProjectTitle>
+              <ProjectDescription>Not your basic icon set.</ProjectDescription>
+            </Box>
+            {/* <!-- P3 --> */}
+
+            {/* <!-- P4 --> */}
+            <Box as="a" css={{}}>
+              <ProjectTitle>atlr.color →</ProjectTitle>
+              <ProjectDescription>
+                A quickly accessible, yielded and opinionated color system for the web.
+              </ProjectDescription>
+            </Box>
+            {/* <!-- P4 --> */}
           </Grid>
         </Container>
       </Section>

@@ -34,6 +34,7 @@
         "@radix-ui/react-popover": "^1.0.0",
         "@radix-ui/react-switch": "^1.0.0",
         "@stitches/react": "^1.2.8",
+        "@studio-freight/hamo": "^0.4.43",
         "clsx": "1.2.1",
         "date-fns": "^2.29.3",
         "gsap": "3.11.2",

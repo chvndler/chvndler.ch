@@ -14,7 +14,7 @@ const StyledAvatar = styled(AvatarPrimitive.Root, {
   display: 'flex',
   flexShrink: 0,
   position: 'relative',
-  border: 'none',
+  border: '1px solid $chxn3',
   fontFamily: 'inherit',
   lineHeight: '1',
   margin: '0',
@@ -41,12 +41,12 @@ const StyledAvatar = styled(AvatarPrimitive.Root, {
         height: '$3'
       },
       '2': {
-        width: '$5',
-        height: '$5'
+        width: '$4',
+        height: '$4'
       },
       '3': {
-        width: '$6',
-        height: '$6'
+        width: 50,
+        height: 50
       },
       '4': {
         width: '$7',
