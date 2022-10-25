@@ -36,7 +36,7 @@
         "@stitches/react": "^1.2.8",
         "clsx": "1.2.1",
         "date-fns": "^2.29.3",
-        "gsap": "3.11.2",
+        "gsap": "3.11.3",
         "hls.js": "1.2.4",
         "locomotive-scroll": "^4.1.4",
         "mousetrap": "1.6.5",
