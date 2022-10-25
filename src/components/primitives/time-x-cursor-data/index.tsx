@@ -39,7 +39,7 @@ export const CursorDataValue = () => {
     const setFromEvent = (event: { clientX: string | number; clientY: string | number }) => {
       const x = format(event.clientX, 4);
       const y = format(event.clientY, 4);
-      setDisplay(`X,Y:  ${x},${y}`);
+      setDisplay(`${x},${y}`);
     };
 
     window.addEventListener('mousemove', setFromEvent);
@@ -127,7 +127,7 @@ export const TimePlusCursorData = () => {
       css={{
         width: '100vw',
         position: 'fixed',
-        top: 60,
+        bottom: 60,
         right: 0,
         left: 0,
         display: 'inline-flex',
@@ -138,11 +138,17 @@ export const TimePlusCursorData = () => {
         justifyContent: 'center',
         alignContent: 'center',
         alignItems: 'center',
-        margin: 'auto'
+        margin: 'auto',
+
+        '@md': {
+          bottom: 90
+        }
       }}
     >
       <TimeValue />
-      <Box css={{ '@sm': { display: 'none' } }}>⋅</Box>
+      <Box css={{ '@sm': { display: 'none' } }}>
+        <span>–</span>
+      </Box>
       <CursorDataValue />
     </Box>
   );

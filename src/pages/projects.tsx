@@ -1,22 +1,29 @@
 import { Container, Section, Text } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
 import { Reveal } from '@/components/primitives/reveal';
-import { RelativeFooter } from '~/components/layout/app-footer/relative-footer';
 
 const ProjectsPage = () => {
   return (
     <>
       <PageLayout>
-        <Section>
-          <Container size="2">
-            <Text css={{ fontFamily: '$neueMonteal', fontSize: 20, fontWeight: 'normal', letterSpacing: '-0.05rem' }}>
-              Projects
-            </Text>
-          </Container>
+        <Container size="2">
+          <Text
+            css={{
+              color: '$sage10',
+              fontFamily: '$druk',
+              fontSize: 16,
+              fontWeight: 'bold',
+              textAlign: 'center',
+              letterSpacing: 'normal'
+            }}
+          >
+            PROJECTS
+          </Text>
+        </Container>
+        <Section size="2">
           <Reveal />
         </Section>
       </PageLayout>
-      <RelativeFooter />
     </>
   );
 };

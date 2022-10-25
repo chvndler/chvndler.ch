@@ -1,5 +1,6 @@
 import { Container, Text } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
+import { AppFooter } from '~/components/layout/app-footer';
 
 const Archive = () => {
   return (
@@ -20,6 +21,7 @@ const Archive = () => {
           </Text>
         </Container>
       </PageLayout>
+      <AppFooter />
     </>
   );
 };

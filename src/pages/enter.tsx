@@ -1,34 +1,37 @@
-import { Container, Heading } from '@/components/ds';
+import { Container, Heading, Text } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
+import { PassLink } from '@/components/primitives/pass-link';
 import { HeroSection } from '@/components/sections/hero';
-import { PopoverComponent } from '~/components/primitives/popover';
+import { Avatar } from '~/components/primitives/avatar';
+import { TimeCode } from '~/components/primitives/time-code';
+import { ThemeToggle } from '~/components/primitives/ui-switch/theme-toggle';
 
 const EnterPage = () => {
   return (
     <PageLayout>
       <HeroSection size="1" color="default" alignment="responsiveLeft" css={{ padding: 0 }}>
         <Container size="1" css={{ padding: 20, paddingTop: '100px' }}>
-          <Heading
-            css={{
-              fontSize: 62,
-              fontFamily: '$rightGroteskTextWide',
-              color: '$chxn4',
-              fontWeight: 'bold',
-              letterSpacing: '-0.53rem',
-              lineHeight: '53px',
-              padding: 0,
-              margin: 0,
-              width: 'auto',
-              '@md': {
-                letterSpacing: '-0.3rem',
-                fontSize: 38,
-                lineHeight: '30px'
-              }
-            }}
-          >
-            DEVELOPING
+          <Heading size="1" as="h1" css={{ textAlign: 'center', color: '$sage9' }}>
+            Components
           </Heading>
-          <PopoverComponent />
+        </Container>
+        <Container size="1" css={{ padding: 20, paddingTop: '100px' }}>
+          <Text css={{ fontSize: 12, textAlign: 'left', lineHeight: '3' }}>Avatar</Text>
+          <Avatar src="/images/web.gif" size="3" />
+        </Container>
+        <Container size="1" css={{ padding: 20 }}>
+          <Text css={{ fontSize: 12, textAlign: 'left', lineHeight: '3' }}>Theme Toggle</Text>
+          <ThemeToggle />
+        </Container>
+
+        <Container size="1" css={{ padding: 20 }}>
+          <Text css={{ fontSize: 12, textAlign: 'left', lineHeight: '3' }}>TimeCode</Text>
+          <TimeCode />
+        </Container>
+
+        <Container size="1" css={{ padding: 20 }}>
+          <Text css={{ fontSize: 12, textAlign: 'left', lineHeight: '3' }}>Pass-link</Text>
+          <PassLink href="/">ONE</PassLink>
         </Container>
       </HeroSection>
     </PageLayout>

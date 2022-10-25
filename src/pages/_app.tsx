@@ -113,7 +113,7 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
         disableTransitionOnChange
         attribute="class"
         value={{ light: 'light-theme', dark: darkTheme.className }}
-        defaultTheme="system"
+        defaultTheme="light-theme"
       >
         {getLayout({ Component, pageProps, ...rest })}
       </ThemeProvider>

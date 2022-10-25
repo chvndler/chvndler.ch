@@ -103,11 +103,12 @@ export const AppFooter = () => {
           <Flex css={{ flexDirection: 'column' }}>
             <Text
               css={{
-                color: '$slate9',
+                color: '$sage10',
                 fontFamily: '$druk',
                 fontSize: 10,
                 fontWeight: 500,
-                lineHeight: 'normal'
+                lineHeight: 'normal',
+                textAlign: 'center'
               }}
             >
               SOMETHING LIKE THIS BUT NOT THIS©

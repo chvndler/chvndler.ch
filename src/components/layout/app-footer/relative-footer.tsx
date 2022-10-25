@@ -1,11 +1,10 @@
 import Link from 'next/link';
 import { styled } from 'stitches.config';
 
-import { Flex, Grid, Text } from '@/components/ds';
+import { Flex, Text } from '@/components/ds';
 import { ThemeButton } from '~/components/primitives/theme-button';
 
 const StyledFooter = styled('footer', {
-  width: '100vw',
   zIndex: '999',
   position: 'relative',
   boxSizing: 'border-box',
@@ -14,10 +13,12 @@ const StyledFooter = styled('footer', {
   flexDirection: 'row',
   alignItems: 'flex-end',
   justifyContent: 'space-between',
+  width: '100vw',
   height: 'auto',
   padding: 20,
-  paddingTop: 100,
+  paddingTop: 40,
   backgroundColor: 'transparent',
+  color: '$chvn100',
   '@md': {
     flexDirection: 'column',
     alignContent: 'center',
@@ -72,68 +73,51 @@ export const RelativeFooter = () => {
   return (
     <>
       <Footer>
-        <Grid
-          align="stretch"
-          flow="row"
-          columns="3"
-          gap="2"
-          css={{
-            width: '100%',
-            '@md': {
-              gridTemplateColumns: 'repeat(1, 1fr)'
-            },
-            '@sm': {
-              gridTemplateColumns: 'repeat(1, 1fr)'
-            }
-          }}
-        >
-          <ContentBox alignment="start">
-            <Link href="/" passHref>
-              <Text
-                as="a"
-                css={{
-                  color: '$chxn3',
-                  fontFamily: '$neueMontreal',
-                  fontSize: 13,
-                  fontWeight: '500',
-                  lineHeight: 'normal',
-                  letterSpacing: '-0.01rem',
-                  margin: 0,
-                  marginRight: 10,
-                  '@md': {
-                    display: 'none'
-                  },
-                  '&:hover': {
-                    color: '$chxn2'
-                  }
-                }}
-              >
-                © All rights reserved.
-              </Text>
-            </Link>
-          </ContentBox>
+        <ContentBox alignment="start">
+          <Link href="/" passHref>
+            <Text
+              as="a"
+              css={{
+                color: '$chxn3',
+                fontFamily: '$neueMontreal',
+                fontSize: 12,
+                fontWeight: '500',
+                lineHeight: 'normal',
+                letterSpacing: '-0.01rem',
+                margin: 0,
+                marginRight: 10,
+                '@md': {
+                  display: 'none'
+                },
+                '&:hover': {
+                  color: '$chxn2'
+                }
+              }}
+            >
+              © MIT. All rights reserved.
+            </Text>
+          </Link>
+        </ContentBox>
 
-          <ContentBox alignment="center">
-            <Flex css={{ flexDirection: 'column' }}>
-              <Text
-                css={{
-                  color: '$chxn3',
-                  fontFamily: '$neueMontreal',
-                  fontSize: 13,
-                  fontWeight: '500',
-                  lineHeight: 'normal',
-                  letterSpacing: '0.02rem'
-                }}
-              >
-                SOMETHING LIKE THIS BUT NOT THIS™
-              </Text>
-            </Flex>
-          </ContentBox>
+        <ContentBox alignment="center">
+          <Flex css={{ flexDirection: 'column' }}>
+            <Text
+              css={{
+                color: '$sage10',
+                fontFamily: '$druk',
+                fontSize: 10,
+                fontWeight: 500,
+                lineHeight: 'normal'
+              }}
+            >
+              SOMETHING LIKE THIS BUT NOT THIS©
+            </Text>
+          </Flex>
+        </ContentBox>
 
-          <ContentBox alignment="end" css={{}}>
-            <ThemeButton />
-          </ContentBox>
-        </Grid>
+        <ContentBox alignment="end" css={{}}>
+          <ThemeButton />
+        </ContentBox>
       </Footer>
     </>
   );

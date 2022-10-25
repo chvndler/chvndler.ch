@@ -20,7 +20,7 @@ const AppBox = styled('div', {
   width: '100vw',
   overflow: 'auto',
   paddingTop: '100px',
-  paddingBottom: '200px',
+  paddingBottom: '100px',
   paddingLeft: 0,
   paddingRight: 0,
   margin: 0
@@ -30,8 +30,8 @@ export const PageLayout = ({ children }: LayoutProps) => {
   return (
     <>
       <Meta />
+      <AppBar />
       <AppBox>
-        <AppBar />
         <main>{children}</main>
       </AppBox>
     </>

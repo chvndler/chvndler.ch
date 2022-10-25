@@ -3,30 +3,16 @@
 @import './inter.css';
 @import './switzer.css';
 @import './aero.css';
-@import './ettika.css';
-@import './pragmatica.css';
 @import './right-grotesk.css';
 @import './telegraf.css';
 @import './neue-montreal.css';
 @import './antarctican-mono.css';
-@import './neue-bit.css';
 @import './druk.css';
 // globals
 :root {
     --font-system: -apple-system, blinkmacsystemfont, segoe ui, roboto, oxygen, ubuntu, cantarell, fira sans, droid sans, helvetica neue, sans-serif;
     --font-body: 'Inter', var(--font-system), sans-serif;
     --inspect-color: #ff3333;
-    --bg-dark: #2b2a30;
-    --bg-light: #f7f0f0;
-    --fg-dark: #f1f1f1;
-    --fg-light: #484349;
-    --bg: var(--bg-light);
-    --fg: var(--fg-light);
-}
-
-[data-theme='dark'] {
-    --bg: var(--bg-dark);
-    --fg: var(--fg-dark);
 }
 
 
