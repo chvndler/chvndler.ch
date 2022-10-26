@@ -130,16 +130,7 @@ const AlternateHero = () => {
         </Wrapper>
       </Canvas>
       <ImageContainer>
-        <Image
-          alt="Stitch"
-          className="hero__image"
-          height={100}
-          objectFit="cover"
-          priority
-          quality={100}
-          src={label}
-          width={266}
-        />
+        <Image alt="Stitch" className="hero__image" height={100} fill priority quality={100} src={label} width={266} />
       </ImageContainer>
     </Section>
   );

@@ -11,7 +11,7 @@ export const CoverImageBlur = ({ image }: BlurProps) => {
     <>
       <BlurCanvas position="relative" blur="sm" color="light" />
       <Box css={{ zIndex: '0' }}>
-        <Image className="web_video" src={image} objectFit="cover" layout="fill" alt="backgroundImage" />
+        <Image className="web_video" src={image} fill alt="backgroundImage" />
       </Box>
     </>
   );
