@@ -19,16 +19,17 @@
     "target": "esnext",
     "noUncheckedIndexedAccess": true,
     "importsNotUsedAsValues": "error",
+    "incremental": true,
     "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"],
       "@/*": ["./src/*"],
       "~/public/*": ["./public/*"],
       "@/public/*": ["./public/*"],
-      "@/components/*": ["./src/components/*"]
-    },
-    "incremental": true
+      "@/components/*": ["./src/components/*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
+    }
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", ".contentlayer/generated"]
 }

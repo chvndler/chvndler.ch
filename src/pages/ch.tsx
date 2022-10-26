@@ -34,7 +34,6 @@ const Home = () => {
             Front-end Developer & Designer.
           </Text>
         </Container>
-
         <AboutMe />
       </PageLayout>
       <TimePlusCursorData />

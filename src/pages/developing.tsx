@@ -8,10 +8,7 @@ const DevelopingPage = () => {
     <>
       <PageLayout>
         <TimePlusCursorData />
-        {/* <!-- HERO CONTAINER --> */}
         <AboutMe />
-
-        {/*END HERO CONTAINER*/}
       </PageLayout>
       <AppFooter />
     </>
