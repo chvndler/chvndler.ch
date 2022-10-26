@@ -19,9 +19,9 @@ export const PassLink = React.forwardRef<HTMLAnchorElement, PassLinkProps>(({ hr
 
   if (isExternal || isMailto) {
     return (
-      <a rel="noreferrer nofollow noopenner" ref={ref} target="_blank" {...props} href={href}>
+      <LinkComp rel="noreferrer nofollow noopenner" ref={ref} target="_blank" {...props} href={href}>
         {children}
-      </a>
+      </LinkComp>
     );
   }
 

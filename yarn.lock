@@ -408,6 +408,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/font@npm:^13.0.0":
+  version: 13.0.0
+  resolution: "@next/font@npm:13.0.0"
+  checksum: e616d77336d82455e08653a5488b7e8721ac3db5fb0a69e6270ed093eb2a8d7f51b0582e1ef0fa7947587bda13296fd6cee2fe4fcf88a98c2bcc69122fa70e5b
+  languageName: node
+  linkType: hard
+
 "@next/swc-android-arm-eabi@npm:13.0.0":
   version: 13.0.0
   resolution: "@next/swc-android-arm-eabi@npm:13.0.0"
@@ -2028,6 +2035,7 @@ __metadata:
     "@juggle/resize-observer": ^3.4.0
     "@next/bundle-analyzer": 13
     "@next/eslint-plugin-next": 13
+    "@next/font": ^13.0.0
     "@radix-ui/colors": 0.1.8
     "@radix-ui/react-aspect-ratio": 1.0.1
     "@radix-ui/react-avatar": 1.0.1

@@ -22,6 +22,7 @@
     },
     "dependencies": {
         "@juggle/resize-observer": "^3.4.0",
+        "@next/font": "^13.0.0",
         "@radix-ui/colors": "0.1.8",
         "@radix-ui/react-aspect-ratio": "1.0.1",
         "@radix-ui/react-avatar": "1.0.1",
