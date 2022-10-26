@@ -92,7 +92,7 @@
     },
     "engines": {
         "node": "16.x",
-        "yarn": "1.x.x"
+        "yarn": "3.x"
     },
     "browserslist": [
         ">0.2%",
