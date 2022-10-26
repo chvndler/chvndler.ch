@@ -5,14 +5,14 @@ import { styled } from 'stitches.config';
 type PassLinkProps = { href: string } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 const StyledHref = styled(Link, {
+  transition: 'color 0.4s ease',
   '&:hover': {
-    color: '$tartOrange'
+    color: '$lime10'
   }
 });
 
 const LinkComp = StyledHref;
 
-// eslint-disable-next-line import/no-named-as-default-member
 export const PassLink = React.forwardRef<HTMLAnchorElement, PassLinkProps>(({ href, children, ...props }, ref) => {
   const isMailto = useMemo(() => href.startsWith('mailto:'), [href]);
   const isExternal = useMemo(() => /https:/.test(href), [href]);

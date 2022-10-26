@@ -12,7 +12,18 @@ export const ThemeButton = () => {
       color="nothing"
       onClick={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}
       aria-label="Toggle Theme"
-      css={{ fontFamily: '$druk', fontWeight: 'normal', fontSize: 10, lineHeight: 'normal', height: 'auto' }}
+      css={{
+        fontFamily: '$druk',
+        fontWeight: 'normal',
+        fontSize: 10,
+        lineHeight: 'normal',
+        height: 'auto',
+        transition: 'color 0.4s ease',
+        '&:hover': {
+          color: '$lime10',
+          cursor: 'crosshair'
+        }
+      }}
     >
       THEME
     </Button>

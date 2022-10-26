@@ -99,10 +99,6 @@ const ContentBox = styled('div', {
   color: '$chxn4',
   transition: 'color 0.4s ease',
 
-  '&:hover': {
-    color: '$maxBlue'
-  },
-
   variants: {
     alignment: {
       start: {
