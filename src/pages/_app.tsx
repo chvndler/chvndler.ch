@@ -26,15 +26,14 @@ const globalStyles = globalCss({
   html: {
     margin: 0,
     padding: 0,
-    overflowX: 'hidden',
-    minHeight: '-webkit-fill-available',
+    // minHeight: '-webkit-fill-available',
     backgroundColor: '$chxn1'
   },
   body: {
     opacity: 0,
     margin: 0,
     WebkitTextSizeAdjust: '100%',
-    minHeight: '-webkit-fill-available',
+    // minHeight: '-webkit-fill-available',
     backgroundColor: '$chxn1'
   }
 });

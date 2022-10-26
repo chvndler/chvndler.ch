@@ -105,7 +105,6 @@ export const TimeValue = ({ variant }: { variant?: 'mobile' }) => {
         css={{
           display: 'flex',
           alignItems: 'center',
-          px: '$$px',
           height: '100%',
           ...(variant === 'mobile'
             ? {
