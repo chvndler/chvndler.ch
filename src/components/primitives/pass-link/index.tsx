@@ -27,7 +27,7 @@ export const PassLink = React.forwardRef<HTMLAnchorElement, PassLinkProps>(({ hr
 
   return (
     <LinkComp href={href} ref={ref}>
-      <a {...props}>{children}</a>
+      <span {...props}>{children}</span>
     </LinkComp>
   );
 });

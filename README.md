@@ -28,6 +28,17 @@ Personal website, journal, knowledge base, and playground.
    yarn dev
    ```
 
+
+## Deployment
+```
+$ vercel
+```
+
+```
+$ vercel --prod
+```
+
+
 ## Things to Note
 
 - Make sure you read `.env.example` to see which environment variables you need to run the project.

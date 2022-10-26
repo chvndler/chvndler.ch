@@ -1,6 +1,7 @@
-import { Container, Section, Text } from '@/components/ds';
+import { Container, Text } from '@/components/ds';
+import { RelativeFooter } from '@/components/layout/app-footer/relative-footer';
 import { PageLayout } from '@/components/layout/page';
-import { Reveal } from '@/components/primitives/reveal';
+import { ProjectSection } from '@/components/sections/project-section';
 
 const ProjectsPage = () => {
   return (
@@ -20,10 +21,10 @@ const ProjectsPage = () => {
             PROJECTS
           </Text>
         </Container>
-        <Section size="2">
-          <Reveal />
-        </Section>
+
+        <ProjectSection />
       </PageLayout>
+      <RelativeFooter />
     </>
   );
 };

@@ -133,9 +133,7 @@ export const AppBar = () => {
       <NavContainer>
         <AppNav>
           <ContentBox alignment="start">
-            <NavButton as="a" href="/projects">
-              Projects
-            </NavButton>
+            <NavButton href="/projects">Projects</NavButton>
           </ContentBox>
 
           <ContentBox alignment="center">
@@ -145,9 +143,7 @@ export const AppBar = () => {
           </ContentBox>
 
           <ContentBox alignment="end">
-            <NavButton as="a" href="/notes">
-              Notes
-            </NavButton>
+            <NavButton href="/notes">Notes</NavButton>
           </ContentBox>
         </AppNav>
       </NavContainer>

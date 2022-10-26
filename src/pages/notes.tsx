@@ -1,8 +1,8 @@
-import { Container, Flex, Text } from '@/components/ds';
+import { Container, Text } from '@/components/ds';
+import { RelativeFooter } from '@/components/layout/app-footer/relative-footer';
 import { PageLayout } from '@/components/layout/page';
 import { NoteEntry } from '@/components/primitives/NoteEntry';
 import { notes } from '@/lib/notes';
-import { RelativeFooter } from '~/components/layout/app-footer/relative-footer';
 
 const NotesPage = () => {
   return (
@@ -24,11 +24,9 @@ const NotesPage = () => {
         </Container>
 
         <Container size="2" css={{ padding: 20 }}>
-          <Flex css={{ flexDirection: 'column' }}>
-            {notes.map((entry) => {
-              return <NoteEntry key={entry.title} title={entry.title} note={entry.note} />;
-            })}
-          </Flex>
+          {notes.map((entry) => {
+            return <NoteEntry key={entry.title} title={entry.title} note={entry.note} />;
+          })}
         </Container>
       </PageLayout>
       <RelativeFooter />

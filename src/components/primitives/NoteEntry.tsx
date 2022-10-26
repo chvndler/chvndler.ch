@@ -1,7 +1,7 @@
 import React from 'react';
 import { styled } from 'stitches.config';
 
-import { Box } from '@/components/ds';
+import { Box, Flex } from '@/components/ds';
 
 type NoteProps = {
   title: string;
@@ -48,9 +48,11 @@ export const NoteTitle = StyledNoteTitle;
 
 export const NoteEntry = ({ title, note }: NoteProps) => {
   return (
-    <NoteDiv>
-      <NoteTitle>{title}</NoteTitle>
-      <Note>{note}</Note>
-    </NoteDiv>
+    <Flex css={{ flexDirection: 'column' }}>
+      <NoteDiv>
+        <NoteTitle>{title}</NoteTitle>
+        <Note>{note}</Note>
+      </NoteDiv>
+    </Flex>
   );
 };

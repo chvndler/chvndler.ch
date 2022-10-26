@@ -1,6 +1,6 @@
 import { Container, InlineLink, Paragraph, Section, Text } from '@/components/ds';
+import { AppFooter } from '@/components/layout/app-footer';
 import { PageLayout } from '@/components/layout/page';
-import { AppFooter } from '~/components/layout/app-footer';
 import { TimePlusCursorData } from '~/components/primitives/time-x-cursor-data';
 
 const Home = () => {
