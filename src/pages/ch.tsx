@@ -3,6 +3,7 @@ import { AppFooter } from '@/components/layout/app-footer';
 import { PageLayout } from '@/components/layout/page';
 import { TimePlusCursorData } from '@/components/primitives/time-x-cursor-data';
 import { AboutMe } from '@/components/sections/about-me';
+import { Projects } from '~/components/common/project-scope';
 
 const Home = () => {
   return (
@@ -13,13 +14,13 @@ const Home = () => {
             css={{
               color: '$lime10',
               fontFamily: '$druk',
-              fontSize: 18,
+              fontSize: 24,
               fontWeight: 'bold',
               letterSpacing: 'normal',
               textAlign: 'center'
             }}
           >
-            HI, I'M CHAN.
+            I'M CHAN.
           </Text>
           <Text
             css={{
@@ -35,6 +36,7 @@ const Home = () => {
           </Text>
         </Container>
         <AboutMe />
+        <Projects />
       </PageLayout>
       <TimePlusCursorData />
       <AppFooter />
