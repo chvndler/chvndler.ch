@@ -1,6 +1,5 @@
 const withBundleAnalyzer = require('@next/bundle-analyzer');
 const withTM = require('next-transpile-modules');
-const { withContentlayer } = require("next-contentlayer");
 
 
 /**
@@ -23,5 +22,3 @@ module.exports = (_phase, { defaultConfig: _ }) => {
     ];
     return plugins.reduce((acc, plugin) => plugin(acc), {...config });
 };
-
-module.exports = withContentlayer({});

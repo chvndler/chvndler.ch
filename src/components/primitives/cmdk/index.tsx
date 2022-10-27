@@ -1,10 +1,11 @@
-import { CubeIcon, GitHubLogoIcon, GlobeIcon, SwitchIcon, TwitterLogoIcon, VideoIcon } from '@radix-ui/react-icons';
+import { CubeIcon, GitHubLogoIcon, GlobeIcon, SwitchIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import { Command } from 'cmdk';
 import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
 import React from 'react';
 
 import { Box, Flex } from '@/components/ds';
+
 import {
   CommandBottomBar,
   CommandDialog,
@@ -15,7 +16,7 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator
-} from '@/components/primitives/cmdk/styled';
+} from './styled';
 
 /**
  * Command.Item.Index
@@ -49,11 +50,11 @@ const Home = () => {
  * Command.Item.Projects
  * value = 'projects'
  */
-const Docs = () => {
+const Projects = () => {
   const router = useRouter();
 
   return (
-    <CommandItem value="docs" onSelect={() => router.push('/releases')}>
+    <CommandItem value="projects" onSelect={() => router.push('/projects')}>
       <Flex
         css={{
           boxSizing: 'border-box',
@@ -67,35 +68,7 @@ const Docs = () => {
         <Box css={{ paddingTop: '6.2px', paddingRight: '5px', lineHeight: 'normal' }}>
           <CubeIcon />
         </Box>
-        <span>docs</span>
-      </Flex>
-    </CommandItem>
-  );
-};
-
-/**
- * Command.Item.Film
- * value = 'film'
- */
-const Film = () => {
-  const router = useRouter();
-
-  return (
-    <CommandItem value="film" onSelect={() => router.push('/directed')}>
-      <Flex
-        css={{
-          boxSizing: 'border-box',
-          display: 'inline-flex',
-          direction: 'row',
-          padding: 0,
-          margin: 'auto',
-          verticalAlign: 'middle'
-        }}
-      >
-        <Box css={{ paddingTop: '6.2px', paddingRight: '5px', lineHeight: 'normal' }}>
-          <VideoIcon />
-        </Box>
-        <span>film</span>
+        <span>projects</span>
       </Flex>
     </CommandItem>
   );
@@ -110,7 +83,7 @@ const GitHub = () => {
   const router = useRouter();
 
   return (
-    <CommandItem value="github-icon" onSelect={() => router.push('https://github.com/chvndler')}>
+    <CommandItem value="github" onSelect={() => router.push('https://github.com/chvndler')}>
       <Flex
         css={{
           boxSizing: 'border-box',
@@ -139,7 +112,7 @@ const Twitter = () => {
   const router = useRouter();
 
   return (
-    <CommandItem value="twitter" onSelect={() => router.push('https://twitter.com/chv_ndler')}>
+    <CommandItem value="twitter" onSelect={() => router.push('https://twitter.com/chvndlerch')}>
       <Flex
         css={{
           boxSizing: 'border-box',
@@ -215,8 +188,7 @@ export const CommandK = () => {
           <CommandList>
             <CommandGroup heading="index">
               <Home />
-              <Docs />
-              <Film />
+              <Projects />
               <Twitter />
               <GitHub />
             </CommandGroup>

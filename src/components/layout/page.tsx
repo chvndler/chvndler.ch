@@ -3,6 +3,7 @@ import { styled } from 'stitches.config';
 import { AppBar } from '@/components/layout/app-bar';
 
 import { Meta } from '../common/meta';
+import { CommandK } from '../primitives/cmdk';
 
 type LayoutProps = {
   children?: React.ReactNode;
@@ -34,6 +35,7 @@ export const PageLayout = ({ children }: LayoutProps) => {
       <AppBox>
         <main>{children}</main>
       </AppBox>
+      <CommandK />
     </>
   );
 };

@@ -5,6 +5,7 @@ export * from './button';
 export * from './canvas';
 export * from './card';
 export * from './container';
+export * from './cool-button';
 export * from './flex';
 export * from './grid';
 export * from './heading';

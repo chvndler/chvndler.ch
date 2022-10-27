@@ -20,13 +20,13 @@ const StyledDialog = styled(Command.Dialog, {
   border: '1px solid $mauve7',
   boxShadow: 'hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px',
   position: 'absolute',
-  top: '50%',
+  top: '80%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: '100%',
   height: 'auto',
   maxWidth: '600px',
-  maxHeight: '85vh',
+  maxHeight: '80vh',
   paddingTop: 10,
   paddingBottom: 10,
   paddingLeft: 10,
@@ -61,13 +61,13 @@ const StyledInput = styled(Command.Input, {
   borderRadius: '11px',
   height: '38px',
   width: '100%',
-  lineHeight: '$sizes$6',
-  fontFamily: '$pragmatica',
+  lineHeight: 'normal',
+  fontFamily: '$inter',
   fontSize: '12px',
   fontWeight: '400',
-  backgroundColor: '$loContrast',
+  backgroundColor: '$slate2',
   boxShadow: 'inset 0 0 0 2px $colors$mauve7',
-  color: '$hiContrast',
+  color: '$sage11',
   margin: 'auto',
   paddingRight: '10px',
   paddingLeft: '10px',
@@ -77,8 +77,8 @@ const StyledInput = styled(Command.Input, {
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',
 
   '&::placeholder': {
-    color: '$mauve7',
-    fontFamily: '$pragmatica',
+    color: '$sage7',
+    fontFamily: '$inter',
     fontSize: '12px',
     fontWeight: '300',
     letterSpacing: 'normal',
@@ -98,11 +98,11 @@ const StyledInput = styled(Command.Input, {
 
   '&:focus': {
     backgroundColor: '$loContrast',
-    boxShadow: 'inset 0px 0px 0px 1px $colors$sky7, 0px 0px 0px 1px $colors$sky8'
+    boxShadow: `inset 0px 0px 0px 1px $colors$lime9, 0px 0px 0px 1px $colors$lime10`
   },
 
   '&:-webkit-autofill': {
-    boxShadow: 'inset 0 0 0 1px $colors$blue6, inset 0 0 0 100px $colors$blue3'
+    boxShadow: 'inset 0 0 0 1px $colors$lime6, inset 0 0 0 100px $colors$lime3'
   },
 
   '&:disabled': {
@@ -124,7 +124,7 @@ const StyledInput = styled(Command.Input, {
 });
 
 const StyledList = styled(Command.List, {
-  fontFamily: '$ldGrotesk',
+  fontFamily: '$inter',
   fontWeight: '500',
   fontSize: '14px',
   letterSpacing: 'normal',
@@ -212,12 +212,12 @@ const StyledCommandBottomBar = styled('div', {
 });
 
 const StyledCommandFooterText = styled('p', {
-  fontFamily: '$pragmatica',
+  fontFamily: '$inter',
   fontWeight: '500',
   fontSize: '10px',
   letterSpacing: '-0.02rem',
   color: '$mauve8',
-  lineHeight: 'normal',
+  lineHeight: '30px',
   textAlign: 'center'
 });
 
