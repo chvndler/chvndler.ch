@@ -62,38 +62,6 @@ export const AppNavbar = () => {
   return (
     <>
       <Nav>
-        {/*
-        <ContentBox alignment="start">
-          <Text
-            as="a"
-            css={{
-              display: 'flex',
-              color: 'transparent',
-              fontFamily: '$neueMontreal',
-              fontSize: 13,
-              fontWeight: 'normal',
-              lineHeight: 'normal',
-              letterSpacing: '-0.01rem',
-              margin: 0,
-              marginRight: 10,
-              '@md': {
-                lineHeight: 'normal',
-                fontSize: 12,
-                letterSpacing: '-0.01rem'
-              },
-              '@sm': {
-                display: 'none'
-              },
-              '&:hover': {
-                color: '$chxn6'
-              }
-            }}
-          >
-            CH®
-          </Text>
-        </ContentBox>
-          */}
-
         <ContentBox alignment="start">
           <Flex css={{ flexDirection: 'column', textAlign: 'left' }}>
             <Link href="/" passHref>

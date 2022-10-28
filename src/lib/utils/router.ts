@@ -1,4 +1,4 @@
-import { siteURL } from '~/lib/constants';
+import { siteURL } from '@/lib/constants';
 
 export type QueryParams = { [key: string]: string | null };
 

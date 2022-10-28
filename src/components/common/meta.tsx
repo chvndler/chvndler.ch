@@ -1,6 +1,5 @@
 import { useRouter } from 'next/dist/client/router';
 import NextHead from 'next/head';
-// import { useRouter } from 'next/router';
 import * as React from 'react';
 
 import { defaultMeta, siteOrigin } from '@/lib/constants';

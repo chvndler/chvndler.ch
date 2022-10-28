@@ -1,6 +1,6 @@
 const withBundleAnalyzer = require('@next/bundle-analyzer');
 const withTM = require('next-transpile-modules');
-
+const withMarkdoc = require('@markdoc/next.js')
 
 /**
  * @type {import('next').NextConfig}
@@ -22,3 +22,8 @@ module.exports = (_phase, { defaultConfig: _ }) => {
     ];
     return plugins.reduce((acc, plugin) => plugin(acc), {...config });
 };
+
+module.exports =
+    withMarkdoc( /* config: https://markdoc.io/docs/nextjs#options */ )({
+        pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdoc'],
+    })

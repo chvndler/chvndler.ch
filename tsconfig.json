@@ -23,8 +23,8 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"],
       "@/*": ["./src/*"],
+      "~/*": ["./src/*"],
       "~/public/*": ["./public/*"],
       "@/public/*": ["./public/*"],
       "@/components/*": ["./src/components/*"],
