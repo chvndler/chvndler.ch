@@ -77,23 +77,23 @@ export const AppFooter = () => {
           <Link href="/" passHref>
             <Text
               css={{
-                color: '$chxn3',
-                fontFamily: '$neueMontreal',
+                color: '$sage10',
+                fontFamily: '$subtle',
                 fontSize: 12,
-                fontWeight: '500',
                 lineHeight: 'normal',
-                letterSpacing: '-0.01rem',
+                letterSpacing: '0.06px',
+                textTransform: 'uppercase',
                 margin: 0,
                 marginRight: 10,
                 '@md': {
                   display: 'none'
                 },
                 '&:hover': {
-                  color: '$chxn2'
+                  color: '$sage9'
                 }
               }}
             >
-              © MIT. All rights reserved.
+              © MIT
             </Text>
           </Link>
         </ContentBox>
@@ -103,11 +103,12 @@ export const AppFooter = () => {
             <Text
               css={{
                 color: '$sage10',
-                fontFamily: '$druk',
-                fontSize: 10,
-                fontWeight: 500,
+                fontFamily: '$subtle',
+                fontSize: 12,
+                fontWeight: 'normal',
                 lineHeight: 'normal',
-                textAlign: 'center'
+                textAlign: 'center',
+                letterSpacing: '0.06px'
               }}
             >
               SOMETHING LIKE THIS BUT NOT THIS©

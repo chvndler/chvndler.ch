@@ -12,7 +12,7 @@ type InlineProps = {
 const StyledInlineLink = styled(Link, {
   lineHeight: 'inherit',
   fontSize: 'inherit',
-  fontWeight: 600,
+  // fontWeight: 600,
   textDecoration: 'underline',
   textUnderlineOffset: 2,
   color: 'inherit',

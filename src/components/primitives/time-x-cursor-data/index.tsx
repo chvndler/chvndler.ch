@@ -4,10 +4,9 @@ import { styled } from 'stitches.config';
 import { Box, Text } from '@/components/ds';
 
 const StyledText = styled('div', {
-  color: '$chxn4',
-  fontSize: 14,
-  fontFamily: '$antarcticanMono',
-  fontWeight: '500',
+  color: '$sage11',
+  fontSize: 12,
+  fontFamily: '$subtle',
   lineHeight: '28px',
   letterSpacing: '0.05rem',
   border: 'none',
@@ -53,9 +52,9 @@ export const CursorDataValue = () => {
     <>
       <Text
         css={{
-          color: '$chxn4',
-          fontSize: 14,
-          fontFamily: '$antarcticanMono',
+          color: '$sage11',
+          fontSize: 12,
+          fontFamily: '$subtle',
           fontWeight: '500',
           lineHeight: '28px',
           letterSpacing: '0.05rem'
@@ -84,7 +83,7 @@ export const TimeValue = ({ variant }: { variant?: 'mobile' }) => {
     let hours: number | string = date.getHours();
     let minutes: number | string = date.getMinutes();
     let seconds: number | string = date.getSeconds();
-    // const isAm = hours <= 12;
+    const isAm = hours <= 12;
     hours = hours % 12;
     hours = hours ? hours : 12;
     hours = hours < 10 ? '0' + hours : hours;
@@ -92,8 +91,9 @@ export const TimeValue = ({ variant }: { variant?: 'mobile' }) => {
     seconds = seconds < 10 ? '0' + seconds : seconds;
     return (
       <DisplayText>
-        {hours}:{minutes}:{seconds}
-        {/* <!-- <span>{isAm ? 'AM' : 'PM'}</span> --> */}
+        <span>
+          {hours}:{minutes}:{seconds} <span> {isAm ? 'AM' : 'PM'}</span>
+        </span>
       </DisplayText>
     );
   }, []);
@@ -123,6 +123,8 @@ export const TimePlusCursorData = () => {
   return (
     <Box
       css={{
+        color: '$sage11',
+        fontSize: 12,
         width: '100vw',
         position: 'fixed',
         bottom: 60,

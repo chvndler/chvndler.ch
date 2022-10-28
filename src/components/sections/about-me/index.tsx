@@ -8,11 +8,14 @@ export const AboutMe = () => {
           <Paragraph
             css={{
               color: '$sage10',
+              // fontFamily: '$subtle',
               fontFamily: '$rightGroteskText',
-              fontSize: 20,
               fontWeight: '600',
+              fontSize: 21,
               lineHeight: 1.4,
-              textAlign: 'center'
+              // textTransform: 'uppercase',
+              textAlign: 'center',
+              letterSpacing: '-0.03em'
             }}
           >
             The focus in the moment is building <InlineLink href="/">Atelier® Design</InlineLink>, to silence the noise
