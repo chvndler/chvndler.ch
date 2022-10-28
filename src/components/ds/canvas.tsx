@@ -5,7 +5,7 @@ export const Canvas = styled('div', {
   backgroundColor: 'transparent',
   boxSizing: 'border-box',
   position: 'absolute',
-  top: '50%',
+  top: '45%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: '100%',

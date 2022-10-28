@@ -85,37 +85,12 @@ const NavButton = styled('a', {
 
   '&:disabled': {
     boxShadow: 'inset 0 0 0 1px $colors$slate7',
-    color: '$sage10',
+    color: '$slate8',
     pointerEvents: 'none',
     cursor: 'not-allowed',
     '&:hover': {
       backgroundColor: '$blur',
       cursor: 'not-allowed'
-    }
-  },
-
-  variants: {
-    disabled: {
-      true: {
-        color: '$sage10',
-        cursor: 'not-allowed',
-
-        '&:hover': {
-          backgroundColor: '$blur',
-          cursor: 'not-allowed'
-        },
-
-        '&:disabled': {
-          boxShadow: 'inset 0 0 0 1px $colors$slate7',
-          color: '$sage10',
-          pointerEvents: 'none',
-          cursor: 'not-allowed',
-          '&:hover': {
-            backgroundColor: '$blur',
-            cursor: 'not-allowed'
-          }
-        }
-      }
     }
   }
 });
@@ -152,15 +127,13 @@ const ContentBox = styled('div', {
 export const NavContainer = StyledNavContainer;
 export const AppNav = StyledBar;
 
-export const AppBar = () => {
+export const AppBarDisabled = () => {
   return (
     <>
       <NavContainer>
         <AppNav>
           <ContentBox alignment="start">
-            <NavButton disabled href="/">
-              Projects
-            </NavButton>
+            <NavButton href="/projects">Projects</NavButton>
           </ContentBox>
 
           <ContentBox alignment="center">
@@ -170,9 +143,7 @@ export const AppBar = () => {
           </ContentBox>
 
           <ContentBox alignment="end">
-            <NavButton disabled href="/">
-              Notes
-            </NavButton>
+            <NavButton href="/notes">Notes</NavButton>
           </ContentBox>
         </AppNav>
       </NavContainer>

@@ -3,19 +3,18 @@ import { Container, InlineLink, Paragraph, Section } from '@/components/ds';
 export const AboutMe = () => {
   return (
     <>
-      <Section size="2" css={{ paddingTop: 40 }}>
+      <Section size="1" css={{}}>
         <Container size="1" css={{}}>
           <Paragraph
             css={{
               color: '$sage10',
-              // fontFamily: '$subtle',
               fontFamily: '$rightGroteskText',
-              fontWeight: '600',
+              fontWeight: '500',
               fontSize: 21,
               lineHeight: 1.4,
               // textTransform: 'uppercase',
               textAlign: 'center',
-              letterSpacing: '-0.03em'
+              letterSpacing: '-0.04em'
             }}
           >
             The focus in the moment is building <InlineLink href="/">Atelier® Design</InlineLink>, to silence the noise
