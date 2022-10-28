@@ -9,7 +9,7 @@ type InlineProps = {
   children: React.ReactNode;
 };
 
-const StyledInlineLink = styled('a', {
+const StyledInlineLink = styled(Link, {
   lineHeight: 'inherit',
   fontSize: 'inherit',
   fontWeight: 600,
@@ -48,8 +48,8 @@ export const InheritedLink = StyledInlineLink;
 
 export const InlineLink = ({ href, children, ...props }: InlineProps) => {
   return (
-    <Link href={href} passHref target="_blank" rel="norefferer noopener">
-      <InheritedLink {...props}>{children}</InheritedLink>
-    </Link>
+    <InheritedLink href={href} {...props} passHref target="_blank" rel="norefferer noopener">
+      {children}
+    </InheritedLink>
   );
 };

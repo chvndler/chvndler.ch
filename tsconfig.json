@@ -16,6 +16,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
+    "strictNullChecks": false,
     "target": "esnext",
     "noUncheckedIndexedAccess": true,
     "importsNotUsedAsValues": "error",
@@ -27,6 +28,8 @@
       "~/public/*": ["./public/*"],
       "@/public/*": ["./public/*"],
       "@/components/*": ["./src/components/*"],
+      "@/common/*": ["./src/common/*"],
+      "@/types/*": ["./src/ts/*"],
       "contentlayer/generated": ["./.contentlayer/generated"]
     }
   },

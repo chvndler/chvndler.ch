@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <PageLayout>
-        <Container size="2">
+        <Container size="2" css={{ paddingTop: 40 }}>
           <Text
             css={{
               color: '$lime10',
@@ -26,7 +26,7 @@ const Home = () => {
             css={{
               color: '$sage9',
               lineHeight: '1',
-              fontFamily: 'inter',
+              fontFamily: '$inter',
               fontSize: 14,
               fontWeight: 'normal',
               textAlign: 'center'

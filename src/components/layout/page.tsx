@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { styled } from 'stitches.config';
 
 import { AppBar } from '@/components/layout/app-bar';
@@ -27,10 +28,14 @@ const AppBox = styled('div', {
   margin: 0
 });
 
+export const WEBSITE_HOST_URL = 'https://chvndler.ch';
+
 export const PageLayout = ({ children }: LayoutProps) => {
   return (
     <>
-      <Meta />
+      <Head>
+        <Meta />
+      </Head>
       <AppBar />
       <AppBox>
         <main>{children}</main>
