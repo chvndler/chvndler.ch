@@ -39,7 +39,7 @@ export const CursorDataValue = () => {
     const setFromEvent = (event: { clientX: string | number; clientY: string | number }) => {
       const x = format(event.clientX, 4);
       const y = format(event.clientY, 4);
-      setDisplay(`${x},${y}`);
+      setDisplay(`${x}.${y}`);
     };
 
     window.addEventListener('mousemove', setFromEvent);
@@ -84,7 +84,7 @@ export const TimeValue = ({ variant }: { variant?: 'mobile' }) => {
     let hours: number | string = date.getHours();
     let minutes: number | string = date.getMinutes();
     let seconds: number | string = date.getSeconds();
-    const isAm = hours <= 12;
+    // const isAm = hours <= 12;
     hours = hours % 12;
     hours = hours ? hours : 12;
     hours = hours < 10 ? '0' + hours : hours;
@@ -92,9 +92,8 @@ export const TimeValue = ({ variant }: { variant?: 'mobile' }) => {
     seconds = seconds < 10 ? '0' + seconds : seconds;
     return (
       <DisplayText>
-        <span>
-          {hours}:{minutes}:{seconds} <span>{isAm ? 'AM' : 'PM'}</span>
-        </span>
+        {hours}:{minutes}:{seconds}
+        {/* <!-- <span>{isAm ? 'AM' : 'PM'}</span> --> */}
       </DisplayText>
     );
   }, []);
@@ -146,7 +145,7 @@ export const TimePlusCursorData = () => {
     >
       <TimeValue />
       <Box css={{ '@sm': { display: 'none' } }}>
-        <span>–</span>
+        <span>/</span>
       </Box>
       <CursorDataValue />
     </Box>

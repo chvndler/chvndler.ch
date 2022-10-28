@@ -383,29 +383,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@markdoc/markdoc@npm:^0.1.13":
-  version: 0.1.13
-  resolution: "@markdoc/markdoc@npm:0.1.13"
-  peerDependencies:
-    "@types/markdown-it": "*"
-    "@types/react": "*"
-  checksum: 52ceed1179f0bd1b5c840721adc99e561ca5b7204ad0bb7e17b164be8736f360e01ad76251847849795750cae7a8bac1913dce38e326b586dec29318a2093db3
-  languageName: node
-  linkType: hard
-
-"@markdoc/next.js@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "@markdoc/next.js@npm:0.2.0"
-  dependencies:
-    js-yaml: ^4.1.0
-  peerDependencies:
-    "@markdoc/markdoc": ^0.1.4
-    next: "*"
-    react: "*"
-  checksum: ea1818f5114e271b0914d590aefa7ba3efdb5677a93a9ce50093693f20af30553a977a87156e177ab48cb3c1660b7d279142438069392f475fdec94367b181e1
-  languageName: node
-  linkType: hard
-
 "@next/bundle-analyzer@npm:13":
   version: 13.0.0
   resolution: "@next/bundle-analyzer@npm:13.0.0"
@@ -2110,8 +2087,6 @@ __metadata:
   resolution: "chvndler.ch@workspace:."
   dependencies:
     "@juggle/resize-observer": ^3.4.0
-    "@markdoc/markdoc": ^0.1.13
-    "@markdoc/next.js": ^0.2.0
     "@next/bundle-analyzer": 13
     "@next/eslint-plugin-next": 13
     "@next/font": ^13.0.0

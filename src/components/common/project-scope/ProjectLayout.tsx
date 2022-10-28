@@ -10,7 +10,8 @@ export const ProjectLayout = ({ children }: ProjectLayoutProps) => {
   return (
     <>
       <Section size="2" css={{ paddingTop: 40 }}>
-        <Container size="2" css={{}}>
+        <Container size="1" css={{}}>
+          {/* <!-- BEGIN ! MAIN PROJECT GRID --> */}
           <Grid
             align="stretch"
             flow="row"
@@ -28,6 +29,7 @@ export const ProjectLayout = ({ children }: ProjectLayoutProps) => {
           >
             {children}
           </Grid>
+          {/* <!-- END ! MAIN PROJECT GRID --> */}
         </Container>
       </Section>
     </>

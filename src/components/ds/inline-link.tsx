@@ -19,13 +19,13 @@ const StyledInlineLink = styled(Link, {
   transition: 'color 0.4s ease',
 
   '&:hover': {
-    color: '$maxBlue'
+    color: '$blue9'
   },
 
   [`& ${Text}`]: {
     color: 'inherit',
     '&:hover': {
-      color: '$maxBlue'
+      color: '$blue9'
     }
   },
 

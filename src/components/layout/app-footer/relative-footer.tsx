@@ -76,7 +76,6 @@ export const RelativeFooter = () => {
         <ContentBox alignment="start">
           <Link href="/" passHref>
             <Text
-              as="a"
               css={{
                 color: '$chxn3',
                 fontFamily: '$neueMontreal',

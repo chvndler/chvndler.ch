@@ -18,7 +18,7 @@ const StyledProjectTitle = styled(Link, {
   letterSpacing: '-0.01em',
 
   '&:hover': {
-    color: '$chxn6',
+    color: '$blue9',
     cursor: 'pointer',
     textDecoration: 'underline'
   }

@@ -7,8 +7,8 @@ import { ProjectBox, ProjectDescription, ProjectTitle } from './s';
 export const ProjectSection = () => {
   return (
     <>
-      <Section size="2" css={{ paddingTop: 40 }}>
-        <Container size="2">
+      <Section size="2" css={{ paddingTop: 10 }}>
+        <Container size="1">
           <Flex css={{ flexDirection: 'column', justifyContent: 'center' }}>
             <ProjectBox>
               <ProjectTitle>
