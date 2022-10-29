@@ -7,9 +7,16 @@ export const Loader = () => {
   return (
     <>
       <Html center>
-        <Box css={{ zIndex: 999 }}>
-          <Text css={{ color: '$slate12', fontFamily: '$subtle', fontSize: 18, textAlign: 'center' }}>
-            {progress} % loaded
+        <Box css={{ zIndex: 999, display: 'flex', flexDirection: 'row' }}>
+          <Text
+            css={{
+              color: '$slate12',
+              fontFamily: '$subtle',
+              fontSize: 18,
+              textAlign: 'center'
+            }}
+          >
+            {progress}%
           </Text>
         </Box>
       </Html>
