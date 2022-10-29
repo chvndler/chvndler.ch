@@ -164,7 +164,7 @@ export const AppBar = () => {
           </ContentBox>
 
           <ContentBox alignment="center">
-            <PassLink href="/ch">
+            <PassLink href="/">
               <CDCLogo />
             </PassLink>
           </ContentBox>
