@@ -2396,6 +2396,7 @@ __metadata:
     cmdk: 0.1.20
     cross-env: ^7.0.3
     date-fns: ^2.29.3
+    embla-carousel-react: ^7.0.4
     eslint: 8
     eslint-config-prettier: ^8.5.0
     eslint-import-resolver-typescript: 3
@@ -2867,6 +2868,24 @@ __metadata:
   version: 0.2.0
   resolution: "eastasianwidth@npm:0.2.0"
   checksum: 7d00d7cd8e49b9afa762a813faac332dee781932d6f2c848dc348939c4253f1d4564341b7af1d041853bc3f32c2ef141b58e0a4d9862c17a7f08f68df1e0f1ed
+  languageName: node
+  linkType: hard
+
+"embla-carousel-react@npm:^7.0.4":
+  version: 7.0.4
+  resolution: "embla-carousel-react@npm:7.0.4"
+  dependencies:
+    embla-carousel: 7.0.4
+  peerDependencies:
+    react: ^18.1.0
+  checksum: 7c2637acacee710bf83609ea68cb824344b6cd2b0ffb1294372edddc0a54ab7169eb65093bdf57aa9563287f442f3826d6e24f7801abb51fcb54f8088ae3e82d
+  languageName: node
+  linkType: hard
+
+"embla-carousel@npm:7.0.4":
+  version: 7.0.4
+  resolution: "embla-carousel@npm:7.0.4"
+  checksum: 86db5cf5305b5c560dbf9c64242d3b08a6ac2c0038c667cf8cf6b1414d627df1d3e2bbe0d72cbf76d3094da1e126d60aac3af9a9c505e5d93665a11101789220
   languageName: node
   linkType: hard
 
