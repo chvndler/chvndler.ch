@@ -1,5 +1,6 @@
 import { Canvas, Container, Text } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
+import { AlternateThemeButton } from '@/components/primitives/theme-button';
 import { TimeDisplay } from '@/components/primitives/time-display';
 import { AboutMe } from '@/components/sections/about-me';
 import { ConnectSection } from '@/components/sections/connect/indext';
@@ -33,6 +34,7 @@ const AppPage = () => {
   return (
     <>
       <PageLayout>
+        <AlternateThemeButton />
         <Canvas>
           <NameAndTitle />
           <AboutMe />

@@ -1,4 +1,4 @@
-import { Environment, OrbitControls, Stage } from '@react-three/drei';
+import { Environment, Stage } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import React, { Suspense, useRef } from 'react';
 import { styled } from 'stitches.config';
@@ -6,6 +6,7 @@ import { styled } from 'stitches.config';
 import { Section, Text } from '@/components/ds';
 import { AppBar } from '@/components/layout/app-bar';
 
+import { Controls } from './controls';
 import { Loader } from './loader';
 import { LogoModel } from './logo';
 
@@ -73,7 +74,9 @@ export const LogoScene = () => {
               environment="dawn"
             >
               <LogoModel />
-              <OrbitControls />
+              <Controls />
+              {/* <!-- <axesHelper /> --> */}
+              {/* <!-- <OrbitControls /> --> */}
               <Environment background={false} files={'/textures/roof_2k.hdr'} />
             </Stage>
           </Suspense>
