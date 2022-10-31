@@ -90,7 +90,8 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       rightGrotesk: '"PP Right Grotesk", sans-serif',
       rightGroteskWide: '"PP Right Grotesk Wide", sans-serif', // weight: 470, 900
       rightGroteskTextWide: '"PP Right Grotesk Text Wide", sans-serif',
-      neueMontreal: '"PP Neue Montreal", sans-serif'
+      neueMontreal: '"PP Neue Montreal", sans-serif',
+      tStar: '"T-Star Pro", sans-serif'
     },
     fontSizes: {
       1: '12px',

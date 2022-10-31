@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('/fonts/tstar/T-StarPro-RegularItalic.eot');
+    src: local('T-Star Pro Regular Italic'), local('T-StarPro-RegularItalic'), url('/fonts/tstar/T-StarPro-RegularItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/tstar/T-StarPro-RegularItalic.woff2') format('woff2'), url('/fonts/tstar/T-StarPro-RegularItalic.woff') format('woff'), url('/fonts/tstar/T-StarPro-RegularItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('/fonts/tstar/T-StarPro-Medium.eot');
+    src: local('T-Star Pro Medium'), local('T-StarPro-Medium'), url('/fonts/tstar/T-StarPro-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/tstar/T-StarPro-Medium.woff2') format('woff2'), url('/fonts/tstar/T-StarPro-Medium.woff') format('woff'), url('/fonts/tstar/T-StarPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('/fonts/tstar/T-StarPro-BoldItalic.eot');
+    src: local('T-Star Pro Bold Italic'), local('T-StarPro-BoldItalic'), url('/fonts/tstar/T-StarPro-BoldItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/tstar/T-StarPro-BoldItalic.woff2') format('woff2'), url('/fonts/tstar/T-StarPro-BoldItalic.woff') format('woff'), url('/fonts/tstar/T-StarPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('/fonts/tstar/T-StarPro-HeavyItalic.eot');
+    src: local('T-Star Pro Heavy Italic'), local('T-StarPro-HeavyItalic'), url('/fonts/tstar/T-StarPro-HeavyItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/tstar/T-StarPro-HeavyItalic.woff2') format('woff2'), url('/fonts/tstar/T-StarPro-HeavyItalic.woff') format('woff'), url('/fonts/tstar/T-StarPro-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('/fonts/tstar/T-StarPro-Regular.eot');
+    src: local('T-Star Pro Regular'), local('T-StarPro-Regular'), url('/fonts/tstar/T-StarPro-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/tstar/T-StarPro-Regular.woff2') format('woff2'), url('/fonts/tstar/T-StarPro-Regular.woff') format('woff'), url('/fonts/tstar/T-StarPro-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('/fonts/tstar/T-StarPro-Bold.eot');
+    src: local('T-Star Pro Bold'), local('T-StarPro-Bold'), url('/fonts/tstar/T-StarPro-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/tstar/T-StarPro-Bold.woff2') format('woff2'), url('/fonts/tstar/T-StarPro-Bold.woff') format('woff'), url('/fonts/tstar/T-StarPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('/fonts/tstar/T-StarPro-MediumItalic.eot');
+    src: local('T-Star Pro Medium Italic'), local('T-StarPro-MediumItalic'), url('/fonts/tstar/T-StarPro-MediumItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/tstar/T-StarPro-MediumItalic.woff2') format('woff2'), url('/fonts/tstar/T-StarPro-MediumItalic.woff') format('woff'), url('/fonts/tstar/T-StarPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('/fonts/tstar/T-StarPro-Heavy.eot');
+    src: local('T-Star Pro Heavy'), local('T-StarPro-Heavy'), url('/fonts/tstar/T-StarPro-Heavy.eot?#iefix') format('embedded-opentype'), url('/fonts/tstar/T-StarPro-Heavy.woff2') format('woff2'), url('/fonts/tstar/T-StarPro-Heavy.woff') format('woff'), url('/fonts/tstar/T-StarPro-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('/fonts/tstar/T-StarPro-LightItalic.eot');
+    src: local('T-Star Pro Light Italic'), local('T-StarPro-LightItalic'), url('/fonts/tstar/T-StarPro-LightItalic.eot?#iefix') format('embedded-opentype'), url('/fonts/tstar/T-StarPro-LightItalic.woff2') format('woff2'), url('/fonts/tstar/T-StarPro-LightItalic.woff') format('woff'), url('/fonts/tstar/T-StarPro-LightItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'T-Star Pro';
+    src: url('/fonts/tstar/T-StarPro-Light.eot');
+    src: local('T-Star Pro Light'), local('T-StarPro-Light'), url('/fonts/tstar/T-StarPro-Light.eot?#iefix') format('embedded-opentype'), url('/fonts/tstar/T-StarPro-Light.woff2') format('woff2'), url('/fonts/tstar/T-StarPro-Light.woff') format('woff'), url('/fonts/tstar/T-StarPro-Light.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}

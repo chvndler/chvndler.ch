@@ -15,14 +15,15 @@ const TemporaryFooter = () => {
           css={{
             color: '$chxn3',
             lineHeight: '1',
-            fontFamily: '$subtle',
+            fontFamily: '$tStar',
             fontSize: 14,
-            fontWeight: 'normal',
+            fontWeight: '600',
             textAlign: 'center',
-            letterSpacing: '0'
+            textTransform: 'uppercase',
+            letterSpacing: '0.04rem'
           }}
         >
-          webite will re-open soon.
+          website will re-open soon.
         </Text>
       </Container>
     </>

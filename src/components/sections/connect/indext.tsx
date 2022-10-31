@@ -21,12 +21,12 @@ export const ConnectSection = () => {
               css={{
                 color: '$sage9',
                 lineHeight: '1',
-                fontFamily: '$subtle',
+                fontFamily: '$tStar',
                 textTransform: 'uppercase',
-                fontSize: 12,
-                fontWeight: 'normal',
+                fontSize: 13,
+                fontWeight: '600',
                 textAlign: 'left',
-                letterSpacing: '0.03em',
+                letterSpacing: '0.04rem',
                 margin: 0,
                 marginRight: 6,
                 padding: 1,
@@ -45,18 +45,18 @@ export const ConnectSection = () => {
               css={{
                 color: '$sage9',
                 lineHeight: '1',
-                fontFamily: '$subtle',
+                fontFamily: '$tStar',
                 textTransform: 'uppercase',
-                fontSize: 12,
-                fontWeight: 'normal',
+                fontSize: 13,
+                fontWeight: '600',
                 textAlign: 'left',
-                letterSpacing: '0.03em',
+                letterSpacing: '0.04rem',
                 margin: 0,
                 marginLeft: 6,
                 padding: 1,
                 '&:hover': {
                   color: '$slate1',
-                  backgroundColor: '$githubAlt',
+                  backgroundColor: '$github',
                   cursor: 'pointer'
                 }
               }}

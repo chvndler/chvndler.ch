@@ -41,9 +41,10 @@ export const AlternateThemeButton = () => {
         onClick={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}
         aria-label="Toggle Theme"
         css={{
-          fontFamily: '$druk',
-          fontWeight: 'normal',
-          fontSize: 10,
+          fontFamily: '$tStar',
+          fontWeight: '600',
+          fontSize: 13,
+          letterSpacing: '0.04rem',
           lineHeight: 'normal',
           height: 'auto',
           transition: 'color 0.4s ease',
