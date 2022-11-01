@@ -17,7 +17,7 @@ const config = {
 module.exports = (_phase, { defaultConfig: _ }) => {
     const plugins = [
         withBundleAnalyzer({ enabled: process.env.ANALYZE === 'true' }),
-        withTM(['three']), // add modules you want to transpile her
+        withTM(['three', '@react-three/drei', '@react-three/fiber']), // add modules you want to transpile her
     ];
     return plugins.reduce((acc, plugin) => plugin(acc), {...config });
 };

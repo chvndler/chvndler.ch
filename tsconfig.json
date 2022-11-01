@@ -29,8 +29,7 @@
       "@/public/*": ["./public/*"],
       "@/components/*": ["./src/components/*"],
       "@/common/*": ["./src/common/*"],
-      "@/types/*": ["./src/ts/*"],
-      "contentlayer/generated": ["./.contentlayer/generated"]
+      "@/types/*": ["./src/ts/*"]
     }
   },
   "exclude": ["node_modules"],
