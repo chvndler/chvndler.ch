@@ -14,10 +14,13 @@ const config = {
     experimental: {}
 };
 
+module.exports = withTM();
+
 module.exports = (_phase, { defaultConfig: _ }) => {
     const plugins = [
         withBundleAnalyzer({ enabled: process.env.ANALYZE === 'true' }),
-        withTM(['three', '@react-three/drei', '@react-three/fiber']), // add modules you want to transpile her
+        withTM(['three'])
     ];
-    return plugins.reduce((acc, plugin) => plugin(acc), {...config });
+    // return plugins.reduce((acc, plugin) => plugin(acc), {...config });
+    return config;
 };
