@@ -1,15 +1,15 @@
 {
   "files.autoSave": "onWindowChange",
-  "editor.fontSize": 11,
+  "editor.fontSize": 10,
   "editor.fontFamily": "Jetbrains Mono, monospace",
   "editor.tabSize": 2,
   "workbench.colorTheme": "Copilot Theme",
-  "workbench.productIconTheme": "fluent-icons",
   "editor.formatOnPaste": true,
   "window.zoomLevel": 1,
   "vsicons.dontShowNewVersionMessage": true,
   "editor.inlineSuggest.enabled": true,
   "editor.fontLigatures": true,
   "editor.fontWeight": "400",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

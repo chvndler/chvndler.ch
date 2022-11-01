@@ -63,6 +63,8 @@ export const LogoScene = () => {
           FRONT-END DEV / DESIGNER
         </Text>
       </Section>
+
+      {/* <!-- Begin three.js module --> */}
       <AppBox>
         <Canvas shadows dpr={[1, 2]} camera={{ fov: 90 }}>
           <Suspense fallback={<Loader />}>
@@ -73,8 +75,8 @@ export const LogoScene = () => {
               contactShadow={false}
               environment="dawn"
             >
-              <LogoModel />
               <Controls />
+              <LogoModel />
               {/* <!-- <axesHelper /> --> */}
               {/* <!-- <OrbitControls /> --> */}
               <Environment background={false} files={'/textures/roof_2k.hdr'} />

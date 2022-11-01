@@ -9,7 +9,7 @@ const config = {
     swcMinify: true,
     images: {
         formats: ['image/avif', 'image/webp'],
-        domains: ['cdn.ady.systems', 'pbs.twimg.com']
+        domains: ['cdn.ady.systems', 'pbs.twimg.com', 'market-assets.fra1.cdn.digitaloceanspaces.com']
     },
     experimental: {}
 };

@@ -1,9 +1,9 @@
-import { LogoScene } from '@/components/primitives/three-models/LogoScene';
+import { AlternateScene } from '@/components/primitives/three-models/AlternateScene';
 
 const ThreePage = () => {
   return (
     <>
-      <LogoScene />
+      <AlternateScene />
     </>
   );
 };

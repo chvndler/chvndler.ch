@@ -24,7 +24,7 @@ export const LogoModel = (props: JSX.IntrinsicElements['group']) => {
             receiveShadow
             geometry={nodes.Curve.geometry}
             material={materials.Material}
-            position={[0, 1.4, 0]}
+            position={[0, 2, 0]}
             rotation={[Math.PI / 2, 0, 0]}
             scale={[1, 1, 1]}
           />

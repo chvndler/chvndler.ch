@@ -17,7 +17,7 @@ export const Controls = () => {
   return (
     <orbitControls
       enableZoom={false}
-      maxPolarAngle={Math.PI / 3}
+      maxPolarAngle={Math.PI / 2}
       minPolarAngle={Math.PI / 2}
       args={[camera, gl.domElement]}
     />
