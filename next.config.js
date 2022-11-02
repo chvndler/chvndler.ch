@@ -14,7 +14,7 @@ const config = {
     experimental: {}
 };
 
-module.exports = withTM();
+// module.exports = withTM();
 
 module.exports = (_phase, { defaultConfig: _ }) => {
     const plugins = [
