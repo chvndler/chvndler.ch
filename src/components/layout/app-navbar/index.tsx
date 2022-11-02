@@ -1,9 +1,6 @@
-import Link from 'next/link';
 import { styled } from 'stitches.config';
 
-import { Box, Flex, Text } from '@/components/ds';
-import { PopoverComponent } from '@/components/primitives/popover';
-import { CursorData } from '@/components/sxripts';
+import { Text } from '@/components/ds';
 
 const StyledNavbar = styled('div', {
   zIndex: '20',
@@ -16,23 +13,23 @@ const StyledNavbar = styled('div', {
   alignItems: 'center',
   width: '100vw',
   height: 'auto',
-  paddingTop: 0,
-  paddingBottom: 0,
+  paddingTop: 8,
+  paddingBottom: 8,
   paddingLeft: 18,
   paddingRight: 18,
   margin: 'auto',
   backgroundColor: 'transparent',
+  // backgroundColor: '$blue5',
   backdropFilter: 'blur(20px)',
   WebkitBackdropFilter: 'blur(20px)'
 });
 
-const ContentBox = styled('div', {
+const StyledContentBox = styled('div', {
+  // Developing...
+  // backgroundColor: '$blue9',
   display: 'flex',
-  width: '100%',
-  marginTop: 10,
-  marginBottom: 10,
-  marginLeft: 0,
-  marginRight: 0,
+  width: 'auto',
+  margin: 0,
   padding: 0,
 
   variants: {
@@ -57,58 +54,72 @@ const ContentBox = styled('div', {
 });
 
 export const Nav = StyledNavbar;
+export const ContentBox = StyledContentBox;
 
 export const AppNavbar = () => {
   return (
     <>
       <Nav>
-        <ContentBox alignment="start">
-          <Flex css={{ flexDirection: 'column', textAlign: 'left' }}>
-            <Link href="/" passHref>
-              <Text
-                as="a"
-                css={{
-                  color: '$chxn4',
-                  fontFamily: '$neueMontreal',
-                  fontSize: 20,
-                  fontWeight: '700',
-                  lineHeight: '23px',
-                  letterSpacing: '-0.04rem',
-                  '@md': {
-                    fontSize: 18,
-                    fontWeight: '600',
-                    lineHeight: '24px'
-                  }
-                }}
-              >
-                CHANDLER®
-              </Text>
-            </Link>
-            {/* <!-- HOLD DESCRIPTION
-            <Text
-              css={{
-                color: '$chxn3',
-                fontFamily: '$telegraf',
-                fontSize: 16,
-                fontWeight: '400',
-                lineHeight: '15px',
-                letterSpacing: 'normal'
-              }}
-            >
-              Front-End Developer
-            </Text>
-            --> */}
-          </Flex>
+        {/* <!-- INDEX --> */}
+        <ContentBox>
+          <Text
+            css={{
+              color: '$sage11',
+              fontFamily: '$tStar',
+              fontSize: 14,
+              fontWeight: 'bold',
+              lineHeight: '24px',
+              letterSpacing: '0.04rem'
+            }}
+          >
+            INDEX
+          </Text>
         </ContentBox>
 
-        <ContentBox alignment="center">
-          <Box css={{ '@md': { display: 'none' } }}>
-            <CursorData />
-          </Box>
+        {/* <!-- ABOUT --> */}
+        <ContentBox>
+          <Text
+            css={{
+              color: '$sage11',
+              fontFamily: '$tStar',
+              fontSize: 14,
+              fontWeight: 'bold',
+              lineHeight: '24px',
+              letterSpacing: '0.04rem'
+            }}
+          >
+            ABOUT
+          </Text>
         </ContentBox>
 
-        <ContentBox alignment="end">
-          <PopoverComponent />
+        <ContentBox>
+          <Text
+            css={{
+              color: '$sage11',
+              fontFamily: '$tStar',
+              fontSize: 14,
+              fontWeight: 'bold',
+              lineHeight: '24px',
+              letterSpacing: '0.04rem'
+            }}
+          >
+            KB
+          </Text>
+        </ContentBox>
+
+        <ContentBox>
+          <Text
+            css={{
+              color: '$sage11',
+              fontFamily: '$tStar',
+              fontSize: 14,
+              fontWeight: 'bold',
+              lineHeight: '24px',
+              letterSpacing: '0.04rem'
+            }}
+          >
+            PROJECTS
+          </Text>
         </ContentBox>
       </Nav>
     </>
