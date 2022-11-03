@@ -13,20 +13,17 @@ const StyledNavbar = styled('div', {
   alignItems: 'center',
   width: '100vw',
   height: 'auto',
-  paddingTop: 8,
-  paddingBottom: 8,
-  paddingLeft: 18,
-  paddingRight: 18,
+  paddingTop: 18,
+  paddingBottom: 18,
+  paddingLeft: 20,
+  paddingRight: 20,
   margin: 'auto',
   backgroundColor: 'transparent',
-  // backgroundColor: '$blue5',
   backdropFilter: 'blur(20px)',
   WebkitBackdropFilter: 'blur(20px)'
 });
 
 const StyledContentBox = styled('div', {
-  // Developing...
-  // backgroundColor: '$blue9',
   display: 'flex',
   width: 'auto',
   margin: 0,
@@ -61,7 +58,7 @@ export const AppNavbar = () => {
     <>
       <Nav>
         {/* <!-- INDEX --> */}
-        <ContentBox>
+        <ContentBox alignment="start">
           <Text
             css={{
               color: '$sage11',
@@ -76,38 +73,7 @@ export const AppNavbar = () => {
           </Text>
         </ContentBox>
 
-        {/* <!-- ABOUT --> */}
-        <ContentBox>
-          <Text
-            css={{
-              color: '$sage11',
-              fontFamily: '$tStar',
-              fontSize: 14,
-              fontWeight: 'bold',
-              lineHeight: '24px',
-              letterSpacing: '0.04rem'
-            }}
-          >
-            ABOUT
-          </Text>
-        </ContentBox>
-
-        <ContentBox>
-          <Text
-            css={{
-              color: '$sage11',
-              fontFamily: '$tStar',
-              fontSize: 14,
-              fontWeight: 'bold',
-              lineHeight: '24px',
-              letterSpacing: '0.04rem'
-            }}
-          >
-            KB
-          </Text>
-        </ContentBox>
-
-        <ContentBox>
+        <ContentBox alignment="end">
           <Text
             css={{
               color: '$sage11',
