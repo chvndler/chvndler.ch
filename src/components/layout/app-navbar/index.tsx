@@ -13,14 +13,14 @@ const StyledNavbar = styled('div', {
   alignItems: 'center',
   width: '100vw',
   height: 'auto',
-  paddingTop: 18,
-  paddingBottom: 18,
-  paddingLeft: 20,
-  paddingRight: 20,
+  paddingTop: 12,
+  paddingBottom: 12,
+  paddingLeft: 18,
+  paddingRight: 18,
   margin: 'auto',
-  backgroundColor: 'transparent',
-  backdropFilter: 'blur(20px)',
-  WebkitBackdropFilter: 'blur(20px)'
+  backgroundColor: 'transparent'
+  // backdropFilter: 'blur(20px)',
+  // WebkitBackdropFilter: 'blur(20px)'
 });
 
 const StyledContentBox = styled('div', {
@@ -50,8 +50,17 @@ const StyledContentBox = styled('div', {
   }
 });
 
+const StyledStack = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  width: 'auto',
+  margin: 0,
+  padding: 0
+});
+
 export const Nav = StyledNavbar;
 export const ContentBox = StyledContentBox;
+export const Stack = StyledStack;
 
 export const AppNavbar = () => {
   return (
@@ -59,33 +68,59 @@ export const AppNavbar = () => {
       <Nav>
         {/* <!-- INDEX --> */}
         <ContentBox alignment="start">
-          <Text
-            css={{
-              color: '$sage11',
-              fontFamily: '$tStar',
-              fontSize: 14,
-              fontWeight: 'bold',
-              lineHeight: '24px',
-              letterSpacing: '0.04rem'
-            }}
-          >
-            INDEX
-          </Text>
-        </ContentBox>
+          <Stack>
+            <Text
+              css={{
+                color: '$sage11',
+                fontFamily: '$neueMontreal',
+                fontSize: 15,
+                fontWeight: 'normal',
+                lineHeight: '26px',
+                letterSpacing: '0.04rem'
+              }}
+            >
+              <strong>CDC</strong>©
+            </Text>
 
-        <ContentBox alignment="end">
-          <Text
-            css={{
-              color: '$sage11',
-              fontFamily: '$tStar',
-              fontSize: 14,
-              fontWeight: 'bold',
-              lineHeight: '24px',
-              letterSpacing: '0.04rem'
-            }}
-          >
-            PROJECTS
-          </Text>
+            <Text
+              css={{
+                color: '$sage11',
+                fontFamily: '$tStar',
+                fontSize: 13,
+                fontWeight: 'normal',
+                lineHeight: '20px',
+                letterSpacing: '0.06rem'
+              }}
+            >
+              FRONT-END DEVELOPER
+            </Text>
+
+            <Text
+              css={{
+                color: '$sage11',
+                fontFamily: '$tStar',
+                fontSize: 13,
+                fontWeight: 'normal',
+                lineHeight: '20px',
+                letterSpacing: '0.06rem'
+              }}
+            >
+              CHARLOTTE, NC
+            </Text>
+
+            <Text
+              css={{
+                color: '$sage11',
+                fontFamily: '$tStar',
+                fontSize: 13,
+                fontWeight: 'normal',
+                lineHeight: '20px',
+                letterSpacing: '0.06rem'
+              }}
+            >
+              CHVNDLER.CH@ICLOUD.COM
+            </Text>
+          </Stack>
         </ContentBox>
       </Nav>
     </>
