@@ -1,11 +1,7 @@
-import { Canvas, Container, Text } from '@/components/ds';
-import { PageLayout } from '@/components/layout/page';
-import { AlternateThemeButton } from '@/components/primitives/theme-button';
-import { TimeDisplay } from '@/components/primitives/time-display';
-import { AboutMe } from '@/components/sections/about-me';
-import { ConnectSection } from '@/components/sections/connect/indext';
-import { NameAndTitle } from '@/components/sections/name-and-title';
-
+import { Meta } from '@/components/common/meta';
+import { Canvas } from '@/components/ds';
+import { Intro } from '@/components/sections/intro';
+/*
 const TemporaryFooter = () => {
   return (
     <>
@@ -29,20 +25,16 @@ const TemporaryFooter = () => {
     </>
   );
 };
+*/
 
 // RENDER APP©...
 const AppPage = () => {
   return (
     <>
-      <PageLayout>
-        <AlternateThemeButton />
-        <Canvas>
-          <NameAndTitle />
-          <AboutMe />
-          <ConnectSection />
-        </Canvas>
-        <TemporaryFooter />
-      </PageLayout>
+      <Meta />
+      <Canvas>
+        <Intro />
+      </Canvas>
     </>
   );
 };

@@ -1120,6 +1120,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-separator@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@radix-ui/react-separator@npm:1.0.1"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/react-primitive": 1.0.1
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  checksum: c7d7aa21f4b00127da07452cf17bca59d02fe40c62ba662d72d4a906b6722173de28a5fd647ed5d11fc483fa62fa74f075433764d8803b07f2721c957e5ec13a
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-slot@npm:1.0.0":
   version: 1.0.0
   resolution: "@radix-ui/react-slot@npm:1.0.0"
@@ -2377,6 +2390,7 @@ __metadata:
     "@radix-ui/react-navigation-menu": ^1.0.0
     "@radix-ui/react-polymorphic": ^0.0.14
     "@radix-ui/react-popover": 1.0.2
+    "@radix-ui/react-separator": ^1.0.1
     "@radix-ui/react-switch": 1.0.1
     "@react-three/drei": ^9.38.1
     "@react-three/fiber": ^8.8.10

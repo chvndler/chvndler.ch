@@ -1,6 +1,6 @@
 {
   "files.autoSave": "onWindowChange",
-  "editor.fontSize": 10,
+  "editor.fontSize": 9,
   "editor.fontFamily": "Jetbrains Mono, monospace",
   "editor.tabSize": 2,
   "workbench.colorTheme": "Copilot Theme",
@@ -11,5 +11,5 @@
   "editor.fontLigatures": true,
   "editor.fontWeight": "400",
   "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
