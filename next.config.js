@@ -14,8 +14,6 @@ const config = {
     experimental: {}
 };
 
-// module.exports = withTM();
-
 module.exports = (_phase, { defaultConfig: _ }) => {
     const plugins = [
         withBundleAnalyzer({ enabled: process.env.ANALYZE === 'true' }),
