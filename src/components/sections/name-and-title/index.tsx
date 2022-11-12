@@ -7,9 +7,9 @@ export const NameAndTitle = () => {
         css={{
           color: '$blue9',
           lineHeight: '1.4',
-          fontFamily: '$inter',
+          fontFamily: '$druk',
           // textTransform: 'uppercase',
-          fontSize: 22,
+          fontSize: 18,
           fontWeight: 'bold',
           textAlign: 'left',
           letterSpacing: '-0.02em',
@@ -19,7 +19,7 @@ export const NameAndTitle = () => {
           }
         }}
       >
-        Chandler Ch®
+        CHANDLER CH®
       </Text>
       <Text
         css={{
