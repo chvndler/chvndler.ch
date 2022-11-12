@@ -1,6 +1,7 @@
 import { Meta } from '@/components/common/meta';
 import { Canvas } from '@/components/ds';
 import { Intro } from '@/components/sections/intro';
+
 /*
 const TemporaryFooter = () => {
   return (
