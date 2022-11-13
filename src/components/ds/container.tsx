@@ -8,8 +8,8 @@ export const Container = styled('div', {
   paddingLeft: 20,
   paddingRight: 20,
   '@sm': {
-    paddingLeft: 18,
-    paddingRight: 18
+    paddingLeft: 14,
+    paddingRight: 14
   },
   variants: {
     size: {

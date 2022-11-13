@@ -1,9 +1,7 @@
-import { styled } from 'stitches.config';
-
 import { AppBar } from '@/components/layout/app-bar';
 
 import { Meta } from '../common/meta';
-import { CommandK } from '../primitives/cmdk';
+import { BodyContainer } from './body-container';
 
 type LayoutProps = {
   children?: React.ReactNode;
@@ -13,29 +11,14 @@ type LayoutProps = {
   // footerProps?: FooterProps
 };
 
-const AppBox = styled('div', {
-  zIndex: '1',
-  display: 'flex',
-  flexDirection: 'column',
-  height: '100%',
-  width: '100vw',
-  overflow: 'auto',
-  paddingTop: '100px',
-  paddingBottom: '100px',
-  paddingLeft: 0,
-  paddingRight: 0,
-  margin: 0
-});
-
 export const PageLayout = ({ children }: LayoutProps) => {
   return (
     <>
       <Meta />
       <AppBar />
-      <AppBox>
+      <BodyContainer>
         <main>{children}</main>
-      </AppBox>
-      <CommandK />
+      </BodyContainer>
     </>
   );
 };
