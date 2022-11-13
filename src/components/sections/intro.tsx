@@ -35,7 +35,7 @@ export const Intro = () => {
           <Paragraph
             css={{
               color: '$sage10',
-              fontFamily: '$rightGroteskText',
+              fontFamily: '',
               fontWeight: 500,
               fontSize: 15,
               lineHeight: 1.4,
@@ -52,7 +52,7 @@ export const Intro = () => {
           <Paragraph
             css={{
               color: '$sage10',
-              fontFamily: '$rightGroteskText',
+              fontFamily: '',
               fontWeight: 500,
               fontSize: 15,
               lineHeight: 1.4,
@@ -69,7 +69,7 @@ export const Intro = () => {
           <Paragraph
             css={{
               color: '$sage10',
-              fontFamily: '$rightGroteskText',
+              fontFamily: '',
               fontWeight: 500,
               fontSize: 15,
               lineHeight: 1.4,

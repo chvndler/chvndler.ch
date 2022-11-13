@@ -1,6 +1,5 @@
 import { Meta } from '@/components/common/meta';
 import { Canvas } from '@/components/ds';
-import { IntroFooter } from '@/components/layout/intro-footer';
 import { Intro } from '@/components/sections/intro';
 
 // RENDER APP©...
@@ -11,7 +10,6 @@ const AppPage = () => {
       <Canvas>
         <Intro />
       </Canvas>
-      <IntroFooter />
     </>
   );
 };

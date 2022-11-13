@@ -24,12 +24,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "~/*": ["./src/*"],
-      "~/public/*": ["./public/*"],
       "@/public/*": ["./public/*"],
       "@/components/*": ["./src/components/*"],
       "@/common/*": ["./src/common/*"],
-      "@/types/*": ["./src/ts/*"]
+      "@/types/*": ["./src/ts/*"],
+      "@/lib/*": ["./src/lib/*"]
     }
   },
   "exclude": ["node_modules"],
