@@ -84,14 +84,11 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     fonts: {
       untitled: '"Inter", -apple-system, system-ui, sans-serif',
       inter: '"Inter", sans-serif',
-      druk: '"Druk Wide", sans-serif',
-      subtle: '"Subtle", sans-serif',
-      antarcticanMono: '"Antarctican Mono", monospace',
       rightGrotesk: '"PP Right Grotesk", sans-serif',
       rightGroteskWide: '"PP Right Grotesk Wide", sans-serif', // weight: 470, 900
       rightGroteskTextWide: '"PP Right Grotesk Text Wide", sans-serif',
       neueMontreal: '"PP Neue Montreal", sans-serif',
-      tStar: '"T-Star Pro", sans-serif'
+      hauss: '"At Hauss Aero", sans-serif'
     },
     fontSizes: {
       1: '12px',
