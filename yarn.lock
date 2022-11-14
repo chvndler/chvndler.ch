@@ -1453,6 +1453,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@trendyol-js/react-carousel@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@trendyol-js/react-carousel@npm:3.0.0"
+  dependencies:
+    react: ^16.13.1
+  peerDependencies:
+    react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 5e21caf6a5a25d007a1b1e914cc17900479b74a7444b44e94ed819dbc5e868dad3676482831c07641f20a7f05badbf249256bcd76a8f392be134fa6924be6bcc
+  languageName: node
+  linkType: hard
+
 "@types/css-font-loading-module@npm:0.0.7":
   version: 0.0.7
   resolution: "@types/css-font-loading-module@npm:0.0.7"
@@ -2402,6 +2413,7 @@ __metadata:
     "@react-three/drei": ^9.38.1
     "@react-three/fiber": ^8.8.10
     "@stitches/react": ^1.2.8
+    "@trendyol-js/react-carousel": ^3.0.0
     "@types/css-font-loading-module": 0.0.7
     "@types/glob": ^8.0.0
     "@types/mousetrap": 1.6.9
@@ -2417,7 +2429,6 @@ __metadata:
     cmdk: 0.1.20
     cross-env: ^7.0.3
     date-fns: ^2.29.3
-    embla-carousel-react: ^7.0.4
     eslint: 8
     eslint-config-prettier: ^8.5.0
     eslint-import-resolver-typescript: 3
@@ -2432,6 +2443,7 @@ __metadata:
     husky: 8
     lint-staged: 13
     locomotive-scroll: ^4.1.4
+    lodash.debounce: ^4.0.8
     minimatch: 5
     mousetrap: 1.6.5
     next: 13
@@ -2891,24 +2903,6 @@ __metadata:
   version: 0.2.0
   resolution: "eastasianwidth@npm:0.2.0"
   checksum: 7d00d7cd8e49b9afa762a813faac332dee781932d6f2c848dc348939c4253f1d4564341b7af1d041853bc3f32c2ef141b58e0a4d9862c17a7f08f68df1e0f1ed
-  languageName: node
-  linkType: hard
-
-"embla-carousel-react@npm:^7.0.4":
-  version: 7.0.4
-  resolution: "embla-carousel-react@npm:7.0.4"
-  dependencies:
-    embla-carousel: 7.0.4
-  peerDependencies:
-    react: ^18.1.0
-  checksum: 7c2637acacee710bf83609ea68cb824344b6cd2b0ffb1294372edddc0a54ab7169eb65093bdf57aa9563287f442f3826d6e24f7801abb51fcb54f8088ae3e82d
-  languageName: node
-  linkType: hard
-
-"embla-carousel@npm:7.0.4":
-  version: 7.0.4
-  resolution: "embla-carousel@npm:7.0.4"
-  checksum: 86db5cf5305b5c560dbf9c64242d3b08a6ac2c0038c667cf8cf6b1414d627df1d3e2bbe0d72cbf76d3094da1e126d60aac3af9a9c505e5d93665a11101789220
   languageName: node
   linkType: hard
 
@@ -4707,6 +4701,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.debounce@npm:^4.0.8":
+  version: 4.0.8
+  resolution: "lodash.debounce@npm:4.0.8"
+  checksum: a3f527d22c548f43ae31c861ada88b2637eb48ac6aa3eb56e82d44917971b8aa96fbb37aa60efea674dc4ee8c42074f90f7b1f772e9db375435f6c83a19b3bc6
+  languageName: node
+  linkType: hard
+
 "lodash.merge@npm:^4.6.2":
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
@@ -5818,7 +5819,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.0, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.0, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -6064,6 +6065,17 @@ __metadata:
     react: ">=16.13"
     react-dom: ">=16.13"
   checksum: b8e8939229d463c3c505f7b617925c0228efae0cd6f651371f463846417b06c9170be57df51293a61027c41770f8a090fdb8a08717c4e36290ccb496e0318f1f
+  languageName: node
+  linkType: hard
+
+"react@npm:^16.13.1":
+  version: 16.14.0
+  resolution: "react@npm:16.14.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+    prop-types: ^15.6.2
+  checksum: 8484f3ecb13414526f2a7412190575fc134da785c02695eb92bb6028c930bfe1c238d7be2a125088fec663cc7cda0a3623373c46807cf2c281f49c34b79881ac
   languageName: node
   linkType: hard
 
