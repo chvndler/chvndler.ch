@@ -43,8 +43,7 @@ const StyledNavButton = styled('a', {
   height: '38px',
   fontSize: 15,
   fontWeight: 'bold',
-  fontFamily: '"Lateral Extended Bold", sans-serif',
-  textTransform: 'lowercase',
+  fontFamily: '"Lateral Standard Bold", sans-serif',
 
   display: 'inline-flex',
   flexShrink: 0,

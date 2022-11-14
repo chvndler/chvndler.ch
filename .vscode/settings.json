@@ -5,7 +5,7 @@
   "editor.tabSize": 2,
   "workbench.colorTheme": "Copilot Theme",
   "editor.formatOnPaste": true,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0.6,
   "vsicons.dontShowNewVersionMessage": true,
   "editor.inlineSuggest.enabled": true,
   "editor.fontLigatures": true,

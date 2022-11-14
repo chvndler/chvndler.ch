@@ -9,11 +9,11 @@ export const GridStyle = ({ children }: GridStyleProps) => {
       <Grid
         align="stretch"
         flow="row"
-        columns="4"
+        columns="3"
         gap="2"
         css={{
           '@md': {
-            gridTemplateColumns: 'repeat(2, 1fr)'
+            gridTemplateColumns: 'repeat(1, 1fr)'
           },
           '@sm': {
             gridTemplateColumns: 'repeat(1, 1fr)'
