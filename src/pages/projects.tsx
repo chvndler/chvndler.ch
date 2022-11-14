@@ -1,7 +1,35 @@
 import { styled } from 'stitches.config';
 
-import { Box, Container, Grid, Paragraph, Section, Separator, Space, Text } from '@/components/ds';
+import { Button, Container, Grid, Paragraph, Section, Separator, Space, Text } from '@/components/ds';
+import { RelativeFooter } from '@/components/layout/app-footer/relative-footer';
 import { PageLayout } from '@/components/layout/page';
+
+const ProjectBox = styled('div', {
+  border: '1px solid',
+  borderLeftWidth: 1,
+  borderLeftStyle: 'inset',
+  borderRightWidth: 0,
+  borderTopWidth: 0,
+  borderBottomWidth: 0,
+  padding: 22,
+  width: 'auto',
+
+  '&:hover': {}
+});
+
+const ProjectSummary = styled(Paragraph, {
+  fontFamily: '$lateralStandard',
+  fontWeight: 'normal',
+  fontSize: 13,
+  color: '$sage9'
+});
+
+const ProjectTitle = styled(Text, {
+  fontSize: 22,
+  fontFamily: '"Lateral Extended Bold", sans-serif',
+  fontWeight: 'bold',
+  color: '$chxn4'
+});
 
 const ProjectsPage = () => {
   return (
@@ -11,10 +39,24 @@ const ProjectsPage = () => {
           <Container size={'4'}>
             <Text
               css={{
+                color: '$chxn4',
+                fontSize: 18,
+                fontFamily: '"Lateral Extended Bold", sans-serif',
+                fontWeight: 'bold'
+              }}
+            >
+              projects
+            </Text>
+          </Container>
+
+          <Space size={'2'} />
+          <Container size={'4'}>
+            <Text
+              css={{
                 color: '$sage10',
-                fontFamily: '$neueMontreal',
+                fontFamily: '"Lateral Standard Bold", sans-serif',
                 fontSize: 72,
-                fontWeight: 'normal',
+                fontWeight: 'bold',
                 textAlign: 'left',
                 letterSpacing: '-0.08rem',
                 lineHeight: '70px',
@@ -35,7 +77,6 @@ const ProjectsPage = () => {
         <Space size={'2'} />
         <Separator decorative orientation={'horizontal'} />
         <Space size={'2'} />
-
         <Section size={'4'}>
           <Container size={'4'}>
             <Grid
@@ -54,37 +95,45 @@ const ProjectsPage = () => {
               }}
             >
               <ProjectBox css={{}}>
-                <Text css={{ fontSize: 22 }}>atlr.typesxcript</Text>
+                <ProjectTitle>atlr® typesxcript</ProjectTitle>
                 <Space size={'1'} />
-                <Paragraph css={{ fontSize: 12 }}>
-                  Lemkus reached out to us to create a new design system and conduct an overhaul of the brand’s digital
-                  experience. The objective was to provide customers with seamless purchasing journeys and we did this
-                  by combining robust user experience with strong and engaging content.
-                </Paragraph>
+                <ProjectSummary>
+                  Opinionated and essential starting code for Next.js, React, Atlr® DS, and Typescript. I begin here
+                  with most every project I create. Use it on your next build and let me know how you like it.
+                </ProjectSummary>
+                <Space size={'2'} />
+                <Button css={{ fontSize: 10, fontFamily: '"Lateral Extended Bold", sans-serif' }}>view more</Button>
               </ProjectBox>
 
               <ProjectBox css={{}}>
-                <Text css={{ fontSize: 22 }}>@atlr/ds</Text>
+                <ProjectTitle>Atlr® DS</ProjectTitle>
                 <Space size={'1'} />
-                <Paragraph css={{ fontSize: 12 }}>
-                  Lemkus reached out to us to create a new design system and conduct an overhaul of the brand’s digital
-                  experience. The objective was to provide customers with seamless purchasing journeys and we did this
-                  by combining robust user experience with strong and engaging content.
-                </Paragraph>
+                <ProjectSummary>
+                  An open-source React Component Library built using Stitches x Radix-UI™. I've slightly styled each
+                  component as a starting point. Minimally Styled. Highly performant.
+                </ProjectSummary>
+                <Space size={'2'} />
+                <Button css={{ fontSize: 10, fontFamily: '"Lateral Extended Bold", sans-serif' }}>view more</Button>
+              </ProjectBox>
+
+              <ProjectBox css={{}}>
+                <ProjectTitle>atlr® icxns</ProjectTitle>
+                <Space size={'1'} />
+                <ProjectSummary>
+                  Not your basic icon set.
+                  <br />A small icon library for the web. These glyphs go with any modern project, or use theme if you
+                  just need some sauce to your app.
+                </ProjectSummary>
+                <Space size={'2'} />
+                <Button css={{ fontSize: 10, fontFamily: '"Lateral Extended Bold", sans-serif' }}>view more</Button>
               </ProjectBox>
             </Grid>
           </Container>
         </Section>
       </PageLayout>
+      <RelativeFooter />
     </>
   );
 };
 
 export default ProjectsPage;
-
-const ProjectBox = styled(Box, {
-  border: '1px solid $mauveA8',
-  padding: 22,
-  borderRadius: 16,
-  width: 'auto'
-});

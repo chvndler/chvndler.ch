@@ -1,3 +1,4 @@
+import { slate, slateA } from '@radix-ui/colors';
 import { styled } from 'stitches.config';
 
 export const Button = styled('button', {
@@ -31,11 +32,7 @@ export const Button = styled('button', {
       '1': {
         margin: 0,
         borderRadius: 11,
-        paddingLeft: '20px',
-        paddingRight: '20px',
-        height: 'auto',
-        fontSize: 13,
-        lineHeight: '40px'
+        height: '16px'
       },
       '2': {
         borderRadius: '8px',
@@ -88,24 +85,34 @@ export const Button = styled('button', {
         }
       },
       primary: {
-        backgroundColor: '$air5',
-        boxShadow: 'inset 0 0 0 1px $colors$air5',
-        color: '$mauve2',
+        fontSize: 'inherit',
+        paddingLeft: 8,
+        paddingRight: 8,
+        borderRadius: '50px',
+        backgroundColor: '$sage6',
+        backdropFilter: 'blur(40px) saturate(100%)',
+        WebkitBackdropFilter: 'blur(40px) saturate(100%)',
+        boxShadow: `inset 0 0 0 1px $sage8`,
+        color: '$sage10',
+        '&:hover': {
+          backgroundColor: '$sage7',
+          boxShadow: `inset 0 0 0 1px $sage9`
+        },
         '@hover': {
           '&:hover': {
-            boxShadow: 'inset 0 0 0 1px $colors$air6'
+            boxShadow: `inset 0 0 0 1px ${slateA.slateA8}`
           }
         },
         '&:active': {
-          backgroundColor: '$slate2',
-          boxShadow: 'inset 0 0 0 1px $colors$air7'
+          backgroundColor: slate.slate2,
+          boxShadow: `inset 0 0 0 1px ${slate.slate8}`
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$air6'
+          boxShadow: `inset 0 0 0 1px ${slate.slate8}, 0 0 0 1px ${slate.slate8}`
         },
         '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: '$air4',
-          boxShadow: 'inset 0 0 0 1px $colors$air6'
+          backgroundColor: slate.slate4,
+          boxShadow: `inset 0 0 0 1px ${slate.slate8}`
         }
       },
       secondary: {},
@@ -130,7 +137,6 @@ export const Button = styled('button', {
           boxShadow: 'inset 0 0 0 1px $colors$slate8'
         }
       },
-
       ghostAtelier: {
         backgroundColor: '$mauve3',
         boxShadow: 'inset 0 0 0 1px $colors$mauve4, 0 0 0 1px $colors$mauve4',
@@ -238,6 +244,6 @@ export const Button = styled('button', {
 
   defaultVariants: {
     size: '1',
-    color: 'atelier'
+    color: 'primary'
   }
 });

@@ -30,7 +30,8 @@ const StyledBar = styled('div', {
   WebkitBackdropFilter: 'blur(40px) saturate(100%)',
   lineHeight: '23px',
   height: 48,
-  border: '1px solid transparent'
+  border: '1px solid $sage5'
+  // border: '1px solid transparent'
 });
 
 const StyledNavButton = styled('a', {
@@ -41,8 +42,9 @@ const StyledNavButton = styled('a', {
 
   height: '38px',
   fontSize: 15,
-  fontWeight: '600',
-  fontFamily: '$neueMontreal',
+  fontWeight: 'bold',
+  fontFamily: '"Lateral Extended Bold", sans-serif',
+  textTransform: 'lowercase',
 
   display: 'inline-flex',
   flexShrink: 0,

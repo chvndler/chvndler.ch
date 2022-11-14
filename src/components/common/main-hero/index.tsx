@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 import { Box, Canvas, Container, Flex, InlineLink, Paragraph, Space, Text } from '@/components/ds';
+import { Icxn } from '@/components/icons/icxn';
 import { HeroSection } from '@/components/sections/hero';
-import { Icxn } from '~/components/icons/icxn';
 
 export const MainHero = () => {
   return (

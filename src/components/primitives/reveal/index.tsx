@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Container, Grid, Section, Text } from '~/components/ds';
+import { Container, Grid, Section, Text } from '@/components/ds';
 
 import { Collapsible, CollapsibleContent, CollapsibleTrigger, ContentBox, HiddenContent } from './reveal.styled';
 

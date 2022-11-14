@@ -3,6 +3,7 @@ import '@/css/global.scss';
 import type { NextComponentType, NextPageContext } from 'next';
 import type { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
+import NextNProgress from 'nextjs-progressbar';
 import * as React from 'react';
 import { createContext, useContext } from 'react';
 import { darkTheme, globalCss } from 'stitches.config';
@@ -106,6 +107,14 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
 
   return (
     <>
+      <NextNProgress
+        options={{ easing: 'ease', speed: 400, showSpinner: false }}
+        color={'#6A716E'}
+        startPosition={0.4}
+        stopDelayMs={300}
+        height={3}
+        showOnShallow={true}
+      />
       <ThemeProvider
         disableTransitionOnChange
         attribute="class"

@@ -88,7 +88,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       rightGroteskWide: '"PP Right Grotesk Wide", sans-serif', // weight: 470, 900
       rightGroteskTextWide: '"PP Right Grotesk Text Wide", sans-serif',
       neueMontreal: '"PP Neue Montreal", sans-serif',
-      hauss: '"At Hauss Aero", sans-serif'
+      lateralStandard: '"Lateral Standard Regular", sans-serif'
     },
     fontSizes: {
       1: '12px',
@@ -218,7 +218,7 @@ export const darkTheme = createTheme('dark-theme', {
     ...sageDark,
     ...sageDarkA,
 
-    chxn1: '#2b2a30',
+    chxn1: '#1A171A',
     chxn2: '#3f4b54',
     chxn3: '#919191',
     chxn4: '#f1f1f1',

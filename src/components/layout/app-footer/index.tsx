@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import { styled } from 'stitches.config';
 
-import { Flex, Text } from '@/components/ds';
-import { ThemeButton } from '~/components/primitives/theme-button';
+import { Text } from '@/components/ds';
+import CursorData from '@/components/primitives/cursor-data';
+import { ThemeButton } from '@/components/primitives/theme-button';
 
 const StyledFooter = styled('footer', {
   zIndex: '999',
@@ -18,7 +18,6 @@ const StyledFooter = styled('footer', {
   height: 'auto',
   padding: 20,
   backgroundColor: 'transparent',
-  color: '$chvn100',
   '@md': {
     flexDirection: 'column',
     alignContent: 'center',
@@ -73,39 +72,41 @@ export const AppFooter = () => {
   return (
     <>
       <Footer>
-        <ContentBox alignment="start">
-          <Link href="/" passHref>
-            <Text
-              css={{
-                color: '$sage10',
-                fontFamily: '$subtle',
-                fontSize: 12,
-                lineHeight: 'normal',
-                letterSpacing: '0.06px',
-                textTransform: 'uppercase',
-                margin: 0,
-                marginRight: 10,
-                '@md': {
-                  display: 'none'
-                },
-                '&:hover': {
-                  color: '$sage9'
-                }
-              }}
-            >
-              © MIT
-            </Text>
-          </Link>
+        <ContentBox
+          alignment="start"
+          css={{
+            '@md': {
+              display: 'none'
+            }
+          }}
+        >
+          <Text
+            css={{
+              color: '$chxn4',
+              fontFamily: '"Lateral Extended Regular", sans-serif',
+              fontSize: 10,
+              fontWeight: 400,
+              lineHeight: 'normal',
+              letterSpacing: 'normal',
+              textTransform: 'uppercase',
+              margin: 0,
+              marginRight: 10
+            }}
+          >
+            © CDC. MIT
+          </Text>
+          <CursorData />
         </ContentBox>
 
+        {/* <!-- HOLD CENTER LINE FOR NOW -->
         <ContentBox alignment="center">
-          <Flex css={{ flexDirection: 'column' }}>
+          <Flex css={{ flexDirection: 'row' }}>
             <Text
               css={{
-                color: '$sage10',
-                fontFamily: '$subtle',
-                fontSize: 12,
-                fontWeight: 'normal',
+                color: '$sage12',
+                fontFamily: '"Lateral Extended Medium", sans-serif',
+                fontSize: 10,
+                fontWeight: 500,
                 lineHeight: 'normal',
                 textAlign: 'center',
                 letterSpacing: '0.06px'
@@ -115,6 +116,7 @@ export const AppFooter = () => {
             </Text>
           </Flex>
         </ContentBox>
+            --> */}
 
         <ContentBox alignment="end" css={{}}>
           <ThemeButton />

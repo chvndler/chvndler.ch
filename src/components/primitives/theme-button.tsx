@@ -9,20 +9,15 @@ export const ThemeButton = () => {
   return (
     <Button
       size="1"
-      color="nothing"
+      color="primary"
       onClick={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}
       aria-label="Toggle Theme"
       css={{
-        fontFamily: '$druk',
-        fontWeight: 'normal',
+        fontFamily: '"Lateral Extended Medium", sans-serif',
+        fontWeight: 500,
         fontSize: 10,
         lineHeight: 'normal',
-        height: 'auto',
-        transition: 'color 0.4s ease',
-        '&:hover': {
-          color: '$lime10',
-          cursor: 'crosshair'
-        }
+        transition: 'color 0.4s ease'
       }}
     >
       THEME
@@ -41,9 +36,9 @@ export const AlternateThemeButton = () => {
         onClick={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}
         aria-label="Toggle Theme"
         css={{
-          fontFamily: '$tStar',
-          fontWeight: '600',
-          fontSize: 13,
+          fontFamily: '"Lateral Extended Medium", sans-serif',
+          fontWeight: 500,
+          fontSize: 11,
           letterSpacing: '0.04rem',
           lineHeight: 'normal',
           height: 'auto',

@@ -7,18 +7,18 @@ import { Box } from '@/components/ds';
 const StyledTime = styled('div', {
   border: 'none',
   display: 'inline-flex',
-  justifyContent: 'center',
+  gap: '2',
+  justifyContent: 'space-between',
   alignItems: 'center',
   textTransform: 'uppercase',
-  // letterSpacing: '0.06em',
-  letterSpacing: 'normal',
+  letterSpacing: '1px',
   lineHeight: '2',
-  fontFamily: '$antarcticanMono',
-  fontWeight: 'normal',
-  fontSize: 15,
+  fontFamily: '"Lateral Extended Medium", sans-serif',
+  fontWeight: 500,
+  fontSize: 12,
   padding: 0,
   margin: 'auto',
-  width: 'auto',
+  width: '90px',
   '> :span': {
     display: 'inline-flex',
     justifyContent: 'center',
@@ -54,9 +54,10 @@ export const TimeDisplay = ({ variant }: { variant?: 'mobile' }) => {
     seconds = seconds < 10 ? '0' + seconds : seconds;
     return (
       <TimeString>
-        <span>
-          {hours}:{minutes}:{seconds} <span>{isAm ? 'AM' : 'PM'}</span>
-        </span>
+        <Box css={{ marginRight: 2 }}>
+          {hours}:{minutes}:{seconds}
+        </Box>
+        <Box css={{ marginLeft: 2 }}>{isAm ? 'AM' : 'PM'}</Box>
       </TimeString>
     );
   }, []);
@@ -65,7 +66,7 @@ export const TimeDisplay = ({ variant }: { variant?: 'mobile' }) => {
     <>
       <Box
         css={{
-          color: '$sage9',
+          color: '$sage12',
           display: 'flex',
           alignItems: 'center',
           ...(variant === 'mobile'

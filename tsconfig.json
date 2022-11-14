@@ -26,6 +26,7 @@
       "@/*": ["./src/*"],
       "@/public/*": ["./public/*"],
       "@/components/*": ["./src/components/*"],
+      "~/components/*": ["./src/components/*"],
       "@/common/*": ["./src/common/*"],
       "@/types/*": ["./src/ts/*"],
       "@/lib/*": ["./src/lib/*"]

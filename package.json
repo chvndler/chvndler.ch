@@ -49,6 +49,7 @@
         "next": "13",
         "next-real-viewport": "^0.7.2",
         "next-themes": "^0.2.1",
+        "nextjs-progressbar": "^0.0.16",
         "ogl": "^0.0.102",
         "react": "^18.2.0",
         "react-device-detect": "^2.2.2",

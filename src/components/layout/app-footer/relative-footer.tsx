@@ -1,8 +1,8 @@
-import Link from 'next/link';
 import { styled } from 'stitches.config';
 
 import { Flex, Text } from '@/components/ds';
-import { ThemeButton } from '~/components/primitives/theme-button';
+import CursorData from '@/components/primitives/cursor-data';
+import { ThemeButton } from '@/components/primitives/theme-button';
 
 const StyledFooter = styled('footer', {
   zIndex: '999',
@@ -13,10 +13,10 @@ const StyledFooter = styled('footer', {
   flexDirection: 'row',
   alignItems: 'flex-end',
   justifyContent: 'space-between',
-  width: '100vw',
+  width: 'auto',
   height: 'auto',
   padding: 20,
-  paddingTop: 40,
+  margin: 'auto',
   backgroundColor: 'transparent',
   color: '$chvn100',
   '@md': {
@@ -73,49 +73,51 @@ export const RelativeFooter = () => {
   return (
     <>
       <Footer>
-        <ContentBox alignment="start">
-          <Link href="/" passHref>
-            <Text
-              css={{
-                color: '$chxn3',
-                fontFamily: '$neueMontreal',
-                fontSize: 12,
-                fontWeight: '500',
-                lineHeight: 'normal',
-                letterSpacing: '-0.01rem',
-                margin: 0,
-                marginRight: 10,
-                '@md': {
-                  display: 'none'
-                },
-                '&:hover': {
-                  color: '$chxn2'
-                }
-              }}
-            >
-              © MIT. All rights reserved.
-            </Text>
-          </Link>
+        <ContentBox
+          alignment="start"
+          css={{
+            '@md': {
+              display: 'none'
+            }
+          }}
+        >
+          <Text
+            css={{
+              color: '$sage12',
+              fontFamily: '"Lateral Extended Regular", sans-serif',
+              fontSize: 10,
+              fontWeight: 400,
+              lineHeight: 'normal',
+              letterSpacing: 'normal',
+              textTransform: 'uppercase',
+              margin: 0,
+              marginRight: 10
+            }}
+          >
+            © CDC. MIT
+          </Text>
+          <CursorData />
         </ContentBox>
 
-        <ContentBox alignment="center">
+        <ContentBox alignment="start">
           <Flex css={{ flexDirection: 'column' }}>
+            <ThemeButton />
+            {/*
             <Text
               css={{
-                color: '$sage10',
-                fontFamily: '$druk',
+                color: '$sage12',
+                fontFamily: '"Lateral Extended Medium", sans-serif',
                 fontSize: 10,
                 fontWeight: 500,
-                lineHeight: 'normal'
+                lineHeight: 'normal',
+                textAlign: 'center',
+                letterSpacing: '0.06px'
               }}
             >
               SOMETHING LIKE THIS BUT NOT THIS©
             </Text>
+            */}
           </Flex>
-        </ContentBox>
-
-        <ContentBox alignment="end" css={{}}>
-          <ThemeButton />
         </ContentBox>
       </Footer>
     </>

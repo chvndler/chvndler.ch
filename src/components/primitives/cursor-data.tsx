@@ -11,9 +11,9 @@ const Value = () => {
     };
 
     const setFromEvent = (event: { clientX: string | number; clientY: string | number }) => {
-      const x = format(event.clientX, 4);
-      const y = format(event.clientY, 4);
-      setDisplay(`X, Y:  ${x},${y}`);
+      const x = format(event.clientX, 5);
+      const y = format(event.clientY, 5);
+      setDisplay(`X* ${x}, Y* ${y}`);
     };
 
     window.addEventListener('mousemove', setFromEvent);
@@ -27,14 +27,13 @@ const Value = () => {
     <Text
       css={{
         color: '$chxn4',
-        fontSize: 14,
-        fontFamily: '$antarcticanMono',
-        // fontFamily: '$neueBit',
-        fontWeight: '500',
-        lineHeight: '28px',
+        fontSize: 10,
+        fontFamily: '"Lateral Extended Medium", sans-serif',
+        fontWeight: 500,
+        lineHeight: 'auto',
         letterSpacing: '0.05rem'
-        //transformOrigin: '0',
-        // transform: 'rotate(90deg)'
+        // transformOrigin: '0',
+        // transform: 'rotate(-90deg)'
       }}
     >
       {display}
@@ -46,8 +45,12 @@ export const CursorData = () => {
   return (
     <Box
       css={{
-        padding: 0,
         position: 'relative',
+        // position: 'absolute',
+        // top: 0,
+        //bottom: 0,
+        //left: 24,
+        padding: 0,
         textAlign: 'center'
       }}
     >
