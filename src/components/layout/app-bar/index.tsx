@@ -19,7 +19,7 @@ export const AppBar = () => {
           </ContentBox>
 
           <ContentBox alignment="end">
-            <NavButton href="/notes">Notes</NavButton>
+            <NavButton href="/connect">Connect</NavButton>
           </ContentBox>
         </AppNav>
       </NavContainer>
