@@ -93,7 +93,7 @@
         "lodash.debounce": "^4.0.8",
         "minimatch": "5",
         "next-sitemap": "3",
-        "next-transpile-modules": "^9.0.0",
+        "next-transpile-modules": "^10.0.0",
         "prettier": "2.7.1",
         "remark-slug": "^7.0.1",
         "sass": "1.55.0",
