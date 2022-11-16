@@ -4,7 +4,7 @@ export const HeroSection = styled('div', {
   boxSizing: 'border-box',
   zIndex: '1',
   margin: 'auto',
-  width: '100vw',
+  width: 'auto',
   flexShrink: 0,
   verticalAlign: 'middle',
   horizontalAlign: 'middle',

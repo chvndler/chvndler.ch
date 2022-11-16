@@ -10,7 +10,8 @@ export const Card = styled('div', {
   textAlign: 'inherit',
   verticalAlign: 'middle',
   WebkitTapHighlightColor: 'rgba(0, 0, 0, 0)',
-  display: 'block',
+  display: 'flex',
+  flexWrap: 'wrap',
   textDecoration: 'none',
   color: 'inherit',
   flexShrink: 0,
@@ -25,7 +26,7 @@ export const Card = styled('div', {
     right: 0,
     bottom: 0,
     left: 0,
-    boxShadow: 'inset 0 0 0 1px rgba(0,0,0,.1)',
+    // boxShadow: 'inset 0 0 0 1px rgba(0,0,0,.1)',
     borderRadius: 'inherit',
     pointerEvents: 'none'
   },
@@ -34,19 +35,19 @@ export const Card = styled('div', {
     variant: {
       interactive: {
         '&:hover': {
-          boxShadow: 'inset 0 0 0 1px rgba(0,0,0,1)'
+          //boxShadow: 'inset 0 0 0 1px rgba(0,0,0,1)'
         },
         '@hover': {
           '&:hover': {
-            boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.2)',
+            //boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.2)',
             '&::before': {
-              boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.2)'
+              //boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.2)'
             }
           }
         },
         '&:focus': {
           '&::before': {
-            boxShadow: 'inset 3px 0 0 1px $colors$gray8, 0 0 0 1px $colors$gray8'
+            //boxShadow: 'inset 3px 0 0 1px $colors$gray8, 0 0 0 1px $colors$gray8'
           }
         }
       },
