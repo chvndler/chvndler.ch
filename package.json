@@ -69,7 +69,7 @@
         "@next/eslint-plugin-next": "13",
         "@types/css-font-loading-module": "0.0.7",
         "@types/glob": "^8.0.0",
-        "@types/mousetrap": "1.6.10",
+        "@types/mousetrap": "1.6.11",
         "@types/node": "18",
         "@types/react": "^18.0.17",
         "@types/react-dom": "18.0.8",
