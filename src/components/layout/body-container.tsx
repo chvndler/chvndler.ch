@@ -3,7 +3,7 @@ import { css, styled } from '@stitches/react';
 const BodyStyles = css({
   boxSizing: 'border-box',
   paddingTop: 160,
-  paddingBottom: 160,
+  paddingBottom: 'auto',
   width: 'auto',
   minHeight: '50vh'
 });

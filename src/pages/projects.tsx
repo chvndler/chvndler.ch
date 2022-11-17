@@ -1,7 +1,8 @@
-import { Container, Grid, Section, Separator, Space, Text } from '@/components/ds';
+import { Container, Section, Separator, Space, Text } from '@/components/ds';
 import { RelativeFooter } from '@/components/layout/app-footer/relative-footer';
 import { PageLayout } from '@/components/layout/page';
-import { MinimalProjectEntry, ProjectEntry } from '@/components/primitives/project-display/ProjectEntry';
+import { ProjectSectionWithCards } from '@/components/sections/project-section/card-layout';
+import { MinimalProjectSection } from '@/components/sections/project-section/minimal-layout';
 
 const ProjectsPage = () => {
   return (
@@ -46,84 +47,23 @@ const ProjectsPage = () => {
             </Text>
           </Container>
         </Section>
+
         <Space size={'2'} />
+
         <Separator decorative orientation={'horizontal'} />
-        <Space size={'2'} />
-        <Section size={'4'}>
-          <Container size={'4'}>
-            <Grid
-              gap="2"
-              align="stretch"
-              flow="row"
-              columns="3"
-              css={{
-                gap: '2',
-                '@md': {
-                  gridTemplateColumns: 'repeat(1, 1fr)'
-                },
-                '@sm': {
-                  gridTemplateColumns: 'repeat(1, 1fr)'
-                }
-              }}
-            >
-              <ProjectEntry
-                pRepository="https://github.com/chvndler"
-                pTitle="atlr.typesxript"
-                pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-              />
-              <ProjectEntry
-                pRepository="https://github.com/chvndler"
-                pTitle="A4"
-                pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-              />{' '}
-              <ProjectEntry
-                pRepository="https://github.com/chvndler"
-                pTitle="A4"
-                pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-              />
-            </Grid>
-          </Container>
-        </Section>
 
         <Space size={'2'} />
 
-        <Section size={'4'}>
-          <Container size={'4'}>
-            <Grid
-              gap="2"
-              align="stretch"
-              flow="row"
-              columns="3"
-              css={{
-                gap: '2',
-                '@md': {
-                  gridTemplateColumns: 'repeat(1, 1fr)'
-                },
-                '@sm': {
-                  gridTemplateColumns: 'repeat(1, 1fr)'
-                }
-              }}
-            >
-              <MinimalProjectEntry
-                pRepository="https://github.com/chvndler"
-                pTitle="atlr.typesxript"
-                pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-              />
-              <MinimalProjectEntry
-                pRepository="https://github.com/chvndler"
-                pTitle="atlr.icxns"
-                pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-              />{' '}
-              <MinimalProjectEntry
-                pRepository="https://github.com/chvndler"
-                pTitle="atlr.colr"
-                pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-              />
-            </Grid>
-          </Container>
-        </Section>
+        <MinimalProjectSection />
+
+        <Space size={'2'} />
+
+        <ProjectSectionWithCards />
+
+        <Space size={'5'} />
+
+        <RelativeFooter />
       </PageLayout>
-      <RelativeFooter />
     </>
   );
 };

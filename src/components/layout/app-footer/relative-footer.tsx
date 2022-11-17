@@ -99,24 +99,25 @@ export const RelativeFooter = () => {
           <CursorData />
         </ContentBox>
 
-        <ContentBox alignment="start">
+        <ContentBox alignment="center">
+          <Text
+            css={{
+              color: '$sage12',
+              fontFamily: '"Lateral Extended Medium", sans-serif',
+              fontSize: 10,
+              fontWeight: 500,
+              lineHeight: 'normal',
+              textAlign: 'center',
+              letterSpacing: '0.06px'
+            }}
+          >
+            SOMETHING LIKE THIS BUT NOT THIS©
+          </Text>
+        </ContentBox>
+
+        <ContentBox alignment="end">
           <Flex css={{ flexDirection: 'column' }}>
             <ThemeButton />
-            {/*
-            <Text
-              css={{
-                color: '$sage12',
-                fontFamily: '"Lateral Extended Medium", sans-serif',
-                fontSize: 10,
-                fontWeight: 500,
-                lineHeight: 'normal',
-                textAlign: 'center',
-                letterSpacing: '0.06px'
-              }}
-            >
-              SOMETHING LIKE THIS BUT NOT THIS©
-            </Text>
-            */}
           </Flex>
         </ContentBox>
       </Footer>
