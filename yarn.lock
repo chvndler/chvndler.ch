@@ -1317,6 +1317,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-spring/konva@npm:~9.5.5":
+  version: 9.5.5
+  resolution: "@react-spring/konva@npm:9.5.5"
+  dependencies:
+    "@react-spring/animated": ~9.5.5
+    "@react-spring/core": ~9.5.5
+    "@react-spring/shared": ~9.5.5
+    "@react-spring/types": ~9.5.5
+  peerDependencies:
+    konva: ">=2.6"
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-konva: ^16.8.0 || ^17.0.0
+  checksum: c0dfe1fbe8c472f654ddd9d752fd8cd144c982a1c9e0f9266db2f0fb532b69ab57f143f89ee9408786a990ae5c1d57d160bc7d1b41773b0e72127474747f4a1c
+  languageName: node
+  linkType: hard
+
+"@react-spring/native@npm:~9.5.5":
+  version: 9.5.5
+  resolution: "@react-spring/native@npm:9.5.5"
+  dependencies:
+    "@react-spring/animated": ~9.5.5
+    "@react-spring/core": ~9.5.5
+    "@react-spring/shared": ~9.5.5
+    "@react-spring/types": ~9.5.5
+  peerDependencies:
+    react: ^16.8.0  || >=17.0.0 || >=18.0.0
+    react-native: ">=0.58"
+  checksum: 98cdab111ff958278c2e26664c372b5606f79ea21fe05014092213a59881f29b5da0ca3ba58a086ea14d2a46f9e63474fca8e4bf1d6a6548d010eef0eb6f7c03
+  languageName: node
+  linkType: hard
+
 "@react-spring/rafz@npm:~9.5.5":
   version: 9.5.5
   resolution: "@react-spring/rafz@npm:9.5.5"
@@ -1336,7 +1367,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-spring/three@npm:^9.3.1":
+"@react-spring/three@npm:^9.3.1, @react-spring/three@npm:~9.5.5":
   version: 9.5.5
   resolution: "@react-spring/three@npm:9.5.5"
   dependencies:
@@ -1356,6 +1387,38 @@ __metadata:
   version: 9.5.5
   resolution: "@react-spring/types@npm:9.5.5"
   checksum: 7fa92982ffed216cfeff7817fc6703200d0ee7925e376d394729b804ec621f09d0800b67d1942b5b7c3b5df5396f7206c01aebd343ba47da619ad2b6363b7bc3
+  languageName: node
+  linkType: hard
+
+"@react-spring/web@npm:~9.5.5":
+  version: 9.5.5
+  resolution: "@react-spring/web@npm:9.5.5"
+  dependencies:
+    "@react-spring/animated": ~9.5.5
+    "@react-spring/core": ~9.5.5
+    "@react-spring/shared": ~9.5.5
+    "@react-spring/types": ~9.5.5
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: b75258a58bef026e78cb13285d6de9052286309a6e972d3fa26b4b609a566f3f8ca950462285718aff666407ae6a7b17978fc366ee0ca99296a35f82d80cd5aa
+  languageName: node
+  linkType: hard
+
+"@react-spring/zdog@npm:~9.5.5":
+  version: 9.5.5
+  resolution: "@react-spring/zdog@npm:9.5.5"
+  dependencies:
+    "@react-spring/animated": ~9.5.5
+    "@react-spring/core": ~9.5.5
+    "@react-spring/shared": ~9.5.5
+    "@react-spring/types": ~9.5.5
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-zdog: ">=1.0"
+    zdog: ">=1.0"
+  checksum: d7e55d552ed446186f9ac7ee5658d4406c9e86ca6628c9138f165a52955ac6cf579a6c367a6abe6539285ef47735f27da95fbaaedda063d169ce50bde55d5bca
   languageName: node
   linkType: hard
 
@@ -2441,6 +2504,7 @@ __metadata:
     gsap: 3.11.3
     hls.js: 1.2.7
     husky: 8
+    keen-slider: ^6.8.3
     lint-staged: 13
     locomotive-scroll: ^4.1.4
     lodash.debounce: ^4.0.8
@@ -2462,6 +2526,7 @@ __metadata:
     react-merge-refs: ^2.0.1
     react-ogl: ^0.12.0
     react-scroll: ^1.8.8
+    react-spring: ^9.5.5
     react-use-measure: ^2.1.1
     remark-slug: ^7.0.1
     sass: 1.56.1
@@ -2473,6 +2538,8 @@ __metadata:
     three: ^0.146.0
     three-stdlib: ^2.17.3
     typescript: ^4.7.4
+    use-3d-effect: ^1.1.0
+    vanilla-tilt: ^1.7.3
     zustand: 4.1.4
   languageName: unknown
   linkType: soft
@@ -4536,6 +4603,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"keen-slider@npm:^6.8.3":
+  version: 6.8.3
+  resolution: "keen-slider@npm:6.8.3"
+  checksum: b798545bd661c1cf316568228969ddd566ded8da7b579abadf9a1048d41a2ffe0adc0728103c90919982be010b615d13341d96fb9464ad0f946f0b6e7d7bc07f
+  languageName: node
+  linkType: hard
+
 "kind-of@npm:^6.0.2, kind-of@npm:^6.0.3":
   version: 6.0.3
   resolution: "kind-of@npm:6.0.3"
@@ -6021,6 +6095,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-spring@npm:^9.5.5":
+  version: 9.5.5
+  resolution: "react-spring@npm:9.5.5"
+  dependencies:
+    "@react-spring/core": ~9.5.5
+    "@react-spring/konva": ~9.5.5
+    "@react-spring/native": ~9.5.5
+    "@react-spring/three": ~9.5.5
+    "@react-spring/web": ~9.5.5
+    "@react-spring/zdog": ~9.5.5
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: ea04c04aca1dc50ab68933b541fbde9e36e7bd185f923431868428d6225c01105db9b574b1c1bf0a35817fa30978bff325c4ce9308dfb597189068bfac7bdd2f
+  languageName: node
+  linkType: hard
+
 "react-style-singleton@npm:^2.2.1":
   version: 2.2.1
   resolution: "react-style-singleton@npm:2.2.1"
@@ -6180,6 +6271,13 @@ __metadata:
   version: 2.0.2
   resolution: "require-from-string@npm:2.0.2"
   checksum: a03ef6895445f33a4015300c426699bc66b2b044ba7b670aa238610381b56d3f07c686251740d575e22f4c87531ba662d06937508f0f3c0f1ddc04db3130560b
+  languageName: node
+  linkType: hard
+
+"resize-observer-polyfill@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "resize-observer-polyfill@npm:1.5.1"
+  checksum: 57e7f79489867b00ba43c9c051524a5c8f162a61d5547e99333549afc23e15c44fd43f2f318ea0261ea98c0eb3158cca261e6f48d66e1ed1cd1f340a43977094
   languageName: node
   linkType: hard
 
@@ -7381,6 +7479,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"use-3d-effect@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "use-3d-effect@npm:1.1.0"
+  dependencies:
+    resize-observer-polyfill: ^1.5.1
+  peerDependencies:
+    react: ^16.8.0
+    react-spring: ^8.0.14
+  checksum: cc3ec726dfdea0a3e12ba4e2b06ae4b2033b982e918e12079b9f9b2c1e310f9748d3fe97e3f39c9d86bf98fd1d417126527c03c0503a2168ad484616bb0c2f96
+  languageName: node
+  linkType: hard
+
 "use-callback-ref@npm:^1.3.0":
   version: 1.3.0
   resolution: "use-callback-ref@npm:1.3.0"
@@ -7461,6 +7571,13 @@ __metadata:
     spdx-correct: ^3.0.0
     spdx-expression-parse: ^3.0.0
   checksum: 35703ac889d419cf2aceef63daeadbe4e77227c39ab6287eeb6c1b36a746b364f50ba22e88591f5d017bc54685d8137bc2d328d0a896e4d3fd22093c0f32a9ad
+  languageName: node
+  linkType: hard
+
+"vanilla-tilt@npm:^1.7.3":
+  version: 1.7.3
+  resolution: "vanilla-tilt@npm:1.7.3"
+  checksum: d63381d85b63b9a68c5aa14994ae6846e8ef3ba7fd8aa0e64f5e654af5219bf107ca160c65ed254ee481f7dae957abe4c7751e7770d9eaf2f11b30f5d19bde09
   languageName: node
   linkType: hard
 

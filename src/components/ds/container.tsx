@@ -5,12 +5,8 @@ export const Container = styled('div', {
   flexShrink: 0,
   marginLeft: 'auto',
   marginRight: 'auto',
-  paddingLeft: 20,
-  paddingRight: 20,
-  '@sm': {
-    paddingLeft: 14,
-    paddingRight: 14
-  },
+  paddingLeft: 18,
+  paddingRight: 18,
   variants: {
     size: {
       '0': {

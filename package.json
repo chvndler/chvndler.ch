@@ -44,6 +44,7 @@
         "date-fns": "^2.29.3",
         "gsap": "3.11.3",
         "hls.js": "1.2.7",
+        "keen-slider": "^6.8.3",
         "locomotive-scroll": "^4.1.4",
         "mousetrap": "1.6.5",
         "next": "13",
@@ -59,9 +60,12 @@
         "react-merge-refs": "^2.0.1",
         "react-ogl": "^0.12.0",
         "react-scroll": "^1.8.8",
+        "react-spring": "^9.5.5",
         "react-use-measure": "^2.1.1",
         "three": "^0.146.0",
         "three-stdlib": "^2.17.3",
+        "use-3d-effect": "^1.1.0",
+        "vanilla-tilt": "^1.7.3",
         "zustand": "4.1.4"
     },
     "devDependencies": {

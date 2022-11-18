@@ -14,11 +14,14 @@ const ProjectCard = styled(Card, {
   boxSizing: 'border-box',
   width: 'auto',
   minHeight: 320,
-  maxWidth: '100vw',
   borderRadius: 22,
-  margin: 5,
+  margin: 'auto',
   alignItems: 'left',
-  backgroundColor: '$sage1',
+  backgroundColor: '$sage2',
+
+  '@sm': {
+    height: 420
+  },
 
   '&:hover': {
     cursor: 'grab',
@@ -43,7 +46,11 @@ const ProjectSummary = styled('p', {
   fontWeight: 'normal',
   fontSize: 14,
   color: '$sage9',
-  lineHeight: '1.3'
+  lineHeight: '1.3',
+
+  '@sm': {
+    fontSize: 16
+  }
 });
 
 const ProjectTitle = styled('h3', {
@@ -56,7 +63,7 @@ const ProjectTitle = styled('h3', {
 export const ProjectEntry = ({ pTitle, pRepository, pSummary }: PProps) => {
   return (
     <ProjectCard css={{ userSelect: 'none' }}>
-      <Box css={{ position: 'absolute', bottom: 6, padding: 28 }}>
+      <Box css={{ position: 'absolute', bottom: 8, padding: 28 }}>
         <ProjectTitle>{pTitle}</ProjectTitle>
         <Space size={'1'} />
         <ProjectSummary>{pSummary}</ProjectSummary>
@@ -69,7 +76,7 @@ export const ProjectEntry = ({ pTitle, pRepository, pSummary }: PProps) => {
           css={{
             padding: 10,
             fontFamily: `"Lateral Extended Medium", sans-serif`,
-            fontSize: 12,
+            fontSize: 13,
             '&:hover': {
               cursor: 'pointer'
             }

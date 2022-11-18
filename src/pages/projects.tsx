@@ -1,8 +1,7 @@
 import { Container, Section, Separator, Space, Text } from '@/components/ds';
 import { RelativeFooter } from '@/components/layout/app-footer/relative-footer';
 import { PageLayout } from '@/components/layout/page';
-import { ProjectSectionWithCards } from '@/components/sections/project-section/card-layout';
-import { MinimalProjectSection } from '@/components/sections/project-section/minimal-layout';
+import { ProjectGridIndex } from '@/components/primitives/ProjectGrid';
 
 const ProjectsPage = () => {
   return (
@@ -50,15 +49,15 @@ const ProjectsPage = () => {
 
         <Space size={'2'} />
 
-        <Separator decorative orientation={'horizontal'} />
+        <Separator decorative orientation={'horizontal'} css={{ backgroundColor: '$lime9' }} />
 
         <Space size={'2'} />
 
-        <MinimalProjectSection />
-
-        <Space size={'2'} />
-
-        <ProjectSectionWithCards />
+        <Section size={'3'}>
+          <Container size={'4'}>
+            <ProjectGridIndex />
+          </Container>
+        </Section>
 
         <Space size={'5'} />
 

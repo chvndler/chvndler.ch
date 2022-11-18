@@ -2,8 +2,8 @@ import { styled } from 'stitches.config';
 
 import { Meta } from '@/components/common/meta';
 import { Container, Section } from '@/components/ds';
-import { CoverGrid } from '@/components/layout/cover-grid';
 import { PageLayout } from '@/components/layout/page';
+import { ProjectGridIndex } from '@/components/primitives/ProjectGrid';
 import { PageHero } from '@/components/sections/page-hero';
 
 const TestingBox = styled('div', {
@@ -22,7 +22,7 @@ const TestPage = () => {
         <TestingBox>
           <Section size={'3'}>
             <Container size={'4'}>
-              <CoverGrid />
+              <ProjectGridIndex />
             </Container>
           </Section>
         </TestingBox>
