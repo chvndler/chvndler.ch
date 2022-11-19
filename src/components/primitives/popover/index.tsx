@@ -33,8 +33,8 @@ const StyledPopover = styled(PopoverPrimitive.Root, {
   padding: 0,
   margin: 20,
   overflow: 'hidden',
-  width: '100vw',
-  height: '100vh'
+  width: 'auto',
+  height: 'auto'
 });
 
 const StyledContent = styled(PopoverPrimitive.Content, {
@@ -47,8 +47,8 @@ const StyledContent = styled(PopoverPrimitive.Content, {
   margin: 0,
   marginTop: 10,
   overflow: 'hidden',
-  width: '100vw',
-  height: '100vh',
+  width: 'auto',
+  height: 'auto',
   backgroundColor: '$blur',
   backdropFilter: 'blur(20px)',
   WebkitBackdropFilter: 'blur(40px)',
