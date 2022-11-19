@@ -1,7 +1,7 @@
 import { Container, Section, Separator, Space, Text } from '@/components/ds';
 import { RelativeFooter } from '@/components/layout/app-footer/relative-footer';
 import { PageLayout } from '@/components/layout/page';
-import { ProjectGridIndex } from '@/components/primitives/ProjectGrid';
+import { ProjectDisplay } from '@/components/primitives/project-display';
 
 const ProjectsPage = () => {
   return (
@@ -17,7 +17,7 @@ const ProjectsPage = () => {
                 fontWeight: 'bold'
               }}
             >
-              projects
+              current projects
             </Text>
           </Container>
 
@@ -44,20 +44,30 @@ const ProjectsPage = () => {
               <br />
               EXPERIMENTS.
             </Text>
+
+            <Space size={'1'} />
+            <Text
+              css={{
+                fontSize: 12,
+                fontWeight: '500',
+                color: '$chxn3',
+                fontFamily: '"Lateral Extended Medium", sans-serif'
+              }}
+            >
+              SCROLL LEFT OR RIGHT TO SEE MORE.
+            </Text>
           </Container>
         </Section>
 
         <Space size={'2'} />
 
-        <Separator decorative orientation={'horizontal'} css={{ backgroundColor: '$lime9' }} />
+        <Separator decorative orientation={'horizontal'} css={{ backgroundColor: '$sage1' }} />
 
         <Space size={'2'} />
 
-        <Section size={'3'}>
-          <Container size={'4'}>
-            <ProjectGridIndex />
-          </Container>
-        </Section>
+        <Container size={'4'}>
+          <ProjectDisplay />
+        </Container>
 
         <Space size={'5'} />
 

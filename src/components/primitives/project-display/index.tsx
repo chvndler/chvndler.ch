@@ -1,71 +1,76 @@
-import { Carousel } from '@trendyol-js/react-carousel';
-import React from 'react';
+import { useKeenSlider } from 'keen-slider/react';
+import * as React from 'react';
 
-import { Box, Container, Section } from '@/components/ds';
+import { Section } from '@/components/ds';
 
-import { ProjectEntry } from './ProjectEntry';
+import { ProjectEntry } from './project.entry';
 
-export const ProjectCarousel = () => {
+/**
+ *
+ * @render - project grid component.
+ *
+ */
+
+export const ProjectDisplay = () => {
+  const [ref] = useKeenSlider<HTMLDivElement>({
+    loop: true,
+    mode: 'free-snap',
+    breakpoints: {
+      '(min-width: 520px)': {
+        slides: { perView: 2, spacing: 8 }
+      },
+      '(min-width: 1000px)': {
+        slides: { perView: 3, spacing: 8 }
+      }
+    },
+    slides: { perView: 1, spacing: 8 }
+  });
+
   return (
-    <>
-      <Box css={{ '@initial': { display: 'block' }, '@lg': { display: 'none' } }}>
-        <Section size={'3'} css={{ '@initial': { display: 'block' }, '@lg': { display: 'none' } }}>
-          <Container size={'4'}>
-            <Carousel show={3} slide={2} swipeOn={0.3} swiping={true} responsive>
-              <ProjectEntry
-                pRepository="https://github.com/chvndler"
-                pTitle="atlr.typesxript"
-                pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-              />
-              <ProjectEntry
-                pRepository="https://github.com/chvndler"
-                pTitle="atlr.icxns"
-                pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-              />
-              <ProjectEntry
-                pRepository="https://github.com/chvndler"
-                pTitle="@atlr/react"
-                pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-              />
-              <ProjectEntry
-                pRepository="https://github.com/chvndler"
-                pTitle="A4"
-                pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-              />
-              <ProjectEntry
-                pRepository="https://github.com/chvndler"
-                pTitle="A5"
-                pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-              />
-            </Carousel>
-          </Container>
-        </Section>
-      </Box>
+    <Section size={'4'}>
+      <div ref={ref} className="keen-slider">
+        <div className="keen-slider__slide number-slide1">
+          <ProjectEntry
+            pRepository="https://github.com/chvndler"
+            pTitle="Atlr® Typesxript"
+            pSummary="Opinionated and essential starting code for next.js, React, Atelier®, and Typescript."
+          />
+        </div>
 
-      <Box
-        css={{
-          display: 'none',
-          '@md': { display: 'block' },
-          '@sm': { display: 'block' }
-        }}
-      >
-        <Section size={'3'} css={{ overflow: 'hidden' }}>
-          <Container size={'4'} css={{ overflowX: 'hidden', paddingRight: 0 }}>
-            <Carousel show={1.2} slide={1} swipeOn={0.3} swiping={true} responsive>
-              <ProjectEntry
-                pRepository="https://github.com/chvndler"
-                pTitle="atlr.typesxript"
-                pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-              />
-              <ProjectEntry
-                pRepository="https://github.com/chvndler"
-                pTitle="atlr.typesxript"
-                pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-              />
-            </Carousel>
-          </Container>
-        </Section>
-      </Box>
-    </>
+        <div className="keen-slider__slide number-slide2">
+          <ProjectEntry
+            pRepository="https://github.com/chvndler"
+            pTitle="CDC®"
+            pSummary="This is the repository for the current site you are viewing, my pesonal muse."
+          />
+        </div>
+
+        <div className="keen-slider__slide number-slide3">
+          <ProjectEntry
+            pRepository="https://github.com/chvndler"
+            pTitle="Atelier® DS"
+            pSummary="An open-source UI Component Library built using Stitches x Radix-UI™."
+          />
+        </div>
+
+        <div className="keen-slider__slide number-slide4">
+          <ProjectEntry
+            pRepository="https://github.com/chvndler"
+            pTitle="@atlr/icxns"
+            pSummary="Not your basic icon set. An open-souce React Icon library, use them in your projects– or don't"
+          />
+        </div>
+
+        <div className="keen-slider__slide number-slide5">
+          <ProjectEntry
+            pRepository="https://github.com/chvndler"
+            pTitle="atlr.colr"
+            pSummary="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+          />
+        </div>
+      </div>
+    </Section>
   );
 };
+
+ProjectDisplay.displayName = 'CH.ProjectDisplay';

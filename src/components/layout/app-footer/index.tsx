@@ -1,6 +1,6 @@
 import { styled } from 'stitches.config';
 
-import { Text } from '@/components/ds';
+import { Flex, Text } from '@/components/ds';
 import CursorData from '@/components/primitives/cursor-data';
 import { ThemeButton } from '@/components/primitives/theme-button';
 
@@ -16,7 +16,7 @@ const StyledFooter = styled('footer', {
   justifyContent: 'space-between',
   width: '100vw',
   height: 'auto',
-  padding: 20,
+  padding: 15,
   backgroundColor: 'transparent',
   '@md': {
     flexDirection: 'column',
@@ -82,7 +82,7 @@ export const AppFooter = () => {
         >
           <Text
             css={{
-              color: '$chxn4',
+              color: '$sage11',
               fontFamily: '"Lateral Extended Regular", sans-serif',
               fontSize: 10,
               fontWeight: 400,
@@ -98,12 +98,11 @@ export const AppFooter = () => {
           <CursorData />
         </ContentBox>
 
-        {/* <!-- HOLD CENTER LINE FOR NOW -->
         <ContentBox alignment="center">
           <Flex css={{ flexDirection: 'row' }}>
             <Text
               css={{
-                color: '$sage12',
+                color: '$sage11',
                 fontFamily: '"Lateral Extended Medium", sans-serif',
                 fontSize: 10,
                 fontWeight: 500,
@@ -116,7 +115,6 @@ export const AppFooter = () => {
             </Text>
           </Flex>
         </ContentBox>
-            --> */}
 
         <ContentBox alignment="end" css={{}}>
           <ThemeButton />

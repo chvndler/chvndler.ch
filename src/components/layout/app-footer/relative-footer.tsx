@@ -15,7 +15,7 @@ const StyledFooter = styled('footer', {
   justifyContent: 'space-between',
   width: 'auto',
   height: 'auto',
-  padding: 20,
+  padding: 15,
   margin: 'auto',
   backgroundColor: 'transparent',
   color: '$chvn100',
@@ -83,7 +83,7 @@ export const RelativeFooter = () => {
         >
           <Text
             css={{
-              color: '$sage12',
+              color: '$sage11',
               fontFamily: '"Lateral Extended Regular", sans-serif',
               fontSize: 10,
               fontWeight: 400,
@@ -102,7 +102,7 @@ export const RelativeFooter = () => {
         <ContentBox alignment="center">
           <Text
             css={{
-              color: '$sage12',
+              color: '$sage11',
               fontFamily: '"Lateral Extended Medium", sans-serif',
               fontSize: 10,
               fontWeight: 500,

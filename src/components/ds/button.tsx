@@ -30,9 +30,12 @@ export const Button = styled('button', {
   variants: {
     size: {
       '1': {
+        borderRadius: 50,
+        fontSize: 'inherit',
         margin: 0,
-        borderRadius: 11,
-        height: '16px'
+        height: 22,
+        paddingLeft: 14,
+        paddingRight: 14
       },
       '2': {
         borderRadius: '8px',
@@ -85,17 +88,13 @@ export const Button = styled('button', {
         }
       },
       primary: {
-        fontSize: 'inherit',
-        paddingLeft: 8,
-        paddingRight: 8,
-        borderRadius: '50px',
-        backgroundColor: '$sage6',
+        backgroundColor: '$chxn4',
+        color: '$chxn1',
         backdropFilter: 'blur(40px) saturate(100%)',
         WebkitBackdropFilter: 'blur(40px) saturate(100%)',
-        boxShadow: `inset 0 0 0 1px $sage8`,
-        color: '$sage10',
+        boxShadow: `inset 0 0 2px 1px $sage8`,
         '&:hover': {
-          backgroundColor: '$sage7',
+          backgroundColor: '$chxn4A',
           boxShadow: `inset 0 0 0 1px $sage9`
         },
         '@hover': {

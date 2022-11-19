@@ -13,14 +13,14 @@ export const ThemeButton = () => {
       onClick={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}
       aria-label="Toggle Theme"
       css={{
-        fontFamily: '"Lateral Extended Medium", sans-serif',
-        fontWeight: 500,
-        fontSize: 10,
+        fontFamily: '"Lateral Extended Bold", sans-serif',
+        fontWeight: 'bold',
+        fontSize: 12,
         lineHeight: 'normal',
         transition: 'color 0.4s ease'
       }}
     >
-      THEME
+      theme
     </Button>
   );
 };
