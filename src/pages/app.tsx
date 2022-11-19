@@ -9,12 +9,12 @@ const AppPage = () => {
         <Canvas>
           <Text
             css={{
-              fontSize: 38,
+              fontSize: 40,
               fontFamily: '"Lateral Standard Bold", sans-serif',
               fontWeight: 'bold',
               textAlign: 'center',
               lineHeight: 'normal',
-              color: '$sage11',
+              color: '$chxn4',
               letterSpacing: '-0.05rem'
             }}
           >
@@ -22,11 +22,11 @@ const AppPage = () => {
           </Text>
           <Text
             css={{
-              fontSize: 16,
+              fontSize: 17,
               fontFamily: '"Lateral Standard Regular", sans-serif',
               fontWeight: 400,
               textAlign: 'center',
-              lineHeight: '12px',
+              lineHeight: '8px',
               color: '$sage11'
             }}
           >

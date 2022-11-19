@@ -1,8 +1,7 @@
 import { useKeenSlider } from 'keen-slider/react';
 import * as React from 'react';
 
-import { Section } from '@/components/ds';
-
+import { OffCanvas } from '../off-canvas';
 import { ProjectEntry } from './project.entry';
 
 /**
@@ -27,7 +26,7 @@ export const ProjectDisplay = () => {
   });
 
   return (
-    <Section size={'4'}>
+    <OffCanvas>
       <div ref={ref} className="keen-slider">
         <div className="keen-slider__slide number-slide1">
           <ProjectEntry
@@ -69,7 +68,7 @@ export const ProjectDisplay = () => {
           />
         </div>
       </div>
-    </Section>
+    </OffCanvas>
   );
 };
 

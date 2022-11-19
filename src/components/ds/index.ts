@@ -14,6 +14,7 @@ export * from './inline-link';
 export * from './logo-link';
 export * from './mono';
 export * from './paragraph';
+export * from './pass-link';
 export * from './section';
 export * from './separator';
 export * from './space';

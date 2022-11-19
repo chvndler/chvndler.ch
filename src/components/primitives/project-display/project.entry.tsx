@@ -1,8 +1,8 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 
 import { Space } from '@/components/ds';
-import projectImage from '@/public/images/posters/p1.png';
 
+// import projectImage from '@/public/images/posters/p1.png';
 import {
   ImageOverlay,
   PlacementBox,
@@ -32,6 +32,9 @@ export const ProjectEntry = ({ pTitle, pRepository, pSummary }: PProps) => {
       </PlacementBox>
 
       <ImageOverlay>
+        {/**
+         * <!-- @HOLD Image Component
+      
         <Image
           src={projectImage}
           alt={'Vector Pkg one'}
@@ -44,6 +47,7 @@ export const ProjectEntry = ({ pTitle, pRepository, pSummary }: PProps) => {
             borderRadius: 22
           }}
         />
+          --> */}
       </ImageOverlay>
     </ProjectCard>
   );

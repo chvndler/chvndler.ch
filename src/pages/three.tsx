@@ -1,4 +1,4 @@
-import { AlternateScene } from '@/components/primitives/three-models/AlternateScene';
+import { AlternateScene } from '@/components/primitives/three-models/IridescentScene';
 
 const ThreePage = () => {
   return (

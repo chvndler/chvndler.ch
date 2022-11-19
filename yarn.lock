@@ -696,22 +696,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-collection@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@radix-ui/react-collection@npm:1.0.0"
-  dependencies:
-    "@babel/runtime": ^7.13.10
-    "@radix-ui/react-compose-refs": 1.0.0
-    "@radix-ui/react-context": 1.0.0
-    "@radix-ui/react-primitive": 1.0.0
-    "@radix-ui/react-slot": 1.0.0
-  peerDependencies:
-    react: ^16.8 || ^17.0 || ^18.0
-    react-dom: ^16.8 || ^17.0 || ^18.0
-  checksum: 271683a45c35808ffc0566c56546a8846c54f2d1f64dd7b681b83f622343d2f5a6173abe3f1dbd0002045a18bc8730838e90ac928618199e937b55a76150d254
-  languageName: node
-  linkType: hard
-
 "@radix-ui/react-collection@npm:1.0.1":
   version: 1.0.1
   resolution: "@radix-ui/react-collection@npm:1.0.1"
@@ -947,32 +931,6 @@ __metadata:
     react: ^16.8 || ^17.0 || ^18.0
     react-dom: ^16.8 || ^17.0 || ^18.0
   checksum: dbe436bb29b9d3b6b2b7d60283c18bf1e42dfbe8402685a0cc446336343bb656cf9bfc39b957e7603e778cbd28affc7e96c62e437a2681d4dd8314f46002c468
-  languageName: node
-  linkType: hard
-
-"@radix-ui/react-navigation-menu@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@radix-ui/react-navigation-menu@npm:1.0.0"
-  dependencies:
-    "@babel/runtime": ^7.13.10
-    "@radix-ui/primitive": 1.0.0
-    "@radix-ui/react-collection": 1.0.0
-    "@radix-ui/react-compose-refs": 1.0.0
-    "@radix-ui/react-context": 1.0.0
-    "@radix-ui/react-direction": 1.0.0
-    "@radix-ui/react-dismissable-layer": 1.0.0
-    "@radix-ui/react-id": 1.0.0
-    "@radix-ui/react-presence": 1.0.0
-    "@radix-ui/react-primitive": 1.0.0
-    "@radix-ui/react-use-callback-ref": 1.0.0
-    "@radix-ui/react-use-controllable-state": 1.0.0
-    "@radix-ui/react-use-layout-effect": 1.0.0
-    "@radix-ui/react-use-previous": 1.0.0
-    "@radix-ui/react-visually-hidden": 1.0.0
-  peerDependencies:
-    react: ^16.8 || ^17.0 || ^18.0
-    react-dom: ^16.8 || ^17.0 || ^18.0
-  checksum: 7bceb17ba58559e30c3968e3ce3709511d1905a9c28ee0a56802e2c844dd8ddac93592a379390fe969c02dc059fbad21070d0f9d613f8249c7e951d5d4fd4b48
   languageName: node
   linkType: hard
 
@@ -1269,19 +1227,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-visually-hidden@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@radix-ui/react-visually-hidden@npm:1.0.0"
-  dependencies:
-    "@babel/runtime": ^7.13.10
-    "@radix-ui/react-primitive": 1.0.0
-  peerDependencies:
-    react: ^16.8 || ^17.0 || ^18.0
-    react-dom: ^16.8 || ^17.0 || ^18.0
-  checksum: af10e54db17d208877b873f110ad071640038e17b4431854008d257ae9794650b0cd415b04c8beec0c0d00a1b48087c4156f0efa9eda62f4338f63ec87592806
-  languageName: node
-  linkType: hard
-
 "@radix-ui/rect@npm:1.0.0":
   version: 1.0.0
   resolution: "@radix-ui/rect@npm:1.0.0"
@@ -1513,17 +1458,6 @@ __metadata:
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
   checksum: ad87447820dd3f24825d2d947ebc03072b20a42bfc96cbafec16bff8bbda6c1a81fcb0be56d5b21968560c5359a0af4038a68ba150c3e1694fe4c109a063bed8
-  languageName: node
-  linkType: hard
-
-"@trendyol-js/react-carousel@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@trendyol-js/react-carousel@npm:3.0.0"
-  dependencies:
-    react: ^16.13.1
-  peerDependencies:
-    react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 5e21caf6a5a25d007a1b1e914cc17900479b74a7444b44e94ed819dbc5e868dad3676482831c07641f20a7f05badbf249256bcd76a8f392be134fa6924be6bcc
   languageName: node
   linkType: hard
 
@@ -2468,7 +2402,6 @@ __metadata:
     "@radix-ui/react-context-menu": 2.0.1
     "@radix-ui/react-dropdown-menu": 2.0.1
     "@radix-ui/react-icons": ^1.1.1
-    "@radix-ui/react-navigation-menu": ^1.0.0
     "@radix-ui/react-polymorphic": ^0.0.14
     "@radix-ui/react-popover": 1.0.2
     "@radix-ui/react-separator": ^1.0.1
@@ -2476,7 +2409,6 @@ __metadata:
     "@react-three/drei": ^9.38.1
     "@react-three/fiber": ^8.8.10
     "@stitches/react": ^1.2.8
-    "@trendyol-js/react-carousel": ^3.0.0
     "@types/css-font-loading-module": 0.0.7
     "@types/glob": ^8.0.0
     "@types/mousetrap": 1.6.11
@@ -2516,7 +2448,6 @@ __metadata:
     next-themes: ^0.2.1
     next-transpile-modules: 10
     nextjs-progressbar: ^0.0.16
-    ogl: ^0.0.102
     prettier: 2.7.1
     react: ^18.2.0
     react-device-detect: ^2.2.2
@@ -2538,8 +2469,6 @@ __metadata:
     three: ^0.146.0
     three-stdlib: ^2.17.3
     typescript: ^4.7.4
-    use-3d-effect: ^1.1.0
-    vanilla-tilt: ^1.7.3
     zustand: 4.1.4
   languageName: unknown
   linkType: soft
@@ -5504,13 +5433,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ogl@npm:^0.0.102":
-  version: 0.0.102
-  resolution: "ogl@npm:0.0.102"
-  checksum: 624a332f2f8898c0871e0b55cbf95bb8dd2877a9fdd73417336ee908ed7cde1a5ec47f68d3233fcf27265c2ea9b51adeb49cc63007541f4f92aed8968fa382d1
-  languageName: node
-  linkType: hard
-
 "once@npm:^1.3.0":
   version: 1.4.0
   resolution: "once@npm:1.4.0"
@@ -5875,7 +5797,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.0, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.0, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -6141,17 +6063,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^16.13.1":
-  version: 16.14.0
-  resolution: "react@npm:16.14.0"
-  dependencies:
-    loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-    prop-types: ^15.6.2
-  checksum: 8484f3ecb13414526f2a7412190575fc134da785c02695eb92bb6028c930bfe1c238d7be2a125088fec663cc7cda0a3623373c46807cf2c281f49c34b79881ac
-  languageName: node
-  linkType: hard
-
 "react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
@@ -6271,13 +6182,6 @@ __metadata:
   version: 2.0.2
   resolution: "require-from-string@npm:2.0.2"
   checksum: a03ef6895445f33a4015300c426699bc66b2b044ba7b670aa238610381b56d3f07c686251740d575e22f4c87531ba662d06937508f0f3c0f1ddc04db3130560b
-  languageName: node
-  linkType: hard
-
-"resize-observer-polyfill@npm:^1.5.1":
-  version: 1.5.1
-  resolution: "resize-observer-polyfill@npm:1.5.1"
-  checksum: 57e7f79489867b00ba43c9c051524a5c8f162a61d5547e99333549afc23e15c44fd43f2f318ea0261ea98c0eb3158cca261e6f48d66e1ed1cd1f340a43977094
   languageName: node
   linkType: hard
 
@@ -7479,18 +7383,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-3d-effect@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "use-3d-effect@npm:1.1.0"
-  dependencies:
-    resize-observer-polyfill: ^1.5.1
-  peerDependencies:
-    react: ^16.8.0
-    react-spring: ^8.0.14
-  checksum: cc3ec726dfdea0a3e12ba4e2b06ae4b2033b982e918e12079b9f9b2c1e310f9748d3fe97e3f39c9d86bf98fd1d417126527c03c0503a2168ad484616bb0c2f96
-  languageName: node
-  linkType: hard
-
 "use-callback-ref@npm:^1.3.0":
   version: 1.3.0
   resolution: "use-callback-ref@npm:1.3.0"
@@ -7571,13 +7463,6 @@ __metadata:
     spdx-correct: ^3.0.0
     spdx-expression-parse: ^3.0.0
   checksum: 35703ac889d419cf2aceef63daeadbe4e77227c39ab6287eeb6c1b36a746b364f50ba22e88591f5d017bc54685d8137bc2d328d0a896e4d3fd22093c0f32a9ad
-  languageName: node
-  linkType: hard
-
-"vanilla-tilt@npm:^1.7.3":
-  version: 1.7.3
-  resolution: "vanilla-tilt@npm:1.7.3"
-  checksum: d63381d85b63b9a68c5aa14994ae6846e8ef3ba7fd8aa0e64f5e654af5219bf107ca160c65ed254ee481f7dae957abe4c7751e7770d9eaf2f11b30f5d19bde09
   languageName: node
   linkType: hard
 

@@ -32,8 +32,6 @@ const Value = () => {
         fontWeight: 500,
         lineHeight: 'auto',
         letterSpacing: '0.05rem'
-        // transformOrigin: '0',
-        // transform: 'rotate(-90deg)'
       }}
     >
       {display}
@@ -46,10 +44,6 @@ export const CursorData = () => {
     <Box
       css={{
         position: 'relative',
-        // position: 'absolute',
-        // top: 0,
-        //bottom: 0,
-        //left: 24,
         padding: 0,
         textAlign: 'center'
       }}

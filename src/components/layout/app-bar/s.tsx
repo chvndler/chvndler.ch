@@ -26,11 +26,11 @@ const StyledBar = styled('div', {
   width: '100%',
   borderRadius: 16,
   backgroundColor: 'transparent',
-  backdropFilter: 'blur(40px) saturate(100%)',
-  WebkitBackdropFilter: 'blur(40px) saturate(100%)',
+  backdropFilter: 'blur(20px) saturate(180%)',
+  WebkitBackdropFilter: 'blur(20px) saturate(180%)',
   lineHeight: '23px',
   height: 48,
-  border: '1px solid $sage5'
+  border: '1px solid $sageA4'
   // border: '1px solid transparent'
 });
 

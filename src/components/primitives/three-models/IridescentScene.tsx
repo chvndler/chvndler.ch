@@ -3,13 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import React, { useRef } from 'react';
 import { styled } from 'stitches.config';
 
-import { AppBar } from '@/components/layout/app-bar';
-
-// import { Loader } from '@/components/primitives/loader';
-// import { AltSceneModel } from './alt-scene';
-import { IridescentLogo } from './AltScene';
-// import { Controls } from './controls';
-// import { Loader } from './loader';
+import { IridescentLogo } from './iridescent-model';
 
 const AppBox = styled('div', {
   zIndex: 3,
@@ -32,8 +26,6 @@ export const AlternateScene = () => {
 
   return (
     <>
-      <AppBar />
-
       {/* <!-- Begin three.js module --> */}
       <AppBox>
         <Canvas shadows dpr={[1, 2]} camera={{ fov: 90 }}>

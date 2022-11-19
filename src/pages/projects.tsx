@@ -11,13 +11,24 @@ const ProjectsPage = () => {
           <Container size={'4'}>
             <Text
               css={{
-                color: '$chxn4',
-                fontSize: 18,
+                color: '$chxn9',
+                fontSize: 22,
                 fontFamily: '"Lateral Extended Bold", sans-serif',
                 fontWeight: 'bold'
               }}
             >
-              current projects
+              projects.
+            </Text>
+            <Text
+              css={{
+                textTransform: 'lowercase',
+                fontSize: 14,
+                fontWeight: 400,
+                color: '$chxn3',
+                fontFamily: '"Lateral Extended Medium", sans-serif'
+              }}
+            >
+              SCROLL LEFT ( OR ) RIGHT view.
             </Text>
           </Container>
 
@@ -43,18 +54,6 @@ const ProjectsPage = () => {
               CURRENT PROJECTS AND
               <br />
               EXPERIMENTS.
-            </Text>
-
-            <Space size={'1'} />
-            <Text
-              css={{
-                fontSize: 12,
-                fontWeight: '500',
-                color: '$chxn3',
-                fontFamily: '"Lateral Extended Medium", sans-serif'
-              }}
-            >
-              SCROLL LEFT OR RIGHT TO SEE MORE.
             </Text>
           </Container>
         </Section>

@@ -3,6 +3,7 @@ import { styled } from 'stitches.config';
 import { Box, Button, Card } from '@/components/ds';
 
 const CardStyles = styled(Card, {
+  transition: 'all 0.3s ease-in-out',
   zIndex: 1,
   display: 'flex',
   flexDirection: 'column',
@@ -11,11 +12,10 @@ const CardStyles = styled(Card, {
   minHeight: 320,
   maxHeight: 320,
   height: '100%',
-  borderRadius: 22,
+  borderRadius: 24,
   margin: 'auto',
   alignItems: 'left',
-  backgroundColor: '$sage2',
-
+  backgroundColor: '$mauve2',
   /**
    *
    * @sm
@@ -29,12 +29,14 @@ const CardStyles = styled(Card, {
   },
 
   '&:hover': {
+    transition: 'all 0.3s ease-in-out',
     cursor: 'grab',
-    boxShadow: `inset 0 0 0 1px $colors$sage8`
+    boxShadow: `inset 0 0 3px 1px $colors$mauveA8`
+    // borderRadius: 24
   },
 
   '&::before': {
-    borderRadius: 22,
+    borderRadius: 24,
     boxSizing: 'border-box',
     content: '""',
     position: 'absolute',
@@ -42,7 +44,7 @@ const CardStyles = styled(Card, {
     right: 0,
     bottom: 0,
     left: 0,
-    boxShadow: `inset 0 0 0 1px $colors$sage8`,
+    boxShadow: `inset 0 0 0px 2px $colors$mauveA8`,
     pointerEvents: 'none'
   }
 });
@@ -85,21 +87,17 @@ const ButtonStyles = styled('button', Button, {
 const Overlay = styled('div', {
   transition: 'all 0.3s ease-in-out',
   zIndex: 4,
-  backgroundColor: '$sageA2',
-  opacity: '0.05',
+  backgroundColor: '$slateA2',
+  opacity: '0.3',
   position: 'relative',
-  // top: 0,
-  // right: 0,
-  // bottom: 0,
-  // left: 0,
   padding: 0,
   margin: 0,
   width: '100%',
   height: '100%',
-  borderRadius: 22,
+  borderRadius: 24,
 
   '&:hover': {
-    opacity: '0.3'
+    opacity: '0.6'
   }
 });
 

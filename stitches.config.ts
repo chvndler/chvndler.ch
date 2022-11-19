@@ -75,12 +75,22 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       chxn10: '#a288a6',
       chxn11: '#93827f',
       chxn12: '#222222',
-
       tartOrange: '#ff3333',
+      lime: 'lime',
+
+      /**
+       * @socialmedia colors...
+       */
+      ig: '#ff3333',
+      insta: '#ff3474',
       maxBlue: '#5e7ce2',
       twitter: '#1DA1F2',
       github: '#6cc644',
-      githubAlt: '#6e5494'
+      githubAlt: '#6e5494',
+      arena: '#484349',
+      linkedin: '#0077B5',
+      readcv: '#8A918E',
+      fb: '#4267B2'
     },
     fonts: {
       untitled: '"Inter", -apple-system, system-ui, sans-serif',

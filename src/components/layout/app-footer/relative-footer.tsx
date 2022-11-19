@@ -85,7 +85,7 @@ export const RelativeFooter = () => {
             css={{
               color: '$sage11',
               fontFamily: '"Lateral Extended Regular", sans-serif',
-              fontSize: 10,
+              fontSize: 11,
               fontWeight: 400,
               lineHeight: 'normal',
               letterSpacing: 'normal',
@@ -104,7 +104,7 @@ export const RelativeFooter = () => {
             css={{
               color: '$sage11',
               fontFamily: '"Lateral Extended Medium", sans-serif',
-              fontSize: 10,
+              fontSize: 11,
               fontWeight: 500,
               lineHeight: 'normal',
               textAlign: 'center',

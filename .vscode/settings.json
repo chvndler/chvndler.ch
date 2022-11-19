@@ -8,10 +8,10 @@
 {
   "git.ignoreLimitWarning": true,
   "files.autoSave": "onWindowChange",
-  "editor.fontSize": 10,
+  "editor.fontSize": 11,
   "editor.fontFamily": "Jetbrains Mono, monospace",
   "editor.tabSize": 2,
-  "workbench.colorTheme": "Copilot Theme",
+  "workbench.colorTheme": "Gatito Theme",
   "editor.formatOnPaste": true,
   "window.zoomLevel": 0.6,
   "vsicons.dontShowNewVersionMessage": true,
