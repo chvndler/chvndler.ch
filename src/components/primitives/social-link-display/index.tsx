@@ -1,4 +1,5 @@
-import { Container, Flex, PassLink, Section, Space } from '@/components/ds';
+import { Container, Flex, IcxnButton, PassLink, Section, Space } from '@/components/ds';
+import { Icxn } from '@/components/icons/icxn';
 
 import { SocialLink } from './link.styles';
 
@@ -33,6 +34,8 @@ export const SocialLinkDisplay = () => {
           <PassLink href={'https://read.cv/chvn/'}>
             <SocialLink readcv>READ.CV</SocialLink>
           </PassLink>
+
+          <IcxnButton icon={<Icxn variant={'blob'} />}>Hi</IcxnButton>
         </Flex>
       </Container>
       <Space size={'1'} />
