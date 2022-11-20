@@ -1,8 +1,7 @@
 export * from './badge';
 export * from './blur-canvas';
 export * from './box';
-export { Button } from './button';
-export { IcxnButton } from './button';
+export * from './button';
 export * from './canvas';
 export * from './card';
 export * from './container';
