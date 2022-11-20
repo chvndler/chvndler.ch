@@ -28,7 +28,7 @@ const slideLeftAndFade = keyframes({
 });
 
 const StyledPopover = styled(PopoverPrimitive.Root, {
-  zIndex: '99999',
+  zIndex: '',
   borderRadius: 0,
   padding: 0,
   margin: 20,
@@ -38,14 +38,17 @@ const StyledPopover = styled(PopoverPrimitive.Root, {
 });
 
 const StyledContent = styled(PopoverPrimitive.Content, {
-  zIndex: '99999',
-  borderRadius: 0,
+  zIndex: 99999999999999,
+  position: 'fixed',
+  left: 10,
+  right: 10,
+  borderRadius: 28,
   paddingTop: 40,
   paddingBottom: 40,
-  paddingLeft: 18,
-  paddingRight: 18,
+  paddingLeft: 32,
+  paddingRight: 32,
   margin: 0,
-  marginTop: 10,
+  marginTop: 0,
   overflow: 'hidden',
   width: 'auto',
   height: 'auto',
@@ -93,9 +96,14 @@ const StyledClose = styled(PopoverPrimitive.Close, {
   }
 });
 
+const StyledTrigger = styled(PopoverPrimitive.Trigger, {
+  all: 'unset',
+  zIndex: 99
+});
+
 // Exports
 export const Popover = StyledPopover;
-export const PopoverTrigger = PopoverPrimitive.Trigger;
+export const PopoverTrigger = StyledTrigger;
 export const PopoverContent = Content;
 export const PopoverClose = StyledClose;
 
@@ -120,13 +128,13 @@ const ItemItem = styled('div', {
 export const PopoverComponent = () => (
   <Popover>
     <PopoverTrigger asChild>
-      <Box css={{ padding: 0 }}>
+      <Box css={{ padding: 0, position: 'fixed', top: 70, left: 0, right: 0, width: '100vw' }}>
         <Text
           css={{
-            fontFamily: '$telegraf',
+            fontFamily: '"Lateral Extended Bold", sans-serif',
             fontSize: 14,
             fontWeight: 'bold',
-            textAlign: 'right',
+            textAlign: 'center',
             color: '$chxn4',
             '&:hover': {
               color: '$chxn6',

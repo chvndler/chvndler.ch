@@ -8,7 +8,7 @@ const ProjectsPage = () => {
     <>
       <PageLayout>
         <Section size={'4'}>
-          <Container size={'4'}>
+          <Container size={'3'}>
             <Text
               css={{
                 color: '$chxn9',
@@ -33,19 +33,20 @@ const ProjectsPage = () => {
           </Container>
 
           <Space size={'2'} />
-          <Container size={'4'}>
+          <Container size={'3'}>
             <Text
               css={{
                 color: '$sage10',
                 fontFamily: '"Lateral Standard Bold", sans-serif',
-                fontSize: 72,
+                fontSize: 52,
                 fontWeight: 'bold',
                 textAlign: 'left',
                 letterSpacing: '-0.08rem',
-                lineHeight: '70px',
+                lineHeight: '50px',
                 '@md': {
-                  fontSize: 42,
-                  lineHeight: '40px'
+                  fontSize: 38,
+                  lineHeight: '36px',
+                  letterSpacing: '0rem'
                 }
               }}
             >

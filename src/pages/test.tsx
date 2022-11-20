@@ -1,32 +1,31 @@
-import { Container, Section, Text } from '@/components/ds';
-import { AppFooter } from '@/components/layout/app-footer';
-import { PageLayout } from '@/components/layout/page';
-import { PopoverComponent } from '@/components/primitives/popover';
+import { Box, Container, Text } from '@/components/ds';
+import { AppBar } from '@/components/layout/app-bar';
+import { MenuOnHoverComponent } from '@/components/primitives/popover/menu-on-hover';
+import ReactScrollArea from '@/components/primitives/scroll-area';
 
 const TestPage = () => {
   return (
     <>
-      <PageLayout>
-        <Section size={'4'}>
-          <Container size={'4'}>
-            <Text
-              css={{
-                color: '$chxn4',
-                fontSize: 18,
-                fontFamily: '"Lateral Extended Bold", sans-serif',
-                fontWeight: 'bold'
-              }}
-            >
-              developing
-            </Text>
-          </Container>
-
-          <Container size={'4'}>
-            <PopoverComponent />
-          </Container>
-        </Section>
-      </PageLayout>
-      <AppFooter />
+      <AppBar />
+      <MenuOnHoverComponent />
+      <Box css={{ zIndex: 9999, position: 'fixed', top: 0, left: 0, padding: 20 }}>
+        <Text
+          css={{
+            color: '$chxn9',
+            fontSize: 82,
+            fontFamily: '"Lateral Extended Bold", sans-serif',
+            fontWeight: 'bold',
+            lineHeight: '80px'
+          }}
+        >
+          ABOUT
+          <br />
+          ME.
+        </Text>
+      </Box>
+      <Container size={'1'} css={{ minHeight: '100vh', paddingTop: 200 }}>
+        <ReactScrollArea />
+      </Container>
     </>
   );
 };
