@@ -19,7 +19,7 @@ const ReactScrollArea = () => (
           RESUME.
         </Text>
         <Space size={'1'} />
-        <Text css={{ fontSize: 17, fontFamily: `"Scto Grotesk A", sans-serif` }}>
+        <Text css={{ fontSize: 17, fontFamily: '$latRegStd', fontWeight: 400 }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Integer quis auctor elit sed vulputate mi sit. Amet purus gravida quis blandit. Orci nulla
           pellentesque dignissim enim sit amet venenatis urna. Egestas purus viverra accumsan in nisl nisi scelerisque
@@ -45,7 +45,7 @@ const ReactScrollArea = () => (
           ABOUT.
         </Text>
         <Space size={'1'} />
-        <Text css={{ fontSize: 17, fontFamily: `"Scto Grotesk A", sans-serif` }}>
+        <Text css={{ fontSize: 17, fontFamily: '$latRegStd', fontWeight: 400 }}>
           Et malesuada fames ac turpis. Tortor vitae purus faucibus ornare suspendisse. Volutpat diam ut venenatis
           tellus in. Enim blandit volutpat maecenas volutpat blandit aliquam etiam. Aliquam purus sit amet luctus
           venenatis lectus magna fringilla urna. Auctor elit sed vulputate mi sit amet mauris. Vel eros donec ac odio

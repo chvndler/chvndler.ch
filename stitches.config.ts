@@ -95,11 +95,14 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     fonts: {
       untitled: '"Inter", -apple-system, system-ui, sans-serif',
       inter: '"Inter", sans-serif',
-      rightGrotesk: '"PP Right Grotesk", sans-serif',
-      rightGroteskWide: '"PP Right Grotesk Wide", sans-serif', // weight: 470, 900
-      rightGroteskTextWide: '"PP Right Grotesk Text Wide", sans-serif',
       neueMontreal: '"PP Neue Montreal", sans-serif',
-      lateralStandard: '"Lateral Standard Regular", sans-serif'
+      lateralStandard: '"Lateral Standard Regular", sans-serif',
+      latBoldStd: '"Lateral Standard Bold", sans-serif',
+      latMedStd: '"Lateral Standard Medium", sans-serif',
+      latRegStd: '"Lateral Standard Regular", sans-serif',
+      latRegExtd: '"Lateral Extended Regular", sans-serif',
+      latMedExtd: '"Lateral Extended Medium", sans-serif',
+      latBoldExtd: '"Lateral Extended Bold", sans-serif'
     },
     fontSizes: {
       1: '12px',

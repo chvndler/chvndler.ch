@@ -9,15 +9,24 @@
   "git.ignoreLimitWarning": true,
   "files.autoSave": "onWindowChange",
   "editor.fontSize": 11,
-  "editor.fontFamily": "Jetbrains Mono, monospace",
+  "editor.fontFamily": "Uber Move Mono, monospace",
   "editor.tabSize": 2,
-  "workbench.colorTheme": "Gatito Theme",
+  /**
+   * # Themes:
+   *
+   * Jewel Contrast (rainglow)
+   * Isotope Contrast (rainglow)
+   * Copilot Theme
+   * Carbonight (rainglow)
+   *
+   */
+  "workbench.colorTheme": "Jewel Contrast (rainglow)",
   "editor.formatOnPaste": true,
   "window.zoomLevel": 0.6,
   "vsicons.dontShowNewVersionMessage": true,
   "editor.inlineSuggest.enabled": true,
   "editor.fontLigatures": true,
-  "editor.fontWeight": "400",
+  "editor.fontWeight": "500",
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "github.copilot.enable": {

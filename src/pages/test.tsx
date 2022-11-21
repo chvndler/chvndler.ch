@@ -1,12 +1,10 @@
 import { Box, Container, Text } from '@/components/ds';
-import { AppBar } from '@/components/layout/app-bar';
 import { MenuOnHoverComponent } from '@/components/primitives/popover/menu-on-hover';
 import ReactScrollArea from '@/components/primitives/scroll-area';
 
 const TestPage = () => {
   return (
     <>
-      <AppBar />
       <MenuOnHoverComponent />
       <Box css={{ zIndex: 9999, position: 'fixed', top: 0, left: 0, padding: 20 }}>
         <Text
