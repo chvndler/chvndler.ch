@@ -353,6 +353,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@github/template-parts@npm:^0.5.3":
+  version: 0.5.3
+  resolution: "@github/template-parts@npm:0.5.3"
+  checksum: 14047b4473a0f72205730ac798a80ef83e7663f373f097e3d40930821e8a4a0cf6b75f8e772a791073654454ead1920c0e0e9e5e429a6552e9ff712f0ed65ebb
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.11.6":
   version: 0.11.6
   resolution: "@humanwhocodes/config-array@npm:0.11.6"
@@ -424,6 +431,57 @@ __metadata:
   version: 3.4.0
   resolution: "@juggle/resize-observer@npm:3.4.0"
   checksum: 2505028c05cc2e17639fcad06218b1c4b60f932a4ebb4b41ab546ef8c157031ae377e3f560903801f6d01706dbefd4943b6c4704bf19ed86dfa1c62f1473a570
+  languageName: node
+  linkType: hard
+
+"@mux/mux-player-react@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@mux/mux-player-react@npm:1.3.0"
+  dependencies:
+    "@mux/mux-player": 1.3.0
+    "@mux/playback-core": 0.13.0
+    prop-types: ^15.7.2
+  peerDependencies:
+    "@types/react": ^17.0.0 || ^18
+    react: ^17.0.2 || ^18
+    react-dom: ^17.0.2 || ^18
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-dom":
+      optional: true
+  checksum: 72e9399c587bbe598ba0f23a65dc1b450b071a130737e93ecbf747059994bb0ecf8ff96c066f8d24de5e2041a97ea06f827fe7d06b59afbcf408dfa2dab8cf8f
+  languageName: node
+  linkType: hard
+
+"@mux/mux-player@npm:1.3.0":
+  version: 1.3.0
+  resolution: "@mux/mux-player@npm:1.3.0"
+  dependencies:
+    "@github/template-parts": ^0.5.3
+    "@mux/mux-video": 0.10.0
+    "@mux/playback-core": 0.13.0
+    media-chrome: 0.15.1
+  checksum: 75e4b79ac4c6b06f6059ca6949bd2e416b47f57f1f1aca658ec0e1eca8293b088d71a1cbfda2583cb19f62e393bb0bae6c2e23ce55ef6829df2fe6eedaf1e516
+  languageName: node
+  linkType: hard
+
+"@mux/mux-video@npm:0.10.0":
+  version: 0.10.0
+  resolution: "@mux/mux-video@npm:0.10.0"
+  dependencies:
+    "@mux/playback-core": 0.13.0
+  checksum: 2a1161da3b30a3fbb2ef18a210b88cc4be9ad898ebde19405a55af4b5048d2037652651a381c0a650e85145ba8e7b870eb15c5a03f776d55e83ace07ce31e6a6
+  languageName: node
+  linkType: hard
+
+"@mux/playback-core@npm:0.13.0":
+  version: 0.13.0
+  resolution: "@mux/playback-core@npm:0.13.0"
+  dependencies:
+    hls.js: 1.2.3
+    mux-embed: ^4.14.0
+  checksum: de83fd68055bc51ac32661cae495c12dcecb3323cef55af5fcf809a77e6cb7213f2a2daf555ec1c74708ac72a65cdd50a7cbda5c03d2f9542cfe2dcb66e2bb56
   languageName: node
   linkType: hard
 
@@ -2487,6 +2545,7 @@ __metadata:
   resolution: "chvndler.ch@workspace:."
   dependencies:
     "@juggle/resize-observer": ^3.4.0
+    "@mux/mux-player-react": ^1.3.0
     "@next/bundle-analyzer": 13
     "@next/eslint-plugin-next": 13
     "@next/font": ^13.0.0
@@ -2531,7 +2590,7 @@ __metadata:
     eslint-plugin-react-hooks: 4.6.0
     eslint-plugin-simple-import-sort: 8
     gsap: 3.11.3
-    hls.js: 1.2.7
+    hls.js: ^1.2.7
     husky: 8
     keen-slider: ^6.8.3
     lint-staged: 13
@@ -2539,6 +2598,7 @@ __metadata:
     lodash.debounce: ^4.0.8
     minimatch: 5
     mousetrap: 1.6.5
+    mux-embed: ^4.15.0
     next: 13
     next-real-viewport: ^0.7.2
     next-sitemap: 3
@@ -4082,7 +4142,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hls.js@npm:1.2.7":
+"hls.js@npm:1.2.3":
+  version: 1.2.3
+  resolution: "hls.js@npm:1.2.3"
+  checksum: 9d07957d94e84b8f187aa209ffb0e6f65302178c6fdebc6effd63644d8cf2e304b2232109a30336cfee02c908aba86a402fe5d5dfa6487aca3387fd5748cccfa
+  languageName: node
+  linkType: hard
+
+"hls.js@npm:^1.2.7":
   version: 1.2.7
   resolution: "hls.js@npm:1.2.7"
   checksum: b36221f523a7c530b399227f6f1708c2c57b4ea4936fdf5bb48230388b3aa5fe0284b35b1d9fea110d61b5a090516a37e49a8d5000fe3831e3e250610ac76957
@@ -4966,6 +5033,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"media-chrome@npm:0.15.1":
+  version: 0.15.1
+  resolution: "media-chrome@npm:0.15.1"
+  checksum: 1a0a691cecc8a4af12e7a165d8c7252bfd88cfcecefc2a5d0608a9a2bc34d85056c86af3ecb652b7373213ffe8f921413790e74e14541329efc3d02e8b40804b
+  languageName: node
+  linkType: hard
+
 "meow@npm:^9.0.0":
   version: 9.0.0
   resolution: "meow@npm:9.0.0"
@@ -5215,6 +5289,13 @@ __metadata:
   version: 2.1.3
   resolution: "ms@npm:2.1.3"
   checksum: aa92de608021b242401676e35cfa5aa42dd70cbdc082b916da7fb925c542173e36bce97ea3e804923fe92c0ad991434e4a38327e15a1b5b5f945d66df615ae6d
+  languageName: node
+  linkType: hard
+
+"mux-embed@npm:^4.14.0, mux-embed@npm:^4.15.0":
+  version: 4.15.0
+  resolution: "mux-embed@npm:4.15.0"
+  checksum: 428067dbd03837319ba8c77020583fd1a8687cf80c814e06e634dfc68021b9aa7a411a9888bafaa7014a35a3983a787feca6cb36e2a0903d5f87e77844ac0ad5
   languageName: node
   linkType: hard
 

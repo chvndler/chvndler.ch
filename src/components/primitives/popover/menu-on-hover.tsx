@@ -17,6 +17,11 @@ import {
   Viewport
 } from './menu-on-hover.styles';
 
+const twitter = 'https://twitter.com/chvndlerch';
+const github = 'https://github.com/chvndler';
+const are_na = 'https://www.are.na/chvndler-ch';
+const read_cv = 'https://read.cv/chvn';
+
 export const MenuOnHoverComponent = () => {
   return (
     <NavMenuRoot>
@@ -32,6 +37,7 @@ export const MenuOnHoverComponent = () => {
               <NavLink href="/projects">Project</NavLink>
               <NavLink href="/film">Video Production</NavLink>
               <NavLink href="/gfx">GFX</NavLink>
+              <NavLink href="/three">three.js</NavLink>
             </NavMenuInner>
           </NavMenuContent>
         </NavigationMenu.Item>
@@ -48,10 +54,18 @@ export const MenuOnHoverComponent = () => {
           </NavMenuTrigger>
           <NavMenuContent>
             <NavMenuInner>
-              <NavLink href="/projects">Twitter</NavLink>
-              <NavLink href="/projects">GitHub</NavLink>
-              <NavLink href="/projects">Are.na</NavLink>
-              <NavLink href="/projects">Read.cv</NavLink>
+              <NavLink href={twitter} target={'_blank'} rel={'norefferer noopener'}>
+                Twitter
+              </NavLink>
+              <NavLink href={github} target={'_blank'} rel={'norefferer noopener'}>
+                GitHub
+              </NavLink>
+              <NavLink href={are_na} target={'_blank'} rel={'norefferer noopener'}>
+                Are.na
+              </NavLink>
+              <NavLink href={read_cv} target={'_blank'} rel={'norefferer noopener'}>
+                Read.cv
+              </NavLink>
             </NavMenuInner>
           </NavMenuContent>
         </NavigationMenu.Item>

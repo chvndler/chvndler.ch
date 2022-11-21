@@ -211,3 +211,30 @@ html.fonts-loaded body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+.mux-player {
+    width: 100%;
+    margin: 0;
+    /* Hide all controls at once */
+    --controls: none;
+    /* Target all sections by excluding the section prefix */
+    --play-button: none;
+    --seek-live-button: none;
+    --seek-backward-button: none;
+    --seek-forward-button: none;
+    --mute-button: none;
+    --captions-button: none;
+    --airplay-button: none;
+    --pip-button: none;
+    --fullscreen-button: none;
+    --cast-button: none;
+    --playback-rate-button: none;
+    --volume-range: none;
+    --time-range: none;
+    --time-display: none;
+    --duration-display: none;
+    /* Target a specific section by prefixing the CSS var with (top|center|bottom) */
+    --center-controls: none;
+    --bottom-play-button: none;
+    --controls-backdrop-color: rgb(0 0 0 / 0%);
+}
