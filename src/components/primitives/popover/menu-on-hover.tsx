@@ -33,10 +33,10 @@ export const MenuOnHoverComponent = () => {
 
           <NavMenuContent>
             <NavMenuInner>
-              <NavLink href="/about">About</NavLink>
-              <NavLink href="/projects">Project</NavLink>
-              <NavLink href="/film">Video Production</NavLink>
-              <NavLink href="/gfx">GFX</NavLink>
+              <NavLink href="/projects">web</NavLink>
+              <NavLink href="/projects/film">film</NavLink>
+              <NavLink href="/film">two</NavLink>
+              <NavLink href="/gfx">graphics</NavLink>
               <NavLink href="/three">three.js</NavLink>
             </NavMenuInner>
           </NavMenuContent>
@@ -55,16 +55,16 @@ export const MenuOnHoverComponent = () => {
           <NavMenuContent>
             <NavMenuInner>
               <NavLink href={twitter} target={'_blank'} rel={'norefferer noopener'}>
-                Twitter
+                twitter
               </NavLink>
               <NavLink href={github} target={'_blank'} rel={'norefferer noopener'}>
-                GitHub
+                github
               </NavLink>
               <NavLink href={are_na} target={'_blank'} rel={'norefferer noopener'}>
-                Are.na
+                are.na
               </NavLink>
               <NavLink href={read_cv} target={'_blank'} rel={'norefferer noopener'}>
-                Read.cv
+                read.cv
               </NavLink>
             </NavMenuInner>
           </NavMenuContent>

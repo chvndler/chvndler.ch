@@ -3,6 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import React from 'react';
 import { styled } from 'stitches.config';
 
+import { MenuOnHoverComponent } from '../popover/menu-on-hover';
 import { IridescentLogo } from './iridescent-model';
 
 const AppBox = styled('div', {
@@ -28,6 +29,7 @@ export const AlternateScene = () => {
     <>
       {/* <!-- Begin three.js module --> */}
       <AppBox>
+        <MenuOnHoverComponent />
         <Canvas shadows dpr={[1, 2]} camera={{ fov: 90 }}>
           <Stage
             //controls={ref}

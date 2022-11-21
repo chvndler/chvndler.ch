@@ -213,9 +213,10 @@ const NavigationMenuTrigger = styled(NavigationMenu.Trigger, {
  */
 const NavigationMenuLink = styled(NavigationMenu.Link, {
   ...itemStyles,
+  fontFamily: `"Lateral Extended Medium", sans-serif`,
   transition: 'color 0.2s ease',
   textDecoration: 'none',
-  fontSize: 16,
+  fontSize: 14,
   lineHeight: 1,
   borderRadius: 9,
 
