@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import React, { useRef } from 'react';
 import { styled } from 'stitches.config';
 
-import { AltSceneModel } from './alt-iridescent-model';
+import { IridescentLogo } from './iridescent-model';
 
 const AppBox = styled('div', {
   zIndex: 3,
@@ -37,11 +37,9 @@ export const AlternateScene = () => {
             environment="dawn"
           >
             <OrbitControls enableZoom={false} position={[0, 20, 100]} autoRotate autoRotateSpeed={0.4} />
-            <AltSceneModel />
-            {/* <!-- <IridescentLogo /> --> */}
-            {/* <!-- <AltSceneModel /> --> */}
+            <IridescentLogo />
             {/* <!-- <axesHelper /> --> */}
-            {/* <!-- <Controls /> 
+            {/* <!-- 
             <Environment background={true} files={'/textures/kloppenheim_01_4k.hdr'} />
             --> */}
           </Stage>
