@@ -1,5 +1,6 @@
 import { styled } from 'stitches.config';
 export const Text = styled('span', {
+  zIndex: 'inherit',
   lineHeight: '1.5',
   margin: '0',
   fontWeight: 400,

@@ -1,9 +1,11 @@
 import * as AspectRatioPrimitive from '@radix-ui/react-aspect-ratio';
-import { styled } from '@stitches/react';
 import Image from 'next/image';
 import React from 'react';
+import { CSS, styled } from 'stitches.config';
+
 type AspectProps = {
   children?: any;
+  css?: CSS;
 };
 
 // Your app...
@@ -18,20 +20,27 @@ export const StyledImg = styled(Image, {
 export const AspectRatio = AspectRatioPrimitive;
 export const Img = StyledImg;
 
-/*
-export const Aspect = ({ children }: AspectProps) => (
+export const Aspect = ({ children, ...props }: AspectProps) => (
   <Box
     css={{
       width: 'auto',
       height: 'auto',
       borderRadius: 20,
-      overflow: 'hidden'
+      overflow: 'hidden',
+      variants: {
+        hidden: {
+          true: {
+            display: 'none'
+          }
+        }
+      }
     }}
   >
-    <AspectRatio.Root ratio={1 / 1}>{children}</AspectRatio.Root>
+    <AspectRatio.Root ratio={16 / 9} {...props}>
+      {children}
+    </AspectRatio.Root>
   </Box>
 );
-*/
 
 export const EmblaAspect = ({ children }: AspectProps) => {
   return (

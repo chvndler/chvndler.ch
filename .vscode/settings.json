@@ -9,7 +9,7 @@
   "git.ignoreLimitWarning": true,
   "files.autoSave": "onWindowChange",
   "editor.fontSize": 11,
-  "editor.fontFamily": "Uber Move Mono, monospace",
+  "editor.fontFamily": "Jetbrains Mono, monospace",
   "editor.tabSize": 2,
   /**
    * # Themes:
@@ -20,7 +20,7 @@
    * Carbonight (rainglow)
    *
    */
-  "workbench.colorTheme": "Isotope (rainglow)",
+  "workbench.colorTheme": "Copilot Theme",
   "editor.formatOnPaste": true,
   "window.zoomLevel": 0.6,
   "vsicons.dontShowNewVersionMessage": true,

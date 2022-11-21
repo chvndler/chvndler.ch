@@ -22,13 +22,13 @@ const ProjectsPage = () => {
             <Text
               css={{
                 textTransform: 'lowercase',
-                fontSize: 14,
+                fontSize: 13,
                 fontWeight: 400,
                 color: '$chxn3',
                 fontFamily: '"Lateral Extended Medium", sans-serif'
               }}
             >
-              SCROLL LEFT ( OR ) RIGHT view.
+              SCROLL LEFT ( OR ) RIGHT TO VIEW.
             </Text>
           </Container>
 

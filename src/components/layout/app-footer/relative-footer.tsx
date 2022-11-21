@@ -13,7 +13,7 @@ const StyledFooter = styled('footer', {
   flexDirection: 'row',
   alignItems: 'flex-end',
   justifyContent: 'space-between',
-  width: 'auto',
+  width: '100%',
   height: 'auto',
   padding: 15,
   margin: 'auto',

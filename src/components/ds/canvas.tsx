@@ -1,7 +1,7 @@
 import { styled } from 'stitches.config';
 
 export const Canvas = styled('div', {
-  zIndex: 6,
+  zIndex: 3,
   backgroundColor: 'transparent',
   boxSizing: 'border-box',
   position: 'absolute',

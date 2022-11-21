@@ -229,7 +229,7 @@ const NavigationMenuLink = styled(NavigationMenu.Link, {
  * @MenuContent
  */
 const NavigationMenuContent = styled(NavigationMenu.Content, {
-  zIndex: 999999,
+  zIndex: '999999',
   backgroundColor: 'transparent',
   // backdropFilter: 'blur(20px) saturate(180%)',
   /// WebkitBackdropFilter: 'blur(20px) saturate(180%)',
@@ -264,6 +264,7 @@ const NavigationMenuContent = styled(NavigationMenu.Content, {
  * @MenuInner
  */
 const NavigationMenuInner = styled(Box, {
+  zIndex: 'inherit',
   display: 'flex',
   flexDirection: 'column',
   gap: 2,
@@ -272,6 +273,7 @@ const NavigationMenuInner = styled(Box, {
   height: '100%',
   boxSizing: 'border-box',
   borderRadius: 12,
+  border: '1px solid $sageA4',
   transition: 'color 0.8s ease',
   /**
    * @backgroundColor
