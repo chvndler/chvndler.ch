@@ -1,6 +1,6 @@
 import { OrbitControls, Stage } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
-import React, { useRef } from 'react';
+import React from 'react';
 import { styled } from 'stitches.config';
 
 import { IridescentLogo } from './iridescent-model';
@@ -22,7 +22,7 @@ const AppBox = styled('div', {
 });
 
 export const AlternateScene = () => {
-  const ref = useRef();
+  //const ref = useRef();
 
   return (
     <>
@@ -30,7 +30,7 @@ export const AlternateScene = () => {
       <AppBox>
         <Canvas shadows dpr={[1, 2]} camera={{ fov: 90 }}>
           <Stage
-            controls={ref}
+            //controls={ref}
             preset="rembrandt"
             intensity={0.3999999999999999}
             contactShadow={false}
