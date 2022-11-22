@@ -5,8 +5,6 @@ import { BlendFunction } from 'postprocessing';
 import React, { useRef } from 'react';
 import { styled } from 'stitches.config';
 
-import { MenuOnHoverComponent } from '@/components/primitives/popover/menu-on-hover';
-
 // import { IridescentModel } from './iridescent-model';
 import { LogoModel } from './logo-model';
 
@@ -32,7 +30,6 @@ export const CDCLogoScene = () => {
     <>
       {/* <!-- Begin three.js module --> */}
       <AppBox>
-        <MenuOnHoverComponent />
         <Canvas shadows dpr={[1, 2]} camera={{ fov: 70 }}>
           <Stage controls={ref} preset={'portrait'} intensity={1.8} contactShadow={false} environment={'sunset'}>
             <directionalLight intensity={0.5} />

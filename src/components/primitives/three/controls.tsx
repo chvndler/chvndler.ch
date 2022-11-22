@@ -7,7 +7,7 @@ extend({ OrbitControls });
 // Add types to ThreeElements elements so primitives pick up on it
 declare module '@react-three/fiber' {
   interface ThreeElements {
-    orbitControls: Object3DNode<OrbitControls, typeof OrbitControls>;
+    OrbitControls: Object3DNode<OrbitControls, typeof OrbitControls>;
   }
 }
 

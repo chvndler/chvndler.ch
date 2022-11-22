@@ -98,8 +98,8 @@ const NavigationMenuBarStyles = styled(NavigationMenu.List, {
 
   borderRadius: 16,
   backgroundColor: 'transparent',
-  backdropFilter: 'blur(20px) saturate(180%)',
-  WebkitBackdropFilter: 'blur(20px) saturate(180%)',
+  backdropFilter: 'blur(40px) saturate(180%)',
+  WebkitBackdropFilter: 'blur(40px) saturate(180%)',
   lineHeight: '23px',
   height: 48,
   border: '1px solid $sageA4'
@@ -287,8 +287,8 @@ const NavigationMenuInner = styled(Box, {
    *
    */
   backgroundColor: `rgba(26,26,26,.06)`,
-  backdropFilter: 'blur(20px) saturate(220%)',
-  WebkitBackdropFilter: 'blur(20px) saturate(220%)'
+  backdropFilter: 'blur(40px) saturate(180%)',
+  WebkitBackdropFilter: 'blur(40px) saturate(180%)'
 });
 
 /**

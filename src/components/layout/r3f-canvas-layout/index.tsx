@@ -1,11 +1,20 @@
 import { Stats } from '@react-three/drei';
-import { Canvas, extend } from '@react-three/fiber';
+import { extend, Object3DNode } from '@react-three/fiber';
 import React, { FC, ReactNode } from 'react';
 import { styled } from 'stitches.config';
 import { OrbitControls, TransformControls } from 'three-stdlib';
 
 import { Box } from '@/components/ds';
+
 extend({ OrbitControls, TransformControls });
+
+// Add types to ThreeElements elements so primitives pick up on it
+declare module '@react-three/fiber' {
+  interface ThreeElements {
+    orbitControls: Object3DNode<OrbitControls, typeof OrbitControls>;
+    transformControls: Object3DNode<TransformControls, typeof TransformControls>;
+  }
+}
 
 type R3FCanvasLayoutProps = {
   children?: ReactNode;
@@ -31,13 +40,13 @@ export const R3FCanvasLayout: FC<R3FCanvasLayoutProps> = ({ children, htmlChildr
   return (
     <>
       {htmlChildren}
-      <R3FCanvas>
-        <Canvas {...rest}>
-          <StyledStats>
-            <Stats />
-          </StyledStats>
-          {children}
-        </Canvas>
+      <R3FCanvas {...rest}>
+        <StyledStats>
+          <Stats />
+        </StyledStats>
+        <orbitControls />
+        <transformControls />
+        {children}
       </R3FCanvas>
     </>
   );
