@@ -1,8 +1,8 @@
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import React from 'react';
 
+import { PassLink } from '@/components/ds';
 import { CDCLogo } from '@/components/logos';
-import { PassLink } from '@/components/primitives/pass-link';
 
 import {
   NavContentBox,
@@ -15,14 +15,14 @@ import {
   NavMenuTrigger,
   NavMenuViewport,
   Viewport
-} from './menu-on-hover.styles';
+} from './AtlrNavbar.styles';
 
 const twitter = 'https://twitter.com/chvndlerch';
 const github = 'https://github.com/chvndler';
 const are_na = 'https://www.are.na/chvndler-ch';
 const read_cv = 'https://read.cv/chvn';
 
-export const MenuOnHoverComponent = () => {
+export const AtlrNavbar = () => {
   return (
     <NavMenuRoot>
       <NavMenuBar>
@@ -33,11 +33,11 @@ export const MenuOnHoverComponent = () => {
 
           <NavMenuContent>
             <NavMenuInner>
-              <NavLink href="/projects/web">web</NavLink>
-              <NavLink href="/projects/film">film</NavLink>
-              <NavLink href="/">two</NavLink>
-              <NavLink href="/gfx">graphics</NavLink>
-              <NavLink href="/projects/three">three.js</NavLink>
+              <NavLink href="/projects/web">Web</NavLink>
+              <NavLink href="/projects/film">Film</NavLink>
+              <NavLink href="/">Music</NavLink>
+              <NavLink href="/gfx">Graphics</NavLink>
+              <NavLink href="/projects/three">Three.js</NavLink>
             </NavMenuInner>
           </NavMenuContent>
         </NavigationMenu.Item>
@@ -55,16 +55,16 @@ export const MenuOnHoverComponent = () => {
           <NavMenuContent>
             <NavMenuInner>
               <NavLink href={twitter} target={'_blank'} rel={'norefferer noopener'}>
-                twitter
+                Twitter
               </NavLink>
               <NavLink href={github} target={'_blank'} rel={'norefferer noopener'}>
-                github
+                GitHub
               </NavLink>
               <NavLink href={are_na} target={'_blank'} rel={'norefferer noopener'}>
-                are.na
+                Are.na
               </NavLink>
               <NavLink href={read_cv} target={'_blank'} rel={'norefferer noopener'}>
-                read.cv
+                Read.cv
               </NavLink>
             </NavMenuInner>
           </NavMenuContent>
@@ -77,3 +77,5 @@ export const MenuOnHoverComponent = () => {
     </NavMenuRoot>
   );
 };
+
+AtlrNavbar.displayName = 'AtlrNavbar';

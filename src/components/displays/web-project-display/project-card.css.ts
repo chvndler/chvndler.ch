@@ -1,4 +1,4 @@
-import { styled } from 'stitches.config';
+import { styled, theme } from 'stitches.config';
 
 import { Box, Button, Card } from '@/components/ds';
 
@@ -75,10 +75,10 @@ const TitleStyles = styled('h3', {
   color: '$chxn4'
 });
 
-const ButtonStyles = styled('button', Button, {
+const ButtonStyles = styled(Button, {
   backgroundColor: '$chxn4',
-  fontFamily: `"Lateral Extended Medium", sans-serif`,
-  fontSize: 13,
+  fontFamily: theme.fonts.panSb,
+  fontSize: 12,
   '&:hover': {
     cursor: 'pointer'
   }

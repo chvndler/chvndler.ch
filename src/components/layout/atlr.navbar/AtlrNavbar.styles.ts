@@ -1,6 +1,5 @@
-import { mauve, purple, violet } from '@radix-ui/colors';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import { keyframes, styled } from 'stitches.config';
+import { keyframes, styled, theme } from 'stitches.config';
 
 import { Box } from '@/components/ds';
 import { Icxn } from '@/components/icons/icxn';
@@ -8,28 +7,6 @@ import { Icxn } from '@/components/icons/icxn';
 /**
  * @keyframes
  */
-
-/**
-const enterFromRight = keyframes({
-  from: { transform: 'translateX(200px)', opacity: 0 },
-  to: { transform: 'translateX(0)', opacity: 1 }
-});
-
-const enterFromLeft = keyframes({
-  from: { transform: 'translateX(-200px)', opacity: 0 },
-  to: { transform: 'translateX(0)', opacity: 1 }
-});
-
-const exitToRight = keyframes({
-  from: { transform: 'translateX(0)', opacity: 1 },
-  to: { transform: 'translateX(200px)', opacity: 0 }
-});
-
-const exitToLeft = keyframes({
-  from: { transform: 'translateX(0)', opacity: 1 },
-  to: { transform: 'translateX(-200px)', opacity: 0 }
-});
-*/
 
 const scaleIn = keyframes({
   from: { transform: 'rotateX(-30deg) scale(0.9)', opacity: 0 },
@@ -102,7 +79,7 @@ const NavigationMenuBarStyles = styled(NavigationMenu.List, {
   WebkitBackdropFilter: 'blur(40px) saturate(180%)',
   lineHeight: '23px',
   height: 48,
-  border: '1px solid $sageA4'
+  border: `1px solid ${theme.colors.sageA4}`
 });
 
 const StyledContentBox = styled('div', {
@@ -110,7 +87,7 @@ const StyledContentBox = styled('div', {
   width: '100%',
   margin: 'auto',
   padding: 0,
-  color: '$chxn4',
+  color: theme.colors.chxn4,
   transition: 'color 0.4s ease',
 
   variants: {
@@ -154,24 +131,22 @@ export const itemStyles = {
   fontVariantNumeric: 'tabular-nums',
 
   margin: 0,
-  borderRadius: 11,
   paddingLeft: 16,
   paddingRight: 13,
 
   height: '38px',
+  fontFamily: theme.fonts.system,
   fontSize: 15,
   fontWeight: 500,
-  fontFamily: '"Lateral Standard Medium", sans-serif',
 
+  borderRadius: 12,
   border: '1px solid transparent',
-  // marginBottom: 2,
   width: 'auto',
-  color: '$chxn4',
+  color: theme.colors.chxn4,
 
   '&:hover': {
-    color: '$sage12',
-    backgroundColor: '$blackA3',
-    // backgroundColor: '$blur',
+    color: theme.colors.sage12,
+    backgroundColor: theme.colors.blackA3,
     cursor: 'pointer'
   },
   '&:active': {},
@@ -185,7 +160,7 @@ export const itemStyles = {
   },
 
   '&:disabled': {
-    boxShadow: 'inset 0 0 0 1px $colors$slate7',
+    boxShadow: `inset 0 0 0 1px ${theme.colors.slate7}`,
     color: '$sage10',
     pointerEvents: 'none',
     cursor: 'not-allowed',
@@ -213,17 +188,24 @@ const NavigationMenuTrigger = styled(NavigationMenu.Trigger, {
  */
 const NavigationMenuLink = styled(NavigationMenu.Link, {
   ...itemStyles,
-  fontFamily: `"Lateral Extended Medium", sans-serif`,
+  fontFamily: theme.fonts.system,
+  fontSize: 14,
+  fontWeight: 600,
   transition: 'color 0.2s ease',
   textDecoration: 'none',
-  fontSize: 14,
   lineHeight: 1,
-  borderRadius: 9,
+  borderRadius: 12,
 
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  gap: 2
+  gap: 2,
+
+  '&:hover': {
+    color: theme.colors.sage12,
+    backgroundColor: theme.colors.blackA3,
+    cursor: 'pointer'
+  }
 });
 
 /**
@@ -249,7 +231,7 @@ const NavigationMenuContent = styled(NavigationMenu.Content, {
 
   transition: 'all 0.2s ease-in-out',
 
-  //animationDuration: '250ms',
+  animationDuration: '250ms',
   animationTimingFunction: 'ease',
   '&[data-motion="from-start"]': { animationName: fadeIn },
   '&[data-motion="from-end"]': { animationName: fadeOut },
@@ -273,7 +255,7 @@ const NavigationMenuInner = styled(Box, {
   width: '100%',
   height: '100%',
   boxSizing: 'border-box',
-  borderRadius: 12,
+  borderRadius: 16,
   border: '1px solid $sageA4',
   transition: 'color 0.8s ease',
   /**
@@ -362,13 +344,13 @@ const Callout = styled('a', {
   flexDirection: 'column',
   width: 600,
   height: '100%',
-  background: `linear-gradient(135deg, ${purple.purple9} 0%, ${mauve.mauve9} 100%);`,
+  background: `linear-gradient(135deg, $colors$chxn4 0%, $colors$mauve9 100%);`,
   borderRadius: 6,
   padding: 25,
   textDecoration: 'none',
   outline: 'none',
   userSelect: 'none',
-  '&:focus': { boxShadow: `0 0 0 2px ${violet.violet7}` }
+  '&:focus': { boxShadow: `0 0 0 2px ${theme.colors.chxn4}` }
 });
 
 /**
@@ -388,7 +370,7 @@ export const CalloutHeading = styled('div', {
  */
 const CalloutText = styled('p', {
   all: 'unset',
-  color: mauve.mauve4,
+  color: theme.colors.chxn4,
   fontSize: 14,
   lineHeight: 1.3
 });
@@ -409,21 +391,37 @@ const StyledIcxn = styled(Icxn, {
   }
 });
 
+/**
+ * <!-- Atlr.Navbar -->
+ */
 export const NavMenuRoot = NavigationMenuRoot;
 export const NavMenuBar = NavigationMenuBarStyles;
 export const NavMenuInner = NavigationMenuInner;
 export const NavMenuContent = NavigationMenuContent;
 export const NavMenuTrigger = NavigationMenuTrigger;
 export const NavMenuIndicator = NavigationMenuIndicator;
-export const NavMenuViewport = NavigationMenuViewport;
 export const NavContentBox = StyledContentBox;
 
 export const NavLink = NavigationMenuLink;
 
+/**
+ * <!-- Callout.Style -->
+ */
 export const NavCallout = Callout;
 export const NavCalloutHeading = CalloutHeading;
 export const NavCalloutText = CalloutText;
 
+/**
+ * <!-- Viewport.Style -->
+ */
+export const NavMenuViewport = NavigationMenuViewport;
 export const Viewport = ViewportPosition;
 
+/**
+ * @IcxnStyles
+ */
 export const NavIcxn = StyledIcxn;
+
+/**
+ * @alternateKeyframes
+ */

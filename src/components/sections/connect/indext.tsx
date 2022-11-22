@@ -1,5 +1,4 @@
-import { Container, Flex, Section, Text } from '@/components/ds';
-import { PassLink } from '@/components/primitives/pass-link';
+import { Container, Flex, PassLink, Section, Text } from '@/components/ds';
 
 export const ConnectSection = () => {
   return (

@@ -1,7 +1,7 @@
 import { useKeenSlider } from 'keen-slider/react';
 import * as React from 'react';
 
-import { OffCanvas } from '@/components/primitives/off-canvas';
+import { Container } from '@/components/ds';
 
 import { ProjectEntry } from './project.entry';
 
@@ -11,7 +11,7 @@ import { ProjectEntry } from './project.entry';
  *
  */
 
-export const ProjectDisplay = () => {
+export const WebProjectDisplay = () => {
   const [ref] = useKeenSlider<HTMLDivElement>({
     loop: true,
     mode: 'free-snap',
@@ -27,7 +27,7 @@ export const ProjectDisplay = () => {
   });
 
   return (
-    <OffCanvas>
+    <Container size={'4'}>
       <div ref={ref} className="keen-slider">
         <div className="keen-slider__slide number-slide1">
           <ProjectEntry
@@ -69,8 +69,8 @@ export const ProjectDisplay = () => {
           />
         </div>
       </div>
-    </OffCanvas>
+    </Container>
   );
 };
 
-ProjectDisplay.displayName = 'CH.ProjectDisplay';
+WebProjectDisplay.displayName = 'CH.ProjectDisplay';

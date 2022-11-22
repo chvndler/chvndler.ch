@@ -1,13 +1,13 @@
 import { Box, Container, Flex, PassLink, Space, Text } from '@/components/ds';
+import { AtlrNavbar } from '@/components/layout/atlr.navbar';
 import { R3FCanvasLayout } from '@/components/layout/r3f-canvas-layout';
-import { MenuOnHoverComponent } from '@/components/primitives/popover/menu-on-hover';
 import { CDCLogoScene } from '@/components/primitives/three/CDC';
 
 const ThreePage = () => {
   return (
     <>
       <Box css={{ zIndex: 99999 }}>
-        <MenuOnHoverComponent />
+        <AtlrNavbar />
       </Box>
       <Container size={'3'} css={{ position: 'fixed', bottom: 0, left: 0, right: 0, paddingBottom: 30, zIndex: 100 }}>
         <Flex css={{ flexDirection: 'row', alignItems: 'center', gap: 4, justifyContent: 'center', margin: 'auto' }}>

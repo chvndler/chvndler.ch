@@ -1,5 +1,5 @@
+import { PassLink } from '@/components/ds';
 import { CDCLogo } from '@/components/logos/cdc';
-import { PassLink } from '@/components/primitives/pass-link';
 
 import { AppNav, ContentBox, NavButton, NavContainer } from './s';
 

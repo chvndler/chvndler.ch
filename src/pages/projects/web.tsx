@@ -1,8 +1,8 @@
-// import { WebProjects } from '@/components/displays/web-project-display';
+import { WebProjectDisplay } from '@/components/displays/web-project-display';
 import { Container, Space, Text } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
 
-const Film = () => {
+const Web = () => {
   return (
     <>
       <PageLayout>
@@ -23,10 +23,10 @@ const Film = () => {
         </Container>
         <Space size={'3'} />
 
-        {/* <!-- <WebProjects /> --> */}
+        <WebProjectDisplay />
       </PageLayout>
     </>
   );
 };
 
-export default Film;
+export default Web;

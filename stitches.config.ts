@@ -93,10 +93,18 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       fb: '#4267B2'
     },
     fonts: {
-      untitled: '"Inter", -apple-system, system-ui, sans-serif',
+      system: '-apple-system,Helvetica,sans-serif,"Apple Color Emoji","Segoe UI Emoji", sans-serif',
+      mono: 'ui-monospace, "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Droid Sans Mono", monospace',
       inter: '"Inter", sans-serif',
-      neueMontreal: '"PP Neue Montreal", sans-serif',
-      lateralStandard: '"Lateral Standard Regular", sans-serif',
+      lateral: '"Lateral Variable", sans-serif',
+      neue: '"PP Neue Montreal", sans-serif',
+
+      panB: '"PP Pangram Sans Rounded Bold", sans-serif',
+      panSb: '"PP Pangram Sans Rounded Semibold", sans-serif',
+      panMd: '"PP Pangram Sans Rounded Medium", sans-serif',
+      panRg: '"PP Pangram Sans Rounded Regular", sans-serif',
+
+      latb: '"Lateral Standard Regular", sans-serif',
       latBoldStd: '"Lateral Standard Bold", sans-serif',
       latMedStd: '"Lateral Standard Medium", sans-serif',
       latRegStd: '"Lateral Standard Regular", sans-serif',

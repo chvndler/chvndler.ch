@@ -1,11 +1,11 @@
 import { Canvas, Sup, Text } from '@/components/ds';
 import { AppFooter } from '@/components/layout/app-footer';
-import { MenuOnHoverComponent } from '@/components/primitives/popover/menu-on-hover';
+import { AtlrNavbar } from '@/components/layout/atlr.navbar';
 
 const AppPage = () => {
   return (
     <>
-      <MenuOnHoverComponent />
+      <AtlrNavbar />
       <Canvas>
         <Text
           css={{

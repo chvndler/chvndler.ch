@@ -1,6 +1,5 @@
-import { Box, Container, Flex, Separator, Space, Text } from '@/components/ds';
+import { Box, Container, Flex, PassLink, Separator, Space, Text } from '@/components/ds';
 import { DottedLine } from '@/components/ds/dotted-line';
-import { PassLink } from '@/components/primitives/pass-link';
 
 export const IntroFooter = () => {
   return (
