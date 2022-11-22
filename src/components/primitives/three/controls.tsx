@@ -11,11 +11,13 @@ declare module '@react-three/fiber' {
   }
 }
 
-export const Controls = () => {
+export const ChControls = () => {
   const { camera, gl } = useThree();
 
   return (
     <orbitControls
+      autoRotate
+      position={[0, 20, 100]}
       enableZoom={false}
       maxPolarAngle={Math.PI / 4}
       minPolarAngle={Math.PI / 2}

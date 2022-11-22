@@ -37,7 +37,7 @@ export const MenuOnHoverComponent = () => {
               <NavLink href="/projects/film">film</NavLink>
               <NavLink href="/film">two</NavLink>
               <NavLink href="/gfx">graphics</NavLink>
-              <NavLink href="/three">three.js</NavLink>
+              <NavLink href="/projects/three">three.js</NavLink>
             </NavMenuInner>
           </NavMenuContent>
         </NavigationMenu.Item>

@@ -12,26 +12,29 @@ type GLTFResult = GLTF & {
   };
 };
 
-export const AltSceneModel = (props: JSX.IntrinsicElements['group']) => {
+export const LogoModel = (props: JSX.IntrinsicElements['group']) => {
+  // const group = useRef<THREE.Group>();
   const { nodes, materials } = useGLTF('/models/CDC_Iridescent.gltf') as unknown as GLTFResult;
+
   return (
     <>
       <group {...props} dispose={null}>
-        <group>
+        <group name={'Scene'}>
           <mesh
+            name={'Curve'}
             castShadow
             receiveShadow
             geometry={nodes.Curve.geometry}
             material={materials.Material}
-            position={[0, 1.62767, 0]}
+            position={[1, 1.6, -0.3]}
             rotation={[Math.PI / 2, 0, 0]}
-            scale={52.59808}
+            scale={52.6}
             userData={{ name: 'Curve' }}
-          />
+          ></mesh>
         </group>
       </group>
     </>
   );
 };
 
-useGLTF.preload('/CDC_Iridescent.gltf');
+useGLTF.preload('/models/CDC_Iridescent.gltf');

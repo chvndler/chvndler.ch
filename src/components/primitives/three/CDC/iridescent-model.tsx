@@ -1,10 +1,11 @@
+import { useGLTF } from '@react-three/drei';
 import { useLoader } from '@react-three/fiber';
 import React from 'react';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
-import { Loader } from './loader';
+import { Loader } from '../loader';
 
-export const SmallCanvasLayout = () => {
+export const IridescentModel = () => {
   const gltf = useLoader(GLTFLoader, '/models/CDC_Iridescent.gltf');
   return (
     <React.Suspense fallback={<Loader />}>
@@ -12,3 +13,5 @@ export const SmallCanvasLayout = () => {
     </React.Suspense>
   );
 };
+
+useGLTF.preload('/models/CDC_Iridescent.gltf');
