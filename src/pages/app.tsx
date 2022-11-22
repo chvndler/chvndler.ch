@@ -1,4 +1,7 @@
-import { Canvas, Sup, Text } from '@/components/ds';
+import { theme } from 'stitches.config';
+
+import { Canvas, Container, Text } from '@/components/ds';
+import { FixedCanvas } from '@/components/ds/canvas';
 import { AppFooter } from '@/components/layout/app-footer';
 import { AtlrNavbar } from '@/components/layout/atlr.navbar';
 
@@ -6,33 +9,37 @@ const AppPage = () => {
   return (
     <>
       <AtlrNavbar />
-      <Canvas>
-        <Text
-          css={{
-            fontSize: 40,
-            fontFamily: '"Lateral Standard Bold", sans-serif',
-            fontWeight: 'bold',
-            textAlign: 'center',
-            lineHeight: 'normal',
-            color: '$chxn4',
-            letterSpacing: '-0.05rem'
-          }}
-        >
-          CHANDLER<Sup>®</Sup>
-        </Text>
-        <Text
-          css={{
-            fontSize: 17,
-            fontFamily: '"Lateral Standard Regular", sans-serif',
-            fontWeight: 400,
-            textAlign: 'center',
-            lineHeight: '8px',
-            color: '$sage11'
-          }}
-        >
-          Front-End Developer and Designer
-        </Text>
-      </Canvas>
+      <FixedCanvas>
+        <Canvas>
+          <Container css={{ margin: 'auto', alignItems: 'center', justifyContent: 'center' }}>
+            <Text
+              css={{
+                textAlign: 'center',
+                color: theme.colors.chxn4,
+                fontSize: 32,
+                fontFamily: theme.fonts.latBoldExtd,
+                fontWeight: 500,
+                letterSpacing: '-0.03rem',
+                lineHeight: '1.3'
+              }}
+            >
+              CHANDLER®
+            </Text>
+            <Text
+              css={{
+                fontSize: 16,
+                fontFamily: theme.fonts.panSb,
+                fontWeight: 'auto',
+                textAlign: 'center',
+                lineHeight: '1',
+                color: theme.colors.sage11
+              }}
+            >
+              Front-End Developer and Designer
+            </Text>
+          </Container>
+        </Canvas>
+      </FixedCanvas>
       <AppFooter />
     </>
   );

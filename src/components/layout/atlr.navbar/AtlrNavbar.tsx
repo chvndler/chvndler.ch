@@ -19,6 +19,7 @@ import {
 
 const twitter = 'https://twitter.com/chvndlerch';
 const github = 'https://github.com/chvndler';
+const instagram = 'https://instagram.com/chv.ndler';
 const are_na = 'https://www.are.na/chvndler-ch';
 const read_cv = 'https://read.cv/chvn';
 
@@ -33,10 +34,9 @@ export const AtlrNavbar = () => {
 
           <NavMenuContent>
             <NavMenuInner>
+              <NavLink href="/">Index</NavLink>
               <NavLink href="/projects/web">Web</NavLink>
               <NavLink href="/projects/film">Film</NavLink>
-              <NavLink href="/">Music</NavLink>
-              <NavLink href="/gfx">Graphics</NavLink>
               <NavLink href="/projects/three">Three.js</NavLink>
             </NavMenuInner>
           </NavMenuContent>
@@ -59,6 +59,9 @@ export const AtlrNavbar = () => {
               </NavLink>
               <NavLink href={github} target={'_blank'} rel={'norefferer noopener'}>
                 GitHub
+              </NavLink>
+              <NavLink href={instagram} target={'_blank'} rel={'norefferer noopener'}>
+                Instagram
               </NavLink>
               <NavLink href={are_na} target={'_blank'} rel={'norefferer noopener'}>
                 Are.na
