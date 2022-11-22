@@ -421,7 +421,3 @@ export const Viewport = ViewportPosition;
  * @IcxnStyles
  */
 export const NavIcxn = StyledIcxn;
-
-/**
- * @alternateKeyframes
- */
