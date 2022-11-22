@@ -213,29 +213,63 @@ html.fonts-loaded body {
     min-height: 100vh;
 }
 
-.mux-player {
+#muxVideo {
     width: 100%;
-    margin: 0;
-    /* Hide all controls at once */
-    --controls: none;
-    /* Target all sections by excluding the section prefix */
-    --play-button: none;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    --center-controls: none;
+    --bottom-play-button: none;
+    --controls-backdrop-color: rgb(0 0 0 / 20%);
+}
+
+#video_control_bar>* {
+    display: inline-block;
+}
+
+mux-player {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    z-index: 9999999;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
     --seek-live-button: none;
     --seek-backward-button: none;
     --seek-forward-button: none;
-    --mute-button: none;
     --captions-button: none;
-    --airplay-button: none;
-    --pip-button: none;
     --fullscreen-button: none;
     --cast-button: none;
     --playback-rate-button: none;
     --volume-range: none;
-    --time-range: none;
-    --time-display: none;
-    --duration-display: none;
-    /* Target a specific section by prefixing the CSS var with (top|center|bottom) */
     --center-controls: none;
     --bottom-play-button: none;
-    --controls-backdrop-color: rgb(0 0 0 / 0%);
+    --controls-backdrop-color: rgba(255, 255, 255, 0.4);
+    --time-range: none;
+    backdrop-filter: blur(10px);
+    /*
+--duration-display: none;
+--time-display: none;
+    --airplay-button: none;
+
+        --pip-button: none;
+          --mute-button: none;
+    */
 }

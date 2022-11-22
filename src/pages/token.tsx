@@ -1,11 +1,12 @@
-import { Container, Space, Text } from '@/components/ds';
+import { Container, Flex, Space, Text } from '@/components/ds';
+import { Icxn } from '@/components/icons/atlr-icxns';
 import { TestPageLayout } from '@/components/layout/test-page';
 
 const TokenTesting = () => {
   return (
     <>
       <TestPageLayout>
-        <Container size="2">
+        <Container size={'2'}>
           <Text
             css={{
               lineHeight: '1',
@@ -44,6 +45,13 @@ const TokenTesting = () => {
           <Text css={{ color: '$chxn4', fontFamily: '$latBoldExtd', fontSize: 32, fontWeight: 600 }}>Lorem Ipsum</Text>
           <Text css={{ color: '$chxn4', fontFamily: '$latMedExtd', fontSize: 32, fontWeight: 500 }}>Lorem Ipsum</Text>
           <Text css={{ color: '$chxn4', fontFamily: '$latRegExtd', fontSize: 32, fontWeight: 400 }}>Lorem Ipsum</Text>
+        </Container>
+
+        <Container size={'1'}>
+          <Flex css={{ justifyContent: 'flex-start', gap: 8 }}>
+            <Icxn variant={'Twitter'} />
+            <Icxn variant={'GitHub'} />
+          </Flex>
         </Container>
       </TestPageLayout>
     </>

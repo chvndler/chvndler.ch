@@ -1,18 +1,19 @@
-/**
- *
- * editor.fontSize * LG ULTRA-WIDE = 11
- * editor.fontSize * MACBOOK PRO = 9
- *
- */
-
 {
-  "git.ignoreLimitWarning": true,
-  "files.autoSave": "onWindowChange",
-  "editor.fontSize": 11,
-  "editor.fontFamily": "Jetbrains Mono, monospace",
-  "editor.tabSize": 2,
   /**
-   * # Themes:
+   *
+   * @fonts
+   *
+   * JetBrains Mono
+   * Sono
+   * Trispace Mono
+   *
+   */
+  "editor.fontFamily": "Sono, monospace",
+  "editor.fontSize": 12,
+
+  /**
+   *
+   * @themes
    *
    * Jewel Contrast (rainglow)
    * Isotope Contrast (rainglow)
@@ -21,6 +22,10 @@
    *
    */
   "workbench.colorTheme": "Copilot Theme",
+
+  "git.ignoreLimitWarning": true,
+  "files.autoSave": "onWindowChange",
+  "editor.tabSize": 2,
   "editor.formatOnPaste": true,
   "window.zoomLevel": 0.6,
   "vsicons.dontShowNewVersionMessage": true,

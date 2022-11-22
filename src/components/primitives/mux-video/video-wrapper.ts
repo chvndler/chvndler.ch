@@ -16,10 +16,16 @@ const VideoWrapperStyles = css({
   minHeight: '100vh',
   overflow: 'hidden',
   overflowX: 'hidden',
-  overflowY: 'hidden'
+  overflowY: 'hidden',
+
+  backgroundAttachment: 'fixed',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  objectPosition: 'center'
 });
 
-export const VideoStyles = css({
+export const VideoStyles = css('video', {
   position: 'fixed',
   top: 0,
   left: 0,

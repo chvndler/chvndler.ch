@@ -1,15 +1,24 @@
 import MuxPlayer from '@mux/mux-player-react';
 
-export const MuxVideoObject = () => {
+import { VideoStyles, VideoWrapper } from './video-wrapper';
+
+export const MuxVideoPlayer = () => {
   return (
-    <MuxPlayer
-      streamType="on-demand"
-      playbackId="yuUntCOoIonDpYwojty1BNVxWbUbMmL22NoRBZqfTko"
-      metadata={{
-        video_id: 'video-id-54321',
-        video_title: 'Test video title',
-        viewer_user_id: 'user-id-007'
-      }}
-    />
+    <VideoWrapper>
+      <MuxPlayer
+        className={VideoStyles()}
+        autoPlay
+        streamType="on-demand"
+        playbackId="1RLeJdsCMunRRJ81yLED8PEacwYsaxH01MtGYZQWTR6g"
+        primaryColor={'rgba(72, 67, 73, 0.8)'}
+        //secondaryColor=
+        style={{}}
+        metadata={{
+          video_id: '5w9nzBSMPJmqReaQho5iVhGhaPKyuyOCmO4eWoKK1sk',
+          video_title: '©2019 Film Reel',
+          viewer_user_id: 'user-id-007'
+        }}
+      />
+    </VideoWrapper>
   );
 };

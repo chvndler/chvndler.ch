@@ -44,7 +44,7 @@ const MuxVideo = React.forwardRef<HTMLVideoElement, MuxVideoProps>(({ muxSrc, ..
     };
   }, [videoRef, muxSrc]);
 
-  return <video ref={mergeRefs([videoRef, ref])} {...rest} />;
+  return <video ref={mergeRefs([videoRef, ref])} autoPlay {...rest} />;
 });
 
 export const getMuxSrc = (playbackId: string) => {
@@ -52,16 +52,18 @@ export const getMuxSrc = (playbackId: string) => {
   return `https://stream.mux.com/${playbackId}.m3u8`;
 };
 
-// const muxSrc = getMuxSrc('https://stream.mux.com/yb2L3z3Z4IKQH02HYkf9xPToVYkOC85WA.m3u8');
+const muxSrc = getMuxSrc('https://stream.mux.com/1RLeJdsCMunRRJ81yLED8PEacwYsaxH01MtGYZQWTR6g.m3u8');
 export const MuxVideoObject = () => {
   return (
     <VideoWrapper>
       <MuxVideo
         className={VideoStyles()}
-        muxSrc={'https://stream.mux.com/OlqbQak8x00WGJWGcxfNdzSrKPGMwoAjnu6ASbJGWqhY.m3u8'}
+        muxSrc={muxSrc}
+        id="muxVideo"
         stream-type="on-demand"
         autoPlay
         controls
+        muted
         width={'100%'}
         height={'100%'}
       />
