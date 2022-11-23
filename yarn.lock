@@ -1351,12 +1351,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/fiber@npm:8.2.2":
-  version: 8.2.2
-  resolution: "@react-three/fiber@npm:8.2.2"
+"@react-three/fiber@npm:8.9.1":
+  version: 8.9.1
+  resolution: "@react-three/fiber@npm:8.9.1"
   dependencies:
     "@babel/runtime": ^7.17.8
     "@types/react-reconciler": ^0.26.7
+    its-fine: ^1.0.6
     react-reconciler: ^0.27.0
     react-use-measure: ^2.1.1
     scheduler: ^0.21.0
@@ -1381,7 +1382,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: e4fd67e85fef4359af75d5e1c047c8f45e32d9327e894f8ab8d87267fbc63d27ed0dfb3f3ffb2313c383ffce0470b9999d77932bc7df6bcb7fd33e2f1f7f7bf8
+  checksum: 75aabbc206a306bc5e46cc491327cd1e409fd46f2eb95864a0c8925097cef9c7f076547ff19c530ccf3192bd36451a28d5eefa0b0c21b60c49638b8a32dbd454
   languageName: node
   linkType: hard
 
@@ -2386,7 +2387,7 @@ __metadata:
     "@radix-ui/react-separator": ^1.0.1
     "@radix-ui/react-switch": 1.0.1
     "@react-three/drei": 9.43.2
-    "@react-three/fiber": 8.2.2
+    "@react-three/fiber": 8.9.1
     "@react-three/postprocessing": ^2.7.0
     "@stitches/react": ^1.2.8
     "@types/css-font-loading-module": 0.0.7
@@ -4437,7 +4438,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"its-fine@npm:^1.0.5":
+"its-fine@npm:^1.0.5, its-fine@npm:^1.0.6":
   version: 1.0.6
   resolution: "its-fine@npm:1.0.6"
   dependencies:
