@@ -41,7 +41,7 @@ export const defaultMeta = {
   ogImage: `${siteOrigin}/og.png`,
   twitter: {
     handle: '@chvndlerch',
-    site: '@chvndlerch'
+    site: 'chvndler.ch'
   }
 };
 
