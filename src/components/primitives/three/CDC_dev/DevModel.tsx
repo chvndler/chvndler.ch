@@ -23,7 +23,7 @@ export const DevModel = (props: JSX.IntrinsicElements['group']) => {
           geometry={nodes.Curve.geometry}
           material={materials.Material}
           rotation={[Math.PI / 2, 0, 0]}
-          scale={4}
+          scale={3}
           userData={{ name: 'Curve' }}
         />
       </group>
