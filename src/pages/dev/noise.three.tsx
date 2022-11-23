@@ -3,7 +3,7 @@ import { AtlrNavbar } from '@/components/layout/atlr.navbar';
 import { R3FCanvasLayout } from '@/components/layout/r3f-canvas-layout';
 import { CDCLogoScene } from '@/components/primitives/three/CDC';
 
-const ThreeDevPage = () => {
+const ThreeNoisePage = () => {
   return (
     <>
       <Box css={{ zIndex: 99999 }}>
@@ -61,4 +61,4 @@ const ThreeDevPage = () => {
   );
 };
 
-export default ThreeDevPage;
+export default ThreeNoisePage;

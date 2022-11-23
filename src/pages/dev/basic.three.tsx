@@ -1,9 +1,9 @@
 import { Box, Container, Flex, PassLink, Space, Text } from '@/components/ds';
 import { AtlrNavbar } from '@/components/layout/atlr.navbar';
 import { R3FCanvasLayout } from '@/components/layout/r3f-canvas-layout';
-import { CDCLogoScene } from '@/components/primitives/three/CDC';
+import { DevScene } from '@/components/primitives/three/CDC_dev';
 
-const ThreeDevPage = () => {
+const ThreeBasicPage = () => {
   return (
     <>
       <Box css={{ zIndex: 99999 }}>
@@ -55,10 +55,10 @@ const ThreeDevPage = () => {
         </Text>
       </Container>
       <R3FCanvasLayout>
-        <CDCLogoScene />
+        <DevScene />
       </R3FCanvasLayout>
     </>
   );
 };
 
-export default ThreeDevPage;
+export default ThreeBasicPage;

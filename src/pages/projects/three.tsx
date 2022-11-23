@@ -1,7 +1,9 @@
-import { Box, Container, Flex, PassLink, Space, Text } from '@/components/ds';
+import { theme } from 'stitches.config';
+
+import { Box, Container, Flex, PassLink, Text } from '@/components/ds';
 import { AtlrNavbar } from '@/components/layout/atlr.navbar';
 import { R3FCanvasLayout } from '@/components/layout/r3f-canvas-layout';
-import { CDCLogoScene } from '@/components/primitives/three/CDC';
+import { DevScene } from '@/components/primitives/three/CDC_dev';
 
 const ThreePage = () => {
   return (
@@ -9,29 +11,28 @@ const ThreePage = () => {
       <Box css={{ zIndex: 99999 }}>
         <AtlrNavbar />
       </Box>
-      <Container size={'3'} css={{ position: 'fixed', bottom: 0, left: 0, right: 0, paddingBottom: 30, zIndex: 100 }}>
+      <Container size={'3'} css={{ position: 'fixed', bottom: 0, left: 0, right: 0, paddingBottom: 48, zIndex: 100 }}>
         <Flex css={{ flexDirection: 'row', alignItems: 'center', gap: 4, justifyContent: 'center', margin: 'auto' }}>
           <Text
             css={{
               color: '$chxn4',
               textAlign: 'center',
-              fontSize: 12,
-              fontFamily: `"Lateral Extended Regular", sans-serif`
+              fontSize: 14,
+              fontFamily: theme.fonts.latRegExtd
             }}
           >
             built with
           </Text>
-          <PassLink href={'https://threejs.org/'} target={'_blank'}>
+          <PassLink href={'https://threejs.org/'}>
             <Text
               css={{
-                color: '$chxn7',
+                color: theme.colors.chxn7,
                 textAlign: 'center',
-                fontSize: 12,
-                fontFamily: `"Lateral Extended Medium", sans-serif`,
-                textDecoration: 'underline',
+                fontSize: 14,
+                fontFamily: theme.fonts.latMedExtd,
                 '&:hover': {
                   textDecoration: 'underline',
-                  decorationColor: '$chxn6',
+                  decorationColor: theme.colors.chxn4,
                   cursor: 'pointer'
                 }
               }}
@@ -40,22 +41,64 @@ const ThreePage = () => {
             </Text>
           </PassLink>
         </Flex>
-        <Space size={'1'} />
+
         <Text
           css={{
-            color: '$chxn3',
+            color: theme.colors.chxn4,
             textAlign: 'center',
-            fontSize: 12,
-            fontFamily: `"Lateral Extended Regular", sans-serif`
+            fontSize: 14,
+            fontFamily: theme.fonts.panSb,
+            mixBlendMode: 'difference'
           }}
         >
-          @react-three/fiber
-          <br />
-          @react-three/postprocessing
+          +
         </Text>
+
+        <PassLink href={'https://docs.pmnd.rs/react-three-fiber/getting-started/introduction'}>
+          <Text
+            css={{
+              color: theme.colors.chxn4,
+              textAlign: 'center',
+              fontSize: 12.5,
+              fontFamily: theme.fonts.panRg,
+              mixBlendMode: 'difference',
+              lineHeight: '1.5'
+            }}
+          >
+            @react-three/fiber
+          </Text>
+        </PassLink>
+
+        <PassLink href={'https://docs.pmnd.rs/react-postprocessing'}>
+          <Text
+            css={{
+              color: theme.colors.chxn4,
+              textAlign: 'center',
+              fontSize: 12.5,
+              fontFamily: theme.fonts.panRg,
+              lineHeight: '1.5'
+            }}
+          >
+            @react-three/postprocessing
+          </Text>
+        </PassLink>
+
+        <PassLink href={'https://github.com/pmndrs/drei'}>
+          <Text
+            css={{
+              color: theme.colors.chxn4,
+              textAlign: 'center',
+              fontSize: 12.5,
+              fontFamily: theme.fonts.panRg,
+              lineHeight: '1.5'
+            }}
+          >
+            @react-three/drei
+          </Text>
+        </PassLink>
       </Container>
       <R3FCanvasLayout>
-        <CDCLogoScene />
+        <DevScene />
       </R3FCanvasLayout>
     </>
   );

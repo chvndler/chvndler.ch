@@ -8,8 +8,8 @@
    * Trispace Mono
    *
    */
-  "editor.fontFamily": "Sono, monospace",
-  "editor.fontSize": 12,
+  "editor.fontFamily": "SF Mono, monospace",
+  "editor.fontSize": 11.5,
 
   /**
    *
@@ -22,7 +22,6 @@
    *
    */
   "workbench.colorTheme": "Copilot Theme",
-
   "git.ignoreLimitWarning": true,
   "files.autoSave": "onWindowChange",
   "editor.tabSize": 2,
