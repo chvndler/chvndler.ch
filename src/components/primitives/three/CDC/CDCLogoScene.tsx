@@ -29,7 +29,7 @@ export const CDCLogoScene = () => {
     <>
       {/* <!-- Begin three.js module --> */}
       <AppBox>
-        <Canvas shadows dpr={[1, 2]} camera={{ fov: 70 }}>
+        <Canvas shadows dpr={[1, 2]} camera={{ fov: 60 }}>
           <Suspense fallback={null}>
             <Stage preset={'portrait'} intensity={1.8}>
               <directionalLight intensity={0.5} />

@@ -32,7 +32,7 @@ export const DevScene = () => {
     <Canvas
       shadows
       dpr={[1, 2]}
-      camera={{ fov: 20, near: 2, far: 1000, position: [0, 0, 9] }}
+      camera={{ fov: 18, near: 2, far: 1000, position: [0, 0, 9] }}
       linear={false}
       flat={false}
       orthographic={false}
