@@ -8,7 +8,6 @@ import { Box } from '@/components/ds';
 
 extend({ OrbitControls, TransformControls });
 
-// Add types to ThreeElements elements so primitives pick up on it
 declare module '@react-three/fiber' {
   interface ThreeElements {
     orbitControls: Object3DNode<OrbitControls, typeof OrbitControls>;
@@ -23,6 +22,10 @@ type R3FCanvasLayoutProps = {
 
 const R3FCanvas = styled(Box, {
   position: 'fixed',
+  top: 0,
+  bottom: 0,
+  left: 0,
+  right: 0,
   height: '100vh',
   width: '100vw',
   padding: 0,

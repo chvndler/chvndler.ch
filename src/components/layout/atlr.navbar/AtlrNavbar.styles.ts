@@ -203,7 +203,8 @@ const NavigationMenuLink = styled(NavigationMenu.Link, {
 
   '&:hover': {
     color: theme.colors.sage12,
-    backgroundColor: theme.colors.blackA3,
+    backgroundColor: theme.colors.whiteA6,
+    borderColor: `${theme.colors.chxn4A}`,
     cursor: 'pointer'
   }
 });
