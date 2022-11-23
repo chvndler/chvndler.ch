@@ -20,6 +20,10 @@
         "lint": "next lint && stylelint '**/*.{css,scss}'",
         "tsc": "tsc --pretty --noEmit"
     },
+    "peerDependencies": {
+        "react": "^16.0.0-0 || ^17.0.0-0",
+        "react-dom": "^16.0.0-0 || ^17.0.0-0"
+    },
     "dependencies": {
         "@juggle/resize-observer": "^3.4.0",
         "@mux/mux-player-react": "^1.3.0",
@@ -37,11 +41,11 @@
         "@radix-ui/react-scroll-area": "^1.0.2",
         "@radix-ui/react-separator": "^1.0.1",
         "@radix-ui/react-switch": "1.0.1",
-        "@react-three/drei": "9.13.2",
+        "@react-three/drei": "9.41.0",
         "@react-three/fiber": "8.2.2",
         "@react-three/postprocessing": "^2.7.0",
         "@stitches/react": "^1.2.8",
-        "@types/three": "0.143.0",
+        "@types/three": "0.146.0",
         "clsx": "1.2.1",
         "cmdk": "0.1.20",
         "date-fns": "^2.29.3",
@@ -64,11 +68,12 @@
         "react-ogl": "^0.12.0",
         "react-scroll": "^1.8.8",
         "react-use-measure": "^2.1.1",
-        "three": "0.143.0",
+        "three": "0.146.0",
         "three-stdlib": "^2.17.3",
         "zustand": "4.1.4"
     },
     "devDependencies": {
+        "@babel/eslint-parser": "^7.19.1",
         "@next/bundle-analyzer": "13",
         "@next/eslint-plugin-next": "13",
         "@types/css-font-loading-module": "0.0.7",
@@ -79,7 +84,6 @@
         "@types/react-dom": "18.0.9",
         "@typescript-eslint/eslint-plugin": "^5.38.0",
         "@typescript-eslint/parser": "5",
-        "babel-eslint": "^10.1.0",
         "babel-plugin-optimize-clsx": "^2.6.2",
         "cross-env": "^7.0.3",
         "eslint": "8",
@@ -97,6 +101,7 @@
         "minimatch": "5",
         "next-sitemap": "3",
         "next-transpile-modules": "10",
+        "postcss": "^8.4.19",
         "prettier": "2.7.1",
         "remark-slug": "^7.0.1",
         "sass": "1.56.1",

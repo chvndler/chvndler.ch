@@ -13,7 +13,6 @@ type GLTFResult = GLTF & {
 };
 
 export const LogoModel = (props: JSX.IntrinsicElements['group']) => {
-  // const group = useRef<THREE.Group>();
   const { nodes, materials } = useGLTF('/models/CDC_Iridescent.gltf') as unknown as GLTFResult;
 
   return (

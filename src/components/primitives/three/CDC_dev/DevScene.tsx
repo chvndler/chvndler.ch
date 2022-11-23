@@ -4,6 +4,27 @@ import React, { Suspense, useRef } from 'react';
 
 import { DevModel } from './DevModel';
 
+/**
+ *
+ * @EffectComposers
+ * import { EffectComposer } from '@react-three/postprocessing';
+ *
+ * <EffectComposer />
+ *
+ * @Grid
+ * <DepthOfField focusDistance={focusDistance} focalLength={focalLength} bokehScale={bokehScale} />
+ *
+ * @DepthOfField
+ * <DepthOfField focusDistance={1} focalLength={1} bokehScale={8} />
+ *
+ * @Noise
+ * <Noise premultiply blendFunction={BlendFunction.ADD} />
+ *
+ * @Bloom
+ * <Bloom kernelSize={KernelSize.LARGE} // blur kernel size luminanceThreshold={0.3} // luminance threshold. Raise this value to mask out darker elements in the scene. luminanceSmoothing={0.4} // smoothness of the luminance threshold. Range is [0, 1] />
+ *
+ */
+
 export const DevScene = () => {
   const ref = useRef();
 
@@ -30,24 +51,3 @@ export const DevScene = () => {
     </Canvas>
   );
 };
-
-/**
- * @EffectComposers
- * import { EffectComposer } from '@react-three/postprocessing';
- *
- * <EffectComposer />
- *
- * @Grid
- * <DepthOfField focusDistance={focusDistance} focalLength={focalLength} bokehScale={bokehScale} />
- *
- * @DepthOfField
- * <DepthOfField focusDistance={1} focalLength={1} bokehScale={8} />
- *
- * @Noise
- * <Noise premultiply blendFunction={BlendFunction.ADD} />
- *
- * @Bloom
- * <Bloom kernelSize={KernelSize.LARGE} // blur kernel size luminanceThreshold={0.3} // luminance threshold. Raise this value to mask out darker elements in the scene. luminanceSmoothing={0.4} // smoothness of the luminance threshold. Range is [0, 1] />
- *
- *
- */

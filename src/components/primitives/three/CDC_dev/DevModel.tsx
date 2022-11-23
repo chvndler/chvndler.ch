@@ -13,7 +13,7 @@ type GLTFResult = GLTF & {
 };
 
 export const DevModel = (props: JSX.IntrinsicElements['group']) => {
-  const { nodes, materials } = useGLTF('/models/CDC.gltf') as GLTFResult;
+  const { nodes, materials } = useGLTF('/models/CDC.gltf') as unknown as GLTFResult;
 
   return (
     <group {...props} dispose={null}>
