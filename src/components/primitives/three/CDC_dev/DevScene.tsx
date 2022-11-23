@@ -40,12 +40,11 @@ export const DevScene = () => {
       <pointLight position={[120, 50, 10]} />
       <directionalLight intensity={0.5} />
       <Suspense fallback={null}>
-        <Stage controls={ref} preset="rembrandt" intensity={1} contactShadow={false} shadows={false} environment="dawn">
+        <Stage adjustCamera={false} preset={'rembrandt'} intensity={1} shadows={false} environment={'sunset'}>
           <DevModel />
         </Stage>
         <gridHelper args={[10, 40, '#F05724', '#C7BBB0']} position={[0, 0.1, 0]} rotation={[0, 0, Math.PI / 2]} />
         <OrbitControls ref={ref} autoRotate autoRotateSpeed={0.2} />
-        {/* <!-- <axesHelper /> --> */}
         {/* <!-- <EffectComposer></EffectComposer> --> */}
       </Suspense>
     </Canvas>

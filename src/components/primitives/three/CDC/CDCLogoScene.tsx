@@ -31,7 +31,7 @@ export const CDCLogoScene = () => {
       <AppBox>
         <Canvas shadows dpr={[1, 2]} camera={{ fov: 70 }}>
           <Suspense fallback={null}>
-            <Stage controls={ref} preset={'portrait'} intensity={1.8} contactShadow={false} environment={'sunset'}>
+            <Stage preset={'portrait'} intensity={1.8}>
               <directionalLight intensity={0.5} />
               <Environment preset="sunset" />
               <gridHelper scale={0} />
