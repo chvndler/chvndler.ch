@@ -21,7 +21,8 @@
    * Carbonight (rainglow)
    *
    */
-  "workbench.colorTheme": "Copilot Theme",
+  // "workbench.colorTheme": "Copilot Theme",
+  "workbench.colorTheme": "Service (rainglow)",
   "git.ignoreLimitWarning": true,
   "files.autoSave": "onWindowChange",
   "editor.tabSize": 2,

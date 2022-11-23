@@ -232,16 +232,7 @@ html.fonts-loaded body {
 }
 
 mux-player {
-    min-height: 100vh;
-    min-width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    right: 0;
-    bottom: 0;
-    z-index: 9999999;
+    border-radius: 'inherit';
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -264,7 +255,10 @@ mux-player {
     --controls-backdrop-color: rgba(255, 255, 255, 0.4);
     --time-range: none;
     backdrop-filter: blur(10px);
-    /*
+}
+
+
+/*
 --duration-display: none;
 --time-display: none;
     --airplay-button: none;
@@ -272,4 +266,3 @@ mux-player {
         --pip-button: none;
           --mute-button: none;
     */
-}

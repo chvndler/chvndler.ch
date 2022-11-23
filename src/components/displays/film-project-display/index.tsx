@@ -2,6 +2,7 @@ import { theme } from 'stitches.config';
 
 import { Box, Container, Grid, Section, Space } from '@/components/ds';
 import { Aspect } from '@/components/primitives/aspect-ratio';
+import { SmallMuxVideoPlayer } from '@/components/primitives/mux-video/small-video';
 
 /**
  *
@@ -17,13 +18,14 @@ export const FilmProjects = () => {
           <Aspect>
             <Box
               css={{
+                position: 'relative',
                 backgroundColor: theme.colors.mauve12,
                 borderRadius: 26,
                 width: 'auto',
                 height: '100%',
-                border: `3px solid ${theme.colors.tartOrange}`
+                border: `0px solid ${theme.colors.tartOrange}`
               }}
-            />
+            ></Box>
           </Aspect>
           <Aspect>
             <Box
@@ -64,13 +66,16 @@ export const FilmProjects = () => {
           <Aspect>
             <Box
               css={{
+                position: 'relative',
                 backgroundColor: theme.colors.mauve12,
                 borderRadius: 26,
                 width: 'auto',
                 height: '100%',
-                border: `3px solid ${theme.colors.tartOrange}`
+                border: `0px solid ${theme.colors.tartOrange}`
               }}
-            />
+            >
+              <SmallMuxVideoPlayer />
+            </Box>
           </Aspect>
         </Grid>
       </Container>
