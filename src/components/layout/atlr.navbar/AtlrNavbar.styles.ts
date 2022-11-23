@@ -135,7 +135,7 @@ export const itemStyles = {
   paddingRight: 13,
 
   height: '38px',
-  fontFamily: theme.fonts.system,
+  fontFamily: theme.fonts.panB,
   fontSize: 15,
   fontWeight: 500,
 
@@ -188,7 +188,7 @@ const NavigationMenuTrigger = styled(NavigationMenu.Trigger, {
  */
 const NavigationMenuLink = styled(NavigationMenu.Link, {
   ...itemStyles,
-  fontFamily: theme.fonts.system,
+  fontFamily: theme.fonts.panB,
   fontSize: 14,
   fontWeight: 600,
   transition: 'color 0.2s ease',

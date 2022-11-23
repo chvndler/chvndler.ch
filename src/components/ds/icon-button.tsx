@@ -1,4 +1,4 @@
-import { styled } from 'stitches.config';
+import { styled, theme } from 'stitches.config';
 
 export const IconButton = styled('button', {
   boxSizing: 'border-box',
@@ -13,8 +13,8 @@ export const IconButton = styled('button', {
   margin: 0,
   outline: 0,
   borderRadius: 8,
-  color: '$chxn3',
-  border: '1px solid $chxn2',
+  color: theme.colors.sage10,
+  border: `1px solid ${theme.colors.sage6}`,
   backgroundClip: 'padding-box',
 
   '@hover': {
