@@ -19,6 +19,7 @@ import {
 
 const twitter = 'https://twitter.com/chvndlerch';
 const github = 'https://github.com/chvndler';
+const code_sandbox = 'https://codesandbox.io/u/chvndler';
 const instagram = 'https://instagram.com/chv.ndler';
 const are_na = 'https://www.are.na/chvndler-ch';
 const read_cv = 'https://read.cv/chvn';
@@ -54,19 +55,22 @@ export const AtlrNavbar = () => {
           </NavMenuTrigger>
           <NavMenuContent>
             <NavMenuInner>
-              <NavLink href={twitter} target={'_blank'} rel={'norefferer noopener'}>
+              <NavLink href={twitter} target={'_blank'} rel={'noreferrer noopener'}>
                 Twitter
               </NavLink>
-              <NavLink href={github} target={'_blank'} rel={'norefferer noopener'}>
+              <NavLink href={github} target={'_blank'} rel={'noreferrer noopener'}>
                 GitHub
               </NavLink>
-              <NavLink href={instagram} target={'_blank'} rel={'norefferer noopener'}>
+              <NavLink href={code_sandbox} target={'_blank'} rel={'noreferrer noopener'}>
+                CodeSandbox
+              </NavLink>
+              <NavLink href={instagram} target={'_blank'} rel={'noreferrer noopener'}>
                 Instagram
               </NavLink>
-              <NavLink href={are_na} target={'_blank'} rel={'norefferer noopener'}>
+              <NavLink href={are_na} target={'_blank'} rel={'noreferrer noopener'}>
                 Are.na
               </NavLink>
-              <NavLink href={read_cv} target={'_blank'} rel={'norefferer noopener'}>
+              <NavLink href={read_cv} target={'_blank'} rel={'noreferrer noopener'}>
                 Read.cv
               </NavLink>
             </NavMenuInner>

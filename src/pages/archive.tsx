@@ -1,11 +1,10 @@
 import { Container, Text } from '@/components/ds';
-import { AppFooter } from '@/components/layout/app-footer';
 import { PageLayout } from '@/components/layout/page';
 
 const Archive = () => {
   return (
     <>
-      <PageLayout>
+      <PageLayout page_type={'CoverPage'}>
         <Container size="2">
           <Text
             css={{
@@ -21,7 +20,6 @@ const Archive = () => {
           </Text>
         </Container>
       </PageLayout>
-      <AppFooter />
     </>
   );
 };

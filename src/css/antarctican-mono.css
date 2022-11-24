@@ -1,7 +1,0 @@
-@font-face {
-    font-family: 'Antarctican Mono';
-    src: url('/fonts/antarctican-mono/AntarcticanMono-Medium.eot');
-    src: local('Antarctican Mono Medium'), local('AntarcticanMono-Medium'), url('/fonts/antarctican-mono/AntarcticanMono-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/antarctican-mono/AntarcticanMono-Medium.woff2') format('woff2'), url('/fonts/antarctican-mono/AntarcticanMono-Medium.woff') format('woff'), url('/fonts/antarctican-mono/AntarcticanMono-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}

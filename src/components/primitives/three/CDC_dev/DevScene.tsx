@@ -27,7 +27,6 @@ import { DevModel } from './DevModel';
 
 export const DevScene = () => {
   const ref = useRef();
-
   return (
     <Canvas
       shadows
@@ -38,23 +37,19 @@ export const DevScene = () => {
       orthographic={false}
     >
       <pointLight position={[120, 50, 10]} />
-      <directionalLight intensity={0.5} />
+      <directionalLight intensity={0.8} />
       <Suspense fallback={null}>
         <Stage adjustCamera={2} preset={'rembrandt'} intensity={1} shadows={false} environment={'sunset'}>
           <DevModel />
         </Stage>
-
+        <OrbitControls ref={ref} autoRotate autoRotateSpeed={0.2} />
+        <axesHelper args={[0.5]} setColors={null} />
         <gridHelper
           scale={1}
           args={[4, 30, '#F05724', '#C7BBB0']}
           position={[0, 0, 0]}
           rotation={[0, 0, Math.PI / 2]}
         />
-
-        <axesHelper args={[0.5]} setColors={null} />
-        <OrbitControls ref={ref} autoRotate autoRotateSpeed={0.2} />
-
-        {/* <!-- <EffectComposer></EffectComposer> --> */}
       </Suspense>
     </Canvas>
   );

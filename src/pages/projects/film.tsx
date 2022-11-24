@@ -7,7 +7,7 @@ import { PageLayout } from '@/components/layout/page';
 const Film = () => {
   return (
     <>
-      <PageLayout>
+      <PageLayout page_type={'Production'}>
         <Container size={'3'} css={{}}>
           <Text
             css={{

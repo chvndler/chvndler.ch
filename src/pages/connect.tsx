@@ -1,12 +1,11 @@
 import { Container, PassLink, Section, Space, Text } from '@/components/ds';
-import { AppFooter } from '@/components/layout/app-footer';
 import { PageLayout } from '@/components/layout/page';
 import { SocialLinkDisplay } from '@/components/primitives/social-link-display';
 
 const ConnectPage = () => {
   return (
     <>
-      <PageLayout>
+      <PageLayout page_type={'CoverPage'}>
         <Section size={'4'}>
           <Container size={'3'}>
             <Text
@@ -66,7 +65,6 @@ const ConnectPage = () => {
         <Space size={'2'} />
         <SocialLinkDisplay />
       </PageLayout>
-      <AppFooter />
     </>
   );
 };

@@ -109,10 +109,10 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
     <>
       <NextNProgress
         options={{ easing: 'ease', speed: 400, showSpinner: false }}
-        color={'#6A716E'}
+        color={'#EAFF97'}
         startPosition={0.4}
         stopDelayMs={300}
-        height={3}
+        height={2}
         showOnShallow={true}
       />
       <ThemeProvider

@@ -5,7 +5,7 @@ import { PageLayout } from '@/components/layout/page';
 const Web = () => {
   return (
     <>
-      <PageLayout>
+      <PageLayout page_type={'CoverPage'}>
         <Container size={'3'} css={{}}>
           <Text
             css={{
@@ -22,7 +22,6 @@ const Web = () => {
           </Text>
         </Container>
         <Space size={'3'} />
-
         <WebProjectDisplay />
       </PageLayout>
     </>

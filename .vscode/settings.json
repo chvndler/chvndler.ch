@@ -9,7 +9,7 @@
    *
    */
   "editor.fontFamily": "SF Mono, monospace",
-  "editor.fontSize": 11.5,
+  "editor.fontSize": 10,
 
   /**
    *
@@ -22,7 +22,7 @@
    *
    */
   // "workbench.colorTheme": "Copilot Theme",
-  "workbench.colorTheme": "Service (rainglow)",
+  "workbench.colorTheme": "Everblush",
   "git.ignoreLimitWarning": true,
   "files.autoSave": "onWindowChange",
   "editor.tabSize": 2,

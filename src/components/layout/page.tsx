@@ -1,26 +1,92 @@
 import { AtlrNavbar } from '@/components/layout/atlr.navbar';
 
 import { Meta } from '../common/meta';
+import { CoverFooter } from './app-footer';
+import { AlternateFooter } from './app-footer/alternate-footer';
 import { RelativeFooter } from './app-footer/relative-footer';
 import { BodyContainer } from './body-container';
 
 type LayoutProps = {
   children?: React.ReactNode;
+  page_type?: PageVariant;
 
-  // TODO after implementing header, footer
-  // headerProps?: HeaderProps
-  // footerProps?: FooterProps
+  /**
+   * @notes
+   *
+   * I needed a way to alternate different
+   * page styles - depending on different components neeeded.
+   *
+   * So i'm playing with this @if (page_type ===) option.
+   */
 };
 
-export const PageLayout = ({ children }: LayoutProps) => {
+export type PageVariant = 'CoverPage' | 'Production' | 'Developing';
+export const PageLayout = ({ children, page_type }: LayoutProps) => {
+  /**
+   * @ProductionVariant
+   */
+  if (page_type === 'Production') {
+    return (
+      <>
+        <Meta />
+        <AtlrNavbar />
+        <BodyContainer>
+          <main>{children}</main>
+        </BodyContainer>
+        <RelativeFooter />
+      </>
+    );
+  }
+
+  /**
+   * @CoverPageVariant
+   */
+  if (page_type === 'CoverPage') {
+    return (
+      <>
+        <Meta />
+        <AtlrNavbar />
+        <BodyContainer>
+          <main>{children}</main>
+        </BodyContainer>
+        <CoverFooter />
+      </>
+    );
+  }
+
+  /**
+   * @CoverPageVariant
+   */
+  if (page_type === 'Developing') {
+    return (
+      <>
+        <Meta />
+        <AtlrNavbar />
+        <BodyContainer>
+          <main>{children}</main>
+        </BodyContainer>
+        <AlternateFooter />
+      </>
+    );
+  }
+
+  /**
+   *
+   * @if no page_type provided...
+   * default = ProductionVariant...
+   *
+   * @return ProductionVariant
+   */
   return (
     <>
-      <Meta />
-      <AtlrNavbar />
-      <BodyContainer>
-        <main>{children}</main>
-      </BodyContainer>
-      <RelativeFooter />
+      <>
+        <Meta />
+        <AtlrNavbar />
+        <BodyContainer>
+          <main>{children}</main>
+        </BodyContainer>
+        <RelativeFooter />
+      </>
     </>
   );
 };
