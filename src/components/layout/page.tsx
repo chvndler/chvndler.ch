@@ -20,7 +20,7 @@ type LayoutProps = {
    */
 };
 
-export type PageVariant = 'CoverPage' | 'Production' | 'Developing' | 'RemoveFooter';
+export type PageVariant = 'Production' | 'App' | 'CoverPage' | 'Developing' | 'RemoveFooter';
 export const PageLayout = ({ children, page_type }: LayoutProps) => {
   /**
    * @ProductionVariant
@@ -34,6 +34,20 @@ export const PageLayout = ({ children, page_type }: LayoutProps) => {
           <main>{children}</main>
         </BodyContainer>
         <RelativeFooter />
+      </>
+    );
+  }
+
+  /**
+   * @App
+   */
+  if (page_type === 'App') {
+    return (
+      <>
+        <Meta />
+        <AtlrNavbar />
+        <main>{children}</main>
+        <CoverFooter />
       </>
     );
   }

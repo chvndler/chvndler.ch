@@ -2,15 +2,12 @@ import { styled, theme } from 'stitches.config';
 
 import { Canvas, Container, Text } from '@/components/ds';
 import { FixedCanvas } from '@/components/ds/canvas';
-import { CoverFooter } from '@/components/layout/app-footer';
-import { AtlrNavbar } from '@/components/layout/atlr.navbar';
-import ChxnCursor, { CursorWrapper } from '@/components/primitives/cursor';
+import { PageLayout } from '@/components/layout/page';
 
 const AppPage = () => {
   return (
     <>
-      <CursorWrapper>
-        <AtlrNavbar />
+      <PageLayout page_type={'App'}>
         <FixedCanvas>
           <Canvas>
             <Container size={'1'} css={{ margin: 'auto', alignItems: 'center', justifyContent: 'center' }}>
@@ -19,9 +16,7 @@ const AppPage = () => {
             </Container>
           </Canvas>
         </FixedCanvas>
-        <CoverFooter />
-        <ChxnCursor />
-      </CursorWrapper>
+      </PageLayout>
     </>
   );
 };

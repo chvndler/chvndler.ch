@@ -47,8 +47,11 @@ export const R3FCanvasLayout: FC<R3FCanvasLayoutProps> = ({ children, htmlChildr
         <StyledStats>
           <Stats />
         </StyledStats>
-        <orbitControls />
-        <transformControls />
+        {/* <!--
+         <orbitControls />
+         <transformControls />
+        --> */}
+        <ambientLight intensity={0.2} />
         {children}
       </R3FCanvas>
     </>
