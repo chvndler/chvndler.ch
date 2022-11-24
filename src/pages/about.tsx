@@ -1,29 +1,25 @@
-import { theme } from 'stitches.config';
+import { styled, theme } from 'stitches.config';
 
-import { Box, Text } from '@/components/ds';
-import { AtlrNavbar } from '@/components/layout/atlr.navbar';
+import { Container } from '@/components/ds';
+import { PageLayout } from '@/components/layout/page';
 
-const AboutPage = () => {
+const About = () => {
   return (
     <>
-      <AtlrNavbar />
-      <Box css={{ zIndex: 9999, position: 'fixed', top: 0, left: 0, padding: 20 }}>
-        <Text
-          css={{
-            color: '$chxn9',
-            fontSize: 32,
-            fontFamily: theme.colors.tartOrange,
-            fontWeight: 'bold',
-            lineHeight: '80px'
-          }}
-        >
-          ABOUT
-          <br />
-          ME.
-        </Text>
-      </Box>
+      <PageLayout page_type={'CoverPage'}>
+        <Container size={'2'}>
+          <Heading>Archive</Heading>
+        </Container>
+      </PageLayout>
     </>
   );
 };
 
-export default AboutPage;
+export default About;
+
+const Heading = styled('h1', {
+  color: theme.colors.chxn13,
+  fontFamily: theme.fonts.panB,
+  fontSize: 20,
+  textAlign: 'center'
+});

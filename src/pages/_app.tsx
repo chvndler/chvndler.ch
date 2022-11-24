@@ -11,6 +11,10 @@ import { darkTheme, globalCss } from 'stitches.config';
 import { useAppStore } from '@/context/use-app-store';
 import { isDev } from '@/lib/constants';
 
+/**
+ * end! imports..
+ */
+
 const Context = createContext<{ fontsLoaded: boolean }>({ fontsLoaded: false });
 export const useAppContext = () => useContext(Context);
 
@@ -37,10 +41,15 @@ const globalStyles = globalCss({
   }
 });
 
-// App Begin...
+/**
+ * @app
+ */
 const App = ({ Component, pageProps, ...rest }: AppProps) => {
   globalStyles();
 
+  /**
+   * @mousetrap v1.6.5
+   */
   React.useEffect(() => {
     if (!isDev) return;
     let mousetrapRef: Mousetrap.MousetrapInstance | undefined = undefined;
@@ -55,6 +64,9 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
     };
   }, []);
 
+  /**
+   * @keydown scroll
+   */
   React.useEffect(() => {
     function handleKeyDown(event: KeyboardEvent) {
       if (event.code === `Tab`) {
@@ -74,9 +86,14 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
     };
   }, []);
 
+  /**
+   * @fontsLoaded
+   */
   React.useEffect(() => {
-    const maxWaitTime = 1500; // tweak this as needed.
-
+    /*
+     * tweak as needed.
+     */
+    const maxWaitTime = 1000;
     const timeout = window.setTimeout(() => {
       onReady();
     }, maxWaitTime);
@@ -109,17 +126,17 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
     <>
       <NextNProgress
         options={{ easing: 'ease', speed: 400, showSpinner: false }}
+        showOnShallow={true}
         color={'#EAFF97'}
         startPosition={0.4}
         stopDelayMs={300}
         height={2}
-        showOnShallow={true}
       />
       <ThemeProvider
         disableTransitionOnChange
-        attribute="class"
+        attribute={'class'}
         value={{ light: 'light-theme', dark: darkTheme.className }}
-        defaultTheme="light-theme"
+        defaultTheme={'light-theme'}
       >
         {getLayout({ Component, pageProps, ...rest })}
       </ThemeProvider>

@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import React, { useMemo } from 'react';
-import { styled } from 'stitches.config';
+import { styled, theme } from 'stitches.config';
 
 type PassLinkProps = { href: string } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 const StyledHref = styled(Link, {
-  transition: 'color 0.4s ease',
+  transition: 'color 0.3s ease',
   '&:hover': {
-    color: '#686799'
+    color: theme.colors.chxn13
   }
 });
 

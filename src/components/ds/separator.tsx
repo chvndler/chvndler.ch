@@ -10,6 +10,10 @@ const StyledSeparator = styled(SeparatorPrimitive.Root, {
 
   variants: {
     size: {
+      auto: {
+        '&[data-orientation=horizontal]': { height: 1, width: '40px' },
+        '&[data-orientation=vertical]': { height: 'auto', width: 1 }
+      },
       '1': {
         '&[data-orientation=horizontal]': { height: 1, width: '100%' },
         '&[data-orientation=vertical]': { height: '100%', width: 1 }

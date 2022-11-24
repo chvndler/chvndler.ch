@@ -53,7 +53,9 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       ...whiteA,
       ...blackA,
 
-      // defaults
+      /**
+       * @defaults
+       */
       background: '#101010',
       black: '#000000',
       blur: 'rgba(72,67,73,0.1)',
@@ -61,7 +63,9 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       table: 'transparent',
       white: '#ffffff',
 
-      // CHXN.v01
+      /**
+       * @chxnColor
+       */
       chxn1: '#f7f0f0',
       chxn2: '#bcc1cd',
       chxn3: '#A09FA6',
@@ -75,11 +79,11 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       chxn10: '#a288a6',
       chxn11: '#93827f',
       chxn12: '#222222',
+      chxn13: '#BA8FF7',
       tartOrange: '#ff3333',
-      lime: 'lime',
-
+      berry: '#686799',
       /**
-       * @socialmedia colors...
+       * @socialmedia
        */
       ig: '#ff3333',
       insta: '#ff3474',
@@ -92,6 +96,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       readcv: '#8A918E',
       fb: '#4267B2'
     },
+
     fonts: {
       system: '-apple-system,Helvetica,sans-serif,"Apple Color Emoji","Segoe UI Emoji", sans-serif',
       mono: 'ui-monospace, "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Droid Sans Mono", monospace',
@@ -111,6 +116,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       latMedExtd: '"Lateral Extended Medium", sans-serif',
       latBoldExtd: '"Lateral Extended Bold", sans-serif'
     },
+
     fontSizes: {
       1: '12px',
       2: '14px',
@@ -173,7 +179,9 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     }
   },
   media: {
-    // breakpoints...
+    /**
+     * @breakpoints
+     */
     xs: '(max-width: 480px)',
     sm: '(max-width: 520px)',
     md: '(max-width: 740px)',
@@ -186,7 +194,9 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     bp3: `(min-width: 1200px)`,
     bp4: `(min-width: 1580px)`,
 
-    // user preferences...
+    /**
+     * @user prefs
+     */
     motion: '(prefers-reduced-motion)',
     hover: '(any-hover: hover)',
     dark: '(prefers-color-scheme: dark)',
@@ -201,14 +211,19 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
   },
   utils: {
     font: (value: Stitches.PropertyValue<'fontFamily'>) => ({
-      // example font: , == fontFamily: ;
+      /**
+       * @example font: theme.font.value,
+       */
       fontFamily: value
     }),
     linearGradient: () => (value: Stitches.PropertyValue<'padding'>) => ({
       backgroundImage: `linear-gradient(${value})`
     }),
     p: (value: Stitches.PropertyValue<'padding'>) => ({
-      // example p: 0, == padding: 0;
+      /**
+       * @example p: 2,
+       * @returns padding: 2;
+       */
       padding: value
     }),
     px: (value: Stitches.PropertyValue<'paddingLeft'>) => ({
@@ -252,6 +267,7 @@ export const darkTheme = createTheme('dark-theme', {
     chxn10: '#a288a6',
     chxn11: '#93827f',
     chxn12: '#222222',
+    chxn13: '#EAFF97',
 
     blur: 'rgba(0, 0, 0, 0.1)',
 

@@ -9,20 +9,18 @@
    *
    */
   "editor.fontFamily": "SF Mono, monospace",
-  "editor.fontSize": 10,
+  "editor.fontSize": 11,
 
   /**
    *
-   * @themes
+   * @themes - fav three
    *
-   * Jewel Contrast (rainglow)
-   * Isotope Contrast (rainglow)
    * Copilot Theme
-   * Carbonight (rainglow)
+   * CodeSandbox
+   * Everblush
    *
    */
-  // "workbench.colorTheme": "Copilot Theme",
-  "workbench.colorTheme": "Everblush",
+  "workbench.colorTheme": "CodeSandbox",
   "git.ignoreLimitWarning": true,
   "files.autoSave": "onWindowChange",
   "editor.tabSize": 2,

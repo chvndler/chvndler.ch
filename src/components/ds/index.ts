@@ -2,7 +2,7 @@ export * from './badge';
 export * from './blur-canvas';
 export * from './box';
 export * from './button';
-export * from './canvas';
+export { Canvas, FixedCanvas } from './canvas';
 export * from './card';
 export * from './container';
 export * from './cool-button';

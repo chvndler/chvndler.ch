@@ -6,5 +6,4 @@
  * @MIT License
  *
  */
-
 export { AtlrNavbar } from './AtlrNavbar';

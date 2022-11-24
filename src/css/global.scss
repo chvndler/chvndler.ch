@@ -21,6 +21,13 @@
 *:focus {
     box-sizing: border-box;
     outline: none;
+    // cursor: none;
+}
+
+#__next {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .fullWidth {
@@ -40,6 +47,12 @@ html {
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -212,12 +225,6 @@ html.fonts-loaded body {
     z-index: auto;
 }
 
-#__next {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
 #muxVideo {
     width: 100%;
     height: 100%;
@@ -261,13 +268,3 @@ mux-player {
     --time-range: none;
     backdrop-filter: blur(10px);
 }
-
-
-/*
---duration-display: none;
---time-display: none;
-    --airplay-button: none;
-
-        --pip-button: none;
-          --mute-button: none;
-    */

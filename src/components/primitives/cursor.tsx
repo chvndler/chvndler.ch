@@ -2,8 +2,25 @@
 import gsap from 'gsap';
 import React, { createContext, useContext, useEffect, useRef, useState } from 'react';
 import { isMobile as _isMobile } from 'react-device-detect';
-// Stitches
-import { styled } from 'stitches.config';
+import { css, styled } from 'stitches.config';
+
+const CursorWrapperStyles = css({
+  '*': {
+    boxSizing: 'border-box',
+    outline: 'none',
+    cursor: 'none'
+  },
+  '*:active': {
+    boxSizing: 'border-box',
+    outline: 'none',
+    cursor: 'none'
+  },
+  '*:focus': {
+    boxSizing: 'border-box',
+    outline: 'none',
+    cursor: 'none'
+  }
+});
 
 const CursorFollower = styled('div', {
   $$size: '16px',
@@ -81,12 +98,12 @@ const CursorFollower = styled('div', {
 });
 
 type CursorType = 'pointer' | 'text' | 'grab' | 'grabbing' | undefined;
-
+export const CursorWrapper = styled('html', CursorWrapperStyles);
 const CursorContext = createContext<{ setType: React.Dispatch<React.SetStateAction<CursorType>> } | undefined>(
   undefined
 );
 
-const Cursor = ({ children }: { children?: React.ReactNode }) => {
+const ChxnCursor = ({ children }: { children?: React.ReactNode }) => {
   const cursorRef = useRef<HTMLDivElement>(null);
   const [type, setType] = useState<CursorType>();
   const [isMobile, setIsMobile] = useState<boolean>();
@@ -173,4 +190,4 @@ export const useCursor = () => {
   return context;
 };
 
-export default Cursor;
+export default ChxnCursor;

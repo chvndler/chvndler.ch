@@ -1,39 +1,55 @@
-import { Container, Section, Text } from '@/components/ds';
-import { RelativeFooter } from '@/components/layout/app-footer/relative-footer';
+import { styled, theme } from 'stitches.config';
+
+import { Container, InlineLink, Section, Space } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
-import { NoteEntry } from '@/components/primitives/NoteEntry';
+import { CopyrightText, NoteEntry } from '@/components/primitives/NoteEntry';
 import { notes } from '@/lib/notes';
 
 const NotesPage = () => {
   return (
     <>
-      <PageLayout>
+      <PageLayout page_type={'RemoveFooter'}>
         <Section size={'4'}>
-          <Container size={'2'}>
-            <Text
-              css={{
-                color: '$chxn7',
-                fontFamily: '"Lateral Extended Bold", sans-serif',
-                fontSize: 22,
-                fontWeight: 'bold',
-                letterSpacing: '-0.05rem',
-                textAlign: 'center'
-              }}
-            >
-              notes
-            </Text>
-          </Container>
-
-          <Container size="2" css={{ padding: 20 }}>
+          <Container size={'1'} css={{ padding: 20 }}>
             {notes.map((entry) => {
               return <NoteEntry key={entry.title} title={entry.title} note={entry.note} />;
             })}
           </Container>
+
+          <Space size={'2'} />
+          <Container size={'1'} css={{ margin: 'auto', display: 'flex', justifyContent: 'center' }}>
+            <Heading>. . .</Heading>
+          </Container>
+          <Space size={'2'} />
+
+          <Container size={'1'}>
+            <Heading>© NOTES.</Heading>
+            <Space size={'1'} />
+            <CopyrightText>
+              this is where i write. <br />
+              things i learn, words to keep, <br />
+              the truth.
+            </CopyrightText>
+
+            <Space size={'2'} />
+
+            <CopyrightText css={{ color: theme.colors.chxn4 }}>
+              follow me on <InlineLink href={'https://twitter.com/chvndlerch'}>twitter</InlineLink>
+            </CopyrightText>
+          </Container>
         </Section>
       </PageLayout>
-      <RelativeFooter />
     </>
   );
 };
 
 export default NotesPage;
+
+const Heading = styled('p', {
+  color: theme.colors.chxn13,
+  fontFamily: theme.fonts.latMedExtd,
+  fontSize: 12,
+  textAlign: 'center',
+  letterSpacing: '0.05rem',
+  lineHeght: '1'
+});

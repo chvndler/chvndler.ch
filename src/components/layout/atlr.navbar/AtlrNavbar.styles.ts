@@ -120,6 +120,21 @@ const StyledContentBox = styled('div', {
  */
 export const itemStyles = {
   all: 'unset',
+  '*': {
+    boxSizing: 'border-box',
+    outline: 'none',
+    cursor: 'none'
+  },
+  '*:active': {
+    boxSizing: 'border-box',
+    outline: 'none',
+    cursor: 'none'
+  },
+  '*:focus': {
+    boxSizing: 'border-box',
+    outline: 'none',
+    cursor: 'none'
+  },
   alignItems: 'center',
   boxSizing: 'border-box',
   userSelect: 'none',
@@ -180,18 +195,50 @@ const NavigationMenuTrigger = styled(NavigationMenu.Trigger, {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  gap: 2
+  gap: 2,
+
+  '*': {
+    boxSizing: 'border-box',
+    outline: 'none',
+    cursor: 'none'
+  },
+  '*:active': {
+    boxSizing: 'border-box',
+    outline: 'none',
+    cursor: 'none'
+  },
+  '*:focus': {
+    boxSizing: 'border-box',
+    outline: 'none',
+    cursor: 'none'
+  }
 });
 
 /**
  * @MenuLink
  */
 const NavigationMenuLink = styled(NavigationMenu.Link, {
+  '*': {
+    boxSizing: 'border-box',
+    outline: 'none',
+    cursor: 'none'
+  },
+  '*:active': {
+    boxSizing: 'border-box',
+    outline: 'none',
+    cursor: 'none'
+  },
+  '*:focus': {
+    boxSizing: 'border-box',
+    outline: 'none',
+    cursor: 'none'
+  },
+
   ...itemStyles,
   fontFamily: theme.fonts.panB,
   fontSize: 14,
   fontWeight: 600,
-  transition: 'color 0.2s ease',
+  transition: 'color 0.3s ease',
   textDecoration: 'none',
   lineHeight: 1,
   borderRadius: 12,
@@ -202,11 +249,28 @@ const NavigationMenuLink = styled(NavigationMenu.Link, {
   gap: 2,
 
   '&:hover': {
-    color: theme.colors.sage12,
+    color: theme.colors.chxn13,
     backgroundColor: theme.colors.whiteA6,
-    borderColor: `${theme.colors.chxn4A}`,
     cursor: 'pointer'
-  }
+  },
+
+  variants: {
+    level2: {
+      true: {
+        color: theme.colors.sage9
+      }
+    },
+    disabled: {
+      true: {
+        color: theme.colors.sage9,
+        '&:hover': {
+          color: theme.colors.sage9,
+          cursor: 'not-allowed'
+        }
+      }
+    }
+  },
+  defaultVariants: {}
 });
 
 /**

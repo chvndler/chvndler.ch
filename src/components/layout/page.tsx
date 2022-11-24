@@ -20,7 +20,7 @@ type LayoutProps = {
    */
 };
 
-export type PageVariant = 'CoverPage' | 'Production' | 'Developing';
+export type PageVariant = 'CoverPage' | 'Production' | 'Developing' | 'RemoveFooter';
 export const PageLayout = ({ children, page_type }: LayoutProps) => {
   /**
    * @ProductionVariant
@@ -66,6 +66,21 @@ export const PageLayout = ({ children, page_type }: LayoutProps) => {
           <main>{children}</main>
         </BodyContainer>
         <AlternateFooter />
+      </>
+    );
+  }
+
+  /**
+   * @RemoveFooterVariant
+   */
+  if (page_type === 'RemoveFooter') {
+    return (
+      <>
+        <Meta />
+        <AtlrNavbar />
+        <BodyContainer>
+          <main>{children}</main>
+        </BodyContainer>
       </>
     );
   }

@@ -1,4 +1,6 @@
-import { Container, PassLink, Section, Space, Text } from '@/components/ds';
+import { styled, theme } from 'stitches.config';
+
+import { Container, PassLink, Section, Space } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
 import { SocialLinkDisplay } from '@/components/primitives/social-link-display';
 
@@ -8,58 +10,16 @@ const ConnectPage = () => {
       <PageLayout page_type={'CoverPage'}>
         <Section size={'4'}>
           <Container size={'3'}>
-            <Text
-              css={{
-                color: '#F05724',
-                fontSize: 22,
-                fontFamily: '"Lateral Extended Bold", sans-serif',
-                fontWeight: 'bold'
-              }}
-            >
-              connect.
-            </Text>
+            <ConnectText>connect.</ConnectText>
 
             <PassLink href={'mailto:chvndler.ch@icloud.com'}>
-              <Text
-                css={{
-                  fontSize: 14,
-                  fontWeight: '500',
-                  color: '$chxn3',
-                  fontFamily: '"Lateral Extended Medium", sans-serif',
-                  '&:hover': {
-                    textDecoration: 'underline'
-                  }
-                }}
-              >
-                chvndler.ch@icloud.com
-              </Text>
+              <LinkText>chvndler.ch@icloud.com</LinkText>
             </PassLink>
           </Container>
 
           <Space size={'2'} />
           <Container size={'3'}>
-            <Text
-              css={{
-                color: '$sage10',
-                fontFamily: '"Lateral Standard Bold", sans-serif',
-                fontSize: 52,
-                fontWeight: 'bold',
-                textAlign: 'left',
-                letterSpacing: '-0.08rem',
-                lineHeight: '50px',
-                '@md': {
-                  fontSize: 38,
-                  lineHeight: '36px',
-                  letterSpacing: '0rem'
-                }
-              }}
-            >
-              CONNECT WITH ME.
-              <br />
-              I AM CURRENTLY LOOKING
-              <br />
-              FOR MY NEXT ROLE.
-            </Text>
+            <ParaText>I am currently seeking my next role.</ParaText>
           </Container>
         </Section>
         <Space size={'2'} />
@@ -70,3 +30,34 @@ const ConnectPage = () => {
 };
 
 export default ConnectPage;
+
+const ConnectText = styled('h1', {
+  fontFamily: theme.fonts.latBoldExtd,
+  color: theme.colors.tartOrange,
+  textAlign: 'left',
+  fontSize: 22
+});
+
+const LinkText = styled('span', {
+  fontFamily: theme.fonts.panMd,
+  color: theme.colors.chxn3,
+  fontSize: 16,
+  textAlign: 'left',
+  lineHeight: '1',
+
+  '&:hover': {
+    textDecoration: 'underline'
+  }
+});
+
+const ParaText = styled('span', {
+  fontFamily: theme.fonts.neue,
+  color: theme.colors.chxn4,
+  fontSize: 20,
+  textAlign: 'left',
+  lineHeight: '1',
+
+  '@md': {
+    fontSize: 18
+  }
+});
