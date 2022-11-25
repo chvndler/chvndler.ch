@@ -18,6 +18,7 @@ import * as React from 'react';
 import { createContext, useContext } from 'react';
 import { darkTheme, globalCss } from 'stitches.config';
 
+import { AnalyticsProvider } from '@/components/sxripts';
 import { useAppStore } from '@/context/use-app-store';
 import { isDev } from '@/lib/constants';
 
@@ -134,22 +135,24 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
 
   return (
     <>
-      <NextNProgress
-        options={{ easing: 'ease', speed: 400, showSpinner: false }}
-        showOnShallow={true}
-        color={'#EAFF97'}
-        startPosition={0.4}
-        stopDelayMs={300}
-        height={2}
-      />
-      <ThemeProvider
-        disableTransitionOnChange
-        attribute={'class'}
-        value={{ light: 'light-theme', dark: darkTheme.className }}
-        defaultTheme={'light-theme'}
-      >
-        {getLayout({ Component, pageProps, ...rest })}
-      </ThemeProvider>
+      <AnalyticsProvider>
+        <NextNProgress
+          options={{ easing: 'ease', speed: 400, showSpinner: false }}
+          showOnShallow={true}
+          color={'#EAFF97'}
+          startPosition={0.4}
+          stopDelayMs={300}
+          height={2}
+        />
+        <ThemeProvider
+          disableTransitionOnChange
+          attribute={'class'}
+          value={{ light: 'light-theme', dark: darkTheme.className }}
+          defaultTheme={'light-theme'}
+        >
+          {getLayout({ Component, pageProps, ...rest })}
+        </ThemeProvider>
+      </AnalyticsProvider>
     </>
   );
 };

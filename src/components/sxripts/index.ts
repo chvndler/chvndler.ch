@@ -1,2 +1,5 @@
+import PlausibleScript from './plausible';
+
 export * from './CursorData';
-export * from './plausible';
+export default { PlausibleScript };
+export * from './plausible-provider';
