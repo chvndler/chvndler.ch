@@ -23,13 +23,13 @@ module.exports = (_phase, { defaultConfig: _ }) => {
 // https://nextjs.org/docs/advanced-features/security-headers
 const ContentSecurityPolicy = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.spotify.com *.ady.systems fonts.googleapis.com fonts.gstatic.com;
-    child-src *.youtube.com *.google.com *.twitter.com;
-    style-src 'self' 'unsafe-inline' *.ady.systems cdn.ady.systems i.scdn.co *.scdn.co fonts.googleapis.com fonts.gstatic.com;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.spotify.com *.plausible.io stream.mux;
+    child-src *.youtube.com *.google.com *.twitter.com stream.mux;
+    style-src 'self' 'unsafe-inline';
     img-src * blob: data:;
-    media-src 'none' *.scdn.co;
-    connect-src *;
-    font-src 'self' *.ady.systems cdn.ady.systems fonts.googleapis.com fonts.gstatic.com;
+    media-src data: *.scdn.co stream.mux;
+    connect-src data: * stream.mux market-assets.fra1.cdn.digitaloceanspaces.com;
+    font-src 'self';
 `;
 
 const securityHeaders = [
