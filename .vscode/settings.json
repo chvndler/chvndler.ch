@@ -21,7 +21,7 @@
    * Everblush
    *
    */
-  "workbench.colorTheme": "CodeSandbox",
+  "workbench.colorTheme": "CodeSandbox Black",
   "git.ignoreLimitWarning": true,
   "files.autoSave": "onWindowChange",
   "editor.tabSize": 2,
