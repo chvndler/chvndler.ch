@@ -1,0 +1,67 @@
+{
+    "github": {
+        "silent": true
+    },
+    "headers": [{
+        "headers": [{
+                "key": "Access-Control-Allow-Origin",
+                "value": "*"
+            },
+            {
+                "key": "Content-Security-Policy",
+                "value": "base-uri 'self'; connect-src 'self' auth.magic.link p.typekit.net *.typekit.net cdn.ady.systems ady.systems use.typekit.net develop.modulz.app rawcdn.githack.com *.klaviyo.com static.klaviyo.com static-forms.klaviyo.com a.klaviyo.com; default-src 'none'; font-src 'self' p.typekit.net *.typekit.net develop.modulz.app use.typekit.net cdn.ady.systems ady.systems; form-action 'self' hooks.zapier.com static.klaviyo.com *.klaviyo.com; frame-ancestors 'self' auth.magic.link; frame-src 'self' auth.magic.link; img-src 'self' p.typekit.net *.typekit.net cdn.ady.systems ady.world ady.systems images.unsplash.com use.typekit.net rawcdn.githack.com images.pexels.com data:; manifest-src 'self'; media-src 'self' ady.world p.typekit.net *.typekit.net cdn.ady.systems ady.systems use.typekit.net rawcdn.githack.com; object-src 'self' auth.magic.link rawcdn.githack.com cdn.ady.systems ady.systems *.klaviyo.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' auth.magic.link cdn.ady.systems p.typekit.net *.typekit.net ady.systems rawcdn.githack.com use.typekit.net static.klaviyo.com *.klaviyo.com; style-src 'self' 'unsafe-inline' p.typekit.net *.typekit.net use.typekit.net develop.modulz.app cdn.ady.systems ady.systems rawcdn.githack.com *.klaviyo.com;"
+            },
+            {
+                "key": "Expect-CT",
+                "value": "max-age=31536000, report-uri=\"https://atelier.report-uri.com/r/d/ct/reportOnly\""
+            },
+            {
+                "key": "Permissions-Policy",
+                "value": "accelerometer 'self'; ambient-light-sensor 'self'; autoplay 'self'; camera 'self'; document-domain 'self'; encrypted-media 'self'; fullscreen 'self'; geolocation 'self'; gyroscope 'self'; magnetometer 'self'; microphone 'self'; midi 'self'; payment 'self'; picture-in-picture 'self'; speaker 'self'; sync-xhr 'self'; usb 'self'; vr / xr 'self';"
+            },
+            {
+                "key": "Referrer-Policy",
+                "value": "strict-origin"
+            },
+            {
+                "key": "Strict-Transport-Security",
+                "value": "max-age=31536000; includesubdomains; preload"
+            },
+            {
+                "key": "Vary",
+                "value": "Accept-Encoding"
+            },
+            {
+                "key": "X-Content-Type-Options",
+                "value": "nosniff"
+            },
+            {
+                "key": "X-Frame-Options",
+                "value": "allow"
+            },
+            {
+                "key": "X-XSS-Protection",
+                "value": "1; mode=block"
+            }
+        ],
+        "source": "/(.*)"
+    }],
+    "redirects": [{
+            "destination": "https://instagram.com/chv.ndler",
+            "source": "/instagram"
+        },
+        {
+            "destination": "https://github.com/chvndler",
+            "source": "/github"
+        },
+        {
+            "destination": "https://twitter.com/chv_ndler",
+            "source": "/twitter"
+        },
+        {
+            "destination": "https://discord.gg/mcEPWdZ2",
+            "source": "/discord"
+        }
+    ],
+    "scope": "chvndler.ch"
+}

@@ -21,7 +21,7 @@ export type MetaProps = BasicMeta;
 
 export const Meta = (props: MetaProps) => {
   const router = useRouter();
-  const isDark = useMedia('(prefers-color-scheme: dark)');
+  const isDark = useMedia('(prefers-color-scheme: dark-theme)');
 
   const resolvedMetadata = React.useMemo(() => {
     const data = {

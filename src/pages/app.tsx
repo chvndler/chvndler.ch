@@ -3,7 +3,6 @@ import { styled, theme } from 'stitches.config';
 import { Canvas, Container, Text } from '@/components/ds';
 import { FixedCanvas } from '@/components/ds/canvas';
 import { PageLayout } from '@/components/layout/page';
-import { PlausibleEventButton } from '@/hooks/use-plausible';
 
 const AppPage = () => {
   return (
@@ -14,10 +13,6 @@ const AppPage = () => {
             <Container size={'1'} css={{ margin: 'auto', alignItems: 'center', justifyContent: 'center' }}>
               <NameText>CHANDLER®</NameText>
               <RoleText>Front-End Developer and Designer</RoleText>
-            </Container>
-
-            <Container size={'1'}>
-              <PlausibleEventButton event_name={'plausibleTestingEvent'}>testEvent</PlausibleEventButton>
             </Container>
           </Canvas>
         </FixedCanvas>
