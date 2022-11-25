@@ -35,7 +35,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
   themeMap: {
     ...defaultThemeMap
   },
-  prefix: 'atelier', // *put your preferred css prefix here.* //
+  prefix: 'atlr-',
   theme: {
     colors: {
       ...gray,

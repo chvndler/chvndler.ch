@@ -17,6 +17,9 @@ const About = () => {
 
 export default About;
 
+/**
+ * @styles
+ */
 const Heading = styled('h1', {
   color: theme.colors.chxn13,
   fontFamily: theme.fonts.panB,

@@ -1,3 +1,13 @@
+/*
+ * Copyright (C) 2022 @chvndler
+ * All Rights Reserved.
+ *
+ * You may use, distribute and modify this code under the
+ * terms of the MIT license. You should have received a
+ * copy of the MIT license with this repository.
+ *
+ * See https://github.com/chvndler
+ */
 import '@/css/global.scss';
 
 import type { NextComponentType, NextPageContext } from 'next';

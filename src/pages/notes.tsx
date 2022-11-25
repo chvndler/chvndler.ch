@@ -45,6 +45,9 @@ const NotesPage = () => {
 
 export default NotesPage;
 
+/**
+ * @styles
+ */
 const Heading = styled('p', {
   color: theme.colors.chxn13,
   fontFamily: theme.fonts.latMedExtd,

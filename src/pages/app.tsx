@@ -23,6 +23,9 @@ const AppPage = () => {
 
 export default AppPage;
 
+/**
+ * @styles
+ */
 const NameText = styled('h1', {
   fontFamily: theme.fonts.latBoldExtd,
   color: theme.colors.chxn13,

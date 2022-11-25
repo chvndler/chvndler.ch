@@ -17,6 +17,9 @@ const Archive = () => {
 
 export default Archive;
 
+/**
+ * @styles
+ */
 const Heading = styled('h1', {
   color: theme.colors.chxn13,
   fontFamily: theme.fonts.panB,

@@ -15,10 +15,7 @@ const config = {
 };
 
 module.exports = (_phase, { defaultConfig: _ }) => {
-    const plugins = [
-        withBundleAnalyzer({ enabled: process.env.ANALYZE === 'true' }),
-        withTM(['three'])
-    ];
+    const plugins = [withBundleAnalyzer({ enabled: process.env.ANALYZE === 'true' }), withTM(['three'])];
     // return plugins.reduce((acc, plugin) => plugin(acc), {...config });
     return config;
 };

@@ -11,12 +11,10 @@ const ConnectPage = () => {
         <Section size={'4'}>
           <Container size={'3'}>
             <ConnectText>connect.</ConnectText>
-
             <PassLink href={'mailto:chvndler.ch@icloud.com'}>
               <LinkText>chvndler.ch@icloud.com</LinkText>
             </PassLink>
           </Container>
-
           <Space size={'2'} />
           <Container size={'3'}>
             <ParaText>I am currently seeking my next role.</ParaText>
@@ -31,6 +29,9 @@ const ConnectPage = () => {
 
 export default ConnectPage;
 
+/**
+ * @styles
+ */
 const ConnectText = styled('h1', {
   fontFamily: theme.fonts.latBoldExtd,
   color: theme.colors.tartOrange,
