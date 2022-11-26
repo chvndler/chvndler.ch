@@ -103,7 +103,7 @@
         "next-sitemap": "3",
         "next-transpile-modules": "10",
         "postcss": "^8.4.19",
-        "prettier": "2.7.1",
+        "prettier": "2.8.0",
         "remark-slug": "^7.0.1",
         "sass": "1.56.1",
         "stylelint": "14.15.0",
