@@ -1,15 +1,5 @@
 /* stylelint-disable prettier/prettier */
 
-@font-face {
-    font-family: 'Lateral Variable';
-    src: url('/fonts/lateral/LateralVariable.woff2');
-    src: local('Lateral Standard Bold'), url('/fonts/lateral/LateralVariable.woff2') format('woff2');
-    font-weight: 100 900;
-    font-display: swap;
-    font-style: normal;
-    font-named-instance: '';
-}
-
 
 /**
  * Lateral Standard
