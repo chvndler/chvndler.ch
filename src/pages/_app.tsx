@@ -138,7 +138,7 @@ const App = ({ Component, pageProps, ...rest }: AppProps) => {
       <AnalyticsProvider>
         <NextNProgress
           options={{ easing: 'ease', speed: 400, showSpinner: false }}
-          showOnShallow={true}
+          showOnShallow={false}
           color={'#EAFF97'}
           startPosition={0.4}
           stopDelayMs={300}

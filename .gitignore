@@ -44,4 +44,5 @@ yarn-error.log*
 
 
 # vscode
-.vscode/
+.vscode/*
+/.vscode
