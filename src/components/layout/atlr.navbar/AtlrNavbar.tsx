@@ -17,6 +17,9 @@ import {
   Viewport
 } from './AtlrNavbar.styles';
 
+/**
+ * @ConnectLinks
+ */
 const twitter = 'https://twitter.com/chvndlerch';
 const github = 'https://github.com/chvndler';
 const code_sandbox = 'https://codesandbox.io/u/chvndler';
@@ -28,6 +31,7 @@ export const AtlrNavbar = () => {
   return (
     <NavMenuRoot>
       <NavMenuBar>
+        {/* <!-- "Projects" Menu --> */}
         <NavigationMenu.Item>
           <NavMenuTrigger>
             Projects <NavIcxn variant="SmallArrowDown" />
@@ -35,9 +39,9 @@ export const AtlrNavbar = () => {
 
           <NavMenuContent>
             <NavMenuInner>
-              <NavLink href="/">Index</NavLink>
-              <NavLink href="/projects/web">Web</NavLink>
-              <NavLink href="/projects/film">Film</NavLink>
+              <NavLink href="/">index</NavLink>
+              <NavLink href="/projects/web">Web Projects</NavLink>
+              <NavLink href="/projects/film">Film Projects</NavLink>
               <NavLink href="/projects/three">Three.js</NavLink>
               <NavLink level2 href="/notes">
                 Notes
@@ -51,6 +55,7 @@ export const AtlrNavbar = () => {
             </NavMenuInner>
           </NavMenuContent>
         </NavigationMenu.Item>
+        {/* <!-- END !  "Projects" Menu --> */}
 
         <NavContentBox alignment="center">
           <PassLink href="/">
@@ -58,6 +63,7 @@ export const AtlrNavbar = () => {
           </PassLink>
         </NavContentBox>
 
+        {/* <!-- "Connect" Menu --> */}
         <NavigationMenu.Item>
           <NavMenuTrigger>
             Connect <NavIcxn variant="SmallArrowDown" />
@@ -85,6 +91,7 @@ export const AtlrNavbar = () => {
             </NavMenuInner>
           </NavMenuContent>
         </NavigationMenu.Item>
+        {/* <!-- END !  "Connect" Menu --> */}
       </NavMenuBar>
 
       <Viewport>

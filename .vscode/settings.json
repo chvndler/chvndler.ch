@@ -8,20 +8,20 @@
    * Trispace Mono
    *
    */
-  "editor.fontFamily": "Jetbrains Mono, monospace",
-  // "editor.fontFamily": "SF Mono, monospace",
-  "editor.fontSize": 10,
+  "editor.fontFamily": "SF Mono, monospace",
+  // "editor.fontFamily": "Jetbrains Mono, monospace",
+  "editor.fontSize": 12,
 
   /**
    *
    * @themes - fav three
    *
    * Copilot Theme
-   * CodeSandbox
+   * CodeSandbox | CodeSandbox Black 2021
    * Everblush
    *
    */
-  "workbench.colorTheme": "CodeSandbox Black",
+  "workbench.colorTheme": "CodeSandbox Black 2021",
   "git.ignoreLimitWarning": true,
   "files.autoSave": "onWindowChange",
   "editor.tabSize": 2,

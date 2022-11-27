@@ -1317,9 +1317,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:9.43.3":
-  version: 9.43.3
-  resolution: "@react-three/drei@npm:9.43.3"
+"@react-three/drei@npm:9.44.1":
+  version: 9.44.1
+  resolution: "@react-three/drei@npm:9.44.1"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ^9.3.1
@@ -1347,7 +1347,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 149bcc8e919388463f8737fd0c2c4758c869f0f2a068de2dbe383dcdaec2e80fa5ce97d4f54efd0c62372e197dbe1d15b4364ac3010817af67648a94fa81bb0e
+  checksum: 66c6a8b2a3827ae42e1eb6b26848770eb0153e46ae634d15d8bf22fba87edc9aa92f32a8893a833caaffaa93731c963593ce9c9ec046a3c3c931abfb8162323c
   languageName: node
   linkType: hard
 
@@ -2386,7 +2386,7 @@ __metadata:
     "@radix-ui/react-scroll-area": ^1.0.2
     "@radix-ui/react-separator": ^1.0.1
     "@radix-ui/react-switch": 1.0.1
-    "@react-three/drei": 9.43.3
+    "@react-three/drei": 9.44.1
     "@react-three/fiber": 8.9.1
     "@react-three/postprocessing": ^2.7.0
     "@stitches/react": ^1.2.8
@@ -2431,7 +2431,7 @@ __metadata:
     next-transpile-modules: 10
     nextjs-progressbar: ^0.0.16
     postcss: ^8.4.19
-    prettier: 2.7.1
+    prettier: 2.8.0
     react: ^18.2.0
     react-device-detect: ^2.2.2
     react-dom: ^18.2.0
@@ -2824,11 +2824,11 @@ __metadata:
   linkType: hard
 
 "detect-gpu@npm:^4.0.36":
-  version: 4.0.49
-  resolution: "detect-gpu@npm:4.0.49"
+  version: 4.0.50
+  resolution: "detect-gpu@npm:4.0.50"
   dependencies:
     webgl-constants: ^1.1.1
-  checksum: d83ba54cae03608b4192a7760c61519ad37e1ae20f7fc27d68e5036fc8f9d79058aaf9758855e8fdacf6a96f43cbc2f81479317e9da6b5a361f904429da116cf
+  checksum: 08df8c89819794bb7a1913adbbaad314166d6c4db7901bee1a527cda86ff1279c5b12173ff8afc08d9d7ed7c6f1c9f7d5d6177dbf91454f3797b5b1a964d4322
   languageName: node
   linkType: hard
 
@@ -5827,12 +5827,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.7.1":
-  version: 2.7.1
-  resolution: "prettier@npm:2.7.1"
+"prettier@npm:2.8.0":
+  version: 2.8.0
+  resolution: "prettier@npm:2.8.0"
   bin:
     prettier: bin-prettier.js
-  checksum: 55a4409182260866ab31284d929b3cb961e5fdb91fe0d2e099dac92eaecec890f36e524b4c19e6ceae839c99c6d7195817579cdffc8e2c80da0cb794463a748b
+  checksum: 72004ce0cc9bb097daf3e3833f62495768724392c1d5b178dd47372337616e9e50ecbb0804f236596223f7b5eb1bbe69cefc8957dca21112c5777e77ef73a564
   languageName: node
   linkType: hard
 

@@ -40,6 +40,8 @@ export const PageLayout = ({ children, page_type }: LayoutProps) => {
 
   /**
    * @App
+   * _ Removes "BodyContainer"
+   * _ Because we use a "FixedCanvas" component.
    */
   if (page_type === 'App') {
     return (

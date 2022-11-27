@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'Lateral Variable';
-    src: url('/fonts/Lateral/LateralVariable.woff2');
-    src: local('Lateral Standard Bold'), url('/fonts/Lateral/LateralVariable.woff2') format('woff2');
+    src: url('/fonts/lateral/LateralVariable.woff2');
+    src: local('Lateral Standard Bold'), url('/fonts/lateral/LateralVariable.woff2') format('woff2');
     font-weight: 100 900;
     font-display: swap;
     font-style: normal;
@@ -17,8 +17,8 @@
 
 @font-face {
     font-family: 'Lateral Standard Bold';
-    src: url('/fonts/Lateral/LateralStandard-Bold.woff2');
-    src: local('Lateral Standard Bold'), url('/fonts/Lateral/LateralStandard-Bold.woff2') format('woff2');
+    src: url('/fonts/lateral/LateralStandard-Bold.woff2');
+    src: local('Lateral Standard Bold'), url('/fonts/lateral/LateralStandard-Bold.woff2') format('woff2');
     font-weight: bold;
     font-display: block;
     font-style: normal;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'Lateral Standard Medium';
-    src: url('/fonts/Lateral/LateralStandard-Medium.woff2');
-    src: local('Lateral Standard Medium'), url('/fonts/Lateral/LateralStandard-Medium.woff2') format('woff2');
+    src: url('/fonts/lateral/LateralStandard-Medium.woff2');
+    src: local('Lateral Standard Medium'), url('/fonts/lateral/LateralStandard-Medium.woff2') format('woff2');
     font-weight: 500;
     font-display: block;
     font-style: normal;
@@ -37,8 +37,8 @@
 
 @font-face {
     font-family: 'Lateral Standard Regular';
-    src: url('/fonts/Lateral/LateralStandard-Regular.woff2');
-    src: local('Lateral Standard Regular'), url('/fonts/Lateral/LateralStandard-Regular.woff2') format('woff2');
+    src: url('/fonts/lateral/LateralStandard-Regular.woff2');
+    src: local('Lateral Standard Regular'), url('/fonts/lateral/LateralStandard-Regular.woff2') format('woff2');
     font-weight: normal;
     font-display: block;
     font-style: normal;
@@ -52,8 +52,8 @@
 
 @font-face {
     font-family: 'Lateral Extended Bold';
-    src: url('/fonts/Lateral/LateralExt-Bold.woff2');
-    src: local('Lateral Extended Bold'), url('/fonts/Lateral/LateralExt-Bold.woff2') format('woff2'), url('/fonts/Lateral/LateralExt-Bold.eot?#iefix') format('embedded-opentype');
+    src: url('/fonts/lateral/LateralExt-Bold.woff2');
+    src: local('Lateral Extended Bold'), url('/fonts/lateral/LateralExt-Bold.woff2') format('woff2'), url('/fonts/lateral/LateralExt-Bold.eot?#iefix') format('embedded-opentype');
     font-weight: bold;
     font-display: block;
     font-style: normal;
@@ -62,8 +62,8 @@
 
 @font-face {
     font-family: 'Lateral Extended Medium';
-    src: url('/fonts/Lateral/LateralExt-Medium.woff2');
-    src: local('Lateral Extended Medium'), url('/fonts/Lateral/LateralExt-Medium.woff2') format('woff2'), url('/fonts/Lateral/LateralExt-Medium.eot?#iefix') format('embedded-opentype');
+    src: url('/fonts/lateral/LateralExt-Medium.woff2');
+    src: local('Lateral Extended Medium'), url('/fonts/lateral/LateralExt-Medium.woff2') format('woff2'), url('/fonts/lateral/LateralExt-Medium.eot?#iefix') format('embedded-opentype');
     font-weight: 500;
     font-display: block;
     font-style: normal;
@@ -72,8 +72,8 @@
 
 @font-face {
     font-family: 'Lateral Extended Regular';
-    src: url('/fonts/Lateral/LateralExt-Regular.woff2');
-    src: local('Lateral Extended Regular'), url('/fonts/Lateral/LateralExt-Regular.woff2') format('woff2'), url('/fonts/Lateral/LateralExt-Regular.eot?#iefix') format('embedded-opentype');
+    src: url('/fonts/lateral/LateralExt-Regular.woff2');
+    src: local('Lateral Extended Regular'), url('/fonts/lateral/LateralExt-Regular.woff2') format('woff2'), url('/fonts/lateral/LateralExt-Regular.eot?#iefix') format('embedded-opentype');
     font-weight: 400;
     font-display: block;
     font-style: normal;

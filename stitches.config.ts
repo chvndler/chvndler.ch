@@ -101,6 +101,8 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       system: '-apple-system,Helvetica,sans-serif,"Apple Color Emoji","Segoe UI Emoji", sans-serif',
       mono: 'ui-monospace, "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Droid Sans Mono", monospace',
       inter: '"Inter", sans-serif',
+      scto: '"Scto Grotesk A Regular", sans-serif',
+      sctoBold: '"Scto Grotesk A Bold", sans-serif',
 
       neue: '"PP Neue Montreal", sans-serif',
 

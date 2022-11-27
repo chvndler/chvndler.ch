@@ -1,8 +1,8 @@
 import { styled } from 'stitches.config';
 
-import { Flex, Text } from '@/components/ds';
+import { Text } from '@/components/ds';
 import CursorData from '@/components/primitives/cursor-data';
-import { ThemeButton } from '@/components/primitives/theme-button';
+import { ThemeSwitch } from '@/components/primitives/theme-switcher';
 
 const StyledFooter = styled('footer', {
   zIndex: '999',
@@ -115,10 +115,8 @@ export const RelativeFooter = () => {
           </Text>
         </ContentBox>
 
-        <ContentBox alignment="end">
-          <Flex css={{ flexDirection: 'column' }}>
-            <ThemeButton />
-          </Flex>
+        <ContentBox alignment="end" css={{}}>
+          <ThemeSwitch />
         </ContentBox>
       </Footer>
     </>

@@ -1,5 +1,6 @@
 @import './helpers';
 @import './reset.css';
+@import './scto-grotesk-a.css';
 @import './pangram-sans.css';
 @import './lateral.css';
 @import './inter.css';
@@ -11,6 +12,7 @@
 */
 
 :root {
+    --font-primary: 'Scto Grotesk A Regular', sans-serif;
     --font-system: -apple-system, blinkmacsystemfont, 'segoe ui', roboto, oxygen, ubuntu, cantarell, fira sans, droid sans, 'helvetica neue', sans-serif;
     --font-body: -apple-system, sans-serif;
     --inspect-color: #ff3333;
@@ -56,7 +58,7 @@ body {
 }
 
 body {
-    font-family: var(--font-system);
+    font-family: var(--font-primary);
     transition: opacity #{$duration / 6 + 's'} ease-in;
 }
 
@@ -264,7 +266,7 @@ mux-player {
     --volume-range: none;
     --center-controls: none;
     --bottom-play-button: none;
-    --controls-backdrop-color: rgba(255, 255, 255, 0.4);
+    --controls-backdrop-color: rgb(0 0 0 / 20%);
     --time-range: none;
     backdrop-filter: blur(10px);
 }
