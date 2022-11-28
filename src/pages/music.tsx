@@ -2,6 +2,7 @@ import { styled, theme } from 'stitches.config';
 
 import { Container } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
+import { NowPlaying, Tracks } from '@/components/primitives/spotify';
 
 const Music = () => {
   return (
@@ -9,6 +10,14 @@ const Music = () => {
       <PageLayout page_type={'CoverPage'}>
         <Container size={'2'}>
           <Heading>Music</Heading>
+        </Container>
+
+        <Container size={'2'}>
+          <NowPlaying />
+        </Container>
+
+        <Container size={'2'}>
+          <Tracks />
         </Container>
       </PageLayout>
     </>

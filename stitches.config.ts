@@ -114,7 +114,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       scto: '"Scto Grotesk A Regular", sans-serif',
       sctoBold: '"Scto Grotesk A Bold", sans-serif',
 
-      neue: '"PP Neue Montreal", sans-serif',
+      helvRound: '"Helvetica Rounded Bold", sans-serif',
 
       panB: '"PP Pangram Sans Rounded Bold", sans-serif',
       panSb: '"PP Pangram Sans Rounded Semibold", sans-serif',

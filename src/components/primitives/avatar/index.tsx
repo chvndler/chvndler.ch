@@ -1,6 +1,6 @@
 import * as AvatarPrimitive from '@radix-ui/react-avatar';
 import React from 'react';
-import { styled, VariantProps } from 'stitches.config';
+import { styled, theme, VariantProps } from 'stitches.config';
 
 import { Box } from '@/components/ds';
 
@@ -37,108 +37,39 @@ const StyledAvatar = styled(AvatarPrimitive.Root, {
   variants: {
     size: {
       '1': {
-        width: '$3',
-        height: '$3'
+        width: 16,
+        height: 16
       },
       '2': {
-        width: '$4',
-        height: '$4'
+        width: 20,
+        height: 20
       },
       '3': {
-        width: 50,
-        height: 50
+        width: 45,
+        height: 45
       },
       '4': {
-        width: '$7',
-        height: '$7'
+        width: 60,
+        height: 60
       },
       '5': {
-        width: '$8',
-        height: '$8'
-      },
-      '6': {
-        width: '$9',
-        height: '$9'
+        borderRadius: 18,
+        width: 100,
+        height: 100
       }
     },
     variant: {
       hiContrast: {
-        backgroundColor: '$hiContrast',
-        color: '$loContrast'
+        backgroundColor: theme.colors.blackA10,
+        color: theme.colors.chxn13
       },
       gray: {
-        backgroundColor: '$slate5'
-      },
-      tomato: {
-        backgroundColor: '$tomato5'
-      },
-      red: {
-        backgroundColor: '$red5'
-      },
-      crimson: {
-        backgroundColor: '$crimson5'
-      },
-      pink: {
-        backgroundColor: '$pink5'
-      },
-      plum: {
-        backgroundColor: '$plum5'
-      },
-      purple: {
-        backgroundColor: '$purple5'
-      },
-      violet: {
-        backgroundColor: '$violet5'
-      },
-      indigo: {
-        backgroundColor: '$indigo5'
-      },
-      blue: {
-        backgroundColor: '$blue5'
-      },
-      cyan: {
-        backgroundColor: '$cyan5'
-      },
-      teal: {
-        backgroundColor: '$teal5'
-      },
-      green: {
-        backgroundColor: '$green5'
-      },
-      grass: {
-        backgroundColor: '$grass5'
-      },
-      brown: {
-        backgroundColor: '$brown5'
-      },
-      bronze: {
-        backgroundColor: '$bronze5'
-      },
-      gold: {
-        backgroundColor: '$gold5'
-      },
-      sky: {
-        backgroundColor: '$sky5'
-      },
-      mint: {
-        backgroundColor: '$mint5'
-      },
-      lime: {
-        backgroundColor: '$lime5'
-      },
-      yellow: {
-        backgroundColor: '$yellow5'
-      },
-      amber: {
-        backgroundColor: '$amber5'
-      },
-      orange: {
-        backgroundColor: '$orange5'
+        backgroundColor: theme.colors.slate5
       }
     },
     shape: {
       square: {
-        borderRadius: '$2'
+        borderRadius: 18
       },
       circle: {
         borderRadius: '50%'
@@ -274,8 +205,11 @@ export const Avatar = React.forwardRef<React.ElementRef<typeof StyledAvatar>, Av
             mr: '-3px',
             mb: '-3px'
           }}
-        ></Box>
+        />
       </Box>
     );
   }
 );
+
+export const AvatarImage = StyledAvatarImage;
+export const AvatarFallback = StyledAvatarFallback;

@@ -17,6 +17,8 @@ export * from './paragraph';
 export * from './pass-link';
 export * from './section';
 export * from './separator';
+export * from './skeleton';
 export * from './space';
+export * from './status';
 export * from './sup';
 export * from './text';

@@ -37,7 +37,7 @@ const NameText = styled('h1', {
 });
 
 const RoleText = styled(Text, {
-  fontFamily: theme.fonts.panSb,
+  fontFamily: theme.fonts.panB,
   color: theme.colors.sage11,
   fontSize: 16,
   fontWeight: 'auto',

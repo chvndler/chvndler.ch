@@ -52,7 +52,7 @@ const LinkText = styled('span', {
 });
 
 const ParaText = styled('span', {
-  fontFamily: theme.fonts.neue,
+  fontFamily: theme.fonts.panMd,
   color: theme.colors.chxn4,
   fontSize: 20,
   textAlign: 'left',
