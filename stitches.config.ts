@@ -1,17 +1,9 @@
 import {
   blackA,
-  blue,
-  blueA,
-  blueDark,
-  blueDarkA,
   gray,
   grayA,
   grayDark,
   grayDarkA,
-  lime,
-  limeA,
-  limeDark,
-  limeDarkA,
   mauve,
   mauveA,
   mauveDark,
@@ -29,6 +21,17 @@ import {
 import type * as Stitches from '@stitches/react';
 import { createStitches, defaultThemeMap } from '@stitches/react';
 
+/**
+ * @imported colors:
+ *
+ * blackA
+ * whiteA
+ * gray
+ * mauve
+ * sage
+ * slate
+ */
+
 export type { VariantProps } from '@stitches/react';
 
 export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes, config, reset } = createStitches({
@@ -42,10 +45,6 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       ...grayA,
       ...mauve,
       ...mauveA,
-      ...lime,
-      ...limeA,
-      ...blue,
-      ...blueA,
       ...slate,
       ...slateA,
       ...sage,
@@ -58,10 +57,22 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
        */
       background: '#101010',
       black: '#000000',
-      blur: 'rgba(72,67,73,0.1)',
-      appbarButton: 'rgba(0, 0, 0, 0.03)',
-      table: 'transparent',
       white: '#ffffff',
+      blur: 'rgba(72,67,73,0.1)',
+      trnsprnt: 'transparent',
+      tp: 'transparent',
+
+      /**
+       * @chxn
+       */
+      fizz: 'rgb(218, 255, 71)',
+      heliotrope: 'rgb(202, 96, 255)',
+
+      honeySuckle: 'rgb(226, 255, 112)',
+      portage: 'rgb(186, 143, 247)',
+
+      ruby: 'rgb(216, 43, 98)',
+      winterSky: 'rgb(255, 50, 115)',
 
       /**
        * @chxnColor
@@ -96,7 +107,6 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       readcv: '#8A918E',
       fb: '#4267B2'
     },
-
     fonts: {
       system: '-apple-system,Helvetica,sans-serif,"Apple Color Emoji","Segoe UI Emoji", sans-serif',
       mono: 'ui-monospace, "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Droid Sans Mono", monospace',
@@ -118,7 +128,6 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       latMedExtd: '"Lateral Extended Medium", sans-serif',
       latBoldExtd: '"Lateral Extended Bold", sans-serif'
     },
-
     fontSizes: {
       1: '12px',
       2: '14px',
@@ -218,15 +227,15 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
        */
       fontFamily: value
     }),
-    linearGradient: () => (value: Stitches.PropertyValue<'padding'>) => ({
-      backgroundImage: `linear-gradient(${value})`
-    }),
     p: (value: Stitches.PropertyValue<'padding'>) => ({
       /**
        * @example p: 2,
        * @returns padding: 2;
        */
       padding: value
+    }),
+    linearGradient: () => (value: Stitches.PropertyValue<'backgroundImage'>) => ({
+      backgroundImage: `linear-gradient(${value})`
     }),
     px: (value: Stitches.PropertyValue<'paddingLeft'>) => ({
       paddingLeft: value,
@@ -235,6 +244,12 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
     py: (value: Stitches.PropertyValue<'paddingTop'>) => ({
       paddingTop: value,
       paddingBottom: value
+    }),
+    pL: (value: Stitches.PropertyValue<'paddingLeft'>) => ({
+      paddingLeft: value
+    }),
+    pR: (value: Stitches.PropertyValue<'paddingRight'>) => ({
+      paddingRight: value
     })
   }
 });
@@ -247,10 +262,6 @@ export const darkTheme = createTheme('dark-theme', {
     ...grayDarkA,
     ...mauveDark,
     ...mauveDarkA,
-    ...limeDark,
-    ...limeDarkA,
-    ...blueDark,
-    ...blueDarkA,
     ...slateDark,
     ...slateDarkA,
     ...sageDark,
