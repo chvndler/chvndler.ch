@@ -5,8 +5,9 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 import { Loader } from '../loader';
 
-export const IridescentModel = () => {
-  const gltf = useLoader(GLTFLoader, '/models/CDC_Iridescent.gltf');
+export const CDCExpirementalModel = () => {
+  const gltf = useLoader(GLTFLoader, '/models/CDC.gltf');
+
   return (
     <React.Suspense fallback={<Loader />}>
       <primitive object={gltf.scene} />
@@ -14,4 +15,4 @@ export const IridescentModel = () => {
   );
 };
 
-useGLTF.preload('/models/CDC_Iridescent.gltf');
+useGLTF.preload('/models/CDC.gltf');

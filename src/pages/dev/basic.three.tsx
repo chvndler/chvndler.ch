@@ -1,7 +1,7 @@
 import { Box, Container, Flex, PassLink, Space, Text } from '@/components/ds';
 import { AtlrNavbar } from '@/components/layout/atlr.navbar';
 import { R3FCanvasLayout } from '@/components/layout/r3f-canvas-layout';
-import { DevScene } from '@/components/primitives/three/CDC_dev';
+import { CDCDevScene } from '@/components/primitives/three/Scenes';
 
 const ThreeBasicPage = () => {
   return (
@@ -55,7 +55,7 @@ const ThreeBasicPage = () => {
         </Text>
       </Container>
       <R3FCanvasLayout>
-        <DevScene />
+        <CDCDevScene />
       </R3FCanvasLayout>
     </>
   );

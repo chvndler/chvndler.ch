@@ -4,7 +4,7 @@ import { Box, Container, Flex, PassLink, Text } from '@/components/ds';
 import { Icxn } from '@/components/icons/atlr-icxns';
 import { AtlrNavbar } from '@/components/layout/atlr.navbar';
 import { R3FCanvasLayout } from '@/components/layout/r3f-canvas-layout';
-import { DevScene } from '@/components/primitives/three/CDC_dev';
+import { CDCDevScene } from '@/components/primitives/three/Scenes';
 
 const ThreePage = () => {
   return (
@@ -133,7 +133,7 @@ const ThreePage = () => {
         </PassLink>
       </Container>
       <R3FCanvasLayout>
-        <DevScene />
+        <CDCDevScene />
       </R3FCanvasLayout>
     </>
   );

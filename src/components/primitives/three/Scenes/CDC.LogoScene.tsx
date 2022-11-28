@@ -5,7 +5,7 @@ import { BlendFunction } from 'postprocessing';
 import React, { Suspense, useRef } from 'react';
 import { styled } from 'stitches.config';
 
-import { LogoModel } from './logo-model';
+import { CDCLogoModel } from '../Models/CDCLogoModel';
 
 const AppBox = styled('div', {
   zIndex: 3,
@@ -36,7 +36,7 @@ export const CDCLogoScene = () => {
               <Environment preset="sunset" />
               <gridHelper scale={0} />
               <axesHelper scale={0} />
-              <LogoModel />
+              <CDCLogoModel />
               <OrbitControls
                 ref={ref}
                 enablePan={false}

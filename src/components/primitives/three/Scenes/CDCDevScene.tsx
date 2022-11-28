@@ -2,7 +2,8 @@ import { OrbitControls, Stage } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import React, { Suspense, useRef } from 'react';
 
-import { DevModel } from './DevModel';
+import { Loader } from '../loader';
+import { CDCDevModel } from '../Models/CDCDevModel';
 
 /**
  *
@@ -25,7 +26,7 @@ import { DevModel } from './DevModel';
  *
  */
 
-export const DevScene = () => {
+export const CDCDevScene = () => {
   const ref = useRef();
   return (
     <Canvas
@@ -38,15 +39,14 @@ export const DevScene = () => {
     >
       <pointLight position={[120, 50, 10]} />
       <directionalLight intensity={0.8} />
-      <Suspense fallback={null}>
+      <Suspense fallback={<Loader />}>
         <Stage adjustCamera={2} preset={'rembrandt'} intensity={1} shadows={false} environment={'sunset'}>
-          <DevModel />
+          <CDCDevModel />
         </Stage>
-        <OrbitControls ref={ref} autoRotate autoRotateSpeed={0.2} />
-        <axesHelper args={[0.5]} setColors={null} />
+        <OrbitControls ref={ref} autoRotate autoRotateSpeed={0.1} />
         <gridHelper
           scale={1}
-          args={[4, 30, '#F05724', '#C7BBB0']}
+          args={[4, 30, '#EAFF97', '#313341']}
           position={[0, 0, 0]}
           rotation={[0, 0, Math.PI / 2]}
         />

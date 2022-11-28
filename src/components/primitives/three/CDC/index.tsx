@@ -1,1 +1,0 @@
-export { CDCLogoScene } from './CDCLogoScene';

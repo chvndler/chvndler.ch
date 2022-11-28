@@ -12,7 +12,7 @@ type GLTFResult = GLTF & {
   };
 };
 
-export const LogoModel = (props: JSX.IntrinsicElements['group']) => {
+export const CDCLogoModel = (props: JSX.IntrinsicElements['group']) => {
   const { nodes, materials } = useGLTF('/models/CDC_Iridescent.gltf') as unknown as GLTFResult;
 
   return (
