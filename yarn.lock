@@ -1317,9 +1317,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:9.44.1":
-  version: 9.44.1
-  resolution: "@react-three/drei@npm:9.44.1"
+"@react-three/drei@npm:9.45.0":
+  version: 9.45.0
+  resolution: "@react-three/drei@npm:9.45.0"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ^9.3.1
@@ -1347,7 +1347,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 66c6a8b2a3827ae42e1eb6b26848770eb0153e46ae634d15d8bf22fba87edc9aa92f32a8893a833caaffaa93731c963593ce9c9ec046a3c3c931abfb8162323c
+  checksum: 86af3a0e045fb93a1226a2998d818e37ea60d01b88c0bdcc6b3af69bcc8ee6e645fadc266fc9088c56ed4014b89b931cd4914d547798418d44209b0494356ed6
   languageName: node
   linkType: hard
 
@@ -2386,7 +2386,7 @@ __metadata:
     "@radix-ui/react-scroll-area": ^1.0.2
     "@radix-ui/react-separator": ^1.0.1
     "@radix-ui/react-switch": 1.0.1
-    "@react-three/drei": 9.44.1
+    "@react-three/drei": 9.45.0
     "@react-three/fiber": 8.9.1
     "@react-three/postprocessing": ^2.7.0
     "@stitches/react": ^1.2.8
