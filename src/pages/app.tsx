@@ -4,7 +4,7 @@ import { Canvas, Container, Text } from '@/components/ds';
 import { FixedCanvas } from '@/components/ds/canvas';
 import { PageLayout } from '@/components/layout/page';
 
-const AppPage = () => {
+const NextAppPage = () => {
   return (
     <>
       <PageLayout page_type={'App'}>
@@ -21,7 +21,7 @@ const AppPage = () => {
   );
 };
 
-export default AppPage;
+export default NextAppPage;
 
 /**
  * @styles
