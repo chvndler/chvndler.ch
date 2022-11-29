@@ -39,17 +39,17 @@ export const AtlrNavbar = () => {
 
           <NavMenuContent>
             <NavMenuInner>
-              <NavLink href="/">index</NavLink>
-              <NavLink href="/projects/web">Web Projects</NavLink>
-              <NavLink href="/projects/film">Film Projects</NavLink>
-              <NavLink href="/projects/three">Three.js</NavLink>
-              <NavLink level2 href="/notes">
+              <NavLink href={'/'}>index</NavLink>
+              <NavLink href={'/projects/web'}>Web Projects</NavLink>
+              <NavLink href={'/projects/film'}>Film Projects</NavLink>
+              <NavLink href={'/projects/three'}>Three.js</NavLink>
+              <NavLink level2 href={'/notes'}>
                 Notes
               </NavLink>
-              <NavLink level2 disabled href="/archive">
+              <NavLink level2 disabled href={'/archive'}>
                 Archive
               </NavLink>
-              <NavLink level2 disabled href="/music">
+              <NavLink level2 disabled href={'/music'}>
                 Music
               </NavLink>
             </NavMenuInner>
@@ -58,7 +58,7 @@ export const AtlrNavbar = () => {
         {/* <!-- END !  "Projects" Menu --> */}
 
         <NavContentBox alignment="center">
-          <PassLink href="/">
+          <PassLink href={'/'}>
             <CDCLogo />
           </PassLink>
         </NavContentBox>

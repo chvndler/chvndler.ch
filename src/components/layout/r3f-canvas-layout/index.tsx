@@ -1,9 +1,10 @@
-import { Stats } from '@react-three/drei';
+// import { Stats } from '@react-three/drei';
 import { extend, Object3DNode } from '@react-three/fiber';
 import React, { FC } from 'react';
-import { styled } from 'stitches.config';
+import { css, styled } from 'stitches.config';
 import { OrbitControls, TransformControls } from 'three-stdlib';
 
+import { AtlrNavbar } from '@/components/layout/atlr.navbar';
 extend({ OrbitControls, TransformControls });
 
 declare module '@react-three/fiber' {
@@ -18,7 +19,24 @@ type R3FCanvasLayoutProps = {
   htmlChildren?: React.ReactNode;
 };
 
-const R3FCanvas = styled('div', {
+export const R3FCanvasLayout: FC<R3FCanvasLayoutProps> = ({ children, htmlChildren, ...rest }) => {
+  return (
+    <>
+      <DivHTML>
+        <AtlrNavbar />
+        {htmlChildren}
+      </DivHTML>
+      <R3FCanvas {...rest}>
+        <StatsModule>{/* <!-- <Stats /> --> */}</StatsModule>
+        {/* <!-- <orbitControls /> --> */}
+        {/* <!--  <transformControls /> --> */}
+        {children}
+      </R3FCanvas>
+    </>
+  );
+};
+
+const R3FCanvasStyles = css({
   position: 'fixed',
   top: 0,
   bottom: 0,
@@ -27,30 +45,22 @@ const R3FCanvas = styled('div', {
   height: '100vh',
   width: '100vw',
   padding: 0,
-  margin: 0
+  margin: 0,
+  zIndex: 0
 });
 
-const StyledStats = styled('div', {
+const StyledStats = css({
   top: 'auto',
   bottom: 'auto',
   left: 0,
   right: 0
 });
 
-export const R3FCanvasLayout: FC<R3FCanvasLayoutProps> = ({ children, htmlChildren, ...rest }) => {
-  return (
-    <>
-      {htmlChildren}
-      <R3FCanvas {...rest}>
-        <StyledStats>
-          <Stats />
-        </StyledStats>
+const StyledHTML = css({
+  position: 'relative',
+  zIndex: 5
+});
 
-        <orbitControls />
-        <transformControls />
-
-        {children}
-      </R3FCanvas>
-    </>
-  );
-};
+const R3FCanvas = styled('div', R3FCanvasStyles);
+const StatsModule = styled('div', StyledStats);
+const DivHTML = styled('div', StyledHTML);
