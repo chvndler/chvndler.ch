@@ -108,39 +108,6 @@ html.fonts-loaded body {
 
 
 /**
-*
-* Slider Component Styles
-*
-*/
-
-.keen-slider:not([data-keen-slider-disabled]) {
-    align-content: flex-start;
-    display: flex;
-    overflow: hidden;
-    position: relative;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-    width: 100%;
-    .keen-slider__slide {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        min-height: 100%;
-    }
-    &[data-keen-slider-reverse] {
-        flex-direction: row-reverse;
-    }
-    &[data-keen-slider-v] {
-        flex-wrap: wrap;
-    }
-}
-
-
-/**
  * cmdk - resets and global styles
  * @pacocoursey/cmdk
  * https://cmdk.paco.me

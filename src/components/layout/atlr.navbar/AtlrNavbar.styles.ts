@@ -32,6 +32,7 @@ const fadeOut = keyframes({
  * @MenuRoot
  */
 const NavigationMenuRoot = styled(NavigationMenu.Root, {
+  zIndex: 9998,
   position: 'fixed',
   top: '0.5rem',
   left: '50%',
@@ -41,7 +42,6 @@ const NavigationMenuRoot = styled(NavigationMenu.Root, {
   WebkitFontSmoothing: 'antialiased',
   width: 'calc(100% - 2rem)',
   height: '3.5rem',
-  zIndex: 2,
 
   margin: 'auto',
   padding: 0
@@ -63,7 +63,7 @@ const NavigationMenuBarStyles = styled(NavigationMenu.List, {
   top: 4,
   left: 0,
   right: 0,
-  zIndex: 999999999,
+  zIndex: 9999,
   display: 'flex',
   width: '100%',
   maxWidth: '400px',

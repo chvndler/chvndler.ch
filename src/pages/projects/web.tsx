@@ -1,12 +1,12 @@
 import { WebProjectDisplay } from '@/components/displays/web-project-display';
-import { Container, Space, Text } from '@/components/ds';
+import { Canvas, Container, Space, Text } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
 
 const Web = () => {
   return (
     <>
       <PageLayout page_type={'CoverPage'}>
-        <Container size={'3'} css={{}}>
+        <Container size={'2'} css={{}}>
           <Text
             css={{
               textAlign: 'center',
@@ -22,7 +22,9 @@ const Web = () => {
           </Text>
         </Container>
         <Space size={'3'} />
-        <WebProjectDisplay />
+        <Canvas>
+          <WebProjectDisplay />
+        </Canvas>
       </PageLayout>
     </>
   );

@@ -41,3 +41,51 @@ $duration: $reciprocal-golden-ratio * 1.2;
     }
     @return math.div($target, $context)+0em;
 }
+
+
+/**
+*
+* Slider Component Styles
+*
+*/
+
+.keen-slider:not([data-keen-slider-disabled]) {
+    z-index: 0;
+    padding-left: 20vw !important;
+    padding-right: 0 !important;
+    padding-top: auto;
+    padding-bottom: auto;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: inline-flex;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+    touch-action: pan-y;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    .keen-slider__slide {
+        box-sizing: border-box;
+        position: relative;
+        //overflow: hidden;
+        width: 100%;
+        min-height: 100%;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    &[data-keen-slider-reverse] {
+        flex-direction: row-reverse;
+    }
+    &[data-keen-slider-v] {
+        flex-wrap: wrap;
+    }
+}
