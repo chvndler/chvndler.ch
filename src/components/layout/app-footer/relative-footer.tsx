@@ -1,36 +1,62 @@
-import { styled } from 'stitches.config';
+import { styled, theme } from 'stitches.config';
 
-import { Text } from '@/components/ds';
-import CursorData from '@/components/primitives/cursor-data';
+import { Flex, PassLink } from '@/components/ds';
+import { Icxn } from '@/components/icons/atlr-icxns';
+import { CursorData } from '@/components/primitives/cursor-data';
 import { ThemeSwitch } from '@/components/primitives/theme-switcher';
 
-const StyledFooter = styled('footer', {
-  zIndex: '999',
-  position: 'relative',
-  boxSizing: 'border-box',
-  display: 'flex',
-  gap: 2,
-  flexDirection: 'row',
-  alignItems: 'flex-end',
-  justifyContent: 'space-between',
-  width: '100%',
-  height: 'auto',
-  padding: 15,
-  margin: 'auto',
-  backgroundColor: 'transparent',
-  color: '$chvn100',
-  '@md': {
-    flexDirection: 'column',
-    alignContent: 'center',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
+const twitter = 'https://twitter.com/chvndlerch';
+const github = 'https://github.com/chvndler';
+const are_na = 'https://www.are.na/chvndler-ch';
+
+export const RelativeFooter = () => {
+  return (
+    <Footer>
+      <ContentBox alignment="start" css={{ '@md': { display: 'none' } }}>
+        <CopyrightText>CDC® MIT</CopyrightText>
+        <CursorData />
+      </ContentBox>
+
+      <ContentBox alignment="center">
+        <Flex css={{ flexDirection: 'row', alignItems: 'center', gap: 10, justifyContent: 'center', margin: 'auto' }}>
+          <PassLink href={twitter} target={'_blank'}>
+            <Icxn variant={'Twitter'} />
+          </PassLink>
+
+          <PassLink href={github} target={'_blank'}>
+            <Icxn variant={'GitHub'} />
+          </PassLink>
+          <PassLink href={are_na} target={'_blank'}>
+            <Icxn variant={'Are.na'} />
+          </PassLink>
+        </Flex>
+      </ContentBox>
+
+      <ContentBox alignment="end" css={{}}>
+        <ThemeSwitch />
+      </ContentBox>
+    </Footer>
+  );
+};
+
+const CopyrightText = styled('span', {
+  fontSize: 12,
+  color: theme.colors.chxn3,
+  textAlign: 'center',
+  fontFamily: theme.fonts.mono,
+  fontWeight: 500,
+
+  lineHeight: 'auto',
+  letterSpacing: 'normal',
+  textTransform: 'uppercase',
+  margin: 0,
+  marginRight: 10
 });
 
 const ContentBox = styled('div', {
   display: 'flex',
   width: '100%',
-  marginTop: 10,
+  marginTop: 3,
   marginBottom: 10,
   marginLeft: 0,
   marginRight: 0,
@@ -67,58 +93,29 @@ const ContentBox = styled('div', {
   }
 });
 
+const StyledFooter = styled('footer', {
+  zIndex: '999',
+  position: 'relative',
+  boxSizing: 'border-box',
+  display: 'flex',
+  gap: 2,
+  flexDirection: 'row',
+  alignItems: 'flex-end',
+  justifyContent: 'space-between',
+  width: '100vw',
+  height: 'auto',
+  paddingTop: 10,
+  paddingBottom: 10,
+  paddingLeft: 20,
+  paddingRight: 20,
+  backgroundColor: 'transparent',
+  '@md': {
+    padding: 5,
+    flexDirection: 'column-reverse',
+    alignContent: 'center',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+});
+
 export const Footer = StyledFooter;
-
-export const RelativeFooter = () => {
-  return (
-    <>
-      <Footer>
-        <ContentBox
-          alignment="start"
-          css={{
-            '@md': {
-              display: 'none'
-            }
-          }}
-        >
-          <Text
-            css={{
-              color: '$sage11',
-              fontFamily: '"Lateral Extended Regular", sans-serif',
-              fontSize: 11,
-              fontWeight: 400,
-              lineHeight: 'normal',
-              letterSpacing: 'normal',
-              textTransform: 'uppercase',
-              margin: 0,
-              marginRight: 10
-            }}
-          >
-            © CDC. MIT
-          </Text>
-          <CursorData />
-        </ContentBox>
-
-        <ContentBox alignment="center">
-          <Text
-            css={{
-              color: '$sage11',
-              fontFamily: '"Lateral Extended Medium", sans-serif',
-              fontSize: 11,
-              fontWeight: 500,
-              lineHeight: 'normal',
-              textAlign: 'center',
-              letterSpacing: '0.06px'
-            }}
-          >
-            SOMETHING LIKE THIS BUT NOT THIS©
-          </Text>
-        </ContentBox>
-
-        <ContentBox alignment="end" css={{}}>
-          <ThemeSwitch />
-        </ContentBox>
-      </Footer>
-    </>
-  );
-};

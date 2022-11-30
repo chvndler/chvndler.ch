@@ -1,7 +1,8 @@
 import { styled, theme } from 'stitches.config';
 
 import { Flex, PassLink } from '@/components/ds';
-import CursorData from '@/components/primitives/cursor-data';
+import { Icxn } from '@/components/icons/atlr-icxns';
+import { CursorData } from '@/components/primitives/cursor-data';
 import { ThemeSwitch } from '@/components/primitives/theme-switcher';
 
 const twitter = 'https://twitter.com/chvndlerch';
@@ -12,20 +13,21 @@ export const CoverFooter = () => {
   return (
     <Footer>
       <ContentBox alignment="start" css={{ '@md': { display: 'none' } }}>
-        <CopyrightText>© CDC. MIT</CopyrightText>
+        <CopyrightText>CDC® MIT</CopyrightText>
         <CursorData />
       </ContentBox>
 
       <ContentBox alignment="center">
         <Flex css={{ flexDirection: 'row', alignItems: 'center', gap: 10, justifyContent: 'center', margin: 'auto' }}>
           <PassLink href={twitter} target={'_blank'}>
-            <QuickLink>twitter</QuickLink>
+            <Icxn variant={'Twitter'} />
           </PassLink>
+
           <PassLink href={github} target={'_blank'}>
-            <QuickLink>github</QuickLink>
+            <Icxn variant={'GitHub'} />
           </PassLink>
           <PassLink href={are_na} target={'_blank'}>
-            <QuickLink>are.na</QuickLink>
+            <Icxn variant={'Are.na'} />
           </PassLink>
         </Flex>
       </ContentBox>
@@ -41,7 +43,8 @@ const CopyrightText = styled('span', {
   fontSize: 12,
   color: theme.colors.chxn3,
   textAlign: 'center',
-  fontFamily: theme.fonts.latRegExtd,
+  fontFamily: theme.fonts.mono,
+  fontWeight: 500,
 
   lineHeight: 'auto',
   letterSpacing: 'normal',
@@ -50,23 +53,10 @@ const CopyrightText = styled('span', {
   marginRight: 10
 });
 
-const QuickLink = styled('span', {
-  fontSize: 13,
-  color: theme.colors.chxn3,
-  textAlign: 'center',
-  fontFamily: theme.fonts.latMedExtd,
-  '&:hover': {
-    color: theme.colors.chxn4
-  },
-  '@sm': {
-    fontSize: 13
-  }
-});
-
 const ContentBox = styled('div', {
   display: 'flex',
   width: '100%',
-  marginTop: 10,
+  marginTop: 3,
   marginBottom: 10,
   marginLeft: 0,
   marginRight: 0,
@@ -115,10 +105,14 @@ const StyledFooter = styled('footer', {
   justifyContent: 'space-between',
   width: '100vw',
   height: 'auto',
-  padding: 15,
+  paddingTop: 10,
+  paddingBottom: 10,
+  paddingLeft: 20,
+  paddingRight: 20,
   backgroundColor: 'transparent',
   '@md': {
-    flexDirection: 'column',
+    padding: 5,
+    flexDirection: 'column-reverse',
     alignContent: 'center',
     alignItems: 'center',
     justifyContent: 'center'

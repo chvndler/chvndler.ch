@@ -1,7 +1,7 @@
 import { styled } from 'stitches.config';
 
 import { Flex, Text } from '@/components/ds';
-import CursorData from '@/components/primitives/cursor-data';
+import { CursorData } from '@/components/primitives/cursor-data';
 import { ThemeButton } from '@/components/primitives/theme-button';
 
 const StyledFooter = styled('footer', {

@@ -7,7 +7,7 @@ import { NowPlaying, Tracks } from '@/components/primitives/spotify';
 const Music = () => {
   return (
     <>
-      <PageLayout page_type={'CoverPage'}>
+      <PageLayout page_type={'Production'}>
         <Container size={'2'}>
           <Heading>Music</Heading>
         </Container>
