@@ -1,6 +1,15 @@
 import { styled, theme } from 'stitches.config';
 
-import { Box, Button, Card } from '@/components/ds';
+import { Box, Card, PassLink } from '@/components/ds';
+
+/*
+    xs: '(max-width: 480px)',
+    sm: '(max-width: 520px)',
+    md: '(max-width: 740px)',
+    lg: '(max-width: 860px)',
+    xl: '(max-width: 1200px)',
+    xxl: '(min-width: 1201px)',
+*/
 
 const SectionCropStyles = styled('div', {
   overflow: 'hidden',
@@ -18,8 +27,6 @@ const SectionCropStyles = styled('div', {
   paddingLeft: 0,
   paddingRight: 0,
   margin: 'auto'
-
-  //border: '1px solid red'
 });
 
 const CardStyles = styled(Card, {
@@ -29,18 +36,16 @@ const CardStyles = styled(Card, {
   flexDirection: 'column',
   boxSizing: 'border-box',
 
-  width: 'auto',
+  width: '100%',
   height: '100%',
-  //minWidth: 400,
-  //maxWidth: 400,
-  //minHeight: 500,
-  //maxHeight: 500,
+  minHeight: 360,
+  minWidth: 300,
 
   borderRadius: 32,
   margin: 'auto',
   alignItems: 'left',
-  backgroundColor: theme.colors.white,
-  boxShadow: `2px 4px 12px rgba(0, 0, 0, 0.08)`,
+  backgroundColor: theme.colors.slate6,
+  boxShadow: `0px 1px 2px rgba(0, 0, 0, 0.08)`,
   /**
    *
    * @sm
@@ -48,9 +53,14 @@ const CardStyles = styled(Card, {
    * on small displays
    *
    */
+  '@md': {
+    maxHeight: 400,
+    height: '100%',
+    width: 'auto'
+  },
   '@sm': {
-    height: 420,
-    maxHeight: 420
+    height: '100%',
+    width: 'auto'
   },
 
   '&:hover': {
@@ -65,11 +75,19 @@ const PlacementBoxStyles = styled('div', Box, {
   zIndex: 99,
   position: 'absolute',
   top: 20,
-  padding: 42
+  padding: 38,
+
+  '@md': {
+    padding: 32
+  },
+  '@sm': {
+    padding: 26
+  }
 });
 
 const SummaryStyles = styled('p', {
-  fontFamily: theme.fonts.panSb,
+  fontFamily: theme.fonts.system,
+  fontWeight: 500,
   fontSize: 14,
   color: theme.colors.sage10,
   lineHeight: '1.3',
@@ -87,10 +105,11 @@ const TitleStyles = styled('h3', {
   color: theme.colors.chxn5
 });
 
-const ButtonStyles = styled(Button, {
-  backgroundColor: '$chxn4',
-  fontFamily: theme.fonts.panSb,
-  fontSize: 12,
+const ButtonStyles = styled(PassLink, {
+  backgroundColor: 'transparent',
+  fontFamily: theme.fonts.latMedExtd,
+  fontSize: 13,
+  textAlign: 'left',
   '&:hover': {
     cursor: 'pointer'
   }

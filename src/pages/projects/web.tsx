@@ -1,11 +1,11 @@
 import { WebProjectDisplay } from '@/components/displays/web-project-display';
-import { Canvas, Container, Space, Text } from '@/components/ds';
+import { Container, Space, Text } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
 
 const Web = () => {
   return (
     <>
-      <PageLayout page_type={'CoverPage'}>
+      <PageLayout page_type={'Production'}>
         <Container size={'2'} css={{}}>
           <Text
             css={{
@@ -21,10 +21,9 @@ const Web = () => {
             © MIT WEB PROJECTS
           </Text>
         </Container>
-        <Space size={'3'} />
-        <Canvas>
-          <WebProjectDisplay />
-        </Canvas>
+        <Space size={'2'} />
+
+        <WebProjectDisplay />
       </PageLayout>
     </>
   );

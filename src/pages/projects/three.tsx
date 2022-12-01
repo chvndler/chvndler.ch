@@ -30,7 +30,7 @@ export default ThreePage;
  * @styles
  */
 const StyledInstructions = css({
-  zIndex: 100,
+  zIndex: 3,
   color: theme.colors.chxn10,
   boxSizing: 'border-box',
   width: '100vw',

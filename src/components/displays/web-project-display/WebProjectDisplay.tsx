@@ -6,7 +6,6 @@ import * as React from 'react';
 import { Flex } from '@/components/ds';
 
 import { ProjectEntry } from './project.entry';
-//import { SectionCrop } from './project-card.css';
 
 /**
  *
@@ -18,10 +17,15 @@ export const WebProjectDisplay = () => {
   const [ref] = useKeenSlider<HTMLDivElement>({
     mode: 'free',
     slides: {
-      perView: 4,
-      spacing: 18
+      perView: 3,
+      spacing: 14
     },
-    breakpoints: {}
+    breakpoints: {
+      '(max-width: 1024px)': { slides: { perView: 2, spacing: 14 } },
+      '(max-width: 768px)': { slides: { perView: 2, spacing: 14 } },
+      '(max-width: 640px)': { slides: { perView: 1.5, spacing: 12 } },
+      '(max-width: 480px)': { slides: { perView: 1.2, spacing: 12 } }
+    }
   });
 
   return (
@@ -35,36 +39,36 @@ export const WebProjectDisplay = () => {
       <div ref={ref} className="keen-slider">
         <div className="keen-slider__slide number-slide1">
           <ProjectEntry
-            pImage={'/images/posters/DS_Card.png'}
+            // pImage={'/images/posters/DS_Card.png'}
             pRepository="https://github.com/atlrdsgn/atlr.typesxript"
-            pTitle="Atlr® Typesxript"
+            pTitle="Typesxript"
             pSummary="Opinionated and essential starting code for next.js, React, Atelier®, and Typescript."
           />
         </div>
 
         <div className="keen-slider__slide number-slide2">
           <ProjectEntry
-            pImage={'/images/posters/Icxn_Card.png'}
+            // pImage={'/images/posters/Icxn_Card.png'}
             pRepository="https://github.com/chvndler/chvndler.ch"
-            pTitle="CDC®"
+            pTitle="chvndler.ch/"
             pSummary="This is the repository for the current site you are viewing, my pesonal muse."
           />
         </div>
 
         <div className="keen-slider__slide number-slide3">
           <ProjectEntry
-            pImage={'/images/posters/Icxn_Card.png'}
+            // pImage={'/images/posters/Icxn_Card.png'}
             pRepository="https://github.com/atlrdsgn/atlr.react"
-            pTitle="Atelier® DS"
+            pTitle="atlr® ds"
             pSummary="An open-source UI Component Library built using Stitches x Radix-UI™."
           />
         </div>
 
         <div className="keen-slider__slide number-slide4">
           <ProjectEntry
-            pImage={'/images/posters/Icxn_Card.png'}
+            // pImage={'/images/posters/Icxn_Card.png'}
             pRepository="https://github.com/atlrdsgn/atlr.icxns"
-            pTitle="@atlr/icxns"
+            pTitle="@atlr.icxns"
             pSummary="Not your basic icon set. An open-souce React Icon library, use them in your projects– or don't"
           />
         </div>
