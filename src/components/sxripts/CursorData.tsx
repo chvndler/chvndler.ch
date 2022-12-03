@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { theme } from 'stitches.config';
 
 import { Box, Text } from '@/components/ds';
 
@@ -30,12 +31,13 @@ const Value = () => {
      */
     <Text
       css={{
-        color: '$chxn4',
-        fontSize: 14,
-        fontFamily: '$antarcticanMono',
+        color: theme.colors.mauveA9,
+        fontSize: 13,
+        fontFamily: theme.fonts.mono,
         fontWeight: '500',
         lineHeight: '28px',
-        letterSpacing: 'normal'
+        letterSpacing: 'normal',
+        marginLeft: 4
       }}
     >
       {display}
@@ -47,11 +49,29 @@ export const CursorData = () => {
   return (
     <Box
       css={{
+        height: 'auto',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'row',
         padding: 0,
         position: 'relative',
         textAlign: 'center'
       }}
     >
+      <Text
+        css={{
+          color: theme.colors.mauveA9,
+          fontSize: 13,
+          fontFamily: theme.fonts.mono,
+          fontWeight: '500',
+          lineHeight: '28px',
+          letterSpacing: 'normal',
+          marginRight: 4
+        }}
+      >
+        CDC® MIT –
+      </Text>
       <Value />
     </Box>
   );

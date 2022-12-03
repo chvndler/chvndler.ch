@@ -1,24 +1,25 @@
 import { useCallback, useEffect, useState } from 'react';
 import * as React from 'react';
-import { styled } from 'stitches.config';
+import { styled, theme } from 'stitches.config';
 
 import { Box } from '@/components/ds';
 
 const StyledTime = styled('div', {
   border: 'none',
   display: 'inline-flex',
-  gap: '2',
+  // gap: '2',
   justifyContent: 'space-between',
   alignItems: 'center',
   textTransform: 'uppercase',
   letterSpacing: '1px',
-  lineHeight: '2',
-  fontFamily: '"Lateral Extended Medium", sans-serif',
-  fontWeight: 500,
+  lineHeight: '1',
+  color: theme.colors.mauveA12,
+  fontFamily: theme.fonts.mono,
+  fontWeight: 600,
   fontSize: 12,
   padding: 0,
   margin: 'auto',
-  width: '90px',
+  width: 'auto',
   '> :span': {
     display: 'inline-flex',
     justifyContent: 'center',
@@ -54,6 +55,7 @@ export const TimeDisplay = ({ variant }: { variant?: 'mobile' }) => {
     seconds = seconds < 10 ? '0' + seconds : seconds;
     return (
       <TimeString>
+        <Box css={{ marginRight: 8, fontWeight: 200 }}>UTC-5 EST</Box>
         <Box css={{ marginRight: 2 }}>
           {hours}:{minutes}:{seconds}
         </Box>

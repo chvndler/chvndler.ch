@@ -1,14 +1,13 @@
-import { styled, theme } from 'stitches.config';
+import { styled } from 'stitches.config';
 
-import { CursorData } from '@/components/primitives/cursor-data';
 import { ThemeSwitch } from '@/components/primitives/theme-switcher';
+import { TimeDisplay } from '@/components/primitives/time-display';
 
 export const CoverFooter = () => {
   return (
     <Footer>
       <ContentBox alignment="start" css={{ '@md': { display: 'none' } }}>
-        <CopyrightText>CDC® MIT</CopyrightText>
-        <CursorData />
+        <TimeDisplay />
       </ContentBox>
 
       <ContentBox alignment="end" css={{}}>
@@ -17,20 +16,6 @@ export const CoverFooter = () => {
     </Footer>
   );
 };
-
-const CopyrightText = styled('span', {
-  fontSize: 12,
-  color: theme.colors.chxn3,
-  textAlign: 'center',
-  fontFamily: theme.fonts.mono,
-  fontWeight: 500,
-
-  lineHeight: 'auto',
-  letterSpacing: 'normal',
-  textTransform: 'uppercase',
-  margin: 0,
-  marginRight: 10
-});
 
 const ContentBox = styled('div', {
   display: 'flex',

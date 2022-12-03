@@ -1,8 +1,9 @@
 import { styled, theme } from 'stitches.config';
 
-import { Canvas, Container, Text } from '@/components/ds';
+import { Canvas, Container, Space, Text } from '@/components/ds';
 import { FixedCanvas } from '@/components/ds/canvas';
 import { PageLayout } from '@/components/layout/page';
+import { CursorData } from '@/components/sxripts';
 
 const NextAppPage = () => {
   return (
@@ -13,6 +14,8 @@ const NextAppPage = () => {
             <Container size={'1'} css={{ margin: 'auto', alignItems: 'center', justifyContent: 'center' }}>
               <NameText>CHANDLER®</NameText>
               <RoleText>Front-End Developer and Designer</RoleText>
+              <Space size={'1'} />
+              <CursorData />
             </Container>
           </Canvas>
         </FixedCanvas>
