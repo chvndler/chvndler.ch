@@ -45,7 +45,7 @@ const CardStyles = styled(Card, {
   margin: 'auto',
   alignItems: 'left',
   backgroundColor: theme.colors.slateA2,
-  boxShadow: `0px 4px 2px rgba(0, 0, 0, 0.1)`,
+  //boxShadow: `0px 4px 2px rgba(0, 0, 0, 0.1)`,
   /**
    *
    * @sm
@@ -64,10 +64,9 @@ const CardStyles = styled(Card, {
   },
 
   '&:hover': {
-    // transition: 'all 0.3s ease-in-out',
-    // cursor: 'grab'
-    // boxShadow: `inset 0 0 3px 1px $colors$mauveA8`
-    // borderRadius: 24
+    transition: 'all 0.2s ease-in-out',
+    cursor: 'grab',
+    boxShadow: `inset 0 0 1px 1px $colors$mauveA8`
   }
 });
 
@@ -98,20 +97,24 @@ const SummaryStyles = styled('p', {
 });
 
 const TitleStyles = styled('h3', {
+  transition: 'all 0.4s ease-in-out',
   fontSize: 24,
   fontFamily: theme.fonts.latBoldExtd,
   fontWeight: 'bold',
   textTransform: 'lowercase',
-  color: theme.colors.chxn5
+  color: theme.colors.heliotrope,
+  '&:hover': { color: theme.colors.portage }
 });
 
 const ButtonStyles = styled(PassLink, {
   backgroundColor: 'transparent',
-  fontFamily: theme.fonts.latBoldExtd,
-  fontSize: 15,
-  textTransform: 'lowercase',
+  fontFamily: theme.fonts.mono,
+  fontSize: 12,
+  fontWeight: 600,
+
   textAlign: 'left',
   '&:hover': {
+    color: theme.colors.mauve11,
     cursor: 'pointer'
   }
 });

@@ -1,13 +1,7 @@
 import { styled, theme } from 'stitches.config';
 
-import { Flex, PassLink } from '@/components/ds';
-import { Icxn } from '@/components/icons/atlr-icxns';
 import { CursorData } from '@/components/primitives/cursor-data';
 import { ThemeSwitch } from '@/components/primitives/theme-switcher';
-
-const twitter = 'https://twitter.com/chvndlerch';
-const github = 'https://github.com/chvndler';
-const are_na = 'https://www.are.na/chvndler-ch';
 
 export const CoverFooter = () => {
   return (
@@ -15,21 +9,6 @@ export const CoverFooter = () => {
       <ContentBox alignment="start" css={{ '@md': { display: 'none' } }}>
         <CopyrightText>CDC® MIT</CopyrightText>
         <CursorData />
-      </ContentBox>
-
-      <ContentBox alignment="center">
-        <Flex css={{ flexDirection: 'row', alignItems: 'center', gap: 10, justifyContent: 'center', margin: 'auto' }}>
-          <PassLink href={twitter} target={'_blank'}>
-            <Icxn variant={'Twitter'} />
-          </PassLink>
-
-          <PassLink href={github} target={'_blank'}>
-            <Icxn variant={'GitHub'} />
-          </PassLink>
-          <PassLink href={are_na} target={'_blank'}>
-            <Icxn variant={'Are.na'} />
-          </PassLink>
-        </Flex>
       </ContentBox>
 
       <ContentBox alignment="end" css={{}}>

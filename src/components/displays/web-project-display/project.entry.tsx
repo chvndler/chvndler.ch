@@ -22,12 +22,14 @@ export const ProjectEntry = ({ pTitle, pRepository, pSummary }: PProps) => {
   return (
     <ProjectCard css={{ userSelect: 'none' }}>
       <PlacementBox css={{}}>
-        <ProjectTitle>{pTitle}</ProjectTitle>
+        <ProjectTitle as={'a'} href={pRepository}>
+          {pTitle}
+        </ProjectTitle>
         <Space size={'1'} />
         <ProjectSummary>{pSummary}</ProjectSummary>
         <Space size={'2'} />
         <ProjectButton target={'_blank'} rel={'norefferer'} href={pRepository}>
-          See More
+          VIEW ON GITHUB
         </ProjectButton>
       </PlacementBox>
 

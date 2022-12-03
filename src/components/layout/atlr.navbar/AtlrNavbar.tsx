@@ -72,7 +72,7 @@ export const AtlrNavbar = () => {
           <NavMenuContent>
             <NavMenuInner>
               <NavLink href={cv} target={'_blank'} rel={'noreferrer noopener'}>
-                View CV
+                View cv
               </NavLink>
               <NavLink href={twitter} target={'_blank'} rel={'noreferrer noopener'}>
                 Twitter

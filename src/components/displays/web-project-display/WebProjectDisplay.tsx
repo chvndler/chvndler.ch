@@ -40,13 +40,21 @@ export const WebProjectDisplay = () => {
         <div className="keen-slider__slide number-slide1">
           <ProjectEntry
             // pImage={'/images/posters/DS_Card.png'}
-            pRepository="https://github.com/atlrdsgn/atlr.typesxript"
-            pTitle="Typesxript"
-            pSummary="Opinionated and essential starting code for next.js, React, Atelier®, and Typescript."
+            pRepository="https://github.com/chvndler/typesxript"
+            pTitle="typesxript"
+            pSummary="Starter code for building performant web apps. – (Typescript React.)"
           />
         </div>
 
         <div className="keen-slider__slide number-slide2">
+          <ProjectEntry
+            pRepository="https://github.com/atlrdsgn/atlr.icxns"
+            pTitle="@atlr.icxns"
+            pSummary="Not your basic icon set. An open-souce React Icon library, use them in your projects– or don't"
+          />
+        </div>
+
+        <div className="keen-slider__slide number-slide3">
           <ProjectEntry
             // pImage={'/images/posters/Icxn_Card.png'}
             pRepository="https://github.com/chvndler/chvndler.ch"
@@ -55,7 +63,7 @@ export const WebProjectDisplay = () => {
           />
         </div>
 
-        <div className="keen-slider__slide number-slide3">
+        <div className="keen-slider__slide number-slide4">
           <ProjectEntry
             // pImage={'/images/posters/Icxn_Card.png'}
             pRepository="https://github.com/atlrdsgn/atlr.react"
@@ -64,16 +72,15 @@ export const WebProjectDisplay = () => {
           />
         </div>
 
-        <div className="keen-slider__slide number-slide4">
+        <div className="keen-slider__slide number-slide5">
           <ProjectEntry
-            // pImage={'/images/posters/Icxn_Card.png'}
             pRepository="https://github.com/atlrdsgn/atlr.icxns"
             pTitle="@atlr.icxns"
             pSummary="Not your basic icon set. An open-souce React Icon library, use them in your projects– or don't"
           />
         </div>
 
-        <div className="keen-slider__slide number-slide5"></div>
+        <div className="keen-slider__slide number-slidec"></div>
       </div>
     </Flex>
   );

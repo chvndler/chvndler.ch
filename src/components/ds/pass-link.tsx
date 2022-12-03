@@ -7,7 +7,7 @@ type PassLinkProps = { href: string } & React.AnchorHTMLAttributes<HTMLAnchorEle
 const StyledHref = styled(Link, {
   transition: 'color 0.3s ease',
   '&:hover': {
-    color: theme.colors.chxn13
+    color: theme.colors.heliotrope
   }
 });
 
