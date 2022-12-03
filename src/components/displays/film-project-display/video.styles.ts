@@ -39,8 +39,8 @@ export const MuxVideoStyles = css('video', {
 });
 
 const CaptionTitleStyles = css({
-  fontFamily: theme.fonts.panB,
-  fontSize: 16,
+  fontFamily: theme.fonts.latMedExtd,
+  fontSize: 12,
   position: 'relative',
   zIndex: 2,
   display: 'flex',

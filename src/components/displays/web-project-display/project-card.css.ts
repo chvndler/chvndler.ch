@@ -38,14 +38,14 @@ const CardStyles = styled(Card, {
 
   width: '100%',
   height: '100%',
-  minHeight: 360,
+  minHeight: 340,
   minWidth: 300,
 
-  borderRadius: 32,
+  borderRadius: 16,
   margin: 'auto',
   alignItems: 'left',
-  backgroundColor: theme.colors.slate6,
-  boxShadow: `0px 1px 2px rgba(0, 0, 0, 0.08)`,
+  backgroundColor: theme.colors.slateA2,
+  boxShadow: `0px 4px 2px rgba(0, 0, 0, 0.1)`,
   /**
    *
    * @sm
@@ -88,9 +88,9 @@ const PlacementBoxStyles = styled('div', Box, {
 const SummaryStyles = styled('p', {
   fontFamily: theme.fonts.system,
   fontWeight: 500,
-  fontSize: 14,
-  color: theme.colors.sage10,
-  lineHeight: '1.3',
+  fontSize: 13,
+  color: theme.colors.chxn4,
+  lineHeight: '1.5',
 
   '@sm': {
     fontSize: 16
@@ -98,17 +98,18 @@ const SummaryStyles = styled('p', {
 });
 
 const TitleStyles = styled('h3', {
-  fontSize: 32,
-  // fontFamily: '"Lateral Extended Bold", sans-serif',
-  fontFamily: theme.fonts.system,
+  fontSize: 24,
+  fontFamily: theme.fonts.latBoldExtd,
   fontWeight: 'bold',
+  textTransform: 'lowercase',
   color: theme.colors.chxn5
 });
 
 const ButtonStyles = styled(PassLink, {
   backgroundColor: 'transparent',
-  fontFamily: theme.fonts.latMedExtd,
-  fontSize: 13,
+  fontFamily: theme.fonts.latBoldExtd,
+  fontSize: 15,
+  textTransform: 'lowercase',
   textAlign: 'left',
   '&:hover': {
     cursor: 'pointer'

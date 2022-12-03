@@ -31,30 +31,7 @@ export const ProjectEntry = ({ pTitle, pRepository, pSummary }: PProps) => {
         </ProjectButton>
       </PlacementBox>
 
-      <ImageOverlay>
-        {/* <!--
-        <Image
-          src={pImage}
-          width={400}
-          height={500}
-          alt={'Vector Pkg one'}
-          // placeholder={'blur'}
-          style={{
-            zIndex: 3,
-            height: '100%',
-            width: '100%',
-            objectFit: 'cover',
-            borderRadius: 32
-          }}
-        />
-          --> */}
-      </ImageOverlay>
+      <ImageOverlay></ImageOverlay>
     </ProjectCard>
   );
 };
-
-/**
- *         <ProjectButton target="_blank" rel="norefferer" as="a" href={pRepository}>
-          see more
-        </ProjectButton>
- */

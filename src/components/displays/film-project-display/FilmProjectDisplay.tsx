@@ -18,7 +18,7 @@ export const FilmProjects = () => {
       />
       <VideoPlayer
         videoId={'1RLeJdsCMunRRJ81yLED8PEacwYsaxH01MtGYZQWTR6g'}
-        posterId={'1RLeJdsCMunRRJ81yLED8PEacwYsaxH01MtGYZQWTR6g'}
+        posterId={''}
         captionTitle={'©2019 Film Reel'}
         captionOther={'Small Legacy Description of film'}
       />

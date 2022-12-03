@@ -5,7 +5,7 @@ import { PageLayout } from '@/components/layout/page';
 const Web = () => {
   return (
     <>
-      <PageLayout page_type={'Production'}>
+      <PageLayout page_type={'CoverPage'}>
         <Container size={'2'} css={{}}>
           <Text
             css={{

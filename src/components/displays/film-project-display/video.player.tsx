@@ -26,7 +26,7 @@ export const VideoPlayer = ({ videoId, posterId, captionTitle, captionOther, ...
         muted
         playbackId={videoId}
         poster={`https://image.mux.com/${posterId}/animated.gif?width=628&start=14.0673867`}
-        primaryColor={'#EAFF97'}
+        primaryColor={'#FFF'}
         metadata={{}}
       />
       <CaptionTitle>{captionTitle}</CaptionTitle>
