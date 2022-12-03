@@ -20,6 +20,7 @@ import {
 /**
  * @ConnectLinks
  */
+const cv = 'https://s3.us-east-1.amazonaws.com/truth.cloud/assets/CDC©CV01.pdf';
 const twitter = 'https://twitter.com/chvndlerch';
 const github = 'https://github.com/chvndler';
 const code_sandbox = 'https://codesandbox.io/u/chvndler';
@@ -70,6 +71,9 @@ export const AtlrNavbar = () => {
           </NavMenuTrigger>
           <NavMenuContent>
             <NavMenuInner>
+              <NavLink href={cv} target={'_blank'} rel={'noreferrer noopener'}>
+                View CV
+              </NavLink>
               <NavLink href={twitter} target={'_blank'} rel={'noreferrer noopener'}>
                 Twitter
               </NavLink>
