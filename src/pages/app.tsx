@@ -28,7 +28,7 @@ export default NextAppPage;
  */
 const NameText = styled('h1', {
   fontFamily: theme.fonts.latBoldExtd,
-  color: theme.colors.chxn13,
+  color: theme.colors.heliotrope,
   textAlign: 'center',
   fontSize: 30,
   fontWeight: 500,
@@ -38,7 +38,7 @@ const NameText = styled('h1', {
 
 const RoleText = styled(Text, {
   fontFamily: theme.fonts.panB,
-  color: theme.colors.sage11,
+  color: theme.colors.mauve11,
   fontSize: 16,
   fontWeight: 'auto',
   textAlign: 'center',
