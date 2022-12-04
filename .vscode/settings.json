@@ -9,7 +9,6 @@
    *
    */
   "editor.fontFamily": "SF Mono, monospace",
-  // "editor.fontFamily": "Jetbrains Mono, monospace",
   "editor.fontSize": 11,
 
   /**
