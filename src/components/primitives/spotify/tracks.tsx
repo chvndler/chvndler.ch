@@ -15,7 +15,7 @@ export const Tracks = () => {
 
   return (
     <>
-      <Grid>
+      <Grid columns={'2'} flow={'row'} gap={'3'} css={{ border: '1px solid red' }}>
         {data.tracks.map((track, index) => (
           <ResolvedTrack ranking={index + 1} key={track.songUrl} {...track} />
         ))}

@@ -1,23 +1,25 @@
 import { styled, theme } from 'stitches.config';
 
-import { Container } from '@/components/ds';
+import { SpotifyTopTenDisplay } from '@/components/displays/spotify-top-ten';
+import { Container, Space } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
-import { NowPlaying, Tracks } from '@/components/primitives/spotify';
+import { NowPlaying } from '@/components/primitives/spotify';
 
 const Music = () => {
   return (
     <>
       <PageLayout page_type={'Production'}>
         <Container size={'2'}>
-          <Heading>Music</Heading>
+          <Heading>Spotify Logo</Heading>
         </Container>
 
         <Container size={'2'}>
           <NowPlaying />
         </Container>
+        <Space size={'3'} />
 
         <Container size={'2'}>
-          <Tracks />
+          <SpotifyTopTenDisplay />
         </Container>
       </PageLayout>
     </>
