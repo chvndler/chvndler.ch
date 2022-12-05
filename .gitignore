@@ -39,7 +39,6 @@ yarn-error.log*
 
 # misc
 .env.local
-.env
 .vercel
 
 
