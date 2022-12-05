@@ -1,8 +1,9 @@
 import { styled, theme } from 'stitches.config';
 
-import { Canvas, Container, Space, Text } from '@/components/ds';
+import { Canvas, Container, PassLink, Space, Text } from '@/components/ds';
 import { FixedCanvas } from '@/components/ds/canvas';
 import { PageLayout } from '@/components/layout/page';
+import { Avatar } from '@/components/primitives/avatar';
 import { CursorData } from '@/components/sxripts';
 
 const NextAppPage = () => {
@@ -11,7 +12,26 @@ const NextAppPage = () => {
       <PageLayout page_type={'App'}>
         <FixedCanvas>
           <Canvas>
-            <Container size={'1'} css={{ margin: 'auto', alignItems: 'center', justifyContent: 'center' }}>
+            <Container
+              size={'1'}
+              css={{
+                display: 'flex',
+                flexDirection: 'column',
+                margin: 'auto',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
+            >
+              <PassLink href={'https://rarible.com/chvndler_eth'}>
+                <Avatar
+                  interactive
+                  size={'4'}
+                  shape={'circle'}
+                  alt={'Chandler®'}
+                  fallback={'C'}
+                  src={'https://avatars.githubusercontent.com/u/70621588?s=96&v=4'}
+                />
+              </PassLink>
               <NameText>CHANDLER®</NameText>
               <RoleText>Front-End Developer and Designer</RoleText>
               <Space size={'1'} />
@@ -36,7 +56,8 @@ const NameText = styled('h1', {
   fontSize: 30,
   fontWeight: 500,
   letterSpacing: '-0.04em',
-  lineHeight: '1.3'
+  lineHeight: '1.3',
+  marginTop: 12
 });
 
 const RoleText = styled(Text, {

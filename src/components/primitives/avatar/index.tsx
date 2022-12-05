@@ -28,7 +28,6 @@ type AvatarOwnProps = AvatarPrimitiveProps &
     fallback?: React.ReactNode;
   };
 
-// eslint-disable-next-line import/no-named-as-default-member
 export const Avatar = React.forwardRef<React.ElementRef<typeof AvatarComponent>, AvatarOwnProps>(
   ({ alt, src, fallback, size, variant, shape, ...props }, forwardedRef) => {
     return (

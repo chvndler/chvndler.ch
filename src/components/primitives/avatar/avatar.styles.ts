@@ -11,15 +11,14 @@ const StyledAvatar = styled(AvatarPrimitive.Root, {
   display: 'flex',
   flexShrink: 0,
   position: 'relative',
-  border: '1px solid $chxn3',
+  border: `1.5px solid ${theme.colors.honeySuckle}`,
   fontFamily: 'inherit',
   lineHeight: '1',
   margin: '0',
   outline: 'none',
   padding: '0',
   fontWeight: '500' as any,
-  color: '$hiContrast',
-
+  boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.12)',
   '&::before': {
     content: '""',
     position: 'absolute',
@@ -28,7 +27,7 @@ const StyledAvatar = styled(AvatarPrimitive.Root, {
     bottom: 0,
     left: 0,
     borderRadius: 'inherit',
-    boxShadow: 'inset 0px 0px 1px rgba(0, 0, 0, 0.12)'
+    boxShadow: 'inset 0px 0px 2px rgba(0, 0, 0, 0.12)'
   },
 
   variants: {
@@ -86,22 +85,22 @@ const StyledAvatar = styled(AvatarPrimitive.Root, {
           right: '0',
           bottom: '0',
           left: '0',
-          backgroundColor: 'rgba(0,0,0,.08)',
-          opacity: '0',
+          opacity: '1',
+          backgroundColor: 'rgba(0,0,0,.02)',
           pointerEvents: 'none',
           transition: 'opacity 25ms linear'
         },
         '@hover': {
           '&:hover': {
             '&::after': {
-              opacity: '1'
+              opacity: '0'
             }
           }
         },
         '&[data-state="open"]': {
           '&::after': {
-            backgroundColor: 'rgba(0,0,0,.12)',
-            opacity: '1'
+            backgroundColor: 'rgba(0,0,0,.2)',
+            opacity: '0'
           }
         }
       }

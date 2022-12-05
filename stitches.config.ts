@@ -248,6 +248,9 @@ export const darkTheme = createTheme('dark-theme', {
     fizz: 'rgb(202, 96, 255)',
     heliotrope: 'rgb(226, 255, 112)',
 
+    honeySuckle: 'rgb(186, 143, 247)',
+    portage: 'rgb(226, 255, 112)',
+
     chxn1: '#1A171A',
     chxn2: '#3f4b54',
     chxn3: '#919191',
