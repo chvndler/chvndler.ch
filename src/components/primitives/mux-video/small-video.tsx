@@ -11,7 +11,7 @@ export const SmallMuxVideoPlayer = () => {
         streamType="on-demand"
         playbackId="1RLeJdsCMunRRJ81yLED8PEacwYsaxH01MtGYZQWTR6g"
         primaryColor={'rgba(72, 67, 73, 0.8)'}
-        //secondaryColor=
+        secondaryColor={'#FFF'}
         style={{}}
         metadata={{
           video_id: '5w9nzBSMPJmqReaQho5iVhGhaPKyuyOCmO4eWoKK1sk',

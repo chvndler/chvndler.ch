@@ -6,9 +6,7 @@ const VideoWrapperStyles = css({
   width: '100%',
   height: 'auto',
   margin: 0,
-  padding: 0,
-
-  borderRadius: 0
+  padding: 0
 });
 
 export const MuxVideoStyles = css('video', {
@@ -20,22 +18,31 @@ export const MuxVideoStyles = css('video', {
   overflowX: 'hidden',
   overflowY: 'hidden',
 
-  borderRadius: 0,
-
   backgroundAttachment: 'fixed',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   objectFit: 'cover',
   objectPosition: 'center',
-  margin: 0,
-  padding: 0,
+  margin: 'auto',
+  padding: 'auto',
   outline: 'none',
-  display: 'block',
+  display: 'flex',
   opacity: 1,
   transition: 'opacity 0.5s ease-in-out'
+});
 
-  // border: '2px solid black',
+const CaptionBoxStyles = css({
+  position: 'relative',
+  zIndex: 2,
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'flex-start',
+  alignItems: 'flex-start',
+  width: 'auto',
+  height: 'auto',
+  margin: 0,
+  padding: 4
 });
 
 const CaptionTitleStyles = css({
@@ -70,5 +77,6 @@ const CaptionOtherStyles = css({
 });
 
 export const VideoWrapper = styled('div', VideoWrapperStyles);
+export const CaptionBox = styled('div', CaptionBoxStyles);
 export const CaptionTitle = styled('div', CaptionTitleStyles);
 export const CaptionOther = styled('div', CaptionOtherStyles);

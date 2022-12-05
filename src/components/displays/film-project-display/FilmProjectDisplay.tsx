@@ -12,14 +12,14 @@ export const FilmProjects = () => {
     <VideoPlayerGrid>
       <VideoPlayer
         videoId={'1RLeJdsCMunRRJ81yLED8PEacwYsaxH01MtGYZQWTR6g'}
-        posterId={'1RLeJdsCMunRRJ81yLED8PEacwYsaxH01MtGYZQWTR6g'}
-        captionTitle={'©2019 Film Reel'}
+        posterId={'https://s3.amazonaws.com/truth.cloud/assets/social.jpg'}
+        captionTitle={'©2019 FILM REEL'}
         captionOther={'Small Legacy Description of film'}
       />
       <VideoPlayer
         videoId={'1RLeJdsCMunRRJ81yLED8PEacwYsaxH01MtGYZQWTR6g'}
-        posterId={''}
-        captionTitle={'©2019 Film Reel'}
+        posterId={'https://s3.amazonaws.com/truth.cloud/assets/social.jpg'}
+        captionTitle={'ARMED©'}
         captionOther={'Small Legacy Description of film'}
       />
     </VideoPlayerGrid>

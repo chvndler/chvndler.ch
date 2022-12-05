@@ -214,16 +214,14 @@ html.fonts-loaded body {
 }
 
 mux-player {
-    border-radius: 'inherit';
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    border-radius: inherit;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-    object-position: center;
+    --media-object-position: center;
+    --media-object-fit: cover;
     --seek-live-button: none;
     --seek-backward-button: none;
     --seek-forward-button: none;
@@ -232,7 +230,7 @@ mux-player {
     --cast-button: none;
     --playback-rate-button: none;
     --volume-range: none;
-    --center-controls: none;
+    /*--center-controls: none;*/
     --bottom-play-button: none;
     --controls-backdrop-color: rgb(0 0 0 / 20%);
     --time-range: none;
