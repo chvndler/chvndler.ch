@@ -25,7 +25,7 @@
   "files.autoSave": "onWindowChange",
   "editor.tabSize": 2,
   "editor.formatOnPaste": true,
-  "window.zoomLevel": 0.6,
+  "window.zoomLevel": 0,
   "vsicons.dontShowNewVersionMessage": true,
   "editor.inlineSuggest.enabled": true,
   "editor.fontLigatures": true,
