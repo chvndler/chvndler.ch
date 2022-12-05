@@ -21,17 +21,6 @@ import {
 import type * as Stitches from '@stitches/react';
 import { createStitches, defaultThemeMap } from '@stitches/react';
 
-/**
- * @imported colors:
- *
- * blackA
- * whiteA
- * gray
- * mauve
- * sage
- * slate
- */
-
 export type { VariantProps } from '@stitches/react';
 
 export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes, config, reset } = createStitches({
@@ -52,9 +41,6 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       ...whiteA,
       ...blackA,
 
-      /**
-       * @defaults
-       */
       background: '#101010',
       black: '#000000',
       white: '#ffffff',
@@ -62,9 +48,6 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       trnsprnt: 'transparent',
       tp: 'transparent',
 
-      /**
-       * @chxn
-       */
       fizz: 'rgb(218, 255, 71)',
       heliotrope: 'rgb(202, 96, 255)',
 
@@ -74,9 +57,6 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       ruby: 'rgb(216, 43, 98)',
       winterSky: 'rgb(255, 50, 115)',
 
-      /**
-       * @chxnColor
-       */
       chxn1: '#f7f0f0',
       chxn2: '#bcc1cd',
       chxn3: '#A09FA6',
@@ -93,9 +73,7 @@ export const { styled, css, theme, createTheme, getCssText, globalCss, keyframes
       chxn13: '#BA8FF7',
       tartOrange: '#ff3333',
       berry: '#686799',
-      /**
-       * @socialmedia
-       */
+
       ig: '#ff3333',
       insta: '#ff3474',
       maxBlue: '#5e7ce2',
