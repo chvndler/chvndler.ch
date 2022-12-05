@@ -49,8 +49,8 @@ export const WebProjectDisplay = () => {
         <div className="keen-slider__slide number-slide2">
           <ProjectEntry
             pRepository="https://github.com/atlrdsgn/atlr.icxns"
-            pTitle="@atlr.icxns"
-            pSummary="Not your basic icon set. An open-souce React Icon library, use them in your projects– or don't"
+            pTitle="Atelier.Kit"
+            pSummary="A performant webkit."
           />
         </div>
 

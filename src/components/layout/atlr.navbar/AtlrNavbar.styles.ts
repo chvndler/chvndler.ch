@@ -265,7 +265,8 @@ const NavigationMenuLink = styled(NavigationMenu.Link, {
         color: theme.colors.sage9,
         '&:hover': {
           color: theme.colors.sage9,
-          cursor: 'not-allowed'
+          cursor: 'not-allowed',
+          pointerEvents: 'visible'
         }
       }
     }
