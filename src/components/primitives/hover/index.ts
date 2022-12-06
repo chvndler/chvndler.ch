@@ -1,0 +1,1 @@
+export { HoverCardComponent } from './HoverCardComponent';
