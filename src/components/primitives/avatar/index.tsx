@@ -49,9 +49,7 @@ export const Avatar = React.forwardRef<React.ElementRef<typeof AvatarComponent>,
             bottom: '0',
             right: '0',
             boxShadow: '0 0 0 3px $colors$loContrast',
-            borderRadius: '$round',
-            mr: '-3px',
-            mb: '-3px'
+            borderRadius: '$round'
           }}
         />
       </Box>

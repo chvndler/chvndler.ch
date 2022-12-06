@@ -22,8 +22,8 @@ const config = {
 
 module.exports = (_phase, { defaultConfig: _ }) => {
     const plugins = [withBundleAnalyzer({ enabled: process.env.ANALYZE === 'true' }), withTM(['three'])];
-    // return plugins.reduce((acc, plugin) => plugin(acc), {...config });
-    return config;
+    return plugins.reduce((acc, plugin) => plugin(acc), {...config });
+    // return config;
 };
 
 // https://nextjs.org/docs/advanced-features/security-headers

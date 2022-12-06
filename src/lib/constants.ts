@@ -37,7 +37,7 @@ export const atelierLog = `
 // TODO: update this data
 export const defaultMeta = {
   title: 'Chandler Chappell',
-  description: `Personal Site.`,
+  description: `Personal.`,
   ogImage: `${siteOrigin}/og.png`,
   twitter: {
     handle: '@chvndlerch',

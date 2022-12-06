@@ -2,6 +2,9 @@ import * as AvatarPrimitive from '@radix-ui/react-avatar';
 import { styled, theme } from 'stitches.config';
 
 const StyledAvatar = styled(AvatarPrimitive.Root, {
+  border: `1.5px solid ${theme.colors.honeySuckle}`,
+  boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.12)',
+  opacity: '1',
   alignItems: 'center',
   justifyContent: 'center',
   verticalAlign: 'middle',
@@ -11,23 +14,22 @@ const StyledAvatar = styled(AvatarPrimitive.Root, {
   display: 'flex',
   flexShrink: 0,
   position: 'relative',
-  border: `1.5px solid ${theme.colors.honeySuckle}`,
   fontFamily: 'inherit',
   lineHeight: '1',
   margin: '0',
   outline: 'none',
   padding: '0',
   fontWeight: '500' as any,
-  boxShadow: '0px 0px 8px rgba(0, 0, 0, 0.12)',
+
   '&::before': {
+    boxShadow: 'inset 0px 0px 2px rgba(0, 0, 0, 0.12)',
     content: '""',
     position: 'absolute',
     top: 0,
     right: 0,
     bottom: 0,
     left: 0,
-    borderRadius: 'inherit',
-    boxShadow: 'inset 0px 0px 2px rgba(0, 0, 0, 0.12)'
+    borderRadius: 'inherit'
   },
 
   variants: {
@@ -60,7 +62,7 @@ const StyledAvatar = styled(AvatarPrimitive.Root, {
         color: theme.colors.chxn13
       },
       gray: {
-        backgroundColor: theme.colors.slate5
+        backgroundColor: theme.colors.slate8
       }
     },
     shape: {
@@ -86,14 +88,16 @@ const StyledAvatar = styled(AvatarPrimitive.Root, {
           bottom: '0',
           left: '0',
           opacity: '1',
-          backgroundColor: 'rgba(0,0,0,.02)',
+          backgroundColor: theme.colors.slateA3,
           pointerEvents: 'none',
           transition: 'opacity 25ms linear'
         },
         '@hover': {
           '&:hover': {
             '&::after': {
-              opacity: '0'
+              boxShadow: '0px 20px 4px rgba(0, 0, 0, 1)',
+              backgroundColor: 'rgba(0,0,0,.2)',
+              opacity: '1'
             }
           }
         },

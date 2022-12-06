@@ -20,7 +20,7 @@ import {
 /**
  * @ConnectLinks
  */
-const cv = 'https://s3.us-east-1.amazonaws.com/truth.cloud/assets/CDC©CV01.pdf';
+const cv = 'https://s3.amazonaws.com/truth.cloud/cv/ChandlerChappell_cv.pdf';
 const twitter = 'https://twitter.com/chvndlerch';
 const github = 'https://github.com/chvndler';
 const code_sandbox = 'https://codesandbox.io/u/chvndler';
@@ -32,7 +32,6 @@ export const AtlrNavbar = () => {
   return (
     <NavMenuRoot>
       <NavMenuBar>
-        {/* <!-- "Projects" Menu --> */}
         <NavigationMenu.Item>
           <NavMenuTrigger>
             Projects <NavIcxn variant="SmallArrowDown" />

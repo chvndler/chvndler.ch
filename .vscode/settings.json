@@ -1,25 +1,6 @@
 {
-  /**
-   *
-   * @fonts
-   *
-   * JetBrains Mono
-   * Sono
-   * Trispace Mono
-   *
-   */
   "editor.fontFamily": "SF Mono, monospace",
-  "editor.fontSize": 11,
-
-  /**
-   *
-   * @themes - fav three
-   *
-   * Copilot Theme
-   * CodeSandbox | CodeSandbox Black 2021
-   * Everblush
-   *
-   */
+  "editor.fontSize": 12,
   "workbench.colorTheme": "CodeSandbox Black 2021",
   "git.ignoreLimitWarning": true,
   "files.autoSave": "onWindowChange",

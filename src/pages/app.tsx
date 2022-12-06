@@ -6,6 +6,8 @@ import { PageLayout } from '@/components/layout/page';
 import { Avatar } from '@/components/primitives/avatar';
 import { CursorData } from '@/components/sxripts';
 
+const gitlink = 'https://github.com/chvndler';
+
 const NextAppPage = () => {
   return (
     <>
@@ -22,16 +24,7 @@ const NextAppPage = () => {
                 justifyContent: 'center'
               }}
             >
-              <PassLink href={'https://rarible.com/chvndler_eth'}>
-                <Avatar
-                  interactive
-                  size={'4'}
-                  shape={'circle'}
-                  alt={'Chandler®'}
-                  fallback={'C'}
-                  src={'https://avatars.githubusercontent.com/u/70621588?s=96&v=4'}
-                />
-              </PassLink>
+              <AviNFT />
               <NameText>CHANDLER®</NameText>
               <RoleText>Front-End Developer and Designer</RoleText>
               <Space size={'1'} />
@@ -68,3 +61,18 @@ const RoleText = styled(Text, {
   textAlign: 'center',
   lineHeight: '1'
 });
+
+const AviNFT = () => {
+  return (
+    <PassLink href={gitlink}>
+      <Avatar
+        interactive
+        size={'4'}
+        shape={'circle'}
+        alt={'Chandler®'}
+        fallback={'C'}
+        src={'https://avatars.githubusercontent.com/u/70621588?s=96&v=4'}
+      />
+    </PassLink>
+  );
+};
