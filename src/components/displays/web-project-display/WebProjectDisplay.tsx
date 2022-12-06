@@ -14,7 +14,7 @@ import { ProjectEntry } from './project.entry';
  */
 
 const typesxript = 'https://github.com/chvndler/typesxript';
-const kit = 'https://github.com/chvndler/atelier.kit';
+const kit = 'https://kit-demo.vercel.app';
 const personal = 'https://github.com/chvndler/chvndler.ch';
 const isi = 'https://www.isielitetraining.com/';
 
