@@ -13,6 +13,11 @@ import { ProjectEntry } from './project.entry';
  *
  */
 
+const typesxript = 'https://github.com/chvndler/typesxript';
+const kit = 'https://github.com/chvndler/atelier.kit';
+const personal = 'https://github.com/chvndler/chvndler.ch';
+const isi = 'https://www.isielitetraining.com/';
+
 export const WebProjectDisplay = () => {
   const [ref] = useKeenSlider<HTMLDivElement>({
     mode: 'free',
@@ -39,8 +44,7 @@ export const WebProjectDisplay = () => {
       <div ref={ref} className="keen-slider">
         <div className="keen-slider__slide number-slide1">
           <ProjectEntry
-            // pImage={'/images/posters/DS_Card.png'}
-            pRepository="https://github.com/chvndler/typesxript"
+            pRepository={typesxript}
             pTitle="typesxript"
             pSummary="Starter code for building performant web apps. – (Typescript React.)"
           />
@@ -48,39 +52,29 @@ export const WebProjectDisplay = () => {
 
         <div className="keen-slider__slide number-slide2">
           <ProjectEntry
-            pRepository="https://github.com/atlrdsgn/atlr.icxns"
+            pRepository={kit}
             pTitle="Atelier.Kit"
-            pSummary="A performant webkit."
+            pSummary="A component toolkit for high performing React apps and sites. – v0.41.3.beta"
           />
         </div>
 
         <div className="keen-slider__slide number-slide3">
           <ProjectEntry
-            // pImage={'/images/posters/Icxn_Card.png'}
-            pRepository="https://github.com/chvndler/chvndler.ch"
-            pTitle="chvndler.ch/"
-            pSummary="This is the repository for the current site you are viewing, my pesonal muse."
-          />
-        </div>
-
-        <div className="keen-slider__slide number-slide4">
-          <ProjectEntry
-            // pImage={'/images/posters/Icxn_Card.png'}
-            pRepository="https://github.com/atlrdsgn/atlr.react"
-            pTitle="atlr® ds"
-            pSummary="An open-source UI Component Library built using Stitches x Radix-UI™."
+            pRepository={personal}
+            pTitle="chvndler.ch"
+            pSummary="This is the repository for the current site you are viewing, my personal."
           />
         </div>
 
         <div className="keen-slider__slide number-slide5">
           <ProjectEntry
-            pRepository="https://github.com/atlrdsgn/atlr.icxns"
-            pTitle="@atlr.icxns"
-            pSummary="Not your basic icon set. An open-souce React Icon library, use them in your projects– or don't"
+            pRepository={isi}
+            pTitle="ISI® Elite Training"
+            pSummary="The most valuable 50 minute workout, for all fitness levels."
           />
         </div>
 
-        <div className="keen-slider__slide number-slidec"></div>
+        <div className="keen-slider__slide number-slide6"></div>
       </div>
     </Flex>
   );
