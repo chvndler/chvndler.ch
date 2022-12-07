@@ -1,0 +1,1 @@
+export { MirrorFooter } from './MirrorFooter';
