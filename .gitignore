@@ -41,3 +41,5 @@ yarn.lock
 # vercel
 .vercel
 tsconfig.tsbuildinfo
+
+gsap/package/*
