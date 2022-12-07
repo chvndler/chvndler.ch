@@ -20,7 +20,6 @@ import { darkTheme, globalCss } from 'stitches.config';
 
 import { AnalyticsProvider } from '@/components/sxripts';
 import { useAppStore } from '@/context/use-app-store';
-import { isDev } from '@/lib/constants';
 
 const Context = createContext<{ fontsLoaded: boolean }>({ fontsLoaded: false });
 export const useAppContext = () => useContext(Context);
@@ -28,8 +27,6 @@ export const useAppContext = () => useContext(Context);
 const App = ({ Component, pageProps, ...rest }: AppProps) => {
   globalStyles();
   useFontsLoaded();
-  useUserIsTabbing();
-  useDebugDev();
 
   const getLayout: GetLayoutFn =
     (Component as any).getLayout || (({ Component, pageProps }) => <Component {...pageProps} />);
@@ -103,43 +100,6 @@ const useFontsLoaded = () => {
       console.error(error);
       onReady();
     }
-  }, []);
-};
-
-const useUserIsTabbing = () => {
-  React.useEffect(() => {
-    function handleKeyDown(event: KeyboardEvent) {
-      if (event.code === `Tab`) {
-        document.body.classList.add('user-is-tabbing');
-      }
-    }
-
-    function handleMouseDown() {
-      document.body.classList.remove('user-is-tabbing');
-    }
-
-    window.addEventListener('keydown', handleKeyDown);
-    window.addEventListener('mousedown', handleMouseDown);
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-      window.removeEventListener('mousedown', handleMouseDown);
-    };
-  }, []);
-};
-
-const useDebugDev = () => {
-  React.useEffect(() => {
-    if (!isDev) return;
-    let mousetrapRef: Mousetrap.MousetrapInstance | undefined = undefined;
-    import('mousetrap').then(({ default: mousetrap }) => {
-      mousetrapRef = mousetrap.bind(['command+i', 'ctrl+i', 'alt+i'], () => {
-        document.body.classList.toggle('inspect');
-      });
-    });
-
-    return () => {
-      mousetrapRef?.unbind(['command+i', 'ctrl+i', 'alt+i']);
-    };
   }, []);
 };
 

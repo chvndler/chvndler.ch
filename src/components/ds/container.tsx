@@ -1,6 +1,8 @@
 import { styled } from 'stitches.config';
 
 export const Container = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
   boxSizing: 'border-box',
   flexShrink: 0,
   marginLeft: 'auto',
@@ -24,9 +26,23 @@ export const Container = styled('div', {
       '4': {
         maxWidth: 'none'
       }
+    },
+    align: {
+      left: {
+        justifyContent: 'flex-start'
+      },
+      center: {
+        margin: 'auto',
+        justifyContent: 'center',
+        alignItems: 'center'
+      },
+      right: {
+        justifyContent: 'flex-end'
+      }
     }
   },
   defaultVariants: {
-    size: '4'
+    size: '4',
+    align: 'left'
   }
 });

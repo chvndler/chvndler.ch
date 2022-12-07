@@ -1,10 +1,10 @@
+import { BodyContainer } from '@/components/ds';
 import { AtlrNavbar } from '@/components/layout/atlr.navbar';
 
 import { Meta } from '../common/meta';
+import { AppWrapper } from '../ds/app-wrapper';
 import { CoverFooter } from './app-footer';
-import { AlternateFooter } from './app-footer/alternate-footer';
 import { RelativeFooter } from './app-footer/relative-footer';
-import { BodyContainer } from './body-container';
 
 type LayoutProps = {
   children?: React.ReactNode;
@@ -12,51 +12,45 @@ type LayoutProps = {
 
   /**
    * @notes
-   *
-   * I needed a way to alternate different
-   * page styles - depending on different components neeeded.
-   *
-   * So i'm playing with this @if (page_type ===) option.
    */
+  // I needed a way to alternate different
+  // page styles - depending on different components neeeded.
+  // So i'm playing with this @if (page_type ===) option.
 };
 
-export type PageVariant = 'Production' | 'App' | 'CoverPage' | 'Developing' | 'RemoveFooter';
+export type PageVariant = 'Production' | 'App' | 'CoverPage' | 'RemoveFooter';
 export const PageLayout = ({ children, page_type }: LayoutProps) => {
-  /**
-   * @ProductionVariant
-   */
+  // Production...
   if (page_type === 'Production') {
     return (
       <>
         <Meta />
         <AtlrNavbar />
-        <BodyContainer>
-          <main>{children}</main>
-        </BodyContainer>
-        <RelativeFooter />
+        <AppWrapper>
+          <BodyContainer>
+            <main>{children}</main>
+          </BodyContainer>
+          <RelativeFooter />
+        </AppWrapper>
       </>
     );
   }
 
-  /**
-   * @App
-   * _ Removes "BodyContainer"
-   * _ Because we use a "FixedCanvas" component.
-   */
+  // App...
   if (page_type === 'App') {
     return (
       <>
         <Meta />
         <AtlrNavbar />
-        <main>{children}</main>
+        <AppWrapper>
+          <main>{children}</main>
+        </AppWrapper>
         <CoverFooter />
       </>
     );
   }
 
-  /**
-   * @CoverPageVariant
-   */
+  // CoverPage...
   if (page_type === 'CoverPage') {
     return (
       <>
@@ -70,25 +64,7 @@ export const PageLayout = ({ children, page_type }: LayoutProps) => {
     );
   }
 
-  /**
-   * @CoverPageVariant
-   */
-  if (page_type === 'Developing') {
-    return (
-      <>
-        <Meta />
-        <AtlrNavbar />
-        <BodyContainer>
-          <main>{children}</main>
-        </BodyContainer>
-        <AlternateFooter />
-      </>
-    );
-  }
-
-  /**
-   * @RemoveFooterVariant
-   */
+  // RemoveFooter...
   if (page_type === 'RemoveFooter') {
     return (
       <>

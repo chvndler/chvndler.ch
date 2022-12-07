@@ -2,7 +2,6 @@ import { styled, theme } from 'stitches.config';
 
 import { Container, PassLink, Section, Space } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
-import { SocialLinkDisplay } from '@/components/primitives/social-link-display';
 
 const ConnectPage = () => {
   return (
@@ -20,8 +19,6 @@ const ConnectPage = () => {
             <ParaText>I am currently seeking my next role.</ParaText>
           </Container>
         </Section>
-        <Space size={'2'} />
-        <SocialLinkDisplay />
       </PageLayout>
     </>
   );

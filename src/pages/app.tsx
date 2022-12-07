@@ -14,16 +14,7 @@ const NextAppPage = () => {
       <PageLayout page_type={'App'}>
         <FixedCanvas>
           <Canvas>
-            <Container
-              size={'1'}
-              css={{
-                display: 'flex',
-                flexDirection: 'column',
-                margin: 'auto',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}
-            >
+            <Container size={'1'} align={'center'} css={{}}>
               <AviNFT />
               <NameText>CHANDLER®</NameText>
               <RoleText>Front-End Developer and Designer</RoleText>

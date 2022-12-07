@@ -17,7 +17,7 @@
         "build:analyze": "cross-env ANALYZE=true yarn build",
         "postbuild": "next-sitemap",
         "start": "next start",
-        "lint": "next lint && stylelint '**/*.{css,scss}'",
+        "lint": "next lint",
         "tsc": "tsc --pretty --noEmit"
     },
     "peerDependencies": {
@@ -113,11 +113,6 @@
         "prettier": "2.8.0",
         "sass": "1.56.1",
         "slug": "^8.2.2",
-        "stylelint": "14.15.0",
-        "stylelint-config-prettier": "^9.0.3",
-        "stylelint-config-standard": "29",
-        "stylelint-config-standard-scss": "6",
-        "stylelint-prettier": "2",
         "typescript": "^4.7.4"
     },
     "engines": {
@@ -129,71 +124,6 @@
         "not ie <= 11",
         "not op_mini all"
     ],
-    "stylelint": {
-        "ignoreFiles": [
-            "**/*.{ts,tsx,js,jsx}"
-        ],
-        "extends": [
-            "stylelint-config-standard",
-            "stylelint-config-standard-scss",
-            "stylelint-prettier/recommended"
-        ],
-        "plugins": [
-            "stylelint-prettier"
-        ],
-        "rules": {
-            "scss/at-rule-no-unknown": [
-                true,
-                {
-                    "ignoreAtRules": [
-                        "tailwind",
-                        "layer",
-                        "apply",
-                        "variants",
-                        "responsive",
-                        "screen",
-                        "include",
-                        "for",
-                        "mixin",
-                        "if",
-                        "else",
-                        "warn",
-                        "return",
-                        "function",
-                        "use",
-                        "each"
-                    ]
-                }
-            ],
-            "selector-pseudo-class-no-unknown": [
-                true,
-                {
-                    "ignorePseudoClasses": [
-                        "global"
-                    ]
-                }
-            ],
-            "property-no-unknown": [
-                true,
-                {
-                    "ignoreProperties": [
-                        "font-named-instance"
-                    ]
-                }
-            ],
-            "declaration-block-trailing-semicolon": null,
-            "no-descending-specificity": null,
-            "number-leading-zero": null,
-            "length-zero-no-unit": null,
-            "alpha-value-notation": null,
-            "selector-id-pattern": null,
-            "selector-class-pattern": null,
-            "property-no-vendor-prefix": null,
-            "value-no-vendor-prefix": null,
-            "scss/no-global-function-names": null,
-            "scss/double-slash-comment-empty-line-before": null
-        }
-    },
     "lint-staged": {
         "*.@(ts|tsx|css|scss)": [
             "yarn lint --fix"

@@ -1,5 +1,3 @@
-// import Image from 'next/image';
-
 import { Space } from '@/components/ds';
 
 import {
@@ -15,7 +13,6 @@ type PProps = {
   pTitle: string;
   pRepository: string;
   pSummary: string;
-  // pImage: string;
 };
 
 export const ProjectEntry = ({ pTitle, pRepository, pSummary }: PProps) => {

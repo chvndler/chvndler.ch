@@ -40,10 +40,10 @@ export const AtlrNavbar = () => {
           <NavMenuContent>
             <NavMenuInner>
               <NavLink href={'/'}>index</NavLink>
-              <NavLink href={'/projects/web'}>Web Projects</NavLink>
-              <NavLink href={'/projects/three'}>Three.js</NavLink>
+              <NavLink href={'/projects/web'}>web projects</NavLink>
+              <NavLink href={'/projects/three'}>three.js</NavLink>
               <NavLink level2 href={'/notes'}>
-                Notes
+                notes
               </NavLink>
             </NavMenuInner>
           </NavMenuContent>
@@ -64,25 +64,25 @@ export const AtlrNavbar = () => {
           <NavMenuContent>
             <NavMenuInner>
               <NavLink href={cv} target={'_blank'} rel={'noreferrer noopener'}>
-                View cv
+                resume/cv
               </NavLink>
               <NavLink href={twitter} target={'_blank'} rel={'noreferrer noopener'}>
-                Twitter
+                twitter
               </NavLink>
               <NavLink href={github} target={'_blank'} rel={'noreferrer noopener'}>
-                GitHub
+                github
               </NavLink>
               <NavLink href={code_sandbox} target={'_blank'} rel={'noreferrer noopener'}>
-                CodeSandbox
+                codesandbox
               </NavLink>
               <NavLink href={instagram} target={'_blank'} rel={'noreferrer noopener'}>
-                Instagram
+                instagram
               </NavLink>
               <NavLink href={are_na} target={'_blank'} rel={'noreferrer noopener'}>
-                Are.na
+                are.na
               </NavLink>
               <NavLink href={read_cv} target={'_blank'} rel={'noreferrer noopener'}>
-                Read.cv
+                read.cv
               </NavLink>
             </NavMenuInner>
           </NavMenuContent>
