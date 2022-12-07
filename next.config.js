@@ -10,6 +10,7 @@ const config = {
     images: {
         formats: ['image/avif', 'image/webp'],
         domains: [
+            'images.mirror-media.xyz',
             'cdn.ady.systems',
             'pbs.twimg.com',
             'market-assets.fra1.cdn.digitaloceanspaces.com',
