@@ -1,46 +1,51 @@
 # chvndler.ch
 
-![cover image](https://atelierdesign.s3.us-east-1.amazonaws.com/chvn/assets/chvn.og-image.png 'We Make Cool Sh*t That Performs')
-Personal website, journal, knowledge base, and playground.
+### **personal site**.
 
-## Stack
+### my stack
 
-- [Next.js](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
+- **Style:** [Stitches](https://stitches.dev/)
+- **Back-end:** [Next.js](https://nextjs.org/)
+- **Front-end:** [React](https://reactjs.org/)
+- **3D:** [@react-three/fiber](), [@react-three/drei](), [three.js]()
+- **Deployment:** [Vercel](https://vercel.com/)
 
-## Get Started
+### running locally
 
-1. Install yarn:
+1. Clone this repo:
 
-   ```
-   npm install -g yarn
-   ```
-
-2. Install the dependencies with:
-
-   ```
-   yarn
-   ```
-
-3. Start developing and watch for code changes:
-
-   ```
-   yarn dev
-   ```
-
-
-## Deployment
-```
-$ vercel
+```sh
+$ git clone https://github.com/chvndler/chvndler.ch.git
 ```
 
+2. Then go to the project's folder:
+
+```sh
+cd chvndler.ch
 ```
-$ vercel --prod
+
+3. Install all dependencies:
+
+```sh
+yarn install
 ```
 
+4. Notes
 
-## Things to Note
-
-- Make sure you read `.env.example` to see which environment variables you need to run the project.
+! Don't forget to check `.env.example` !
 
 ---
+
+5. Run locally:
+
+```sh
+yarn dev
+```
+
+### license
+
+---
+
+[MIT License]()
+
+`© chvndler`
