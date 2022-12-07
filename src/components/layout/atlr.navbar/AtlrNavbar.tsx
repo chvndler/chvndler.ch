@@ -41,19 +41,10 @@ export const AtlrNavbar = () => {
             <NavMenuInner>
               <NavLink href={'/'}>index</NavLink>
               <NavLink href={'/projects/web'}>Web Projects</NavLink>
-              <NavLink href={'/projects/film'}>Film Projects</NavLink>
               <NavLink href={'/projects/three'}>Three.js</NavLink>
               <NavLink level2 href={'/notes'}>
                 Notes
               </NavLink>
-              {/* <!-- Hold these until complete --> 
-              <NavLink level2 disabled href={''}>
-                Archive
-              </NavLink>
-              <NavLink level2 disabled href={''}>
-                Music
-              </NavLink>
-              --> */}
             </NavMenuInner>
           </NavMenuContent>
         </NavigationMenu.Item>
