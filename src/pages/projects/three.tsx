@@ -10,10 +10,7 @@ const ThreePage = () => {
   return (
     <>
       <Instructions>
-        <Flex css={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-          <Icxn variant={'AirMouse'} />
-          <InstructionText>Drag + Scroll to Explore</InstructionText>
-        </Flex>
+        <ThreeInstructions />
       </Instructions>
       <R3FFooter />
       <R3FCanvasLayout>
@@ -25,9 +22,7 @@ const ThreePage = () => {
 
 export default ThreePage;
 
-/**
- * @styles
- */
+// Styles..
 const StyledInstructions = css({
   zIndex: 3,
   color: theme.colors.chxn10,
@@ -56,3 +51,12 @@ const StyledInstructionText = css({
 
 const Instructions = styled('div', StyledInstructions);
 const InstructionText = styled('span', StyledInstructionText);
+
+const ThreeInstructions = () => {
+  return (
+    <Flex css={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+      <Icxn variant={'AirMouse'} />
+      <InstructionText>Drag + Scroll to Explore</InstructionText>
+    </Flex>
+  );
+};

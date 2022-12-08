@@ -34,9 +34,8 @@ const Value = () => {
         color: theme.colors.mauveA9,
         fontSize: 13,
         fontFamily: theme.fonts.mono,
-        fontWeight: '500',
         lineHeight: '28px',
-        letterSpacing: 'normal',
+        letterSpacing: '0.03rem',
         marginLeft: 4
       }}
     >
@@ -64,9 +63,8 @@ export const CursorData = () => {
           color: theme.colors.mauveA9,
           fontSize: 13,
           fontFamily: theme.fonts.mono,
-          fontWeight: '500',
           lineHeight: '28px',
-          letterSpacing: 'normal',
+          letterSpacing: '0.03rem',
           marginRight: 4
         }}
       >

@@ -1,7 +1,7 @@
-import { theme } from 'stitches.config';
+import { styled, theme } from 'stitches.config';
 
 import { FilmProjects } from '@/components/displays/film-project-display';
-import { Container, Space, Text } from '@/components/ds';
+import { Container, Space } from '@/components/ds';
 import { PageLayout } from '@/components/layout/page';
 
 const Film = () => {
@@ -9,36 +9,12 @@ const Film = () => {
     <>
       <PageLayout page_type={'Production'}>
         <Container size={'3'} css={{}}>
-          <Text
-            css={{
-              textAlign: 'center',
-              color: '$chxn4',
-              fontSize: 13,
-              fontFamily: '"Lateral Extended Medium", sans-serif',
-              fontWeight: 500,
-              lineHeight: 'auto',
-              letterSpacing: ''
-            }}
-          >
-            © MIT FILM PROJECTS
-          </Text>
+          <Heading>© MIT FILM PROJECTS</Heading>
           <Space size={'1'} />
-          <Text
-            css={{
-              textAlign: 'center',
-              color: '$chxn4',
-              fontSize: 15,
-              fontFamily: theme.fonts.panSb,
-              fontWeight: 'auto',
-              lineHeight: 'auto',
-              letterSpacing: ''
-            }}
-          >
-            coming soon.
-          </Text>
+          <SubHeading>My film projects will live here soon.</SubHeading>
+          <SubHeading>Here are two for now, while i'm working on some bugs.</SubHeading>
         </Container>
         <Space size={'3'} />
-
         <FilmProjects />
       </PageLayout>
     </>
@@ -46,3 +22,21 @@ const Film = () => {
 };
 
 export default Film;
+
+const Heading = styled('h1', {
+  color: theme.colors.slateA6,
+  fontFamily: theme.fonts.latMedExtd,
+  fontSize: 13,
+  textAlign: 'center',
+  fontWeight: 500,
+  lineHeight: 'auto'
+});
+
+const SubHeading = styled('h1', {
+  textAlign: 'center',
+  color: theme.colors.chxn4,
+  fontSize: 15,
+  fontFamily: theme.fonts.panSb,
+  fontWeight: 'auto',
+  lineHeight: 'auto'
+});

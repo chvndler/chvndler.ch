@@ -16,7 +16,7 @@ const NextAppPage = () => {
           <Canvas>
             <Container size={'1'} align={'center'} css={{}}>
               <AviNFT />
-              <NameText>CHANDLER®</NameText>
+              <NameText>CHANDLER</NameText>
               <RoleText>Front-End Developer and Designer</RoleText>
               <Space size={'1'} />
               <CursorData />
@@ -40,12 +40,12 @@ const NameText = styled('h1', {
   fontSize: 30,
   fontWeight: 500,
   letterSpacing: '-0.04em',
-  lineHeight: '1.3',
+  lineHeight: '1.4',
   marginTop: 12
 });
 
 const RoleText = styled(Text, {
-  fontFamily: theme.fonts.panB,
+  fontFamily: theme.fonts.helvRound,
   color: theme.colors.mauve11,
   fontSize: 16,
   fontWeight: 'auto',
