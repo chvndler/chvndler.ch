@@ -1,6 +1,6 @@
-import type { LxgoProps } from './types';
+import type {LxgoProps} from './types'
 
-export const CDCLogo = ({ ...props }: LxgoProps) => {
+export const CDCLogo = ({...props}: LxgoProps) => {
   return (
     <>
       <svg
@@ -9,8 +9,7 @@ export const CDCLogo = ({ ...props }: LxgoProps) => {
         viewBox="0 0 140 34"
         width="90"
         height="22"
-        {...props}
-      >
+        {...props}>
         <path
           d="M115,8.5c5.3,0,6.9,3.1,7.3,5.2h15.4c-0.8-5.4-3.9-8.5-7.8-10.3l8.6-2.4h-21.8c0,0-0.1,0-0.1,0c-0.6,0-1.1,0-1.7,0
 	c-7.5,0-20.8,0.4-23.3,11.9c-0.6-4-2.1-6.8-4.7-8.7L98.4,1H74.1H55.8h-7.4h-0.9H27.3c-0.1,0-0.1,0-0.2,0c-0.1,0-0.3,0-0.4,0
@@ -22,5 +21,5 @@ export const CDCLogo = ({ ...props }: LxgoProps) => {
         />
       </svg>
     </>
-  );
-};
+  )
+}

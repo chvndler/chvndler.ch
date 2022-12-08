@@ -1,7 +1,7 @@
-import { styled, theme } from 'stitches.config';
+import {styled, theme} from 'stitches.config'
 
-import { Container, Space } from '@/components/ds';
-import { PageLayout } from '@/components/layout/page';
+import {Container, Space} from '@/components/ds'
+import {PageLayout} from '@/components/layout/page'
 
 const TypePage = () => {
   return (
@@ -44,10 +44,10 @@ const TypePage = () => {
         </Container>
       </PageLayout>
     </div>
-  );
-};
+  )
+}
 
-export default TypePage;
+export default TypePage
 
 const Mono = styled('p', {
   fontSize: 14,
@@ -55,26 +55,26 @@ const Mono = styled('p', {
   variants: {
     retina: {
       true: {
-        fontFamily: theme.fonts.mono
-      }
+        fontFamily: theme.fonts.mono,
+      },
     },
     medium: {
       true: {
-        fontFamily: theme.fonts.monoMedium
-      }
+        fontFamily: theme.fonts.monoMedium,
+      },
     },
     semi: {
       true: {
-        fontFamily: theme.fonts.monoSemibold
-      }
+        fontFamily: theme.fonts.monoSemibold,
+      },
     },
     bold: {
       true: {
-        fontFamily: theme.fonts.monoBold
-      }
-    }
-  }
-});
+        fontFamily: theme.fonts.monoBold,
+      },
+    },
+  },
+})
 
 const PangramSansRounded = styled('p', {
   fontSize: 18,
@@ -82,26 +82,26 @@ const PangramSansRounded = styled('p', {
   variants: {
     bold: {
       true: {
-        fontFamily: theme.fonts.panB
-      }
+        fontFamily: theme.fonts.panB,
+      },
     },
     semi: {
       true: {
-        fontFamily: theme.fonts.panSb
-      }
+        fontFamily: theme.fonts.panSb,
+      },
     },
     medium: {
       true: {
-        fontFamily: theme.fonts.panMd
-      }
+        fontFamily: theme.fonts.panMd,
+      },
     },
     regular: {
       true: {
-        fontFamily: theme.fonts.panRg
-      }
-    }
-  }
-});
+        fontFamily: theme.fonts.panRg,
+      },
+    },
+  },
+})
 
 const HelveticaRounded = styled('p', {
   fontSize: 18,
@@ -109,11 +109,11 @@ const HelveticaRounded = styled('p', {
   variants: {
     bold: {
       true: {
-        fontFamily: theme.fonts.helvRound
-      }
-    }
-  }
-});
+        fontFamily: theme.fonts.helvRound,
+      },
+    },
+  },
+})
 
 const Scto = styled('p', {
   fontSize: 18,
@@ -121,18 +121,18 @@ const Scto = styled('p', {
   variants: {
     bold: {
       true: {
-        fontFamily: theme.fonts.sctoBold
-      }
-    }
-  }
-});
+        fontFamily: theme.fonts.sctoBold,
+      },
+    },
+  },
+})
 
 const Inter = styled('p', {
   fontSize: 18,
-  fontFamily: theme.fonts.inter
-});
+  fontFamily: theme.fonts.inter,
+})
 
 const System = styled('p', {
   fontSize: 18,
-  fontFamily: theme.fonts.system
-});
+  fontFamily: theme.fonts.system,
+})

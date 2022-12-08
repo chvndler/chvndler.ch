@@ -1,32 +1,32 @@
-import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import { keyframes, styled, theme } from 'stitches.config';
+import * as NavigationMenu from '@radix-ui/react-navigation-menu'
+import {keyframes, styled, theme} from 'stitches.config'
 
-import { Box } from '@/components/ds';
-import { Icxn } from '@/components/icons/icxn';
+import {Box} from '@/components/ds'
+import {Icxn} from '@/components/icons/icxn'
 
 /**
  * @keyframes
  */
 
 const scaleIn = keyframes({
-  from: { transform: 'rotateX(-30deg) scale(0.9)', opacity: 0 },
-  to: { transform: 'rotateX(0deg) scale(1)', opacity: 1 }
-});
+  from: {transform: 'rotateX(-30deg) scale(0.9)', opacity: 0},
+  to: {transform: 'rotateX(0deg) scale(1)', opacity: 1},
+})
 
 const scaleOut = keyframes({
-  from: { transform: 'rotateX(0deg) scale(1)', opacity: 1 },
-  to: { transform: 'rotateX(-10deg) scale(0.95)', opacity: 0 }
-});
+  from: {transform: 'rotateX(0deg) scale(1)', opacity: 1},
+  to: {transform: 'rotateX(-10deg) scale(0.95)', opacity: 0},
+})
 
 const fadeIn = keyframes({
-  from: { opacity: 0 },
-  to: { opacity: 1 }
-});
+  from: {opacity: 0},
+  to: {opacity: 1},
+})
 
 const fadeOut = keyframes({
-  from: { opacity: 1 },
-  to: { opacity: 0 }
-});
+  from: {opacity: 1},
+  to: {opacity: 0},
+})
 
 /**
  * @MenuRoot
@@ -44,7 +44,7 @@ const NavigationMenuRoot = styled(NavigationMenu.Root, {
   height: '3.5rem',
 
   margin: 'auto',
-  padding: 0
+  padding: 0,
 
   /**
    *
@@ -53,7 +53,7 @@ const NavigationMenuRoot = styled(NavigationMenu.Root, {
    *
    * border: '1px solid blue',
    */
-});
+})
 
 /**
  * @MenuBar
@@ -79,8 +79,8 @@ const NavigationMenuBarStyles = styled(NavigationMenu.List, {
   WebkitBackdropFilter: 'blur(40px) saturate(180%)',
   lineHeight: '23px',
   height: 48,
-  border: `1px solid ${theme.colors.sageA4}`
-});
+  border: `1px solid ${theme.colors.sageA4}`,
+})
 
 const StyledContentBox = styled('div', {
   display: 'flex',
@@ -95,21 +95,21 @@ const StyledContentBox = styled('div', {
       start: {
         alignContent: 'flex-start',
         alignItems: 'flex-start',
-        justifyContent: 'flex-start'
+        justifyContent: 'flex-start',
       },
       center: {
         alignContent: 'center',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
       },
       end: {
         alignContent: 'flex-end',
         alignItems: 'flex-end',
-        justifyContent: 'flex-end'
-      }
-    }
-  }
-});
+        justifyContent: 'flex-end',
+      },
+    },
+  },
+})
 
 /**
  *
@@ -123,17 +123,17 @@ export const itemStyles = {
   '*': {
     boxSizing: 'border-box',
     outline: 'none',
-    cursor: 'none'
+    cursor: 'none',
   },
   '*:active': {
     boxSizing: 'border-box',
     outline: 'none',
-    cursor: 'none'
+    cursor: 'none',
   },
   '*:focus': {
     boxSizing: 'border-box',
     outline: 'none',
-    cursor: 'none'
+    cursor: 'none',
   },
   alignItems: 'center',
   boxSizing: 'border-box',
@@ -162,16 +162,16 @@ export const itemStyles = {
   '&:hover': {
     color: theme.colors.sage12,
     backgroundColor: theme.colors.blackA3,
-    cursor: 'pointer'
+    cursor: 'pointer',
   },
   '&:active': {},
   '&:focus': {},
 
   '&::before': {
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
   },
   '&::after': {
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
   },
 
   '&:disabled': {
@@ -181,10 +181,10 @@ export const itemStyles = {
     cursor: 'not-allowed',
     '&:hover': {
       backgroundColor: '$blur',
-      cursor: 'not-allowed'
-    }
-  }
-};
+      cursor: 'not-allowed',
+    },
+  },
+}
 
 /**
  * @NavMenuTrigger
@@ -200,19 +200,19 @@ const NavigationMenuTrigger = styled(NavigationMenu.Trigger, {
   '*': {
     boxSizing: 'border-box',
     outline: 'none',
-    cursor: 'none'
+    cursor: 'none',
   },
   '*:active': {
     boxSizing: 'border-box',
     outline: 'none',
-    cursor: 'none'
+    cursor: 'none',
   },
   '*:focus': {
     boxSizing: 'border-box',
     outline: 'none',
-    cursor: 'none'
-  }
-});
+    cursor: 'none',
+  },
+})
 
 /**
  * @MenuLink
@@ -221,17 +221,17 @@ const NavigationMenuLink = styled(NavigationMenu.Link, {
   '*': {
     boxSizing: 'border-box',
     outline: 'none',
-    cursor: 'none'
+    cursor: 'none',
   },
   '*:active': {
     boxSizing: 'border-box',
     outline: 'none',
-    cursor: 'none'
+    cursor: 'none',
   },
   '*:focus': {
     boxSizing: 'border-box',
     outline: 'none',
-    cursor: 'none'
+    cursor: 'none',
   },
 
   ...itemStyles,
@@ -251,14 +251,14 @@ const NavigationMenuLink = styled(NavigationMenu.Link, {
   '&:hover': {
     color: theme.colors.chxn13,
     backgroundColor: theme.colors.whiteA6,
-    cursor: 'pointer'
+    cursor: 'pointer',
   },
 
   variants: {
     level2: {
       true: {
-        color: theme.colors.sage9
-      }
+        color: theme.colors.sage9,
+      },
     },
     disabled: {
       true: {
@@ -266,13 +266,13 @@ const NavigationMenuLink = styled(NavigationMenu.Link, {
         '&:hover': {
           color: theme.colors.sage9,
           cursor: 'not-allowed',
-          pointerEvents: 'visible'
-        }
-      }
-    }
+          pointerEvents: 'visible',
+        },
+      },
+    },
   },
-  defaultVariants: {}
-});
+  defaultVariants: {},
+})
 
 /**
  * @MenuContent
@@ -299,15 +299,15 @@ const NavigationMenuContent = styled(NavigationMenu.Content, {
 
   animationDuration: '250ms',
   animationTimingFunction: 'ease',
-  '&[data-motion="from-start"]': { animationName: fadeIn },
-  '&[data-motion="from-end"]': { animationName: fadeOut },
-  '&[data-motion="to-start"]': { animationName: fadeIn },
-  '&[data-motion="to-end"]': { animationName: fadeOut }
+  '&[data-motion="from-start"]': {animationName: fadeIn},
+  '&[data-motion="from-end"]': {animationName: fadeOut},
+  '&[data-motion="to-start"]': {animationName: fadeIn},
+  '&[data-motion="to-end"]': {animationName: fadeOut},
 
   /**
    * @media only screen and (min-width: 600px)': { width: 'auto' },
    */
-});
+})
 
 /**
  * @MenuInner
@@ -336,8 +336,8 @@ const NavigationMenuInner = styled(Box, {
    */
   backgroundColor: `rgba(26,26,26,.06)`,
   backdropFilter: 'blur(40px) saturate(180%)',
-  WebkitBackdropFilter: 'blur(40px) saturate(180%)'
-});
+  WebkitBackdropFilter: 'blur(40px) saturate(180%)',
+})
 
 /**
  * @NavMenuIndicator
@@ -351,9 +351,9 @@ const NavigationMenuIndicator = styled(NavigationMenu.Indicator, {
   overflow: 'hidden',
   zIndex: 1,
   transition: 'width, transform 250ms ease',
-  '&[data-state="visible"]': { animation: `${fadeIn} 200ms ease` },
-  '&[data-state="hidden"]': { animation: `${fadeOut} 200ms ease` }
-});
+  '&[data-state="visible"]': {animation: `${fadeIn} 200ms ease`},
+  '&[data-state="hidden"]': {animation: `${fadeOut} 200ms ease`},
+})
 
 /**
  * @Viewport
@@ -381,8 +381,8 @@ const ViewportPosition = styled('div', {
   justifyContent: 'center',
   maxWidth: 520,
   width: '100%',
-  perspective: '2000px'
-});
+  perspective: '2000px',
+})
 
 /**
  * @NavMenuViewport
@@ -393,13 +393,13 @@ const NavigationMenuViewport = styled(NavigationMenu.Viewport, {
   transformOrigin: 'top center',
   overflow: 'hidden',
   transition: 'width, height, 300ms ease',
-  '&[data-state="open"]': { animation: `${scaleIn} 200ms ease` },
-  '&[data-state="closed"]': { animation: `${scaleOut} 200ms ease` },
+  '&[data-state="open"]': {animation: `${scaleIn} 200ms ease`},
+  '&[data-state="closed"]': {animation: `${scaleOut} 200ms ease`},
   '@media only screen and (min-width: 600px)': {
     //width: 'var(--radix-navigation-menu-viewport-width)'
-    width: '100%'
-  }
-});
+    width: '100%',
+  },
+})
 
 /**
  * @NavCallout
@@ -416,8 +416,8 @@ const Callout = styled('a', {
   textDecoration: 'none',
   outline: 'none',
   userSelect: 'none',
-  '&:focus': { boxShadow: `0 0 0 2px ${theme.colors.chxn4}` }
-});
+  '&:focus': {boxShadow: `0 0 0 2px ${theme.colors.chxn4}`},
+})
 
 /**
  * @NavCalloutHeading
@@ -428,8 +428,8 @@ export const CalloutHeading = styled('div', {
   fontWeight: 500,
   lineHeight: 1.2,
   marginTop: 16,
-  marginBottom: 7
-});
+  marginBottom: 7,
+})
 
 /**
  * @NavCalloutText
@@ -438,8 +438,8 @@ const CalloutText = styled('p', {
   all: 'unset',
   color: theme.colors.chxn4,
   fontSize: 14,
-  lineHeight: 1.3
-});
+  lineHeight: 1.3,
+})
 
 /**
  * @NavIcxn
@@ -453,37 +453,37 @@ const StyledIcxn = styled(Icxn, {
   '[data-state=open] &': {
     transform: 'rotate(-180deg)',
     // transform: `rotateZ(180deg)`
-    transitionDuration: `200ms`
-  }
-});
+    transitionDuration: `200ms`,
+  },
+})
 
 /**
  * <!-- Atlr.Navbar -->
  */
-export const NavMenuRoot = NavigationMenuRoot;
-export const NavMenuBar = NavigationMenuBarStyles;
-export const NavMenuInner = NavigationMenuInner;
-export const NavMenuContent = NavigationMenuContent;
-export const NavMenuTrigger = NavigationMenuTrigger;
-export const NavMenuIndicator = NavigationMenuIndicator;
-export const NavContentBox = StyledContentBox;
+export const NavMenuRoot = NavigationMenuRoot
+export const NavMenuBar = NavigationMenuBarStyles
+export const NavMenuInner = NavigationMenuInner
+export const NavMenuContent = NavigationMenuContent
+export const NavMenuTrigger = NavigationMenuTrigger
+export const NavMenuIndicator = NavigationMenuIndicator
+export const NavContentBox = StyledContentBox
 
-export const NavLink = NavigationMenuLink;
+export const NavLink = NavigationMenuLink
 
 /**
  * <!-- Callout.Style -->
  */
-export const NavCallout = Callout;
-export const NavCalloutHeading = CalloutHeading;
-export const NavCalloutText = CalloutText;
+export const NavCallout = Callout
+export const NavCalloutHeading = CalloutHeading
+export const NavCalloutText = CalloutText
 
 /**
  * <!-- Viewport.Style -->
  */
-export const NavMenuViewport = NavigationMenuViewport;
-export const Viewport = ViewportPosition;
+export const NavMenuViewport = NavigationMenuViewport
+export const Viewport = ViewportPosition
 
 /**
  * @IcxnStyles
  */
-export const NavIcxn = StyledIcxn;
+export const NavIcxn = StyledIcxn

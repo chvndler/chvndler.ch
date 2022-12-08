@@ -1,4 +1,4 @@
-import { Space } from '@/components/ds';
+import {Space} from '@/components/ds'
 
 import {
   ImageOverlay,
@@ -6,18 +6,18 @@ import {
   ProjectButton,
   ProjectCard,
   ProjectSummary,
-  ProjectTitle
-} from './project-card.css';
+  ProjectTitle,
+} from './project-card.css'
 
 type PProps = {
-  pTitle: string;
-  pRepository: string;
-  pSummary: string;
-};
+  pTitle: string
+  pRepository: string
+  pSummary: string
+}
 
-export const ProjectEntry = ({ pTitle, pRepository, pSummary }: PProps) => {
+export const ProjectEntry = ({pTitle, pRepository, pSummary}: PProps) => {
   return (
-    <ProjectCard css={{ userSelect: 'none' }}>
+    <ProjectCard css={{userSelect: 'none'}}>
       <PlacementBox css={{}}>
         <ProjectTitle as={'a'} href={pRepository}>
           {pTitle}
@@ -32,5 +32,5 @@ export const ProjectEntry = ({ pTitle, pRepository, pSummary }: PProps) => {
 
       <ImageOverlay></ImageOverlay>
     </ProjectCard>
-  );
-};
+  )
+}

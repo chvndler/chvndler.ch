@@ -1,19 +1,21 @@
-import { useTheme } from 'next-themes';
-import React from 'react';
+import {useTheme} from 'next-themes'
+import React from 'react'
 
-import { IconButton } from '@/components/ds';
-import { Icxn } from '@/components/icons/atlr-icxns';
+import {IconButton} from '@/components/ds'
+import {Icxn} from '@/components/icons/atlr-icxns'
 
-import { ToolTipWrapper } from '../tool-tip';
+import {ToolTipWrapper} from '../tool-tip'
 
 export const ThemeSwitch = () => {
-  const { theme, setTheme } = useTheme();
+  const {theme, setTheme} = useTheme()
 
   return (
     <ToolTipWrapper tip={'toggle theme'}>
-      <IconButton onClick={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))} aria-label="Toggle Theme">
+      <IconButton
+        onClick={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}
+        aria-label="Toggle Theme">
         <Icxn variant={'Sun'} />
       </IconButton>
     </ToolTipWrapper>
-  );
-};
+  )
+}

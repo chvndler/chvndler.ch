@@ -1,5 +1,5 @@
-import { VideoPlayer } from './video.player';
-import { VideoPlayerGrid } from './video.player.grid';
+import {VideoPlayer} from './video.player'
+import {VideoPlayerGrid} from './video.player.grid'
 
 /**
  *
@@ -23,7 +23,7 @@ export const FilmProjects = () => {
         captionOther={'Small Legacy Description of film'}
       />
     </VideoPlayerGrid>
-  );
-};
+  )
+}
 
-FilmProjects.displayName = 'FilmProjectDisplay';
+FilmProjects.displayName = 'FilmProjectDisplay'

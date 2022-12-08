@@ -1,4 +1,4 @@
-import { css, styled, theme } from 'stitches.config';
+import {css, styled, theme} from 'stitches.config'
 
 const VideoWrapperStyles = css({
   boxSizing: 'border-box',
@@ -6,8 +6,8 @@ const VideoWrapperStyles = css({
   width: '100%',
   height: 'auto',
   margin: 0,
-  padding: 0
-});
+  padding: 0,
+})
 
 export const MuxVideoStyles = css('video', {
   zIndex: 1,
@@ -29,8 +29,8 @@ export const MuxVideoStyles = css('video', {
   outline: 'none',
   display: 'flex',
   opacity: 1,
-  transition: 'opacity 0.5s ease-in-out'
-});
+  transition: 'opacity 0.5s ease-in-out',
+})
 
 const CaptionBoxStyles = css({
   position: 'relative',
@@ -42,8 +42,8 @@ const CaptionBoxStyles = css({
   width: 'auto',
   height: 'auto',
   margin: 0,
-  padding: 4
-});
+  padding: 4,
+})
 
 const CaptionTitleStyles = css({
   fontFamily: theme.fonts.latMedExtd,
@@ -57,8 +57,8 @@ const CaptionTitleStyles = css({
   width: 'auto',
   height: 'auto',
   margin: 0,
-  padding: 0
-});
+  padding: 0,
+})
 
 const CaptionOtherStyles = css({
   fontFamily: theme.fonts.scto,
@@ -73,10 +73,10 @@ const CaptionOtherStyles = css({
   width: 'auto',
   height: 'auto',
   margin: 0,
-  padding: 0
-});
+  padding: 0,
+})
 
-export const VideoWrapper = styled('div', VideoWrapperStyles);
-export const CaptionBox = styled('div', CaptionBoxStyles);
-export const CaptionTitle = styled('div', CaptionTitleStyles);
-export const CaptionOther = styled('div', CaptionOtherStyles);
+export const VideoWrapper = styled('div', VideoWrapperStyles)
+export const CaptionBox = styled('div', CaptionBoxStyles)
+export const CaptionTitle = styled('div', CaptionTitleStyles)
+export const CaptionOther = styled('div', CaptionOtherStyles)

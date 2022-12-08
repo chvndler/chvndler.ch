@@ -1,22 +1,29 @@
-import useSWR from 'swr';
+import useSWR from 'swr'
 
-import { Box, Flex, PassLink, Status } from '@/components/ds';
-import { Avatar } from '@/components/primitives/avatar';
-import fetcher from '@/lib/fetcher';
+import {Box, Flex, PassLink, Status} from '@/components/ds'
+import {Avatar} from '@/components/primitives/avatar'
+import fetcher from '@/lib/fetcher'
 
-import { AlbumBox, TrackArtist, TrackBackground, TrackBox, TrackContainer, TrackTitle } from './track.styles';
-import type { NowPlayingSong } from './types';
+import {
+  AlbumBox,
+  TrackArtist,
+  TrackBackground,
+  TrackBox,
+  TrackContainer,
+  TrackTitle,
+} from './track.styles'
+import type {NowPlayingSong} from './types'
 
 export const NowPlaying = () => {
-  const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher);
+  const {data} = useSWR<NowPlayingSong>('/api/now-playing', fetcher)
 
   return (
     <>
       <TrackContainer>
         <TrackBackground>
-          <Flex css={{ padding: '10px' }}>
-            <Box css={{ width: 'auto' }}>
-              <Flex css={{ flexDirection: 'row' }}>
+          <Flex css={{padding: '10px'}}>
+            <Box css={{width: 'auto'}}>
+              <Flex css={{flexDirection: 'row'}}>
                 {data?.songUrl ? (
                   <>
                     <ArtworkModule />
@@ -25,7 +32,7 @@ export const NowPlaying = () => {
                 ) : (
                   <>
                     {/* <!-- @NotPlaying --> */}
-                    <Flex css={{ padding: 0, flexDirection: 'column', margin: 'auto' }}>
+                    <Flex css={{padding: 0, flexDirection: 'column', margin: 'auto'}}>
                       <TrackTitle>Not Listening</TrackTitle>
                     </Flex>
                   </>
@@ -36,11 +43,11 @@ export const NowPlaying = () => {
         </TrackBackground>
       </TrackContainer>
     </>
-  );
-};
+  )
+}
 
 const ArtworkModule = () => {
-  const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher);
+  const {data} = useSWR<NowPlayingSong>('/api/now-playing', fetcher)
   return (
     <>
       <AlbumBox>
@@ -56,11 +63,11 @@ const ArtworkModule = () => {
         </PassLink>
       </AlbumBox>
     </>
-  );
-};
+  )
+}
 
 const TrackDetailsModule = () => {
-  const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher);
+  const {data} = useSWR<NowPlayingSong>('/api/now-playing', fetcher)
   return (
     <Flex
       css={{
@@ -69,10 +76,9 @@ const TrackDetailsModule = () => {
         paddingTop: 0,
         flexDirection: 'column',
         margin: 'auto',
-        gap: 4
-      }}
-    >
-      <TrackBox css={{ justifyContent: 'flex-start' }}>
+        gap: 4,
+      }}>
+      <TrackBox css={{justifyContent: 'flex-start'}}>
         <PassLink href={data.songUrl}>
           <TrackTitle>{data.title}</TrackTitle>
         </PassLink>
@@ -85,11 +91,10 @@ const TrackDetailsModule = () => {
           paddingRight: 2,
           paddingTop: 6,
           paddingBottom: 0,
-          justifyContent: 'flex-end'
-        }}
-      >
+          justifyContent: 'flex-end',
+        }}>
         <Status size={'2'} variant={'green'} />
       </Box>
     </Flex>
-  );
-};
+  )
+}

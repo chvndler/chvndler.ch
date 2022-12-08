@@ -1,9 +1,9 @@
-import { Container, Flex, PassLink, Section, Text } from '@/components/ds';
+import {Container, Flex, PassLink, Section, Text} from '@/components/ds'
 
 export const ConnectSection = () => {
   return (
-    <Section size="1" css={{ paddingTop: 30 }}>
-      <Container size="1" css={{ paddingLeft: 28, paddingRight: 28 }}>
+    <Section size="1" css={{paddingTop: 30}}>
+      <Container size="1" css={{paddingLeft: 28, paddingRight: 28}}>
         <Flex
           css={{
             flexDirection: 'row',
@@ -11,10 +11,9 @@ export const ConnectSection = () => {
             margin: 'auto',
             justifyContent: 'center',
             '@sm': {
-              justifyContent: 'flex-start'
-            }
-          }}
-        >
+              justifyContent: 'flex-start',
+            },
+          }}>
           <PassLink href="https://twitter.com/chvndlerch/">
             <Text
               css={{
@@ -32,10 +31,9 @@ export const ConnectSection = () => {
                 '&:hover': {
                   color: '$slate1',
                   backgroundColor: '$twitter',
-                  cursor: 'pointer'
-                }
-              }}
-            >
+                  cursor: 'pointer',
+                },
+              }}>
               TWITTER →
             </Text>
           </PassLink>
@@ -56,15 +54,14 @@ export const ConnectSection = () => {
                 '&:hover': {
                   color: '$slate1',
                   backgroundColor: '$github',
-                  cursor: 'pointer'
-                }
-              }}
-            >
+                  cursor: 'pointer',
+                },
+              }}>
               GITHUB →
             </Text>
           </PassLink>
         </Flex>
       </Container>
     </Section>
-  );
-};
+  )
+}

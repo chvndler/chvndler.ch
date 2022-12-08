@@ -1,9 +1,12 @@
-import { gql } from '@apollo/client';
+import {gql} from '@apollo/client'
 
 export default gql`
   query FetchTransaction($digest: String!) {
     transactions(
-      tags: [{ name: "Original-Content-Digest", values: [$digest] }, { name: "App-Name", values: "MirrorXYZ" }]
+      tags: [
+        {name: "Original-Content-Digest", values: [$digest]}
+        {name: "App-Name", values: "MirrorXYZ"}
+      ]
     ) {
       edges {
         node {
@@ -15,4 +18,4 @@ export default gql`
       }
     }
   }
-`;
+`

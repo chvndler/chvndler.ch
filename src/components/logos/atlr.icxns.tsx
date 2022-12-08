@@ -1,9 +1,15 @@
-import type { LxgoProps } from './types';
+import type {LxgoProps} from './types'
 
-export const AtlrIcxnsLogo = ({ ...props }: LxgoProps) => {
+export const AtlrIcxnsLogo = ({...props}: LxgoProps) => {
   return (
     <>
-      <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 30" width="" height="28" {...props}>
+      <svg
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 160 30"
+        width=""
+        height="28"
+        {...props}>
         <path
           d="M0.4,23.3c0-3.1,1.3-5.2,6.7-6.1l4.4-0.8c1.8-0.3,2.3-0.8,2.3-1.8c0-1.2-0.7-1.9-2.9-1.9c-2.4,0-3.5,0.9-3.5,2.7H0.8
 		c0.2-4.2,3.8-7.1,10-7.1c6.2,0,9.3,2.6,9.3,7v7.8c0,2.1,0.1,3.8,0.4,5.4h-5.8c-0.2-1.1-0.3-2.5-0.3-4.1c-1,2.9-3.4,4.6-7.4,4.6
@@ -42,5 +48,5 @@ export const AtlrIcxnsLogo = ({ ...props }: LxgoProps) => {
         />
       </svg>
     </>
-  );
-};
+  )
+}

@@ -1,4 +1,4 @@
-import { styled } from 'stitches.config';
+import {styled} from 'stitches.config'
 
 export const SocialLink = styled('p', {
   borderRadius: 50,
@@ -25,64 +25,64 @@ export const SocialLink = styled('p', {
         '&:hover': {
           color: '#FFFFFF',
           backgroundColor: '$github',
-          cursor: 'pointer'
-        }
-      }
+          cursor: 'pointer',
+        },
+      },
     },
     arena: {
       true: {
         '&:hover': {
           color: '#FFFFFF',
           backgroundColor: '$arena',
-          cursor: 'pointer'
-        }
-      }
+          cursor: 'pointer',
+        },
+      },
     },
     instagram: {
       true: {
         '&:hover': {
           color: '#FFFFFF',
           backgroundColor: '$insta',
-          cursor: 'pointer'
-        }
-      }
+          cursor: 'pointer',
+        },
+      },
     },
     facebook: {
       true: {
         '&:hover': {
           color: '#FFFFFF',
           backgroundColor: '$fb',
-          cursor: 'pointer'
-        }
-      }
+          cursor: 'pointer',
+        },
+      },
     },
     linkedin: {
       true: {
         '&:hover': {
           color: '#FFFFFF',
           backgroundColor: '$linkedin',
-          cursor: 'pointer'
-        }
-      }
+          cursor: 'pointer',
+        },
+      },
     },
     readcv: {
       true: {
         '&:hover': {
           color: '#FFFFFF',
           backgroundColor: '$readcv',
-          cursor: 'pointer'
-        }
-      }
+          cursor: 'pointer',
+        },
+      },
     },
     twitter: {
       true: {
         '&:hover': {
           color: 'white',
           backgroundColor: '$twitter',
-          cursor: 'pointer'
-        }
-      }
-    }
+          cursor: 'pointer',
+        },
+      },
+    },
   },
-  defaultVariants: {}
-});
+  defaultVariants: {},
+})

@@ -1,11 +1,11 @@
-import create from 'zustand';
+import create from 'zustand'
 
 export const useLoader = create<{
-  loading: boolean;
-  setLoading: () => void;
-  setLoaded: () => void;
+  loading: boolean
+  setLoading: () => void
+  setLoaded: () => void
 }>((set) => ({
   loading: true,
-  setLoading: () => set((state) => ({ ...state, loading: true })),
-  setLoaded: () => set((state) => ({ ...state, loading: false }))
-}));
+  setLoading: () => set((state) => ({...state, loading: true})),
+  setLoaded: () => set((state) => ({...state, loading: false})),
+}))

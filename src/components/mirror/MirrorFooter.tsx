@@ -1,18 +1,21 @@
-import { Box, PassLink } from '@/components/ds';
-import type { Entry } from '@/lib/data/getMirrorPosts';
-import { formatAddress } from '@/lib/utils/address';
+import {Box, PassLink} from '@/components/ds'
+import type {Entry} from '@/lib/data/getMirrorPosts'
+import {formatAddress} from '@/lib/utils/address'
 
 type MirrorProps = {
-  entry: Entry;
-};
+  entry: Entry
+}
 
-export const MirrorFooter = ({ entry }: MirrorProps) => {
+export const MirrorFooter = ({entry}: MirrorProps) => {
   return (
     <>
       <Box>
         <footer>
           {entry.digest && (
-            <a href={`https://viewblock.io/arweave/tx/${entry.digest}`} target="_blank" rel="noreferrer">
+            <a
+              href={`https://viewblock.io/arweave/tx/${entry.digest}`}
+              target="_blank"
+              rel="noreferrer">
               <div>
                 <p>Arweave TX</p>
                 <p>&rarr;</p>
@@ -20,7 +23,10 @@ export const MirrorFooter = ({ entry }: MirrorProps) => {
               <p>{formatAddress(entry.digest)}</p>
             </a>
           )}
-          <PassLink href={`https://etherscan.io/address/${entry.digest}`} target="_blank" rel="noreferrer">
+          <PassLink
+            href={`https://etherscan.io/address/${entry.digest}`}
+            target="_blank"
+            rel="noreferrer">
             <div>
               <p>Ethereum Address</p>
               <p>&rarr;</p>
@@ -34,5 +40,5 @@ export const MirrorFooter = ({ entry }: MirrorProps) => {
         </footer>
       </Box>
     </>
-  );
-};
+  )
+}

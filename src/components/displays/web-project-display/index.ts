@@ -1,2 +1,2 @@
-export * from './project.entry';
-export * from './WebProjectDisplay';
+export * from './project.entry'
+export * from './WebProjectDisplay'

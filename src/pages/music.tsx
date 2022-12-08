@@ -1,9 +1,9 @@
-import { styled, theme } from 'stitches.config';
+import {styled, theme} from 'stitches.config'
 
-import { SpotifyTopTenDisplay } from '@/components/displays/spotify-top-ten';
-import { Container, Space } from '@/components/ds';
-import { PageLayout } from '@/components/layout/page';
-import { NowPlaying } from '@/components/primitives/spotify';
+import {SpotifyTopTenDisplay} from '@/components/displays/spotify-top-ten'
+import {Container, Space} from '@/components/ds'
+import {PageLayout} from '@/components/layout/page'
+import {NowPlaying} from '@/components/primitives/spotify'
 
 const Music = () => {
   return (
@@ -21,14 +21,14 @@ const Music = () => {
         </Container>
       </PageLayout>
     </>
-  );
-};
+  )
+}
 
-export default Music;
+export default Music
 
 const Heading = styled('h1', {
   color: theme.colors.chxn13,
   fontFamily: theme.fonts.panB,
   fontSize: 32,
-  textAlign: 'center'
-});
+  textAlign: 'center',
+})

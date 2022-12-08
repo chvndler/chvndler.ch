@@ -1,11 +1,11 @@
-import 'keen-slider/keen-slider.min.css';
+import 'keen-slider/keen-slider.min.css'
 
-import { useKeenSlider } from 'keen-slider/react';
-import * as React from 'react';
+import {useKeenSlider} from 'keen-slider/react'
+import * as React from 'react'
 
-import { Flex } from '@/components/ds';
+import {Flex} from '@/components/ds'
 
-import { ProjectEntry } from './project.entry';
+import {ProjectEntry} from './project.entry'
 
 /**
  *
@@ -13,25 +13,25 @@ import { ProjectEntry } from './project.entry';
  *
  */
 
-const typesxript = 'https://github.com/chvndler/typesxript';
-const kit = 'https://kit-demo.vercel.app';
-const personal = 'https://github.com/chvndler/chvndler.ch';
-const isi = 'https://www.isielitetraining.com/';
+const typesxript = 'https://github.com/chvndler/typesxript'
+const kit = 'https://kit-demo.vercel.app'
+const personal = 'https://github.com/chvndler/chvndler.ch'
+const isi = 'https://www.isielitetraining.com/'
 
 export const WebProjectDisplay = () => {
   const [ref] = useKeenSlider<HTMLDivElement>({
     mode: 'free',
     slides: {
       perView: 3,
-      spacing: 14
+      spacing: 14,
     },
     breakpoints: {
-      '(max-width: 1024px)': { slides: { perView: 2, spacing: 14 } },
-      '(max-width: 768px)': { slides: { perView: 2, spacing: 14 } },
-      '(max-width: 640px)': { slides: { perView: 1.5, spacing: 12 } },
-      '(max-width: 480px)': { slides: { perView: 1.2, spacing: 12 } }
-    }
-  });
+      '(max-width: 1024px)': {slides: {perView: 2, spacing: 14}},
+      '(max-width: 768px)': {slides: {perView: 2, spacing: 14}},
+      '(max-width: 640px)': {slides: {perView: 1.5, spacing: 12}},
+      '(max-width: 480px)': {slides: {perView: 1.2, spacing: 12}},
+    },
+  })
 
   return (
     <Flex
@@ -39,8 +39,7 @@ export const WebProjectDisplay = () => {
       justify={'start'}
       align={'start'}
       gap={'8'}
-      css={{ paddingRight: 0, paddingLeft: 0, overflow: 'hidden' }}
-    >
+      css={{paddingRight: 0, paddingLeft: 0, overflow: 'hidden'}}>
       <div ref={ref} className="keen-slider">
         <div className="keen-slider__slide number-slide1">
           <ProjectEntry
@@ -77,7 +76,7 @@ export const WebProjectDisplay = () => {
         <div className="keen-slider__slide number-slide6"></div>
       </div>
     </Flex>
-  );
-};
+  )
+}
 
-WebProjectDisplay.displayName = 'WebProjectDisplay';
+WebProjectDisplay.displayName = 'WebProjectDisplay'

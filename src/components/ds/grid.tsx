@@ -1,4 +1,4 @@
-import { styled } from 'stitches.config';
+import {styled} from 'stitches.config'
 
 export const Grid = styled('div', {
   boxSizing: 'border-box',
@@ -6,160 +6,160 @@ export const Grid = styled('div', {
   variants: {
     align: {
       start: {
-        alignItems: 'start'
+        alignItems: 'start',
       },
       center: {
-        alignItems: 'center'
+        alignItems: 'center',
       },
       end: {
-        alignItems: 'end'
+        alignItems: 'end',
       },
       stretch: {
-        alignItems: 'stretch'
+        alignItems: 'stretch',
       },
       baseline: {
-        alignItems: 'baseline'
-      }
+        alignItems: 'baseline',
+      },
     },
     justify: {
       start: {
-        justifyContent: 'start'
+        justifyContent: 'start',
       },
       center: {
-        justifyContent: 'center'
+        justifyContent: 'center',
       },
       end: {
-        justifyContent: 'end'
+        justifyContent: 'end',
       },
       between: {
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
       },
       stretch: {
-        justifyContent: 'stretch'
-      }
+        justifyContent: 'stretch',
+      },
     },
     flow: {
       row: {
-        gridAutoFlow: 'row'
+        gridAutoFlow: 'row',
       },
       column: {
-        gridAutoFlow: 'column'
+        gridAutoFlow: 'column',
       },
       dense: {
-        gridAutoFlow: 'dense'
+        gridAutoFlow: 'dense',
       },
       rowDense: {
-        gridAutoFlow: 'row dense'
+        gridAutoFlow: 'row dense',
       },
       columnDense: {
-        gridAutoFlow: 'column dense'
-      }
+        gridAutoFlow: 'column dense',
+      },
     },
     columns: {
       1: {
-        gridTemplateColumns: 'repeat(1, 1fr)'
+        gridTemplateColumns: 'repeat(1, 1fr)',
       },
       2: {
         gridTemplateColumns: 'repeat(2, 1fr)',
-        '@sm': { gridTemplateColumns: 'repeat(1, 1fr)' }
+        '@sm': {gridTemplateColumns: 'repeat(1, 1fr)'},
       },
       3: {
         gridTemplateColumns: 'repeat(3, 1fr)',
-        '@md': { gridTemplateColumns: 'repeat(2, 1fr)' },
-        '@sm': { gridTemplateColumns: 'repeat(1, 1fr)' }
+        '@md': {gridTemplateColumns: 'repeat(2, 1fr)'},
+        '@sm': {gridTemplateColumns: 'repeat(1, 1fr)'},
       },
       4: {
         gridTemplateColumns: 'repeat(4, 1fr)',
-        '@md': { gridTemplateColumns: 'repeat(2, 1fr)' },
-        '@sm': { gridTemplateColumns: 'repeat(1, 1fr)' }
-      }
+        '@md': {gridTemplateColumns: 'repeat(2, 1fr)'},
+        '@sm': {gridTemplateColumns: 'repeat(1, 1fr)'},
+      },
     },
     gap: {
       1: {
-        gap: '4px'
+        gap: '4px',
       },
       2: {
-        gap: '$2'
+        gap: '$2',
       },
       3: {
-        gap: '$3'
+        gap: '$3',
       },
       4: {
-        gap: '$4'
+        gap: '$4',
       },
       5: {
-        gap: '$5'
+        gap: '$5',
       },
       6: {
-        gap: '$6'
+        gap: '$6',
       },
       7: {
-        gap: '$7'
+        gap: '$7',
       },
       8: {
-        gap: '$8'
+        gap: '$8',
       },
       9: {
-        gap: '$9'
-      }
+        gap: '$9',
+      },
     },
     gapX: {
       1: {
-        columnGap: '4px'
+        columnGap: '4px',
       },
       2: {
-        columnGap: '$2'
+        columnGap: '$2',
       },
       3: {
-        columnGap: '$3'
+        columnGap: '$3',
       },
       4: {
-        columnGap: '$4'
+        columnGap: '$4',
       },
       5: {
-        columnGap: '$5'
+        columnGap: '$5',
       },
       6: {
-        columnGap: '$6'
+        columnGap: '$6',
       },
       7: {
-        columnGap: '$7'
+        columnGap: '$7',
       },
       8: {
-        columnGap: '$8'
+        columnGap: '$8',
       },
       9: {
-        columnGap: '$9'
-      }
+        columnGap: '$9',
+      },
     },
     gapY: {
       1: {
-        rowGap: '4px'
+        rowGap: '4px',
       },
       2: {
-        rowGap: '$2'
+        rowGap: '$2',
       },
       3: {
-        rowGap: '$3'
+        rowGap: '$3',
       },
       4: {
-        rowGap: '$4'
+        rowGap: '$4',
       },
       5: {
-        rowGap: '$5'
+        rowGap: '$5',
       },
       6: {
-        rowGap: '$6'
+        rowGap: '$6',
       },
       7: {
-        rowGap: '$7'
+        rowGap: '$7',
       },
       8: {
-        rowGap: '$8'
+        rowGap: '$8',
       },
       9: {
-        rowGap: '$9'
-      }
-    }
-  }
-});
+        rowGap: '$9',
+      },
+    },
+  },
+})

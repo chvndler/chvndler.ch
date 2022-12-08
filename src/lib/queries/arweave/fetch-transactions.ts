@@ -1,9 +1,12 @@
-import { gql } from '@apollo/client';
+import {gql} from '@apollo/client'
 
 export default gql`
   query GetMirrorTransactions($digest: String!) {
     transactions(
-      tags: [{ name: "App-Name", values: ["MirrorXYZ"] }, { name: "Original-Content-Digest", values: [$digest] }]
+      tags: [
+        {name: "App-Name", values: ["MirrorXYZ"]}
+        {name: "Original-Content-Digest", values: [$digest]}
+      ]
       sort: HEIGHT_DESC
       first: 1
     ) {
@@ -14,7 +17,7 @@ export default gql`
       }
     }
   }
-`;
+`
 
 // GraphQL query to get the Arweave transaction ID of a Mirror post
 // With the transaction ID we can use `getData()` from the Arweave JS SDK, eg.

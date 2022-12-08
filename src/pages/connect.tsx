@@ -1,7 +1,7 @@
-import { styled, theme } from 'stitches.config';
+import {styled, theme} from 'stitches.config'
 
-import { Container, PassLink, Section, Space } from '@/components/ds';
-import { PageLayout } from '@/components/layout/page';
+import {Container, PassLink, Section, Space} from '@/components/ds'
+import {PageLayout} from '@/components/layout/page'
 
 const ConnectPage = () => {
   return (
@@ -21,10 +21,10 @@ const ConnectPage = () => {
         </Section>
       </PageLayout>
     </>
-  );
-};
+  )
+}
 
-export default ConnectPage;
+export default ConnectPage
 
 /**
  * @styles
@@ -33,8 +33,8 @@ const ConnectText = styled('h1', {
   fontFamily: theme.fonts.latBoldExtd,
   color: theme.colors.tartOrange,
   textAlign: 'left',
-  fontSize: 22
-});
+  fontSize: 22,
+})
 
 const LinkText = styled('span', {
   fontFamily: theme.fonts.panMd,
@@ -44,9 +44,9 @@ const LinkText = styled('span', {
   lineHeight: '1',
 
   '&:hover': {
-    textDecoration: 'underline'
-  }
-});
+    textDecoration: 'underline',
+  },
+})
 
 const ParaText = styled('span', {
   fontFamily: theme.fonts.panMd,
@@ -56,6 +56,6 @@ const ParaText = styled('span', {
   lineHeight: '1',
 
   '@md': {
-    fontSize: 18
-  }
-});
+    fontSize: 18,
+  },
+})

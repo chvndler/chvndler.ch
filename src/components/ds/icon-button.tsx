@@ -1,4 +1,4 @@
-import { styled, theme } from 'stitches.config';
+import {styled, theme} from 'stitches.config'
 
 export const IconButton = styled('button', {
   boxSizing: 'border-box',
@@ -19,17 +19,17 @@ export const IconButton = styled('button', {
 
   '@hover': {
     '&:hover': {
-      backgroundColor: '$grayA4'
-    }
+      backgroundColor: '$grayA4',
+    },
   },
   '&:active': {
-    bc: '$grayA5'
+    bc: '$grayA5',
   },
 
   '&:focus': {
-    borderColor: '$slate8'
+    borderColor: '$slate8',
   },
   '&:focus:not(:focus-visible)': {
-    borderColor: 'transparent'
-  }
-});
+    borderColor: 'transparent',
+  },
+})

@@ -1,24 +1,31 @@
-import { styled, theme } from 'stitches.config';
+import {styled, theme} from 'stitches.config'
 
-import { Flex, PassLink } from '@/components/ds';
-import { Icxn } from '@/components/icons/atlr-icxns';
-import { CursorData } from '@/components/primitives/cursor-data';
-import { ThemeSwitch } from '@/components/primitives/theme-switcher';
+import {Flex, PassLink} from '@/components/ds'
+import {Icxn} from '@/components/icons/atlr-icxns'
+import {CursorData} from '@/components/primitives/cursor-data'
+import {ThemeSwitch} from '@/components/primitives/theme-switcher'
 
-const twitter = 'https://twitter.com/chvndlerch';
-const github = 'https://github.com/chvndler';
-const are_na = 'https://www.are.na/chvndler-ch';
+const twitter = 'https://twitter.com/chvndlerch'
+const github = 'https://github.com/chvndler'
+const are_na = 'https://www.are.na/chvndler-ch'
 
 export const RelativeFooter = () => {
   return (
     <Footer>
-      <ContentBox alignment="start" css={{ '@md': { display: 'none' } }}>
+      <ContentBox alignment="start" css={{'@md': {display: 'none'}}}>
         <CopyrightText>CDC® MIT</CopyrightText>
         <CursorData />
       </ContentBox>
 
       <ContentBox alignment="center">
-        <Flex css={{ flexDirection: 'row', alignItems: 'center', gap: 10, justifyContent: 'center', margin: 'auto' }}>
+        <Flex
+          css={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: 10,
+            justifyContent: 'center',
+            margin: 'auto',
+          }}>
           <PassLink href={twitter} target={'_blank'}>
             <Icxn variant={'Twitter'} />
           </PassLink>
@@ -36,8 +43,8 @@ export const RelativeFooter = () => {
         <ThemeSwitch />
       </ContentBox>
     </Footer>
-  );
-};
+  )
+}
 
 const CopyrightText = styled('span', {
   fontSize: 12,
@@ -50,8 +57,8 @@ const CopyrightText = styled('span', {
   letterSpacing: 'normal',
   textTransform: 'uppercase',
   margin: 0,
-  marginRight: 10
-});
+  marginRight: 10,
+})
 
 const ContentBox = styled('div', {
   display: 'flex',
@@ -71,13 +78,13 @@ const ContentBox = styled('div', {
         '@md': {
           alignContent: 'center',
           alignItems: 'center',
-          justifyContent: 'center'
-        }
+          justifyContent: 'center',
+        },
       },
       center: {
         alignContent: 'center',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
       },
       end: {
         alignContent: 'flex-end',
@@ -86,12 +93,12 @@ const ContentBox = styled('div', {
         '@md': {
           alignContent: 'center',
           alignItems: 'center',
-          justifyContent: 'center'
-        }
-      }
-    }
-  }
-});
+          justifyContent: 'center',
+        },
+      },
+    },
+  },
+})
 
 const StyledFooter = styled('footer', {
   zIndex: '999',
@@ -114,8 +121,8 @@ const StyledFooter = styled('footer', {
     flexDirection: 'column-reverse',
     alignContent: 'center',
     alignItems: 'center',
-    justifyContent: 'center'
-  }
-});
+    justifyContent: 'center',
+  },
+})
 
-export const Footer = StyledFooter;
+export const Footer = StyledFooter

@@ -1,6 +1,6 @@
-import { Container, Flex, PassLink, Section, Space } from '@/components/ds';
+import {Container, Flex, PassLink, Section, Space} from '@/components/ds'
 
-import { SocialLink } from './link.styles';
+import {SocialLink} from './link.styles'
 
 /**
  *
@@ -11,16 +11,15 @@ import { SocialLink } from './link.styles';
 export const SocialLinkDisplay = () => {
   return (
     <Section size={'4'}>
-      <Container size={'3'} css={{ display: 'flex', margin: 'auto', justifyContent: 'flex-start' }}>
+      <Container size={'3'} css={{display: 'flex', margin: 'auto', justifyContent: 'flex-start'}}>
         <Flex
           css={{
             rowGap: '14px',
             marginLeft: '-7px',
             flexDirection: 'row',
             justifyContent: 'flex-start',
-            flexWrap: 'wrap'
-          }}
-        >
+            flexWrap: 'wrap',
+          }}>
           <PassLink href={'https://twitter.com/chvndlerch/'}>
             <SocialLink twitter>TWITTER</SocialLink>
           </PassLink>
@@ -36,16 +35,15 @@ export const SocialLinkDisplay = () => {
         </Flex>
       </Container>
       <Space size={'1'} />
-      <Container size={'3'} css={{ display: 'flex', margin: 'auto', justifyContent: 'flex-start' }}>
+      <Container size={'3'} css={{display: 'flex', margin: 'auto', justifyContent: 'flex-start'}}>
         <Flex
           css={{
             rowGap: '14px',
             marginLeft: '-7px',
             flexDirection: 'row',
             justifyContent: 'flex-start',
-            flexWrap: 'wrap'
-          }}
-        >
+            flexWrap: 'wrap',
+          }}>
           <PassLink href={'https://www.instagram.com/chv.ndler/'}>
             <SocialLink instagram>INSTAGRAM</SocialLink>
           </PassLink>
@@ -58,7 +56,7 @@ export const SocialLinkDisplay = () => {
         </Flex>
       </Container>
     </Section>
-  );
-};
+  )
+}
 
-SocialLinkDisplay.displayName = 'SocialLinkDisplay';
+SocialLinkDisplay.displayName = 'SocialLinkDisplay'

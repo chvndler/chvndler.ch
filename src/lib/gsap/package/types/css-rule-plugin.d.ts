@@ -1,16 +1,14 @@
 declare namespace gsap {
-
   interface TweenVars {
-    cssRule?: object; // TODO make more specific
+    cssRule?: object // TODO make more specific
   }
 }
 
 declare namespace gsap.plugins {
-
   interface CSSRulePlugin extends Plugin {
     /**
      * Gets the style sheet object associated with a particular selector.
-     * 
+     *
      * ```js
      * var rule = CSSRulePlugin.getRule(".myClass::before");
      * // Then do what you want with it, such as:
@@ -22,34 +20,34 @@ declare namespace gsap.plugins {
      * @memberof CSSRulePlugin
      * @link https://greensock.com/docs/v3/Plugins/CSSRulePlugin
      */
-    getRule(selector: string): CSSRule;
+    getRule(selector: string): CSSRule
   }
 
   interface CSSRulePluginClass extends CSSRulePlugin {
-    new(): PluginScope & CSSRulePlugin;
-    prototype: PluginScope & CSSRulePlugin;
+    new (): PluginScope & CSSRulePlugin
+    prototype: PluginScope & CSSRulePlugin
   }
 
-  const cssRule: CSSRulePluginClass;
+  const cssRule: CSSRulePluginClass
 }
 
-declare const CSSRulePlugin: gsap.plugins.CSSRulePlugin;
+declare const CSSRulePlugin: gsap.plugins.CSSRulePlugin
 
-declare module "gsap/CSSRulePlugin" {
-  export const CSSRulePlugin: gsap.plugins.CSSRulePlugin;
-  export { CSSRulePlugin as default };
+declare module 'gsap/CSSRulePlugin' {
+  export const CSSRulePlugin: gsap.plugins.CSSRulePlugin
+  export {CSSRulePlugin as default}
 }
 
-declare module "gsap/src/CSSRulePlugin" {
-  export * from "gsap/CSSRulePlugin";
-  export { CSSRulePlugin as default } from "gsap/CSSRulePlugin";
+declare module 'gsap/src/CSSRulePlugin' {
+  export * from 'gsap/CSSRulePlugin'
+  export {CSSRulePlugin as default} from 'gsap/CSSRulePlugin'
 }
 
-declare module "gsap/dist/CSSRulePlugin" {
-  export * from "gsap/CSSRulePlugin";
-  export { CSSRulePlugin as default } from "gsap/CSSRulePlugin";
+declare module 'gsap/dist/CSSRulePlugin' {
+  export * from 'gsap/CSSRulePlugin'
+  export {CSSRulePlugin as default} from 'gsap/CSSRulePlugin'
 }
 
-declare module "gsap/all" {
-  export * from "gsap/CSSRulePlugin";
+declare module 'gsap/all' {
+  export * from 'gsap/CSSRulePlugin'
 }

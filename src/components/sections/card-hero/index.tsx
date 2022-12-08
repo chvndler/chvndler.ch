@@ -1,10 +1,10 @@
-import { Section } from '@/components/ds';
+import {Section} from '@/components/ds'
 
 type CardHeroProps = {
-  children?: React.ReactNode;
-};
+  children?: React.ReactNode
+}
 
-import { styled } from 'stitches.config';
+import {styled} from 'stitches.config'
 
 const CardCanvas = styled('div', {
   zIndex: '20',
@@ -16,10 +16,10 @@ const CardCanvas = styled('div', {
   width: '100%',
   height: 'auto',
   margin: 'auto',
-  padding: '0'
-});
+  padding: '0',
+})
 
-export const CardHero = ({ children }: CardHeroProps) => {
+export const CardHero = ({children}: CardHeroProps) => {
   return (
     <Section
       size="4"
@@ -30,10 +30,9 @@ export const CardHero = ({ children }: CardHeroProps) => {
         border: '1px solid $chxn3',
         borderTopWidth: 0,
         borderLeftWidth: 0,
-        borderRightWidth: 0
-      }}
-    >
+        borderRightWidth: 0,
+      }}>
       <CardCanvas>{children}</CardCanvas>
     </Section>
-  );
-};
+  )
+}

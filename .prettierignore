@@ -1,0 +1,7 @@
+.next/
+.vercel/
+.yarn/
+.yarnrc
+.yarnrc.yml
+.yarn-integrity
+.github/

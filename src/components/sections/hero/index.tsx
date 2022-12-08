@@ -1,4 +1,4 @@
-import { styled } from 'stitches.config';
+import {styled} from 'stitches.config'
 
 export const HeroSection = styled('div', {
   boxSizing: 'border-box',
@@ -10,11 +10,11 @@ export const HeroSection = styled('div', {
   horizontalAlign: 'middle',
   '&::before': {
     boxSizing: 'border-box',
-    content: '""'
+    content: '""',
   },
   '&::after': {
     boxSizing: 'border-box',
-    content: '""'
+    content: '""',
   },
 
   variants: {
@@ -22,35 +22,35 @@ export const HeroSection = styled('div', {
       1: {
         height: 'auto',
         paddingTop: '10px',
-        paddingBottom: '30px'
+        paddingBottom: '30px',
       },
       2: {
         height: 'auto',
         paddingTop: '20px',
-        paddingBottom: '50px'
+        paddingBottom: '50px',
       },
       3: {
         height: 'auto',
         paddingTop: '80px',
-        paddingBottom: '80px'
-      }
+        paddingBottom: '80px',
+      },
     },
     color: {
       loContrast: {
-        backgroundColor: '$loContrast'
+        backgroundColor: '$loContrast',
       },
       accent: {
-        backgroundColor: '$chxn3'
+        backgroundColor: '$chxn3',
       },
       gray: {
-        backgroundColor: '$chxn1'
+        backgroundColor: '$chxn1',
       },
       default: {
-        backgroundColor: '$chxn1'
+        backgroundColor: '$chxn1',
       },
       clear: {
-        backgroundColor: 'transparent'
-      }
+        backgroundColor: 'transparent',
+      },
     },
     alignment: {
       responsiveLeft: {
@@ -64,13 +64,13 @@ export const HeroSection = styled('div', {
         '@sm': {
           textAlign: 'left',
           alignItems: 'left',
-          justifyContent: 'start'
+          justifyContent: 'start',
         },
         '@md': {
           textAlign: 'left',
           alignItems: 'left',
-          justifyContent: 'start'
-        }
+          justifyContent: 'start',
+        },
       },
       responsiveRight: {
         paddingLeft: '20px',
@@ -83,32 +83,32 @@ export const HeroSection = styled('div', {
         '@sm': {
           textAlign: 'right',
           alignItems: 'right',
-          justifyContent: 'end'
+          justifyContent: 'end',
         },
         '@md': {
           textAlign: 'right',
           alignItems: 'right',
-          justifyContent: 'end'
-        }
+          justifyContent: 'end',
+        },
       },
       center: {
         textAlign: 'center',
         alignItems: 'center',
         justifyContent: 'center',
         verticalAlign: 'middle',
-        horizontalAlign: 'middle'
-      }
+        horizontalAlign: 'middle',
+      },
     },
 
     border: {
       true: {
-        borderBottom: '1px solid'
-      }
-    }
+        borderBottom: '1px solid',
+      },
+    },
   },
 
   defaultVariants: {
     size: '1',
-    color: 'loContrast'
-  }
-});
+    color: 'loContrast',
+  },
+})

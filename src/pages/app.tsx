@@ -1,13 +1,13 @@
-import { styled, theme } from 'stitches.config';
+import {styled, theme} from 'stitches.config'
 
-import { Canvas, Container, PassLink, Space, Text } from '@/components/ds';
-import { FixedCanvas } from '@/components/ds/canvas';
-import { PageLayout } from '@/components/layout/page';
-import { Avatar } from '@/components/primitives/avatar';
-import { CursorData } from '@/components/sxripts';
+import {Canvas, Container, PassLink, Space, Text} from '@/components/ds'
+import {FixedCanvas} from '@/components/ds/canvas'
+import {PageLayout} from '@/components/layout/page'
+import {Avatar} from '@/components/primitives/avatar'
+import {CursorData} from '@/components/sxripts'
 
-const gitlink = 'https://github.com/chvndler';
-const nyoling = 'https://avatars.githubusercontent.com/u/70621588?s=96&v=4';
+const gitlink = 'https://github.com/chvndler'
+const nyoling = 'https://avatars.githubusercontent.com/u/70621588?s=96&v=4'
 
 const NextAppPage = () => {
   return (
@@ -26,10 +26,10 @@ const NextAppPage = () => {
         </FixedCanvas>
       </PageLayout>
     </>
-  );
-};
+  )
+}
 
-export default NextAppPage;
+export default NextAppPage
 
 /**
  * @styles
@@ -42,8 +42,8 @@ const NameText = styled('h1', {
   fontWeight: 500,
   letterSpacing: '-0.04em',
   lineHeight: '1.4',
-  marginTop: 12
-});
+  marginTop: 12,
+})
 
 const RoleText = styled(Text, {
   fontFamily: theme.fonts.helvRound,
@@ -51,13 +51,20 @@ const RoleText = styled(Text, {
   fontSize: 16,
   fontWeight: 'auto',
   textAlign: 'center',
-  lineHeight: '1'
-});
+  lineHeight: '1',
+})
 
 const AviNFT = () => {
   return (
     <PassLink href={gitlink}>
-      <Avatar interactive size={'4'} shape={'circle'} alt={'Chandler®'} fallback={'C'} src={nyoling} />
+      <Avatar
+        interactive
+        size={'4'}
+        shape={'circle'}
+        alt={'Chandler®'}
+        fallback={'C'}
+        src={nyoling}
+      />
     </PassLink>
-  );
-};
+  )
+}

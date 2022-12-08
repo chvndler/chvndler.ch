@@ -1,14 +1,14 @@
-import { BodyContainer } from '@/components/ds';
-import { AtlrNavbar } from '@/components/layout/atlr.navbar';
+import {BodyContainer} from '@/components/ds'
+import {AtlrNavbar} from '@/components/layout/atlr.navbar'
 
-import { Meta } from '../common/meta';
-import { AppWrapper } from '../ds/app-wrapper';
-import { CoverFooter } from './app-footer';
-import { RelativeFooter } from './app-footer/relative-footer';
+import {Meta} from '../common/meta'
+import {AppWrapper} from '../ds/app-wrapper'
+import {CoverFooter} from './app-footer'
+import {RelativeFooter} from './app-footer/relative-footer'
 
 type LayoutProps = {
-  children?: React.ReactNode;
-  page_type?: PageVariant;
+  children?: React.ReactNode
+  page_type?: PageVariant
 
   /**
    * @notes
@@ -16,10 +16,10 @@ type LayoutProps = {
   // I needed a way to alternate different
   // page styles - depending on different components neeeded.
   // So i'm playing with this @if (page_type ===) option.
-};
+}
 
-export type PageVariant = 'Production' | 'App' | 'CoverPage' | 'RemoveFooter';
-export const PageLayout = ({ children, page_type }: LayoutProps) => {
+export type PageVariant = 'Production' | 'App' | 'CoverPage' | 'RemoveFooter'
+export const PageLayout = ({children, page_type}: LayoutProps) => {
   // Production...
   if (page_type === 'Production') {
     return (
@@ -33,7 +33,7 @@ export const PageLayout = ({ children, page_type }: LayoutProps) => {
           <RelativeFooter />
         </AppWrapper>
       </>
-    );
+    )
   }
 
   // App...
@@ -47,7 +47,7 @@ export const PageLayout = ({ children, page_type }: LayoutProps) => {
         </AppWrapper>
         <CoverFooter />
       </>
-    );
+    )
   }
 
   // CoverPage...
@@ -61,7 +61,7 @@ export const PageLayout = ({ children, page_type }: LayoutProps) => {
         </BodyContainer>
         <CoverFooter />
       </>
-    );
+    )
   }
 
   // RemoveFooter...
@@ -74,7 +74,7 @@ export const PageLayout = ({ children, page_type }: LayoutProps) => {
           <main>{children}</main>
         </BodyContainer>
       </>
-    );
+    )
   }
 
   /**
@@ -95,5 +95,5 @@ export const PageLayout = ({ children, page_type }: LayoutProps) => {
         <RelativeFooter />
       </>
     </>
-  );
-};
+  )
+}

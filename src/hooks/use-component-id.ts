@@ -1,11 +1,11 @@
-import { useRef } from 'react';
+import {useRef} from 'react'
 
-import casualUid from '@/lib/utils/uid';
+import casualUid from '@/lib/utils/uid'
 
 const useComponentId = () => {
-  const { current: componentId } = useRef(casualUid());
+  const {current: componentId} = useRef(casualUid())
 
-  return componentId;
-};
+  return componentId
+}
 
-export default useComponentId;
+export default useComponentId

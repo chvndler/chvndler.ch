@@ -1,5 +1,5 @@
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import {useRouter} from 'next/router'
+import {useEffect} from 'react'
 
 /*
  * Copyright (C) 2022 @chvndler
@@ -13,12 +13,12 @@ import { useEffect } from 'react';
  */
 
 const Index = () => {
-  const router = useRouter();
+  const router = useRouter()
   useEffect(() => {
-    router.replace('/app');
-  });
+    router.replace('/app')
+  })
 
-  return;
-};
+  return
+}
 
-export default Index;
+export default Index

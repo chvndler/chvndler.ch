@@ -1,10 +1,10 @@
-import { css, styled, theme } from 'stitches.config';
+import {css, styled, theme} from 'stitches.config'
 
-import { Flex } from '@/components/ds';
-import { Icxn } from '@/components/icons/atlr-icxns';
-import { R3FCanvasLayout } from '@/components/layout/r3f-canvas-layout';
-import { R3FFooter } from '@/components/layout/r3f-canvas-layout/R3Footer';
-import { CDCDevScene } from '@/components/primitives/three/Scenes';
+import {Flex} from '@/components/ds'
+import {Icxn} from '@/components/icons/atlr-icxns'
+import {R3FCanvasLayout} from '@/components/layout/r3f-canvas-layout'
+import {R3FFooter} from '@/components/layout/r3f-canvas-layout/R3Footer'
+import {CDCDevScene} from '@/components/primitives/three/Scenes'
 
 const ThreePage = () => {
   return (
@@ -17,10 +17,10 @@ const ThreePage = () => {
         <CDCDevScene />
       </R3FCanvasLayout>
     </>
-  );
-};
+  )
+}
 
-export default ThreePage;
+export default ThreePage
 
 // Styles..
 const StyledInstructions = css({
@@ -36,8 +36,8 @@ const StyledInstructions = css({
   alignItems: 'center',
   margin: 'auto',
   justifyContent: 'center',
-  userSelect: 'none'
-});
+  userSelect: 'none',
+})
 
 const StyledInstructionText = css({
   color: theme.colors.chxn4,
@@ -46,17 +46,17 @@ const StyledInstructionText = css({
   fontFamily: theme.fonts.panSb,
   mixBlendMode: 'difference',
   lineHeight: '1.5',
-  userSelect: 'none'
-});
+  userSelect: 'none',
+})
 
-const Instructions = styled('div', StyledInstructions);
-const InstructionText = styled('span', StyledInstructionText);
+const Instructions = styled('div', StyledInstructions)
+const InstructionText = styled('span', StyledInstructionText)
 
 const ThreeInstructions = () => {
   return (
-    <Flex css={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+    <Flex css={{flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
       <Icxn variant={'AirMouse'} />
       <InstructionText>Drag + Scroll to Explore</InstructionText>
     </Flex>
-  );
-};
+  )
+}

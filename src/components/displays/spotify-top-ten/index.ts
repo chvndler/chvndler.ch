@@ -1,1 +1,1 @@
-export * from './SpotifyTopTenDisplay';
+export * from './SpotifyTopTenDisplay'

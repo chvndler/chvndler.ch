@@ -1,11 +1,11 @@
-import React from 'react';
-import { css, styled } from 'stitches.config';
+import React from 'react'
+import {css, styled} from 'stitches.config'
 
-import { Box } from '@/components/ds';
+import {Box} from '@/components/ds'
 
 type CardProps = {
-  children?: React.ReactNode;
-};
+  children?: React.ReactNode
+}
 
 const StyledSvgBox = styled(Box, {
   transition: 'color 0.6s ease',
@@ -13,8 +13,8 @@ const StyledSvgBox = styled(Box, {
 
   '& svg': {
     '&:hover': {
-      color: '$tartOrange'
-    }
+      color: '$tartOrange',
+    },
   },
 
   variants: {
@@ -22,18 +22,18 @@ const StyledSvgBox = styled(Box, {
       tartOrange: {
         color: '$chxn4',
         '&:hover': {
-          color: '$tartOrange'
-        }
+          color: '$tartOrange',
+        },
       },
       maxBlue: {
         color: '$chxn4',
         '&:hover': {
-          color: '$maxBlue'
-        }
-      }
-    }
-  }
-});
+          color: '$maxBlue',
+        },
+      },
+    },
+  },
+})
 
 const CardStyles = css({
   zIndex: 1,
@@ -52,18 +52,18 @@ const CardStyles = css({
   flexShrink: 0,
   position: 'relative',
   height: '100%',
-  width: 'auto'
-});
+  width: 'auto',
+})
 
-const StyledCard = styled('div', CardStyles);
-export const SvgBox = StyledSvgBox;
-export const HighlightCard = ({ children }: CardProps) => {
+const StyledCard = styled('div', CardStyles)
+export const SvgBox = StyledSvgBox
+export const HighlightCard = ({children}: CardProps) => {
   return (
     <>
       <StyledCard>{children}</StyledCard>
     </>
-  );
-};
+  )
+}
 
-SvgBox.displayName = 'SvgBox';
-HighlightCard.displayName = 'HighlightCard';
+SvgBox.displayName = 'SvgBox'
+HighlightCard.displayName = 'HighlightCard'

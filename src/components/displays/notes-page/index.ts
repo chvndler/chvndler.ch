@@ -1,1 +1,1 @@
-export { NotesPageDisplay } from './notes-page';
+export {NotesPageDisplay} from './notes-page'

@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 // import { SpotifyLogo } from '@/components/SpotifyLogo';
-import { styled } from 'stitches.config';
+import {styled} from 'stitches.config'
 
-import { Box, Heading, PassLink, Section, Text } from '@/components/ds';
+import {Box, Heading, PassLink, Section, Text} from '@/components/ds'
 
-import type { TrackProps } from './types';
+import type {TrackProps} from './types'
 
 export const ResolvedTrack = (track: TrackProps) => {
   return (
@@ -21,9 +21,8 @@ export const ResolvedTrack = (track: TrackProps) => {
                 marginRight: '18px',
                 marginTop: '16px',
                 fontWeight: '700',
-                fontSize: '15px'
-              }}
-            >
+                fontSize: '15px',
+              }}>
               {track.ranking}
             </Heading>
             <Box
@@ -34,9 +33,8 @@ export const ResolvedTrack = (track: TrackProps) => {
 
                 marginLeft: '18px',
                 marginRight: '18px',
-                marginBottom: '20px'
-              }}
-            >
+                marginBottom: '20px',
+              }}>
               <PassLink href={track.songUrl}>
                 <Title>{track.title}</Title>
               </PassLink>
@@ -55,9 +53,8 @@ export const ResolvedTrack = (track: TrackProps) => {
 
                 marginLeft: '18px',
                 marginRight: '18px',
-                marginBottom: '18px'
-              }}
-            >
+                marginBottom: '18px',
+              }}>
               <PassLink href={track.songUrl}>
                 {/* <!-- <SpotifyLogo /> --> */}
                 listen on Spotify
@@ -67,10 +64,10 @@ export const ResolvedTrack = (track: TrackProps) => {
         </Card>
       </Box>
     </>
-  );
-};
+  )
+}
 
-export type { TrackProps };
+export type {TrackProps}
 
 const Title = styled('div', {
   color: '$superLogo',
@@ -78,8 +75,8 @@ const Title = styled('div', {
   fontSize: '15px',
   fontWeight: '800',
   marginBottom: '10px',
-  lineHeight: '1'
-});
+  lineHeight: '1',
+})
 
 const Artist = styled('div', {
   fontFamily: '$inter',
@@ -87,8 +84,8 @@ const Artist = styled('div', {
   fontSize: '13px',
   lineHeight: '1',
 
-  color: '$sage8'
-});
+  color: '$sage8',
+})
 
 const Card = styled('div', {
   transition: 'all .4s ease-in-out',
@@ -103,6 +100,6 @@ const Card = styled('div', {
   width: 'auto',
 
   '&:hover': {
-    backgroundColor: '$rhythmA3'
-  }
-});
+    backgroundColor: '$rhythmA3',
+  },
+})

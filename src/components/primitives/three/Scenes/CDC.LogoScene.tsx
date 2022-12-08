@@ -1,11 +1,11 @@
-import { Environment, OrbitControls, Stage } from '@react-three/drei';
-import { Canvas } from '@react-three/fiber';
-import { EffectComposer, Noise } from '@react-three/postprocessing';
-import { BlendFunction } from 'postprocessing';
-import React, { Suspense, useRef } from 'react';
-import { styled } from 'stitches.config';
+import {Environment, OrbitControls, Stage} from '@react-three/drei'
+import {Canvas} from '@react-three/fiber'
+import {EffectComposer, Noise} from '@react-three/postprocessing'
+import {BlendFunction} from 'postprocessing'
+import React, {Suspense, useRef} from 'react'
+import {styled} from 'stitches.config'
 
-import { CDCLogoModel } from '../Models/CDCLogoModel';
+import {CDCLogoModel} from '../Models/CDCLogoModel'
 
 const AppBox = styled('div', {
   zIndex: 3,
@@ -20,16 +20,16 @@ const AppBox = styled('div', {
   paddingBottom: 0,
   paddingLeft: 0,
   paddingRight: 0,
-  margin: 0
-});
+  margin: 0,
+})
 
 export const CDCLogoScene = () => {
-  const ref = useRef();
+  const ref = useRef()
   return (
     <>
       {/* <!-- Begin three.js module --> */}
       <AppBox>
-        <Canvas shadows dpr={[1, 2]} camera={{ fov: 60 }}>
+        <Canvas shadows dpr={[1, 2]} camera={{fov: 60}}>
           <Suspense fallback={null}>
             <Stage preset={'portrait'} intensity={1.8}>
               <directionalLight intensity={0.5} />
@@ -54,5 +54,5 @@ export const CDCLogoScene = () => {
         </Canvas>
       </AppBox>
     </>
-  );
-};
+  )
+}

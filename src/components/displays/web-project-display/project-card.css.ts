@@ -1,6 +1,6 @@
-import { styled, theme } from 'stitches.config';
+import {styled, theme} from 'stitches.config'
 
-import { Box, Card, PassLink } from '@/components/ds';
+import {Box, Card, PassLink} from '@/components/ds'
 
 /*
     xs: '(max-width: 480px)',
@@ -26,8 +26,8 @@ const SectionCropStyles = styled('div', {
   paddingBottom: 20,
   paddingLeft: 0,
   paddingRight: 0,
-  margin: 'auto'
-});
+  margin: 'auto',
+})
 
 const CardStyles = styled(Card, {
   transition: 'all 0.5s ease-in-out',
@@ -56,19 +56,19 @@ const CardStyles = styled(Card, {
   '@md': {
     maxHeight: 400,
     height: '100%',
-    width: 'auto'
+    width: 'auto',
   },
   '@sm': {
     height: '100%',
-    width: 'auto'
+    width: 'auto',
   },
 
   '&:hover': {
     transition: 'all 0.2s ease-in-out',
     cursor: 'grab',
-    boxShadow: `inset 0 0 1px 1px $colors$mauveA8`
-  }
-});
+    boxShadow: `inset 0 0 1px 1px $colors$mauveA8`,
+  },
+})
 
 const PlacementBoxStyles = styled('div', Box, {
   zIndex: 99,
@@ -77,12 +77,12 @@ const PlacementBoxStyles = styled('div', Box, {
   padding: 38,
 
   '@md': {
-    padding: 32
+    padding: 32,
   },
   '@sm': {
-    padding: 26
-  }
-});
+    padding: 26,
+  },
+})
 
 const SummaryStyles = styled('p', {
   fontFamily: theme.fonts.system,
@@ -92,9 +92,9 @@ const SummaryStyles = styled('p', {
   lineHeight: '1.5',
 
   '@sm': {
-    fontSize: 16
-  }
-});
+    fontSize: 16,
+  },
+})
 
 const TitleStyles = styled('h3', {
   transition: 'all 0.4s ease-in-out',
@@ -103,8 +103,8 @@ const TitleStyles = styled('h3', {
   fontWeight: 'bold',
   textTransform: 'lowercase',
   color: theme.colors.heliotrope,
-  '&:hover': { color: theme.colors.portage }
-});
+  '&:hover': {color: theme.colors.portage},
+})
 
 const ButtonStyles = styled(PassLink, {
   backgroundColor: 'transparent',
@@ -115,9 +115,9 @@ const ButtonStyles = styled(PassLink, {
   textAlign: 'left',
   '&:hover': {
     color: theme.colors.mauve11,
-    cursor: 'pointer'
-  }
-});
+    cursor: 'pointer',
+  },
+})
 
 const Overlay = styled('div', {
   transition: 'all 0.3s ease-in-out',
@@ -128,20 +128,20 @@ const Overlay = styled('div', {
   width: '100%',
   height: '100%',
   borderRadius: 32,
-  backgroundColor: 'transparent'
+  backgroundColor: 'transparent',
   /*
   '&:hover': {
     backdropFilter: 'blur(40px) saturate(200%)',
     WebkitBackdropFilter: 'blur(40px) saturate(200%)'
   }
 */
-});
+})
 
-export const SectionCrop = SectionCropStyles;
-export const ProjectCard = CardStyles;
-export const PlacementBox = PlacementBoxStyles;
-export const ProjectSummary = SummaryStyles;
-export const ProjectTitle = TitleStyles;
-export const ProjectButton = ButtonStyles;
+export const SectionCrop = SectionCropStyles
+export const ProjectCard = CardStyles
+export const PlacementBox = PlacementBoxStyles
+export const ProjectSummary = SummaryStyles
+export const ProjectTitle = TitleStyles
+export const ProjectButton = ButtonStyles
 
-export const ImageOverlay = Overlay;
+export const ImageOverlay = Overlay

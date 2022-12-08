@@ -1,6 +1,6 @@
-import { WebProjectDisplay } from '@/components/displays/web-project-display';
-import { Container, Space, Text } from '@/components/ds';
-import { PageLayout } from '@/components/layout/page';
+import {WebProjectDisplay} from '@/components/displays/web-project-display'
+import {Container, Space, Text} from '@/components/ds'
+import {PageLayout} from '@/components/layout/page'
 
 const Web = () => {
   return (
@@ -15,9 +15,8 @@ const Web = () => {
               fontFamily: '"Lateral Extended Medium", sans-serif',
               fontWeight: 500,
               lineHeight: 'auto',
-              letterSpacing: ''
-            }}
-          >
+              letterSpacing: '',
+            }}>
             © MIT WEB PROJECTS
           </Text>
         </Container>
@@ -26,7 +25,7 @@ const Web = () => {
         <WebProjectDisplay />
       </PageLayout>
     </>
-  );
-};
+  )
+}
 
-export default Web;
+export default Web

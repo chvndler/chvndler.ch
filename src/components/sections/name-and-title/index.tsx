@@ -1,4 +1,4 @@
-import { Text } from '@/components/ds';
+import {Text} from '@/components/ds'
 
 export const NameAndTitle = () => {
   return (
@@ -15,10 +15,9 @@ export const NameAndTitle = () => {
           letterSpacing: '-0.02em',
 
           '@sm': {
-            textAlign: 'left'
-          }
-        }}
-      >
+            textAlign: 'left',
+          },
+        }}>
         CHANDLER CH®
       </Text>
       <Text
@@ -33,12 +32,11 @@ export const NameAndTitle = () => {
           letterSpacing: '-0.02em',
 
           '@sm': {
-            textAlign: 'left'
-          }
-        }}
-      >
+            textAlign: 'left',
+          },
+        }}>
         Front-End Developer / Designer
       </Text>
     </>
-  );
-};
+  )
+}

@@ -8,7 +8,7 @@ export const presetsObj = {
   studio: 'studio-small-3/studio_small_03_1k.hdr',
   city: 'potsdamer-platz/potsdamer_platz_1k.hdr',
   park: 'rooitou/rooitou_park_1k.hdr',
-  lobby: 'st-fagans/st_fagans_interior_1k.hdr'
-};
+  lobby: 'st-fagans/st_fagans_interior_1k.hdr',
+}
 
-export type PresetsType = keyof typeof presetsObj;
+export type PresetsType = keyof typeof presetsObj

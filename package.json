@@ -18,7 +18,8 @@
         "postbuild": "next-sitemap",
         "start": "next start",
         "lint": "next lint",
-        "tsc": "tsc --pretty --noEmit"
+        "tsc": "tsc --pretty --noEmit",
+        "pretty": "prettier --write ."
     },
     "peerDependencies": {
         "react": "^16.0.0-0 || ^17.0.0-0 || ^18.0.0",

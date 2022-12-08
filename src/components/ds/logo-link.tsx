@@ -1,4 +1,4 @@
-import { styled } from 'stitches.config';
+import {styled} from 'stitches.config'
 
 export const LogoLink = styled('a', {
   boxSizing: 'border-box',
@@ -12,17 +12,17 @@ export const LogoLink = styled('a', {
     color: '$chxn4',
     transition: 'color 0.6s ease',
     '&:hover': {
-      color: '$maxBlue'
-    }
+      color: '$maxBlue',
+    },
   },
 
   '&:focus': {
     zIndex: 1,
     color: '$hiContrast',
-    boxShadow: '0 0 0 2px $colors$blue8'
+    boxShadow: '0 0 0 2px $colors$blue8',
   },
   '&:focus:not(:focus-visible)': {
-    boxShadow: 'none'
+    boxShadow: 'none',
   },
 
   variants: {
@@ -40,21 +40,21 @@ export const LogoLink = styled('a', {
           inset: 0,
           opacity: 0,
           backgroundColor: '$mauve6',
-          boxShadow: '0 0 0 1px $colors$grayA6'
+          boxShadow: '0 0 0 1px $colors$grayA6',
         },
         '&:hover::before': {
-          opacity: 1
+          opacity: 1,
         },
         '&:focus::before': {
-          boxShadow: '0 0 0 1px $colors$grayA4'
+          boxShadow: '0 0 0 1px $colors$grayA4',
         },
         '&:focus:not(:focus-visible)::before': {
-          opacity: 1
-        }
-      }
-    }
+          opacity: 1,
+        },
+      },
+    },
   },
   defaultVariants: {
-    variant: 'normal'
-  }
-});
+    variant: 'normal',
+  },
+})

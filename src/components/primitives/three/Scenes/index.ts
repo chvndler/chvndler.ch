@@ -1,6 +1,6 @@
 // production...
-export { CDCLogoScene } from './CDC.LogoScene';
+export {CDCLogoScene} from './CDC.LogoScene'
 
 // development...
-export { ALogoScene } from './A.LogoScene';
-export { CDCDevScene } from './CDCDevScene';
+export {ALogoScene} from './A.LogoScene'
+export {CDCDevScene} from './CDCDevScene'

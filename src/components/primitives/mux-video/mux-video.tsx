@@ -1,6 +1,6 @@
-import MuxPlayer from '@mux/mux-player-react';
+import MuxPlayer from '@mux/mux-player-react'
 
-import { VideoStyles, VideoWrapper } from './video-wrapper';
+import {VideoStyles, VideoWrapper} from './video-wrapper'
 
 export const MuxVideoPlayer = () => {
   return (
@@ -16,9 +16,9 @@ export const MuxVideoPlayer = () => {
         metadata={{
           video_id: '5w9nzBSMPJmqReaQho5iVhGhaPKyuyOCmO4eWoKK1sk',
           video_title: '©2019 Film Reel',
-          viewer_user_id: 'user-id-007'
+          viewer_user_id: 'user-id-007',
         }}
       />
     </VideoWrapper>
-  );
-};
+  )
+}

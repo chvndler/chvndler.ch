@@ -1,9 +1,9 @@
-import { css, keyframes, styled, theme } from 'stitches.config';
+import {css, keyframes, styled, theme} from 'stitches.config'
 
 const pulse = keyframes({
-  '0%': { opacity: '0%' },
-  '100%': { opacity: '100%' }
-});
+  '0%': {opacity: '0%'},
+  '100%': {opacity: '100%'},
+})
 
 const StatusStyles = css({
   borderRadius: '30%',
@@ -14,7 +14,7 @@ const StatusStyles = css({
     content: '""',
     position: 'absolute',
     top: 0,
-    right: 0
+    right: 0,
   },
 
   '&::after': {
@@ -28,42 +28,42 @@ const StatusStyles = css({
     content: '""',
     position: 'absolute',
     top: 0,
-    right: 0
+    right: 0,
   },
 
   variants: {
     size: {
       '1': {
         width: 5,
-        height: 5
+        height: 5,
       },
       '2': {
         width: 9,
-        height: 9
-      }
+        height: 9,
+      },
     },
     variant: {
       gray: {
-        backgroundColor: '$slate7'
+        backgroundColor: '$slate7',
       },
       blue: {
-        backgroundColor: '$blue9'
+        backgroundColor: '$blue9',
       },
       green: {
-        backgroundColor: '$chxn13'
+        backgroundColor: '$chxn13',
       },
       yellow: {
-        backgroundColor: '$yellow9'
+        backgroundColor: '$yellow9',
       },
       red: {
-        backgroundColor: '$red9'
-      }
-    }
+        backgroundColor: '$red9',
+      },
+    },
   },
   defaultVariants: {
     size: '2',
-    variant: 'gray'
-  }
-});
+    variant: 'gray',
+  },
+})
 
-export const Status = styled('div', StatusStyles);
+export const Status = styled('div', StatusStyles)

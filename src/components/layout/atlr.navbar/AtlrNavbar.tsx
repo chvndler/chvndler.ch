@@ -1,8 +1,8 @@
-import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import React from 'react';
+import * as NavigationMenu from '@radix-ui/react-navigation-menu'
+import React from 'react'
 
-import { PassLink } from '@/components/ds';
-import { CDCLogo } from '@/components/logos';
+import {PassLink} from '@/components/ds'
+import {CDCLogo} from '@/components/logos'
 
 import {
   NavContentBox,
@@ -14,19 +14,19 @@ import {
   NavMenuRoot,
   NavMenuTrigger,
   NavMenuViewport,
-  Viewport
-} from './AtlrNavbar.styles';
+  Viewport,
+} from './AtlrNavbar.styles'
 
 /**
  * @ConnectLinks
  */
-const cv = 'https://s3.amazonaws.com/truth.cloud/cv/ChandlerChappell_cv.pdf';
-const twitter = 'https://twitter.com/chvndlerch';
-const github = 'https://github.com/chvndler';
-const code_sandbox = 'https://codesandbox.io/u/chvndler';
-const instagram = 'https://instagram.com/chv.ndler';
-const are_na = 'https://www.are.na/chvndler-ch';
-const read_cv = 'https://read.cv/chvn';
+const cv = 'https://s3.amazonaws.com/truth.cloud/cv/ChandlerChappell_cv.pdf'
+const twitter = 'https://twitter.com/chvndlerch'
+const github = 'https://github.com/chvndler'
+const code_sandbox = 'https://codesandbox.io/u/chvndler'
+const instagram = 'https://instagram.com/chv.ndler'
+const are_na = 'https://www.are.na/chvndler-ch'
+const read_cv = 'https://read.cv/chvn'
 
 export const AtlrNavbar = () => {
   return (
@@ -94,7 +94,7 @@ export const AtlrNavbar = () => {
         <NavMenuViewport />
       </Viewport>
     </NavMenuRoot>
-  );
-};
+  )
+}
 
-AtlrNavbar.displayName = 'AtlrNavbar';
+AtlrNavbar.displayName = 'AtlrNavbar'

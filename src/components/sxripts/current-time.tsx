@@ -1,44 +1,44 @@
-import { useCallback, useEffect, useState } from 'react';
-import * as React from 'react';
-import { styled, theme } from 'stitches.config';
+import {useCallback, useEffect, useState} from 'react'
+import * as React from 'react'
+import {styled, theme} from 'stitches.config'
 
-import { Box } from '@/components/ds';
+import {Box} from '@/components/ds'
 
-export const CurrentTime = ({ variant }: { variant?: 'mobile' }) => {
-  const [now, setNow] = useState(new Date());
+export const CurrentTime = ({variant}: {variant?: 'mobile'}) => {
+  const [now, setNow] = useState(new Date())
 
   useEffect(() => {
     const interval = window.setInterval(() => {
-      setNow(new Date());
-    }, 1000);
+      setNow(new Date())
+    }, 1000)
 
     return () => {
-      window.clearInterval(interval);
-    };
-  }, []);
+      window.clearInterval(interval)
+    }
+  }, [])
   /**
    * Render the time string
    */
   const renderTime = useCallback((date: Date) => {
-    let hours: number | string = date.getHours();
-    let minutes: number | string = date.getMinutes();
-    let seconds: number | string = date.getSeconds();
-    const isAm = hours <= 12;
-    hours = hours % 12;
-    hours = hours ? hours : 12;
-    hours = hours < 10 ? '0' + hours : hours;
-    minutes = minutes < 10 ? '0' + minutes : minutes;
-    seconds = seconds < 10 ? '0' + seconds : seconds;
+    let hours: number | string = date.getHours()
+    let minutes: number | string = date.getMinutes()
+    let seconds: number | string = date.getSeconds()
+    const isAm = hours <= 12
+    hours = hours % 12
+    hours = hours ? hours : 12
+    hours = hours < 10 ? '0' + hours : hours
+    minutes = minutes < 10 ? '0' + minutes : minutes
+    seconds = seconds < 10 ? '0' + seconds : seconds
     return (
       <TimeString>
-        <Box css={{ marginRight: 8 }}>UTC-5 EST</Box>
-        <Box css={{ marginRight: 2 }}>
+        <Box css={{marginRight: 8}}>UTC-5 EST</Box>
+        <Box css={{marginRight: 2}}>
           {hours}:{minutes}:{seconds}
         </Box>
-        <Box css={{ marginLeft: 2 }}>{isAm ? 'AM' : 'PM'}</Box>
+        <Box css={{marginLeft: 2}}>{isAm ? 'AM' : 'PM'}</Box>
       </TimeString>
-    );
-  }, []);
+    )
+  }, [])
 
   return (
     <>
@@ -50,16 +50,15 @@ export const CurrentTime = ({ variant }: { variant?: 'mobile' }) => {
           ...(variant === 'mobile'
             ? {
                 flexGrow: 1,
-                justifyContent: 'center'
+                justifyContent: 'center',
               }
-            : undefined)
-        }}
-      >
+            : undefined),
+        }}>
         {renderTime(now)}
       </Box>
     </>
-  );
-};
+  )
+}
 
 const StyledTime = styled('div', {
   border: 'none',
@@ -79,8 +78,8 @@ const StyledTime = styled('div', {
     display: 'inline-flex',
     justifyContent: 'center',
     flexGrow: 1,
-    alignItems: 'center'
-  }
-});
+    alignItems: 'center',
+  },
+})
 
-const TimeString = StyledTime;
+const TimeString = StyledTime

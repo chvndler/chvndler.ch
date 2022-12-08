@@ -1,9 +1,9 @@
-import { useKeenSlider } from 'keen-slider/react';
-import * as React from 'react';
+import {useKeenSlider} from 'keen-slider/react'
+import * as React from 'react'
 
-import { OffCanvas } from '@/components/primitives/off-canvas';
+import {OffCanvas} from '@/components/primitives/off-canvas'
 
-import { ResolvedTrackEntry } from './tracks.entry';
+import {ResolvedTrackEntry} from './tracks.entry'
 
 /**
  *
@@ -17,14 +17,14 @@ export const TopTen = () => {
     mode: 'free-snap',
     breakpoints: {
       '(min-width: 520px)': {
-        slides: { perView: 2, spacing: 8 }
+        slides: {perView: 2, spacing: 8},
       },
       '(min-width: 1000px)': {
-        slides: { perView: 3, spacing: 8 }
-      }
+        slides: {perView: 3, spacing: 8},
+      },
     },
-    slides: { perView: 1, spacing: 8 }
-  });
+    slides: {perView: 1, spacing: 8},
+  })
 
   return (
     <OffCanvas>
@@ -34,7 +34,7 @@ export const TopTen = () => {
         </div>
       </div>
     </OffCanvas>
-  );
-};
+  )
+}
 
-TopTen.displayName = 'SpotifyTopTen';
+TopTen.displayName = 'SpotifyTopTen'

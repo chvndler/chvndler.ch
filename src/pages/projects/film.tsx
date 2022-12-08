@@ -1,8 +1,8 @@
-import { styled, theme } from 'stitches.config';
+import {styled, theme} from 'stitches.config'
 
-import { FilmProjects } from '@/components/displays/film-project-display';
-import { Container, Space } from '@/components/ds';
-import { PageLayout } from '@/components/layout/page';
+import {FilmProjects} from '@/components/displays/film-project-display'
+import {Container, Space} from '@/components/ds'
+import {PageLayout} from '@/components/layout/page'
 
 const Film = () => {
   return (
@@ -18,10 +18,10 @@ const Film = () => {
         <FilmProjects />
       </PageLayout>
     </>
-  );
-};
+  )
+}
 
-export default Film;
+export default Film
 
 const Heading = styled('h1', {
   color: theme.colors.slateA6,
@@ -29,8 +29,8 @@ const Heading = styled('h1', {
   fontSize: 13,
   textAlign: 'center',
   fontWeight: 500,
-  lineHeight: 'auto'
-});
+  lineHeight: 'auto',
+})
 
 const SubHeading = styled('h1', {
   textAlign: 'center',
@@ -38,5 +38,5 @@ const SubHeading = styled('h1', {
   fontSize: 15,
   fontFamily: theme.fonts.panSb,
   fontWeight: 'auto',
-  lineHeight: 'auto'
-});
+  lineHeight: 'auto',
+})

@@ -1,50 +1,50 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
-import { isMobile as _isMobile } from 'react-device-detect';
-import { styled } from 'stitches.config';
+import React, {useCallback, useEffect, useMemo, useState} from 'react'
+import {isMobile as _isMobile} from 'react-device-detect'
+import {styled} from 'stitches.config'
 
-import { CoolButton } from '@/components/ds';
-import { Icxn } from '@/components/icons/icxn';
-import { event } from '@/lib/ga';
+import {CoolButton} from '@/components/ds'
+import {Icxn} from '@/components/icons/icxn'
+import {event} from '@/lib/ga'
 
 const StyledButton = styled(CoolButton, {
   fontFamily: '$inter',
   fontSize: 15,
   fontWeight: 600,
-  letterSpacing: '-0.02em'
-});
+  letterSpacing: '-0.02em',
+})
 
 export const DownloadButton = ({
   variant,
   className,
-  tabIndex
+  tabIndex,
 }: {
-  variant?: 'mobile';
-  className?: string;
-  tabIndex?: number;
-  link?: string;
+  variant?: 'mobile'
+  className?: string
+  tabIndex?: number
+  link?: string
 }) => {
-  const [isMobile, setIsMobile] = useState<boolean>();
+  const [isMobile, setIsMobile] = useState<boolean>()
 
   useEffect(() => {
-    setIsMobile(_isMobile);
-  }, []);
+    setIsMobile(_isMobile)
+  }, [])
 
   const shouldOnlyTweet = useMemo(() => {
-    return isMobile || variant === 'mobile';
-  }, [isMobile, variant]);
+    return isMobile || variant === 'mobile'
+  }, [isMobile, variant])
 
   const handleDownload = useCallback(() => {
     event({
       category: 'Download',
       action: 'Download',
       label: 'Download',
-      value: '1'
-    });
+      value: '1',
+    })
     const encoded = {
-      text: encodeURIComponent('Chan is cool !')
-    };
-    window.open(`https://twitter.com/intent/tweet?text=${encoded.text}`, '_blank');
-  }, []);
+      text: encodeURIComponent('Chan is cool !'),
+    }
+    window.open(`https://twitter.com/intent/tweet?text=${encoded.text}`, '_blank')
+  }, [])
 
   return (
     <StyledButton
@@ -56,13 +56,12 @@ export const DownloadButton = ({
         ...(variant === 'mobile'
           ? {
               textAlign: 'left',
-              position: 'relative'
+              position: 'relative',
             }
-          : { height: '100%' })
+          : {height: '100%'}),
       }}
-      icon={<Icxn variant="Twitter" />}
-    >
+      icon={<Icxn variant="Twitter" />}>
       {shouldOnlyTweet ? 'TWEET IT' : <>Tweet @ Me </>}{' '}
     </StyledButton>
-  );
-};
+  )
+}

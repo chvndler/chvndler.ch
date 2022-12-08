@@ -1,12 +1,12 @@
-import React from 'react';
-import { styled, theme } from 'stitches.config';
+import React from 'react'
+import {styled, theme} from 'stitches.config'
 
-import { Box, Flex } from '@/components/ds';
+import {Box, Flex} from '@/components/ds'
 
 type NoteProps = {
-  title: string;
-  note: string;
-};
+  title: string
+  note: string
+}
 
 const StyledNoteDiv = styled(Box, {
   boxSizing: 'border-box',
@@ -18,12 +18,12 @@ const StyledNoteDiv = styled(Box, {
   paddingLeft: 4,
   marginBottom: 20,
   marginTop: 20,
-  backgroundColor: 'transparent'
+  backgroundColor: 'transparent',
   /**
    * @testing
    * border: `1px solid ${theme.colors.chxn3}`
    */
-});
+})
 
 const StyledNoteTitle = styled('div', {
   boxSizing: 'border-box',
@@ -34,8 +34,8 @@ const StyledNoteTitle = styled('div', {
   fontWeight: 300,
   color: theme.colors.chxn3,
   textAlign: 'left',
-  lineHeight: '14px'
-});
+  lineHeight: '14px',
+})
 
 const StyledNote = styled('div', {
   boxSizing: 'border-box',
@@ -46,8 +46,8 @@ const StyledNote = styled('div', {
   fontWeight: 400,
   color: theme.colors.chxn4,
   textAlign: 'left',
-  letterSpacing: 'normal'
-});
+  letterSpacing: 'normal',
+})
 
 const StyledCopyright = styled('div', {
   fontFamily: theme.fonts.mono,
@@ -59,21 +59,21 @@ const StyledCopyright = styled('div', {
   fontSize: 12,
   fontWeight: 400,
   textAlign: 'center',
-  letterSpacing: 'normal'
-});
+  letterSpacing: 'normal',
+})
 
-export const NoteDiv = StyledNoteDiv;
-export const Note = StyledNote;
-export const NoteTitle = StyledNoteTitle;
-export const CopyrightText = StyledCopyright;
+export const NoteDiv = StyledNoteDiv
+export const Note = StyledNote
+export const NoteTitle = StyledNoteTitle
+export const CopyrightText = StyledCopyright
 
-export const NoteEntry = ({ title, note }: NoteProps) => {
+export const NoteEntry = ({title, note}: NoteProps) => {
   return (
-    <Flex css={{ flexDirection: 'column' }}>
+    <Flex css={{flexDirection: 'column'}}>
       <NoteDiv>
         <NoteTitle>{title}</NoteTitle>
         <Note>{note}</Note>
       </NoteDiv>
     </Flex>
-  );
-};
+  )
+}

@@ -1,1 +1,1 @@
-export { HoverCardComponent } from './HoverCardComponent';
+export {HoverCardComponent} from './HoverCardComponent'

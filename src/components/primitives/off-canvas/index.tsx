@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import { Section } from '@/components/ds';
+import {Section} from '@/components/ds'
 
 type SlideProps = {
-  children?: React.ReactNode;
-};
+  children?: React.ReactNode
+}
 
-export const OffCanvas = ({ children }: SlideProps) => {
+export const OffCanvas = ({children}: SlideProps) => {
   return (
     <>
       <Section
@@ -19,12 +19,11 @@ export const OffCanvas = ({ children }: SlideProps) => {
           MsOverflowStyle: 'none',
           scrollbarWidth: 'none',
           '&::-webkit-scrollbar': {
-            display: 'none'
-          }
-        }}
-      >
+            display: 'none',
+          },
+        }}>
         {children}
       </Section>
     </>
-  );
-};
+  )
+}

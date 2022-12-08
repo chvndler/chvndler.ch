@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import { Grid, Section } from '@/components/ds';
+import {Grid, Section} from '@/components/ds'
 
 type SlideProps = {
-  children?: React.ReactNode;
-};
+  children?: React.ReactNode
+}
 
-export const ContentSlider = ({ children }: SlideProps) => {
+export const ContentSlider = ({children}: SlideProps) => {
   return (
     <>
       <Section
@@ -19,14 +19,13 @@ export const ContentSlider = ({ children }: SlideProps) => {
           MsOverflowStyle: 'none',
           scrollbarWidth: 'none',
           '&::-webkit-scrollbar': {
-            display: 'none'
-          }
-        }}
-      >
-        <Grid flow="column" align="center" justify="start" gap="3" css={{ marginRight: 10 }}>
+            display: 'none',
+          },
+        }}>
+        <Grid flow="column" align="center" justify="start" gap="3" css={{marginRight: 10}}>
           {children}
         </Grid>
       </Section>
     </>
-  );
-};
+  )
+}

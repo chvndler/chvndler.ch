@@ -1,21 +1,21 @@
 /* stylelint-disable prettier/prettier */
 
 @font-face {
-    font-family: 'Scto Grotesk A Bold';
-    src: url('/fonts/SctoGroteskA-Bold.woff2');
-    src: local('SctoGroteskA-Bold'), url('/fonts/SctoGroteskA-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-display: block;
-    font-style: normal;
-    font-named-instance: 'Bold';
+  font-family: 'Scto Grotesk A Bold';
+  src: url('/fonts/SctoGroteskA-Bold.woff2');
+  src: local('SctoGroteskA-Bold'), url('/fonts/SctoGroteskA-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: 'Bold';
 }
 
 @font-face {
-    font-family: 'Scto Grotesk A Regular';
-    src: url('/fonts/SctoGroteskA-Regular.woff2');
-    src: local('SctoGroteskA-Regular'), url('/fonts/SctoGroteskA-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-display: block;
-    font-style: normal;
-    font-named-instance: 'Regular';
+  font-family: 'Scto Grotesk A Regular';
+  src: url('/fonts/SctoGroteskA-Regular.woff2');
+  src: local('SctoGroteskA-Regular'), url('/fonts/SctoGroteskA-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: 'Regular';
 }

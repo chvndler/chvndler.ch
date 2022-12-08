@@ -1,10 +1,10 @@
-import * as HoverCard from '@radix-ui/react-hover-card';
-import React from 'react';
+import * as HoverCard from '@radix-ui/react-hover-card'
+import React from 'react'
 
-import { Text } from '@/components/ds';
-import { Avatar } from '@/components/primitives/avatar';
+import {Text} from '@/components/ds'
+import {Avatar} from '@/components/primitives/avatar'
 
-import { HoverCardArrow, HoverCardContent, HoverCardPortal, HoverCardRoot } from './hover.styles';
+import {HoverCardArrow, HoverCardContent, HoverCardPortal, HoverCardRoot} from './hover.styles'
 
 export const HoverCardComponent = () => {
   return (
@@ -17,15 +17,16 @@ export const HoverCardComponent = () => {
         <HoverCardPortal>
           <HoverCardContent>
             <Text>
-              Components, icons, colors, and templates for building high-quality, accessible UI. Free and open-source.
+              Components, icons, colors, and templates for building high-quality, accessible UI.
+              Free and open-source.
             </Text>
             <HoverCardArrow />
           </HoverCardContent>
         </HoverCardPortal>
       </HoverCardRoot>
     </>
-  );
-};
+  )
+}
 
 const AviNFT = () => {
   return (
@@ -37,5 +38,5 @@ const AviNFT = () => {
       fallback={'C'}
       src={'https://avatars.githubusercontent.com/u/70621588?s=96&v=4'}
     />
-  );
-};
+  )
+}

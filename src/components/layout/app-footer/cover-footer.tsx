@@ -1,12 +1,12 @@
-import { styled } from 'stitches.config';
+import {styled} from 'stitches.config'
 
-import { ThemeSwitch } from '@/components/primitives/theme-switcher';
-import { CurrentTime } from '@/components/sxripts';
+import {ThemeSwitch} from '@/components/primitives/theme-switcher'
+import {CurrentTime} from '@/components/sxripts'
 
 export const CoverFooter = () => {
   return (
     <Footer>
-      <ContentBox alignment="start" css={{ '@md': { display: 'none' } }}>
+      <ContentBox alignment="start" css={{'@md': {display: 'none'}}}>
         <CurrentTime />
       </ContentBox>
 
@@ -14,8 +14,8 @@ export const CoverFooter = () => {
         <ThemeSwitch />
       </ContentBox>
     </Footer>
-  );
-};
+  )
+}
 
 const ContentBox = styled('div', {
   display: 'flex',
@@ -35,13 +35,13 @@ const ContentBox = styled('div', {
         '@md': {
           alignContent: 'center',
           alignItems: 'center',
-          justifyContent: 'center'
-        }
+          justifyContent: 'center',
+        },
       },
       center: {
         alignContent: 'center',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
       },
       end: {
         alignContent: 'flex-end',
@@ -50,12 +50,12 @@ const ContentBox = styled('div', {
         '@md': {
           alignContent: 'center',
           alignItems: 'center',
-          justifyContent: 'center'
-        }
-      }
-    }
-  }
-});
+          justifyContent: 'center',
+        },
+      },
+    },
+  },
+})
 
 const StyledFooter = styled('footer', {
   zIndex: '999',
@@ -79,8 +79,8 @@ const StyledFooter = styled('footer', {
     flexDirection: 'column-reverse',
     alignContent: 'center',
     alignItems: 'center',
-    justifyContent: 'center'
-  }
-});
+    justifyContent: 'center',
+  },
+})
 
-export const Footer = StyledFooter;
+export const Footer = StyledFooter

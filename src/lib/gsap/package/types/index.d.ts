@@ -38,54 +38,54 @@
 /// <reference path="gsap-core.d.ts"/>
 
 // Global types
-type GSAPDraggableVars = Draggable.Vars;
-type GSAPAnimation = gsap.core.Animation;
-type GSAPCallback = gsap.Callback;
-type GSAPDistributeConfig = gsap.utils.DistributeConfig;
-type GSAPPlugin = gsap.Plugin;
-type GSAPPluginScope = gsap.PluginScope;
-type GSAPPluginStatic = gsap.PluginStatic;
-type GSAPStaggerVars = gsap.StaggerVars;
-type GSAPTickerCallback = gsap.TickerCallback;
-type GSAPTimeline = gsap.core.Timeline;
-type GSAPTimelineVars = gsap.TimelineVars;
-type GSAPTween = gsap.core.Tween;
-type GSAPTweenTarget = gsap.TweenTarget;
-type GSAPTweenVars = gsap.TweenVars;
+type GSAPDraggableVars = Draggable.Vars
+type GSAPAnimation = gsap.core.Animation
+type GSAPCallback = gsap.Callback
+type GSAPDistributeConfig = gsap.utils.DistributeConfig
+type GSAPPlugin = gsap.Plugin
+type GSAPPluginScope = gsap.PluginScope
+type GSAPPluginStatic = gsap.PluginStatic
+type GSAPStaggerVars = gsap.StaggerVars
+type GSAPTickerCallback = gsap.TickerCallback
+type GSAPTimeline = gsap.core.Timeline
+type GSAPTimelineVars = gsap.TimelineVars
+type GSAPTween = gsap.core.Tween
+type GSAPTweenTarget = gsap.TweenTarget
+type GSAPTweenVars = gsap.TweenVars
 
-type GSAP = typeof gsap;
+type GSAP = typeof gsap
 
-declare module "gsap" {
-  export * from "gsap/gsap-core";
-  export { gsap as default } from "gsap/gsap-core";
+declare module 'gsap' {
+  export * from 'gsap/gsap-core'
+  export {gsap as default} from 'gsap/gsap-core'
 }
 
-declare module "gsap/src" {
-  export * from "gsap";
-  export { gsap as default } from "gsap";
+declare module 'gsap/src' {
+  export * from 'gsap'
+  export {gsap as default} from 'gsap'
 }
 
-declare module "gsap/src/index" {
-  export * from "gsap";
-  export { gsap as default } from "gsap";
+declare module 'gsap/src/index' {
+  export * from 'gsap'
+  export {gsap as default} from 'gsap'
 }
 
-declare module "gsap/dist" {
-  export * from "gsap";
-  export { gsap as default } from "gsap";
+declare module 'gsap/dist' {
+  export * from 'gsap'
+  export {gsap as default} from 'gsap'
 }
 
-declare module "gsap/dist/gsap" {
-  export * from "gsap";
-  export { gsap as default } from "gsap";
+declare module 'gsap/dist/gsap' {
+  export * from 'gsap'
+  export {gsap as default} from 'gsap'
 }
 
-declare module "gsap/all" {
-  export * from "gsap";
-  export { gsap as default } from "gsap";
+declare module 'gsap/all' {
+  export * from 'gsap'
+  export {gsap as default} from 'gsap'
 }
 
-declare module "gsap/src/all" {
-  export * from "gsap/all";
-  export { gsap as default } from "gsap/all";
+declare module 'gsap/src/all' {
+  export * from 'gsap/all'
+  export {gsap as default} from 'gsap/all'
 }

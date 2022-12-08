@@ -1,4 +1,4 @@
-import { styled } from 'stitches.config';
+import {styled} from 'stitches.config'
 
 export const Container = styled('div', {
   display: 'flex',
@@ -12,37 +12,37 @@ export const Container = styled('div', {
   variants: {
     size: {
       '0': {
-        maxWidth: '480px'
+        maxWidth: '480px',
       },
       '1': {
-        maxWidth: '560px'
+        maxWidth: '560px',
       },
       '2': {
-        maxWidth: '715px'
+        maxWidth: '715px',
       },
       '3': {
-        maxWidth: '1145px'
+        maxWidth: '1145px',
       },
       '4': {
-        maxWidth: 'none'
-      }
+        maxWidth: 'none',
+      },
     },
     align: {
       left: {
-        justifyContent: 'flex-start'
+        justifyContent: 'flex-start',
       },
       center: {
         margin: 'auto',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
       },
       right: {
-        justifyContent: 'flex-end'
-      }
-    }
+        justifyContent: 'flex-end',
+      },
+    },
   },
   defaultVariants: {
     size: '4',
-    align: 'left'
-  }
-});
+    align: 'left',
+  },
+})

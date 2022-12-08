@@ -1,9 +1,9 @@
-import { OrbitControls, Stage } from '@react-three/drei';
-import { Canvas } from '@react-three/fiber';
-import React, { Suspense, useRef } from 'react';
-import { styled } from 'stitches.config';
+import {OrbitControls, Stage} from '@react-three/drei'
+import {Canvas} from '@react-three/fiber'
+import React, {Suspense, useRef} from 'react'
+import {styled} from 'stitches.config'
 
-import { ALogoModel } from '../Models/A.LogoModel';
+import {ALogoModel} from '../Models/A.LogoModel'
 
 const AppBox = styled('div', {
   zIndex: 3,
@@ -18,16 +18,16 @@ const AppBox = styled('div', {
   paddingBottom: 0,
   paddingLeft: 0,
   paddingRight: 0,
-  margin: 0
-});
+  margin: 0,
+})
 
 export const ALogoScene = () => {
-  const ref = useRef();
+  const ref = useRef()
   return (
     <>
       {/* <!-- Begin three.js module --> */}
       <AppBox>
-        <Canvas dpr={[1, 2]} camera={{ fov: 50 }}>
+        <Canvas dpr={[1, 2]} camera={{fov: 50}}>
           <Suspense fallback={null}>
             <Stage preset={'soft'} intensity={0.6} environment={'forest'}>
               <OrbitControls ref={ref} autoRotate autoRotateSpeed={0.1} />
@@ -43,5 +43,5 @@ export const ALogoScene = () => {
         </Canvas>
       </AppBox>
     </>
-  );
-};
+  )
+}

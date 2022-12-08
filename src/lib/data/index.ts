@@ -1,1 +1,1 @@
-export * from './getMirrorPosts';
+export * from './getMirrorPosts'

@@ -1,4 +1,4 @@
-import { styled } from 'stitches.config';
+import {styled} from 'stitches.config'
 
 const StyledLine = styled('hr', {
   backgroundColor: 'transparent',
@@ -11,12 +11,12 @@ const StyledLine = styled('hr', {
   borderRightWidth: 0,
   height: '0px',
   width: '100%',
-  margin: 0
+  margin: 0,
   // marginTop: 0,
   // marginBottom: 0,
   //marginLeft: -10,
   // marginRight: -10
-});
+})
 
 // Exports
-export const DottedLine = StyledLine;
+export const DottedLine = StyledLine

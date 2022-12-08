@@ -1,13 +1,13 @@
-import * as Tooltip from '@radix-ui/react-tooltip';
-import React from 'react';
-import { keyframes, styled, theme } from 'stitches.config';
+import * as Tooltip from '@radix-ui/react-tooltip'
+import React from 'react'
+import {keyframes, styled, theme} from 'stitches.config'
 
 type TipProps = {
-  children?: React.ReactNode;
-  tip?: string;
-};
+  children?: React.ReactNode
+  tip?: string
+}
 
-export const ToolTipWrapper = ({ children, tip }: TipProps) => {
+export const ToolTipWrapper = ({children, tip}: TipProps) => {
   return (
     <Tooltip.Provider delayDuration={800} skipDelayDuration={500}>
       <Tooltip.Root delayDuration={800}>
@@ -21,28 +21,28 @@ export const ToolTipWrapper = ({ children, tip }: TipProps) => {
         </TooltipViewport>
       </Tooltip.Root>
     </Tooltip.Provider>
-  );
-};
+  )
+}
 
 const slideUpAndFade = keyframes({
-  '0%': { opacity: 0, transform: 'translateY(2px)' },
-  '100%': { opacity: 1, transform: 'translateY(0)' }
-});
+  '0%': {opacity: 0, transform: 'translateY(2px)'},
+  '100%': {opacity: 1, transform: 'translateY(0)'},
+})
 
 const slideRightAndFade = keyframes({
-  '0%': { opacity: 0, transform: 'translateX(-2px)' },
-  '100%': { opacity: 1, transform: 'translateX(0)' }
-});
+  '0%': {opacity: 0, transform: 'translateX(-2px)'},
+  '100%': {opacity: 1, transform: 'translateX(0)'},
+})
 
 const slideDownAndFade = keyframes({
-  '0%': { opacity: 0, transform: 'translateY(-2px)' },
-  '100%': { opacity: 1, transform: 'translateY(0)' }
-});
+  '0%': {opacity: 0, transform: 'translateY(-2px)'},
+  '100%': {opacity: 1, transform: 'translateY(0)'},
+})
 
 const slideLeftAndFade = keyframes({
-  '0%': { opacity: 0, transform: 'translateX(2px)' },
-  '100%': { opacity: 1, transform: 'translateX(0)' }
-});
+  '0%': {opacity: 0, transform: 'translateX(2px)'},
+  '100%': {opacity: 1, transform: 'translateX(0)'},
+})
 
 const TooltipViewport = styled(Tooltip.Portal, {
   width: 'max-content',
@@ -51,8 +51,8 @@ const TooltipViewport = styled(Tooltip.Portal, {
   margin: 'auto',
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center'
-});
+  justifyContent: 'center',
+})
 
 const TooltipContent = styled(Tooltip.Content, {
   boxSizing: 'border-box',
@@ -94,9 +94,9 @@ const TooltipContent = styled(Tooltip.Content, {
   animationTimingFunction: 'cubic-bezier(0.16, 1, 0.3, 1)',
   willChange: 'transform, opacity',
   '&[data-state="delayed-open"]': {
-    '&[data-side="top"]': { animationName: slideDownAndFade },
-    '&[data-side="right"]': { animationName: slideLeftAndFade },
-    '&[data-side="bottom"]': { animationName: slideUpAndFade },
-    '&[data-side="left"]': { animationName: slideRightAndFade }
-  }
-});
+    '&[data-side="top"]': {animationName: slideDownAndFade},
+    '&[data-side="right"]': {animationName: slideLeftAndFade},
+    '&[data-side="bottom"]': {animationName: slideUpAndFade},
+    '&[data-side="left"]': {animationName: slideRightAndFade},
+  },
+})

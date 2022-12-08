@@ -1,5 +1,5 @@
-import { slate, slateA } from '@radix-ui/colors';
-import { styled } from 'stitches.config';
+import {slate, slateA} from '@radix-ui/colors'
+import {styled} from 'stitches.config'
 
 export const StyledButton = styled('button', {
   all: 'unset',
@@ -14,17 +14,17 @@ export const StyledButton = styled('button', {
   fontVariantNumeric: 'tabular-nums',
 
   '&::before': {
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
   },
   '&::after': {
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
   },
 
   '&:disabled': {
     backgroundColor: '$slate2',
     boxShadow: 'inset 0 0 0 1px $colors$slate7',
     color: '$slate8',
-    pointerEvents: 'none'
+    pointerEvents: 'none',
   },
 
   variants: {
@@ -35,21 +35,21 @@ export const StyledButton = styled('button', {
         margin: 0,
         height: 22,
         paddingLeft: 14,
-        paddingRight: 14
+        paddingRight: 14,
       },
       '2': {
         borderRadius: '8px',
         height: '$6',
         px: '$3',
         fontSize: '$3',
-        lineHeight: '$sizes$6'
+        lineHeight: '$sizes$6',
       },
       '3': {
         borderRadius: '9px',
         height: '$7',
         px: '$4',
         fontSize: '$4',
-        lineHeight: '$sizes$7'
+        lineHeight: '$sizes$7',
       },
       block: {
         width: '100%',
@@ -61,8 +61,8 @@ export const StyledButton = styled('button', {
         px: '$3',
 
         fontSize: '$3',
-        lineHeight: '$sizes$6'
-      }
+        lineHeight: '$sizes$6',
+      },
     },
 
     color: {
@@ -72,20 +72,21 @@ export const StyledButton = styled('button', {
         color: '$gray11',
         '@hover': {
           '&:hover': {
-            boxShadow: 'inset 0 0 0 1px $colors$slate8'
-          }
+            boxShadow: 'inset 0 0 0 1px $colors$slate8',
+          },
         },
         '&:active': {
           backgroundColor: '$slate2',
-          boxShadow: 'inset 0 0 0 1px $colors$slate8'
+          boxShadow: 'inset 0 0 0 1px $colors$slate8',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8'
+          boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8',
         },
-        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: '$slate4',
-          boxShadow: 'inset 0 0 0 1px $colors$slate8'
-        }
+        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
+          {
+            backgroundColor: '$slate4',
+            boxShadow: 'inset 0 0 0 1px $colors$slate8',
+          },
       },
       primary: {
         backgroundColor: '$chxn4',
@@ -95,24 +96,25 @@ export const StyledButton = styled('button', {
         boxShadow: `inset 0 0 2px 1px $sage8`,
         '&:hover': {
           backgroundColor: '$chxn4A',
-          boxShadow: `inset 0 0 0 1px $sage9`
+          boxShadow: `inset 0 0 0 1px $sage9`,
         },
         '@hover': {
           '&:hover': {
-            boxShadow: `inset 0 0 0 1px ${slateA.slateA8}`
-          }
+            boxShadow: `inset 0 0 0 1px ${slateA.slateA8}`,
+          },
         },
         '&:active': {
           backgroundColor: slate.slate2,
-          boxShadow: `inset 0 0 0 1px ${slate.slate8}`
+          boxShadow: `inset 0 0 0 1px ${slate.slate8}`,
         },
         '&:focus': {
-          boxShadow: `inset 0 0 0 1px ${slate.slate8}, 0 0 0 1px ${slate.slate8}`
+          boxShadow: `inset 0 0 0 1px ${slate.slate8}, 0 0 0 1px ${slate.slate8}`,
         },
-        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: slate.slate4,
-          boxShadow: `inset 0 0 0 1px ${slate.slate8}`
-        }
+        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
+          {
+            backgroundColor: slate.slate4,
+            boxShadow: `inset 0 0 0 1px ${slate.slate8}`,
+          },
       },
       secondary: {},
       gray: {
@@ -121,20 +123,21 @@ export const StyledButton = styled('button', {
         color: '$gray11',
         '@hover': {
           '&:hover': {
-            boxShadow: 'inset 0 0 0 1px $colors$slate8'
-          }
+            boxShadow: 'inset 0 0 0 1px $colors$slate8',
+          },
         },
         '&:active': {
           backgroundColor: '$slate2',
-          boxShadow: 'inset 0 0 0 1px $colors$slate8'
+          boxShadow: 'inset 0 0 0 1px $colors$slate8',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8'
+          boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8',
         },
-        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
-          backgroundColor: '$slate4',
-          boxShadow: 'inset 0 0 0 1px $colors$slate8'
-        }
+        '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
+          {
+            backgroundColor: '$slate4',
+            boxShadow: 'inset 0 0 0 1px $colors$slate8',
+          },
       },
       ghostAtelier: {
         backgroundColor: '$mauve3',
@@ -142,14 +145,14 @@ export const StyledButton = styled('button', {
         color: '$mauve12',
         '&:hover': {
           backgroundColor: '$mauve4',
-          boxShadow: 'inset 0 0 0 1px $colors$mauve5, 0 0 0 1px $colors$mauve5'
+          boxShadow: 'inset 0 0 0 1px $colors$mauve5, 0 0 0 1px $colors$mauve5',
         },
         '&:active': {
-          backgroundColor: 'hsla(0,100%,100%,.3)'
+          backgroundColor: 'hsla(0,100%,100%,.3)',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px hsla(0,100%,100%,.35), 0 0 0 1px hsla(0,100%,100%,.35)'
-        }
+          boxShadow: 'inset 0 0 0 1px hsla(0,100%,100%,.35), 0 0 0 1px hsla(0,100%,100%,.35)',
+        },
       },
       nothing: {
         height: 'auto',
@@ -157,14 +160,14 @@ export const StyledButton = styled('button', {
         backgroundColor: 'transparent',
         color: '$chxn3',
         '&:hover': {
-          color: '$chxn6'
+          color: '$chxn6',
         },
         '&:active': {
           // backgroundColor: 'hsla(0,100%,100%,.3)'
         },
         '&:focus': {
           // boxShadow: 'inset 0 0 0 1px hsla(0,100%,100%,.35), 0 0 0 1px hsla(0,100%,100%,.35)'
-        }
+        },
       },
       clear: {
         height: 'auto',
@@ -173,14 +176,14 @@ export const StyledButton = styled('button', {
         color: '$chxn3',
         '&:hover': {
           color: '$tartOrange',
-          backgroundColor: '$appbarButton'
+          backgroundColor: '$appbarButton',
         },
         '&:active': {
           // backgroundColor: 'hsla(0,100%,100%,.3)'
         },
         '&:focus': {
           // boxShadow: 'inset 0 0 0 1px hsla(0,100%,100%,.35), 0 0 0 1px hsla(0,100%,100%,.35)'
-        }
+        },
       },
       close: {
         height: 'auto',
@@ -188,15 +191,15 @@ export const StyledButton = styled('button', {
         backgroundColor: 'transparent',
         color: '$chxn4',
         '&:hover': {
-          color: '$chxn1'
+          color: '$chxn1',
         },
         '&:active': {
           // backgroundColor: 'hsla(0,100%,100%,.3)'
         },
         '&:focus': {
           // boxShadow: 'inset 0 0 0 1px hsla(0,100%,100%,.35), 0 0 0 1px hsla(0,100%,100%,.35)'
-        }
-      }
+        },
+      },
     },
 
     // state....
@@ -209,15 +212,15 @@ export const StyledButton = styled('button', {
         '@hover': {
           '&:hover': {
             backgroundColor: '$slate5',
-            boxShadow: 'inset 0 0 0 1px $colors$slate8'
-          }
+            boxShadow: 'inset 0 0 0 1px $colors$slate8',
+          },
         },
         '&:active': {
-          backgroundColor: '$slate5'
+          backgroundColor: '$slate5',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8'
-        }
+          boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8',
+        },
       },
 
       waiting: {
@@ -228,25 +231,25 @@ export const StyledButton = styled('button', {
         '@hover': {
           '&:hover': {
             backgroundColor: '$slate5',
-            boxShadow: 'inset 0 0 0 1px $colors$slate8'
-          }
+            boxShadow: 'inset 0 0 0 1px $colors$slate8',
+          },
         },
         '&:active': {
-          backgroundColor: '$slate5'
+          backgroundColor: '$slate5',
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$slate8'
-        }
-      }
-    }
+          boxShadow: 'inset 0 0 0 1px $colors$slate8',
+        },
+      },
+    },
   },
 
   defaultVariants: {
     size: '1',
-    color: 'primary'
-  }
-});
+    color: 'primary',
+  },
+})
 
-export const Button = StyledButton;
+export const Button = StyledButton
 
-Button.displayName = 'Button';
+Button.displayName = 'Button'

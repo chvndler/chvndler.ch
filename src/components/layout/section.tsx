@@ -1,4 +1,4 @@
-import { styled } from 'stitches.config';
+import {styled} from 'stitches.config'
 
 const StyledSection = styled('div', {
   position: 'relative',
@@ -7,32 +7,32 @@ const StyledSection = styled('div', {
   my: '-1px',
 
   '&:last-child': {
-    mb: 0
+    mb: 0,
   },
 
   variants: {
     background: {
       black: {
         background: '$black',
-        color: '$white'
+        color: '$white',
       },
       muted: {
         background: '$background',
-        color: '$white'
-      }
+        color: '$white',
+      },
     },
     noMargin: {
       true: {
-        my: 0
-      }
-    }
-  }
-});
+        my: 0,
+      },
+    },
+  },
+})
 
-type SectionProps = React.ComponentPropsWithoutRef<typeof StyledSection>;
+type SectionProps = React.ComponentPropsWithoutRef<typeof StyledSection>
 
-const Section = ({ ...rest }: SectionProps) => {
-  return <StyledSection {...rest} data-scroll-section />;
-};
+const Section = ({...rest}: SectionProps) => {
+  return <StyledSection {...rest} data-scroll-section />
+}
 
-export default Section;
+export default Section

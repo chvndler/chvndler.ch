@@ -1,11 +1,11 @@
-import React from 'react';
-import { styled } from 'stitches.config';
+import React from 'react'
+import {styled} from 'stitches.config'
 
-import { Box } from '@/components/ds';
+import {Box} from '@/components/ds'
 
 type SliderProps = {
-  children?: React.ReactNode;
-};
+  children?: React.ReactNode
+}
 
 const StyledSvgBox = styled(Box, {
   transition: 'color 0.6s ease',
@@ -13,8 +13,8 @@ const StyledSvgBox = styled(Box, {
 
   '& svg': {
     '&:hover': {
-      color: '$tartOrange'
-    }
+      color: '$tartOrange',
+    },
   },
 
   variants: {
@@ -22,18 +22,18 @@ const StyledSvgBox = styled(Box, {
       tartOrange: {
         color: '$chxn4',
         '&:hover': {
-          color: '$tartOrange'
-        }
+          color: '$tartOrange',
+        },
       },
       maxBlue: {
         color: '$chxn4',
         '&:hover': {
-          color: '$maxBlue'
-        }
-      }
-    }
-  }
-});
+          color: '$maxBlue',
+        },
+      },
+    },
+  },
+})
 
 const ContentCard = styled('div', {
   zIndex: '4',
@@ -72,16 +72,16 @@ const ContentCard = styled('div', {
     minHeight: '350px',
     minWidth: '320px',
     maxHeight: '350px',
-    maxWidth: '320px'
-  }
-});
+    maxWidth: '320px',
+  },
+})
 
-export const SvgBox = StyledSvgBox;
+export const SvgBox = StyledSvgBox
 
-export const SliderCard = ({ children }: SliderProps) => {
+export const SliderCard = ({children}: SliderProps) => {
   return (
     <>
       <ContentCard>{children}</ContentCard>
     </>
-  );
-};
+  )
+}

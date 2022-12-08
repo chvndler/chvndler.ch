@@ -1,4 +1,4 @@
-import { css, styled } from 'stitches.config';
+import {css, styled} from 'stitches.config'
 
 const SmallVideoWrapperStyles = css({
   boxSizing: 'border-box',
@@ -8,8 +8,8 @@ const SmallVideoWrapperStyles = css({
   margin: 0,
   padding: 0,
 
-  borderRadius: 26
-});
+  borderRadius: 26,
+})
 
 const VideoWrapperStyles = css({
   position: 'relative',
@@ -30,8 +30,8 @@ const VideoWrapperStyles = css({
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  objectPosition: 'center'
-});
+  objectPosition: 'center',
+})
 
 export const VideoStyles = css('video', {
   position: 'fixed',
@@ -60,8 +60,8 @@ export const VideoStyles = css('video', {
   outline: 'none',
   display: 'block',
   opacity: 1,
-  transition: 'opacity 0.5s ease-in-out'
-});
+  transition: 'opacity 0.5s ease-in-out',
+})
 
 export const SmallVideoStyles = css('video', {
   zIndex: 1,
@@ -86,7 +86,7 @@ export const SmallVideoStyles = css('video', {
   outline: 'none',
   display: 'block',
   opacity: 1,
-  transition: 'opacity 0.5s ease-in-out'
-});
-export const VideoWrapper = styled('div', VideoWrapperStyles);
-export const SmallVideoWrapper = styled('div', SmallVideoWrapperStyles);
+  transition: 'opacity 0.5s ease-in-out',
+})
+export const VideoWrapper = styled('div', VideoWrapperStyles)
+export const SmallVideoWrapper = styled('div', SmallVideoWrapperStyles)

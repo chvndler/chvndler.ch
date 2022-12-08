@@ -1,1 +1,1 @@
-export { MirrorFooter } from './MirrorFooter';
+export {MirrorFooter} from './MirrorFooter'

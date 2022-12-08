@@ -1,5 +1,5 @@
-import { NotesPageDisplay } from '@/components/displays/notes-page';
-import { PageLayout } from '@/components/layout/page';
+import {NotesPageDisplay} from '@/components/displays/notes-page'
+import {PageLayout} from '@/components/layout/page'
 
 const NotesPage = () => {
   return (
@@ -8,7 +8,7 @@ const NotesPage = () => {
         <NotesPageDisplay />
       </PageLayout>
     </>
-  );
-};
+  )
+}
 
-export default NotesPage;
+export default NotesPage

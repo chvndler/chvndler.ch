@@ -1,6 +1,6 @@
-import { Section } from '@/components/ds';
+import {Section} from '@/components/ds'
 
-import { TrackCards } from './track.card';
+import {TrackCards} from './track.card'
 /**
  *
  * @render - project grid component.
@@ -12,7 +12,7 @@ export const SpotifyTopTenDisplay = () => {
     <Section size={'4'}>
       <TrackCards />
     </Section>
-  );
-};
+  )
+}
 
-SpotifyTopTenDisplay.displayName = 'SpotifyTopTenDisplay';
+SpotifyTopTenDisplay.displayName = 'SpotifyTopTenDisplay'

@@ -1,31 +1,31 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import { isApiSupported } from '@/lib/utils';
+import {isApiSupported} from '@/lib/utils'
 
 export const useMedia = (mediaQuery: string, initialValue?: boolean) => {
-  const [isVerified, setIsVerified] = React.useState<boolean | undefined>(initialValue);
+  const [isVerified, setIsVerified] = React.useState<boolean | undefined>(initialValue)
 
   React.useEffect(() => {
     if (!isApiSupported('matchMedia')) {
-      console.warn('matchMedia is not supported by your current browser');
-      return;
+      console.warn('matchMedia is not supported by your current browser')
+      return
     }
-    const mediaQueryList = window.matchMedia(mediaQuery);
-    const changeHandler = () => setIsVerified(!!mediaQueryList.matches);
+    const mediaQueryList = window.matchMedia(mediaQuery)
+    const changeHandler = () => setIsVerified(!!mediaQueryList.matches)
 
-    changeHandler();
+    changeHandler()
     if (typeof mediaQueryList.addEventListener === 'function') {
-      mediaQueryList.addEventListener('change', changeHandler);
+      mediaQueryList.addEventListener('change', changeHandler)
       return () => {
-        mediaQueryList.removeEventListener('change', changeHandler);
-      };
+        mediaQueryList.removeEventListener('change', changeHandler)
+      }
     } else if (typeof mediaQueryList.addListener === 'function') {
-      mediaQueryList.addListener(changeHandler);
+      mediaQueryList.addListener(changeHandler)
       return () => {
-        mediaQueryList.removeListener(changeHandler);
-      };
+        mediaQueryList.removeListener(changeHandler)
+      }
     }
-  }, [mediaQuery]);
+  }, [mediaQuery])
 
-  return isVerified;
-};
+  return isVerified
+}

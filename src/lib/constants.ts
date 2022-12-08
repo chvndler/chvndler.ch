@@ -1,8 +1,8 @@
-export const isDev = process.env.NODE_ENV === 'development';
-export const isProd = process.env.NODE_ENV === 'production';
+export const isDev = process.env.NODE_ENV === 'development'
+export const isProd = process.env.NODE_ENV === 'production'
 
-export const isClient = typeof document !== 'undefined';
-export const isServer = !isClient;
+export const isClient = typeof document !== 'undefined'
+export const isServer = !isClient
 
 if (typeof process.env.NEXT_PUBLIC_SITE_URL !== 'string') {
   throw new Error(
@@ -12,11 +12,11 @@ if (typeof process.env.NEXT_PUBLIC_SITE_URL !== 'string') {
 2. Add NEXT_PUBLIC_SITE_URL=http://localhost:3000
 3. For other environments (like production), make sure you set the correct URL.
     `
-  );
+  )
 }
 
-export const siteURL = new URL(process.env.NEXT_PUBLIC_SITE_URL);
-export const siteOrigin = siteURL.origin;
+export const siteURL = new URL(process.env.NEXT_PUBLIC_SITE_URL)
+export const siteOrigin = siteURL.origin
 
 export const defaultMeta = {
   title: 'Chandler Chappell',
@@ -24,11 +24,11 @@ export const defaultMeta = {
   ogImage: `${siteOrigin}/og.png`,
   twitter: {
     handle: '@chvndlerch',
-    site: 'chvndler.ch'
-  }
-};
+    site: 'chvndler.ch',
+  },
+}
 
-export const gaTrackingId = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
+export const gaTrackingId = process.env.NEXT_PUBLIC_GA_TRACKING_ID
 
 export const atelierLog = `
 
@@ -40,4 +40,4 @@ export const atelierLog = `
 ╚═╝  ╚═╝  ╚═╝  ╚══════╚══════╚═╚══════╚═╝  ╚═╚═╝
                                                
    From atelier. https://atlrdsgn.com
-`;
+`
