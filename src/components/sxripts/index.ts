@@ -1,5 +1,3 @@
-import PlausibleScript from './plausible';
-
-export * from './CursorData';
-export default { PlausibleScript };
-export * from './plausible-provider'; // AnalyticsProvider
+export { AnalyticsProvider } from './analytics-provider';
+export { CurrentTime } from './current-time';
+export { CursorData } from './cursor-data';

@@ -1,13 +1,13 @@
 import { styled } from 'stitches.config';
 
 import { ThemeSwitch } from '@/components/primitives/theme-switcher';
-import { TimeDisplay } from '@/components/primitives/time-display';
+import { CurrentTime } from '@/components/sxripts';
 
 export const CoverFooter = () => {
   return (
     <Footer>
       <ContentBox alignment="start" css={{ '@md': { display: 'none' } }}>
-        <TimeDisplay />
+        <CurrentTime />
       </ContentBox>
 
       <ContentBox alignment="end" css={{}}>

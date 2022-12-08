@@ -41,11 +41,8 @@ const StyledThumb = styled(SwitchPrimitive.Thumb, {
   }
 });
 
-// Exports
 export const Switch = StyledSwitch;
 export const SwitchThumb = StyledThumb;
-
-// Your app...
 
 export const Label = styled('label', {
   color: 'white',

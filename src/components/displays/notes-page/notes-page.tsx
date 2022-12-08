@@ -5,6 +5,8 @@ import { notes } from '@/lib/notes';
 
 import { CopyrightText, NoteEntry } from './entry';
 
+const twitter = 'https://twitter.com/chvndlerch';
+
 export const NotesPageDisplay = () => {
   return (
     <>
@@ -33,7 +35,7 @@ export const NotesPageDisplay = () => {
           <Space size={'2'} />
 
           <CopyrightText css={{ color: theme.colors.chxn4 }}>
-            follow me on <InlineLink href={'https://twitter.com/chvndlerch'}>twitter</InlineLink>
+            follow me on <InlineLink href={twitter}>twitter</InlineLink>
           </CopyrightText>
         </Container>
       </Section>

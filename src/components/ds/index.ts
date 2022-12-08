@@ -1,3 +1,7 @@
+/**
+ * This is a small design system.
+ * built with stitches.
+ */
 export * from './app-wrapper';
 export * from './badge';
 export * from './blur-canvas';

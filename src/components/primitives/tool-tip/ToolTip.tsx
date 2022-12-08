@@ -11,7 +11,9 @@ export const ToolTipWrapper = ({ children, tip }: TipProps) => {
   return (
     <Tooltip.Provider delayDuration={800} skipDelayDuration={500}>
       <Tooltip.Root delayDuration={800}>
-        <Tooltip.Trigger asChild>{children}</Tooltip.Trigger>
+        <Tooltip.Trigger asChild>
+          <div>{children}</div>
+        </Tooltip.Trigger>
         <TooltipViewport>
           <TooltipContent sideOffset={0} align={'center'}>
             {tip}

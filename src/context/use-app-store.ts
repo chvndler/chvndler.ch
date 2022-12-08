@@ -1,6 +1,8 @@
 import create from 'zustand';
 
-// Extend this store if you need!
+/**
+ * Extend if needed !
+ */
 
 export interface AppStore {
   fontsLoaded: boolean;

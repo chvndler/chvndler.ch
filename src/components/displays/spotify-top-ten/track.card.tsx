@@ -2,7 +2,7 @@ import useSWR from 'swr';
 
 import { Grid } from '@/components/ds';
 import { ResolvedTrack } from '@/components/primitives/spotify/ResolvedTrack';
-import type { TopTracks } from '@/components/primitives/spotify/types';
+import type { TopTracks, TrackProps } from '@/components/primitives/spotify/types';
 import fetcher from '@/lib/fetcher';
 
 import { TrackCard } from './track.card.styles';
@@ -17,7 +17,7 @@ export const TrackCards = () => {
   return (
     <>
       <Grid columns={'2'} justify={'between'} align={'center'} gap={'3'} css={{ width: '100%' }}>
-        {data.tracks.map((track, index) => (
+        {data.tracks.map((track: JSX.IntrinsicAttributes & TrackProps, index: number) => (
           // eslint-disable-next-line react/jsx-key
           <TrackCard>
             <ResolvedTrack ranking={index + 1} key={track.songUrl} {...track} />

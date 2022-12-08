@@ -71,7 +71,6 @@ export const GAScripts = () => {
   );
 };
 
-// Use this hook in _app.tsx
 export const useAppGA = () => {
   const router = useRouter();
 
