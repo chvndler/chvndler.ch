@@ -2519,13 +2519,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bezier-easing@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "bezier-easing@npm:2.1.0"
-  checksum: ec22666b5385979b3e7a63eaf2631395b1be5beb3aed4f14cc70ae9eb09032082584f7e3eec045e4c122466987ed7e159f5b39f82b8a9870cd55e75b0d55a7d5
-  languageName: node
-  linkType: hard
-
 "bidi-js@npm:^1.0.2":
   version: 1.0.2
   resolution: "bidi-js@npm:1.0.2"
@@ -2546,13 +2539,6 @@ __metadata:
   version: 2.2.0
   resolution: "binary-extensions@npm:2.2.0"
   checksum: ccd267956c58d2315f5d3ea6757cf09863c5fc703e50fbeb13a7dc849b812ef76e3cf9ca8f35a0c48498776a7478d7b4a0418e1e2b8cb9cb9731f2922aaad7f8
-  languageName: node
-  linkType: hard
-
-"bindall-standalone@npm:^1.0.5":
-  version: 1.0.5
-  resolution: "bindall-standalone@npm:1.0.5"
-  checksum: 670a96a55a2609cbcf7f6a7066641e988d89467dbe479d1385fe12f3863253e81b7aab19d479fe718d81f8cd84fb40886bbe5b4b065e8220930f0fccc58465c0
   languageName: node
   linkType: hard
 
@@ -2794,7 +2780,6 @@ __metadata:
     image-size: ^1.0.2
     keen-slider: ^6.8.3
     lint-staged: 13
-    locomotive-scroll: ^4.1.4
     lodash.debounce: ^4.0.8
     mousetrap: 1.6.5
     mux-embed: ^4.15.0
@@ -2812,7 +2797,6 @@ __metadata:
     react-fast-marquee: ^1.3.5
     react-markdown: ^8.0.4
     react-merge-refs: ^2.0.1
-    react-scroll: ^1.8.8
     react-use-measure: ^2.1.1
     sass: 1.56.1
     slug: ^8.2.2
@@ -5001,13 +4985,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lethargy@npm:^1.0.2":
-  version: 1.0.9
-  resolution: "lethargy@npm:1.0.9"
-  checksum: 2ca67fe57752cb86224b6799b87e8819e0d7636eafe16c59a596c9e1125ac6ee9f17eb5e92ef853926137cc70fa9798396e7aa38563751a75109450de9979fb8
-  languageName: node
-  linkType: hard
-
 "levn@npm:^0.4.1":
   version: 0.4.1
   resolution: "levn@npm:0.4.1"
@@ -5087,17 +5064,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"locomotive-scroll@npm:^4.1.4":
-  version: 4.1.4
-  resolution: "locomotive-scroll@npm:4.1.4"
-  dependencies:
-    bezier-easing: ^2.1.0
-    smoothscroll-polyfill: ^0.4.4
-    virtual-scroll: ^1.5.2
-  checksum: 28ee6ca336dd8e72c7d97d9f8a551900f0535fc51a86b650034ec04acecc1e1554d1c5936f95cfd460a6571a9ee5af354bc3bd1a6c7aecd1b1063a4c8ab68eba
-  languageName: node
-  linkType: hard
-
 "lodash.clamp@npm:^4.0.3":
   version: 4.0.3
   resolution: "lodash.clamp@npm:4.0.3"
@@ -5130,13 +5096,6 @@ __metadata:
   version: 4.4.0
   resolution: "lodash.pick@npm:4.4.0"
   checksum: 2c36cab7da6b999a20bd3373b40e31a3ef81fa264f34a6979c852c5bc8ac039379686b27380f0cb8e3781610844fafec6949c6fbbebc059c98f8fa8570e3675f
-  languageName: node
-  linkType: hard
-
-"lodash.throttle@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "lodash.throttle@npm:4.1.1"
-  checksum: 129c0a28cee48b348aef146f638ef8a8b197944d4e9ec26c1890c19d9bf5a5690fe11b655c77a4551268819b32d27f4206343e30c78961f60b561b8608c8c805
   languageName: node
   linkType: hard
 
@@ -6009,7 +5968,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"object-assign@npm:^4.0.1, object-assign@npm:^4.1.1":
+"object-assign@npm:^4.1.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
   checksum: fcc6e4ea8c7fe48abfbb552578b1c53e0d194086e2e6bbbf59e0a536381a292f39943c6e9628af05b5528aa5e3318bb30d6b2e53cadaf5b8fe9e12c4b69af23f
@@ -6614,19 +6573,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-scroll@npm:^1.8.8":
-  version: 1.8.8
-  resolution: "react-scroll@npm:1.8.8"
-  dependencies:
-    lodash.throttle: ^4.1.1
-    prop-types: ^15.7.2
-  peerDependencies:
-    react: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
-  checksum: 66c86d25e2d8032c3c00fdd4909a188b00d8ddabf4744f5a86829199ac9f100e042199f336442f403332ac1082687213e6966cb0f500e64e4392217f715c6c1a
-  languageName: node
-  linkType: hard
-
 "react-style-singleton@npm:^2.2.1":
   version: 2.2.1
   resolution: "react-style-singleton@npm:2.2.1"
@@ -7128,13 +7074,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"smoothscroll-polyfill@npm:^0.4.4":
-  version: 0.4.4
-  resolution: "smoothscroll-polyfill@npm:0.4.4"
-  checksum: b99ff7d91689d563ec69cb1d29713b332a24c88ac3dc4ef9ef9fbe4137305336e67253211067c5f786478dbdabd2aa6c2033709d4d8feca327b09eca8d5a0e7b
-  languageName: node
-  linkType: hard
-
 "socks-proxy-agent@npm:^7.0.0":
   version: 7.0.0
   resolution: "socks-proxy-agent@npm:7.0.0"
@@ -7531,13 +7470,6 @@ __metadata:
   version: 2.3.8
   resolution: "through@npm:2.3.8"
   checksum: a38c3e059853c494af95d50c072b83f8b676a9ba2818dcc5b108ef252230735c54e0185437618596c790bbba8fcdaef5b290405981ffa09dce67b1f1bf190cbd
-  languageName: node
-  linkType: hard
-
-"tiny-emitter@npm:^1.0.0":
-  version: 1.2.0
-  resolution: "tiny-emitter@npm:1.2.0"
-  checksum: f21f76da7c1c7fbc60c4ff32c43db8ef601aa98ffc79b75ab1e2d6308c0695d9aa5bd0c941e3a234d8e49ca994ab574692754d5617bd7d2b48b880857e0e3154
   languageName: node
   linkType: hard
 
@@ -7989,18 +7921,6 @@ __metadata:
     unist-util-stringify-position: ^3.0.0
     vfile-message: ^3.0.0
   checksum: 1aa5efff510bc6621ff8a7dc6513110529a11a8d665b44f169cc2a2b6bfa4f312efa00bfe86ca20e506538ff2915c8e538a664bd02a06419421ff964844fbe94
-  languageName: node
-  linkType: hard
-
-"virtual-scroll@npm:^1.5.2":
-  version: 1.5.2
-  resolution: "virtual-scroll@npm:1.5.2"
-  dependencies:
-    bindall-standalone: ^1.0.5
-    lethargy: ^1.0.2
-    object-assign: ^4.0.1
-    tiny-emitter: ^1.0.0
-  checksum: ea1064a2f77b168c24cf71052a54ecbc88eb4efd4f2043a81d1f699a61f83e4600aadb6db30ddc66bce78e67b67afa7217f9d75fa485bf6121a6399c382ec1ee
   languageName: node
   linkType: hard
 
