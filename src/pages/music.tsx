@@ -12,12 +12,10 @@ const Music = () => {
         <Container size={'2'}>
           <Heading>Spotify Logo</Heading>
         </Container>
-
         <Container size={'2'}>
           <NowPlaying />
         </Container>
         <Space size={'3'} />
-
         <Container size={'2'}>
           <SpotifyTopTenDisplay />
         </Container>

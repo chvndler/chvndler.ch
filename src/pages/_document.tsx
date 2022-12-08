@@ -23,9 +23,6 @@ class App extends Document {
 
 export default App;
 
-/**
- * @getCss
- */
 const getCssAndReset = () => {
   const css = getCssText();
   reset();

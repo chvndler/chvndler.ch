@@ -30,7 +30,7 @@ const SectionCropStyles = styled('div', {
 });
 
 const CardStyles = styled(Card, {
-  transition: 'all 0.3s ease-in-out',
+  transition: 'all 0.5s ease-in-out',
   zIndex: 1,
   display: 'flex',
   flexDirection: 'column',
@@ -38,8 +38,8 @@ const CardStyles = styled(Card, {
 
   width: '100%',
   height: '100%',
-  minHeight: 340,
-  minWidth: 300,
+  minHeight: 360,
+  minWidth: 280,
 
   borderRadius: 16,
   margin: 'auto',

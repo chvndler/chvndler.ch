@@ -7,6 +7,7 @@ import { Avatar } from '@/components/primitives/avatar';
 import { CursorData } from '@/components/sxripts';
 
 const gitlink = 'https://github.com/chvndler';
+const nyoling = 'https://avatars.githubusercontent.com/u/70621588?s=96&v=4';
 
 const NextAppPage = () => {
   return (
@@ -56,14 +57,7 @@ const RoleText = styled(Text, {
 const AviNFT = () => {
   return (
     <PassLink href={gitlink}>
-      <Avatar
-        interactive
-        size={'4'}
-        shape={'circle'}
-        alt={'Chandler®'}
-        fallback={'C'}
-        src={'https://avatars.githubusercontent.com/u/70621588?s=96&v=4'}
-      />
+      <Avatar interactive size={'4'} shape={'circle'} alt={'Chandler®'} fallback={'C'} src={nyoling} />
     </PassLink>
   );
 };
