@@ -7,7 +7,7 @@
 - **Style:** [Stitches](https://stitches.dev/)
 - **Back-end:** [Next.js](https://nextjs.org/)
 - **Front-end:** [React](https://reactjs.org/)
-- **3D:** [@react-three/fiber](), [@react-three/drei](), [three.js]()
+- **3D:** [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/), [@react-three/drei](https://drei.pmnd.rs/), [three.js](https://threejs.org)
 - **Deployment:** [Vercel](https://vercel.com/)
 
 ### running locally
