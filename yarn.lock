@@ -902,6 +902,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/popper@npm:^0.0.10":
+  version: 0.0.10
+  resolution: "@radix-ui/popper@npm:0.0.10"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    csstype: ^3.0.4
+  checksum: c53d2f4cbeb5192e0a0c99376ac71c3570b53a58fde461e18d84c423fda37dc8f2d8bc79c2d7e3eea0e10dbc6cd9f5047b6108e69ed8159cd155c2376e3d2e17
+  languageName: node
+  linkType: hard
+
 "@radix-ui/primitive@npm:1.0.0":
   version: 1.0.0
   resolution: "@radix-ui/primitive@npm:1.0.0"
@@ -2778,6 +2788,7 @@ __metadata:
     hls.js: ^1.2.7
     husky: 8
     image-size: ^1.0.2
+    inspx: ^0.0.1-alpha.6
     keen-slider: ^6.8.3
     lint-staged: 13
     lodash.debounce: ^4.0.8
@@ -3010,6 +3021,13 @@ __metadata:
   version: 3.0.9
   resolution: "csstype@npm:3.0.9"
   checksum: 199f9af7e673f9f188525c3102a329d637ff46c52f6385a4427ff5cb17adcb736189150170a7af7c5701d18d7704bdad130273f4aa7e44c6c4f9967e6115dc93
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.0.4":
+  version: 3.1.1
+  resolution: "csstype@npm:3.1.1"
+  checksum: 1f7b4f5fdd955b7444b18ebdddf3f5c699159f13e9cf8ac9027ae4a60ae226aef9bbb14a6e12ca7dba3358b007cee6354b116e720262867c398de6c955ea451d
   languageName: node
   linkType: hard
 
@@ -4527,6 +4545,17 @@ __metadata:
   version: 0.1.1
   resolution: "inline-style-parser@npm:0.1.1"
   checksum: 5d545056a3e1f2bf864c928a886a0e1656a3517127d36917b973de581bd54adc91b4bf1febcb0da054f204b4934763f1a4e09308b4d55002327cf1d48ac5d966
+  languageName: node
+  linkType: hard
+
+"inspx@npm:^0.0.1-alpha.6":
+  version: 0.0.1-alpha.6
+  resolution: "inspx@npm:0.0.1-alpha.6"
+  dependencies:
+    "@radix-ui/popper": ^0.0.10
+  peerDependencies:
+    react: ">=16"
+  checksum: 48e468a4a7c4a470257c5348c07ca793abbab1214be68a7df3163243b3bc52aadac118c682e415d00650f0e1e719aa31c6ce2fb525095ef91012fc0f4d969249
   languageName: node
   linkType: hard
 

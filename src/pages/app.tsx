@@ -1,3 +1,4 @@
+import Inspect from 'inspx'
 import {styled, theme} from 'stitches.config'
 
 import {Canvas, Container, PassLink, Space, Text} from '@/components/ds'
@@ -12,19 +13,21 @@ const nyoling = 'https://avatars.githubusercontent.com/u/70621588?s=96&v=4'
 const NextAppPage = () => {
   return (
     <>
-      <PageLayout page_type={'App'}>
-        <FixedCanvas>
-          <Canvas>
-            <Container size={'1'} align={'center'} css={{}}>
-              <AviNFT />
-              <NameText>CHANDLER</NameText>
-              <RoleText>Front-End Developer and Designer</RoleText>
-              <Space size={'1'} />
-              <CursorData />
-            </Container>
-          </Canvas>
-        </FixedCanvas>
-      </PageLayout>
+      <Inspect>
+        <PageLayout page_type={'App'}>
+          <FixedCanvas>
+            <Canvas>
+              <Container size={'1'} align={'center'} css={{}}>
+                <AviNFT />
+                <NameText>CHANDLER</NameText>
+                <RoleText>Front-End Developer and Designer</RoleText>
+                <Space size={'1'} />
+                <CursorData />
+              </Container>
+            </Canvas>
+          </FixedCanvas>
+        </PageLayout>
+      </Inspect>
     </>
   )
 }
