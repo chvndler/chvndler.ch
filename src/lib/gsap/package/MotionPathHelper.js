@@ -221,7 +221,6 @@ export var MotionPathHelper = /*#__PURE__*/ (function () {
       'border-radius:8px; background-color:rgba(85, 85, 85, 0.7); color:#fff; cursor:pointer; padding:6px 12px; font-family:Signika Negative, Arial, sans-serif; position:fixed; left:50%; transform:translate(-50%, 0); font-size:19px; bottom:10px'
     copyButton.innerText = 'COPY MOTION PATH'
     copyButton._gsHelper = self
-
     ;(gsap.utils.toArray(vars.container)[0] || _body).appendChild(copyButton)
 
     _addCopyToClipboard(

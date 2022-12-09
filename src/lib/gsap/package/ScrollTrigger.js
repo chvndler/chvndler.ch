@@ -1557,7 +1557,6 @@ export var ScrollTrigger = /*#__PURE__*/ (function () {
             }
 
             _setState(isActive || action ? pinActiveState : pinState)
-
             ;(pinChange !== change && clipped < 1 && isActive) ||
               pinSetter(pinStart + (clipped === 1 && !action ? pinChange : 0))
           }

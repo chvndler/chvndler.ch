@@ -1746,7 +1746,6 @@ _forEachName('Linear,Quad,Cubic,Quart,Quint,Strong', function (name, i) {
 _easeMap.Linear.easeNone = _easeMap.none = _easeMap.Linear.easeIn
 
 _insertEase('Elastic', _configElastic('in'), _configElastic('out'), _configElastic())
-
 ;(function (n, c) {
   var n1 = 1 / c,
     n2 = 2 * n1,
@@ -2398,7 +2397,6 @@ export var Timeline = /*#__PURE__*/ (function (_Animation) {
 
       if (crossingStart) {
         dur || (prevTime = this._zTime) //when the playhead arrives at EXACTLY time 0 (right on top) of a zero-duration timeline, we need to discern if events are suppressed so that when the playhead moves again (next time), it'll trigger the callback. If events are NOT suppressed, obviously the callback would be triggered in this render. Basically, the callback should fire either when the playhead ARRIVES or LEAVES this exact spot, not both. Imagine doing a timeline.seek(0) and there's a callback that sits at 0. Since events are suppressed on that seek() by default, nothing will fire, but when the playhead moves off of that position, the callback should fire. This behavior is what people intuitively expect.
-
         ;(totalTime || !suppressEvents) && (this._zTime = totalTime)
       }
 

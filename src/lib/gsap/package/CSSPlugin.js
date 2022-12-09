@@ -1451,7 +1451,6 @@ export var CSSPlugin = {
               ? startAt[p].call(tween, index, target, targets)
               : startAt[p]
           p in _config.units && !getUnit(startValue) && (startValue += _config.units[p]) // for cases when someone passes in a unitless value like {x: 100}; if we try setting translate(100, 0px) it won't work.
-
           ;(startValue + '').charAt(1) === '=' && (startValue = _get(target, p)) // can't work with relative values
         } else {
           startValue = _get(target, p)
@@ -1634,7 +1633,6 @@ export var CSSPlugin = {
   },
 }
 gsap.utils.checkPrefix = _checkPropPrefix
-
 ;(function (positionAndScale, rotation, others, aliases) {
   var all = _forEachName(positionAndScale + ',' + rotation + ',' + others, function (name) {
     _transformProps[name] = 1

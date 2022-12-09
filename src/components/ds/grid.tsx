@@ -61,6 +61,7 @@ export const Grid = styled('div', {
       },
       2: {
         gridTemplateColumns: 'repeat(2, 1fr)',
+        '@md': {gridTemplateColumns: 'repeat(1, 1fr)'},
         '@sm': {gridTemplateColumns: 'repeat(1, 1fr)'},
       },
       3: {

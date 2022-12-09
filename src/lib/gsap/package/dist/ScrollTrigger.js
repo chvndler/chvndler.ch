@@ -1543,7 +1543,6 @@
               }
 
               _setState(isActive || action ? pinActiveState : pinState)
-
               ;(pinChange !== change && clipped < 1 && isActive) ||
                 pinSetter(pinStart + (clipped === 1 && !action ? pinChange : 0))
             }

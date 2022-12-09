@@ -1682,7 +1682,6 @@
   _easeMap.Linear.easeNone = _easeMap.none = _easeMap.Linear.easeIn
 
   _insertEase('Elastic', _configElastic('in'), _configElastic('out'), _configElastic())
-
   ;(function (n, c) {
     var n1 = 1 / c,
       n2 = 2 * n1,
@@ -5878,7 +5877,6 @@
     },
   }
   gsap.utils.checkPrefix = _checkPropPrefix
-
   ;(function (positionAndScale, rotation, others, aliases) {
     var all = _forEachName(positionAndScale + ',' + rotation + ',' + others, function (name) {
       _transformProps[name] = 1
