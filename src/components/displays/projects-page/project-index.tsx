@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Container, Grid, Space} from '@/components/ds'
+import {Container, Grid, Paragraph, Space} from '@/components/ds'
 
 import {
   Project,
@@ -14,7 +14,15 @@ export const ProjectIndex = () => {
   return (
     <>
       <ProjectContainer>
-        <Space size={2} />
+        <Container size={'1'} css={{}}>
+          <Paragraph css={{textAlign: 'center'}}>
+            Crafting interfaces.
+            <br />
+            Building polished software and web experiences. Experimenting with web3 and 3D code.
+            Here are some of my current and past projects.
+          </Paragraph>
+        </Container>
+        <Space size={'3'} />
         <Project>
           <Container size={'3'} css={{margin: 'auto', padding: 2}}>
             <Grid

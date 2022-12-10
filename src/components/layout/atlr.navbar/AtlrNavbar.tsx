@@ -23,6 +23,7 @@ import {
 const cv = 'https://s3.amazonaws.com/truth.cloud/cv/ChandlerChappell_cv.pdf'
 const twitter = 'https://twitter.com/chvndlerch'
 const github = 'https://github.com/chvndler'
+const linkedin = 'https://www.linkedin.com/in/chvndler/'
 const code_sandbox = 'https://codesandbox.io/u/chvndler'
 const instagram = 'https://instagram.com/chv.ndler'
 const are_na = 'https://www.are.na/chvndler-ch'
@@ -71,6 +72,9 @@ export const AtlrNavbar = () => {
               </NavLink>
               <NavLink href={github} target={'_blank'} rel={'noreferrer noopener'}>
                 github
+              </NavLink>
+              <NavLink href={linkedin} target={'_blank'} rel={'noreferrer noopener'}>
+                linkedin
               </NavLink>
               <NavLink href={code_sandbox} target={'_blank'} rel={'noreferrer noopener'}>
                 codesandbox
