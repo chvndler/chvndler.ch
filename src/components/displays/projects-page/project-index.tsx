@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Container, Grid, Paragraph, Space} from '@/components/ds'
+import {Container, Grid} from '@/components/ds'
 
 import {
   Project,
@@ -14,15 +14,6 @@ export const ProjectIndex = () => {
   return (
     <>
       <ProjectContainer>
-        <Container size={'1'} css={{}}>
-          <Paragraph css={{textAlign: 'center'}}>
-            Crafting interfaces.
-            <br />
-            Building polished software and web experiences. Experimenting with web3 and 3D code.
-            Here are some of my current and past projects.
-          </Paragraph>
-        </Container>
-        <Space size={'3'} />
         <Project>
           <Container size={'3'} css={{margin: 'auto', padding: 2}}>
             <Grid
@@ -35,30 +26,45 @@ export const ProjectIndex = () => {
                 '@md': {gridTemplateColumns: 'repeat(1fr 1fr)'},
               }}>
               <ProjectCard>
-                <ProjectTitle>Atelier.Kit</ProjectTitle>
+                <ProjectTitle>Atelier® Kit</ProjectTitle>
                 <ProjectDescription>
-                  A component toolkit for high performing React apps and sites. – v0.41.3.beta
+                  An ever– expanding library of React components and primitives. Actively
+                  developing.
                 </ProjectDescription>
               </ProjectCard>
 
               <ProjectCard>
-                <ProjectTitle>Personal</ProjectTitle>
+                <ProjectTitle>Personal.</ProjectTitle>
                 <ProjectDescription>
-                  A component toolkit for high performing React apps and sites. – v0.41.3.beta
+                  This exact website. My corner of the web– where I take notes, experiment, and
+                  practice building amazing UI.
                 </ProjectDescription>
               </ProjectCard>
 
               <ProjectCard>
-                <ProjectTitle>Icxns</ProjectTitle>
+                <ProjectTitle>Atelier® Icxns</ProjectTitle>
                 <ProjectDescription>
-                  Light-weight runner for the esbuild compiler
+                  A crisp, little set of interface icons. Use them however you like.
                 </ProjectDescription>
               </ProjectCard>
+
               <ProjectCard>
-                <ProjectTitle>Atelier.Labs</ProjectTitle>
+                <ProjectTitle>ISI® Elite Training</ProjectTitle>
                 <ProjectDescription>
-                  Tests how different web browsers round geometry to pixels, dp, etc.
+                  My previous roles official website, check them out and sign up.
                 </ProjectDescription>
+              </ProjectCard>
+
+              <ProjectCard>
+                <ProjectTitle>TFL© Convention</ProjectTitle>
+                <ProjectDescription>
+                  A single page app built for ISI® Elite Training.
+                </ProjectDescription>
+              </ProjectCard>
+
+              <ProjectCard>
+                <ProjectTitle>Three</ProjectTitle>
+                <ProjectDescription>Some three.js experiments.</ProjectDescription>
               </ProjectCard>
             </Grid>
           </Container>

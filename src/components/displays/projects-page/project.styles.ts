@@ -54,28 +54,28 @@ const ProjectCardStyles = css({
 
 const ProjectTitleStyles = css({
   color: theme.colors.chxn4,
-  fontFamily: theme.fonts.sctoBold,
-  fontSize: 22,
+  fontFamily: theme.fonts.helvRound,
+  fontSize: 18,
   fontWeight: 'normal',
-  lineHeight: 'normal',
-  marginBottom: 8,
+  lineHeight: '1',
+  marginBottom: 6,
   paddingLeft: 4,
   paddingRight: 4,
-  paddingTop: 2,
-  paddingBottom: 1,
+  paddingTop: 3,
   width: 'max-content',
-  borderRadius: 6,
+  borderRadius: 0,
 
   '&:hover': {
-    backgroundColor: theme.colors.slateA8,
+    color: theme.colors.chxn1,
+    backgroundColor: theme.colors.heliotrope,
     cursor: 'pointer',
   },
 })
 
 const ProjectDescriptionStyles = css({
-  color: theme.colors.chxn5,
-  fontFamily: theme.fonts.scto,
-  fontSize: 16,
+  color: theme.colors.slate10,
+  fontFamily: theme.fonts.inter,
+  fontSize: 15,
   fontWeight: 'normal',
   lineHeight: 'normal',
   paddingLeft: 4,

@@ -7,7 +7,9 @@ export const StyledButton = styled('button', {
   boxSizing: 'border-box',
   userSelect: 'none',
   display: 'inline-flex',
-  flexShrink: 0,
+  fontFamily: '"Inter", sans-serif',
+  fontWeight: 600,
+
   justifyContent: 'center',
   lineHeight: '1',
   WebkitTapHighlightColor: 'rgba(0,0,0,0)',
@@ -30,26 +32,34 @@ export const StyledButton = styled('button', {
   variants: {
     size: {
       '1': {
+        borderRadius: 8,
+        fontSize: 14,
+
+        margin: 0,
+        height: 'auto',
+        paddingLeft: 14,
+        paddingRight: 14,
+        paddingTop: 6,
+        paddingBottom: 6,
+      },
+      '2': {
+        borderRadius: 50,
+        fontFamily: '"Lateral Extended Medium", sans-serif',
+        fontSize: 13,
+        fontWeight: 500,
+        margin: 0,
+        height: 32,
+        width: 'max-content',
+        paddingLeft: 14,
+        paddingRight: 14,
+      },
+      '3': {
         borderRadius: 50,
         fontSize: 'inherit',
         margin: 0,
         height: 22,
         paddingLeft: 14,
         paddingRight: 14,
-      },
-      '2': {
-        borderRadius: '8px',
-        height: '$6',
-        px: '$3',
-        fontSize: '$3',
-        lineHeight: '$sizes$6',
-      },
-      '3': {
-        borderRadius: '9px',
-        height: '$7',
-        px: '$4',
-        fontSize: '$4',
-        lineHeight: '$sizes$7',
       },
       block: {
         width: '100%',
