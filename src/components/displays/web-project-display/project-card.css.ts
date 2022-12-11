@@ -38,7 +38,7 @@ const CardStyles = styled(Card, {
 
   width: '100%',
   height: '100%',
-  minHeight: 360,
+  minHeight: 300,
   minWidth: 280,
 
   borderRadius: 16,
@@ -73,7 +73,7 @@ const CardStyles = styled(Card, {
 const PlacementBoxStyles = styled('div', Box, {
   zIndex: 99,
   position: 'absolute',
-  top: 20,
+  top: 10,
   padding: 38,
 
   '@md': {
@@ -99,16 +99,15 @@ const SummaryStyles = styled('p', {
 const TitleStyles = styled('h3', {
   transition: 'all 0.4s ease-in-out',
   fontSize: 24,
-  fontFamily: theme.fonts.latBoldExtd,
+  fontFamily: theme.fonts.system,
   fontWeight: 'bold',
-  textTransform: 'lowercase',
   color: theme.colors.heliotrope,
   '&:hover': {color: theme.colors.portage},
 })
 
 const ButtonStyles = styled(PassLink, {
   backgroundColor: 'transparent',
-  fontFamily: theme.fonts.mono,
+  fontFamily: theme.fonts.system,
   fontSize: 12,
   fontWeight: 600,
 
@@ -116,6 +115,20 @@ const ButtonStyles = styled(PassLink, {
   '&:hover': {
     color: theme.colors.mauve11,
     cursor: 'pointer',
+  },
+})
+
+const ButtonPlacementStyles = styled('div', Box, {
+  zIndex: 99,
+  position: 'absolute',
+  bottom: 10,
+  padding: 38,
+
+  '@md': {
+    padding: 32,
+  },
+  '@sm': {
+    padding: 26,
   },
 })
 
@@ -143,5 +156,6 @@ export const PlacementBox = PlacementBoxStyles
 export const ProjectSummary = SummaryStyles
 export const ProjectTitle = TitleStyles
 export const ProjectButton = ButtonStyles
+export const ProjectButtonPlacement = ButtonPlacementStyles
 
 export const ImageOverlay = Overlay

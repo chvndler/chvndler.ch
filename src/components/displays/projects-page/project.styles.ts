@@ -54,7 +54,7 @@ const ProjectCardStyles = css({
 
 const ProjectTitleStyles = css({
   color: theme.colors.chxn4,
-  fontFamily: theme.fonts.helvRound,
+  fontFamily: theme.fonts.panB,
   fontSize: 18,
   fontWeight: 'normal',
   lineHeight: '1',
@@ -63,7 +63,7 @@ const ProjectTitleStyles = css({
   paddingRight: 4,
   paddingTop: 3,
   width: 'max-content',
-  borderRadius: 0,
+  borderRadius: 6,
 
   '&:hover': {
     color: theme.colors.chxn1,

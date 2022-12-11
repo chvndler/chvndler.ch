@@ -27,6 +27,7 @@ const WebProjectsPage = () => {
           </Text>
         </Container>
         <Space size={'2'} />
+
         <ProjectIndex />
       </PageLayout>
     </>
