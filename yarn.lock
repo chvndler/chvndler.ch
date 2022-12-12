@@ -2567,6 +2567,7 @@ __metadata:
     nextjs-progressbar: ^0.0.16
     postcss: ^8.4.19
     prettier: ^2.8.1
+    prismjs: ^1.27.0
     react: ^18.2.0
     react-device-detect: ^2.2.2
     react-dom: ^18.2.0
@@ -6701,6 +6702,13 @@ __metadata:
   bin:
     prettier: bin-prettier.js
   checksum: 4f21a0f1269f76fb36f54e9a8a1ea4c11e27478958bf860661fb4b6d7ac69aac1581f8724fa98ea3585e56d42a2ea317a17ff6e3324f40cb11ff9e20b73785cc
+  languageName: node
+  linkType: hard
+
+"prismjs@npm:^1.27.0":
+  version: 1.29.0
+  resolution: "prismjs@npm:1.29.0"
+  checksum: 007a8869d4456ff8049dc59404e32d5666a07d99c3b0e30a18bd3b7676dfa07d1daae9d0f407f20983865fd8da56de91d09cb08e6aa61f5bc420a27c0beeaf93
   languageName: node
   linkType: hard
 
