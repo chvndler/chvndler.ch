@@ -13,12 +13,12 @@ import {useEffect} from 'react'
  */
 
 const Index = () => {
-  const router = useRouter()
-  useEffect(() => {
-    router.replace('/app')
-  })
+ const router = useRouter()
+ useEffect(() => {
+  router.replace('/app')
+ })
 
-  return
+ return
 }
 
 export default Index

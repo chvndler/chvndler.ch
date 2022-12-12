@@ -5,36 +5,36 @@
  */
 
 @font-face {
-  font-family: 'Lateral Standard Bold';
-  src: url('/fonts/lateral/LateralStandard-Bold.woff2');
-  src: local('Lateral Standard Bold'),
-    url('/fonts/lateral/LateralStandard-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-display: block;
-  font-style: normal;
-  font-named-instance: 'Bold';
+ font-family: 'Lateral Standard Bold';
+ src: url('/fonts/lateral/LateralStandard-Bold.woff2');
+ src: local('Lateral Standard Bold'),
+  url('/fonts/lateral/LateralStandard-Bold.woff2') format('woff2');
+ font-weight: bold;
+ font-display: block;
+ font-style: normal;
+ font-named-instance: 'Bold';
 }
 
 @font-face {
-  font-family: 'Lateral Standard Medium';
-  src: url('/fonts/lateral/LateralStandard-Medium.woff2');
-  src: local('Lateral Standard Medium'),
-    url('/fonts/lateral/LateralStandard-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-display: block;
-  font-style: normal;
-  font-named-instance: 'Medium';
+ font-family: 'Lateral Standard Medium';
+ src: url('/fonts/lateral/LateralStandard-Medium.woff2');
+ src: local('Lateral Standard Medium'),
+  url('/fonts/lateral/LateralStandard-Medium.woff2') format('woff2');
+ font-weight: 500;
+ font-display: block;
+ font-style: normal;
+ font-named-instance: 'Medium';
 }
 
 @font-face {
-  font-family: 'Lateral Standard Regular';
-  src: url('/fonts/lateral/LateralStandard-Regular.woff2');
-  src: local('Lateral Standard Regular'),
-    url('/fonts/lateral/LateralStandard-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-display: block;
-  font-style: normal;
-  font-named-instance: 'Regular';
+ font-family: 'Lateral Standard Regular';
+ src: url('/fonts/lateral/LateralStandard-Regular.woff2');
+ src: local('Lateral Standard Regular'),
+  url('/fonts/lateral/LateralStandard-Regular.woff2') format('woff2');
+ font-weight: normal;
+ font-display: block;
+ font-style: normal;
+ font-named-instance: 'Regular';
 }
 
 /**
@@ -42,38 +42,38 @@
  */
 
 @font-face {
-  font-family: 'Lateral Extended Bold';
-  src: url('/fonts/lateral/LateralExt-Bold.woff2');
-  src: local('Lateral Extended Bold'), url('/fonts/lateral/LateralExt-Bold.woff2') format('woff2'),
-    url('/fonts/lateral/LateralExt-Bold.eot?#iefix') format('embedded-opentype');
-  font-weight: bold;
-  font-display: block;
-  font-style: normal;
-  font-named-instance: 'Bold';
+ font-family: 'Lateral Extended Bold';
+ src: url('/fonts/lateral/LateralExt-Bold.woff2');
+ src: local('Lateral Extended Bold'), url('/fonts/lateral/LateralExt-Bold.woff2') format('woff2'),
+  url('/fonts/lateral/LateralExt-Bold.eot?#iefix') format('embedded-opentype');
+ font-weight: bold;
+ font-display: block;
+ font-style: normal;
+ font-named-instance: 'Bold';
 }
 
 @font-face {
-  font-family: 'Lateral Extended Medium';
-  src: url('/fonts/lateral/LateralExt-Medium.woff2');
-  src: local('Lateral Extended Medium'),
-    url('/fonts/lateral/LateralExt-Medium.woff2') format('woff2'),
-    url('/fonts/lateral/LateralExt-Medium.eot?#iefix') format('embedded-opentype');
-  font-weight: 500;
-  font-display: block;
-  font-style: normal;
-  font-named-instance: 'Medium';
+ font-family: 'Lateral Extended Medium';
+ src: url('/fonts/lateral/LateralExt-Medium.woff2');
+ src: local('Lateral Extended Medium'),
+  url('/fonts/lateral/LateralExt-Medium.woff2') format('woff2'),
+  url('/fonts/lateral/LateralExt-Medium.eot?#iefix') format('embedded-opentype');
+ font-weight: 500;
+ font-display: block;
+ font-style: normal;
+ font-named-instance: 'Medium';
 }
 
 @font-face {
-  font-family: 'Lateral Extended Regular';
-  src: url('/fonts/lateral/LateralExt-Regular.woff2');
-  src: local('Lateral Extended Regular'),
-    url('/fonts/lateral/LateralExt-Regular.woff2') format('woff2'),
-    url('/fonts/lateral/LateralExt-Regular.eot?#iefix') format('embedded-opentype');
-  font-weight: 400;
-  font-display: block;
-  font-style: normal;
-  font-named-instance: 'Regular';
+ font-family: 'Lateral Extended Regular';
+ src: url('/fonts/lateral/LateralExt-Regular.woff2');
+ src: local('Lateral Extended Regular'),
+  url('/fonts/lateral/LateralExt-Regular.woff2') format('woff2'),
+  url('/fonts/lateral/LateralExt-Regular.eot?#iefix') format('embedded-opentype');
+ font-weight: 400;
+ font-display: block;
+ font-style: normal;
+ font-named-instance: 'Regular';
 }
 
 /**
