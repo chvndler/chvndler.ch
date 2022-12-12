@@ -16,7 +16,7 @@ import remarkGfm from 'remark-gfm'
 import {styled, theme} from 'stitches.config'
 
 import type {ArchiveMetaProps} from '@/components/common/archiveMeta'
-import {Box, Space} from '@/components/ds'
+import {Box, Heading, Space} from '@/components/ds'
 import {ArchiveLayout, WEBSITE_HOST_URL} from '@/components/layout/archive-page'
 import type {PostType} from '@/lib/types/post'
 import {postFilePaths, POSTS_PATH} from '@/lib/utils/mdxUtils'
@@ -29,6 +29,8 @@ const components = {
   Head,
   Image,
   Link,
+  Space,
+  Heading
 }
 
 type PostPageProps = {

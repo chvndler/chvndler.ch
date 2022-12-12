@@ -29,7 +29,7 @@ export const ArchiveIndex = ({posts}: IndexProps): JSX.Element => {
        <PostDate>{format(parseISO(post.date), 'MMMM dd, yyyy')}</PostDate>
        <Space size={1} />
        <PostSummary>{post.description}</PostSummary>
-       <Space size={2} />
+       <Space size={1} />
        <PostLink>
         <Link as={`archive/posts/${post.slug}`} href={`archive/posts/[slug]`}>
          Read More
@@ -63,6 +63,9 @@ const ArchivePostContainer = styled('div', {
  marginBottom: '2rem',
  paddingRight: '6rem',
  borderRadius: 16,
+ '@md': {
+  paddingRight: 0,
+ },
  // backgroundColor: theme.colors.slate4,
 })
 
@@ -91,7 +94,7 @@ const PostSummary = styled('p', {
 const PostLink = styled('a', {
  fontFamily: theme.fonts.latMedStd,
  fontSize: 14,
- color: theme.colors.slate12,
+ color: theme.colors.heliotrope,
  '&:hover': {
   color: theme.colors.slate11,
  },
