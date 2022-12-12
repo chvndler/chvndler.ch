@@ -1,4 +1,4 @@
-import type {PostType} from '../../pages/archive/post'
+import type {PostType} from '@/lib/types/post'
 
 export interface ArchiveMetaProps
   extends Pick<PostType, 'date' | 'description' | 'image' | 'title'> {

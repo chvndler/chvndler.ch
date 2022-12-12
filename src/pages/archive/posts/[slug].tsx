@@ -13,14 +13,13 @@ import rehypeCodeTitles from 'rehype-code-titles'
 import rehypePrism from 'rehype-prism-plus'
 import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
-import {theme} from 'stitches.config'
+import {styled, theme} from 'stitches.config'
 
 import type {ArchiveMetaProps} from '@/components/common/archiveMeta'
-import {Box, Heading, Paragraph, Space} from '@/components/ds'
+import {Box, Space} from '@/components/ds'
 import {ArchiveLayout, WEBSITE_HOST_URL} from '@/components/layout/archive-page'
+import type {PostType} from '@/lib/types/post'
 import {postFilePaths, POSTS_PATH} from '@/lib/utils/mdxUtils'
-
-import type {PostType} from '../post'
 
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
@@ -39,7 +38,7 @@ type PostPageProps = {
 
 const PostPage = ({source, frontMatter}: PostPageProps): JSX.Element => {
   const customMeta: ArchiveMetaProps = {
-    title: `${frontMatter.title} - Hunter Chang`,
+    title: `${frontMatter.title} - Chandler.`,
     description: frontMatter.description,
     image: `${WEBSITE_HOST_URL}${frontMatter.image}`,
     date: frontMatter.date,
@@ -48,9 +47,8 @@ const PostPage = ({source, frontMatter}: PostPageProps): JSX.Element => {
   return (
     <ArchiveLayout customMeta={customMeta}>
       <article>
-        <Heading css={{fontFamily: theme.fonts.latBoldStd}}>{frontMatter.title}</Heading>
-        <Space size={1} />
-        <Paragraph>{format(parseISO(frontMatter.date), 'MMMM dd, yyyy')}</Paragraph>
+        <ArchivePostTitle>{frontMatter.title}</ArchivePostTitle>
+        <PostDate>{format(parseISO(frontMatter.date), 'MMMM dd, yyyy')}</PostDate>
         <Space size={2} />
         <Box>
           <MDXRemote {...source} components={components} />
@@ -110,3 +108,19 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export default PostPage
+
+const ArchivePostTitle = styled('h2', {
+  fontSize: '1.5rem',
+  fontFamily: theme.fonts.latMedStd,
+  color: theme.colors.slate11,
+
+  '&:hover': {
+    color: theme.colors.slate10,
+  },
+})
+
+const PostDate = styled('p', {
+  fontFamily: theme.fonts.latRegStd,
+  fontSize: 12,
+  color: theme.colors.chxn3,
+})

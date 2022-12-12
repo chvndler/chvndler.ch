@@ -6,7 +6,7 @@
 @import './lateral.css';
 @import './inter.css';
 @import './at-hauss-mono.css';
-@import './okaidia.css';
+@import './prism-dracula.css';
 
 /*
 * ROOT
@@ -14,7 +14,7 @@
 */
 
 :root {
-    --font-primary: 'Scto Grotesk A Regular', sans-serif;
+    --font-primary: 'Inter', sans-serif;
     --font-system: -apple-system, blinkmacsystemfont, 'segoe ui', roboto, oxygen, ubuntu, cantarell, fira sans, droid sans, 'helvetica neue', sans-serif;
     --font-body: -apple-system, sans-serif;
     --inspect-color: #ff3333;
