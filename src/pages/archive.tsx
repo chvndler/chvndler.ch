@@ -64,7 +64,7 @@ const ArchivePostContainer = styled('div', {
  paddingRight: '6rem',
  borderRadius: 16,
  '@md': {
-  paddingRight: 0,
+  paddingRight: 'auto',
  },
  // backgroundColor: theme.colors.slate4,
 })
