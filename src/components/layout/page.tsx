@@ -41,7 +41,7 @@ export const PageLayout = ({children, page_type}: LayoutProps) => {
   return (
    <>
     <Meta />
-    <AtlrNavbar />
+    {/* <!-- <AtlrNavbar /> --> */}
     <AppWrapper>
      <main>{children}</main>
     </AppWrapper>
@@ -55,7 +55,7 @@ export const PageLayout = ({children, page_type}: LayoutProps) => {
   return (
    <>
     <Meta />
-    <AtlrNavbar />
+    {/* <!-- <AtlrNavbar /> --> */}
     <BodyContainer>
      <main>{children}</main>
     </BodyContainer>

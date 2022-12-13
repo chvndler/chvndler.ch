@@ -1,13 +1,17 @@
 import {styled} from 'stitches.config'
 
+import {Flex} from '@/components/ds'
 import {ThemeSwitch} from '@/components/primitives/theme-switcher'
-import {CurrentTime} from '@/components/sxripts'
+import {CurrentTime, CursorData} from '@/components/sxripts'
 
 export const CoverFooter = () => {
  return (
   <Footer>
    <ContentBox alignment="start" css={{'@md': {display: 'none'}}}>
-    <CurrentTime />
+    <Flex css={{flexDirection: 'column', alignItems: 'flex-start'}}>
+     <CurrentTime />
+     <CursorData />
+    </Flex>
    </ContentBox>
 
    <ContentBox alignment="end" css={{}}>
