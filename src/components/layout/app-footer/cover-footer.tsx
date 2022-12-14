@@ -1,23 +1,26 @@
 import {styled} from 'stitches.config'
 
 import {Flex} from '@/components/ds'
+import {Portal} from '@/components/primitives/portal'
 import {ThemeSwitch} from '@/components/primitives/theme-switcher'
 import {CurrentTime, CursorData} from '@/components/sxripts'
 
 export const CoverFooter = () => {
   return (
-    <Footer>
-      <ContentBox alignment="start" css={{'@md': {display: 'none'}}}>
-        <Flex css={{flexDirection: 'column', alignItems: 'flex-start'}}>
-          <CurrentTime />
-          <CursorData />
-        </Flex>
-      </ContentBox>
+    <Portal>
+      <Footer>
+        <ContentBox alignment="start" css={{'@md': {display: 'none'}}}>
+          <Flex css={{flexDirection: 'column', alignItems: 'flex-start'}}>
+            <CurrentTime />
+            <CursorData />
+          </Flex>
+        </ContentBox>
 
-      <ContentBox alignment="end" css={{}}>
-        <ThemeSwitch />
-      </ContentBox>
-    </Footer>
+        <ContentBox alignment="end" css={{}}>
+          <ThemeSwitch />
+        </ContentBox>
+      </Footer>
+    </Portal>
   )
 }
 
