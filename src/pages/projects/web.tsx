@@ -1,4 +1,4 @@
-import {WebProjectDisplay} from '@/components/displays/web-project-display'
+import {WebProjectDisplay} from '@/components/displays/web'
 import {Container, Space, Text} from '@/components/ds'
 import {PageLayout} from '@/components/layout/page'
 

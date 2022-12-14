@@ -1,49 +1,49 @@
 /* stylelint-disable prettier/prettier */
 
 @font-face {
- font-family: 'PP Pangram Sans Rounded Regular';
- src: url('/fonts/pangram/PPPangramSansRounded-Regular.woff2');
- src: local('PP Pangram Sans Rounded Regular'), local('PPPangramSansRounded-Regular'),
-  url('/fonts/pangram/PPPangramSansRounded-Regular.eot') format('embedded-opentype'),
-  url('/fonts/pangram/PPPangramSansRounded-Regular.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/pangram/PPPangramSansRounded-Regular.woff2') format('woff2'),
-  url('/fonts/pangram/PPPangramSansRounded-Regular.woff') format('woff');
- font-weight: 400;
- font-style: normal;
+  font-family: 'PP Pangram Sans Rounded Regular';
+  src: url('/fonts/pangram/PPPangramSansRounded-Regular.woff2');
+  src: local('PP Pangram Sans Rounded Regular'), local('PPPangramSansRounded-Regular'),
+    url('/fonts/pangram/PPPangramSansRounded-Regular.eot') format('embedded-opentype'),
+    url('/fonts/pangram/PPPangramSansRounded-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/pangram/PPPangramSansRounded-Regular.woff2') format('woff2'),
+    url('/fonts/pangram/PPPangramSansRounded-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
- font-family: 'PP Pangram Sans Rounded Medium';
- src: url('/fonts/pangram/PPPangramSansRounded-Medium.woff2');
- src: local('PP Pangram Sans Rounded Medium'), local('PPPangramSansRounded-Medium'),
-  url('/fonts/pangram/PPPangramSansRounded-Medium.eot') format('embedded-opentype'),
-  url('/fonts/pangram/PPPangramSansRounded-Medium.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/pangram/PPPangramSansRounded-Medium.woff2') format('woff2'),
-  url('/fonts/pangram/PPPangramSansRounded-Medium.woff') format('woff');
- font-weight: 500;
- font-style: normal;
+  font-family: 'PP Pangram Sans Rounded Medium';
+  src: url('/fonts/pangram/PPPangramSansRounded-Medium.woff2');
+  src: local('PP Pangram Sans Rounded Medium'), local('PPPangramSansRounded-Medium'),
+    url('/fonts/pangram/PPPangramSansRounded-Medium.eot') format('embedded-opentype'),
+    url('/fonts/pangram/PPPangramSansRounded-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/pangram/PPPangramSansRounded-Medium.woff2') format('woff2'),
+    url('/fonts/pangram/PPPangramSansRounded-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
- font-family: 'PP Pangram Sans Rounded Semibold';
- src: url('/fonts/pangram/PPPangramSansRounded-Semibold.woff2');
- src: local('PP Pangram Sans Rounded Semibold'), local('PPPangramSansRounded-Semibold'),
-  url('/fonts/pangram/PPPangramSansRounded-Semibold.eot') format('embedded-opentype'),
-  url('/fonts/pangram/PPPangramSansRounded-Semibold.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/pangram/PPPangramSansRounded-Semibold.woff2') format('woff2'),
-  url('/fonts/pangram/PPPangramSansRounded-Semibold.woff') format('woff');
- font-weight: 600;
- font-style: normal;
+  font-family: 'PP Pangram Sans Rounded Semibold';
+  src: url('/fonts/pangram/PPPangramSansRounded-Semibold.woff2');
+  src: local('PP Pangram Sans Rounded Semibold'), local('PPPangramSansRounded-Semibold'),
+    url('/fonts/pangram/PPPangramSansRounded-Semibold.eot') format('embedded-opentype'),
+    url('/fonts/pangram/PPPangramSansRounded-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/pangram/PPPangramSansRounded-Semibold.woff2') format('woff2'),
+    url('/fonts/pangram/PPPangramSansRounded-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
- font-family: 'PP Pangram Sans Rounded Bold';
- src: url('/fonts/pangram/PPPangramSans-Bold.woff2');
- src: local('PP Pangram Sans Rounded Bold'), local('PPPangramSansRounded-Bold'),
-  url('/fonts/pangram/PPPangramSansRounded-Bold.eot') format('embedded-opentype'),
-  url('/fonts/pangram/PPPangramSansRounded-Bold.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/pangram/PPPangramSansRounded-Bold.woff2') format('woff2'),
-  url('/fonts/pangram/PPPangramSansRounded-Bold.woff') format('woff');
- font-weight: bold;
- font-style: normal;
+  font-family: 'PP Pangram Sans Rounded Bold';
+  src: url('/fonts/pangram/PPPangramSans-Bold.woff2');
+  src: local('PP Pangram Sans Rounded Bold'), local('PPPangramSansRounded-Bold'),
+    url('/fonts/pangram/PPPangramSansRounded-Bold.eot') format('embedded-opentype'),
+    url('/fonts/pangram/PPPangramSansRounded-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/pangram/PPPangramSansRounded-Bold.woff2') format('woff2'),
+    url('/fonts/pangram/PPPangramSansRounded-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
