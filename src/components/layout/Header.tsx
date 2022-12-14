@@ -19,19 +19,26 @@ export const PageHeader = () => {
             <PassLink href={'/'}>
               <CDCLogo />
             </PassLink>
-            <Name>CHANDLER CHAPPELL©</Name>
+            <Name>CHANDLER CHAPPELL</Name>
           </Box>
 
           <Box className={'left'}>
-            <Paragraph css={{fontFamily: theme.fonts.latRegStd, color: theme.colors.chxn4}}>
-              Front-end developer and designer.
+            <Paragraph
+              css={{fontSize: 14, fontFamily: theme.fonts.latMedStd, color: theme.colors.chxn4}}>
+              FRONT-END DEVELOPER AND DESIGNER
             </Paragraph>
             <Space size={'1'} />
-            <Paragraph css={{fontFamily: theme.fonts.latRegStd, color: theme.colors.chxn4}}>
-              90's kid. Creating cool and taking notes. Enjoying the internet and open-source. I'm
-              very component-driven, focusing on telling stories through every detail that make a
-              web experience worth having. Experienced in graphic, and motion design, as well as
-              three.js. I am currently looking for my next role,{' '}
+            <Paragraph
+              css={{
+                fontSize: 14,
+                letterSpacing: '0.02rem',
+                fontFamily: theme.fonts.latRegStd,
+                color: theme.colors.chxn4,
+              }}>
+              90's kid– creating cool and taking notes. Enjoying the internet and open-source. I'm
+              very component-driven, the focus in the moment is telling stories through every detail
+              that make a web experience worth having. Experienced in graphic, and motion design, as
+              well as three.js. I am currently looking for my next role,{' '}
               <InlineLink href={email}>let's connect.</InlineLink>
             </Paragraph>
 
@@ -88,6 +95,7 @@ const styledTopBox = styled('div', {
   display: 'flex',
   padding: '3rem',
   '@md': {
+    paddingTop: '2rem',
     padding: '1.5rem',
   },
 })
@@ -123,7 +131,7 @@ const styledName = styled('h1', {
 
 const styledPersonalLink = styled('div', {
   fontFamily: theme.fonts.latMedStd,
-  fontSize: 16,
+  fontSize: 14,
   lineHeight: '1.4',
 })
 
