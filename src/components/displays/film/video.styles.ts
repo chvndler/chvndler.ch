@@ -10,10 +10,10 @@ const VideoWrapperStyles = css({
 })
 
 export const MuxVideoStyles = css('video', {
-  zIndex: 1,
-  position: 'relative',
   width: '100%',
   height: '100%',
+  zIndex: 1,
+  position: 'relative',
   overflow: 'hidden',
   overflowX: 'hidden',
   overflowY: 'hidden',

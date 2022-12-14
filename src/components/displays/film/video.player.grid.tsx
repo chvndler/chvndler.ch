@@ -10,7 +10,7 @@ export const VideoPlayerGrid = ({children}: FProps) => {
   return (
     <Section size={'4'}>
       <Container size={'3'} css={{}}>
-        <Grid columns={'2'} justify={'between'} align={'center'} gap={'3'} css={{width: '100%'}}>
+        <Grid columns={'1'} justify={'between'} align={'center'} gap={'3'} css={{width: '100%'}}>
           {children}
         </Grid>
       </Container>
