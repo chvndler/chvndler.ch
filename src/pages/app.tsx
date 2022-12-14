@@ -2,8 +2,8 @@ import Inspect from 'inspx'
 
 import {Canvas} from '@/components/ds'
 import {FixedCanvas} from '@/components/ds/canvas'
-import {PageHeader} from '@/components/layout/header'
 import {PageLayout} from '@/components/layout/page'
+import {PageHeader} from '@/components/layout/PageHeader'
 
 const NextAppPage = () => {
   return (
