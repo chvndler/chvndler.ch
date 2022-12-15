@@ -16,7 +16,7 @@ import remarkGfm from 'remark-gfm'
 import {styled, theme} from 'stitches.config'
 
 import type {ArchiveMetaProps} from '@/components/common/archiveMeta'
-import {Box, Heading, Space} from '@/components/ds'
+import {Heading, Space} from '@/components/ds'
 import {ArchiveLayout, WEBSITE_HOST_URL} from '@/components/layout/archive-page'
 import type {PostType} from '@/lib/types/post'
 import {postFilePaths, POSTS_PATH} from '@/lib/utils/mdxUtils'
@@ -52,9 +52,9 @@ const PostPage = ({source, frontMatter}: PostPageProps): JSX.Element => {
         <ArchivePostTitle>{frontMatter.title}</ArchivePostTitle>
         <PostDate>{format(parseISO(frontMatter.date), 'MMMM dd, yyyy')}</PostDate>
         <Space size={2} />
-        <Box>
+        <ArchiveContent>
           <MDXRemote {...source} components={components} />
-        </Box>
+        </ArchiveContent>
       </article>
     </ArchiveLayout>
   )
@@ -125,4 +125,8 @@ const PostDate = styled('p', {
   fontFamily: theme.fonts.latRegStd,
   fontSize: 12,
   color: theme.colors.chxn3,
+})
+
+const ArchiveContent = styled('div', {
+  fontFamily: theme.fonts.system,
 })

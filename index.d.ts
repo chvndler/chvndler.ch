@@ -1,6 +1,8 @@
-declare module '*.svg' {
-  const ReactComponent: React.FC<React.SVGProps<SVGSVGElement>>
-  const content: string
+/** @format */
 
-  export default ReactComponent
+declare module '*.svg' {
+ const ReactComponent: React.FC<React.SVGProps<SVGSVGElement>>
+ const content: string
+
+ export default ReactComponent
 }

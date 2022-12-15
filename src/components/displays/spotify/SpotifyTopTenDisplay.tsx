@@ -1,3 +1,5 @@
+/** @format */
+
 import {Section} from '@/components/ds'
 
 import {TrackCards} from './track.card'
@@ -8,11 +10,11 @@ import {TrackCards} from './track.card'
  */
 
 export const SpotifyTopTenDisplay = () => {
-  return (
-    <Section size={'4'}>
-      <TrackCards />
-    </Section>
-  )
+ return (
+  <Section size={'4'}>
+   <TrackCards />
+  </Section>
+ )
 }
 
 SpotifyTopTenDisplay.displayName = 'SpotifyTopTenDisplay'

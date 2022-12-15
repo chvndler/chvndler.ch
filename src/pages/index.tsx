@@ -1,3 +1,5 @@
+/** @format */
+
 import {useRouter} from 'next/router'
 import {useEffect} from 'react'
 
@@ -13,12 +15,12 @@ import {useEffect} from 'react'
  */
 
 const Index = () => {
-  const router = useRouter()
-  useEffect(() => {
-    router.replace('/app')
-  })
+ const router = useRouter()
+ useEffect(() => {
+  router.replace('/app')
+ })
 
-  return
+ return
 }
 
 export default Index

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # `ts` dir
 
 - Put common types in here

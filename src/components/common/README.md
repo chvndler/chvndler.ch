@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # `common` dir
 
 - Common components (maybe reused across the whole app)

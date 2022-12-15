@@ -1,3 +1,5 @@
+/** @format */
+
 @import './helpers';
 @import './reset.css';
 @import './scto-grotesk-a.css';
@@ -14,98 +16,98 @@
 */
 
 :root {
-  --font-primary: 'Inter', sans-serif;
-  --font-system: -apple-system, blinkmacsystemfont, 'segoe ui', roboto, oxygen, ubuntu, cantarell,
-    fira sans, droid sans, 'helvetica neue', sans-serif;
-  --font-body: -apple-system, sans-serif;
-  --inspect-color: #ff3333;
+ --font-primary: 'Inter', sans-serif;
+ --font-system: -apple-system, blinkmacsystemfont, 'segoe ui', roboto, oxygen,
+  ubuntu, cantarell, fira sans, droid sans, 'helvetica neue', sans-serif;
+ --font-body: -apple-system, sans-serif;
+ --inspect-color: #ff3333;
 }
 
 *,
 *:active,
 *:focus {
-  box-sizing: border-box;
-  outline: none;
-  // cursor: none;
+ box-sizing: border-box;
+ outline: none;
+ // cursor: none;
 }
 
 #__next {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
 }
 
 .fullWidth {
-  width: calc(var(--vw) * 100);
+ width: calc(var(--vw) * 100);
 }
 
 .fullHeight {
-  height: calc(var(--vh) * 100);
+ height: calc(var(--vh) * 100);
 }
 
 html {
-  line-height: 1.5;
-  box-sizing: border-box;
-  text-rendering: geometricprecision;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ line-height: 1.5;
+ box-sizing: border-box;
+ text-rendering: geometricprecision;
+ -webkit-text-size-adjust: 100%;
+ -webkit-font-smoothing: antialiased;
+ -webkit-font-smoothing: subpixel-antialiased;
+ -moz-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
 }
 
 html,
 body {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+ overflow-x: hidden;
+ scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--font-primary);
-  transition: opacity #{$duration / 6 + 's'} ease-in;
+ font-family: var(--font-primary);
+ transition: opacity #{$duration / 6 + 's'} ease-in;
 }
 
 body.inspect * {
-  outline: 0.5px dashed var(--inspect-color) !important;
+ outline: 0.5px dashed var(--inspect-color) !important;
 }
 
 body:not(.user-is-tabbing) button:focus,
 body:not(.user-is-tabbing) input:focus,
 body:not(.user-is-tabbing) select:focus,
 body:not(.user-is-tabbing) textarea:focus {
-  outline: none;
+ outline: none;
 }
 
 // WARNING: if you don't want to use a fade in for the body, you can remove
 // this chunk of CSS. But ALSO make sure you remove the style tag in the body in _document.tsx
 // and the transition property on the body as well. thx.
 html.fonts-loaded body {
-  opacity: 1 !important;
+ opacity: 1 !important;
 }
 
 ::selection {
-  background-color: white;
-  color: black;
-  -webkit-text-fill-color: black;
+ background-color: white;
+ color: black;
+ -webkit-text-fill-color: black;
 }
 
 .invert-selection::selection,
 .invert-selection *::selection {
-  background-color: black;
-  color: white;
-  -webkit-text-fill-color: white;
+ background-color: black;
+ color: white;
+ -webkit-text-fill-color: white;
 }
 
 .ss01 {
-  font-feature-settings: 'ss01' on;
+ font-feature-settings: 'ss01' on;
 }
 
 .ss02 {
-  font-feature-settings: 'ss02' on;
+ font-feature-settings: 'ss02' on;
 }
 
 .ss03 {
-  font-feature-settings: 'ss03' on;
+ font-feature-settings: 'ss03' on;
 }
 
 /**
@@ -115,42 +117,42 @@ html.fonts-loaded body {
  */
 
 [cmdk-root] {
-  z-index: 9999 !important;
-  max-width: 600px !important;
-  overflow: hidden;
+ z-index: 9999 !important;
+ max-width: 600px !important;
+ overflow: hidden;
 }
 
 @media (max-width: 650px) {
-  [cmdk-root] {
-    z-index: 9999 !important;
-    max-width: 100% !important;
-    width: 100%;
-    overflow: hidden;
-  }
+ [cmdk-root] {
+  z-index: 9999 !important;
+  max-width: 100% !important;
+  width: 100%;
+  overflow: hidden;
+ }
 }
 
 [cmdk-overlay] {
-  background-color: black;
-  opacity: 0.5;
-  z-index: auto;
+ background-color: black;
+ opacity: 0.5;
+ z-index: auto;
 }
 
 [cmdk-item] {
-  color: hsl(252, 4%, 57.3%);
-  background-color: transparent;
-  border-radius: 6px;
-  padding-left: 8px;
-  padding-right: 8px;
-  user-select: none;
-  will-change: background, color;
-  transition: all 150ms ease;
-  transition-property: none;
+ color: hsl(252, 4%, 57.3%);
+ background-color: transparent;
+ border-radius: 6px;
+ padding-left: 8px;
+ padding-right: 8px;
+ user-select: none;
+ will-change: background, color;
+ transition: all 150ms ease;
+ transition-property: none;
 }
 
 [cmdk-item][aria-selected='true'] {
-  color: hsl(252, 4%, 44.8%);
-  background-color: hsl(283, 4.4%, 91.3%);
-  border-radius: 6px;
+ color: hsl(252, 4%, 44.8%);
+ background-color: hsl(283, 4.4%, 91.3%);
+ border-radius: 6px;
 }
 
 /*
@@ -159,80 +161,80 @@ html.fonts-loaded body {
 */
 
 [cmdk-group-heading] {
-  font-family: 'Inter', sans-serif !important;
-  font-size: 12px !important;
-  font-weight: 500 !important;
-  color: #ff3333;
-  user-select: none;
-  padding: 2px 6px 2px 6px;
+ font-family: 'Inter', sans-serif !important;
+ font-size: 12px !important;
+ font-weight: 500 !important;
+ color: #ff3333;
+ user-select: none;
+ padding: 2px 6px 2px 6px;
 }
 
 * + [cmdk-group] {
-  margin-top: 8px;
+ margin-top: 8px;
 }
 
 [cmdk-item] {
-  content-visibility: auto;
+ content-visibility: auto;
 }
 
 [data-radix-popper-content-wrapper] {
-  height: auto !important;
-  width: 100% !important;
-  padding: 12px !important;
-  background-color: transparent;
-  border-radius: 16px !important;
-  /* backdrop-filter: blur(10px) !important; */
-  /* -webkit-backdrop-filter: blur(10px) !important; */
-  position: absolute !important;
-  left: 0 !important;
-  right: 0 !important;
-  top: 0 !important;
-  justify-content: center !important;
-  align-items: center !important;
-  margin: 0 !important;
-  min-width: max-content !important;
-  transform: translate3d(0) !important;
-  z-index: auto;
+ height: auto !important;
+ width: 100% !important;
+ padding: 12px !important;
+ background-color: transparent;
+ border-radius: 16px !important;
+ /* backdrop-filter: blur(10px) !important; */
+ /* -webkit-backdrop-filter: blur(10px) !important; */
+ position: absolute !important;
+ left: 0 !important;
+ right: 0 !important;
+ top: 0 !important;
+ justify-content: center !important;
+ align-items: center !important;
+ margin: 0 !important;
+ min-width: max-content !important;
+ transform: translate3d(0) !important;
+ z-index: auto;
 }
 
 #muxVideo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  --center-controls: none;
-  --bottom-play-button: none;
-  --controls-backdrop-color: rgb(0 0 0 / 20%);
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ position: fixed;
+ right: 0;
+ bottom: 0;
+ min-width: 100%;
+ min-height: 100%;
+ --center-controls: none;
+ --bottom-play-button: none;
+ --controls-backdrop-color: rgb(0 0 0 / 20%);
 }
 
 #video_control_bar > * {
-  display: inline-block;
+ display: inline-block;
 }
 
 mux-player {
-  border-radius: inherit;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: cover;
-  --media-object-position: center;
-  --media-object-fit: cover;
-  --seek-live-button: none;
-  --seek-backward-button: none;
-  --seek-forward-button: none;
-  --captions-button: none;
-  --fullscreen-button: none;
-  --cast-button: none;
-  --playback-rate-button: none;
-  --volume-range: none;
-  /*--center-controls: none;*/
-  --bottom-play-button: none;
-  --controls-backdrop-color: rgb(0 0 0 / 20%);
-  --time-range: none;
-  backdrop-filter: blur(10px);
+ border-radius: inherit;
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ object-fit: cover;
+ --media-object-position: center;
+ --media-object-fit: cover;
+ --seek-live-button: none;
+ --seek-backward-button: none;
+ --seek-forward-button: none;
+ --captions-button: none;
+ --fullscreen-button: none;
+ --cast-button: none;
+ --playback-rate-button: none;
+ --volume-range: none;
+ /*--center-controls: none;*/
+ --bottom-play-button: none;
+ --controls-backdrop-color: rgb(0 0 0 / 20%);
+ --time-range: none;
+ backdrop-filter: blur(10px);
 }

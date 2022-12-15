@@ -1,3 +1,5 @@
+/** @format */
+
 // production...
 export {CDCLogoScene} from './CDC.LogoScene'
 
