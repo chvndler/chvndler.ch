@@ -17,8 +17,7 @@ export const MuxVideoStyles = css('video', {
  zIndex: 1,
  position: 'relative',
  overflow: 'hidden',
- overflowX: 'hidden',
- overflowY: 'hidden',
+ // border: `1px solid ${theme.colors.chxn4A}`,
 
  // backgroundAttachment: 'fixed',
  // backgroundPosition: 'center',
@@ -27,7 +26,7 @@ export const MuxVideoStyles = css('video', {
  // objectFit: 'cover',
  // objectPosition: 'center',
  margin: 'auto',
- padding: 'auto',
+ padding: '0',
  outline: 'none',
  display: 'flex',
  opacity: 1,

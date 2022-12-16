@@ -3,47 +3,30 @@
 import {VideoPlayer} from './video.player'
 import {VideoPlayerGrid} from './video.player.grid'
 
-const ipfsUrl = 'https://ipfs.io/ipfs/'
-const aws = 'https://s3.amazonaws.com/truth.cloud/assets/'
+// constantes...
+const accountHash = 'yKMcWkV75FeiDVgx1hbCXg'
+const domain = 'imagedelivery.net'
+const variant = 'public'
 
-/**
- *
- * @render - project grid component.
- *
- */
+const rodeo = 'a34bb37f-b3fd-4e40-f54a-ff5964ad6800'
+const aquaman = 'f86d39ba-47ab-49e6-1bf3-a86b377aa000'
 
 export const FilmProjects = () => {
  return (
   <VideoPlayerGrid>
    <VideoPlayer
     videoId={'t5RoUqJSc9cPYpHj3GBttq5EVok5J02yuOYhw00MUsvn00'}
-    posterId={`${ipfsUrl}QmWeDR3ZKTffqehrmyLWyXaiXrcbdMZyH1C4xS2baT9aSh?filename=Screenshot%202022-12-16%20at%2012.21.57%20AM.png`}
+    posterId={`https://${domain}/${accountHash}/${rodeo}/${variant}`}
     captionTitle={'Beaux Isaac - Rodeo© [Official Music Video]'}
     captionOther={'"Rodeo©" by Beaux Isaac'}
    />
    <VideoPlayer
-    videoId={'1RLeJdsCMunRRJ81yLED8PEacwYsaxH01MtGYZQWTR6g'}
-    posterId={`${aws}social.jpg`}
-    captionTitle={'©2019 FILM REEL'}
-    captionOther={'Small Legacy Description of film'}
-   />
-   <VideoPlayer
     videoId={'Lr2BtEpVee015QBnDGPJzGuXfxBlujKXp9Q3mkkRYnEo'}
-    posterId={'https://s3.amazonaws.com/truth.cloud/assets/social.jpg'}
-    captionTitle={'AQUAMAN©'}
-    captionOther={'Small Legacy Description of film'}
-   />
-   <VideoPlayer
-    videoId={'2niI9Q2xVH3hebtWjdVHBUFqlo4iy2iP6fU7i2MIS6o'}
-    posterId={'https://s3.amazonaws.com/truth.cloud/assets/social.jpg'}
-    captionTitle={'ARMED©'}
-    captionOther={'Small Legacy Description of film'}
-   />
-   <VideoPlayer
-    videoId={'AgJIkK2RpFPQ183up02vQjizlfTcQeV2Tv8RXFvNpWQo'}
-    posterId={'https://s3.amazonaws.com/truth.cloud/assets/social.jpg'}
-    captionTitle={'ARMED©'}
-    captionOther={'Small Legacy Description of film'}
+    posterId={`https://${domain}/${accountHash}/${aquaman}/${variant}`}
+    captionTitle={'Young Pharro - AQUAMAN© [Official Music Video]'}
+    captionOther={
+     'Official Music Video for Aquaman by Young Pharro Ft. Chris Buxton / In Honor of Juice Wrld.'
+    }
    />
   </VideoPlayerGrid>
  )
