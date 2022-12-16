@@ -21,6 +21,7 @@ const personal = 'https://github.com/chvndler/chvndler.ch'
 const isi = 'https://www.isielitetraining.com/'
 const icxns = 'https://github.com/chvndler/icxns'
 const tfl = 'https://convention.isielitetraining.com/'
+const arie = 'https://arie.chvndler.ch'
 
 export const WebProjectDisplay = () => {
  const [ref] = useKeenSlider<HTMLDivElement>({
@@ -47,21 +48,29 @@ export const WebProjectDisplay = () => {
    <div ref={ref} className='keen-slider'>
     <div className='keen-slider__slide number-slide1'>
      <ProjectEntry
-      pRepository={kit}
-      pTitle='Atelier® Kit'
-      pSummary='An ever– expanding library of React components and primitives.'
+      pRepository={arie}
+      pTitle='ARIE©'
+      pSummary='A simple UI component for displaying information based on users cursor and scroll positions, in a more aesthetic way.'
      />
     </div>
 
     <div className='keen-slider__slide number-slide2'>
      <ProjectEntry
-      pRepository={typesxript}
-      pTitle={'typescxript®'}
-      pSummary='Starter code for building performant web apps. I start with this code for every project I start.'
+      pRepository={kit}
+      pTitle='Atelier.Kit'
+      pSummary='An ever– expanding library of React components and primitives.'
      />
     </div>
 
     <div className='keen-slider__slide number-slide3'>
+     <ProjectEntry
+      pRepository={typesxript}
+      pTitle={'typescxript.'}
+      pSummary='Starter code for building performant web apps. I start with this code for every project I start.'
+     />
+    </div>
+
+    <div className='keen-slider__slide number-slide4'>
      <ProjectEntry
       pRepository={personal}
       pTitle='Personal.'
@@ -73,7 +82,7 @@ export const WebProjectDisplay = () => {
      <ProjectEntry
       pRepository={isi}
       pTitle='ISI® Elite Training'
-      pSummary='My previous roles official website. Check it out and sign up if find a location near you.'
+      pSummary='My previous roles official website. Check it out and find a location near you.'
      />
     </div>
 
@@ -81,7 +90,7 @@ export const WebProjectDisplay = () => {
      <ProjectEntry
       pRepository={icxns}
       pTitle='icxns'
-      pSummary="A crisp set of UI icons. Use theme however you'd like."
+      pSummary="A crisp set of interface icons. Use theme however you'd like."
      />
     </div>
 

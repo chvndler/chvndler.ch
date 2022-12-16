@@ -11,7 +11,7 @@ type FProps = {
 export const VideoPlayerGrid = ({children}: FProps) => {
  return (
   <Section size={'4'}>
-   <Container size={'3'} css={{}}>
+   <Container size={'video'} css={{}}>
     <Grid
      columns={'1'}
      justify={'between'}

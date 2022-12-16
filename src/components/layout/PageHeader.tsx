@@ -18,6 +18,7 @@ const twitter = 'https://twitter.com/chvndlerch'
 const github = 'https://github.com/chvndler'
 const three = '/projects/three'
 const archive = '/archive'
+const film = '/projects/film'
 
 export const PageHeader = () => {
  return (
@@ -89,7 +90,12 @@ export const PageHeader = () => {
         <Space size={'1'} />
         <PassLink href={projects}>
          <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>
-          projects
+          web projects
+         </PersonalLink>
+        </PassLink>
+        <PassLink href={film}>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>
+          film projects
          </PersonalLink>
         </PassLink>
         <PassLink href={archive}>

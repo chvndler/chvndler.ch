@@ -101,8 +101,7 @@ const SummaryStyles = styled('p', {
 const TitleStyles = styled('h3', {
  transition: 'all 0.4s ease-in-out',
  fontSize: 24,
- fontFamily: theme.fonts.system,
- fontWeight: 'bold',
+ fontFamily: theme.fonts.latMedStd,
  color: theme.colors.heliotrope,
  '&:hover': {color: theme.colors.portage}
 })

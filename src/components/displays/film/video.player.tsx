@@ -42,6 +42,7 @@ export const VideoPlayer = ({
      playbackId={videoId}
      poster={posterId}
      primaryColor={'rgba(72, 67, 73, 0.8)'}
+     secondaryColor={'transparent'}
      metadata={{}}
     />
     <CaptionBox>

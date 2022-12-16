@@ -27,6 +27,9 @@ export const Container = styled('div', {
    },
    '4': {
     maxWidth: 'none'
+   },
+   'video': {
+    maxWidth: '940px'
    }
   },
   align: {

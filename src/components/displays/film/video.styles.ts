@@ -12,20 +12,20 @@ const VideoWrapperStyles = css({
 })
 
 export const MuxVideoStyles = css('video', {
- width: '100%',
- height: '100%',
+ width: 'auto',
+ height: 'auto',
  zIndex: 1,
  position: 'relative',
  overflow: 'hidden',
  overflowX: 'hidden',
  overflowY: 'hidden',
 
- backgroundAttachment: 'fixed',
- backgroundPosition: 'center',
- backgroundRepeat: 'no-repeat',
- backgroundSize: 'cover',
- objectFit: 'cover',
- objectPosition: 'center',
+ // backgroundAttachment: 'fixed',
+ // backgroundPosition: 'center',
+ // backgroundRepeat: 'no-repeat',
+ // backgroundSize: 'cover',
+ // objectFit: 'cover',
+ // objectPosition: 'center',
  margin: 'auto',
  padding: 'auto',
  outline: 'none',
@@ -44,12 +44,14 @@ const CaptionBoxStyles = css({
  width: 'auto',
  height: 'auto',
  margin: 0,
- padding: 4
+ padding: 4,
+ marginTop: 4,
+ marginBottom: 8
 })
 
 const CaptionTitleStyles = css({
- fontFamily: theme.fonts.latMedExtd,
- fontSize: 12,
+ fontFamily: theme.fonts.latMedStd,
+ fontSize: 14,
  position: 'relative',
  zIndex: 2,
  display: 'flex',
@@ -63,7 +65,7 @@ const CaptionTitleStyles = css({
 })
 
 const CaptionOtherStyles = css({
- fontFamily: theme.fonts.scto,
+ fontFamily: theme.fonts.latRegStd,
  fontSize: 14,
  color: theme.colors.chxn3,
  position: 'relative',
