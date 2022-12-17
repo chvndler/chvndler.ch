@@ -25,6 +25,7 @@ export const PageHeader = () => {
        <CDCLogo />
       </PassLink>
       <Name>CHANDLER CHAPPELL</Name>
+      <GitSha />
      </Box>
 
      <Box className={'left'}>
@@ -81,8 +82,6 @@ export const PageHeader = () => {
         <PassLink href={three}>
          <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>three.js</PersonalLink>
         </PassLink>
-
-        <GitSha />
        </Box>
       </Grid>
      </Box>
