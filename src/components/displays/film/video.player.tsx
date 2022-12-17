@@ -1,14 +1,8 @@
 /** @format */
 
-import MuxPlayer from '@mux/mux-player-react'
+import MuxPlayer from '@mux/mux-player-react/lazy'
 
-import {
- CaptionBox,
- CaptionOther,
- CaptionTitle,
- MuxVideoStyles,
- VideoWrapper
-} from './video.styles'
+import {CaptionBox, CaptionOther, CaptionTitle, MuxVideoStyles, VideoWrapper} from './video.styles'
 
 type MuxProps = {
  captionTitle?: string
@@ -17,13 +11,7 @@ type MuxProps = {
  posterId?: string
 }
 
-export const VideoPlayer = ({
- videoId,
- posterId,
- captionTitle,
- captionOther,
- ...props
-}: MuxProps) => {
+export const VideoPlayer = ({videoId, posterId, captionTitle, captionOther, ...props}: MuxProps) => {
  return (
   <>
    <VideoWrapper>
@@ -41,7 +29,8 @@ export const VideoPlayer = ({
      muted
      playbackId={videoId}
      poster={posterId}
-     primaryColor={'rgba(72, 67, 73, 0.8)'}
+     // primaryColor={'rgba(72, 67, 73, 0.8)'}
+     primaryColor={'#D9E3F2'}
      secondaryColor={'transparent'}
      metadata={{}}
     />

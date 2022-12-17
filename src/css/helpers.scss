@@ -25,9 +25,7 @@ $duration: $reciprocal-golden-ratio * 1.2;
   @return 0;
  }
  @if $min != 'placeholder' {
-  @return string.unquote(
-   'max(' + $min + ', ' + (math.div($target, $context) * 100) + 'vw)'
-  );
+  @return string.unquote('max(' + $min + ', ' + (math.div($target, $context) * 100) + 'vw)');
  }
  @return string.unquote((math.div($target, $context) * 100) + 'vw');
 }

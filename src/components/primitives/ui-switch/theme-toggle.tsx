@@ -14,9 +14,7 @@ export const ThemeToggle = () => {
   <form>
    <Flex css={{alignItems: 'center'}}>
     <Switch
-     onCheckedChange={() =>
-      theme === 'dark' ? setTheme('light') : setTheme('dark')
-     }
+     onCheckedChange={() => (theme === 'dark' ? setTheme('light') : setTheme('dark'))}
      aria-label='Change Theme'
      id='s1'>
      <SwitchThumb />

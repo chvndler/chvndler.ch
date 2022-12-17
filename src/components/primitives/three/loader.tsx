@@ -9,9 +9,7 @@ export const Loader = () => {
  return (
   <>
    <Html center>
-    <Box css={{zIndex: 999, display: 'flex', flexDirection: 'row'}}>
-     {progress}%
-    </Box>
+    <Box css={{zIndex: 999, display: 'flex', flexDirection: 'row'}}>{progress}%</Box>
    </Html>
   </>
  )

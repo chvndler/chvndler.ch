@@ -15,16 +15,12 @@ export const NotesPageDisplay = () => {
    <Section size={'4'}>
     <Container size={'1'} css={{padding: 20}}>
      {notes.map((entry) => {
-      return (
-       <NoteEntry key={entry.title} title={entry.title} note={entry.note} />
-      )
+      return <NoteEntry key={entry.title} title={entry.title} note={entry.note} />
      })}
     </Container>
 
     <Space size={'2'} />
-    <Container
-     size={'1'}
-     css={{margin: 'auto', display: 'flex', justifyContent: 'center'}}>
+    <Container size={'1'} css={{margin: 'auto', display: 'flex', justifyContent: 'center'}}>
      <Heading>. . .</Heading>
     </Container>
     <Space size={'2'} />

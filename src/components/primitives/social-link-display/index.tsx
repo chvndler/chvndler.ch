@@ -13,9 +13,7 @@ import {SocialLink} from './link.styles'
 export const SocialLinkDisplay = () => {
  return (
   <Section size={'4'}>
-   <Container
-    size={'3'}
-    css={{display: 'flex', margin: 'auto', justifyContent: 'flex-start'}}>
+   <Container size={'3'} css={{display: 'flex', margin: 'auto', justifyContent: 'flex-start'}}>
     <Flex
      css={{
       rowGap: '14px',
@@ -39,9 +37,7 @@ export const SocialLinkDisplay = () => {
     </Flex>
    </Container>
    <Space size={'1'} />
-   <Container
-    size={'3'}
-    css={{display: 'flex', margin: 'auto', justifyContent: 'flex-start'}}>
+   <Container size={'3'} css={{display: 'flex', margin: 'auto', justifyContent: 'flex-start'}}>
     <Flex
      css={{
       rowGap: '14px',

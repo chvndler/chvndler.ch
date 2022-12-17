@@ -94,11 +94,10 @@ export const StyledButton = styled('button', {
     '&:focus': {
      boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8'
     },
-    '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
-     {
-      backgroundColor: '$slate4',
-      boxShadow: 'inset 0 0 0 1px $colors$slate8'
-     }
+    '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
+     backgroundColor: '$slate4',
+     boxShadow: 'inset 0 0 0 1px $colors$slate8'
+    }
    },
    primary: {
     backgroundColor: '$chxn4',
@@ -122,11 +121,10 @@ export const StyledButton = styled('button', {
     '&:focus': {
      boxShadow: `inset 0 0 0 1px ${slate.slate8}, 0 0 0 1px ${slate.slate8}`
     },
-    '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
-     {
-      backgroundColor: slate.slate4,
-      boxShadow: `inset 0 0 0 1px ${slate.slate8}`
-     }
+    '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
+     backgroundColor: slate.slate4,
+     boxShadow: `inset 0 0 0 1px ${slate.slate8}`
+    }
    },
    secondary: {},
    gray: {
@@ -145,11 +143,10 @@ export const StyledButton = styled('button', {
     '&:focus': {
      boxShadow: 'inset 0 0 0 1px $colors$slate8, 0 0 0 1px $colors$slate8'
     },
-    '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]':
-     {
-      backgroundColor: '$slate4',
-      boxShadow: 'inset 0 0 0 1px $colors$slate8'
-     }
+    '&[data-radix-popover-trigger][data-state="open"], &[data-radix-dropdown-menu-trigger][data-state="open"]': {
+     backgroundColor: '$slate4',
+     boxShadow: 'inset 0 0 0 1px $colors$slate8'
+    }
    },
    ghostAtelier: {
     backgroundColor: '$mauve3',
@@ -163,8 +160,7 @@ export const StyledButton = styled('button', {
      backgroundColor: 'hsla(0,100%,100%,.3)'
     },
     '&:focus': {
-     boxShadow:
-      'inset 0 0 0 1px hsla(0,100%,100%,.35), 0 0 0 1px hsla(0,100%,100%,.35)'
+     boxShadow: 'inset 0 0 0 1px hsla(0,100%,100%,.35), 0 0 0 1px hsla(0,100%,100%,.35)'
     }
    },
    nothing: {

@@ -6,14 +6,7 @@ import {Box, Flex, PassLink, Status} from '@/components/ds'
 import {Avatar} from '@/components/primitives/avatar'
 import fetcher from '@/lib/fetcher'
 
-import {
- AlbumBox,
- TrackArtist,
- TrackBackground,
- TrackBox,
- TrackContainer,
- TrackTitle
-} from './track.styles'
+import {AlbumBox, TrackArtist, TrackBackground, TrackBox, TrackContainer, TrackTitle} from './track.styles'
 import type {NowPlayingSong} from './types'
 
 export const NowPlaying = () => {

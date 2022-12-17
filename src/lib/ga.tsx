@@ -50,11 +50,7 @@ export const event = ({
 export const GAScripts = () => {
  return (
   <>
-   <Script
-    strategy='afterInteractive'
-    async
-    src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`}
-   />
+   <Script strategy='afterInteractive' async src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`} />
    <Script
     id='gtag-init'
     strategy='afterInteractive'

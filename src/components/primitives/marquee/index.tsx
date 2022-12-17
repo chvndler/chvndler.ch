@@ -45,16 +45,14 @@ const scroll = keyframes({
 type MarqueeContentPrimitiveProps = React.ComponentProps<typeof Marquee>
 export const MarqueeContainer = StyledMarqueeContainer
 export const MarqueeContent: React.ForwardRefExoticComponent<
- React.PropsWithoutRef<MarqueeContentPrimitiveProps> &
-  React.RefAttributes<React.ElementRef<typeof StyledContent>>
+ React.PropsWithoutRef<MarqueeContentPrimitiveProps> & React.RefAttributes<React.ElementRef<typeof StyledContent>>
  // eslint-disable-next-line import/no-named-as-default-member
-> = React.forwardRef<
- React.ElementRef<typeof StyledContent>,
- MarqueeContentPrimitiveProps
->(({children, ...props}, forwardedRef) => (
- <StyledMarqueeContainer>
-  <StyledContent {...props} ref={forwardedRef}>
-   {children}
-  </StyledContent>
- </StyledMarqueeContainer>
-))
+> = React.forwardRef<React.ElementRef<typeof StyledContent>, MarqueeContentPrimitiveProps>(
+ ({children, ...props}, forwardedRef) => (
+  <StyledMarqueeContainer>
+   <StyledContent {...props} ref={forwardedRef}>
+    {children}
+   </StyledContent>
+  </StyledMarqueeContainer>
+ )
+)

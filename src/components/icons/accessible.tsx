@@ -14,10 +14,7 @@ interface AccessibleIconProps {
  label: string
 }
 
-export const AccessibleWrapper: React.FC<AccessibleIconProps> = ({
- children,
- label
-}) => {
+export const AccessibleWrapper: React.FC<AccessibleIconProps> = ({children, label}) => {
  const child = React.Children.only(children)
  return (
   <>

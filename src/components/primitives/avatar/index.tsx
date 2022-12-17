@@ -30,38 +30,32 @@ type AvatarOwnProps = AvatarPrimitiveProps &
   fallback?: React.ReactNode
  }
 
-export const Avatar = React.forwardRef<
- React.ElementRef<typeof AvatarComponent>,
- AvatarOwnProps
->(({alt, src, fallback, size, variant, shape, ...props}, forwardedRef) => {
- return (
-  <Box
-   css={{
-    position: 'relative',
-    height: 'fit-content',
-    width: 'fit-content'
-   }}>
-   <AvatarComponent
-    {...props}
-    ref={forwardedRef}
-    size={size}
-    variant={variant}
-    shape={shape}>
-    <AvatarImage alt={alt} src={src} />
-    <AvatarFallback size={size}>{fallback}</AvatarFallback>
-   </AvatarComponent>
-
+export const Avatar = React.forwardRef<React.ElementRef<typeof AvatarComponent>, AvatarOwnProps>(
+ ({alt, src, fallback, size, variant, shape, ...props}, forwardedRef) => {
+  return (
    <Box
     css={{
-     position: 'absolute',
-     bottom: '0',
-     right: '0',
-     boxShadow: '0 0 0 3px $colors$loContrast',
-     borderRadius: '$round'
-    }}
-   />
-  </Box>
- )
-})
+     position: 'relative',
+     height: 'fit-content',
+     width: 'fit-content'
+    }}>
+    <AvatarComponent {...props} ref={forwardedRef} size={size} variant={variant} shape={shape}>
+     <AvatarImage alt={alt} src={src} />
+     <AvatarFallback size={size}>{fallback}</AvatarFallback>
+    </AvatarComponent>
+
+    <Box
+     css={{
+      position: 'absolute',
+      bottom: '0',
+      right: '0',
+      boxShadow: '0 0 0 3px $colors$loContrast',
+      borderRadius: '$round'
+     }}
+    />
+   </Box>
+  )
+ }
+)
 
 Avatar.displayName = 'Avatar'

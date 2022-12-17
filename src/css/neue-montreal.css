@@ -8,8 +8,7 @@
  font-family: 'PP Neue Montreal';
  src: url('/fonts/montreal/PPNeueMontreal-Bold.eot');
  src: local('PP Neue Montreal Bold'), local('PPNeueMontreal-Bold'),
-  url('/fonts/montreal/PPNeueMontreal-Bold.eot?#iefix')
-   format('embedded-opentype'),
+  url('/fonts/montreal/PPNeueMontreal-Bold.eot?#iefix') format('embedded-opentype'),
   url('/fonts/montreal/PPNeueMontreal-Bold.woff2') format('woff2'),
   url('/fonts/montreal/PPNeueMontreal-Bold.woff') format('woff'),
   url('/fonts/montreal/PPNeueMontreal-Bold.ttf') format('truetype');
@@ -21,8 +20,7 @@
  font-family: 'PP Neue Montreal';
  src: url('/fonts/montreal/PPNeueMontreal-BoldItalic.eot');
  src: local('PP Neue Montreal Bold Italic'), local('PPNeueMontreal-BoldItalic'),
-  url('/fonts/montreal/PPNeueMontreal-BoldItalic.eot?#iefix')
-   format('embedded-opentype'),
+  url('/fonts/montreal/PPNeueMontreal-BoldItalic.eot?#iefix') format('embedded-opentype'),
   url('/fonts/montreal/PPNeueMontreal-BoldItalic.woff2') format('woff2'),
   url('/fonts/montreal/PPNeueMontreal-BoldItalic.woff') format('woff'),
   url('/fonts/montreal/PPNeueMontreal-BoldItalic.ttf') format('truetype');
@@ -34,8 +32,7 @@
  font-family: 'PP Neue Montreal';
  src: url('/fonts/montreal/PPNeueMontreal-Medium.eot');
  src: local('PP Neue Montreal Medium'), local('PPNeueMontreal-Medium'),
-  url('/fonts/montreal/PPNeueMontreal-Medium.eot?#iefix')
-   format('embedded-opentype'),
+  url('/fonts/montreal/PPNeueMontreal-Medium.eot?#iefix') format('embedded-opentype'),
   url('/fonts/montreal/PPNeueMontreal-Medium.woff2') format('woff2'),
   url('/fonts/montreal/PPNeueMontreal-Medium.woff') format('woff'),
   url('/fonts/montreal/PPNeueMontreal-Medium.ttf') format('truetype');
@@ -46,10 +43,8 @@
 @font-face {
  font-family: 'PP Neue Montreal';
  src: url('/fonts/montreal/PPNeueMontreal-MediumItalic.eot');
- src: local('PP Neue Montreal Medium Italic'),
-  local('PPNeueMontreal-MediumItalic'),
-  url('/fonts/montreal/PPNeueMontreal-MediumItalic.eot?#iefix')
-   format('embedded-opentype'),
+ src: local('PP Neue Montreal Medium Italic'), local('PPNeueMontreal-MediumItalic'),
+  url('/fonts/montreal/PPNeueMontreal-MediumItalic.eot?#iefix') format('embedded-opentype'),
   url('/fonts/montreal/PPNeueMontreal-MediumItalic.woff2') format('woff2'),
   url('/fonts/montreal/PPNeueMontreal-MediumItalic.woff') format('woff'),
   url('/fonts/montreal/PPNeueMontreal-MediumItalic.ttf') format('truetype');
@@ -61,8 +56,7 @@
  font-family: 'PP Neue Montreal';
  src: url('/fonts/montreal/PPNeueMontreal-Regular.eot');
  src: local('PP Neue Montreal Regular'), local('PPNeueMontreal-Regular'),
-  url('/fonts/montreal/PPNeueMontreal-Regular.eot?#iefix')
-   format('embedded-opentype'),
+  url('/fonts/montreal/PPNeueMontreal-Regular.eot?#iefix') format('embedded-opentype'),
   url('/fonts/montreal/PPNeueMontreal-Regular.woff2') format('woff2'),
   url('/fonts/montreal/PPNeueMontreal-Regular.woff') format('woff'),
   url('/fonts/montreal/PPNeueMontreal-Regular.ttf') format('truetype');

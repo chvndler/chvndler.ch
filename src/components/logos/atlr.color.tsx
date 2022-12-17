@@ -5,13 +5,7 @@ import type {LxgoProps} from './types'
 export const AtlrColorLogo = ({...props}: LxgoProps) => {
  return (
   <>
-   <svg
-    fill='currentColor'
-    xmlns='http://www.w3.org/2000/svg'
-    viewBox='0 0 160 30'
-    width=''
-    height='28'
-    {...props}>
+   <svg fill='currentColor' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 30' width='' height='28' {...props}>
     <path d='M73,28.4v-3.4H77v3.4H73z' />
     <path
      d='M88.7,8.2c5.9,0,8.8,3.2,9.1,7.8h-2.9c-0.5-3.2-2.4-5.2-6.1-5.2c-4.1,0-6.7,2.2-6.7,7.9c0,5.7,2.5,7.9,6.6,7.9

@@ -41,21 +41,11 @@ export const CDCDevScene = () => {
    <pointLight position={[120, 50, 10]} />
    <directionalLight intensity={0.8} />
    <Suspense fallback={<Loader />}>
-    <Stage
-     adjustCamera={2}
-     preset={'rembrandt'}
-     intensity={1}
-     shadows={false}
-     environment={'sunset'}>
+    <Stage adjustCamera={2} preset={'rembrandt'} intensity={1} shadows={false} environment={'sunset'}>
      <CDCDevModel />
     </Stage>
     <OrbitControls ref={ref} autoRotate autoRotateSpeed={0.1} />
-    <gridHelper
-     scale={1}
-     args={[4, 30, '#EAFF97', '#313341']}
-     position={[0, 0, 0]}
-     rotation={[0, 0, Math.PI / 2]}
-    />
+    <gridHelper scale={1} args={[4, 30, '#EAFF97', '#313341']} position={[0, 0, 0]} rotation={[0, 0, Math.PI / 2]} />
    </Suspense>
   </Canvas>
  )

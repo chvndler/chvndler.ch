@@ -52,14 +52,7 @@ export const Meta = (props: MetaProps) => {
   }
 
   return data
- }, [
-  props.cannonical,
-  props.description,
-  props.noFollow,
-  props.noIndex,
-  props.ogImage,
-  props.title
- ])
+ }, [props.cannonical, props.description, props.noFollow, props.noIndex, props.ogImage, props.title])
 
  return (
   <>
@@ -72,11 +65,7 @@ export const Meta = (props: MetaProps) => {
     />
 
     <link rel='icon' href='/favicon.ico' sizes='any' />
-    <link
-     rel='icon'
-     href={isDark ? '/favicon-dark.svg' : '/favicon.svg'}
-     type='image/svg+xml'
-    />
+    <link rel='icon' href={isDark ? '/favicon-dark.svg' : '/favicon.svg'} type='image/svg+xml' />
     <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
     <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
     <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
@@ -102,14 +91,8 @@ export const Meta = (props: MetaProps) => {
     <meta property='og:url' content={resolvedMetadata.canonical} />
     <meta property='og:image' content={resolvedMetadata.ogImage.url} />
     <meta property='og:image:alt' content={resolvedMetadata.ogImage.alt} />
-    <meta
-     property='og:image:width'
-     content={resolvedMetadata.ogImage.width + ''}
-    />
-    <meta
-     property='og:image:height'
-     content={resolvedMetadata.ogImage.height + ''}
-    />
+    <meta property='og:image:width' content={resolvedMetadata.ogImage.width + ''} />
+    <meta property='og:image:height' content={resolvedMetadata.ogImage.height + ''} />
     <link rel='canonical' href={resolvedMetadata.canonical} />
 
     {props.preload?.map(({href, as}) => (

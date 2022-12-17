@@ -33,7 +33,7 @@ export const Loader = () => {
      {range(3).map((i) => (
       // @ts-ignore
       <span style={{'--idx': i}} key={i}>
-       .
+       <div className={'line-scale-pulse-out-rapid'} />.
       </span>
      ))}
     </span>

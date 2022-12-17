@@ -17,10 +17,7 @@ type LayoutProps = {
 
 export const WEBSITE_HOST_URL = 'https://chvndler.ch'
 
-export const ArchiveLayout = ({
- children,
- customMeta
-}: LayoutProps): JSX.Element => {
+export const ArchiveLayout = ({children, customMeta}: LayoutProps): JSX.Element => {
  return (
   <>
    <ArchiveHead customMeta={customMeta} />

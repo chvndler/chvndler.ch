@@ -18,20 +18,13 @@ export const TrackCards = () => {
 
  return (
   <>
-   <Grid
-    columns={'2'}
-    justify={'between'}
-    align={'center'}
-    gap={'3'}
-    css={{width: '100%'}}>
-    {data.tracks.map(
-     (track: JSX.IntrinsicAttributes & TrackProps, index: number) => (
-      // eslint-disable-next-line react/jsx-key
-      <TrackCard>
-       <ResolvedTrack ranking={index + 1} key={track.songUrl} {...track} />
-      </TrackCard>
-     )
-    )}
+   <Grid columns={'2'} justify={'between'} align={'center'} gap={'3'} css={{width: '100%'}}>
+    {data.tracks.map((track: JSX.IntrinsicAttributes & TrackProps, index: number) => (
+     // eslint-disable-next-line react/jsx-key
+     <TrackCard>
+      <ResolvedTrack ranking={index + 1} key={track.songUrl} {...track} />
+     </TrackCard>
+    ))}
    </Grid>
   </>
  )

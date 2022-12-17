@@ -2,9 +2,7 @@
 
 import {isClient} from '@/lib/constants'
 
-export const formatError = (
- error: unknown
-): {message: string; name?: string} => {
+export const formatError = (error: unknown): {message: string; name?: string} => {
  try {
   if (error instanceof Error) {
    return {message: error.message, name: error.name}
@@ -18,9 +16,7 @@ export const formatError = (
 export const isApiSupported = (api: string) => isClient && api in window
 
 /* Builds responsive sizes string for images */
-export const getSizes = (
- entries: ({breakpoint: string; width: string} | string | number)[]
-) => {
+export const getSizes = (entries: ({breakpoint: string; width: string} | string | number)[]) => {
  const sizes = entries.map((entry) => {
   if (!entry) {
    return ''
@@ -47,9 +43,7 @@ export const getSizes = (
 export function download(url: string) {
  //iOS devices do not support downloading. We have to inform user about this.
  if (/(iP)/g.test(navigator.userAgent)) {
-  alert(
-   'Your device does not support files downloading. Please try again in desktop browser.'
-  )
+  alert('Your device does not support files downloading. Please try again in desktop browser.')
   return false
  }
 

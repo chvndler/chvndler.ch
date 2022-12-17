@@ -38,8 +38,7 @@ export const notes = [
  },
  {
   title: 'N.006 _ October, 04',
-  note:
-   'appreciate where you`re at in life right now. even if it`s not where you want to be.'
+  note: 'appreciate where you`re at in life right now. even if it`s not where you want to be.'
  },
  {
   title: 'N.005 _ September, 27',

@@ -15,9 +15,7 @@ type GLTFResult = GLTF & {
 }
 
 export const ALogoModel = (props: JSX.IntrinsicElements['group']) => {
- const {nodes, materials} = useGLTF(
-  '/models/A_Logo.gltf'
- ) as unknown as GLTFResult
+ const {nodes, materials} = useGLTF('/models/A_Logo.gltf') as unknown as GLTFResult
 
  return (
   <group {...props} dispose={null}>

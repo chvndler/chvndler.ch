@@ -8,10 +8,8 @@
  font-family: 'Helvetica Rounded Bold';
  src: url('/fonts/helvetica-rounded/HelveticaRounded-Bold.woff2');
  src: local('Helvetica Rounded Bold'), local('HelveticaRounded-Bold'),
-  url('/fonts/helvetica-rounded/HelveticaRounded-Bold.eot')
-   format('embedded-opentype'),
-  url('/fonts/helvetica-rounded/HelveticaRounded-Bold.eot?#iefix')
-   format('embedded-opentype'),
+  url('/fonts/helvetica-rounded/HelveticaRounded-Bold.eot') format('embedded-opentype'),
+  url('/fonts/helvetica-rounded/HelveticaRounded-Bold.eot?#iefix') format('embedded-opentype'),
   url('/fonts/helvetica-rounded/HelveticaRounded-Bold.woff2') format('woff2'),
   url('/fonts/helvetica-rounded/HelveticaRounded-Bold.woff') format('woff');
  font-weight: bold;

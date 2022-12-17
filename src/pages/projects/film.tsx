@@ -13,10 +13,7 @@ const Film = () => {
     <Container size={'3'} css={{}}>
      <Heading>© MIT FILM PROJECTS</Heading>
      <Space size={'1'} />
-     <SubHeading>My film projects will live here soon.</SubHeading>
-     <SubHeading>
-      Here are two for now, while i'm working on some bugs.
-     </SubHeading>
+     <SubHeading>SHOT ON LOCATION AROUND THE GLOBE©.</SubHeading>
     </Container>
     <Space size={'3'} />
     <FilmProjects />
@@ -38,9 +35,10 @@ const Heading = styled('h1', {
 
 const SubHeading = styled('h1', {
  textAlign: 'center',
- color: theme.colors.chxn4,
+ color: theme.colors.chxn4A,
  fontSize: 15,
- fontFamily: theme.fonts.panSb,
+ fontFamily: theme.fonts.latMedStd,
  fontWeight: 'auto',
+ textTransform: 'uppercase',
  lineHeight: 'auto'
 })

@@ -13,9 +13,7 @@ export const ThemeSwitch = () => {
 
  return (
   <ToolTipWrapper tip={'toggle theme'}>
-   <IconButton
-    onClick={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))}
-    aria-label='Toggle Theme'>
+   <IconButton onClick={() => (theme === 'light' ? setTheme('dark') : setTheme('light'))} aria-label='Toggle Theme'>
     <Icxn variant={'Sun'} />
    </IconButton>
   </ToolTipWrapper>

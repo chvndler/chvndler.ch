@@ -8,7 +8,6 @@ export type PostType = {
  title: string
 }
 
-export interface MetaProps
- extends Pick<PostType, 'date' | 'description' | 'image' | 'title'> {
+export interface MetaProps extends Pick<PostType, 'date' | 'description' | 'image' | 'title'> {
  type?: string
 }

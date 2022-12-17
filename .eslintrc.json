@@ -1,11 +1,6 @@
 {
  "parser": "@typescript-eslint/parser",
- "plugins": [
-  "react",
-  "react-hooks",
-  "simple-import-sort",
-  "@typescript-eslint"
- ],
+ "plugins": ["react", "react-hooks", "simple-import-sort", "@typescript-eslint"],
  "ignorePatterns": [
   "next.config.js",
   "next-sitemap.config.js",

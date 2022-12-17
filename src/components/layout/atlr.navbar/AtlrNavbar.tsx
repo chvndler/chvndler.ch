@@ -79,10 +79,7 @@ export const AtlrNavbar = () => {
        <NavLink href={linkedin} target={'_blank'} rel={'noreferrer noopener'}>
         linkedin
        </NavLink>
-       <NavLink
-        href={code_sandbox}
-        target={'_blank'}
-        rel={'noreferrer noopener'}>
+       <NavLink href={code_sandbox} target={'_blank'} rel={'noreferrer noopener'}>
         codesandbox
        </NavLink>
        <NavLink href={instagram} target={'_blank'} rel={'noreferrer noopener'}>

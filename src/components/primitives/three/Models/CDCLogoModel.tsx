@@ -15,9 +15,7 @@ type GLTFResult = GLTF & {
 }
 
 export const CDCLogoModel = (props: JSX.IntrinsicElements['group']) => {
- const {nodes, materials} = useGLTF(
-  '/models/CDC_Iridescent.gltf'
- ) as unknown as GLTFResult
+ const {nodes, materials} = useGLTF('/models/CDC_Iridescent.gltf') as unknown as GLTFResult
 
  return (
   <>

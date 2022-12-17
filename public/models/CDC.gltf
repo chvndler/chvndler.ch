@@ -23,9 +23,7 @@
    "doubleSided": true,
    "name": "Material",
    "pbrMetallicRoughness": {
-    "baseColorFactor": [
-     0.06480319797992706, 0.05612844228744507, 0.06662596017122269, 1
-    ],
+    "baseColorFactor": [0.06480319797992706, 0.05612844228744507, 0.06662596017122269, 1],
     "metallicFactor": 0.9155827760696411,
     "roughnessFactor": 0.12175635248422623
    }

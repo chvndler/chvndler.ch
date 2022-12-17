@@ -12,10 +12,7 @@ const Value = () => {
    return num.toString().padStart(pad, '0')
   }
 
-  const setFromEvent = (event: {
-   clientX: string | number
-   clientY: string | number
-  }) => {
+  const setFromEvent = (event: {clientX: string | number; clientY: string | number}) => {
    const x = format(event.clientX, 5)
    const y = format(event.clientY, 5)
    setDisplay(`X* ${x}, Y* ${y}`)

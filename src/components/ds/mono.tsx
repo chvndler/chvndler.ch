@@ -53,12 +53,7 @@ export const MonospacedLink = StyledMonoLink
 
 export const MonoLink = ({href, children, ...props}: InlineProps) => {
  return (
-  <MonospacedLink
-   href={href}
-   {...props}
-   passHref
-   target='_blank'
-   rel='norefferer noopener'>
+  <MonospacedLink href={href} {...props} passHref target='_blank' rel='norefferer noopener'>
    {children}
   </MonospacedLink>
  )

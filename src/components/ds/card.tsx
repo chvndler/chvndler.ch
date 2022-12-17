@@ -55,12 +55,10 @@ export const Card = styled('div', {
    },
    ghost: {
     backgroundColor: 'transparent',
-    transition:
-     'transform 200ms cubic-bezier(0.22, 1, 0.36, 1), background-color 25ms linear',
+    transition: 'transform 200ms cubic-bezier(0.22, 1, 0.36, 1), background-color 25ms linear',
     willChange: 'transform',
     '&::before': {
-     boxShadow:
-      '0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)',
+     boxShadow: '0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)',
      opacity: '0',
      transition: 'all 200ms cubic-bezier(0.22, 1, 0.36, 1)'
     },
@@ -77,8 +75,7 @@ export const Card = styled('div', {
      transform: 'translateY(0)',
      transition: 'none',
      '&::before': {
-      boxShadow:
-       '0px 5px 16px -5px rgba(22, 23, 24, 0.35), 0px 5px 10px -7px rgba(22, 23, 24, 0.2)',
+      boxShadow: '0px 5px 16px -5px rgba(22, 23, 24, 0.35), 0px 5px 10px -7px rgba(22, 23, 24, 0.2)',
       opacity: '1'
      }
     },
@@ -90,8 +87,7 @@ export const Card = styled('div', {
     transform: 'translateY(0)',
     transition: 'none',
     '&::before': {
-     boxShadow:
-      '0px 5px 16px -5px rgba(22, 23, 24, 0.35), 0px 5px 10px -7px rgba(22, 23, 24, 0.2)',
+     boxShadow: '0px 5px 16px -5px rgba(22, 23, 24, 0.35), 0px 5px 10px -7px rgba(22, 23, 24, 0.2)',
      opacity: '1'
     },
     '&:focus': {

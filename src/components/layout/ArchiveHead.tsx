@@ -8,11 +8,7 @@ import type {ArchiveMetaProps} from '@/components/common/archiveMeta'
 
 export const WEBSITE_HOST_URL = 'https://chandler.ch'
 
-const ArchiveHead = ({
- customMeta
-}: {
- customMeta?: ArchiveMetaProps
-}): JSX.Element => {
+const ArchiveHead = ({customMeta}: {customMeta?: ArchiveMetaProps}): JSX.Element => {
  const router = useRouter()
  const meta: ArchiveMetaProps = {
   title: 'Chandler Chappell - Website',

@@ -18,8 +18,6 @@ type GitHubRes = {
 export const getReleaseLink = () => `https://github.com/${GITHUB_SLUG}`
 
 export const getDownloadLink = async () => {
- const res = (await fetch(`https://api.github.com/repos/${GITHUB_SLUG}`).then(
-  (res) => res.json()
- )) as GitHubRes
+ const res = (await fetch(`https://api.github.com/repos/${GITHUB_SLUG}`).then((res) => res.json())) as GitHubRes
  return res.assets[0]?.browser_download_url
 }

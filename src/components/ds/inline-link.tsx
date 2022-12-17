@@ -50,12 +50,7 @@ export const InheritedLink = StyledInlineLink
 
 export const InlineLink = ({href, children, ...props}: InlineProps) => {
  return (
-  <InheritedLink
-   href={href}
-   {...props}
-   passHref
-   target='_blank'
-   rel='norefferer noopener'>
+  <InheritedLink href={href} {...props} passHref target='_blank' rel='norefferer noopener'>
    {children}
   </InheritedLink>
  )

@@ -21,11 +21,7 @@ type R3FCanvasLayoutProps = {
  htmlChildren?: React.ReactNode
 }
 
-export const R3FCanvasLayout: FC<R3FCanvasLayoutProps> = ({
- children,
- htmlChildren,
- ...rest
-}) => {
+export const R3FCanvasLayout: FC<R3FCanvasLayoutProps> = ({children, htmlChildren, ...rest}) => {
  return (
   <>
    <DivHTML>

@@ -212,10 +212,6 @@ html.fonts-loaded body {
     --controls-backdrop-color: rgb(0 0 0 / 20%);
 }
 
-#video_control_bar>* {
-    display: inline-block;
-}
-
 mux-player {
     /*
     border-radius: inherit;
@@ -226,6 +222,13 @@ mux-player {
     object-fit: cover;
     color: white;
     */
+    /* Escapes... 
+    --volume-range: none;
+    --bottom-play-button: none;
+    --airplay-button: none;
+    --pip-button: none;
+    */
+    --time-range: none;
     --controls-background-color: transparent;
     --media-object-position: center;
     --media-object-fit: cover;
@@ -236,9 +239,6 @@ mux-player {
     --fullscreen-button: none;
     --cast-button: none;
     --playback-rate-button: none;
-    --volume-range: none;
-    /*--center-controls: none;*/
-    --bottom-play-button: none;
-    --controls-backdrop-color: rgb(0 0 0 / 10%);
-    --time-range: none;
+    --center-controls: none;
+    --controls-backdrop-color: rgb(0 0 0 / 40%);
 }

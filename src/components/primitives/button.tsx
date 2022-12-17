@@ -68,20 +68,18 @@ const StyledButton = styled('button', {
  *
  * Also, below the `Button` is a `ButtonLink` that automatically wraps `NextLink` to it ✨
  */
-const Button = forwardRef(
- ({children, className, disabled, isLoading, variant, icon, ...props}, ref) => {
-  return (
-   <StyledButton
-    {...props}
-    className={clsx(className)}
-    disabled={isLoading || disabled}
-    ref={ref}
-    underlined={variant === 'underlined'}
-    hasIcon={!!icon}>
-    {children} {icon && typeof icon !== 'boolean' ? icon : null}
-   </StyledButton>
-  )
- }
-) as Polymorphic.ForwardRefComponent<'button', ButtonProps>
+const Button = forwardRef(({children, className, disabled, isLoading, variant, icon, ...props}, ref) => {
+ return (
+  <StyledButton
+   {...props}
+   className={clsx(className)}
+   disabled={isLoading || disabled}
+   ref={ref}
+   underlined={variant === 'underlined'}
+   hasIcon={!!icon}>
+   {children} {icon && typeof icon !== 'boolean' ? icon : null}
+  </StyledButton>
+ )
+}) as Polymorphic.ForwardRefComponent<'button', ButtonProps>
 
 export default Button

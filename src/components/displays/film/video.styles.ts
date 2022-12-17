@@ -6,7 +6,7 @@ const VideoWrapperStyles = css({
  boxSizing: 'border-box',
  position: 'relative',
  width: '100%',
- height: 'auto',
+ height: '100%',
  margin: 0,
  padding: 0
 })
@@ -17,18 +17,11 @@ export const MuxVideoStyles = css('video', {
  zIndex: 1,
  position: 'relative',
  overflow: 'hidden',
- // border: `1px solid ${theme.colors.chxn4A}`,
-
- // backgroundAttachment: 'fixed',
- // backgroundPosition: 'center',
- // backgroundRepeat: 'no-repeat',
- // backgroundSize: 'cover',
- // objectFit: 'cover',
- // objectPosition: 'center',
- margin: 'auto',
- padding: '0',
- outline: 'none',
- display: 'flex',
+ //border: `3px solid ${theme.colors.chxn4A}`,
+ margin: '0',
+ // padding: '0',
+ // outline: 'none',
+ // display: 'flex',
  opacity: 1,
  transition: 'opacity 0.5s ease-in-out'
 })

@@ -2,13 +2,7 @@
 
 // GSAP Stuff
 import gsap from 'gsap'
-import React, {
- createContext,
- useContext,
- useEffect,
- useRef,
- useState
-} from 'react'
+import React, {createContext, useContext, useEffect, useRef, useState} from 'react'
 import {isMobile as _isMobile} from 'react-device-detect'
 import {css, styled} from 'stitches.config'
 
@@ -54,8 +48,7 @@ const CursorFollower = styled('div', {
   height: '$$size',
   width: '$$size',
   willChange: 'transform',
-  transition:
-   'border-color .1s ease-in-out, width .22s ease-in-out, height .22s ease-in-out'
+  transition: 'border-color .1s ease-in-out, width .22s ease-in-out, height .22s ease-in-out'
  },
 
  '.inner': {
@@ -108,9 +101,7 @@ const CursorFollower = styled('div', {
 
 type CursorType = 'pointer' | 'text' | 'grab' | 'grabbing' | undefined
 export const CursorWrapper = styled('html', CursorWrapperStyles)
-const CursorContext = createContext<
- {setType: React.Dispatch<React.SetStateAction<CursorType>>} | undefined
->(undefined)
+const CursorContext = createContext<{setType: React.Dispatch<React.SetStateAction<CursorType>>} | undefined>(undefined)
 
 const ChxnCursor = ({children}: {children?: React.ReactNode}) => {
  const cursorRef = useRef<HTMLDivElement>(null)

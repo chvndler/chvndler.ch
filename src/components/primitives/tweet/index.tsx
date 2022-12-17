@@ -17,15 +17,7 @@ type TweetType = {
  date: string
 }
 
-export const Tweet = ({
- url,
- userUrl,
- children,
- avatar,
- author,
- username,
- date
-}: TweetType) => {
+export const Tweet = ({url, userUrl, children, avatar, author, username, date}: TweetType) => {
  return (
   <Card
    variant='interactive'
@@ -70,9 +62,7 @@ export const Tweet = ({
      </Box>
     </Flex>
     <Box css={{color: '$gray10'}}>
-     <Box
-      className='icon-toggle'
-      css={{transition: 'opacity 50ms linear', color: '$twitter'}}>
+     <Box className='icon-toggle' css={{transition: 'opacity 50ms linear', color: '$twitter'}}>
       <Link href={url} passHref>
        <Icxn variant='Twitter' />
       </Link>

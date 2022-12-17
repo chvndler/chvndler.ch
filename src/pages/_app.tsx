@@ -32,8 +32,7 @@ const App = ({Component, pageProps, ...rest}: AppProps) => {
  useFontsLoaded()
 
  const getLayout: GetLayoutFn =
-  (Component as any).getLayout ||
-  (({Component, pageProps}) => <Component {...pageProps} />)
+  (Component as any).getLayout || (({Component, pageProps}) => <Component {...pageProps} />)
 
  return (
   <>
@@ -106,11 +105,7 @@ const useFontsLoaded = () => {
  }, [])
 }
 
-export type Page<P = Record<string, unknown>> = NextComponentType<
- NextPageContext,
- Record<string, unknown>,
- P
-> & {
+export type Page<P = Record<string, unknown>> = NextComponentType<NextPageContext, Record<string, unknown>, P> & {
  getLayout?: GetLayoutFn<P>
 }
 

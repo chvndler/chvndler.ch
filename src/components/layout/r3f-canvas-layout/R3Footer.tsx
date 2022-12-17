@@ -64,10 +64,7 @@ export const R3FFooter = () => {
       width: 'auto',
       userSelect: 'none'
      }}>
-     <PassLink
-      href={
-       'https://github.com/chvndler/chvndler.ch/blob/main/src/pages/projects/three.tsx'
-      }>
+     <PassLink href={'https://github.com/chvndler/chvndler.ch/blob/main/src/pages/projects/three.tsx'}>
       <Text
        css={{
         color: theme.colors.chxn3,

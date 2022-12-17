@@ -23,11 +23,7 @@ export const ProjectEntry = ({pTitle, pRepository, pSummary}: PProps) => {
  return (
   <ProjectCard css={{userSelect: 'none'}}>
    <PlacementBox css={{}}>
-    <ProjectTitle
-     as={'a'}
-     href={pRepository}
-     target={'_blank'}
-     rel={'norefferer'}>
+    <ProjectTitle as={'a'} href={pRepository} target={'_blank'} rel={'norefferer'}>
      {pTitle}
     </ProjectTitle>
     <Space size={'1'} />

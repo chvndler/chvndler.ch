@@ -33,12 +33,7 @@ export const ALogoScene = () => {
      <Suspense fallback={null}>
       <Stage preset={'soft'} intensity={0.6} environment={'forest'}>
        <OrbitControls ref={ref} autoRotate autoRotateSpeed={0.1} />
-       <gridHelper
-        scale={2}
-        args={[4, 30, '#EAFF97', '#313341']}
-        position={[0, 0, 0]}
-        rotation={[0, 0, Math.PI / 2]}
-       />
+       <gridHelper scale={2} args={[4, 30, '#EAFF97', '#313341']} position={[0, 0, 0]} rotation={[0, 0, Math.PI / 2]} />
        <ALogoModel />
       </Stage>
      </Suspense>

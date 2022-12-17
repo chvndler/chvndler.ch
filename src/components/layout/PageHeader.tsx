@@ -2,14 +2,7 @@
 
 import {styled, theme} from 'stitches.config'
 
-import {
- Box,
- Grid,
- InlineLink,
- Paragraph,
- PassLink,
- Space
-} from '@/components/ds'
+import {Box, Grid, InlineLink, Paragraph, PassLink, Space} from '@/components/ds'
 import {CDCLogo} from '@/components/logos'
 
 const projects = '/projects/web'
@@ -35,7 +28,7 @@ export const PageHeader = () => {
      <Box className={'left'}>
       <Paragraph
        css={{
-        fontSize: 14,
+        fontSize: 15,
         fontFamily: theme.fonts.latMedStd,
         color: theme.colors.chxn4
        }}>
@@ -44,16 +37,15 @@ export const PageHeader = () => {
       <Space size={'1'} />
       <Paragraph
        css={{
-        fontSize: 14,
+        fontSize: 15,
         letterSpacing: '0.02rem',
-        fontFamily: theme.fonts.latRegStd,
-        color: theme.colors.chxn4
+        fontFamily: '"Helvetica", sans-serif',
+        color: theme.colors.chxn4,
+        textTransform: 'uppercase'
        }}>
-       90's kid– creating cool and taking notes. Enjoying the internet and
-       open-source. I'm very component-driven, the focus in the moment is
-       telling stories through every detail that make a web experience worth
-       having. Experienced in graphic, and motion design, as well as three.js. I
-       am currently looking for my next role,{' '}
+       90's kid– creating cool and taking notes. Enjoying the internet and open-source. I'm very component-driven, the
+       focus in the moment is telling stories through every detail that make a web experience worth having. Experienced
+       in graphic, and motion design, as well as three.js. I am currently looking for my next role,{' '}
        <InlineLink href={email}>let's connect.</InlineLink>
       </Paragraph>
 
@@ -61,47 +53,31 @@ export const PageHeader = () => {
       <Grid columns={2} gap={3}>
        <Box>
         <PassLink href={email}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>
-          hello@chvndler.ch
-         </PersonalLink>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>hello@chvndler.ch</PersonalLink>
         </PassLink>
         <PassLink href={''}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>
-          +1 (336) 244-8939
-         </PersonalLink>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>+1 (336) 244-8939</PersonalLink>
         </PassLink>
        </Box>
        <Box>
-        <PassLink href={twitter}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>
-          twitter
-         </PersonalLink>
-        </PassLink>
-        <PassLink href={github}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>
-          github
-         </PersonalLink>
-        </PassLink>
-        <PassLink href={three}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>
-          three.js
-         </PersonalLink>
-        </PassLink>
-        <Space size={'1'} />
         <PassLink href={projects}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>
-          web projects
-         </PersonalLink>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>web projects</PersonalLink>
         </PassLink>
         <PassLink href={film}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>
-          film projects
-         </PersonalLink>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>film projects</PersonalLink>
         </PassLink>
         <PassLink href={archive}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>
-          writings
-         </PersonalLink>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>writings</PersonalLink>
+        </PassLink>
+        <Space size={'1'} />
+        <PassLink href={twitter}>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>twitter</PersonalLink>
+        </PassLink>
+        <PassLink href={github}>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>github</PersonalLink>
+        </PassLink>
+        <PassLink href={three}>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>three.js</PersonalLink>
         </PassLink>
        </Box>
       </Grid>
