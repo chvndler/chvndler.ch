@@ -57,5 +57,8 @@ const LogoBox = styled('div', {
  paddingTop: '3rem',
  margin: 'auto',
  color: theme.colors.white,
- mixBlendMode: 'difference'
+ mixBlendMode: 'difference',
+ '&:hover': {
+  color: theme.colors.chxn4
+ }
 })

@@ -5,6 +5,8 @@ import {styled, theme} from 'stitches.config'
 import {Box, Grid, InlineLink, Paragraph, PassLink, Space} from '@/components/ds'
 import {CDCLogo} from '@/components/logos'
 
+import GitSha from '../sxripts/gitsha'
+
 const projects = '/projects/web'
 const email = 'mailto:chvndler.ch@icloud.com'
 const twitter = 'https://twitter.com/chvndlerch'
@@ -79,6 +81,8 @@ export const PageHeader = () => {
         <PassLink href={three}>
          <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>three.js</PersonalLink>
         </PassLink>
+
+        <GitSha />
        </Box>
       </Grid>
      </Box>
