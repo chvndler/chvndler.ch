@@ -27,8 +27,10 @@ export const ArchiveLayout = ({children, customMeta}: LayoutProps): JSX.Element 
     </PassLink>
    </LogoBox>
 
-   <BodyContainer>
-    <Container size={'2'}>{children}</Container>
+   <BodyContainer css={{fontFamily: theme.fonts.hyperlegible}}>
+    <Container size={'article'} css={{fontFamily: theme.fonts.hyperlegible}}>
+     {children}
+    </Container>
    </BodyContainer>
 
    <Space size={2} />

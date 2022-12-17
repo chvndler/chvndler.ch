@@ -63,7 +63,7 @@ const ArchivePostContainer = styled('div', {
  marginBottom: '1rem',
  paddingRight: '6rem',
  paddingBottom: '2rem',
- border: `1px solid ${theme.colors.chxn3}`,
+ border: `1px solid ${theme.colors.blur}`,
  borderTopWidth: 0,
  borderLeftWidth: 0,
  borderRightWidth: 0,
@@ -90,13 +90,13 @@ const PostDate = styled('p', {
 })
 
 const PostSummary = styled('p', {
- fontFamily: theme.fonts.mono,
- fontSize: 13,
+ fontFamily: theme.fonts.hyperlegible,
+ fontSize: 16,
  color: theme.colors.chxn4,
  paddingTop: 8
 })
 
-const PostLink = styled('a', {
+const PostLink = styled('span', {
  fontFamily: theme.fonts.latMedStd,
  fontSize: 14,
  paddingTop: 12,

@@ -30,6 +30,9 @@ export const Container = styled('div', {
    },
    'video': {
     maxWidth: '940px'
+   },
+   'article': {
+    maxWidth: '37rem'
    }
   },
   align: {

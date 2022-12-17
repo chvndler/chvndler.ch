@@ -23,10 +23,11 @@ import {ArchiveLayout, WEBSITE_HOST_URL} from '@/components/layout/archive-page'
 import type {PostType} from '@/lib/types/post'
 import {postFilePaths, POSTS_PATH} from '@/lib/utils/mdxUtils'
 
-// Custom components/renderers to pass to MDX.
-// Since the MDX files aren't loaded by webpack, they have no knowledge of how
-// to handle import statements. Instead, you must include components in scope
-// here.
+/**
+ * Custom components/renderers to pass to MDX.
+ * Since the MDX files aren't loaded by webpack, they have no knowledge of how
+ * to handle import statements. Instead, you must include components in scope here.
+ */
 const components = {
  Head,
  Image,
@@ -65,9 +66,7 @@ const PostPage = ({source, frontMatter}: PostPageProps): JSX.Element => {
 export const getStaticProps: GetStaticProps = async ({params}) => {
  const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`)
  const source = fs.readFileSync(postFilePath)
-
  const {content, data} = matter(source)
-
  const mdxSource = await serialize(content, {
   /**
    * Optionally pass remark/rehype plugins.
@@ -136,6 +135,5 @@ const PostDate = styled('p', {
 })
 
 const ArchiveContent = styled('div', {
- fontFamily: theme.fonts.system,
- maxWidth: 800
+ fontFamily: theme.fonts.hyperlegible
 })

@@ -98,6 +98,9 @@ export const {styled, css, theme, createTheme, getCssText, globalCss, keyframes,
    monoMedium: '"At Hauss Mono Medium", monospace',
    monoSemibold: '"At Hauss Mono Semibold", monospace',
 
+   hyperlegible: '"Atkinson Hyperlegible Regular", sans-serif',
+   hyperlegibleBold: '"Atkinson Hyperlegible Bold", sans-serif',
+
    helvRound: '"Helvetica Rounded Bold", sans-serif',
 
    panB: '"PP Pangram Sans Rounded Bold", sans-serif',

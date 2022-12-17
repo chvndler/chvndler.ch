@@ -2,6 +2,7 @@
 
 @import './helpers';
 @import './reset.css';
+@import './hyperlegible.css';
 @import './scto-grotesk-a.css';
 @import './helvetica-rounded.css';
 @import './pangram-sans.css';
@@ -16,6 +17,7 @@
 */
 
 :root {
+    --font-article: 'Atkinson Hyperlegible Regular';
     --font-primary: 'Inter', sans-serif;
     --font-system: -apple-system, blinkmacsystemfont, 'segoe ui', roboto, oxygen, ubuntu, cantarell, fira sans, droid sans, 'helvetica neue', sans-serif;
     --font-body: -apple-system, sans-serif;
@@ -64,6 +66,10 @@ body {
 body {
     font-family: var(--font-primary);
     transition: opacity #{$duration / 6 + 's'} ease-in;
+}
+
+article {
+    font-family: var(--font-article) !important;
 }
 
 body.inspect * {
