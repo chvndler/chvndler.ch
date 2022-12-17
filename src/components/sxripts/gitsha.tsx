@@ -3,7 +3,7 @@
 import React from 'react'
 import {theme, VariantProps} from 'stitches.config'
 
-import {Box, PassLink, Separator, Space, Text} from '@/components/ds'
+import {Box, Flex, PassLink, Separator, Space, Text} from '@/components/ds'
 
 const GitSha = () => {
  const sha = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA
@@ -19,21 +19,54 @@ const GitSha = () => {
   return (
    <Box css={{}}>
     <Space size={2} />
-    <PassLink href={href}>
+    <Flex
+     css={{
+      margin: 'auto',
+      height: 'auto',
+      display: 'inline-flex',
+      flexDirection: 'row',
+      alignItems: 'left',
+      justifyContent: 'flex-start',
+      alignContent: 'center',
+      verticalAlign: 'middle',
+      gap: '12px'
+     }}>
      <Text
       css={{
+       margin: 'auto',
+       alignContent: 'center',
+       alignItems: 'center',
        fontFamily: theme.fonts.mono,
        fontSize: 11,
        fontWeight: 500,
-       whiteSpace: 'nowrap',
-       display: 'inline-block',
-       letterSpacing: 'body',
-       color: `#${shortSha}`,
+       lineHeight: '23px',
+       color: theme.colors.chxn4A,
        textTransform: 'uppercase'
       }}>
-      GIT_SHA {shortSha}
+      GIT_SHA
      </Text>
-    </PassLink>
+
+     <Box css={{lineHeight: '1'}}>
+      <Text css={{lineHeight: '18px', fontSize: 16, color: theme.colors.heliotrope}}>⥂</Text>
+     </Box>
+
+     <PassLink href={href}>
+      <Text
+       css={{
+        margin: 'auto',
+        alignContent: 'center',
+        alignItems: 'center',
+        fontFamily: theme.fonts.mono,
+        fontSize: 11,
+        fontWeight: 500,
+        lineHeight: '23px',
+        textTransform: 'uppercase',
+        color: `#${shortSha}`
+       }}>
+       {shortSha}
+      </Text>
+     </PassLink>
+    </Flex>
    </Box>
   )
  } else {
