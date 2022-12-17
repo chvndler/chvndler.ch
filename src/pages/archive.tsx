@@ -27,9 +27,7 @@ export const ArchiveIndex = ({posts}: IndexProps): JSX.Element => {
          {post.title}
         </Link>
        </ArchivePostTitle>
-
        <PostDate>{format(parseISO(post.date), 'MMMM dd, yyyy')}</PostDate>
-       <Space size={1} />
        <PostSummary>{post.description}</PostSummary>
        <Space size={1} />
        <PostLink>
@@ -94,12 +92,14 @@ const PostDate = styled('p', {
 const PostSummary = styled('p', {
  fontFamily: theme.fonts.mono,
  fontSize: 13,
- color: theme.colors.chxn4
+ color: theme.colors.chxn4,
+ paddingTop: 8
 })
 
 const PostLink = styled('a', {
  fontFamily: theme.fonts.latMedStd,
  fontSize: 14,
+ paddingTop: 12,
  color: theme.colors.heliotrope,
  '&:hover': {
   color: theme.colors.slate11

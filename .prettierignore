@@ -6,4 +6,4 @@
 .yarn-integrity
 .github/
 
-posts/
+posts/*.mdx
