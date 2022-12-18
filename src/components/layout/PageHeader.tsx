@@ -43,7 +43,6 @@ export const PageHeader = () => {
         letterSpacing: '0.02rem',
         fontFamily: theme.fonts.latRegStd,
         color: theme.colors.chxn4
-        // textTransform: 'uppercase'
        }}>
        90's kid– creating cool and taking notes. Enjoying the internet and open-source. I'm very component-driven, the
        focus in the moment is telling stories through every detail that make a web experience worth having. Experienced

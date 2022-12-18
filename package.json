@@ -54,6 +54,7 @@
   "gsap": "3.11.3",
   "hls.js": "^1.2.7",
   "keen-slider": "^6.8.3",
+  "leva": "^0.9.34",
   "mdx-prism": "^0.3.4",
   "mousetrap": "1.6.5",
   "mux-embed": "^4.15.0",

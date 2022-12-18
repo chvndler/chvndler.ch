@@ -1,11 +1,9 @@
 /** @format */
 
-import {useGLTF} from '@react-three/drei'
+import {Loader, useGLTF} from '@react-three/drei'
 import {useLoader} from '@react-three/fiber'
 import React from 'react'
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
-
-import {Loader} from '../loader'
 
 export const CDCExpirementalModel = () => {
  const gltf = useLoader(GLTFLoader, '/models/CDC.gltf')
