@@ -81,7 +81,7 @@ const NavigationMenuBarStyles = styled(NavigationMenu.List, {
  WebkitBackdropFilter: 'blur(40px) saturate(180%)',
  lineHeight: '23px',
  height: 48,
- border: `1px solid ${theme.colors.sageA4}`
+ border: `1px solid transparent`
 })
 
 const StyledContentBox = styled('div', {

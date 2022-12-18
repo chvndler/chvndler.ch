@@ -4,8 +4,7 @@ import {styled, theme} from 'stitches.config'
 
 import {Box, Grid, InlineLink, Paragraph, PassLink, Space} from '@/components/ds'
 import {CDCLogo} from '@/components/logos'
-
-import GitSha from '../sxripts/gitsha'
+import {GitSha} from '@/components/sxripts'
 
 const projects = '/projects/web'
 const email = 'mailto:chvndler.ch@icloud.com'
@@ -31,7 +30,7 @@ export const PageHeader = () => {
      <Box className={'left'}>
       <Paragraph
        css={{
-        fontSize: 15,
+        fontSize: 14,
         fontFamily: theme.fonts.latMedStd,
         color: theme.colors.chxn4
        }}>
@@ -40,11 +39,11 @@ export const PageHeader = () => {
       <Space size={'1'} />
       <Paragraph
        css={{
-        fontSize: 15,
+        fontSize: 14,
         letterSpacing: '0.02rem',
         fontFamily: theme.fonts.latRegStd,
         color: theme.colors.chxn4
-        //textTransform: 'uppercase'
+        // textTransform: 'uppercase'
        }}>
        90's kid– creating cool and taking notes. Enjoying the internet and open-source. I'm very component-driven, the
        focus in the moment is telling stories through every detail that make a web experience worth having. Experienced
@@ -55,32 +54,34 @@ export const PageHeader = () => {
       <Space size={'2'} />
       <Grid columns={2} gap={3}>
        <Box>
+        <LinkHeaders>CONNECT</LinkHeaders>
         <PassLink href={email}>
          <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>hello@chvndler.ch</PersonalLink>
         </PassLink>
         <PassLink href={''}>
          <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>+1 (336) 244-8939</PersonalLink>
         </PassLink>
-       </Box>
-       <Box>
-        <PassLink href={projects}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>web projects</PersonalLink>
-        </PassLink>
-        <PassLink href={film}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>film projects</PersonalLink>
-        </PassLink>
-        <PassLink href={archive}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>writings</PersonalLink>
-        </PassLink>
         <Space size={'1'} />
         <PassLink href={twitter}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>twitter</PersonalLink>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>Twitter</PersonalLink>
         </PassLink>
         <PassLink href={github}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>github</PersonalLink>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>GitHub</PersonalLink>
+        </PassLink>
+       </Box>
+       <Box>
+        <LinkHeaders>PROJECTS</LinkHeaders>
+        <PassLink href={projects}>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>Web</PersonalLink>
+        </PassLink>
+        <PassLink href={film}>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>Film</PersonalLink>
+        </PassLink>
+        <PassLink href={archive}>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>Writings</PersonalLink>
         </PassLink>
         <PassLink href={three}>
-         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>three.js</PersonalLink>
+         <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>Three.js</PersonalLink>
         </PassLink>
        </Box>
       </Grid>
@@ -141,7 +142,18 @@ const styledName = styled('h1', {
 const styledPersonalLink = styled('div', {
  fontFamily: theme.fonts.latMedStd,
  fontSize: 14,
- lineHeight: '1.4'
+ lineHeight: '1.5'
+})
+
+const LinkHeaders = styled('div', {
+ margin: 'auto',
+ alignContent: 'center',
+ alignItems: 'center',
+ fontFamily: theme.fonts.mono,
+ fontSize: 11,
+ fontWeight: 500,
+ lineHeight: '23px',
+ textTransform: 'uppercase'
 })
 
 export const TopBox = styledTopBox

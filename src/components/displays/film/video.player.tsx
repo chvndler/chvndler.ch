@@ -1,6 +1,6 @@
 /** @format */
 
-import MuxPlayer from '@mux/mux-player-react/lazy'
+import MuxPlayer from '@mux/mux-player-react'
 
 import {CaptionBox, CaptionOther, CaptionTitle, MuxVideoStyles, VideoWrapper} from './video.styles'
 

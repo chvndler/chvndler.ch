@@ -5,7 +5,7 @@ import {styled, theme} from 'stitches.config'
 
 import type {ArchiveMetaProps} from '@/components/common/archiveMeta'
 
-import {BodyContainer, Container, PassLink, Space} from '../ds'
+import {BackLink, BodyContainer, Box, Container, PassLink, Space} from '../ds'
 import {ArchiveLogo} from '../logos/archive'
 import {RelativeFooter} from './app-footer'
 import ArchiveHead from './ArchiveHead'
@@ -22,9 +22,20 @@ export const ArchiveLayout = ({children, customMeta}: LayoutProps): JSX.Element 
   <>
    <ArchiveHead customMeta={customMeta} />
    <LogoBox>
-    <PassLink href={'/archive'}>
-     <ArchiveLogo width={'200'} />
-    </PassLink>
+    <LinkBox>
+     <BackLink>
+      <StyledLink>BACK</StyledLink>
+     </BackLink>
+     <PassLink href={'/'}>
+      <StyledLink>INDEX</StyledLink>
+     </PassLink>
+    </LinkBox>
+    <LogoLink>
+     <PassLink href={'/archive'}>
+      <ArchiveLogo width={'100'} />
+     </PassLink>
+    </LogoLink>
+    <Box css={{width: '100%', maxWidth: '130px'}} />
    </LogoBox>
 
    <BodyContainer css={{fontFamily: theme.fonts.hyperlegible}}>
@@ -46,19 +57,53 @@ export const ArchiveLayout = ({children, customMeta}: LayoutProps): JSX.Element 
 
 const LogoBox = styled('div', {
  zIndex: '999',
+ display: 'flex',
+ flexDirection: 'row',
+ justifyContent: 'space-between',
+ alignContent: 'center',
+ alignItems: 'center',
  position: 'fixed',
  top: '0',
  left: '0',
  right: '0',
  width: '100%',
- alignItems: 'center',
- justifyContent: 'center',
- display: 'flex',
+ maxWidth: '37rem',
  paddingTop: '3rem',
+ paddingLeft: '2rem',
+ paddingRight: '2rem',
  margin: 'auto',
- color: theme.colors.white,
  mixBlendMode: 'difference',
+ gap: '1rem'
+})
+
+const LinkBox = styled('div', {
+ maxWidth: '130px',
+ width: '100%',
+ display: 'flex',
+ flexDirection: 'row',
+ justifyContent: 'flex-start',
+ alignContent: 'center',
+ alignItems: 'center',
+ gap: '1rem'
+})
+
+const StyledLink = styled('span', {
+ color: theme.colors.white,
+ fontFamily: theme.fonts.mono,
+ letterSpacing: '0.1rem',
+ fontSize: 12,
+ textDecoration: 'none',
+ textTransform: 'uppercase',
  '&:hover': {
-  color: theme.colors.chxn4
+  cursor: 'pointer'
  }
+})
+
+const LogoLink = styled('span', {
+ display: 'flex',
+ justifyContent: 'center',
+ maxWidth: '130px',
+ width: '100%',
+ color: theme.colors.white,
+ mixBlendMode: 'difference'
 })

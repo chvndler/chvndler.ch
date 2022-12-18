@@ -6,6 +6,7 @@
  */
 
 export * from './app-wrapper'
+export * from './back-link'
 export * from './badge'
 export * from './blur-canvas'
 export * from './body-container'

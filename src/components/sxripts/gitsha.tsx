@@ -5,7 +5,7 @@ import {css, styled, theme} from 'stitches.config'
 
 import {Box, PassLink, Text} from '@/components/ds'
 
-const GitSha = () => {
+export const GitSha = () => {
  const sha = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA
  const owner = process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER
  const slug = process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG
@@ -52,8 +52,6 @@ const GitSha = () => {
   )
  }
 }
-
-export default GitSha
 
 /**
  *

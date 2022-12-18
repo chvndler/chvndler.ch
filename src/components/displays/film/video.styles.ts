@@ -16,13 +16,15 @@ export const MuxVideoStyles = css('video', {
  height: 'auto',
  zIndex: 1,
  position: 'relative',
+ paddingBottom: 0,
  overflow: 'hidden',
  //border: `3px solid ${theme.colors.chxn4A}`,
  margin: '0',
- // padding: '0',
- // outline: 'none',
- // display: 'flex',
+ padding: '0',
+ outline: 'none',
+ display: 'flex',
  opacity: 1,
+ //  backgroundColor: theme.colors.chxn4A,
  transition: 'opacity 0.5s ease-in-out'
 })
 
