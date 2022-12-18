@@ -6,4 +6,10 @@
 .yarn-integrity
 .github/
 
-posts/*
+posts/
+
+
+/posts/*
+
+
+src/posts/
