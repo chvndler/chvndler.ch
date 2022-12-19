@@ -308,6 +308,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cloudflare/stream-react@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "@cloudflare/stream-react@npm:1.8.0"
+  peerDependencies:
+    react: ">=16"
+  checksum: 9352970e106c3364524d0f2ab4591fb242202550779f6cb1cd5c2422c12e14426e659b3f8ffe080c74904342f44541fc1f1cd819e1a89809676f3ad315adacea
+  languageName: node
+  linkType: hard
+
 "@corex/deepmerge@npm:^4.0.29":
   version: 4.0.29
   resolution: "@corex/deepmerge@npm:4.0.29"
@@ -2852,6 +2861,7 @@ __metadata:
   dependencies:
     "@babel/core": ^7.20.5
     "@babel/eslint-parser": ^7.19.1
+    "@cloudflare/stream-react": ^1.8.0
     "@juggle/resize-observer": ^3.4.0
     "@mux/blurhash": ^0.1.2
     "@mux/mux-player-react": ^1.3.0

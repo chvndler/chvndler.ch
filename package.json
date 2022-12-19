@@ -78,6 +78,7 @@
  "devDependencies": {
   "@babel/core": "^7.20.5",
   "@babel/eslint-parser": "^7.19.1",
+  "@cloudflare/stream-react": "^1.8.0",
   "@next/bundle-analyzer": "13",
   "@next/eslint-plugin-next": "13",
   "@types/css-font-loading-module": "0.0.7",

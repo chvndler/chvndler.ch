@@ -18,13 +18,15 @@ export const MuxVideoStyles = css('video', {
  position: 'relative',
  paddingBottom: 0,
  overflow: 'hidden',
- //border: `3px solid ${theme.colors.chxn4A}`,
+ // border: `3px solid ${theme.colors.chxn4A}`,
+ // borderRadius: 24,
  margin: '0',
  padding: '0',
  outline: 'none',
  display: 'flex',
  opacity: 1,
- //  backgroundColor: theme.colors.chxn4A,
+ objectFit: 'contain',
+ // backgroundColor: theme.colors.chxn4A,
  transition: 'opacity 0.5s ease-in-out'
 })
 
@@ -44,14 +46,17 @@ const CaptionBoxStyles = css({
 })
 
 const CaptionTitleStyles = css({
- fontFamily: theme.fonts.latMedStd,
- fontSize: 14,
+ fontFamily: theme.fonts.latBoldStd,
+ fontSize: 32,
+ color: theme.colors.white,
+ textTransform: 'uppercase',
  position: 'relative',
  zIndex: 2,
  display: 'flex',
  flexDirection: 'column',
  justifyContent: 'flex-start',
  alignItems: 'flex-start',
+ textAlign: 'left',
  width: 'auto',
  height: 'auto',
  margin: 0,
@@ -74,7 +79,25 @@ const CaptionOtherStyles = css({
  padding: 0
 })
 
+const onTopCaption = css({
+ position: 'absolute',
+ top: 0,
+ left: 0,
+ padding: 20,
+ zIndex: 40,
+ margin: 0,
+ width: '100%',
+ height: 'auto',
+
+ fontFamily: theme.fonts.latBoldStd,
+ fontSize: 24,
+ color: theme.colors.chxn1,
+ mixBlendMode: 'difference'
+})
+
 export const VideoWrapper = styled('div', VideoWrapperStyles)
 export const CaptionBox = styled('div', CaptionBoxStyles)
 export const CaptionTitle = styled('div', CaptionTitleStyles)
 export const CaptionOther = styled('div', CaptionOtherStyles)
+
+export const OnTopCaption = styled('div', onTopCaption)

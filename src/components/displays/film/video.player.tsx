@@ -2,7 +2,7 @@
 
 import MuxPlayer from '@mux/mux-player-react'
 
-import {CaptionBox, CaptionOther, CaptionTitle, MuxVideoStyles, VideoWrapper} from './video.styles'
+import {CaptionOther, CaptionTitle, MuxVideoStyles, OnTopCaption, VideoWrapper} from './video.styles'
 
 type MuxProps = {
  captionTitle?: string
@@ -15,6 +15,10 @@ export const VideoPlayer = ({videoId, posterId, captionTitle, captionOther, ...p
  return (
   <>
    <VideoWrapper>
+    <OnTopCaption>
+     <CaptionTitle>{captionTitle}</CaptionTitle>
+     <CaptionOther>{captionOther}</CaptionOther>
+    </OnTopCaption>
     <MuxPlayer
      {...props}
      /**
@@ -34,10 +38,6 @@ export const VideoPlayer = ({videoId, posterId, captionTitle, captionOther, ...p
      secondaryColor={'transparent'}
      metadata={{}}
     />
-    <CaptionBox>
-     <CaptionTitle>{captionTitle}</CaptionTitle>
-     <CaptionOther>{captionOther}</CaptionOther>
-    </CaptionBox>
    </VideoWrapper>
   </>
  )
