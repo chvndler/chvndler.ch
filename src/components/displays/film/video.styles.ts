@@ -18,15 +18,12 @@ export const MuxVideoStyles = css('video', {
  position: 'relative',
  paddingBottom: 0,
  overflow: 'hidden',
- // border: `3px solid ${theme.colors.chxn4A}`,
- // borderRadius: 24,
  margin: '0',
  padding: '0',
  outline: 'none',
  display: 'flex',
  opacity: 1,
  objectFit: 'contain',
- // backgroundColor: theme.colors.chxn4A,
  transition: 'opacity 0.5s ease-in-out'
 })
 
@@ -83,12 +80,14 @@ const onTopCaption = css({
  position: 'absolute',
  top: 0,
  left: 0,
- padding: 20,
+ paddingTop: 30,
+ paddingLeft: 60,
+ paddingRight: 20,
+ paddingBottom: 0,
  zIndex: 40,
  margin: 0,
  width: '100%',
  height: 'auto',
-
  fontFamily: theme.fonts.latBoldStd,
  fontSize: 24,
  color: theme.colors.chxn1,
