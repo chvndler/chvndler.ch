@@ -9,7 +9,7 @@ const domain = 'imagedelivery.net'
 const variant = 'public'
 
 // poster id's...
-const reelPoster = 'd9e98e85-c371-424b-7c9e-3d6726541300'
+const reelPoster = '09c5e2d4-5b33-48ad-e5b6-691443dc9800'
 const rodeoPoster = 'a34bb37f-b3fd-4e40-f54a-ff5964ad6800'
 const aquamanPoster = 'f86d39ba-47ab-49e6-1bf3-a86b377aa000'
 const viiPoster = 'dd873f54-f9ed-420f-ae65-f3948f228900'
@@ -47,6 +47,12 @@ export const FilmProjects = () => {
      captionOther={'"Rodeo©" by Beaux Isaac'}
     />
     <VideoPlayer
+     videoId={foreverIndebtedVideo}
+     posterId={`https://${domain}/${accountHash}/${foreverIndebtedPoster}/${variant}`}
+     captionTitle={'FOREVER INDEBTED© w/ Justin Wilson'}
+     captionOther={''}
+    />
+    <VideoPlayer
      videoId={aquamanVideo}
      posterId={`https://${domain}/${accountHash}/${aquamanPoster}/${variant}`}
      captionTitle={'Young Pharro - AQUAMAN© ft. Chris Buxton'}
@@ -78,12 +84,6 @@ export const FilmProjects = () => {
    </VideoPlayerGrid>
 
    <VideoPlayerGrid columns={1}>
-    <VideoPlayer
-     videoId={foreverIndebtedVideo}
-     posterId={`https://${domain}/${accountHash}/${foreverIndebtedPoster}/${variant}`}
-     captionTitle={'FOREVER INDEBTED© w/ Justin Wilson'}
-     captionOther={''}
-    />
     <VideoPlayer
      videoId={truthVideo}
      posterId={`https://${domain}/${accountHash}/${truthPoster}/${variant}`}

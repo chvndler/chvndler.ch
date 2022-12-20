@@ -45,7 +45,7 @@ const CaptionBoxStyles = css({
 const CaptionTitleStyles = css({
  fontFamily: theme.fonts.latBoldStd,
  fontSize: 32,
- color: theme.colors.white,
+ color: theme.colors.chxn4,
  textTransform: 'uppercase',
  position: 'relative',
  zIndex: 2,
