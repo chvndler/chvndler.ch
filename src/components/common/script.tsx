@@ -3,17 +3,17 @@ import {useEffect} from 'react'
 import {isServer} from '@/lib/constants'
 
 type ScriptProps = {
- fn: () => void | (() => void)
+  fn: () => void | (() => void)
 }
 
 export const Script = ({fn}: ScriptProps) => {
- useEffect(() => {
-  if (isServer) return
+  useEffect(() => {
+    if (isServer) return
 
-  return () => {
-   fn()
-  }
- }, [fn])
+    return () => {
+      fn()
+    }
+  }, [fn])
 
- return <></>
+  return <></>
 }

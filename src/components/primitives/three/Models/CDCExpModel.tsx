@@ -6,13 +6,13 @@ import React from 'react'
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 
 export const CDCExpirementalModel = () => {
- const gltf = useLoader(GLTFLoader, '/models/CDC.gltf')
+  const gltf = useLoader(GLTFLoader, '/models/CDC.gltf')
 
- return (
-  <React.Suspense fallback={<Loader />}>
-   <primitive object={gltf.scene} />
-  </React.Suspense>
- )
+  return (
+    <React.Suspense fallback={<Loader />}>
+      <primitive object={gltf.scene} />
+    </React.Suspense>
+  )
 }
 
 useGLTF.preload('/models/CDC.gltf')

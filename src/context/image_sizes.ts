@@ -8,5 +8,5 @@ ImageSizeProvider.displayName = 'ImageSizeProvider'
 export default ImageSizeProvider
 
 export const useImageSizes = () => {
- return useContext(ImageSizeProvider)
+  return useContext(ImageSizeProvider)
 }

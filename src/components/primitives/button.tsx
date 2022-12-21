@@ -9,51 +9,51 @@ import {styled} from 'stitches.config'
 
 // Here you'll put custom props, such as `isLoading`, `variant`, `size`...
 export type ButtonProps = {
- children?: React.ReactNode
- icon?: boolean | React.ReactNode
- isLoading?: boolean
- variant?: 'underlined'
+  children?: React.ReactNode
+  icon?: boolean | React.ReactNode
+  isLoading?: boolean
+  variant?: 'underlined'
 }
 
 const StyledButton = styled('button', {
- display: 'flex',
- alignItems: 'center',
- border: 'none',
- transition: 'background-size 250ms',
+  display: 'flex',
+  alignItems: 'center',
+  border: 'none',
+  transition: 'background-size 250ms',
 
- '&:focus': {
-  outline: 'none'
- },
-
- variants: {
-  underlined: {
-   true: {
-    background:
-     'linear-gradient(to right, transparent, transparent), linear-gradient(to right, $colors$white, $colors$white)',
-    backgroundSize: '100% 0.1em, 0 0.1em',
-    backgroundPosition: '100% 100%, 0 100%',
-    backgroundRepeat: 'no-repeat',
-    '&:hover': {
-     backgroundSize: '0 0.1em, 100% 0.1em'
-    }
-   }
+  '&:focus': {
+    outline: 'none'
   },
-  hasIcon: {
-   true: {
-    svg: {
-     ml: '8px',
-     transition: 'all 250ms',
-     fill: 'currentColor',
-     color: 'transparent'
+
+  variants: {
+    underlined: {
+      true: {
+        background:
+          'linear-gradient(to right, transparent, transparent), linear-gradient(to right, $colors$white, $colors$white)',
+        backgroundSize: '100% 0.1em, 0 0.1em',
+        backgroundPosition: '100% 100%, 0 100%',
+        backgroundRepeat: 'no-repeat',
+        '&:hover': {
+          backgroundSize: '0 0.1em, 100% 0.1em'
+        }
+      }
     },
-    '&:hover': {
-     svg: {
-      color: '$white'
-     }
+    hasIcon: {
+      true: {
+        svg: {
+          ml: '8px',
+          transition: 'all 250ms',
+          fill: 'currentColor',
+          color: 'transparent'
+        },
+        '&:hover': {
+          svg: {
+            color: '$white'
+          }
+        }
+      }
     }
-   }
   }
- }
 })
 
 /**
@@ -69,17 +69,17 @@ const StyledButton = styled('button', {
  * Also, below the `Button` is a `ButtonLink` that automatically wraps `NextLink` to it ✨
  */
 const Button = forwardRef(({children, className, disabled, isLoading, variant, icon, ...props}, ref) => {
- return (
-  <StyledButton
-   {...props}
-   className={clsx(className)}
-   disabled={isLoading || disabled}
-   ref={ref}
-   underlined={variant === 'underlined'}
-   hasIcon={!!icon}>
-   {children} {icon && typeof icon !== 'boolean' ? icon : null}
-  </StyledButton>
- )
+  return (
+    <StyledButton
+      {...props}
+      className={clsx(className)}
+      disabled={isLoading || disabled}
+      ref={ref}
+      underlined={variant === 'underlined'}
+      hasIcon={!!icon}>
+      {children} {icon && typeof icon !== 'boolean' ? icon : null}
+    </StyledButton>
+  )
 }) as Polymorphic.ForwardRefComponent<'button', ButtonProps>
 
 export default Button

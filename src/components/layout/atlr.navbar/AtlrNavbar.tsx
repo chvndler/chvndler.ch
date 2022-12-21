@@ -7,16 +7,16 @@ import {PassLink} from '@/components/ds'
 import {CDCLogo} from '@/components/logos'
 
 import {
- NavContentBox,
- NavIcxn,
- NavLink,
- NavMenuBar,
- NavMenuContent,
- NavMenuInner,
- NavMenuRoot,
- NavMenuTrigger,
- NavMenuViewport,
- Viewport
+  NavContentBox,
+  NavIcxn,
+  NavLink,
+  NavMenuBar,
+  NavMenuContent,
+  NavMenuInner,
+  NavMenuRoot,
+  NavMenuTrigger,
+  NavMenuViewport,
+  Viewport
 } from './AtlrNavbar.styles'
 
 /**
@@ -32,76 +32,76 @@ const are_na = 'https://www.are.na/chvndler-ch'
 const read_cv = 'https://read.cv/chvn'
 
 export const AtlrNavbar = () => {
- return (
-  <NavMenuRoot>
-   <NavMenuBar>
-    <NavigationMenu.Item>
-     <NavMenuTrigger>
-      Projects <NavIcxn variant='SmallArrowDown' />
-     </NavMenuTrigger>
+  return (
+    <NavMenuRoot>
+      <NavMenuBar>
+        <NavigationMenu.Item>
+          <NavMenuTrigger>
+            Projects <NavIcxn variant='SmallArrowDown' />
+          </NavMenuTrigger>
 
-     <NavMenuContent>
-      <NavMenuInner>
-       <NavLink href={'/'}>index</NavLink>
-       <NavLink href={'/projects/web'}>web projects</NavLink>
-       <NavLink href={'/projects/three'}>three.js</NavLink>
-       <NavLink href={'/archive'}>articles archive</NavLink>
-       <NavLink level2 href={'/developer/notes'}>
-        notes
-       </NavLink>
-      </NavMenuInner>
-     </NavMenuContent>
-    </NavigationMenu.Item>
-    {/* <!-- END !  "Projects" Menu --> */}
+          <NavMenuContent>
+            <NavMenuInner>
+              <NavLink href={'/'}>index</NavLink>
+              <NavLink href={'/projects/web'}>web projects</NavLink>
+              <NavLink href={'/projects/three'}>three.js</NavLink>
+              <NavLink href={'/archive'}>articles archive</NavLink>
+              <NavLink level2 href={'/developer/notes'}>
+                notes
+              </NavLink>
+            </NavMenuInner>
+          </NavMenuContent>
+        </NavigationMenu.Item>
+        {/* <!-- END !  "Projects" Menu --> */}
 
-    <NavContentBox alignment='center'>
-     <PassLink href={'/'}>
-      <CDCLogo />
-     </PassLink>
-    </NavContentBox>
+        <NavContentBox alignment='center'>
+          <PassLink href={'/'}>
+            <CDCLogo />
+          </PassLink>
+        </NavContentBox>
 
-    {/* <!-- "Connect" Menu --> */}
-    <NavigationMenu.Item>
-     <NavMenuTrigger>
-      Connect <NavIcxn variant='SmallArrowDown' />
-     </NavMenuTrigger>
-     <NavMenuContent>
-      <NavMenuInner>
-       <NavLink href={cv} target={'_blank'} rel={'noreferrer noopener'}>
-        resume/cv
-       </NavLink>
-       <NavLink href={twitter} target={'_blank'} rel={'noreferrer noopener'}>
-        twitter
-       </NavLink>
-       <NavLink href={github} target={'_blank'} rel={'noreferrer noopener'}>
-        github
-       </NavLink>
-       <NavLink href={linkedin} target={'_blank'} rel={'noreferrer noopener'}>
-        linkedin
-       </NavLink>
-       <NavLink href={code_sandbox} target={'_blank'} rel={'noreferrer noopener'}>
-        codesandbox
-       </NavLink>
-       <NavLink href={instagram} target={'_blank'} rel={'noreferrer noopener'}>
-        instagram
-       </NavLink>
-       <NavLink href={are_na} target={'_blank'} rel={'noreferrer noopener'}>
-        are.na
-       </NavLink>
-       <NavLink href={read_cv} target={'_blank'} rel={'noreferrer noopener'}>
-        read.cv
-       </NavLink>
-      </NavMenuInner>
-     </NavMenuContent>
-    </NavigationMenu.Item>
-    {/* <!-- END !  "Connect" Menu --> */}
-   </NavMenuBar>
+        {/* <!-- "Connect" Menu --> */}
+        <NavigationMenu.Item>
+          <NavMenuTrigger>
+            Connect <NavIcxn variant='SmallArrowDown' />
+          </NavMenuTrigger>
+          <NavMenuContent>
+            <NavMenuInner>
+              <NavLink href={cv} target={'_blank'} rel={'noreferrer noopener'}>
+                resume/cv
+              </NavLink>
+              <NavLink href={twitter} target={'_blank'} rel={'noreferrer noopener'}>
+                twitter
+              </NavLink>
+              <NavLink href={github} target={'_blank'} rel={'noreferrer noopener'}>
+                github
+              </NavLink>
+              <NavLink href={linkedin} target={'_blank'} rel={'noreferrer noopener'}>
+                linkedin
+              </NavLink>
+              <NavLink href={code_sandbox} target={'_blank'} rel={'noreferrer noopener'}>
+                codesandbox
+              </NavLink>
+              <NavLink href={instagram} target={'_blank'} rel={'noreferrer noopener'}>
+                instagram
+              </NavLink>
+              <NavLink href={are_na} target={'_blank'} rel={'noreferrer noopener'}>
+                are.na
+              </NavLink>
+              <NavLink href={read_cv} target={'_blank'} rel={'noreferrer noopener'}>
+                read.cv
+              </NavLink>
+            </NavMenuInner>
+          </NavMenuContent>
+        </NavigationMenu.Item>
+        {/* <!-- END !  "Connect" Menu --> */}
+      </NavMenuBar>
 
-   <Viewport>
-    <NavMenuViewport />
-   </Viewport>
-  </NavMenuRoot>
- )
+      <Viewport>
+        <NavMenuViewport />
+      </Viewport>
+    </NavMenuRoot>
+  )
 }
 
 AtlrNavbar.displayName = 'AtlrNavbar'

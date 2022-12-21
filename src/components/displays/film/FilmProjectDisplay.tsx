@@ -31,74 +31,74 @@ const weddingVideo = '5LJXqmhDhExmOHFrwTa1lDQv0125boZxbCxLMMMhv8ac'
 const foreverIndebtedVideo = 'v3dRmogDKN1R4Oq00OlCRvSvY019MvaNmCiyPdgbTq800s'
 
 export const FilmProjects = () => {
- return (
-  <>
-   <VideoPlayerGrid columns={1} css={{gap: '20px'}}>
-    <VideoPlayer
-     videoId={reelVideo}
-     posterId={`https://${domain}/${accountHash}/${reelPoster}/${variant}`}
-     captionTitle={'©2019 FILM REEL'}
-     captionOther={'A collection of my work from 2019.'}
-    />
-    <VideoPlayer
-     videoId={rodeoVideo}
-     posterId={`https://${domain}/${accountHash}/${rodeoPoster}/${variant}`}
-     captionTitle={'Beaux Isaac - Rodeo© [Official Music Video]'}
-     captionOther={'"Rodeo©" by Beaux Isaac'}
-    />
-    <VideoPlayer
-     videoId={foreverIndebtedVideo}
-     posterId={`https://${domain}/${accountHash}/${foreverIndebtedPoster}/${variant}`}
-     captionTitle={'FOREVER INDEBTED© w/ Justin Wilson'}
-     captionOther={''}
-    />
-    <VideoPlayer
-     videoId={aquamanVideo}
-     posterId={`https://${domain}/${accountHash}/${aquamanPoster}/${variant}`}
-     captionTitle={'Young Pharro - AQUAMAN© ft. Chris Buxton'}
-     captionOther={'Aquaman by Young Pharro Ft. Chris Buxton / In Honor of Juice Wrld.'}
-    />
-    <VideoPlayer
-     videoId={vii}
-     posterId={`https://${domain}/${accountHash}/${viiPoster}/${variant}`}
-     captionTitle={'vii Capsule: "Alone with the Gods"'}
-     captionOther={'3rd Collection'}
-    />
-   </VideoPlayerGrid>
+  return (
+    <>
+      <VideoPlayerGrid columns={1} css={{gap: '20px'}}>
+        <VideoPlayer
+          videoId={reelVideo}
+          posterId={`https://${domain}/${accountHash}/${reelPoster}/${variant}`}
+          captionTitle={'©2019 FILM REEL'}
+          captionOther={'A collection of my work from 2019.'}
+        />
+        <VideoPlayer
+          videoId={rodeoVideo}
+          posterId={`https://${domain}/${accountHash}/${rodeoPoster}/${variant}`}
+          captionTitle={'Beaux Isaac - Rodeo© [Official Music Video]'}
+          captionOther={'"Rodeo©" by Beaux Isaac'}
+        />
+        <VideoPlayer
+          videoId={foreverIndebtedVideo}
+          posterId={`https://${domain}/${accountHash}/${foreverIndebtedPoster}/${variant}`}
+          captionTitle={'FOREVER INDEBTED© w/ Justin Wilson'}
+          captionOther={''}
+        />
+        <VideoPlayer
+          videoId={aquamanVideo}
+          posterId={`https://${domain}/${accountHash}/${aquamanPoster}/${variant}`}
+          captionTitle={'Young Pharro - AQUAMAN© ft. Chris Buxton'}
+          captionOther={'Aquaman by Young Pharro Ft. Chris Buxton / In Honor of Juice Wrld.'}
+        />
+        <VideoPlayer
+          videoId={vii}
+          posterId={`https://${domain}/${accountHash}/${viiPoster}/${variant}`}
+          captionTitle={'vii Capsule: "Alone with the Gods"'}
+          captionOther={'3rd Collection'}
+        />
+      </VideoPlayerGrid>
 
-   {/* <!-- 2nd row --> */}
+      {/* <!-- 2nd row --> */}
 
-   <VideoPlayerGrid columns={2} css={{gap: '20px'}}>
-    <VideoPlayer
-     videoId={wolvesVideo}
-     posterId={`https://${domain}/${accountHash}/${wolvesPoster}/${variant}`}
-     captionTitle={'WOLVES© - Whistler Canada'}
-     captionOther={'Social content WOLVES© YouTube channel.'}
-    />
-    <VideoPlayer
-     videoId={trufestVideo}
-     posterId={`https://${domain}/${accountHash}/${trufestPoster}/${variant}`}
-     captionTitle={'We present: TRUFEST©'}
-     captionOther={'A Music Event my team and I created in 2020.'}
-    />
-   </VideoPlayerGrid>
+      <VideoPlayerGrid columns={2} css={{gap: '20px'}}>
+        <VideoPlayer
+          videoId={wolvesVideo}
+          posterId={`https://${domain}/${accountHash}/${wolvesPoster}/${variant}`}
+          captionTitle={'WOLVES© - Whistler Canada'}
+          captionOther={'Social content WOLVES© YouTube channel.'}
+        />
+        <VideoPlayer
+          videoId={trufestVideo}
+          posterId={`https://${domain}/${accountHash}/${trufestPoster}/${variant}`}
+          captionTitle={'We present: TRUFEST©'}
+          captionOther={'A Music Event my team and I created in 2020.'}
+        />
+      </VideoPlayerGrid>
 
-   <VideoPlayerGrid columns={1}>
-    <VideoPlayer
-     videoId={truthVideo}
-     posterId={`https://${domain}/${accountHash}/${truthPoster}/${variant}`}
-     captionTitle={'At Least I Told the Truth©.'}
-     captionOther={'A short film about hldtru®, directed by me.'}
-    />
-    <VideoPlayer
-     videoId={weddingVideo}
-     posterId={`https://${domain}/${accountHash}/${weddingPoster}/${variant}`}
-     captionTitle={'Justin & Lauren Morris Wedding Film'}
-     captionOther={''}
-    />
-   </VideoPlayerGrid>
-  </>
- )
+      <VideoPlayerGrid columns={1}>
+        <VideoPlayer
+          videoId={truthVideo}
+          posterId={`https://${domain}/${accountHash}/${truthPoster}/${variant}`}
+          captionTitle={'At Least I Told the Truth©.'}
+          captionOther={'A short film about hldtru®, directed by me.'}
+        />
+        <VideoPlayer
+          videoId={weddingVideo}
+          posterId={`https://${domain}/${accountHash}/${weddingPoster}/${variant}`}
+          captionTitle={'Justin & Lauren Morris Wedding Film'}
+          captionOther={''}
+        />
+      </VideoPlayerGrid>
+    </>
+  )
 }
 
 FilmProjects.displayName = 'FilmProjectDisplay'

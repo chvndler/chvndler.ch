@@ -9,39 +9,39 @@ $golden-ratio: 1.6180339887498948482;
 $reciprocal-golden-ratio: 1 / $golden-ratio;
 $duration: $reciprocal-golden-ratio * 1.2;
 @function tovw($target, $context: 1920px, $min: 'placeholder') {
- @if $context== 'desktop-large' {
-  $context: 1920px;
- }
- @if $context== 'desktop' {
-  $context: 1440px;
- }
- @if $context== 'tablet' {
-  $context: 620px;
- }
- @if $context== 'mobile' {
-  $context: 375px;
- }
- @if $target==0 {
-  @return 0;
- }
- @if $min != 'placeholder' {
-  @return string.unquote('max(' + $min + ', ' + (math.div($target, $context) * 100) + 'vw)');
- }
- @return string.unquote((math.div($target, $context) * 100) + 'vw');
+  @if $context== 'desktop-large' {
+    $context: 1920px;
+  }
+  @if $context== 'desktop' {
+    $context: 1440px;
+  }
+  @if $context== 'tablet' {
+    $context: 620px;
+  }
+  @if $context== 'mobile' {
+    $context: 375px;
+  }
+  @if $target==0 {
+    @return 0;
+  }
+  @if $min != 'placeholder' {
+    @return string.unquote('max(' + $min + ', ' + (math.div($target, $context) * 100) + 'vw)');
+  }
+  @return string.unquote((math.div($target, $context) * 100) + 'vw');
 }
 
 @function torem($target, $context: 16px) {
- @if $target==0 {
-  @return 0;
- }
- @return math.div($target, $context) + 0rem;
+  @if $target==0 {
+    @return 0;
+  }
+  @return math.div($target, $context) + 0rem;
 }
 
 @function toem($target, $context) {
- @if $target==0 {
-  @return 0;
- }
- @return math.div($target, $context) + 0em;
+  @if $target==0 {
+    @return 0;
+  }
+  @return math.div($target, $context) + 0em;
 }
 
 /**
@@ -51,64 +51,64 @@ $duration: $reciprocal-golden-ratio * 1.2;
 */
 
 .keen-slider:not([data-keen-slider-disabled]) {
- z-index: 0;
- padding-left: 20vw !important;
- padding-right: 0 !important;
- padding-top: auto;
- padding-bottom: auto;
- align-content: flex-start;
- align-items: flex-start;
- justify-content: flex-start;
- display: inline-flex;
- overflow: hidden;
- position: relative;
- user-select: none;
- touch-action: pan-y;
- width: 100%;
- height: auto;
- margin: auto;
- display: flex;
- overscroll-behavior-x: contain;
- scroll-snap-type: x mandatory;
- -webkit-tap-highlight-color: transparent;
- -webkit-touch-callout: none;
- -khtml-user-select: none;
- -ms-touch-action: pan-y;
- .keen-slider__slide {
-  box-sizing: border-box;
+  z-index: 0;
+  padding-left: 20vw !important;
+  padding-right: 0 !important;
+  padding-top: auto;
+  padding-bottom: auto;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: inline-flex;
+  overflow: hidden;
   position: relative;
+  user-select: none;
+  touch-action: pan-y;
   width: 100%;
-  min-height: 100%;
-  padding-top: 14px;
-  padding-bottom: 14px;
- }
- &[data-keen-slider-reverse] {
-  flex-direction: row-reverse;
- }
- &[data-keen-slider-v] {
-  flex-wrap: wrap;
- }
+  height: auto;
+  margin: auto;
+  display: flex;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  .keen-slider__slide {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  &[data-keen-slider-reverse] {
+    flex-direction: row-reverse;
+  }
+  &[data-keen-slider-v] {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 740px) {
- .keen-slider:not([data-keen-slider-disabled]) {
-  padding-left: 18px !important;
-  padding-right: 18px !important;
- }
+  .keen-slider:not([data-keen-slider-disabled]) {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
 }
 
 @media screen and (max-width: 520px) {
- .keen-slider:not([data-keen-slider-disabled]) {
-  padding-left: 18px !important;
-  padding-right: 18px !important;
- }
+  .keen-slider:not([data-keen-slider-disabled]) {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
- .keen-slider:not([data-keen-slider-disabled]) {
-  padding-left: 18px !important;
-  padding-right: 18px !important;
- }
+  .keen-slider:not([data-keen-slider-disabled]) {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
 }
 
 /*
