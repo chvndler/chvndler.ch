@@ -61,11 +61,8 @@ export const GAScripts = () => {
             gtag('js', new Date());
             gtag('config', '${gaTrackingId}', {
               page_path: window.location.pathname,
+              page_view: window.location.pathname,
             });
-            // you can add more gtags here like:
-            // gtag('config', '<another-tracking-code>', {
-            //   page_path: window.location.pathname,
-            // });
           `
     }}
    />
@@ -86,3 +83,17 @@ export const useAppGA = () => {
   }
  }, [router.events])
 }
+
+/**
+ * 
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSYY6P3H7F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZSYY6P3H7F');
+</script>
+ */
