@@ -32,6 +32,8 @@ yarn-error.log*
 .vscode/
 yarn.lock
 
+gsap/package/*
+
 # local env files
 .env.local
 .env.development.local
@@ -42,4 +44,3 @@ yarn.lock
 .vercel
 tsconfig.tsbuildinfo
 
-gsap/package/*
