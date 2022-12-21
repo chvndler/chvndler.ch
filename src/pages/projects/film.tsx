@@ -10,7 +10,7 @@ const Film = () => {
  return (
   <>
    <PageLayout page_type={'Production'}>
-    <Container size={'3'} css={{}}>
+    <Container size={'3'}>
      <Heading>© CDC FILM</Heading>
      <Space size={'1'} />
      <SubHeading>EVERYTHING ON THIS PAGE IS SHOT, EDITED, AND DIRECTED BY ME.</SubHeading>
@@ -31,7 +31,9 @@ const Heading = styled('h1', {
  fontSize: 13,
  textAlign: 'center',
  fontWeight: 500,
- lineHeight: 'auto'
+ lineHeight: 'auto',
+
+ '@sm': {textAlign: 'left'}
 })
 
 const SubHeading = styled('h1', {
@@ -41,5 +43,7 @@ const SubHeading = styled('h1', {
  fontFamily: theme.fonts.latMedStd,
  fontWeight: 'auto',
  textTransform: 'uppercase',
- lineHeight: 'auto'
+ lineHeight: 'auto',
+
+ '@sm': {textAlign: 'left'}
 })

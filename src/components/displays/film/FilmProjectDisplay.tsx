@@ -56,7 +56,7 @@ export const FilmProjects = () => {
      videoId={aquamanVideo}
      posterId={`https://${domain}/${accountHash}/${aquamanPoster}/${variant}`}
      captionTitle={'Young Pharro - AQUAMAN© ft. Chris Buxton'}
-     captionOther={'Official Music Video for Aquaman by Young Pharro Ft. Chris Buxton / In Honor of Juice Wrld.'}
+     captionOther={'Aquaman by Young Pharro Ft. Chris Buxton / In Honor of Juice Wrld.'}
     />
     <VideoPlayer
      videoId={vii}
@@ -73,7 +73,7 @@ export const FilmProjects = () => {
      videoId={wolvesVideo}
      posterId={`https://${domain}/${accountHash}/${wolvesPoster}/${variant}`}
      captionTitle={'WOLVES© - Whistler Canada'}
-     captionOther={'Social content built for Adam Horowitz & WOLVES© YouTube channel.'}
+     captionOther={'Social content WOLVES© YouTube channel.'}
     />
     <VideoPlayer
      videoId={trufestVideo}

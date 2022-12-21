@@ -32,14 +32,18 @@ const CaptionBoxStyles = css({
  zIndex: 2,
  display: 'flex',
  flexDirection: 'column',
- justifyContent: 'flex-start',
- alignItems: 'flex-start',
+ justifyContent: 'center',
+ alignItems: 'center',
  width: 'auto',
  height: 'auto',
  margin: 0,
  padding: 4,
  marginTop: 4,
- marginBottom: 8
+ marginBottom: 8,
+
+ border: `2px solid ${theme.colors.slate8}`,
+ borderRadius: 50,
+ background: theme.colors.chxn1
 })
 
 const CaptionTitleStyles = css({
@@ -51,9 +55,9 @@ const CaptionTitleStyles = css({
  zIndex: 2,
  display: 'flex',
  flexDirection: 'column',
- justifyContent: 'flex-start',
- alignItems: 'flex-start',
- textAlign: 'left',
+ justifyContent: 'center',
+ alignItems: 'center',
+ textAlign: 'center',
  width: 'auto',
  height: 'auto',
  margin: 0,
@@ -68,8 +72,8 @@ const CaptionOtherStyles = css({
  zIndex: 2,
  display: 'flex',
  flexDirection: 'column',
- justifyContent: 'flex-start',
- alignItems: 'flex-start',
+ justifyContent: 'center',
+ alignItems: 'center',
  width: 'auto',
  height: 'auto',
  margin: 0,

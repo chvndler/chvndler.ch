@@ -15,6 +15,7 @@ import '@/css/global.scss'
 
 import type {NextComponentType, NextPageContext} from 'next'
 import type {AppProps} from 'next/app'
+import Head from 'next/head'
 import {ThemeProvider} from 'next-themes'
 import NextNProgress from 'nextjs-progressbar'
 import * as React from 'react'
@@ -23,11 +24,15 @@ import {darkTheme, globalCss} from 'stitches.config'
 
 import {AnalyticsProvider} from '@/components/sxripts'
 import {useAppStore} from '@/context/use-app-store'
+import {gaTrackingId} from '@/lib/constants'
+import {GAScripts, useAppGA} from '@/lib/ga'
 
 const Context = createContext<{fontsLoaded: boolean}>({fontsLoaded: false})
 export const useAppContext = () => useContext(Context)
 
 const App = ({Component, pageProps, ...rest}: AppProps) => {
+ if (gaTrackingId) useAppGA()
+
  globalStyles()
  useFontsLoaded()
 
@@ -36,6 +41,7 @@ const App = ({Component, pageProps, ...rest}: AppProps) => {
 
  return (
   <>
+   <Head>{gaTrackingId && <GAScripts />}</Head>
    <AnalyticsProvider>
     <NextNProgress
      options={{easing: 'ease', speed: 400, showSpinner: false}}
