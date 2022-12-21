@@ -32,12 +32,12 @@ module.exports = (_phase, { defaultConfig: _ }) => {
 
 const ContentSecurityPolicy = `
     default-src 'self';
-    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.spotify.com *.plausible.io stream.mux www.googletagmanager.com www.google-analytics.com *.mux.com;
-    child-src *.youtube.com *.google.com *.twitter.com stream.mux image.mux.com;
+    script-src 'self' 'unsafe-eval' 'unsafe-inline' *.spotify.com *.plausible.io stream.mux cdn.usefathom.com *.usefathom.com *.mux.com;
+    child-src *.youtube.com *.google.com *.twitter.com stream.mux image.mux.com cdn.usefathom.com *.usefathom.com;
     style-src 'self' 'unsafe-inline' *.mux.com;
     img-src * blob: data: imagedelivery.net chvn.me image.mux.com;
-    media-src data: *.scdn.co stream.mux imagedelivery.net chvn.me image.mux.com *.mux.com www.googletagmanager.com www.google-analytics.com;
-    connect-src data: * stream.mux market-assets.fra1.cdn.digitaloceanspaces.com imagedelivery.net image.mux.com *.mux.com www.googletagmanager.com www.google-analytics.com;
+    media-src data: *.scdn.co stream.mux imagedelivery.net chvn.me image.mux.com *.mux.com cdn.usefathom.com *.usefathom.com;
+    connect-src data: * stream.mux market-assets.fra1.cdn.digitaloceanspaces.com imagedelivery.net image.mux.com *.mux.com cdn.usefathom.com *.usefathom.com;
     font-src 'self';
 `
 
