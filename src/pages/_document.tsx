@@ -3,8 +3,6 @@
 import Document, {DocumentContext, Head, Html, Main, NextScript} from 'next/document'
 import {getCssText, reset} from 'stitches.config'
 
-import {GAScripts} from '@/lib/ga'
-
 class App extends Document {
  static async getInitialProps(ctx: DocumentContext) {
   const initialProps = await Document.getInitialProps(ctx)
@@ -18,9 +16,7 @@ class App extends Document {
     </Head>
     <body style={{opacity: '0'}}>
      <Main />
-     <NextScript>
-      <GAScripts />
-     </NextScript>
+     <NextScript />
     </body>
    </Html>
   )

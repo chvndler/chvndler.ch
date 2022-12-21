@@ -1,3 +1,16 @@
+import '@/css/global.scss'
+
+import type {NextComponentType, NextPageContext} from 'next'
+import type {AppProps} from 'next/app'
+import {ThemeProvider} from 'next-themes'
+import NextNProgress from 'nextjs-progressbar'
+import * as React from 'react'
+import {createContext, useContext} from 'react'
+import {darkTheme, globalCss, theme} from 'stitches.config'
+
+import {useFathom} from '@/components/sxripts/fathom'
+import {useAppStore} from '@/context/use-app-store'
+
 /**
  * Copyright (C) 2022 @chvndler
  * All Rights Reserved.
@@ -11,31 +24,12 @@
  * @format
  */
 
-import '@/css/global.scss'
-
-import type {NextComponentType, NextPageContext} from 'next'
-import type {AppProps} from 'next/app'
-import Head from 'next/head'
-import Script from 'next/script'
-import {ThemeProvider} from 'next-themes'
-import NextNProgress from 'nextjs-progressbar'
-import * as React from 'react'
-import {createContext, useContext} from 'react'
-import {darkTheme, globalCss} from 'stitches.config'
-
-import {AnalyticsProvider} from '@/components/sxripts'
-import {useFathom} from '@/components/sxripts/fathom'
-import {useAppStore} from '@/context/use-app-store'
-import {gaTrackingId} from '@/lib/constants'
-import {GAScripts, useAppGA} from '@/lib/ga'
-
 const Context = createContext<{fontsLoaded: boolean}>({fontsLoaded: false})
 export const useAppContext = () => useContext(Context)
 
 const App = ({Component, pageProps, ...rest}: AppProps) => {
- if (gaTrackingId) useAppGA()
-
  useFathom()
+
  globalStyles()
  useFontsLoaded()
 
@@ -44,25 +38,21 @@ const App = ({Component, pageProps, ...rest}: AppProps) => {
 
  return (
   <>
-   <Head>{gaTrackingId && <GAScripts />}</Head>
-   <Script strategy='afterInteractive' src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`} />
-   <AnalyticsProvider>
-    <NextNProgress
-     options={{easing: 'ease', speed: 400, showSpinner: false}}
-     showOnShallow={false}
-     color={'#EAFF97'}
-     startPosition={0.4}
-     stopDelayMs={300}
-     height={2}
-    />
-    <ThemeProvider
-     disableTransitionOnChange
-     attribute={'class'}
-     value={{light: 'light-theme', dark: darkTheme.className}}
-     defaultTheme={'light-theme'}>
-     {getLayout({Component, pageProps, ...rest})}
-    </ThemeProvider>
-   </AnalyticsProvider>
+   <NextNProgress
+    options={{easing: 'ease', speed: 400, showSpinner: false}}
+    showOnShallow={false}
+    color={'#EAFF97'}
+    startPosition={0.4}
+    stopDelayMs={300}
+    height={2}
+   />
+   <ThemeProvider
+    disableTransitionOnChange
+    attribute={'class'}
+    value={{light: 'light-theme', dark: darkTheme.className}}
+    defaultTheme={'light-theme'}>
+    {getLayout({Component, pageProps, ...rest})}
+   </ThemeProvider>
   </>
  )
 }
@@ -72,13 +62,13 @@ const globalStyles = globalCss({
  html: {
   margin: 0,
   padding: 0,
-  backgroundColor: '$chxn1'
+  backgroundColor: theme.colors.chxn1
  },
  body: {
   opacity: 0,
   margin: 0,
   WebkitTextSizeAdjust: '100%',
-  backgroundColor: '$chxn1'
+  backgroundColor: theme.colors.chxn1
  }
 })
 
