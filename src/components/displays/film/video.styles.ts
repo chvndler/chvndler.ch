@@ -39,11 +39,11 @@ const CaptionBoxStyles = css({
   margin: 0,
   padding: 4,
   marginTop: 4,
-  marginBottom: 8,
+  marginBottom: 8
 
-  border: `2px solid ${theme.colors.slate8}`,
-  borderRadius: 50,
-  background: theme.colors.chxn1
+  // border: `2px solid ${theme.colors.slate8}`,
+  // borderRadius: 50,
+  // background: theme.colors.chxn1
 })
 
 const CaptionTitleStyles = css({

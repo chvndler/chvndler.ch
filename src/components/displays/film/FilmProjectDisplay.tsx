@@ -33,7 +33,7 @@ const foreverIndebtedVideo = 'v3dRmogDKN1R4Oq00OlCRvSvY019MvaNmCiyPdgbTq800s'
 export const FilmProjects = () => {
   return (
     <>
-      <VideoPlayerGrid columns={1} css={{gap: '20px'}}>
+      <VideoPlayerGrid columns={2} css={{gap: '20px'}}>
         <VideoPlayer
           videoId={reelVideo}
           posterId={`https://${domain}/${accountHash}/${reelPoster}/${variant}`}
@@ -68,6 +68,21 @@ export const FilmProjects = () => {
 
       {/* <!-- 2nd row --> */}
 
+      <VideoPlayerGrid columns={2}>
+        <VideoPlayer
+          videoId={truthVideo}
+          posterId={`https://${domain}/${accountHash}/${truthPoster}/${variant}`}
+          captionTitle={'At Least I Told the Truth©.'}
+          captionOther={'A short film about hldtru®, directed by me.'}
+        />
+        <VideoPlayer
+          videoId={weddingVideo}
+          posterId={`https://${domain}/${accountHash}/${weddingPoster}/${variant}`}
+          captionTitle={'Justin & Lauren Morris Wedding Film'}
+          captionOther={''}
+        />
+      </VideoPlayerGrid>
+
       <VideoPlayerGrid columns={2} css={{gap: '20px'}}>
         <VideoPlayer
           videoId={wolvesVideo}
@@ -80,21 +95,6 @@ export const FilmProjects = () => {
           posterId={`https://${domain}/${accountHash}/${trufestPoster}/${variant}`}
           captionTitle={'We present: TRUFEST©'}
           captionOther={'A Music Event my team and I created in 2020.'}
-        />
-      </VideoPlayerGrid>
-
-      <VideoPlayerGrid columns={1}>
-        <VideoPlayer
-          videoId={truthVideo}
-          posterId={`https://${domain}/${accountHash}/${truthPoster}/${variant}`}
-          captionTitle={'At Least I Told the Truth©.'}
-          captionOther={'A short film about hldtru®, directed by me.'}
-        />
-        <VideoPlayer
-          videoId={weddingVideo}
-          posterId={`https://${domain}/${accountHash}/${weddingPoster}/${variant}`}
-          captionTitle={'Justin & Lauren Morris Wedding Film'}
-          captionOther={''}
         />
       </VideoPlayerGrid>
     </>
