@@ -6,6 +6,9 @@ import * as React from 'react'
 
 import {gaTrackingId} from './constants'
 
+export const GA_TRACKING_ID = process.env.GOOGLE_TAG_MANAGER_ID
+export const DOMAIN = process.env.NEXT_PUBLIC_SITE_URL
+
 declare global {
  interface Window {
   gtag: undefined | ((...args: any[]) => void)
@@ -18,7 +21,7 @@ export const pageview = (url: string) => {
   console.warn('window.gtag is not defined')
   return
  }
- window.gtag('config', gaTrackingId, {
+ window.gtag('config', GA_TRACKING_ID, {
   page_path: url
  })
 }
@@ -62,6 +65,7 @@ export const GAScripts = () => {
             gtag('config', '${gaTrackingId}', {
               page_path: window.location.pathname,
               page_view: window.location.pathname,
+              page_title: window.location.pathname,
             });
           `
     }}

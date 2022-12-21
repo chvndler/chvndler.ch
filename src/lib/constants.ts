@@ -6,6 +6,8 @@ export const isProd = process.env.NODE_ENV === 'production'
 export const isClient = typeof document !== 'undefined'
 export const isServer = !isClient
 
+export const gaTrackingId = process.env.NEXT_PUBLIC_GA_TRACKING_ID
+
 if (typeof process.env.NEXT_PUBLIC_SITE_URL !== 'string') {
  throw new Error(
   `Please set the NEXT_PUBLIC_SITE_URL environment variable to your site's URL.
@@ -30,8 +32,6 @@ export const defaultMeta = {
   site: 'chvndler.ch'
  }
 }
-
-export const gaTrackingId = process.env.NEXT_PUBLIC_GA_TRACKING_ID
 
 export const atelierLog = `
 

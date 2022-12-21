@@ -16,6 +16,7 @@ import '@/css/global.scss'
 import type {NextComponentType, NextPageContext} from 'next'
 import type {AppProps} from 'next/app'
 import Head from 'next/head'
+import Script from 'next/script'
 import {ThemeProvider} from 'next-themes'
 import NextNProgress from 'nextjs-progressbar'
 import * as React from 'react'
@@ -23,6 +24,7 @@ import {createContext, useContext} from 'react'
 import {darkTheme, globalCss} from 'stitches.config'
 
 import {AnalyticsProvider} from '@/components/sxripts'
+import {useFathom} from '@/components/sxripts/fathom'
 import {useAppStore} from '@/context/use-app-store'
 import {gaTrackingId} from '@/lib/constants'
 import {GAScripts, useAppGA} from '@/lib/ga'
@@ -33,6 +35,7 @@ export const useAppContext = () => useContext(Context)
 const App = ({Component, pageProps, ...rest}: AppProps) => {
  if (gaTrackingId) useAppGA()
 
+ useFathom()
  globalStyles()
  useFontsLoaded()
 
@@ -42,6 +45,7 @@ const App = ({Component, pageProps, ...rest}: AppProps) => {
  return (
   <>
    <Head>{gaTrackingId && <GAScripts />}</Head>
+   <Script strategy='afterInteractive' src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`} />
    <AnalyticsProvider>
     <NextNProgress
      options={{easing: 'ease', speed: 400, showSpinner: false}}
