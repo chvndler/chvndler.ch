@@ -15,7 +15,7 @@ export const useFathom = () => {
    * DO include ( www. ) if you're using it.
    */
   Fathom.load(FATHOM, {
-   includedDomains: ['chvndler.ch']
+   includedDomains: ['chvndler.ch', 'api.chvndler.ch']
   })
 
   function onRouteChangeComplete() {

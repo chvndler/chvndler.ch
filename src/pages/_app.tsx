@@ -8,8 +8,8 @@ import * as React from 'react'
 import {createContext, useContext} from 'react'
 import {darkTheme, globalCss, theme} from 'stitches.config'
 
-import {useFathom} from '@/components/sxripts/fathom'
 import {useAppStore} from '@/context/use-app-store'
+import {useFathom} from '@/lib/fathom'
 
 /**
  * Copyright (C) 2022 @chvndler
@@ -28,8 +28,10 @@ const Context = createContext<{fontsLoaded: boolean}>({fontsLoaded: false})
 export const useAppContext = () => useContext(Context)
 
 const App = ({Component, pageProps, ...rest}: AppProps) => {
+ /**
+  * Sripts..
+  */
  useFathom()
-
  globalStyles()
  useFontsLoaded()
 
@@ -57,7 +59,6 @@ const App = ({Component, pageProps, ...rest}: AppProps) => {
  )
 }
 
-// globalCss
 const globalStyles = globalCss({
  html: {
   margin: 0,
