@@ -1,7 +1,6 @@
 /** @format */
 
 import Document, {DocumentContext, Head, Html, Main, NextScript} from 'next/document'
-import Script from 'next/script'
 import {getCssText, reset} from 'stitches.config'
 
 class App extends Document {
@@ -13,7 +12,6 @@ class App extends Document {
     return (
       <Html lang={'en'}>
         <Head>
-          <Script src='https://api.chvndler.ch/script.js' data-site='JZNGQCWH' defer></Script>
           <style id={'stitches'} dangerouslySetInnerHTML={{__html: getCssAndReset()}} />
         </Head>
         <body style={{opacity: '0'}}>
