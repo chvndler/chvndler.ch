@@ -11,6 +11,15 @@ const VideoWrapperStyles = css({
   padding: 0
 })
 
+const cloudflareWrapper = css({
+  boxSizing: 'border-box',
+  position: 'relative',
+  width: '800px',
+  height: '100%',
+  margin: 0,
+  padding: 0
+})
+
 export const MuxVideoStyles = css('video', {
   width: 'auto',
   height: 'auto',
@@ -98,6 +107,7 @@ const onTopCaption = css({
   mixBlendMode: 'difference'
 })
 
+export const CloudflareWrapper = styled('div', cloudflareWrapper)
 export const VideoWrapper = styled('div', VideoWrapperStyles)
 export const CaptionBox = styled('div', CaptionBoxStyles)
 export const CaptionTitle = styled('div', CaptionTitleStyles)

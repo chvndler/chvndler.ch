@@ -1,15 +1,15 @@
 import {Stream, StreamPlayerApi} from '@cloudflare/stream-react'
 import type {MutableRefObject} from 'react'
 
-import {VideoWrapper} from './video.styles'
+import {CloudflareWrapper} from './video.styles'
 
 export const CloudflareVideo = ({...props}: CloudflareProps) => {
   const videoId = 'dd108f0f1798b3af58608395eed793bd'
   return (
     <>
-      <VideoWrapper>
+      <CloudflareWrapper>
         <Stream {...props} primaryColor='#231f20' controls src={videoId} responsive />
-      </VideoWrapper>
+      </CloudflareWrapper>
     </>
   )
 }
