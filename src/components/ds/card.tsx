@@ -1,11 +1,11 @@
 /** @format */
 
-import {styled} from 'stitches.config'
+import {styled, theme} from 'stitches.config'
 export const Card = styled('div', {
   appearance: 'none',
   border: 'none',
   boxSizing: 'border-box',
-  font: 'inherit',
+  fontFamily: 'inherit',
   lineHeight: '1',
   outline: 'none',
   padding: 0,
@@ -28,61 +28,57 @@ export const Card = styled('div', {
     right: 0,
     bottom: 0,
     left: 0,
-    // boxShadow: 'inset 0 0 0 1px rgba(0,0,0,.1)',
     borderRadius: 'inherit',
     pointerEvents: 'none'
   },
 
   variants: {
     variant: {
+      /**
+       *
+       *
+       *
+       * @INTERACTIVE
+       *
+       *
+       *
+       */
       interactive: {
-        '&:hover': {
-          //boxShadow: 'inset 0 0 0 1px rgba(0,0,0,1)'
-        },
-        '@hover': {
-          '&:hover': {
-            //boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.2)',
-            '&::before': {
-              //boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.2)'
-            }
-          }
-        },
-        '&:focus': {
-          '&::before': {
-            //boxShadow: 'inset 3px 0 0 1px $colors$gray8, 0 0 0 1px $colors$gray8'
-          }
-        }
-      },
-      ghost: {
-        backgroundColor: 'transparent',
-        transition: 'transform 200ms cubic-bezier(0.22, 1, 0.36, 1), background-color 25ms linear',
-        willChange: 'transform',
+        borderRadius: '1.4rem',
+        border: `1px solid ${theme.colors.chxn2}`,
         '&::before': {
-          boxShadow: '0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)',
-          opacity: '0',
-          transition: 'all 200ms cubic-bezier(0.22, 1, 0.36, 1)'
+          // border: `1px solid ${theme.colors.chxn3}`
+        },
+        '&:hover': {
+          // borderColor: theme.colors.chxn4
         },
         '@hover': {
+          borderColor: theme.colors.chxn2,
           '&:hover': {
-            backgroundColor: '$panel',
-            transform: 'translateY(-2px)',
-            '&::before': {
-              opacity: '1'
-            }
-          }
-        },
-        '&:active': {
-          transform: 'translateY(0)',
-          transition: 'none',
-          '&::before': {
-            boxShadow: '0px 5px 16px -5px rgba(22, 23, 24, 0.35), 0px 5px 10px -7px rgba(22, 23, 24, 0.2)',
-            opacity: '1'
+            borderColor: theme.colors.chxn3,
+
+            tranlate3d: 'translate3d(0px, 1px, 0px)',
+            scale3d: 'scale3d(1, 1, 2)',
+            rotateX: 'rotateX(0deg)',
+            rotateY: 'rotateY(0deg)',
+            rotateZ: 'rotateZ(0deg)',
+            skew: 'skew(0deg, 0deg)',
+            '&::before': {}
           }
         },
         '&:focus': {
-          boxShadow: 'inset 0 0 0 1px $colors$blue8, 0 0 0 1px $colors$blue8'
+          '&::before': {}
         }
       },
+      /**
+       *
+       *
+       *
+       * @ACTIVE
+       *
+       *
+       *
+       */
       active: {
         transform: 'translateY(0)',
         transition: 'none',
