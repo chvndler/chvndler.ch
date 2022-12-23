@@ -2,7 +2,7 @@ import * as Fathom from 'fathom-client'
 import {useRouter} from 'next/router'
 import * as React from 'react'
 
-const FATHOM = process.env.FATHOM_SITE_ID
+// const FATHOM = process.env.FATHOM_SITE_ID
 
 const useFathom = () => {
   const router = useRouter()
@@ -14,10 +14,17 @@ const useFathom = () => {
      * DO NOT include ( https:// )
      * DO include ( www. ) if you're using it.
      */
+    Fathom.load('JZNGQCWH', {
+      includedDomains: ['www.chvndler.ch', 'chvndler.ch'],
+      url: 'https://api.chvndler.ch/script.js'
+    })
+
+    /** 
     Fathom.load(FATHOM, {
       includedDomains: ['www.chvndler.ch', 'chvndler.ch'],
       url: 'https://api.chvndler.ch/script.js'
     })
+    */
 
     const onRouteChangeComplete = () => {
       Fathom.trackPageview()
