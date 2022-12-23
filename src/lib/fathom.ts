@@ -4,7 +4,7 @@ import * as React from 'react'
 
 const FATHOM = process.env.FATHOM_SITE_ID
 
-export const useFathom = () => {
+const useFathom = () => {
   const router = useRouter()
 
   React.useEffect(() => {
@@ -15,18 +15,26 @@ export const useFathom = () => {
      * DO include ( www. ) if you're using it.
      */
     Fathom.load(FATHOM, {
-      includedDomains: ['chvndler.ch', 'www.chvndler.ch', 'api.chvndler.ch']
+      includedDomains: ['www.chvndler.ch', 'chvndler.ch'],
+      url: 'https://api.chvndler.ch/script.js'
     })
 
-    function onRouteChangeComplete() {
+    const onRouteChangeComplete = () => {
       Fathom.trackPageview()
     }
-    // Record a pageview when route changes
+
+    /**
+     * Track a pageview when route changes
+     */
     router.events.on('routeChangeComplete', onRouteChangeComplete)
 
-    // Unassign event listener
+    /**
+     * Unassign event listener
+     */
     return () => {
       router.events.off('routeChangeComplete', onRouteChangeComplete)
     }
   }, [router.events])
 }
+
+export {useFathom}

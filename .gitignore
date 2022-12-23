@@ -30,7 +30,6 @@ yarn-error.log*
 
 .yarn/
 .vscode/
-yarn.lock
 
 gsap/package/*
 
@@ -44,3 +43,4 @@ gsap/package/*
 .vercel
 tsconfig.tsbuildinfo
 
+yarn.lock

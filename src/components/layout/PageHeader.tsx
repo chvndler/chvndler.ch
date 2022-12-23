@@ -30,7 +30,7 @@ export const PageHeader = () => {
           <Box className={'left'}>
             <Paragraph
               css={{
-                fontSize: 14,
+                fontSize: 13,
                 fontFamily: theme.fonts.latMedStd,
                 color: theme.colors.chxn4
               }}>
@@ -39,15 +39,16 @@ export const PageHeader = () => {
             <Space size={'1'} />
             <Paragraph
               css={{
-                fontSize: 14,
+                fontSize: 13,
                 letterSpacing: '0.02rem',
                 fontFamily: theme.fonts.latRegStd,
-                color: theme.colors.chxn4
+                color: theme.colors.chxn4,
+                textTransform: 'uppercase'
               }}>
-              90's kid– creating cool and taking notes. Enjoying the internet and open-source. I'm very
-              component-driven, the focus in the moment is telling stories through every detail that make a web
-              experience worth having. Experienced in graphic, and motion design, as well as three.js. I am currently
-              looking for my next role, <InlineLink href={email}>let's connect.</InlineLink>
+              90's kid– creating cool and taking notes. Enjoying the internet and open-source. The focus in the moment
+              is telling stories through every detail that make a web experience worth having. Experienced in graphic,
+              and motion design, as well as three.js. I am currently looking for my next role,{' '}
+              <InlineLink href={email}>let's connect.</InlineLink>
             </Paragraph>
 
             <Space size={'2'} />
