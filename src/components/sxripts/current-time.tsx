@@ -73,6 +73,7 @@ const StyledTime = styled('div', {
   color: theme.colors.mauveA12,
   fontFamily: theme.fonts.mono,
   fontSize: 13,
+  fontWeight: 'bold',
   padding: 0,
   margin: 'auto',
   width: 'auto',
