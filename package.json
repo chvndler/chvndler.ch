@@ -89,7 +89,7 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.10",
     "@types/slug": "^5.0.3",
-    "@types/three": "^0.146.0",
+    "@types/three": "^0.147.0",
     "@typescript-eslint/eslint-plugin": "^5.38.0",
     "@typescript-eslint/parser": "5",
     "babel-plugin-optimize-clsx": "^2.6.2",
