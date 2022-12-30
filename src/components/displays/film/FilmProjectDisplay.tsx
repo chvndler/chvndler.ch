@@ -9,8 +9,8 @@ const domain = 'imagedelivery.net'
 const variant = 'public'
 
 // poster id's...
-const reelPoster = '09c5e2d4-5b33-48ad-e5b6-691443dc9800'
-const rodeoPoster = 'a34bb37f-b3fd-4e40-f54a-ff5964ad6800'
+// const reelPoster = '09c5e2d4-5b33-48ad-e5b6-691443dc9800'
+// const rodeoPoster = 'a34bb37f-b3fd-4e40-f54a-ff5964ad6800'
 const aquamanPoster = 'f86d39ba-47ab-49e6-1bf3-a86b377aa000'
 const viiPoster = 'dd873f54-f9ed-420f-ae65-f3948f228900'
 const truthPoster = '263fb61a-dd36-459a-6725-6b8a47e21500'
@@ -18,6 +18,7 @@ const wolvesPoster = '025e65fa-e554-449e-5279-af57b98d9400'
 const trufestPoster = '745c2349-60db-44b9-b39d-7da08e20b100'
 const weddingPoster = '24355311-faa6-45ed-fef3-5b294cb72400'
 const foreverIndebtedPoster = '96fb77a1-fed9-46cc-3d68-3797da41c200'
+const placeholderPoster = '2360e161-3ab6-4b3c-5a82-f4b684cc3c00'
 
 // video id's...
 const reelVideo = 'QIknhH4mVuQiVYZdaObY4gFZOGSxJOCKTSwu02JemdAs'
@@ -36,13 +37,13 @@ export const FilmProjects = () => {
       <VideoPlayerGrid columns={2} css={{gap: '20px'}}>
         <VideoPlayer
           videoId={reelVideo}
-          posterId={`https://${domain}/${accountHash}/${reelPoster}/${variant}`}
+          posterId={`https://${domain}/${accountHash}/${placeholderPoster}/${variant}`}
           captionTitle={'©2019 FILM REEL'}
           captionOther={'A collection of my work from 2019.'}
         />
         <VideoPlayer
           videoId={rodeoVideo}
-          posterId={`https://${domain}/${accountHash}/${rodeoPoster}/${variant}`}
+          posterId={`https://${domain}/${accountHash}/${placeholderPoster}/${variant}`}
           captionTitle={'Beaux Isaac - Rodeo© [Official Music Video]'}
           captionOther={'"Rodeo©" by Beaux Isaac'}
         />

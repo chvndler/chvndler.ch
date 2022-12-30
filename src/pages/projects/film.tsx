@@ -2,7 +2,7 @@
 
 import {styled, theme} from 'stitches.config'
 
-import {FilmProjects} from '@/components/displays/film'
+import {DuplicateFilmProjects} from '@/components/displays/film/DuplicateProjectDisplay'
 import {Container, Space} from '@/components/ds'
 import {PageLayout} from '@/components/layout/page'
 
@@ -17,7 +17,8 @@ const Film = () => {
           <SubHeading>SHOT ON LOCATION AROUND THE GLOBE©.</SubHeading>
         </Container>
         <Space size={'3'} />
-        <FilmProjects />
+        {/* <!-- <FilmProjects /> --> */}
+        <DuplicateFilmProjects />
       </PageLayout>
     </>
   )
