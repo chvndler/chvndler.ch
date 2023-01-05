@@ -13,8 +13,8 @@ export const CDCLogo = React.forwardRef<SVGSVGElement, LxgoProps>(
   ({color = 'currentColor', ...props}, forwardedRef) => {
     return (
       <svg
-        width='90'
-        height='24'
+        width='110'
+        height='30'
         viewBox='0 0 124 30'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

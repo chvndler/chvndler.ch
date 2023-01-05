@@ -30,24 +30,24 @@ export const PageHeader = () => {
           <Box className={'left'}>
             <Paragraph
               css={{
-                fontSize: 13,
-                fontFamily: theme.fonts.latMedStd,
+                fontSize: 16,
+                fontFamily: theme.fonts.system,
+                fontWeight: 'bold',
                 color: theme.colors.chxn4
               }}>
-              FRONT-END DEVELOPER AND DESIGNER
+              Front-end Developer and Designer
             </Paragraph>
             <Space size={'1'} />
             <Paragraph
               css={{
-                fontSize: 13,
-                letterSpacing: '0.02rem',
-                fontFamily: theme.fonts.latRegStd,
-                color: theme.colors.chxn4,
-                textTransform: 'uppercase'
+                fontSize: 16,
+                fontWeight: 'normal',
+                fontFamily: theme.fonts.system,
+                color: theme.colors.chxn4
               }}>
-              90's kid– creating cool and taking notes. Enjoying the internet and open-source. The focus in the moment
-              is telling stories through every detail that make a web experience worth having. Experienced in graphic,
-              and motion design, as well as three.js. I am currently looking for my next role,{' '}
+              Creating cool and taking notes. Enjoying the internet and open-source. The focus in the moment is telling
+              stories through every detail that make a web experience worth having. Experienced in graphic, and motion
+              design, as well as three.js. I am currently looking for my next role,{' '}
               <InlineLink href={email}>let's connect.</InlineLink>
             </Paragraph>
 
@@ -56,32 +56,32 @@ export const PageHeader = () => {
               <Box>
                 <LinkHeaders>CONNECT</LinkHeaders>
                 <PassLink href={email}>
-                  <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>hello@chvndler.ch</PersonalLink>
+                  <PersonalLink>hello@chvndler.ch</PersonalLink>
                 </PassLink>
                 <PassLink href={''}>
-                  <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>+1 (336) 244-8939</PersonalLink>
+                  <PersonalLink>+1 (336) 244-8939</PersonalLink>
                 </PassLink>
                 <Space size={'1'} />
                 <PassLink href={twitter}>
-                  <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>Twitter</PersonalLink>
+                  <PersonalLink>Twitter</PersonalLink>
                 </PassLink>
                 <PassLink href={github}>
-                  <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>GitHub</PersonalLink>
+                  <PersonalLink>GitHub</PersonalLink>
                 </PassLink>
               </Box>
               <Box>
                 <LinkHeaders>PROJECTS</LinkHeaders>
                 <PassLink href={projects}>
-                  <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>Web</PersonalLink>
+                  <PersonalLink>Web</PersonalLink>
                 </PassLink>
                 <PassLink href={film}>
-                  <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>Film</PersonalLink>
+                  <PersonalLink>Film</PersonalLink>
                 </PassLink>
                 <PassLink href={archive}>
-                  <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>Writings</PersonalLink>
+                  <PersonalLink>Writings</PersonalLink>
                 </PassLink>
                 <PassLink href={three}>
-                  <PersonalLink css={{fontFamily: theme.fonts.latRegStd}}>Three.js</PersonalLink>
+                  <PersonalLink>Three.js</PersonalLink>
                 </PassLink>
               </Box>
             </Grid>
@@ -134,14 +134,16 @@ const styledGrid = styled('div', {
 
 const styledName = styled('h1', {
   color: theme.colors.chxn3,
-  fontFamily: theme.fonts.latMedStd,
-  fontSize: 14,
+  fontFamily: theme.fonts.system,
+  fontWeight: 'bold',
+  fontSize: 16,
   paddingTop: 6
 })
 
 const styledPersonalLink = styled('div', {
-  fontFamily: theme.fonts.latMedStd,
-  fontSize: 14,
+  fontFamily: theme.fonts.system,
+  fontWeight: 'bold',
+  fontSize: 15,
   lineHeight: '1.5'
 })
 
@@ -149,9 +151,11 @@ const LinkHeaders = styled('div', {
   margin: 'auto',
   alignContent: 'center',
   alignItems: 'center',
+  color: theme.colors.chxn3,
   fontFamily: theme.fonts.mono,
   fontSize: 11,
   fontWeight: 500,
+  letterSpacing: '0.02rem',
   lineHeight: '23px',
   textTransform: 'uppercase'
 })
