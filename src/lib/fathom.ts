@@ -19,13 +19,6 @@ const useFathom = () => {
       url: 'https://api.chvndler.ch/script.js'
     })
 
-    /** 
-    Fathom.load(FATHOM, {
-      includedDomains: ['www.chvndler.ch', 'chvndler.ch'],
-      url: 'https://api.chvndler.ch/script.js'
-    })
-    */
-
     const onRouteChangeComplete = () => {
       Fathom.trackPageview()
     }
