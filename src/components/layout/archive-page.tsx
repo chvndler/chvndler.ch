@@ -24,15 +24,15 @@ export const ArchiveLayout = ({children, customMeta}: LayoutProps): JSX.Element 
       <LogoBox>
         <LinkBox>
           <BackLink>
-            <StyledLink>BACK</StyledLink>
+            <StyledLink>Back</StyledLink>
           </BackLink>
           <PassLink href={'/'}>
-            <StyledLink>INDEX</StyledLink>
+            <StyledLink>Index</StyledLink>
           </PassLink>
         </LinkBox>
         <LogoLink>
           <PassLink href={'/archive'}>
-            <ArchiveLogo width={'100'} />
+            <ArchiveLogo width={'110'} />
           </PassLink>
         </LogoLink>
         <Box css={{width: '100%', maxWidth: '130px'}} />
@@ -68,9 +68,9 @@ const LogoBox = styled('div', {
   right: '0',
   width: '100%',
   maxWidth: '37rem',
-  paddingTop: '3rem',
-  paddingLeft: '2rem',
-  paddingRight: '2rem',
+  paddingTop: '1.2rem',
+  paddingLeft: '1rem',
+  paddingRight: '1rem',
   margin: 'auto',
   mixBlendMode: 'difference',
   gap: '1rem'
@@ -84,16 +84,17 @@ const LinkBox = styled('div', {
   justifyContent: 'flex-start',
   alignContent: 'center',
   alignItems: 'center',
-  gap: '1rem'
+  gap: '0.6rem'
 })
 
 const StyledLink = styled('span', {
   color: theme.colors.white,
-  fontFamily: theme.fonts.mono,
-  letterSpacing: '0.1rem',
-  fontSize: 12,
+  fontFamily: theme.fonts.system,
+  letterSpacing: 'normal',
+  fontSize: 14,
+  fontWeight: 600,
   textDecoration: 'none',
-  textTransform: 'uppercase',
+  // textTransform: 'uppercase',
   '&:hover': {
     cursor: 'pointer'
   }

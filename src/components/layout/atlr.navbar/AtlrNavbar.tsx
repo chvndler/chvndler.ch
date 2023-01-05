@@ -45,7 +45,7 @@ export const AtlrNavbar = () => {
               <NavLink href={'/'}>index</NavLink>
               <NavLink href={'/projects/web'}>web projects</NavLink>
               <NavLink href={'/projects/three'}>three.js</NavLink>
-              <NavLink href={'/archive'}>articles archive</NavLink>
+              <NavLink href={'/archive'}>articles</NavLink>
               <NavLink level2 href={'/developer/notes'}>
                 notes
               </NavLink>
