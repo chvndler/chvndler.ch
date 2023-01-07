@@ -1337,6 +1337,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-radio-group@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@radix-ui/react-radio-group@npm:1.1.0"
+  dependencies:
+    "@babel/runtime": ^7.13.10
+    "@radix-ui/primitive": 1.0.0
+    "@radix-ui/react-compose-refs": 1.0.0
+    "@radix-ui/react-context": 1.0.0
+    "@radix-ui/react-direction": 1.0.0
+    "@radix-ui/react-presence": 1.0.0
+    "@radix-ui/react-primitive": 1.0.1
+    "@radix-ui/react-roving-focus": 1.0.1
+    "@radix-ui/react-use-controllable-state": 1.0.0
+    "@radix-ui/react-use-previous": 1.0.0
+    "@radix-ui/react-use-size": 1.0.0
+  peerDependencies:
+    react: ^16.8 || ^17.0 || ^18.0
+    react-dom: ^16.8 || ^17.0 || ^18.0
+  checksum: d8a0e418d37c5279701a2eee2a96fe398577511ff342f80a46be2adaa1590228152f255e6d00fd40d87d7c151884e48dfe5230236c10d4e6ce6e8f3baa5f40ed
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-roving-focus@npm:1.0.1":
   version: 1.0.1
   resolution: "@radix-ui/react-roving-focus@npm:1.0.1"
@@ -2888,6 +2910,7 @@ __metadata:
     "@radix-ui/react-navigation-menu": ^1.1.1
     "@radix-ui/react-polymorphic": ^0.0.14
     "@radix-ui/react-popover": 1.0.2
+    "@radix-ui/react-radio-group": ^1.1.0
     "@radix-ui/react-separator": ^1.0.1
     "@radix-ui/react-switch": 1.0.1
     "@radix-ui/react-tooltip": ^1.0.2

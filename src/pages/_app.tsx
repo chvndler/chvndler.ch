@@ -34,9 +34,11 @@ const App = ({Component, pageProps, ...rest}: AppProps) => {
       />
       <ThemeProvider
         disableTransitionOnChange
+        enableSystem={true}
         attribute={'class'}
+        storageKey={'chxn-theme'}
         value={{light: 'light-theme', dark: darkTheme.className}}
-        defaultTheme={'light-theme'}>
+        defaultTheme={'light'}>
         {getLayout({Component, pageProps, ...rest})}
       </ThemeProvider>
     </>
