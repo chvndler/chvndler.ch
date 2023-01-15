@@ -22,7 +22,7 @@ const config = {
         ]
     },
     experimental: {},
-    transpileModules: ['three']
+    transpilePackages: ['three']
 }
 
 module.exports = (_phase, { defaultConfig: _ }) => {
