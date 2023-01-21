@@ -1,6 +1,6 @@
 /** @format */
 
-import create from 'zustand'
+import {create} from 'zustand'
 
 /**
  * Extend if needed !

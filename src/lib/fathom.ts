@@ -15,7 +15,7 @@ const useFathom = () => {
      * DO include ( www. ) if you're using it.
      */
     Fathom.load('JZNGQCWH', {
-      includedDomains: ['www.chvndler.ch', 'chvndler.ch'],
+      includedDomains: ['www.chvndler.ch', 'chvndler.ch', '*.chvndler.ch'],
       url: 'https://api.chvndler.ch/script.js'
     })
 
