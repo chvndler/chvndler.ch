@@ -13,7 +13,13 @@ export const Canvas = styled('div', {
   width: '100%',
   height: 'auto',
   margin: 'auto',
-  padding: '0'
+  padding: '0',
+
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  alignContent: 'center'
 })
 
 export const FixedCanvas = styled('div', {
