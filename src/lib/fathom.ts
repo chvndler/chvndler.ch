@@ -2,7 +2,7 @@ import * as Fathom from 'fathom-client'
 import {useRouter} from 'next/router'
 import * as React from 'react'
 
-const FATHOM = process.env.FATHOM_SITE_ID
+const FATHOM = 'JZNGQCWH'
 
 const useFathom = () => {
   const router = useRouter()
