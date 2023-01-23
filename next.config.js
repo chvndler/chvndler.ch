@@ -11,6 +11,7 @@ const config = {
     images: {
         formats: ['image/avif', 'image/webp'],
         domains: [
+            '*.chvndler.ch',
             'imagedelivery.net',
             'chvn.me',
             'images.mirror-media.xyz',
