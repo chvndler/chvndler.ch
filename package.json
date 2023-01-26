@@ -84,7 +84,7 @@
         "@cloudflare/stream-react": "^1.8.0",
         "@next/bundle-analyzer": "13",
         "@next/eslint-plugin-next": "13",
-        "@types/css-font-loading-module": "0.0.7",
+        "@types/css-font-loading-module": "0.0.8",
         "@types/glob": "^8.0.0",
         "@types/mousetrap": "1.6.11",
         "@types/node": "18",
