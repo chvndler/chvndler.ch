@@ -29,7 +29,7 @@ export const {styled, css, theme, createTheme, getCssText, globalCss, keyframes,
   themeMap: {
     ...defaultThemeMap
   },
-  prefix: 'atlr-',
+  prefix: 'atlr',
   theme: {
     colors: {
       ...gray,
