@@ -104,7 +104,7 @@
         "eslint-plugin-prettier": "^4.0.0",
         "eslint-plugin-react": "^7.32.0",
         "eslint-plugin-react-hooks": "4.6.0",
-        "eslint-plugin-simple-import-sort": "^9.0.0",
+        "eslint-plugin-simple-import-sort": "^10.0.0",
         "graphql": "^16.6.0",
         "gray-matter": "^4.0.3",
         "husky": "8",
