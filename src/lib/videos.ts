@@ -5,7 +5,7 @@ const domain = 'imagedelivery.net'
 
 const posterString = `https://${domain}/${accountHash}`
 
-const mux = 'https://stream.mux.com/'
+const foreverIndebtedVideo = 'v3dRmogDKN1R4Oq00OlCRvSvY019MvaNmCiyPdgbTq800s'
 
 export const videos = [
   {
@@ -19,8 +19,7 @@ export const videos = [
     title: 'Forever Indebted',
     caption: 'Forever Indebted',
     poster: `${posterString}/96fb77a1-fed9-46cc-3d68-3797da41c200/public`,
-    // id: 'v3dRmogDKN1R4Oq00OlCRvSvY019MvaNmCiyPdgbTq800s',
-    id: `${mux}v3dRmogDKN1R4Oq00OlCRvSvY019MvaNmCiyPdgbTq800s.m3u8`,
+    id: foreverIndebtedVideo,
     note: ''
   }
 ]

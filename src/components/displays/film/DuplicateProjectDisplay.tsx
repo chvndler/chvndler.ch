@@ -8,11 +8,11 @@ import {VideoPlayerGrid} from './video.player.grid'
 export const DuplicateFilmProjects = () => {
   return (
     <>
-      <VideoPlayerGrid columns={2} css={{gap: '20px'}}>
+      <VideoPlayerGrid columns={1} css={{gap: '20px'}}>
         {videos.map((video) => {
           return (
             <DupVideoPlayer
-              key={video.title}
+              key={video.note}
               title={video.title}
               poster={video.poster}
               caption={video.caption}
@@ -24,3 +24,5 @@ export const DuplicateFilmProjects = () => {
     </>
   )
 }
+
+DuplicateFilmProjects.displayName = 'DuplicateFilmProjects'

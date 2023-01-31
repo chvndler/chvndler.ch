@@ -29,7 +29,6 @@ export const VideoPlayer = ({videoId, posterId, captionTitle, captionOther, ...p
           muted
           playbackId={videoId}
           poster={posterId}
-          // primaryColor={'rgba(72, 67, 73, 0.8)'}
           primaryColor={'#D9E3F2'}
           secondaryColor={'transparent'}
           metadata={{}}

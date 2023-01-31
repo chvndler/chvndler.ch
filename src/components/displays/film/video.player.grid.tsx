@@ -9,9 +9,10 @@ import {Container, Grid, Section} from '@/components/ds'
 type FProps = {
   children: React.ReactNode
   columns?: number
+  css?: CSS
 }
-
-type VideoGridComponentProps = FProps & GridVariantProps & {css?: CSS}
+type GridVariantProps = VariantProps<typeof gridStyles>
+type VideoGridComponentProps = FProps & GridVariantProps
 
 export const VideoPlayerGrid = ({children, ...props}: VideoGridComponentProps) => {
   return (
@@ -45,4 +46,3 @@ const gridStyles = styled(Grid, {
 })
 
 const VideoGrid = gridStyles
-type GridVariantProps = VariantProps<typeof gridStyles>

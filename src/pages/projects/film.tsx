@@ -2,11 +2,11 @@
 
 import {styled, theme} from 'stitches.config'
 
-import {DuplicateFilmProjects} from '@/components/displays/film/DuplicateProjectDisplay'
+import {FilmProjects} from '@/components/displays/film'
 import {Container, Space} from '@/components/ds'
 import {PageLayout} from '@/components/layout/page'
 
-const Film = () => {
+const FilmPage = () => {
   return (
     <>
       <PageLayout page_type={'Production'}>
@@ -17,14 +17,13 @@ const Film = () => {
           <SubHeading>SHOT ON LOCATION AROUND THE GLOBE©.</SubHeading>
         </Container>
         <Space size={'3'} />
-        {/* <!-- <FilmProjects /> --> */}
-        <DuplicateFilmProjects />
+        <FilmProjects />
       </PageLayout>
     </>
   )
 }
 
-export default Film
+export default FilmPage
 
 const Heading = styled('h1', {
   color: theme.colors.slateA8,
