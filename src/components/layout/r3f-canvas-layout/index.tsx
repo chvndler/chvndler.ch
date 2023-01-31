@@ -7,6 +7,7 @@ import {css, styled} from 'stitches.config'
 import {OrbitControls, TransformControls} from 'three-stdlib'
 
 import {AtlrNavbar} from '@/components/layout/atlr.navbar'
+import {Portal} from '@/components/primitives/portal'
 extend({OrbitControls, TransformControls})
 
 declare module '@react-three/fiber' {
@@ -26,10 +27,10 @@ export const R3FCanvasLayout: FC<R3FCanvasLayoutProps> = ({children, htmlChildre
     <>
       <DivHTML>
         <AtlrNavbar />
-        {htmlChildren}
+        <Portal>{htmlChildren}</Portal>
       </DivHTML>
       <R3FCanvas {...rest}>
-        <StatsModule>{/* <!-- <Stats /> --> */}</StatsModule>
+        {/* <!-- <StatsModule> <Stats /> </StatsModule> --> */}
         {/* <!-- <orbitControls /> --> */}
         {/* <!--  <transformControls /> --> */}
         {children}
@@ -51,18 +52,19 @@ const R3FCanvasStyles = css({
   zIndex: 0
 })
 
+/*
 const StyledStats = css({
   top: 'auto',
   bottom: 'auto',
   left: 0,
   right: 0
 })
-
+*/
 const StyledHTML = css({
   position: 'relative',
   zIndex: 5
 })
 
 const R3FCanvas = styled('div', R3FCanvasStyles)
-const StatsModule = styled('div', StyledStats)
+// const StatsModule = styled('div', StyledStats)
 const DivHTML = styled('div', StyledHTML)
