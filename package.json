@@ -75,7 +75,7 @@
         "react-markdown": "^8.0.4",
         "react-merge-refs": "^2.0.1",
         "react-use-measure": "^2.1.1",
-        "three": "^0.148.0",
+        "three": "^0.149.0",
         "three-stdlib": "^2.17.3",
         "zustand": "^4.3.2"
     },
