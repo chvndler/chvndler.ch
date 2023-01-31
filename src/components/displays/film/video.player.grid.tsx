@@ -44,5 +44,5 @@ const gridStyles = styled(Grid, {
   }
 })
 
-const VideoGrid = styled(gridStyles)
+const VideoGrid = gridStyles
 type GridVariantProps = VariantProps<typeof gridStyles>
