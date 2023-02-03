@@ -1,6 +1,5 @@
 /** @format */
 
-// import { Stats } from '@react-three/drei';
 import {extend, Object3DNode} from '@react-three/fiber'
 import React, {FC} from 'react'
 import {css, styled} from 'stitches.config'
@@ -30,7 +29,6 @@ export const R3FCanvasLayout: FC<R3FCanvasLayoutProps> = ({children, htmlChildre
         <Portal>{htmlChildren}</Portal>
       </DivHTML>
       <R3FCanvas {...rest}>
-        {/* <!-- <StatsModule> <Stats /> </StatsModule> --> */}
         {/* <!-- <orbitControls /> --> */}
         {/* <!--  <transformControls /> --> */}
         {children}
@@ -52,19 +50,32 @@ const R3FCanvasStyles = css({
   zIndex: 0
 })
 
-/*
-const StyledStats = css({
-  top: 'auto',
-  bottom: 'auto',
-  left: 0,
-  right: 0
-})
-*/
 const StyledHTML = css({
   position: 'relative',
   zIndex: 5
 })
 
 const R3FCanvas = styled('div', R3FCanvasStyles)
-// const StatsModule = styled('div', StyledStats)
 const DivHTML = styled('div', StyledHTML)
+
+/*
+import { useRef, useEffect } from 'react'
+import { GridHelper } from 'three'
+import { extend, Object3DNode } from '@react-three/fiber'
+
+
+Create our custom element
+class CustomElement extends GridHelper {}
+
+extend({ CustomElement })
+
+// Add types to ThreeElements elements so primitives pick up on it
+declare module '@react-three/fiber' {
+  interface ThreeElements {
+    customElement: Object3DNode<CustomElement, typeof CustomElement>
+  }
+}
+
+// react-three-fiber will create your custom component and TypeScript will understand it
+;<customComponent />
+*/
