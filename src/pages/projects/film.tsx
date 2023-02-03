@@ -2,48 +2,32 @@
 
 import {styled, theme} from 'stitches.config'
 
-import {FilmProjects} from '@/components/displays/film'
 import {Container, Space} from '@/components/ds'
 import {PageLayout} from '@/components/layout/page'
 
-const FilmPage = () => {
+const Film = () => {
   return (
     <>
-      <PageLayout page_type={'Production'}>
-        <Container size={'3'}>
-          <Heading>© CDC FILM</Heading>
-          <Space size={'1'} />
-          <SubHeading>EVERYTHING ON THIS PAGE IS SHOT, EDITED, AND DIRECTED BY ME.</SubHeading>
-          <SubHeading>SHOT ON LOCATION AROUND THE GLOBE©.</SubHeading>
+      <PageLayout page_type={'CoverPage'}>
+        <Container size={'2'} css={{}}>
+          <WebTitle>© MIT FILM PROJECTS</WebTitle>
         </Container>
-        <Space size={'3'} />
-        <FilmProjects />
+        <Space size={'2'} />
       </PageLayout>
     </>
   )
 }
 
-export default FilmPage
+export default Film
 
-const Heading = styled('h1', {
-  color: theme.colors.slateA8,
-  fontFamily: theme.fonts.latMedExtd,
-  fontSize: 13,
+const styleTitle = styled('h1', {
   textAlign: 'center',
+  color: '$chxn4',
+  fontSize: 13,
+  fontFamily: theme.fonts.latMedExtd,
   fontWeight: 500,
   lineHeight: 'auto',
-
-  '@sm': {textAlign: 'left'}
+  letterSpacing: ''
 })
 
-const SubHeading = styled('h1', {
-  textAlign: 'center',
-  color: theme.colors.chxn4A,
-  fontSize: 12,
-  fontFamily: theme.fonts.latMedStd,
-  fontWeight: 'auto',
-  textTransform: 'uppercase',
-  lineHeight: 'auto',
-
-  '@sm': {textAlign: 'left'}
-})
+const WebTitle = styleTitle

@@ -10,7 +10,7 @@ const projects = '/projects/web'
 const email = 'mailto:chvndler.ch@icloud.com'
 const twitter = 'https://twitter.com/chvndlerch'
 const github = 'https://github.com/chvndler'
-const three = '/projects/three'
+const three = '/projects/three/cube'
 const archive = '/archive'
 const film = '/projects/film'
 

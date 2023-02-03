@@ -4,19 +4,21 @@ import {css, styled, theme} from 'stitches.config'
 
 import {Flex} from '@/components/ds'
 import {Icxn} from '@/components/icons/atlr-icxns'
-// import {R3FCanvasLayout} from '@/components/layout/r3f-canvas-layout'
+import {R3FCanvasLayout} from '@/components/layout/r3f-canvas-layout'
 import {R3FFooter} from '@/components/layout/r3f-canvas-layout/R3Footer'
 import {CDCDevScene} from '@/components/primitives/three/Scenes'
 
 const ThreePage = () => {
   return (
     <>
-      <Instructions>
-        <ThreeInstructions />
-      </Instructions>
+      <R3FCanvasLayout>
+        <Instructions>
+          <ThreeInstructions />
+        </Instructions>
 
-      <CDCDevScene />
-      <R3FFooter />
+        <CDCDevScene />
+        <R3FFooter />
+      </R3FCanvasLayout>
     </>
   )
 }
