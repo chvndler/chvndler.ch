@@ -2,6 +2,7 @@
 
 import {styled, theme} from 'stitches.config'
 
+import {FilmDisplay} from '@/components/displays/film'
 import {Container, Space} from '@/components/ds'
 import {PageLayout} from '@/components/layout/page'
 
@@ -13,6 +14,7 @@ const Film = () => {
           <WebTitle>© MIT FILM PROJECTS</WebTitle>
         </Container>
         <Space size={'2'} />
+        <FilmDisplay />
       </PageLayout>
     </>
   )
