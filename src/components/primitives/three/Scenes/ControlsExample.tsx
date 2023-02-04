@@ -1,12 +1,12 @@
 import {Box, Loader, OrbitControls, PerspectiveCamera, Sparkles} from '@react-three/drei'
 import {Canvas} from '@react-three/fiber'
-import React, {Suspense} from 'react'
+import * as React from 'react'
 
 import {FixedCanvas} from '@/components/ds'
 
 export const JustACube = () => {
   return (
-    <Suspense fallback={<Loader />}>
+    <React.Suspense fallback={<Loader />}>
       <FixedCanvas css={{}}>
         <Canvas>
           <OrbitControls />
@@ -16,8 +16,14 @@ export const JustACube = () => {
           </Box>
         </Canvas>
       </FixedCanvas>
-    </Suspense>
+    </React.Suspense>
   )
+}
+
+type SparkleProps = {
+  random: boolean
+  size: number
+  amount: number
 }
 
 const SparklesRR = ({random, size, amount, ...props}: SparkleProps) => {
@@ -45,9 +51,3 @@ export const ControlsExample = () => (
     </Canvas>
   </FixedCanvas>
 )
-
-type SparkleProps = {
-  random: boolean
-  size: number
-  amount: number
-}

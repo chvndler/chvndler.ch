@@ -2,13 +2,13 @@
 
 import {OrbitControls, Stage} from '@react-three/drei'
 import {Canvas} from '@react-three/fiber'
-import React, {Suspense, useRef} from 'react'
+import * as React from 'react'
 
 import {Loader} from '../loader'
 import {CDCDevModel} from '../Models/CDCDevModel'
 
 export const CDCDevScene = () => {
-  const ref = useRef()
+  const ref = React.useRef()
   return (
     <Canvas
       shadows
@@ -19,7 +19,7 @@ export const CDCDevScene = () => {
       orthographic={false}>
       <pointLight position={[120, 50, 10]} />
       <directionalLight intensity={0.8} />
-      <Suspense fallback={<Loader />}>
+      <React.Suspense fallback={<Loader />}>
         <Stage adjustCamera={2} preset={'rembrandt'} intensity={1} shadows={false} environment={'sunset'}>
           <CDCDevModel />
         </Stage>
@@ -30,7 +30,7 @@ export const CDCDevScene = () => {
           position={[0, 0, 0]}
           rotation={[0, 0, Math.PI / 2]}
         />
-      </Suspense>
+      </React.Suspense>
     </Canvas>
   )
 }

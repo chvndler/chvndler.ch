@@ -2,7 +2,7 @@
 
 import {OrbitControls, Stage} from '@react-three/drei'
 import {Canvas} from '@react-three/fiber'
-import React, {Suspense, useRef} from 'react'
+import * as React from 'react'
 import {styled} from 'stitches.config'
 
 import {ALogoModel} from '../Models/A.LogoModel'
@@ -24,13 +24,13 @@ const AppBox = styled('div', {
 })
 
 export const ALogoScene = () => {
-  const ref = useRef()
+  const ref = React.useRef()
   return (
     <>
       {/* <!-- Begin three.js module --> */}
       <AppBox>
         <Canvas dpr={[1, 2]} camera={{fov: 50}}>
-          <Suspense fallback={null}>
+          <React.Suspense fallback={null}>
             <Stage preset={'soft'} intensity={0.6} environment={'forest'}>
               <OrbitControls ref={ref} autoRotate autoRotateSpeed={0.1} />
               <gridHelper
@@ -41,7 +41,7 @@ export const ALogoScene = () => {
               />
               <ALogoModel />
             </Stage>
-          </Suspense>
+          </React.Suspense>
         </Canvas>
       </AppBox>
     </>
