@@ -63,21 +63,21 @@ const ArtworkModule = () => {
 
 const TrackDetailsModule = () => {
   const {data} = useSWR<NowPlayingSong>('/api/now-playing', fetcher)
+
   return (
     <Flex
       css={{
         alignItems: 'left',
-        paddingLeft: 8,
+        paddingLeft: 12,
         paddingTop: 0,
         flexDirection: 'column',
         margin: 'auto',
-        gap: 4
+        gap: 12
       }}>
       <TrackBox css={{justifyContent: 'flex-start'}}>
         <PassLink href={data.songUrl}>
           <TrackTitle>{data.title}</TrackTitle>
         </PassLink>
-
         <TrackArtist>{data.artist}</TrackArtist>
       </TrackBox>
       <Box

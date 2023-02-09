@@ -1,7 +1,6 @@
 /** @format */
 
 import React from 'react'
-// import { SpotifyLogo } from '@/components/SpotifyLogo';
 import {styled} from 'stitches.config'
 
 import {Box, Heading, PassLink, Section, Text} from '@/components/ds'
@@ -17,25 +16,25 @@ export const ResolvedTrack = (track: TrackProps) => {
             <Heading
               css={{
                 position: 'absolute',
-                top: '0',
+                bottom: '0',
                 left: '0',
                 marginLeft: '18px',
                 marginRight: '18px',
                 marginTop: '16px',
                 fontWeight: '700',
-                fontSize: '15px'
+                fontSize: 12
               }}>
               {track.ranking}
             </Heading>
             <Box
               css={{
                 position: 'absolute',
-                bottom: '0',
+                top: '0',
                 left: '0',
 
                 marginLeft: '18px',
                 marginRight: '18px',
-                marginBottom: '20px'
+                marginTop: '20px'
               }}>
               <PassLink href={track.songUrl}>
                 <Title>{track.title}</Title>
@@ -44,22 +43,10 @@ export const ResolvedTrack = (track: TrackProps) => {
               <Text>
                 <Artist>{track.artist}</Artist>
               </Text>
-            </Box>
 
-            <Box
-              css={{
-                position: 'absolute',
-                bottom: '0',
-                right: '0',
-                width: 'auto',
-
-                marginLeft: '18px',
-                marginRight: '18px',
-                marginBottom: '18px'
-              }}>
               <PassLink href={track.songUrl}>
                 {/* <!-- <SpotifyLogo /> --> */}
-                listen on Spotify
+                <SpotifyLink>listen on Spotify</SpotifyLink>
               </PassLink>
             </Box>
           </Section>
@@ -86,7 +73,18 @@ const Artist = styled('div', {
   fontSize: '13px',
   lineHeight: '1',
 
-  color: '$sage8'
+  color: '$sage9'
+})
+
+const SpotifyLink = styled('div', {
+  fontFamily: '$inter',
+  fontWeight: 'bold',
+  fontSize: '13px',
+  lineHeight: '1',
+
+  paddingTop: '10px',
+
+  color: '$spotify'
 })
 
 const Card = styled('div', {

@@ -40,7 +40,7 @@ const cardStyles = styled(Card, {
 
   width: '100%',
   height: '100%',
-  minHeight: 300,
+  minHeight: 150,
   minWidth: 300,
 
   borderRadius: 16,

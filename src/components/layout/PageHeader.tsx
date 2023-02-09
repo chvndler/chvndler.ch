@@ -13,6 +13,7 @@ const github = 'https://github.com/chvndler'
 const three = '/projects/three/cube'
 const archive = '/archive'
 const film = '/projects/film'
+const sound = '/music'
 
 export const PageHeader = () => {
   return (
@@ -76,6 +77,9 @@ export const PageHeader = () => {
                 </PassLink>
                 <PassLink href={film}>
                   <PersonalLink>Film</PersonalLink>
+                </PassLink>
+                <PassLink href={sound}>
+                  <PersonalLink>Sound</PersonalLink>
                 </PassLink>
                 <PassLink href={archive}>
                   <PersonalLink>Writings</PersonalLink>

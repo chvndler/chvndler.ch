@@ -28,6 +28,7 @@ export type TrackProps = {
   title?: string
   artist?: string
   songUrl?: string
+  albumImageUrl?: string
 }
 
 export type {Track}

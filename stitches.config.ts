@@ -85,7 +85,8 @@ export const {styled, css, theme, createTheme, getCssText, globalCss, keyframes,
       arena: '#484349',
       linkedin: '#0077B5',
       readcv: '#8A918E',
-      fb: '#4267B2'
+      fb: '#4267B2',
+      spotify: '#1DB954'
     },
     fonts: {
       inter: '"Inter", sans-serif',
