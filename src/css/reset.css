@@ -567,7 +567,6 @@ samp {
 
 img,
 svg,
-video,
 canvas,
 audio,
 iframe,
@@ -583,10 +582,13 @@ object {
    * https://github.com/mozdevs/cssremedy/issues/14
    */
 
-img,
-video {
+img {
   max-width: 100%;
   height: auto;
 }
 
 /* stylelint-enable */
+
+.keen-slider__slide {
+  background-color: transparent !important;
+}

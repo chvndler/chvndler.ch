@@ -30,7 +30,7 @@ const App = ({Component, pageProps, ...rest}: AppProps) => {
         color={'#EAFF97'}
         startPosition={0.4}
         stopDelayMs={300}
-        height={2}
+        height={3}
       />
       <ThemeProvider
         disableTransitionOnChange
