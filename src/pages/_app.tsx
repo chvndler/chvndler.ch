@@ -8,7 +8,7 @@ import * as React from 'react'
 import {createContext, useContext} from 'react'
 import {darkTheme, globalCss, theme} from 'stitches.config'
 
-import {useAppStore} from '@/context/use-app-store'
+import {useFontsLoaded} from '@/hooks/use-fonts-loaded'
 import {useFathom} from '@/lib/fathom'
 
 const Context = createContext<{fontsLoaded: boolean}>({fontsLoaded: false})
@@ -58,39 +58,6 @@ const globalStyles = globalCss({
     backgroundColor: theme.colors.chxn1
   }
 })
-
-/**
- * App Hooks...
- */
-const useFontsLoaded = () => {
-  React.useEffect(() => {
-    const maxWaitTime = 1500 // tweak this as needed.
-
-    const timeout = window.setTimeout(() => {
-      onReady()
-    }, maxWaitTime)
-
-    function onReady() {
-      window.clearTimeout(timeout)
-      useAppStore.setState({fontsLoaded: true})
-      document.documentElement.classList.add('fonts-loaded')
-    }
-
-    try {
-      document.fonts.ready
-        .then(() => {
-          onReady()
-        })
-        .catch((error: unknown) => {
-          console.error(error)
-          onReady()
-        })
-    } catch (error) {
-      console.error(error)
-      onReady()
-    }
-  }, [])
-}
 
 export type Page<P = Record<string, unknown>> = NextComponentType<NextPageContext, Record<string, unknown>, P> & {
   getLayout?: GetLayoutFn<P>
