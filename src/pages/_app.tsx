@@ -16,8 +16,8 @@ export const useAppContext = () => useContext(Context)
 
 const App = ({Component, pageProps, ...rest}: AppProps) => {
   useFathom()
-  globalStyles()
   useFontsLoaded()
+  globalStyles()
 
   const getLayout: GetLayoutFn =
     (Component as any).getLayout || (({Component, pageProps}) => <Component {...pageProps} />)

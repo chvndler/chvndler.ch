@@ -18,7 +18,7 @@ export const LivepeerPlayer = ({title, id, posterElement, ...rest}: LPFilmProps)
         playbackId={id}
         showPipButton
         showTitle={false}
-        aspectRatio='16to9'
+        // aspectRatio='16to9'
         // poster={<PosterImage />}
         poster={posterElement}
         controls={{

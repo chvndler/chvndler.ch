@@ -38,12 +38,12 @@ const CardStyles = styled(Card, {
   flexDirection: 'column',
   boxSizing: 'border-box',
 
-  width: '100%',
+  width: 'auto',
   height: '100%',
 
-  minHeight: 500,
+  // minHeight: 480,
 
-  borderRadius: 16,
+  // borderRadius: 16,
   margin: 'auto',
   alignItems: 'left',
   backgroundColor: theme.colors.slateA2,
@@ -66,9 +66,9 @@ const CardStyles = styled(Card, {
   },
 
   '&:hover': {
-    transition: 'all 0.2s ease-in-out',
-    cursor: 'grab',
-    boxShadow: `inset 0 0 1px 1px $colors$mauveA8`
+    transition: 'all 0.2s ease-in-out'
+    // cursor: 'grab'
+    // boxShadow: `inset 0 0 1px 1px $colors$mauveA8`
   }
 })
 
