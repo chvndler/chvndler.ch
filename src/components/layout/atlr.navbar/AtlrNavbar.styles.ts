@@ -325,7 +325,8 @@ const NavigationMenuInner = styled(Box, {
   boxSizing: 'border-box',
   borderRadius: 16,
   border: '1px solid $sageA4',
-  transition: 'color 0.8s ease',
+  // transition: 'color 0.8s ease',
+  transition: 'all 0.2s ease-in-out',
   /**
    * @backgroundColor
    *

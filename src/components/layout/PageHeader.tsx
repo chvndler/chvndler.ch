@@ -12,8 +12,8 @@ const twitter = 'https://twitter.com/chvndlerch'
 const github = 'https://github.com/chvndler'
 const three = '/projects/three/cube'
 const archive = '/archive'
-const film = '/projects/film'
-const sound = '/music'
+// const film = '/projects/film'
+// const sound = '/music'
 
 export const PageHeader = () => {
   return (
@@ -31,7 +31,7 @@ export const PageHeader = () => {
           <Box className={'left'}>
             <Paragraph
               css={{
-                fontSize: 16,
+                fontSize: 18,
                 fontFamily: theme.fonts.system,
                 fontWeight: 'bold',
                 color: theme.colors.chxn4
@@ -42,13 +42,13 @@ export const PageHeader = () => {
             <Paragraph
               css={{
                 fontSize: 16,
-                fontWeight: 'normal',
+                fontWeight: 500,
                 fontFamily: theme.fonts.system,
                 color: theme.colors.chxn4
               }}>
-              Creating cool and taking notes. Enjoying the internet and open-source. The focus in the moment is telling
-              stories through every detail that make a web experience worth having. Experienced in graphic, and motion
-              design, as well as three.js. I am currently looking for my next role,{' '}
+              Creating cool and taking notes. Enjoying the internet and open-source. The focus in the moment is
+              silencing the noise within design, with Atelier® Design. Experienced in graphic, and motion design, as
+              well as three.js. I am currently looking for my next role,{' '}
               <InlineLink href={email}>let's connect.</InlineLink>
             </Paragraph>
 
@@ -73,13 +73,7 @@ export const PageHeader = () => {
               <Box>
                 <LinkHeaders>PROJECTS</LinkHeaders>
                 <PassLink href={projects}>
-                  <PersonalLink>Web</PersonalLink>
-                </PassLink>
-                <PassLink href={film}>
-                  <PersonalLink>Film</PersonalLink>
-                </PassLink>
-                <PassLink href={sound}>
-                  <PersonalLink>Sound</PersonalLink>
+                  <PersonalLink>Web Projects</PersonalLink>
                 </PassLink>
                 <PassLink href={archive}>
                   <PersonalLink>Writings</PersonalLink>
@@ -147,20 +141,21 @@ const styledName = styled('h1', {
 const styledPersonalLink = styled('div', {
   fontFamily: theme.fonts.system,
   fontWeight: 'bold',
-  fontSize: 15,
-  lineHeight: '1.5'
+  fontSize: 16,
+  lineHeight: '1.5',
+  textTransform: 'uppercase'
 })
 
 const LinkHeaders = styled('div', {
   margin: 'auto',
   alignContent: 'center',
   alignItems: 'center',
-  color: theme.colors.chxn3,
+  color: theme.colors.chxn4,
   fontFamily: theme.fonts.mono,
-  fontSize: 11,
+  fontSize: 12,
   fontWeight: 500,
   letterSpacing: '0.02rem',
-  lineHeight: '23px',
+  lineHeight: '36px',
   textTransform: 'uppercase'
 })
 
