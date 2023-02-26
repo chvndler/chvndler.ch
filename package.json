@@ -78,7 +78,7 @@
         "react-merge-refs": "^2.0.1",
         "react-player": "^2.11.1",
         "react-use-measure": "^2.1.1",
-        "three": "^0.149.0",
+        "three": "^0.150.0",
         "three-stdlib": "^2.21.8",
         "zustand": "^4.3.2"
     },
