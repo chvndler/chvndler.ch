@@ -27,6 +27,6 @@ export default App
 
 const getCssAndReset = () => {
   const css = getCssText()
-  reset()
+  // reset()
   return css
 }
