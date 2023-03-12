@@ -26,10 +26,10 @@ import {createStitches, defaultThemeMap} from '@stitches/react'
 export type {VariantProps} from '@stitches/react'
 
 export const {styled, css, theme, createTheme, getCssText, globalCss, keyframes, config, reset} = createStitches({
+  prefix: 'cdc',
   themeMap: {
     ...defaultThemeMap
   },
-  prefix: 'atlr',
   theme: {
     colors: {
       ...gray,
