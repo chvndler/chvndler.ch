@@ -16,7 +16,7 @@ import {ProjectEntry} from './project.entry'
  */
 
 const typesxript = 'https://github.com/chvndler/typesxript'
-const kit = 'https://github.com/atlrdsgn/atelier.kit'
+const kit = 'https://github.com/atlrdsgn/atlr.kit'
 const personal = 'https://github.com/chvndler/chvndler.ch'
 const isi = 'https://www.isielitetraining.com/'
 const icxns = 'https://github.com/chvndler/icxns'
