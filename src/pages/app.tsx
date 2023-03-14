@@ -1,11 +1,11 @@
 /** @format */
 
 import {PageLayout} from '@/components/layout/page'
-import {QuickIntro} from '@/components/layout/QuickIntro'
+import {PageHeader} from '@/components/layout/PageHeader'
 
 const NextAppPage = () => (
   <PageLayout page_type={'App'}>
-    <QuickIntro />
+    <PageHeader />
   </PageLayout>
 )
 
