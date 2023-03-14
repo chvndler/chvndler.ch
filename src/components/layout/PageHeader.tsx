@@ -12,8 +12,7 @@ const twitter = 'https://twitter.com/chvndlerch'
 const github = 'https://github.com/chvndler'
 const three = '/projects/three/cube'
 const archive = '/archive'
-// const film = '/projects/film'
-// const sound = '/music'
+const atlr = 'https://atlrdsgn.com'
 
 export const PageHeader = () => {
   return (
@@ -47,9 +46,11 @@ export const PageHeader = () => {
                 color: theme.colors.chxn4
               }}>
               Creating cool and taking notes. Enjoying the internet and open-source. The focus in the moment is
-              silencing the noise within design, with Atelier® Design. Experienced in graphic, and motion design, as
-              well as three.js. I am currently looking for my next role,{' '}
-              <InlineLink href={email}>let's connect.</InlineLink>
+              silencing the noise within design culture, with{' '}
+              <PassLink href={atlr} target='_blank'>
+                atlrdsgn
+              </PassLink>
+              ®. I am currently looking for my next role, <InlineLink href={email}>let's connect.</InlineLink>
             </Paragraph>
 
             <Space size={'2'} />
@@ -64,22 +65,22 @@ export const PageHeader = () => {
                 </PassLink>
                 <Space size={'1'} />
                 <PassLink href={twitter}>
-                  <PersonalLink>Twitter</PersonalLink>
+                  <PersonalLink>Twitter⌝</PersonalLink>
                 </PassLink>
                 <PassLink href={github}>
-                  <PersonalLink>GitHub</PersonalLink>
+                  <PersonalLink>GitHub⌝</PersonalLink>
                 </PassLink>
               </Box>
               <Box>
                 <LinkHeaders>PROJECTS</LinkHeaders>
                 <PassLink href={projects}>
-                  <PersonalLink>Web Projects</PersonalLink>
+                  <PersonalLink>Web Projects⌟</PersonalLink>
                 </PassLink>
                 <PassLink href={archive}>
-                  <PersonalLink>Writings</PersonalLink>
+                  <PersonalLink>Articles⌟</PersonalLink>
                 </PassLink>
                 <PassLink href={three}>
-                  <PersonalLink>Three.js</PersonalLink>
+                  <PersonalLink>three.js⌟</PersonalLink>
                 </PassLink>
               </Box>
             </Grid>
@@ -141,9 +142,9 @@ const styledName = styled('h1', {
 const styledPersonalLink = styled('div', {
   fontFamily: theme.fonts.system,
   fontWeight: 'bold',
-  fontSize: 16,
-  lineHeight: '1.5',
-  textTransform: 'uppercase'
+  fontSize: 14,
+  lineHeight: '1.5'
+  // textTransform: 'uppercase'
 })
 
 const LinkHeaders = styled('div', {

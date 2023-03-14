@@ -50,14 +50,14 @@ export const WebProjectDisplay = () => {
           <ProjectEntry
             pRepository={arie}
             pTitle='ARIE©'
-            pSummary='A simple UI component for displaying information based on users cursor and scroll positions, in a more aesthetic way.'
+            pSummary='A tiny component for displaying information based on users cursor and scroll positions, in a more aesthetic way.'
           />
         </div>
 
         <div className='keen-slider__slide number-slide2'>
           <ProjectEntry
             pRepository={kit}
-            pTitle='Atelier.Kit'
+            pTitle='Atelier® Kit'
             pSummary='An ever– expanding library of React components and primitives.'
           />
         </div>
