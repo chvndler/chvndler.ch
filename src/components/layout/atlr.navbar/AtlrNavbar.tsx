@@ -37,7 +37,7 @@ export const AtlrNavbar = () => {
       <NavMenuBar>
         <NavigationMenu.Item>
           <NavMenuTrigger>
-            Projects <NavIcxn variant='SmallArrowDown' />
+            Menu <NavIcxn variant='SmallArrowDown' />
           </NavMenuTrigger>
 
           <NavMenuContent>

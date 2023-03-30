@@ -89,7 +89,7 @@ const PlacementBoxStyles = styled('div', Box, {
 const SummaryStyles = styled('p', {
   fontFamily: theme.fonts.system,
   fontWeight: 500,
-  fontSize: 13,
+  fontSize: 16,
   color: theme.colors.chxn4,
   lineHeight: '1.5',
 
@@ -100,7 +100,7 @@ const SummaryStyles = styled('p', {
 
 const TitleStyles = styled('h3', {
   transition: 'all 0.4s ease-in-out',
-  fontSize: 24,
+  fontSize: 26,
   fontFamily: theme.fonts.latMedStd,
   color: theme.colors.heliotrope,
   '&:hover': {color: theme.colors.portage}

@@ -34,7 +34,7 @@ const fadeOut = keyframes({
  * @MenuRoot
  */
 const NavigationMenuRoot = styled(NavigationMenu.Root, {
-  zIndex: 9998,
+  zIndex: 99999,
   position: 'fixed',
   top: '0.5rem',
   left: '50%',
@@ -81,7 +81,8 @@ const NavigationMenuBarStyles = styled(NavigationMenu.List, {
   WebkitBackdropFilter: 'blur(40px) saturate(180%)',
   lineHeight: '23px',
   height: 48,
-  border: `1px solid transparent`
+  // border: `1px solid transparent`,
+  border: `1.4px solid ${theme.colors.sage7}`
 })
 
 const StyledContentBox = styled('div', {
@@ -91,6 +92,8 @@ const StyledContentBox = styled('div', {
   padding: 0,
   color: theme.colors.chxn4,
   transition: 'color 0.4s ease',
+
+  zIndex: 999999999,
 
   variants: {
     alignment: {
@@ -122,21 +125,7 @@ const StyledContentBox = styled('div', {
  */
 export const itemStyles = {
   all: 'unset',
-  '*': {
-    boxSizing: 'border-box',
-    outline: 'none',
-    cursor: 'none'
-  },
-  '*:active': {
-    boxSizing: 'border-box',
-    outline: 'none',
-    cursor: 'none'
-  },
-  '*:focus': {
-    boxSizing: 'border-box',
-    outline: 'none',
-    cursor: 'none'
-  },
+
   alignItems: 'center',
   boxSizing: 'border-box',
   userSelect: 'none',
@@ -197,45 +186,13 @@ const NavigationMenuTrigger = styled(NavigationMenu.Trigger, {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  gap: 2,
-
-  '*': {
-    boxSizing: 'border-box',
-    outline: 'none',
-    cursor: 'none'
-  },
-  '*:active': {
-    boxSizing: 'border-box',
-    outline: 'none',
-    cursor: 'none'
-  },
-  '*:focus': {
-    boxSizing: 'border-box',
-    outline: 'none',
-    cursor: 'none'
-  }
+  gap: 2
 })
 
 /**
  * @MenuLink
  */
 const NavigationMenuLink = styled(NavigationMenu.Link, {
-  '*': {
-    boxSizing: 'border-box',
-    outline: 'none',
-    cursor: 'none'
-  },
-  '*:active': {
-    boxSizing: 'border-box',
-    outline: 'none',
-    cursor: 'none'
-  },
-  '*:focus': {
-    boxSizing: 'border-box',
-    outline: 'none',
-    cursor: 'none'
-  },
-
   ...itemStyles,
   fontFamily: theme.fonts.system,
   fontSize: 14,
@@ -282,14 +239,7 @@ const NavigationMenuLink = styled(NavigationMenu.Link, {
 const NavigationMenuContent = styled(NavigationMenu.Content, {
   zIndex: '999999',
   backgroundColor: 'transparent',
-  // backdropFilter: 'blur(20px) saturate(180%)',
-  /// WebkitBackdropFilter: 'blur(20px) saturate(180%)',
-  /*
-  position: 'fixed',
-  top: '0',
-  left: 0,
-  right: 0,
-*/
+
   borderRadius: 16,
   boxSizing: 'border-box',
   width: '100%',
@@ -297,10 +247,12 @@ const NavigationMenuContent = styled(NavigationMenu.Content, {
   padding: 4,
   paddingTop: '3.5rem',
 
-  transition: 'all 0.2s ease-in-out',
+  transition: 'all 0.8s ease-in-out',
+
+  //  boxShadow: `0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)`,
 
   animationDuration: '250ms',
-  animationTimingFunction: 'ease',
+  animationTimingFunction: 'ease-in-out',
   '&[data-motion="from-start"]': {animationName: fadeIn},
   '&[data-motion="from-end"]': {animationName: fadeOut},
   '&[data-motion="to-start"]': {animationName: fadeIn},
@@ -324,9 +276,9 @@ const NavigationMenuInner = styled(Box, {
   height: '100%',
   boxSizing: 'border-box',
   borderRadius: 16,
-  border: '1px solid $sageA4',
+  border: `2px solid ${theme.colors.sageA4}`,
   // transition: 'color 0.8s ease',
-  transition: 'all 0.2s ease-in-out',
+  transition: 'color 0.8s ease-in-out',
   /**
    * @backgroundColor
    *
@@ -339,7 +291,18 @@ const NavigationMenuInner = styled(Box, {
    */
   backgroundColor: `rgba(26,26,26,.06)`,
   backdropFilter: 'blur(40px) saturate(180%)',
-  WebkitBackdropFilter: 'blur(40px) saturate(180%)'
+  WebkitBackdropFilter: 'blur(40px) saturate(180%)',
+
+  /*
+box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  */
+
+  animationDuration: '250ms',
+  animationTimingFunction: 'ease-in-out',
+  '&[data-motion="from-start"]': {animationName: fadeIn},
+  '&[data-motion="from-end"]': {animationName: fadeOut},
+  '&[data-motion="to-start"]': {animationName: fadeIn},
+  '&[data-motion="to-end"]': {animationName: fadeOut}
 })
 
 /**
