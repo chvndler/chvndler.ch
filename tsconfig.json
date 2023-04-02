@@ -19,7 +19,6 @@
     "strictNullChecks": false,
     "target": "esnext",
     "noUncheckedIndexedAccess": true,
-    "importsNotUsedAsValues": "error",
     "incremental": true,
     "baseUrl": ".",
     "paths": {
