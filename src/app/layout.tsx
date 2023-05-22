@@ -39,7 +39,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://app.chvndler.ch/'),
-  title: 'Chandler Chapppell',
+  title: 'Chandler Chappell',
   description: 'Personal site.',
   manifest: `${siteURL}/manifest.webmanifest`,
   viewport: {
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Chanlder Chappell',
+    title: 'Chandler Chappell',
     description: 'Personal site.',
     creator: '@chvndler',
     images: ['/static/img/og.jpg'],
