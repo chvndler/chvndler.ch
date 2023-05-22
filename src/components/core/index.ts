@@ -1,6 +1,7 @@
 export {MDX} from './mdx-components'
 export {Header} from './header'
 export {Footer} from './footer'
+export {Canvas} from './canvas'
 export {ThemeProvider} from './theme-provider'
 
 export {CS as PageSection} from './core-section'

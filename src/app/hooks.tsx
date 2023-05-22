@@ -1,12 +1,24 @@
 'use client'
 
-import {useEffect} from 'react'
+import {useEffect, Suspense} from 'react'
+import {isProd, isClient, isDev, siteLog} from '../lib/const'
+import {gaTrackingId} from '../lib/const'
+
 import {useAppStore} from '../components/hooks/use-app-store'
+import {GoogleAnalytics} from '@/components/google-analytics'
 
 export const AppHooks = () => {
+  if (isProd && isClient && isDev) {
+    console.log(siteLog)
+  }
+
   useFontsLoaded()
 
-  return null
+  return gaTrackingId ? (
+    <Suspense>
+      <GoogleAnalytics />
+    </Suspense>
+  ) : null
 }
 
 // AppHooks.

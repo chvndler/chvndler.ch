@@ -2,6 +2,9 @@
  *
  * api constants
  */
+
+export const gaTrackingId = process.env.NEXT_PUBLIC_GA_TRACKING_ID
+
 export const isDev = process.env.NODE_ENV === 'development'
 export const isProd = process.env.NODE_ENV === 'production'
 export const isClient = typeof document !== 'undefined'
@@ -15,3 +18,17 @@ if (typeof process.env.NEXT_PUBLIC_SITE_URL !== 'string') {
 
 export const siteURL = new URL(process.env.NEXT_PUBLIC_SITE_URL)
 export const siteOrigin = siteURL.origin
+
+export const siteLog = `
+      (           
+   (  )\ )   (    
+   )\(()/(   )\   
+ (((_)/(_))(((_)  
+ )\__(_))_ )\___  
+((/ __|   ((/ __| 
+ | (__| |) | (__  
+  \___|___/ \___| 
+                                                                                   
+   © 2023 CDC®. All rights reserved. 
+   https://www.chvndler.ch/
+`

@@ -10,6 +10,7 @@ import {
   HLevelThree,
   ComponentSection,
   LargeSpacer,
+  Canvas,
 } from '../components/core'
 import {Introduction} from '../components/slices'
 
@@ -28,10 +29,17 @@ import {Introduction} from '../components/slices'
 export default function Index() {
   return (
     <>
+      <Canvas>
+        <p>will be back shortly.</p>
+        <p>sorry for the inconvenience.</p>
+      </Canvas>
+
+      {/* 
       <PageSection>
         <Introduction />
         <FeaturedProjects />
       </PageSection>
+    */}
     </>
   )
 }
