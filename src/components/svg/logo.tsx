@@ -9,7 +9,7 @@ export function Logo() {
   return (
     <span className='link'>
       {pathname === '/' ? (
-        <span className='link fw7 ttu dim f-center dark-gray f6 dib mr3 mr3-l hauss-mono'>
+        <span className='link fw7 ttu dim f-center dark-gray f6 dib mr3 mr3-l aspekta'>
           Chandler®
         </span>
       ) : (

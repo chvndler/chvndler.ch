@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import {ComponentSection} from '../core'
 
 // server
 
@@ -8,7 +9,7 @@ const link = {
 } as const
 
 export const Connect = () => (
-  <section className='mv5'>
+  <ComponentSection>
     <div className='dt w-100 baseline f-row tween mv5 flex'>
       <h3 className='f4 fw4 mb1 zorba track-n-03 font-inter'>Connect</h3>
       <div className='f-inline baseline gap-03 flex'>
@@ -20,5 +21,5 @@ export const Connect = () => (
         </Link>
       </div>
     </div>
-  </section>
+  </ComponentSection>
 )

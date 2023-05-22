@@ -25,7 +25,7 @@ const projectOrder = allProjects.sort((a, b) =>
 export default function ProjectsIndex() {
   return (
     <PageSection>
-      <h3 className={'f3 fw4 track-n-02 gray pb4'}>
+      <h3 className='f3 fw4 track-n-02 gray pb4 aspekta'>
         Some of my <span className='fw6 gravel'>work</span>.
       </h3>
 

@@ -8,6 +8,10 @@ export function CS({children}: {children: React.ReactNode}) {
   )
 }
 
+export function COMP_SECT({children}: {children: React.ReactNode}) {
+  return <section className='pv3 component-section'>{children}</section>
+}
+
 export function SH({children}: {children: React.ReactNode}) {
   return <h3 className='f4 fw4 mb1 zorba track-n-03 font-inter'>{children}</h3>
 }

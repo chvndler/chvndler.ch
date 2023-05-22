@@ -1,16 +1,16 @@
-@import './helpers.min';
+@import './_helpers.min';
+@import './_typeface.min';
 
 
 :root {
   --max-width: 648px;
+  --font-aspekta: 'Aspekta V', sans-serif;
   --font-inter: 'Inter', 'Helvetica Neue', sans-serif;
   --font-instrument: 'Instrument Sans', 'Helvetica Neue', sans-serif;
   --font-hyperlegible: 'Atkinson Hyperlegible Regular', sans-serif;
   --font-basement: 'Basement Grotesque Black', sans-serif;
-
   --font-mono: 'SF Mono', monospace !important;
   --font-hauss: 'At Hauss Mono', monospace !important;
-
   --trans-parent: transparent;
   --b-90: rgba(0, 0, 0, 0.9);
   --b-80: rgba(0, 0, 0, 0.8);
@@ -58,7 +58,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --blk: #fff;
-    --wht: #000;
+    --wht: #1D1D1D;
     --wht-vista: #111111;
 
     --g-ship: #c4c6cd;
@@ -67,33 +67,27 @@
   }
 }
 
+html,
+body {
+  overflow-x: hidden;
+  font-family: var(--font-inter);
+  color: var(--g-ship);
+  background: var(--wht);
+  background-color: var(--wht);
+}
+
 html.fonts-loaded body {
   opacity: 1 !important;
 }
 
 html.dark {
   color: var(--g-pale);
-  background: #111111;
-  background-color: #111111;
+  background: var(--wht);
+  background-color: var(--wht);
 }
 
 body {
   transition: opacity #{$duration / 2 + 's'} ease-in !important;
-}
-
-html,
-body {
-  overflow-x: hidden;
-  font-family: var(--font-inter);
-  color: var(--g-ship);
-  background: var(--wht-vista);
-  background-color: var(--wht-vista);
-
-  @media (prefers-color-scheme: dark) {
-    color: var(--g-pale);
-    background: #111111;
-    background-color: #111111;
-  }
 }
 
 .main {
@@ -117,6 +111,8 @@ body {
   margin: auto;
   padding: 0;
 }
+
+
 
 .app_header {
   box-sizing: border-box;
@@ -170,27 +166,7 @@ body {
   }
 }
 
-// typefaces
 
-.instrument {
-  font-family: var(--font-instrument) !important;
-}
-
-.atkinson {
-  font-family: var(--font-hyperlegible) !important;
-}
-
-.basement {
-  font-family: var(--font-basement) !important;
-}
-
-.hauss-mono {
-  font-family: var(--font-hauss-mono) !important;
-}
-
-.font-mono {
-  font-family: var(--font-mono);
-}
 
 
 
@@ -304,66 +280,7 @@ body {
   }
 }
 
-/*
- * For Hero/Marketing Titles
- *
- * These generally are too large for mobile
- * so be careful using them on smaller screens.
- * */
 
-
-
-.f-6,
-.f-headline {
-  font-size: 6rem;
-}
-.f-5,
-.f-subheadline {
-  font-size: 5rem;
-}
-
-/* Type Scale */
-
-.f-12 {
-  font-size: 12px;
-}
-
-.f-13 {
-  font-size: 13px;
-}
-
-.f-14 {
-  font-size: 14px;
-}
-
-.f-15 {
-  font-size: 15px;
-}
-
-.f1 {
-  font-size: 3rem;
-}
-.f2 {
-  font-size: 2.25rem;
-}
-.f3 {
-  font-size: 1.5rem;
-}
-.f4 {
-  font-size: 1.25rem;
-}
-.f5 {
-  font-size: 1rem;
-}
-.f6 {
-  font-size: 0.875rem;
-}
-.f7 {
-  font-size: 0.75rem;
-}
-.f8 {
-  font-size: 0.625rem;
-} /* Small and hard to read for many people so use with extreme caution */
 
 /*
 

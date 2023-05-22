@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import {ComponentSection} from '../core'
 
 // server
 
@@ -11,7 +12,7 @@ const link = {
 
 export const TechStack = () => {
   return (
-    <section className='mv5'>
+    <ComponentSection>
       <h3 className='f5 fw4 mb1 zorba track-n-02'>Software and Tools</h3>
       <ul className='list pv2'>
         <li className='dib mr3'>
@@ -33,6 +34,6 @@ export const TechStack = () => {
           </Link>
         </li>
       </ul>
-    </section>
+    </ComponentSection>
   )
 }

@@ -5,8 +5,13 @@ import {allProjects} from 'contentlayer/generated'
 import type {Projects} from 'contentlayer/generated'
 
 import {formatDateTime} from '../components/hooks/use-date-time'
-import {PageSection, HLevelThree} from '../components/core'
-import {Connect, Introduction} from '../components/slices'
+import {
+  PageSection,
+  HLevelThree,
+  ComponentSection,
+  LargeSpacer,
+} from '../components/core'
+import {Introduction} from '../components/slices'
 
 /**
  *
@@ -25,8 +30,6 @@ export default function Index() {
     <>
       <PageSection>
         <Introduction />
-        <Connect />
-        <HLevelThree>Projects</HLevelThree>
         <FeaturedProjects />
       </PageSection>
     </>
@@ -39,26 +42,33 @@ const FeaturedProjects = () => {
     .slice(0, 4)
 
   return (
-    <div className='pv2'>
-      <ul className='list pl0 mt0 center'>
-        {featured.map((post) => (
-          <article key={post._id}>
-            <Link href={post.url}>
-              <li className='lh-copy pv2 ba bl-0 bt-0 br-0 b--solid b--light-gray bg-animate hover-bg-light-gray'>
-                <div className='f-row tween baseline flex'>
-                  <h4 className='link dim fw6 f6 mid-gray pb1 ttu hauss-mono'>
-                    {post.title}
-                  </h4>
-                  <p className='f8 fw5 ttu gray dim font-mono'>
-                    <ProjectTags post={post} /> · <FormattedDate post={post} />
-                  </p>
-                </div>
-              </li>
-            </Link>
-          </article>
-        ))}
-      </ul>
-    </div>
+    <>
+      <LargeSpacer />
+      <ComponentSection>
+        <HLevelThree>Projects</HLevelThree>
+        <div className='pv2'>
+          <ul className='list pl0 mt0 center'>
+            {featured.map((post) => (
+              <article key={post._id}>
+                <Link href={post.url}>
+                  <li className='lh-copy pv2 ba bl-0 bt-0 br-0 b--solid b--light-gray bg-animate hover-bg-light-gray'>
+                    <div className='f-row tween baseline flex'>
+                      <h4 className='link dim fw6 f6 mid-gray pb1 ttu aspekta'>
+                        {post.title}
+                      </h4>
+                      <p className='f8 fw5 ttu gray dim aspekta'>
+                        <ProjectTags post={post} /> ·{' '}
+                        <FormattedDate post={post} />
+                      </p>
+                    </div>
+                  </li>
+                </Link>
+              </article>
+            ))}
+          </ul>
+        </div>
+      </ComponentSection>
+    </>
   )
 }
 
