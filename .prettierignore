@@ -1,15 +1,36 @@
-.next/
-.vercel/
-.yarn/
+# - production.
+.next
+out
+node_modules
+
+# - yarn/berry/npm.
+.yarn/*
 .yarnrc
 .yarnrc.yml
 .yarn-integrity
-.github/
+.yarn-error.log
+yarn.lock
+package.json
+package-lock.json
 
-posts/
+# - misc.
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.eslintcache
 
+# - vercel.
+.vercel
+.vercelignore
+now.json
 
-/posts/*
+# - sass. minified.
+src/app/_scss/*.min.scss
+_scss/min/*.scss
+*.min.scss
 
-
-src/posts/
+# - contentlayer.
+.contentlayer

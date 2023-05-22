@@ -1,46 +1,33 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
+.yarn/*
+.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# - dependencies
+.DS_Store
 node_modules
-/.pnp
-.pnp.js
+package-lock.json
 
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
+# - production
 /build
+.next
+.vercel
+.contentlayer
 
-# misc
+# - environment
+.env
+.env.local
+.env.development.local
+.env.*
+
+# - misc.
+Icon
+.vscode
 */robots.txt
 */sitemap.xml
 */sitemap-0.xml
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-.yarn/
-.vscode/
-
-gsap/package/*
-
-# local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# vercel
-.vercel
-tsconfig.tsbuildinfo
-
-yarn.lock
