@@ -4,7 +4,7 @@
   "embeddedLanguageFormatting": "auto",
   "htmlWhitespaceSensitivity": "css",
   "jsxSingleQuote": true,
-  "printWidth": 120,
+  "printWidth": 80,
   "insertPragma": false,
   "requirePragma": false,
   "semi": false,
