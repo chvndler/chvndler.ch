@@ -15,12 +15,20 @@ export const TechStack = () => {
       <h3 className='f5 fw4 mb1 zorba track-n-02'>Software and Tools</h3>
       <ul className='list pv2'>
         <li className='dib mr3'>
-          <Link href={link.react} target={'_blank'} className='f6 f5-ns b db pv2 link dim mid-gray'>
+          <Link
+            href={link.react}
+            target={'_blank'}
+            className='f6 f5-ns b db pv2 link dim mid-gray'
+          >
             React
           </Link>
         </li>
         <li className='dib mr3'>
-          <Link href={link.next} target={'_blank'} className='f6 f5-ns b db pv2 link dim mid-gray'>
+          <Link
+            href={link.next}
+            target={'_blank'}
+            className='f6 f5-ns b db pv2 link dim mid-gray'
+          >
             Next.js
           </Link>
         </li>

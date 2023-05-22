@@ -53,7 +53,9 @@ function ProjectTags({post}: {post: Projects}) {
     <>
       <span className='lh-copy gray'>
         {post.tags.map((tag, index) => (
-          <span key={post._id}>{post.tags.length - 1 === index ? tag : `${tag}, `}</span>
+          <span key={post._id}>
+            {post.tags.length - 1 === index ? tag : `${tag}, `}
+          </span>
         ))}
       </span>
     </>
@@ -76,9 +78,15 @@ export default async function PostPage({params}: PostProps) {
           </small>
         </time>
         <h3 className='f2 f1-m f-headline-3 measure-narrow lh-title mv0'>
-          <span className='bg-black-90 lh-copy white b pa1 ttu tracked-tight'>{post.title}</span>
+          <span className='bg-black-90 lh-copy white b pa1 ttu tracked-tight'>
+            {post.title}
+          </span>
         </h3>
-        {post.description && <p className='pl1 pr1 lh-title fw5 f5 mt0 black-80 w-max'>{post.description}</p>}
+        {post.description && (
+          <p className='pl1 pr1 lh-title fw5 f5 mt0 black-80 w-max'>
+            {post.description}
+          </p>
+        )}
       </section>
 
       <section className='project-src center pa3'>

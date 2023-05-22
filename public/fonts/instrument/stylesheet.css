@@ -3,7 +3,8 @@
   src: url('InstrumentSerif-Italic.eot');
   src: local('Instrument Serif Italic'), local('InstrumentSerif-Italic'),
     url('InstrumentSerif-Italic.eot?#iefix') format('embedded-opentype'),
-    url('InstrumentSerif-Italic.woff2') format('woff2'), url('InstrumentSerif-Italic.woff') format('woff'),
+    url('InstrumentSerif-Italic.woff2') format('woff2'),
+    url('InstrumentSerif-Italic.woff') format('woff'),
     url('InstrumentSerif-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
@@ -15,7 +16,8 @@
   src: url('InstrumentSerif-Regular.eot');
   src: local('Instrument Serif Regular'), local('InstrumentSerif-Regular'),
     url('InstrumentSerif-Regular.eot?#iefix') format('embedded-opentype'),
-    url('InstrumentSerif-Regular.woff2') format('woff2'), url('InstrumentSerif-Regular.woff') format('woff'),
+    url('InstrumentSerif-Regular.woff2') format('woff2'),
+    url('InstrumentSerif-Regular.woff') format('woff'),
     url('InstrumentSerif-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;

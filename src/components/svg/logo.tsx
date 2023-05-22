@@ -9,7 +9,9 @@ export function Logo() {
   return (
     <span className='link'>
       {pathname === '/' ? (
-        <span className='link fw7 ttu dim f-center dark-gray f6 dib mr3 mr3-l hauss-mono'>Chandler®</span>
+        <span className='link fw7 ttu dim f-center dark-gray f6 dib mr3 mr3-l hauss-mono'>
+          Chandler®
+        </span>
       ) : (
         <Link href='/'>
           <CDCLogo width={'60'} height={'22'} />
