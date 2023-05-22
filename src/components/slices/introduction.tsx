@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 // server
 
-const altrdsgn = 'https://altrdsgn.com'
+const altrdsgn = 'https://www.altrdsgn.com'
 
 export const Introduction = () => (
   <section>
