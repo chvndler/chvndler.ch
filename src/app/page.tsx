@@ -18,7 +18,7 @@ export default function Index() {
         <section className='mv5 ph3'>
           <Introduction />
           <Connect />
-          <h3 className='f5 fw4 mb1 zorba track-n-02'>Projects</h3>
+          <h3 className='f4 fw4 mb1 zorba track-n-03 font-inter'>Projects</h3>
           <div className='pv2'>
             <ul className='list pl0 mt0 center'>
               {featured.map((post) => (
@@ -26,7 +26,7 @@ export default function Index() {
                   <Link href={post.url}>
                     <li className='lh-copy pv2 ba bl-0 bt-0 br-0 b--solid b--light-gray bg-animate hover-bg-light-gray'>
                       <div className='f-row tween baseline flex'>
-                        <h4 className='link dim fw6 f6 mid-gray pb1 ttu font-mono'>{post.title}</h4>
+                        <h4 className='link dim fw6 f6 mid-gray pb1 ttu hauss-mono'>{post.title}</h4>
                         <p className='f8 fw5 ttu gray dim font-mono'>
                           <ProjectTags post={post} /> · <FormattedDate post={post} />
                         </p>
@@ -54,7 +54,7 @@ function ProjectTags({post}: {post: Projects}) {
     <>
       <span>
         {post.tags.map((tag, index) => (
-          <span key={post._id}>{post.tags.length - 1 === index ? tag : `${tag}, `}</span>
+          <span key={post.slug}>{post.tags.length - 1 === index ? tag : `${tag}, `}</span>
         ))}
       </span>
     </>

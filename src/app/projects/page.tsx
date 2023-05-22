@@ -13,12 +13,6 @@ export const metadata: Metadata = {
   description: 'Projects I have worked on, and am currently working on.',
 }
 
-const FormattedDate = ({post}: {post: Projects}) => {
-  const publishedDate = formatDateTime(post.date)
-
-  return <>{publishedDate.asString}</>
-}
-
 export default function ProjectsIndex() {
   const posts = allProjects.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
 
@@ -74,4 +68,10 @@ export default function ProjectsIndex() {
       </section>
     </main>
   )
+}
+
+function FormattedDate({post}: {post: Projects}) {
+  const publishedDate = formatDateTime(post.date)
+
+  return <>{publishedDate.asString}</>
 }

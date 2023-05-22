@@ -1,16 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
+import {is} from 'date-fns/locale'
 
 // server
 
-const NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA = `5dd284fa77c34328ce76ffeebe0022bd7a96ff08`
-const NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER = `chvndler`
-const NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG = `chvndler.ch`
+const isCommit = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA
+const isOwner = process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER
+const isSlug = process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG
 
 export const GitSha = () => {
-  const sha = NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA
-  const owner = NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER
-  const slug = NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG
+  const sha = isCommit
+  const owner = isOwner
+  const slug = isSlug
 
   const color = 'gray'
 
@@ -21,7 +22,7 @@ export const GitSha = () => {
     return (
       <div>
         <div className='gitsha_flex baseline'>
-          <p className='ttu f7 font-mono'>GIT_SHA</p>
+          <p className='ttu f7 font-mono gravel'>GIT_SHA</p>
           <span>⥂</span>
           <Link href={href}>
             <p style={{color: `#${shortSha}`}} className='ttu f7 font-mono'>

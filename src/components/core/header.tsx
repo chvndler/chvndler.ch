@@ -19,21 +19,21 @@ export const Header = () => {
           </div>
           <div className='f-center v-mid tween'>
             <Link
-              className='link fw5 ttu dim f-center dark-gray f6 dib ml3 ml3-l font-mono'
+              className='link fw5 ttu dim f-center black-60 f6 dib ml3 ml3-l hauss-mono'
               href={links.index}
               title='Home'
             >
               Index
             </Link>
             <Link
-              className='link fw5 ttu dim f-center dark-gray f6 dib ml3 ml3-l font-mono'
+              className='link fw5 ttu dim f-center black-60 f6 dib ml3 ml3-l hauss-mono'
               href={links.projects}
               title='Projects'
             >
               Projects
             </Link>
             <Link
-              className='link fw5 ttu dim f-center dark-gray f6 dib ml3 ml3-l font-mono'
+              className='link fw5 ttu dim f-center black-60 f6 dib ml3 ml3-l hauss-mono'
               href={links.archive}
               title='Archive'
             >

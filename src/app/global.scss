@@ -1,3 +1,16 @@
+@import './_scss/min/fonts.scss';
 @import './_scss/min/reset.scss';
 @import './_scss/min/tachyon.min.scss';
 @import './_scss/min/theme.min.scss';
+
+section.project-src h1,
+section.project-src h2,
+section.project-src h3,
+section.project-src h4 {
+  font-family: var(--font-inter) !important;
+}
+
+.project-src {
+  font-family: var(--font-hyperlegible) !important;
+  line-height: 1.6em !important;
+}

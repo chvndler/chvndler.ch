@@ -1,9 +1,16 @@
+@import './helpers.min';
+
+
 :root {
   --max-width: 648px;
   --font-inter: 'Inter', 'Helvetica Neue', sans-serif;
-  --font-mono: 'SF Mono', monospace !important;
+  --font-instrument: 'Instrument Sans', 'Helvetica Neue', sans-serif;
+  --font-hyperlegible: 'Atkinson Hyperlegible Regular', sans-serif;
+  --font-basement: 'Basement Grotesque Black', sans-serif;
 
-  // alphas..
+  --font-mono: 'SF Mono', monospace !important;
+  --font-hauss: 'At Hauss Mono', monospace !important;
+
   --trans-parent: transparent;
   --b-90: rgba(0, 0, 0, 0.9);
   --b-80: rgba(0, 0, 0, 0.8);
@@ -60,10 +67,18 @@
   }
 }
 
-html:dark {
+html.fonts-loaded body {
+  opacity: 1 !important;
+}
+
+html.dark {
   color: var(--g-pale);
   background: #111111;
   background-color: #111111;
+}
+
+body {
+  transition: opacity #{$duration / 2 + 's'} ease-in !important;
 }
 
 html,
@@ -73,12 +88,6 @@ body {
   color: var(--g-ship);
   background: var(--wht-vista);
   background-color: var(--wht-vista);
-
-  @media (prefers-color-scheme: light) {
-    color: var(--g-ship);
-    background: var(--wht-vista);
-    background-color: var(--wht-vista);
-  }
 
   @media (prefers-color-scheme: dark) {
     color: var(--g-pale);
@@ -160,6 +169,30 @@ body {
     color: rgba(255, 255, 255, 0.4) !important;
   }
 }
+
+// typefaces
+
+.instrument {
+  font-family: var(--font-instrument) !important;
+}
+
+.atkinson {
+  font-family: var(--font-hyperlegible) !important;
+}
+
+.basement {
+  font-family: var(--font-basement) !important;
+}
+
+.hauss-mono {
+  font-family: var(--font-hauss-mono) !important;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+
 
 .sun-icon {
   color: var(--gravel);
@@ -278,9 +311,7 @@ body {
  * so be careful using them on smaller screens.
  * */
 
-.font-mono {
-  font-family: var(--font-mono);
-}
+
 
 .f-6,
 .f-headline {
@@ -351,6 +382,15 @@ body {
   margin-bottom: 0.25rem;
   width: 100%;
   height: 20px;
+  background: var(--trans-parent) !important;
+  background-color: var(--trans-parent) !important;
+}
+
+.space-02 {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  width: 100%;
+  height: 60px;
   background: var(--trans-parent) !important;
   background-color: var(--trans-parent) !important;
 }

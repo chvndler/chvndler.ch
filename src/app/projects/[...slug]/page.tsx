@@ -68,7 +68,7 @@ export default async function PostPage({params}: PostProps) {
   }
 
   return (
-    <article key={post._id} className='project__page'>
+    <article key={post._id} className=''>
       <section className='mv4'>
         <time className='f6 b mb2 dib zorba'>
           <small>
@@ -81,7 +81,7 @@ export default async function PostPage({params}: PostProps) {
         {post.description && <p className='pl1 pr1 lh-title fw5 f5 mt0 black-80 w-max'>{post.description}</p>}
       </section>
 
-      <section className='center pa3'>
+      <section className='project-src center pa3'>
         <MDX code={post.body.code} />
       </section>
     </article>
