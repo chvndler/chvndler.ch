@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ['class'],
   content: [
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -11,6 +12,8 @@ module.exports = {
     fontFamily: {
       inter: ['Inter', 'sans-serif'],
       aspekta: ['Aspekta V', 'sans-serif'],
+      tstar: ['T-Star Pro', 'sans-serif'],
+      roboflex: ['Roboto Flex V', 'sans-serif'],
       sfmono: ['SF Mono', 'monospace'],
     },
     colors: {

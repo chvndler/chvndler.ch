@@ -49,14 +49,19 @@ export const UIProjectList = () => {
   return (
     <>
       <PageSection>
-        <ul role='list' className='w-full divide-y divide-blackA8'>
+        <ul
+          role='list'
+          className='w-full divide-y divide-blackA8 dark:divide-whiteA8'
+        >
           {projects.map((source) => (
-            <li
-              key={source._id}
-              className='flex justify-between py-3 gap-x-4 bg-blackA hover:bg-blackA3'
-            >
-              <div className='flex items-center gap-x-2'>
-                {/* Image 
+            <>
+              <Link href={source.url} target='_self'>
+                <li
+                  key={source._id}
+                  className='flex justify-between py-3 gap-x-4 bg-blackA hover:bg-blackA3'
+                >
+                  <div className='flex items-center gap-x-2'>
+                    {/* Image 
                 <img
                   src={source.imageUrl}
                   alt={source.name}
@@ -66,13 +71,13 @@ export const UIProjectList = () => {
                 />
                 */}
 
-                {/* Name and Excerpt?Description */}
-                <div className='flex-auto min-w-0'>
-                  <p className='font-bold leading-4 font-aspekta text-md text-zinc8'>
-                    {source.name}
-                  </p>
+                    {/* Name and Excerpt?Description */}
+                    <div className='flex-auto min-w-0'>
+                      <p className='font-extrabold leading-4 tracking-wide uppercase font-tstar text-md text-grayscale-800'>
+                        {source.name}
+                      </p>
 
-                  {/*
+                      {/*
                   {source.excerpt ? (
                     <p className='mt-1 text-[11px] font-semibold leading-4 uppercase text-zinc9 font-sfmono'>
                       <span>{source.description}</span>
@@ -83,27 +88,27 @@ export const UIProjectList = () => {
                     </p>
                   )}
                 */}
-                </div>
-              </div>
+                    </div>
+                  </div>
 
-              <div className='flex flex-row items-end sm:hidden gap-x-3'>
-                <p className='mt-1 text-[11px] font-semibold leading-4 uppercase text-zinc9 font-sfmono'>
-                  <Link href={source.url} target='_blank'>
-                    View project
-                  </Link>
-                </p>
-              </div>
+                  <div className='flex flex-row items-end sm:hidden gap-x-3'>
+                    <p className='mt-1 text-[11px] font-semibold leading-4 uppercase text-zinc9 font-sfmono'>
+                      <span>View project</span>
+                    </p>
+                  </div>
 
-              {/* Published Date & Tags */}
-              <div className='hidden gap-x-3 sm:flex sm:flex-row sm:items-end'>
-                <p className='mt-1 text-[11px] font-semibold leading-4 uppercase text-zinc9 font-sfmono'>
-                  <ProjectTags key={source.title} {...source} />
-                </p>
-                <p className='text-[11px] font-semibold leading-4 uppercase text-gray11 font-sfmono'>
-                  <FormattedDate key={source.date} {...source} />
-                </p>
-              </div>
-            </li>
+                  {/* Published Date & Tags */}
+                  <div className='hidden gap-x-3 sm:flex sm:flex-row sm:items-end'>
+                    <p className='mt-1 text-[11px] font-semibold leading-4 uppercase text-zinc9 font-sfmono'>
+                      <ProjectTags key={source.title} {...source} />
+                    </p>
+                    <p className='text-[11px] font-semibold leading-4 uppercase text-gray11 font-sfmono'>
+                      <FormattedDate key={source.date} {...source} />
+                    </p>
+                  </div>
+                </li>
+              </Link>
+            </>
           ))}
         </ul>
       </PageSection>

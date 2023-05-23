@@ -10,12 +10,19 @@ import {
   HLevelThree,
   ComponentSection,
   LargeSpacer,
-  Canvas,
+  UIProjectList,
 } from '../components/core'
 import {Introduction} from '../components/slices'
 
 /**
- *
+ *      <Canvas>
+        <p className='font-bold uppercase font-aspekta text-md'>
+          Site will be back shortly.
+        </p>
+        <p className='text-sm font-medium uppercase font-aspekta'>
+          Sorry for the inconvenience.
+        </p>
+      </Canvas>
  *
  * displaying featured projects.
  * 1. The `allProjects` array is sorted by date in descending order.
@@ -29,21 +36,10 @@ import {Introduction} from '../components/slices'
 export default function Index() {
   return (
     <>
-      <Canvas>
-        <p className='font-bold uppercase font-aspekta text-md'>
-          Site will be back shortly.
-        </p>
-        <p className='text-sm font-medium uppercase font-aspekta'>
-          Sorry for the inconvenience.
-        </p>
-      </Canvas>
-
-      {/* 
       <PageSection>
         <Introduction />
-        <FeaturedProjects />
+        <UIProjectList />
       </PageSection>
-    */}
     </>
   )
 }

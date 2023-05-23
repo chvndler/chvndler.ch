@@ -8,19 +8,18 @@ import {MoonOutlined} from './svg/moon'
 
 export function ThemeToggle() {
   const {setTheme, theme} = useTheme()
-
   const [isHovering, setIsHovering] = useState(false)
 
   return (
     <>
       {isHovering && (
-        <span className='items-center text-[9px] text-gray-400 mr-2 my-auto uppercase font-sfmono font-semibold hidden md:inline'>
+        <span className='items-center text-[9px] text-gray-400 mr-1 my-auto uppercase font-sfmono font-semibold hidden md:inline'>
           {theme === null ? 'System' : theme === 'dark' ? 'Dark' : 'Light'}
         </span>
       )}
 
       <button
-        className='transition-colors duration-300 ease-in-out bg-transparent'
+        className='w-auto h-auto transition-colors duration-300 ease-in-out bg-transparent text-stone-500'
         onClick={(ev) => {
           ev.preventDefault(), setTheme(theme === 'light' ? 'dark' : 'light')
         }}

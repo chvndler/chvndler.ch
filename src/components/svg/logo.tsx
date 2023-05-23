@@ -9,7 +9,7 @@ export function Logo() {
   return (
     <span className='max-h-[22px]'>
       {pathname === '/' ? (
-        <span className='text-gray10 block dark:text-gray10 font-bold uppercase leading-5 text-[13px] font-sfmono'>
+        <span className='text-stone-800 block dark:text-gray10 font-extrabold uppercase leading-5 text-[15px] font-tstar tracking-wide'>
           Chandler®
         </span>
       ) : (

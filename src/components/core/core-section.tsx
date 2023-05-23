@@ -9,7 +9,7 @@ export function CS({children}: {children: React.ReactNode}) {
 }
 
 export function COMP_SECT({children}: {children: React.ReactNode}) {
-  return <section className='pv3 component-section'>{children}</section>
+  return <section className='py-6'>{children}</section>
 }
 
 export function SH({children}: {children: React.ReactNode}) {

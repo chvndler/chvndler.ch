@@ -36,9 +36,9 @@ export const Header = () => (
                 href={item.href}
                 className={classNames(
                   item.current
-                    ? 'text-gray9 dark:text-gray9 hover:text-grayA8 font-semibold uppercase leading-5 text-[13px] font-sfmono transition-colors ease-in-out duration-400'
-                    : 'text-gray10 dark:text-gray10 hover:text-gray8 dark:hover:text-whiteA9 font-semibold leading-5 uppercase text-[13px] font-sfmono transition-colors ease-in-out duration-400',
-                  'text-[13px] pl-3 font-medium leading-5'
+                    ? 'text-stone-700 dark:text-gray10 hover:text-grayA8 font-semibold leading-5 text-[14px] font-inter transition-colors ease-in-out duration-400'
+                    : 'text-stone-700 dark:text-gray10 hover:text-gray8 dark:hover:text-whiteA9 font-semibold leading-5 text-[14px] font-inter transition-colors ease-in-out duration-400',
+                  'text-[14px] pl-3 font-medium leading-5'
                 )}
                 aria-current={item.current ? 'page' : undefined}
               >
