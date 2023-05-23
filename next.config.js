@@ -15,7 +15,7 @@ const nextConfig = {
    */
   images: {
     formats: ['image/avif', 'image/webp'],
-    domains: ['*.chvndler.ch', 'pbs.twimg.com'],
+    domains: ['*.chvndler.ch', 'pbs.twimg.com', 'source.boringavatars.com'],
   },
   experimental: {
     appDir: true,

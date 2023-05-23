@@ -3,9 +3,12 @@ import * as React from 'react'
 
 // client.
 
-interface ProviderProps {
+import {ThemeProvider as NextThemesProvider} from 'next-themes'
+import type {ThemeProviderProps} from 'next-themes/dist/types'
+
+type ProviderProps = {
   children: React.ReactNode
-}
+} & ThemeProviderProps
 
 const AppContext = React.createContext<{fontsLoaded: boolean}>({
   fontsLoaded: false,
@@ -14,5 +17,14 @@ const AppContext = React.createContext<{fontsLoaded: boolean}>({
 export const useAppContext = () => React.useContext(AppContext)
 
 export function ThemeProvider({children, ...props}: ProviderProps) {
-  return <div {...props}>{children}</div>
+  return (
+    <NextThemesProvider
+      {...props}
+      defaultTheme={'system'}
+      attribute='class'
+      enableSystem
+    >
+      <div {...props}>{children}</div>
+    </NextThemesProvider>
+  )
 }

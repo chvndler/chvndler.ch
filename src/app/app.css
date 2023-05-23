@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --max-width: 648px;
+}
+
+html.fonts-loaded body {
+  opacity: 1 !important;
+}
+
+html.dark body {
+  background-color: #1D1D1D !important;
+}
+
+
+body {
+  transition: opacity 0.6s ease-in-out !important;
+}
+
+section.project-src h1,
+section.project-src h2,
+section.project-src h3,
+section.project-src h4 {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.project-src {
+  font-family: 'Atkinson Hyperlegible', sans-serif !important;
+  line-height: 1.6em !important;
+}
+
+.main {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0;
+}
+
+#wrapper,
+.wrapper {
+  all: unset;
+  width: 100% !important;
+  max-width: var(--max-width) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+}
+
+.app_header {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: auto;
+}
+
+.app_footer {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: auto;
+}

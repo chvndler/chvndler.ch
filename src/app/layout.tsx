@@ -1,10 +1,9 @@
-import './global.scss'
+import './app.css'
 import {siteURL} from '../lib/const'
 
 import {Inter} from 'next/font/google'
 import {AppHooks} from './hooks'
-import {Header, Footer, ThemeProvider} from '../components/core'
-import {themeEffect} from '../components/hooks/use-theme-effect'
+import {AppWrapper, Header, Footer, ThemeProvider} from '../components/core'
 import type {Metadata} from 'next'
 
 const inter = Inter({subsets: ['latin']})
@@ -16,20 +15,13 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       className={`${inter.className} antialiased`}
       suppressHydrationWarning={true}
     >
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(${themeEffect.toString()})();`,
-          }}
-        />
-      </head>
       <body style={{opacity: 0}}>
         <ThemeProvider>
-          <Header />
-          <div id='wrapper' className='wrapper'>
-            {children}
-          </div>
-          <Footer />
+          <main className=''>
+            <Header />
+            <AppWrapper>{children}</AppWrapper>
+            <Footer />
+          </main>
           <AppHooks />
         </ThemeProvider>
       </body>
@@ -38,7 +30,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://app.chvndler.ch/'),
+  metadataBase: new URL('https://www.chvndler.ch/'),
   title: 'Chandler Chappell',
   description: 'Personal site.',
   manifest: `${siteURL}/manifest.webmanifest`,

@@ -1,7 +1,13 @@
 import Link from 'next/link'
 import {Logo} from '../svg/logo'
+import {ThemeToggle} from '../theme-mode'
 
 // server
+
+const navigation = [
+  {name: 'Projects', href: '/projects', current: false},
+  {name: 'Archive', href: '/archive', current: false},
+]
 
 const links = {
   projects: '/projects',
@@ -9,7 +15,44 @@ const links = {
   index: '/',
 } as const
 
-export const Header = () => {
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(' ')
+}
+
+export const Header = () => (
+  <nav className='absolute top-0 left-0 right-0 w-full px-2 py-0 mx-auto'>
+    <div className='flex flex-row items-center justify-between w-full max-w-lg px-0 py-4 mx-auto'>
+      <span className='items-start justify-start'>
+        <Logo />
+      </span>
+
+      <span className='items-start justify-end'>
+        <div className='block'>
+          <div className='flex space-x-1'>
+            <ThemeToggle />
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={classNames(
+                  item.current
+                    ? 'text-gray9 dark:text-gray9 hover:text-grayA8 font-semibold uppercase leading-5 text-[13px] font-sfmono transition-colors ease-in-out duration-400'
+                    : 'text-gray10 dark:text-gray10 hover:text-gray8 dark:hover:text-whiteA9 font-semibold leading-5 uppercase text-[13px] font-sfmono transition-colors ease-in-out duration-400',
+                  'text-[13px] pl-3 font-medium leading-5'
+                )}
+                aria-current={item.current ? 'page' : undefined}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </span>
+    </div>
+  </nav>
+)
+
+export const Nav = () => {
   return (
     <>
       <header className='pv3 ph3 app_header'>
