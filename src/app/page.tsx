@@ -30,8 +30,12 @@ export default function Index() {
   return (
     <>
       <Canvas>
-        <p>will be back shortly.</p>
-        <p>sorry for the inconvenience.</p>
+        <p className='font-bold uppercase font-aspekta text-md'>
+          Site will be back shortly.
+        </p>
+        <p className='text-sm font-medium uppercase font-aspekta'>
+          Sorry for the inconvenience.
+        </p>
       </Canvas>
 
       {/* 
@@ -60,7 +64,7 @@ const FeaturedProjects = () => {
               <article key={post._id}>
                 <Link href={post.url}>
                   <li className='lh-copy pv2 ba bl-0 bt-0 br-0 b--solid b--light-gray bg-animate hover-bg-light-gray'>
-                    <div className='f-row tween baseline flex'>
+                    <div className='flex f-row tween baseline'>
                       <h4 className='link dim fw6 f6 mid-gray pb1 ttu aspekta'>
                         {post.title}
                       </h4>

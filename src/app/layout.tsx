@@ -1,4 +1,4 @@
-import './app.css'
+import './app.min.scss'
 import {siteURL} from '../lib/const'
 
 import {Inter} from 'next/font/google'
