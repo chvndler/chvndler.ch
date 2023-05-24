@@ -12,6 +12,7 @@ module.exports = {
     fontFamily: {
       inter: ['Inter', 'sans-serif'],
       aspekta: ['Aspekta V', 'sans-serif'],
+      atkinson: ['Atkinson Hyperlegible', 'sans-serif'],
       tstar: ['T-Star Pro', 'sans-serif'],
       roboflex: ['Roboto Flex V', 'sans-serif'],
       sfmono: ['SF Mono', 'monospace'],
@@ -177,6 +178,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
+    require('@tailwindcss/typography'),
     require('tailwindcss-radix')({
       // Default: `radix`
       variantPrefix: 'rdx',

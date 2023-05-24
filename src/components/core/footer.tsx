@@ -5,7 +5,7 @@ import {GitSha} from '../slices/git-sha'
 // server
 
 export const Footer = () => (
-  <footer className='absolute bottom-0 left-0 right-0'>
+  <footer className='relative w-full'>
     <div className='flex items-end max-w-xl px-3 pt-3 pb-6 mx-auto mt-3 font-mono text-xs text-center'>
       <span className='text-[11px] font-semibold font-aspekta text-left uppercase'>
         <span className='font-extrabold'>

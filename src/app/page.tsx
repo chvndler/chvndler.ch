@@ -1,9 +1,10 @@
+// server.
+
 import Link from 'next/link'
 import {compareDesc} from 'date-fns'
-
 import {allProjects} from 'contentlayer/generated'
 import type {Projects} from 'contentlayer/generated'
-
+import {Introduction} from '../components/slices'
 import {formatDateTime} from '../components/hooks/use-date-time'
 import {
   PageSection,
@@ -12,17 +13,8 @@ import {
   LargeSpacer,
   UIProjectList,
 } from '../components/core'
-import {Introduction} from '../components/slices'
 
 /**
- *      <Canvas>
-        <p className='font-bold uppercase font-aspekta text-md'>
-          Site will be back shortly.
-        </p>
-        <p className='text-sm font-medium uppercase font-aspekta'>
-          Sorry for the inconvenience.
-        </p>
-      </Canvas>
  *
  * displaying featured projects.
  * 1. The `allProjects` array is sorted by date in descending order.
