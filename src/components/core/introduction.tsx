@@ -1,5 +1,5 @@
+import React from 'react'
 import Link from 'next/link'
-import {ComponentSection} from '../core'
 
 // server
 
@@ -7,10 +7,12 @@ const altrdsgn = 'https://www.altrdsgn.com'
 
 export const Introduction = () => (
   <ComponentSection>
-    <h3 className='mb-2 text-xl font-[800] tracking-normal uppercase md:text-2xl font-fraktion text-stone-700 dark:text-stone-300'>
+    {/* <!--
+    <h3 className='mb-2 text-2xl font-[800] tracking-tight uppercase md:text-3xl font-fraktion text-grayscale-900 dark:text-grayscale-500'>
       Chandler Chappell
     </h3>
-    <p className='max-w-md text-md lg:text-lg font-[450] tracking-tight leading-6 text-grayscale-800 font-fraktion dark:text-grayscale-400 dark:font-normal'>
+    --> */}
+    <p className='max-w-md text-[15px] lg:text-[16px] font-[450] tracking-normal leading-6 font-fraktion text-grayscale-700 dark:text-grayscale-600 dark:font-normal'>
       Creating cool and taking notes. Enjoying the internet and open-source, the
       focus in the moment is silencing the noise within design culture, with{' '}
       <Link
@@ -24,3 +26,7 @@ export const Introduction = () => (
     </p>
   </ComponentSection>
 )
+
+function ComponentSection({children}: {children: React.ReactNode}) {
+  return <section className='py-6'>{children}</section>
+}

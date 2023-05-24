@@ -8,34 +8,56 @@ $maxxx-width: 648px;
 
 $inter: 'Inter V', sans-serif;
 $aspekta: 'Aspekta V', sans-serif;
+$fraktion: 'Fraktion Sans V', sans-serif;
 $atkinson: 'Atkinson Hyperlegible', sans-serif;
 
-$bg-gray-100: hsl(0, 0%, 99.0%);
+$bg-gray-100: hsl(0, 0%, 99%);
+$bg-dark: rgba(35, 42, 47, 1);
+$bg-header: rgb(253 253 252 / 80%);
 $stone-100: #f8f8f8;
 $stone-200: #e7e5e4;
 $stone-900: #1c1917;
 
+@layer base {
+  :root {
+    --bg-gray-100: hsl(0, 0%, 99%);
+    --font-fraktion: $fraktion;
+  }
+  .main-header {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
 /**
- * 
- * top-level scss.
  * @_scss
+ * top-level css.
  */
-html {padding: 0; margin: 0; height: 100vh; width: 100vw;}
-html.fonts-loaded body {opacity: 1 !important;}
-body {transition: opacity 0.6s ease-in-out !important;}
+html {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+html.fonts-loaded body {
+  opacity: 1 !important;
+}
+
+body {
+  transition: opacity 0.6s ease-in-out !important;
+}
 
 html body {
   color: $stone-900 !important;
   background: $bg-gray-100 !important;
   background-color: $bg-gray-100 !important;
-
-  font-family: $inter;
+  // font-family: $inter;
 }
 
 html.dark body {
-  color: $stone-200 !important;
-  background: $stone-900 !important;
-  background-color: $stone-900 !important;
+  color: white !important;
+  background: $bg-dark !important;
+  background-color: $bg-dark !important;
 }
 
 section.project-src h1,

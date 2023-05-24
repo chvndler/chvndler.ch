@@ -4,15 +4,10 @@ import Link from 'next/link'
 import {compareDesc} from 'date-fns'
 import {allProjects} from 'contentlayer/generated'
 import type {Projects} from 'contentlayer/generated'
-import {Introduction} from '../components/slices'
+import {Introduction} from '../components/core/introduction'
 import {formatDateTime} from '../components/hooks/use-date-time'
-import {
-  PageSection,
-  HLevelThree,
-  ComponentSection,
-  LargeSpacer,
-  UIProjectList,
-} from '../components/core'
+import {PageSection} from '../components/core'
+import {ProjectList} from '../components/core/ProjectList'
 
 /**
  *
@@ -30,12 +25,14 @@ export default function Index() {
     <>
       <PageSection>
         <Introduction />
-        <UIProjectList />
+        <ProjectList />
       </PageSection>
     </>
   )
 }
 
+{
+  /* <!--
 const FeaturedProjects = () => {
   const featured = allProjects
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
@@ -45,7 +42,7 @@ const FeaturedProjects = () => {
     <>
       <LargeSpacer />
       <ComponentSection>
-        <HLevelThree>Projects</HLevelThree>
+        <h3>Projects</h3>
         <div className='pv2'>
           <ul className='list pl0 mt0 center'>
             {featured.map((post) => (
@@ -70,6 +67,8 @@ const FeaturedProjects = () => {
       </ComponentSection>
     </>
   )
+}
+--> */
 }
 
 /**

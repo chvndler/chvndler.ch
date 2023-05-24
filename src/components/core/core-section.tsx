@@ -1,17 +1,11 @@
 import React from 'react'
 
+// Container.
 export function CS({children}: {children: React.ReactNode}) {
-  return (
-    <main id='main' className='main'>
-      <section className='mv5 ph3 core-section'>{children}</section>
-    </main>
-  )
+  return <section className='mv5 ph3'>{children}</section>
 }
 
+// ComponentSection.
 export function COMP_SECT({children}: {children: React.ReactNode}) {
   return <section className='py-6'>{children}</section>
-}
-
-export function SH({children}: {children: React.ReactNode}) {
-  return <h3 className='f4 fw4 mb1 zorba track-n-03 font-inter'>{children}</h3>
 }

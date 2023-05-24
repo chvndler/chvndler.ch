@@ -28,7 +28,7 @@ function Value() {
     }
   }, [])
 
-  return <p className='ttu f7 cursor-string font-mono'>{display}</p>
+  return <>{display}</>
 }
 
 export function CursorPosition() {

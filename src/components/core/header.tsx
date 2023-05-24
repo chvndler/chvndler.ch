@@ -20,36 +20,38 @@ function classNames(...classes: string[]) {
 }
 
 export const Header = () => (
-  <nav className='absolute top-0 left-0 right-0 w-full px-2 py-0 mx-auto'>
-    <div className='flex flex-row items-center justify-between w-full max-w-lg px-0 py-4 mx-auto'>
-      <span className='items-start justify-start'>
-        <Logo />
-      </span>
+  <header className='sticky top-0 z-10 main-header backdrop-blur-md bg-header'>
+    <nav className='w-full px-3 py-0 mx-auto'>
+      <div className='flex flex-row items-center justify-between w-full max-w-xl px-0 py-4 mx-auto'>
+        <span className='items-start justify-start'>
+          <Logo />
+        </span>
 
-      <span className='items-start justify-end'>
-        <div className='block'>
-          <div className='flex space-x-1'>
-            <ThemeToggle />
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className={classNames(
-                  item.current
-                    ? 'text-stone-700 dark:text-gray10 hover:text-grayA8 font-semibold leading-5 text-[14px] font-inter transition-colors ease-in-out duration-400'
-                    : 'text-stone-700 dark:text-gray10 hover:text-gray8 dark:hover:text-whiteA9 font-semibold leading-5 text-[14px] font-inter transition-colors ease-in-out duration-400',
-                  'text-[14px] pl-3 font-medium leading-5'
-                )}
-                aria-current={item.current ? 'page' : undefined}
-              >
-                {item.name}
-              </Link>
-            ))}
+        <span className='items-start justify-end'>
+          <div className='block'>
+            <div className='flex space-x-1'>
+              <ThemeToggle />
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={classNames(
+                    item.current
+                      ? 'text-grayscale-800 dark:text-gray10 hover:text-grayA8 uppercase font-[520] leading-5 text-[14px] font-fraktion transition-colors ease-in-out duration-400'
+                      : 'text-grayscale-800 dark:text-gray10 hover:text-gray8 uppercase dark:hover:text-whiteA9 font-[520] leading-5 text-[14px] font-fraktion transition-colors ease-in-out duration-400',
+                    'text-[14px] pl-3 font-medium leading-5'
+                  )}
+                  aria-current={item.current ? 'page' : undefined}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </span>
-    </div>
-  </nav>
+        </span>
+      </div>
+    </nav>
+  </header>
 )
 
 export const Nav = () => {

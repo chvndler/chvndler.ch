@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     fontFamily: {
       inter: ['Inter', 'sans-serif'],
+      fraktion: ['Fraktion Sans V', 'sans-serif'],
       aspekta: ['Aspekta V', 'sans-serif'],
       atkinson: ['Atkinson Hyperlegible', 'sans-serif'],
       tstar: ['T-Star Pro', 'sans-serif'],
@@ -20,6 +21,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      header: '$bg-header',
       hypergrape: '#DC53D4',
       zorba: '#9A9087',
       malta: '#BAAE9D',
@@ -40,7 +42,7 @@ module.exports = {
       whiteA11: 'hsla(0, 0%, 100%, 0.592)',
       whiteA12: 'hsla(0, 0%, 100%, 0.923)',
 
-      blackA1: 'hsla(0, 0%, 0%, 0.012)',
+      blackA1: 'hsla(0, 0%, 0%, 0.)',
       blackA2: 'hsla(0, 0%, 0%, 0.027)',
       blackA3: 'hsla(0, 0%, 0%, 0.047)',
       blackA4: 'hsla(0, 0%, 0%, 0.071)',

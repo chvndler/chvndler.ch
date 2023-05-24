@@ -3,10 +3,12 @@ import {siteURL} from '../lib/const'
 
 import {Inter} from 'next/font/google'
 import {AppHooks} from './hooks'
-import {AppWrapper, Header, Footer, ThemeProvider} from '../components/core'
+import {AppWrapper, Header, ThemeProvider} from '../components/core'
 import type {Metadata} from 'next'
 
-const inter = Inter({subsets: ['latin']})
+const inter = Inter({
+  subsets: ['latin'],
+})
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
@@ -20,7 +22,6 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
           <main className=''>
             <Header />
             <AppWrapper>{children}</AppWrapper>
-            <Footer />
           </main>
           <AppHooks />
         </ThemeProvider>

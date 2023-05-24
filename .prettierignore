@@ -29,8 +29,6 @@ now.json
 
 # - sass. minified.
 src/app/_scss/*.min.scss
-_scss/min/*.scss
-*.min.scss
 
 # - contentlayer.
 .contentlayer

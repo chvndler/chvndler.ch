@@ -22,6 +22,30 @@
   src: url('/fonts/inter/Inter-italic.var.woff2?v=3.15') format('woff2');
 }
 
+/**
+ * 
+ * Fraktion V
+ * @format
+ */
+
+@font-face {
+  font-family: Fraktion Sans V;
+  font-weight: 200 800;
+  font-display: block;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url('/fonts/fraktion/sans/PPFraktionSans-Variable.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Fraktion Mono;
+  font-weight: 100 900;
+  font-display: block;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url('/fonts/fraktion/mono/') format('woff2');
+}
+
 /** 
  * Roboto Flex V | OFL 
  * 
