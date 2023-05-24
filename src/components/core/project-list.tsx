@@ -1,7 +1,9 @@
+import Link from 'next/link'
+
 import {PageSection} from './page'
 import {useColorGenerator, matchColors} from '../hooks/use-color-gen'
 import {formatDateTime} from '../hooks/use-date-time'
-import Link from 'next/link'
+import {BadgeDefault} from '../ui/badge'
 
 const projects = [
   {
@@ -49,65 +51,50 @@ export const UIProjectList = () => {
   return (
     <>
       <PageSection>
+        <h3 className='mb-2 text-xl font-semibold tracking-tighter font-inter text-zinc8'>
+          Projects.
+        </h3>
         <ul
           role='list'
           className='w-full divide-y divide-blackA8 dark:divide-whiteA8'
         >
           {projects.map((source) => (
             <>
-              <Link href={source.url} target='_self'>
-                <li
-                  key={source._id}
-                  className='flex justify-between py-3 gap-x-4 bg-blackA hover:bg-blackA3'
-                >
-                  <div className='flex items-center gap-x-2'>
-                    {/* Image 
-                <img
-                  src={source.imageUrl}
-                  alt={source.name}
-                  width={38}
-                  height={38}
-                  className='flex-none rounded-md'
-                />
-                */}
-
-                    {/* Name and Excerpt?Description */}
-                    <div className='flex-auto min-w-0'>
-                      <p className='font-extrabold leading-4 tracking-wide uppercase font-tstar text-md text-grayscale-800'>
+              <li
+                key={source._id}
+                className='flex justify-between py-3 gap-x-4'
+              >
+                <div className='flex items-center gap-x-2'>
+                  {/* Name and Excerpt?Description */}
+                  <div className='flex-auto min-w-0'>
+                    <p className='font-extrabold leading-4 tracking-wide uppercase font-tstar text-md text-grayscale-800'>
+                      <Link
+                        href={source.url}
+                        target='_self'
+                        className='w-full hover:bg-blackA5'
+                      >
                         {source.name}
-                      </p>
-
-                      {/*
-                  {source.excerpt ? (
-                    <p className='mt-1 text-[11px] font-semibold leading-4 uppercase text-zinc9 font-sfmono'>
-                      <span>{source.description}</span>
-                    </p>
-                  ) : (
-                    <p className='text-xs leading-4 text-gray-500'>
-                      When would I see this text?
-                    </p>
-                  )}
-                */}
-                    </div>
-                  </div>
-
-                  <div className='flex flex-row items-end sm:hidden gap-x-3'>
-                    <p className='mt-1 text-[11px] font-semibold leading-4 uppercase text-zinc9 font-sfmono'>
-                      <span>View project</span>
+                      </Link>
                     </p>
                   </div>
+                </div>
 
-                  {/* Published Date & Tags */}
-                  <div className='hidden gap-x-3 sm:flex sm:flex-row sm:items-end'>
-                    <p className='mt-1 text-[11px] font-semibold leading-4 uppercase text-zinc9 font-sfmono'>
-                      <ProjectTags key={source.title} {...source} />
-                    </p>
-                    <p className='text-[11px] font-semibold leading-4 uppercase text-gray11 font-sfmono'>
-                      <FormattedDate key={source.date} {...source} />
-                    </p>
-                  </div>
-                </li>
-              </Link>
+                <div className='flex flex-row items-end sm:hidden gap-x-3'>
+                  <p className='mt-1 text-[11px] font-semibold leading-4 uppercase text-zinc9 font-sfmono'>
+                    <span>View project</span>
+                  </p>
+                </div>
+
+                {/* Published Date & Tags */}
+                <div className='hidden gap-x-3 sm:flex sm:flex-row sm:items-end'>
+                  <p className='mt-1 text-[11px] font-semibold leading-4 uppercase text-zinc9 font-sfmono'>
+                    <ProjectTags key={source.title} {...source} />
+                  </p>
+                  <p className='text-[11px] font-semibold leading-4 uppercase text-gray11 font-sfmono'>
+                    <FormattedDate key={source.date} {...source} />
+                  </p>
+                </div>
+              </li>
             </>
           ))}
         </ul>
@@ -152,10 +139,38 @@ function ProjectTags(projects: Projects) {
       <span>
         {projects.tags.map((tag, index) => (
           <span key={projects.title}>
-            {projects.tags.length - 1 === index ? tag : `${tag}, `}
+            <BadgeDefault>
+              {projects.tags.length - 1 === index ? tag : `${tag}`}
+            </BadgeDefault>
           </span>
         ))}
       </span>
     </>
   )
+}
+
+{
+  /* Image 
+    <img
+    src={source.imageUrl}
+    alt={source.name}
+    width={38}
+    height={38}
+    className='flex-none rounded-md'
+/>
+*/
+}
+
+{
+  /*
+                  {source.excerpt ? (
+                    <p className='mt-1 text-[11px] font-semibold leading-4 uppercase text-zinc9 font-sfmono'>
+                      <span>{source.description}</span>
+                    </p>
+                  ) : (
+                    <p className='text-xs leading-4 text-gray-500'>
+                      When would I see this text?
+                    </p>
+                  )}
+                */
 }
