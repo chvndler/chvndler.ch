@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ['class'],
+  darkMode: 'class',
   content: [
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -10,7 +10,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      inter: ['Inter', 'sans-serif'],
+      inter: ['var(--font-inter)', 'sans-serif'],
       fraktion: ['Fraktion Sans V', 'sans-serif'],
       aspekta: ['Aspekta V', 'sans-serif'],
       atkinson: ['Atkinson Hyperlegible', 'sans-serif'],
@@ -19,15 +19,12 @@ module.exports = {
       sfmono: ['SF Mono', 'monospace'],
     },
     colors: {
+      bgdark: `rgba(35, 42, 47, 1)`,
+      bglight: `rgba(244, 244, 245, 1)`,
+
       transparent: 'transparent',
       current: 'currentColor',
       header: '$bg-header',
-      hypergrape: '#DC53D4',
-      zorba: '#9A9087',
-      malta: '#BAAE9D',
-      shark: '#1F2124',
-      graygray: '#1D1D1D',
-      whisper: '#F9F9F9',
 
       whiteA1: 'hsla(0, 0%, 100%, 0)',
       whiteA2: 'hsla(0, 0%, 100%, 0.013)',
@@ -151,13 +148,58 @@ module.exports = {
         1100: 'rgb(59, 0, 54)',
       },
     },
-    extend: {},
+    extend: {
+      backgroundColor: {
+        'surface-action': 'hsl(var(--surface-action))',
+        'surface-neutral': 'hsl(var(--surface-neutral))',
+      },
+      textDecorationColor: {
+        underline: 'hsl(var(--underline))',
+      },
+      typography: (theme) => ({
+        //..
+        '--tw-prose-body': theme('colors.grayscale[800]'),
+        /*
+            '--tw-prose-headings': theme('colors.pink[900]'),
+            '--tw-prose-lead': theme('colors.pink[700]'),
+            '--tw-prose-links': theme('colors.pink[900]'),
+            '--tw-prose-bold': theme('colors.pink[900]'),
+            '--tw-prose-counters': theme('colors.pink[600]'),
+            '--tw-prose-bullets': theme('colors.pink[400]'),
+            '--tw-prose-hr': theme('colors.pink[300]'),
+            '--tw-prose-quotes': theme('colors.pink[900]'),
+            '--tw-prose-quote-borders': theme('colors.pink[300]'),
+            '--tw-prose-captions': theme('colors.pink[700]'),
+            '--tw-prose-code': theme('colors.pink[900]'),
+            '--tw-prose-pre-code': theme('colors.pink[100]'),
+            '--tw-prose-pre-bg': theme('colors.pink[900]'),
+            '--tw-prose-th-borders': theme('colors.pink[300]'),
+            '--tw-prose-td-borders': theme('colors.pink[200]'),
+            '--tw-prose-invert-body': theme('colors.pink[200]'),
+            '--tw-prose-invert-headings': theme('colors.white'),
+            '--tw-prose-invert-lead': theme('colors.pink[300]'),
+            '--tw-prose-invert-links': theme('colors.white'),
+            '--tw-prose-invert-bold': theme('colors.white'),
+            '--tw-prose-invert-counters': theme('colors.pink[400]'),
+            '--tw-prose-invert-bullets': theme('colors.pink[600]'),
+            '--tw-prose-invert-hr': theme('colors.pink[700]'),
+            '--tw-prose-invert-quotes': theme('colors.pink[100]'),
+            '--tw-prose-invert-quote-borders': theme('colors.pink[700]'),
+            '--tw-prose-invert-captions': theme('colors.pink[400]'),
+            '--tw-prose-invert-code': theme('colors.white'),
+            '--tw-prose-invert-pre-code': theme('colors.pink[300]'),
+            '--tw-prose-invert-pre-bg': 'rgb(0 0 0 / 50%)',
+            '--tw-prose-invert-th-borders': theme('colors.pink[600]'),
+            '--tw-prose-invert-td-borders': theme('colors.pink[700]'),
+        */
+      }),
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
     require('tailwindcss-radix')({
-      // Default: `radix`
-      variantPrefix: 'rdx',
+      //..
+      variantPrefix: 'rdxkit',
     }),
   ],
 }

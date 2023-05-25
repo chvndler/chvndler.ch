@@ -31,13 +31,11 @@ export const FeaturedProjects = () => {
   featured.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
   featured.splice(4)
 
-  const tags = featured.map((source) => source.tags)
-
   return (
     <>
       <PageSection>
         <div className='py-4'>
-          <h3 className='mb-2 text-xl font-[500] font-inter text-grayscale-800 dark:text-grayscale-800'>
+          <h3 className='mb-2 font-inter text-xl font-[500] text-grayscale-800 dark:text-grayscale-800'>
             Projects
           </h3>
         </div>
@@ -46,10 +44,10 @@ export const FeaturedProjects = () => {
           {featured.map((source) => (
             <li
               key={source._id}
-              className='flex flex-row items-baseline justify-between h-auto py-3 transition-all ease-out duration-400 hover:ease-in gap-y-2 bg-blackA1 hover:bg-blackA2 dark:bg-whiteA1 dark:hover:bg-whiteA3'
+              className='duration-400 flex h-auto flex-row items-baseline justify-between gap-y-2 bg-blackA1 py-3 transition-all ease-out hover:bg-blackA2 hover:ease-in dark:bg-whiteA1 dark:hover:bg-whiteA3'
             >
               <div className='flex items-center'>
-                <p className='font-[620] leading-5 tracking-normal uppercase font-fraktion text-md text-grayscale-700'>
+                <p className='text-md font-fraktion font-[620] uppercase leading-5 tracking-normal text-grayscale-700'>
                   <Link href={source.url} target='_self' className='w-full'>
                     {source.title}
                   </Link>
@@ -57,7 +55,7 @@ export const FeaturedProjects = () => {
               </div>
 
               <div className='hidden gap-x-3 sm:flex sm:flex-row sm:items-end'>
-                <p className='mt-1 leading-4 uppercase'>
+                <span className='mt-1 uppercase leading-4'>
                   {source.tags.map((tag, index) => (
                     <>
                       <BadgeDefault>
@@ -65,8 +63,8 @@ export const FeaturedProjects = () => {
                       </BadgeDefault>
                     </>
                   ))}
-                </p>
-                <p className='font-fraktion leading-4 text-[11px] uppercase text-grayscale-700 dark:text-grayscale-800 font-[580]'>
+                </span>
+                <p className='font-fraktion text-[11px] font-[580] uppercase leading-4 text-grayscale-700 dark:text-grayscale-800'>
                   <FormattedDate key={source._id} source={source} />
                 </p>
               </div>

@@ -1,6 +1,10 @@
 import {defineDocumentType, makeSource} from 'contentlayer/source-files'
 import type {ComputedFields} from 'contentlayer/source-files'
 
+import remarkGfm from 'remark-gfm'
+import rehypeCodeTitles from 'rehype-code-titles'
+import rehypePrettyCode from 'rehype-pretty-code'
+
 // computed.fields
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
@@ -72,7 +76,22 @@ export const Projects = defineDocumentType(() => ({
   computedFields,
 }))
 
+const rehypePrettyCodeOptions = {
+  theme: {
+    light: 'github-light',
+    dark: 'github-dark',
+  },
+  tokensMap: {
+    fn: 'entity.name.function',
+    objKey: 'meta.object-literal.key',
+  },
+}
+
 export default makeSource({
   contentDirPath: './collection',
   documentTypes: [Projects],
+  mdx: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [rehypeCodeTitles, [rehypePrettyCode, rehypePrettyCodeOptions]],
+  },
 })

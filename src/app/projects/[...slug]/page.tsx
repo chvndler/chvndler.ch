@@ -49,16 +49,12 @@ function FormattedDate({post}: {post: Projects}) {
   return <>{publishedDate.asRelativeTimeString}</>
 }
 
-function ProjectTags({post}: {post: Projects}) {
+function ProjectTags({pro}: {pro: Projects}) {
   return (
     <>
-      <span className=''>
-        {post.tags.map((tag, index) => (
-          <span key={post._id} className='mr-1 uppercase font-fraktion'>
-            <BadgeDefault>{post.tags.length - 1 === index ? tag : `${tag} `}</BadgeDefault>
-          </span>
-        ))}
-      </span>
+      {pro.tags.map((tag, index) => (
+        <BadgeDefault key={pro._id}>{pro.tags.length - 1 === index ? tag : `${tag} `}</BadgeDefault>
+      ))}
     </>
   )
 }
@@ -72,13 +68,18 @@ export default async function PostPage({params}: PostProps) {
 
   return (
     <>
-      <article key={post._id} className='mb-20 prose dark:prose-invert'>
+      <article
+        key={post._id}
+        className='prose prose-neutral mb-20 dark:prose-invert prose-h3:font-inter prose-h3:font-bold prose-h3:tracking-tight'
+      >
         <section className=''>
           <small className='flex flex-row items-center gap-1'>
-            <time>
+            <time className='font-fraktion text-xs uppercase'>
               <FormattedDate post={post} />
             </time>{' '}
-            · <ProjectTags post={post} />
+            <span className='uppercase'>
+              <span aria-hidden='true'>&middot;</span> <ProjectTags pro={post} />
+            </span>
           </small>
 
           <h3 className='font-inter text-grayscale-800 dark:text-grayscale-700'>
@@ -89,7 +90,7 @@ export default async function PostPage({params}: PostProps) {
           )}
         </section>
 
-        <section className='prose text-grayscale-800 dark:text-grayscale-300 font-atkinson'>
+        <section className='prose prose-neutral font-atkinson dark:prose-invert'>
           <MDX code={post.body.code} />
         </section>
       </article>
@@ -102,22 +103,22 @@ function StatCards() {
   return (
     <>
       <div className='pb-20'>
-        <article className='py-3 border border-grayscale-400 dark:border-grayscale-900 rounded-xl'>
-          <ul className='flex flex-col items-start justify-between gap-2 py-2 divide-y divide-grayscale-400 dark:divide-grayscale-900'>
-            <li className='items-start justify-between w-full px-4'>
-              <p className='text-[10px] text-left font-semibold uppercase font-fraktion text-grayscale-700'>
+        <article className='rounded-xl border border-grayscale-400 py-3 dark:border-grayscale-900'>
+          <ul className='flex flex-col items-start justify-between gap-2 divide-y divide-grayscale-400 py-2 dark:divide-grayscale-900'>
+            <li className='w-full items-start justify-between px-4'>
+              <p className='text-left font-fraktion text-[10px] font-semibold uppercase text-grayscale-700'>
                 arweave ⌝
               </p>
-              <small className='text-[13px] text-left truncate font-[450] font-fraktion text-grayscale-700'>
+              <small className='truncate text-left font-fraktion text-[13px] font-[450] text-grayscale-700'>
                 GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw
               </small>
             </li>
 
-            <li className='items-start justify-between w-full px-4'>
-              <p className='text-[10px] text-left font-semibold uppercase font-fraktion text-grayscale-700'>
+            <li className='w-full items-start justify-between px-4'>
+              <p className='text-left font-fraktion text-[10px] font-semibold uppercase text-grayscale-700'>
                 arweave ⌝
               </p>
-              <small className='text-[13px] text-left truncate font-[450] font-fraktion text-grayscale-700'>
+              <small className='truncate text-left font-fraktion text-[13px] font-[450] text-grayscale-700'>
                 GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw
               </small>
             </li>

@@ -6,11 +6,17 @@ import {AppWrapper, ThemeProvider} from '../components/core'
 import {Header} from '../components/ui/header'
 import {Footer} from '../components/ui/footer'
 import type {Metadata} from 'next'
+import localFont from 'next/font/local'
+const inter = localFont({
+  src: '../../public/fonts/inter/Inter-roman.var.woff2',
+  display: 'swap',
+  variable: '--font-inter',
+})
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang='en' className={`antialiased`} suppressHydrationWarning={true}>
-      <body style={{opacity: 0}}>
+      <body className={`bg-bglight antialiased dark:bg-bgdark`} style={{opacity: 0}}>
         <ThemeProvider>
           <main>
             <Header />

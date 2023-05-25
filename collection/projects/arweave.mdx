@@ -13,16 +13,39 @@ tags:
 
 <Space />
 
-<Link
-  href='https://dev.mirror.xyz/GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw'
-  target='_blank'
->
+<Link href='https://dev.mirror.xyz/GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw' target='_blank'>
   Mirror Article
 </Link>
 
 <Space />
 
 All of Mirror’s posts are available to access on Arweave, an on-chain decentralized storage layer that makes it so that your posts exist forever (even if Mirror does not)!
+
+<Space />
+
+```scss
+.input-group {
+  display: inline-flex;
+  border: 1px solid #ddd;
+
+  input {
+    padding: 1rem;
+    border: 0;
+    font: inherit;
+
+    // Since we are providing an alternative focus
+    // style, it is safe to remove the focus styling
+    // from the input itself
+    &:focus {
+      outline: none;
+    }
+  }
+
+  label {
+    padding: 1rem;
+  }
+}
+```
 
 <Space />
 
@@ -39,6 +62,17 @@ Here’s a basic tutorial on how to get data published on Mirror directly from A
 6. Once, we have the Transaction ID we need, we can use the getData function in the Arweave JS SDK to render the JSON content
 7. We can also verify that we have the correct transaction ID navigating to `arweave.net/<TRANSACTION_ID>` which will render the JSON
 8. Our digest `GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw` returns a transaction ID of `dysIrCovgAHJ6siGA5_r27Q59j2tv5wD4kqc1bxRFVE`, which renders the content you see here.
+
+<Space />
+
+```html
+<div class="input-group">
+  <div class="input-group-prepend">
+    <label for="name">Name</label>
+  </div>
+  <input type="text" name="name" id="name" />
+</div>
+```
 
 <Space />
 

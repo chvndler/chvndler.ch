@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @import './_scss/fonts.min.scss';
-@import './_scss/prism.min.scss';
 
 $maxxx-width: 648px;
 
@@ -12,6 +11,7 @@ $fraktion: 'Fraktion Sans V', sans-serif;
 
 $bg-gray-100: hsl(0, 0%, 99%);
 $bg-dark: rgba(35, 42, 47, 1);
+$bg-light: rgba(244, 244, 245, 1);
 $bg-header: rgb(253 253 252 / 80%);
 $stone-100: #f8f8f8;
 $stone-200: #e7e5e4;
@@ -19,13 +19,97 @@ $stone-900: #1c1917;
 
 @layer base {
   :root {
-    --bg-gray-100: hsl(0, 0%, 99%);
     --font-inter: $inter;
     --font-fraktion: $fraktion;
+    --bg-dark: $bg-dark;
+    --bg-light: $bg-light;
+
+    --mono-1: hsl(220, 14%, 71%);
+    --mono-2: hsl(220, 9%, 55%);
+    --mono-3: hsl(220, 10%, 40%);
+    --hue-1: hsl(187, 47%, 55%);
+    --hue-2: hsl(207, 82%, 66%);
+    --hue-3: hsl(286, 60%, 67%);
+    --hue-4: hsl(95, 38%, 62%);
+    --hue-5: hsl(355, 65%, 65%);
+    --hue-5-2: hsl(5, 48%, 51%);
+    --hue-6: hsl(29, 54%, 61%);
+    --hue-6-2: hsl(39, 67%, 69%);
+    --syntax-fg: hsl(220, 14%, 71%);
+    --syntax-bg: hsl(220, 13%, 18%);
+    --syntax-gutter: hsl(220, 14%, 45%);
+    --syntax-guide: hsla(220, 14%, 71%, 0.15);
+    --syntax-accent: hsl(220, 100%, 66%);
+
+    --page: 0 0% 97.3%;
+    --foreground: 0 0% 9%;
+    --foreground-neutral: 0 0% 43.5%;
+    --border: 0 0% 85.9%;
+    --surface-action: 79.2 87.4% 62.7%;
+    --surface-neutral: 0 0% 92.9%;
+    --underline: 0 0% 85.9%;
+
+    --syntax-selection-color: hsl(220, 13%, 28%);
+    --syntax-gutter-background-color-selected: hsl(220, 13%, 26%);
+    --syntax-cursor-line: hsla(220, 100%, 80%, 0.04);
+  }
+  .dark {
+    --page: 0 0% 8.6%;
+    --foreground: 0 0% 92.9%;
+    --foreground-neutral: 0 0% 62.7%;
+    --border: 0 0% 24.3%;
+    --surface-action: 81.1 67.1% 50%;
+    --surface-neutral: 0 0% 15.7%;
+    --underline: 0 0% 31.4%;
   }
   .main-header {
     -webkit-tap-highlight-color: transparent;
   }
+}
+
+@layer utilities {
+  .font-variable-semibold {
+    font-variation-settings: 'wght' 575;
+  }
+}
+
+/**
+ * @_scss
+ * top-level css.
+ */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+html.fonts-loaded body {
+  opacity: 1 !important;
+}
+
+body {
+  transition: opacity 0.6s ease-in-out !important;
+}
+
+html.dark body {
+  color: var(--bg-light) !important;
+  background: var(--bg-dark) !important;
+  background-color: var(--bg-dark) !important;
+}
+
+.pre.code {
+  font-family: 'SF Mono', 'Ubuntu Mono', monospace !important;
+}
+
+section.project-src h1,
+section.project-src h2,
+section.project-src h3,
+section.project-src h4 {
+  font-family: $inter, sans-serif !important;
 }
 
 @layer components {
@@ -38,8 +122,17 @@ $stone-900: #1c1917;
   }
 
   .prose > * + h2,
-  .prose > * + h3 {
-    @apply mt-6;
+  .prose > * + h3,
+  .prose > * + h4 {
+    @apply mt-6 font-inter;
+  }
+
+  .prose h2 {
+    @apply font-variable-semibold;
+  }
+
+  .prose pre[data-language] {
+    @apply overflow-x-auto whitespace-pre rounded-md bg-surface-neutral py-4 text-sm;
   }
 
   .prose ul {
@@ -58,6 +151,10 @@ $stone-900: #1c1917;
     @apply mt-4;
   }
 
+  .prose table thead th {
+    @apply font-variable-semibold py-2;
+  }
+
   .prose div[data-rehype-pretty-code-fragment] .syntax-line {
     @apply px-4;
   }
@@ -69,50 +166,4 @@ $stone-900: #1c1917;
   .prose table tbody td {
     @apply border-t py-2;
   }
-}
-
-/**
- * @_scss
- * top-level css.
- */
-html {
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-}
-
-html.fonts-loaded body {
-  opacity: 1 !important;
-}
-
-body {
-  transition: opacity 0.6s ease-in-out !important;
-}
-
-html {
-  background: $bg-gray-100 !important;
-  background-color: $bg-gray-100 !important;
-}
-body {
-  color: $stone-900 !important;
-  background: $bg-gray-100 !important;
-  background-color: $bg-gray-100 !important;
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  width: 100vw;
-}
-
-html.dark body {
-  color: white !important;
-  background: $bg-dark !important;
-  background-color: $bg-dark !important;
-}
-
-section.project-src h1,
-section.project-src h2,
-section.project-src h3,
-section.project-src h4 {
-  font-family: $inter, sans-serif !important;
 }
