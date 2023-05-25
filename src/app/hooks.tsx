@@ -5,7 +5,7 @@ import {isProd, isClient, isDev, siteLog} from '../lib/const'
 import {gaTrackingId} from '../lib/const'
 
 import {useAppStore} from '../components/hooks/use-app-store'
-import {GoogleAnalytics} from '@/components/google-analytics'
+import {AppAnalytics, GoogleAnalytics} from '../components/analytics'
 
 export const AppHooks = () => {
   if (isProd && isClient && isDev) {
@@ -16,6 +16,7 @@ export const AppHooks = () => {
 
   return gaTrackingId ? (
     <Suspense>
+      <AppAnalytics />
       <GoogleAnalytics />
     </Suspense>
   ) : null

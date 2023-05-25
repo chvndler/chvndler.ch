@@ -1,0 +1,69 @@
+import Link from 'next/link'
+import {Logo} from '../core/logo'
+import {ThemeToggle} from '../theme-mode'
+
+// server
+
+const navigation = [
+  {name: 'Projects', href: '/projects', current: false},
+  {name: 'Archive', href: '/archive', current: false},
+]
+
+export const Header = () => (
+  <header className='sticky top-0 z-10 main-header backdrop-blur-md bg-header'>
+    <nav className='w-full px-3 py-0 mx-auto'>
+      <div className='flex flex-row items-center justify-between w-full max-w-xl px-0 py-4 mx-auto'>
+        <span className='items-center justify-start'>
+          <Logo />
+        </span>
+
+        <span className='items-center justify-end'>
+          <div className='block'>
+            <div className='flex flex-row gap-1'>
+              <ThemeToggle />
+              {navigation.map((item) => (
+                <>
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className='text-grayscale-800 dark:text-grayscale-700 ml-2 hover:text-blackA8 dark:hover:text-blackA9 uppercase font-[520] leading-[20px] text-[14px] font-fraktion transition-colors ease-in-out duration-400'
+                    aria-current='page'
+                  >
+                    {item.name}
+                  </Link>
+                </>
+              ))}
+            </div>
+          </div>
+        </span>
+      </div>
+    </nav>
+  </header>
+)
+
+/*
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(' ')
+}
+
+            <div className='flex space-x-1'>
+              <ThemeToggle />
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={classNames(
+                    item.current
+                      ? 'text-grayscale-800 dark:text-gray10 hover:text-grayA8 uppercase font-[520] leading-[20px] text-[14px] font-fraktion transition-colors ease-in-out duration-400'
+                      : 'text-grayscale-800 dark:text-gray10 hover:text-gray8 uppercase dark:hover:text-whiteA9 font-[520] leading-[20px] text-[14px] font-fraktion transition-colors ease-in-out duration-400',
+                    'text-[14px] pl-3 font-medium leading-5'
+                  )}
+                  aria-current={item.current ? 'page' : undefined}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+
+
+*/

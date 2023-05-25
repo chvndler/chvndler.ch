@@ -1,7 +1,7 @@
 'use client'
 
+import React from 'react'
 import Script from 'next/script'
-import {useEffect} from 'react'
 import {GTM_ID, pageview} from '../lib/gtm'
 import {usePathname, useSearchParams} from 'next/navigation'
 
@@ -9,7 +9,7 @@ export function GoogleAnalytics() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (pathname) {
       pageview(pathname)
     }

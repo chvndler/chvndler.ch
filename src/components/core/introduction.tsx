@@ -7,14 +7,13 @@ const altrdsgn = 'https://www.altrdsgn.com'
 
 export const Introduction = () => (
   <ComponentSection>
-    {/* <!--
-    <h3 className='mb-2 text-2xl font-[800] tracking-tight uppercase md:text-3xl font-fraktion text-grayscale-900 dark:text-grayscale-500'>
+    <h3 className='mb-2 text-2xl font-[800] tracking-tight uppercase md:text-2xl font-fraktion text-grayscale-900 dark:text-grayscale-500'>
       Chandler Chappell
     </h3>
-    --> */}
-    <p className='max-w-md text-[15px] lg:text-[16px] font-[450] tracking-normal leading-6 font-fraktion text-grayscale-700 dark:text-grayscale-600 dark:font-normal'>
-      Creating cool and taking notes. Enjoying the internet and open-source, the
-      focus in the moment is silencing the noise within design culture, with{' '}
+
+    <p className='max-w-md text-[18px] lg:text-[16px] font-[450] tracking-tight leading-6 lg:leading-5 font-fraktion text-grayscale-700 dark:text-grayscale-600'>
+      Creating cool and taking notes. Enjoying the internet and open-source, the focus in the moment
+      is silencing the noise within design culture, with{' '}
       <Link
         href={altrdsgn}
         target='_blank'

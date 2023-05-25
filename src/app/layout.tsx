@@ -1,27 +1,21 @@
 import './app.min.scss'
+
 import {siteURL} from '../lib/const'
-
-import {Inter} from 'next/font/google'
 import {AppHooks} from './hooks'
-import {AppWrapper, Header, ThemeProvider} from '../components/core'
+import {AppWrapper, ThemeProvider} from '../components/core'
+import {Header} from '../components/ui/header'
+import {Footer} from '../components/ui/footer'
 import type {Metadata} from 'next'
-
-const inter = Inter({
-  subsets: ['latin'],
-})
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html
-      lang='en'
-      className={`${inter.className} antialiased`}
-      suppressHydrationWarning={true}
-    >
+    <html lang='en' className={`antialiased`} suppressHydrationWarning={true}>
       <body style={{opacity: 0}}>
         <ThemeProvider>
-          <main className=''>
+          <main>
             <Header />
             <AppWrapper>{children}</AppWrapper>
+            <Footer />
           </main>
           <AppHooks />
         </ThemeProvider>

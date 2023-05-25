@@ -12,7 +12,8 @@ const MoonOutlined = React.forwardRef<SVGSVGElement, SVGLogoProps>(
     return (
       <svg
         {...props}
-        className={className}
+        className='w-5 h-5'
+        // className={className}
         ref={forwardedRef}
         width={width}
         height={height}
@@ -36,12 +37,7 @@ const MoonOutlined = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         </g>
         <defs>
           <clipPath id='clip0_131_442'>
-            <rect
-              width='7.55'
-              height='7.92'
-              fill={color}
-              transform='translate(4 4)'
-            />
+            <rect width='7.55' height='7.92' fill={color} transform='translate(4 4)' />
           </clipPath>
         </defs>
       </svg>
@@ -54,7 +50,8 @@ const MoonFilled = React.forwardRef<SVGSVGElement, SVGLogoProps>(
     return (
       <svg
         {...props}
-        className={className}
+        className='w-5 h-5'
+        // className={className}
         ref={forwardedRef}
         width={width}
         height={height}
@@ -83,12 +80,7 @@ const MoonFilled = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         </g>
         <defs>
           <clipPath id='clip0_131_463'>
-            <rect
-              width='7.55'
-              height='7.92'
-              fill={color}
-              transform='translate(4 4)'
-            />
+            <rect width='7.55' height='7.92' fill={color} transform='translate(4 4)' />
           </clipPath>
         </defs>
       </svg>

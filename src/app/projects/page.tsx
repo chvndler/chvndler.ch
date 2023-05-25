@@ -8,6 +8,7 @@ import type {Metadata} from 'next/types'
 import {PageSection} from '../../components/core'
 import {formatDateTime} from '../../components/hooks/use-date-time'
 import {compareDesc} from 'date-fns'
+import {ProjectsHeader} from '../../components/slices/projects-header'
 
 export const metadata: Metadata = {
   title: 'Chandler Ch - Projects',
@@ -18,18 +19,13 @@ interface ProjectListProps {
   post: Projects
 }
 
-const projectOrder = allProjects.sort((a, b) =>
-  compareDesc(new Date(a.date), new Date(b.date))
-)
+const projectOrder = allProjects.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
 
 export default function ProjectsIndex() {
   return (
     <PageSection>
-      <h3 className='f3 fw4 track-n-02 gray pb4 aspekta'>
-        Some of my <span className='fw6 gravel'>work</span>.
-      </h3>
-
-      <ul className='list cf'>
+      <ProjectsHeader />
+      <ul className=''>
         {projectOrder.map((post) => (
           <>
             <article key={post._id} className='fl w-100 w-50-ns'>
@@ -51,9 +47,7 @@ export default function ProjectsIndex() {
                   )}
                   <div style={{paddingLeft: 4, paddingRight: 4}}>
                     <div className='flex f-row tween baseline'>
-                      <h4 className='link dim fw6 f6 mid-gray pb1 ttu font-mono'>
-                        {post.title}
-                      </h4>
+                      <h4 className='font-mono link dim fw6 f6 mid-gray pb1 ttu'>{post.title}</h4>
                       <small className='f8 fw5 mid-gray'>
                         <FormattedDate post={post} />
                       </small>

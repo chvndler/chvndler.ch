@@ -3,13 +3,12 @@
 @tailwind utilities;
 
 @import './_scss/fonts.min.scss';
+@import './_scss/prism.min.scss';
 
 $maxxx-width: 648px;
 
 $inter: 'Inter V', sans-serif;
-$aspekta: 'Aspekta V', sans-serif;
 $fraktion: 'Fraktion Sans V', sans-serif;
-$atkinson: 'Atkinson Hyperlegible', sans-serif;
 
 $bg-gray-100: hsl(0, 0%, 99%);
 $bg-dark: rgba(35, 42, 47, 1);
@@ -21,10 +20,54 @@ $stone-900: #1c1917;
 @layer base {
   :root {
     --bg-gray-100: hsl(0, 0%, 99%);
+    --font-inter: $inter;
     --font-fraktion: $fraktion;
   }
   .main-header {
     -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply max-w-prose;
+  }
+
+  .prose > * + * {
+    @apply mt-4;
+  }
+
+  .prose > * + h2,
+  .prose > * + h3 {
+    @apply mt-6;
+  }
+
+  .prose ul {
+    @apply list-disc space-y-1 pl-7;
+  }
+
+  .prose ol {
+    @apply list-decimal space-y-1 pl-7;
+  }
+
+  .prose blockquote {
+    @apply border-l-4 pl-4;
+  }
+
+  .prose blockquote > * + * {
+    @apply mt-4;
+  }
+
+  .prose div[data-rehype-pretty-code-fragment] .syntax-line {
+    @apply px-4;
+  }
+
+  .prose table {
+    @apply w-full max-w-full;
+  }
+
+  .prose table tbody td {
+    @apply border-t py-2;
   }
 }
 
@@ -47,11 +90,18 @@ body {
   transition: opacity 0.6s ease-in-out !important;
 }
 
-html body {
+html {
+  background: $bg-gray-100 !important;
+  background-color: $bg-gray-100 !important;
+}
+body {
   color: $stone-900 !important;
   background: $bg-gray-100 !important;
   background-color: $bg-gray-100 !important;
-  // font-family: $inter;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 html.dark body {
@@ -64,5 +114,5 @@ section.project-src h1,
 section.project-src h2,
 section.project-src h3,
 section.project-src h4 {
-  font-family: 'Inter', sans-serif !important;
+  font-family: $inter, sans-serif !important;
 }

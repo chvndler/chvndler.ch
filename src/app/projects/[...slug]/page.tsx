@@ -54,10 +54,8 @@ function ProjectTags({post}: {post: Projects}) {
     <>
       <span className=''>
         {post.tags.map((tag, index) => (
-          <span key={post._id}>
-            <BadgeDefault>
-              {post.tags.length - 1 === index ? tag : `${tag}, `}
-            </BadgeDefault>
+          <span key={post._id} className='mr-1 uppercase font-fraktion'>
+            <BadgeDefault>{post.tags.length - 1 === index ? tag : `${tag} `}</BadgeDefault>
           </span>
         ))}
       </span>
@@ -74,8 +72,8 @@ export default async function PostPage({params}: PostProps) {
 
   return (
     <>
-      <article key={post._id} className='prose dark:prose-invert'>
-        <section className='font-inter'>
+      <article key={post._id} className='mb-20 prose dark:prose-invert'>
+        <section className=''>
           <small className='flex flex-row items-center gap-1'>
             <time>
               <FormattedDate post={post} />
@@ -83,13 +81,11 @@ export default async function PostPage({params}: PostProps) {
             · <ProjectTags post={post} />
           </small>
 
-          <h3 className='font-inter text-grayscale-900'>
+          <h3 className='font-inter text-grayscale-800 dark:text-grayscale-700'>
             <span className='font-extrabold'>{post.title}</span>
           </h3>
           {post.description && (
-            <p className='text-md text-sage9 dark:text-sage3'>
-              {post.description}
-            </p>
+            <p className='text-md text-grayscale-700 dark:text-grayscale-600'>{post.description}</p>
           )}
         </section>
 
@@ -105,31 +101,29 @@ export default async function PostPage({params}: PostProps) {
 function StatCards() {
   return (
     <>
-      <article className='py-3 bg-white border border-grayscale-400 rounded-xl'>
-        <ul className='flex flex-col items-start justify-between gap-2 divide-y divide-grayscale-400'>
-          <li className='items-start justify-between w-full px-4'>
-            <div className=''>
-              <p className='text-[10px] text-left font-semibold uppercase font-sfmono text-grayscale-700'>
+      <div className='pb-20'>
+        <article className='py-3 border border-grayscale-400 dark:border-grayscale-900 rounded-xl'>
+          <ul className='flex flex-col items-start justify-between gap-2 py-2 divide-y divide-grayscale-400 dark:divide-grayscale-900'>
+            <li className='items-start justify-between w-full px-4'>
+              <p className='text-[10px] text-left font-semibold uppercase font-fraktion text-grayscale-700'>
                 arweave ⌝
               </p>
-              <small className='text-[12px] text-left truncate font-semibold font-sfmono text-grayscale-700'>
+              <small className='text-[13px] text-left truncate font-[450] font-fraktion text-grayscale-700'>
                 GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw
               </small>
-            </div>
-          </li>
+            </li>
 
-          <li className='items-start justify-between w-full px-4 pt-2'>
-            <div className=''>
-              <p className='text-[10px] text-left font-semibold uppercase font-sfmono text-grayscale-700'>
+            <li className='items-start justify-between w-full px-4'>
+              <p className='text-[10px] text-left font-semibold uppercase font-fraktion text-grayscale-700'>
                 arweave ⌝
               </p>
-              <small className='text-[12px] text-left truncate font-semibold font-sfmono text-grayscale-700'>
+              <small className='text-[13px] text-left truncate font-[450] font-fraktion text-grayscale-700'>
                 GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw
               </small>
-            </div>
-          </li>
-        </ul>
-      </article>
+            </li>
+          </ul>
+        </article>
+      </div>
     </>
   )
 }

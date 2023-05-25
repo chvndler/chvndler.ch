@@ -12,7 +12,8 @@ const SunOutlined = React.forwardRef<SVGSVGElement, SVGLogoProps>(
     return (
       <svg
         {...props}
-        className={className}
+        className='w-5 h-5'
+        // className={className}
         ref={forwardedRef}
         width={width}
         height={height}
@@ -70,7 +71,8 @@ const SunFilled = React.forwardRef<SVGSVGElement, SVGLogoProps>(
     return (
       <svg
         {...props}
-        className={className}
+        className='w-5 h-5'
+        // className={className}
         ref={forwardedRef}
         width={width}
         height={height}

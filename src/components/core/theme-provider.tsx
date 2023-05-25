@@ -18,12 +18,7 @@ export const useAppContext = () => React.useContext(AppContext)
 
 export function ThemeProvider({children, ...props}: ProviderProps) {
   return (
-    <NextThemesProvider
-      {...props}
-      defaultTheme={'system'}
-      attribute='class'
-      enableSystem
-    >
+    <NextThemesProvider {...props} defaultTheme={'system'} attribute='class' enableSystem>
       <div {...props}>{children}</div>
     </NextThemesProvider>
   )
