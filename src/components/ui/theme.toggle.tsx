@@ -3,10 +3,10 @@
 import React from 'react'
 import {useTheme} from 'next-themes'
 
-import {SunFilled} from './svg/sun'
-import {MoonOutlined} from './svg/moon'
+import {SunFilled} from '../svg/sun'
+import {MoonOutlined} from '../svg/moon'
 
-export function ThemeToggle() {
+function ThemeSwitch() {
   const {setTheme, theme} = useTheme()
   const [isHovering, setIsHovering] = React.useState(false)
 
@@ -19,6 +19,7 @@ export function ThemeToggle() {
       )}
 
       <button
+        id='theme-toggle'
         className='w-auto h-auto transition-colors duration-300 ease-in-out bg-transparent text-grayscale-700 dark:text-grayscale-600'
         onClick={(ev) => {
           ev.preventDefault(), setTheme(theme === 'light' ? 'dark' : 'light')
@@ -45,3 +46,5 @@ export function ThemeToggle() {
     </>
   )
 }
+
+export default ThemeSwitch

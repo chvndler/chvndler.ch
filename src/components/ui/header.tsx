@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import {Logo} from '../core/logo'
-import {ThemeToggle} from '../theme-mode'
+import ThemeSwitch from '../ui/theme.toggle'
 
 // server
 
@@ -10,7 +10,7 @@ const navigation = [
 ]
 
 export const Header = () => (
-  <header className='sticky top-0 z-10 main-header backdrop-blur-md bg-header'>
+  <header className='sticky top-0 z-10 main-header bg-header backdrop-blur-md'>
     <nav className='w-full px-3 py-0 mx-auto'>
       <div className='flex flex-row items-center justify-between w-full max-w-xl px-0 py-4 mx-auto'>
         <span className='items-center justify-start'>
@@ -20,13 +20,13 @@ export const Header = () => (
         <span className='items-center justify-end'>
           <div className='block'>
             <div className='flex flex-row gap-1'>
-              <ThemeToggle />
+              <ThemeSwitch />
               {navigation.map((item) => (
                 <>
                   <Link
                     key={item.name}
                     href={item.href}
-                    className='text-grayscale-800 dark:text-grayscale-700 ml-2 hover:text-blackA8 dark:hover:text-blackA9 uppercase font-[520] leading-[20px] text-[14px] font-fraktion transition-colors ease-in-out duration-400'
+                    className='duration-400 ml-2 font-fraktion text-[14px] font-[520] uppercase leading-[20px] text-grayscale-800 transition-colors ease-in-out hover:text-blackA8 dark:text-grayscale-700 dark:hover:text-blackA9'
                     aria-current='page'
                   >
                     {item.name}

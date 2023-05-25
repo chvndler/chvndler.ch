@@ -12,11 +12,8 @@ module.exports = {
     fontFamily: {
       inter: ['var(--font-inter)', 'sans-serif'],
       fraktion: ['Fraktion Sans V', 'sans-serif'],
-      aspekta: ['Aspekta V', 'sans-serif'],
+      uncut: ['var(--font-uncut)', 'sans-serif'],
       atkinson: ['Atkinson Hyperlegible', 'sans-serif'],
-      tstar: ['T-Star Pro', 'sans-serif'],
-      roboflex: ['Roboto Flex V', 'sans-serif'],
-      sfmono: ['SF Mono', 'monospace'],
     },
     colors: {
       bgdark: `rgba(35, 42, 47, 1)`,

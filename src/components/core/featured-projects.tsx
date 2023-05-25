@@ -80,7 +80,42 @@ export const FeaturedProjects = () => {
             Projects
           </h3>
         </div>
+        <PList />
+      </PageSection>
+    </>
+  )
+}
 
+function PList() {
+  const featured = allProjects
+  featured.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
+  featured.splice(4)
+
+  const items = featured.map((src) => (
+    <li key={src._id}>
+      <>
+        {src.title} · <FormattedDate key={src._id} source={src} /> → {src._id}
+      </>
+    </li>
+  ))
+
+  return <ul role='list'>{items}</ul>
+}
+
+/**
+ *
+ * © FormattedDate.
+ * (date formatted as relative time string)
+ *
+ * Ex: `3 days ago`
+ */
+function FormattedDate({source}: {source: FeaturedProjectsProps}) {
+  const publishedDate = formatDateTime(source.date)
+
+  return <>{publishedDate.asRelativeTimeString}</>
+}
+
+/*
         <ul role='list' className='w-full divide-y divide-blackA5 dark:divide-whiteA5'>
           {featured.map((source) => (
             <>
@@ -115,20 +150,4 @@ export const FeaturedProjects = () => {
             </>
           ))}
         </ul>
-      </PageSection>
-    </>
-  )
-}
-
-/**
- *
- * © FormattedDate.
- * (date formatted as relative time string)
- *
- * Ex: `3 days ago`
- */
-function FormattedDate({source}: {source: FeaturedProjectsProps}) {
-  const publishedDate = formatDateTime(source.date)
-
-  return <>{publishedDate.asRelativeTimeString}</>
-}
+*/

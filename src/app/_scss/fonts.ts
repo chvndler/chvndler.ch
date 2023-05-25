@@ -11,6 +11,12 @@ const fraktion = localFont({
   variable: '--font-fraktion',
 })
 
+const uncut = localFont({
+  src: '../../public/fonts/uncut/UncutSans-Variable.ttf',
+  display: 'swap',
+  variable: '--font-uncut',
+})
+
 const atkinson = localFont({
   src: '/fonts/atkinson/Akinson-Hyperlegible-Regular-102a.woff2',
   display: 'swap',
@@ -18,6 +24,7 @@ const atkinson = localFont({
 })
 
 export {
+  uncut,
   //
   inter,
   //
