@@ -3,7 +3,7 @@ import * as React from 'react'
 
 // client.
 
-import {ThemeProvider as NextThemesProvider} from 'next-themes'
+import {ThemeProvider as KitProvider} from 'next-themes'
 import type {ThemeProviderProps} from 'next-themes/dist/types'
 
 type ProviderProps = {
@@ -18,14 +18,14 @@ export const useAppContext = () => React.useContext(AppContext)
 
 export function ThemeProvider({children, ...props}: ProviderProps) {
   return (
-    <NextThemesProvider
+    <KitProvider
       {...props}
       defaultTheme={'system'}
       attribute='class'
       enableSystem
       disableTransitionOnChange
     >
-      <div {...props}>{children}</div>
-    </NextThemesProvider>
+      <>{children}</>
+    </KitProvider>
   )
 }

@@ -9,16 +9,14 @@ import type {Metadata} from 'next'
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang='en' className='antialiased' suppressHydrationWarning={true}>
-      <body className={`bg-bglight antialiased dark:bg-bgdark`} style={{opacity: 0}}>
+    <html lang='en' suppressHydrationWarning>
+      <body className={`bg-bglight font-uncut antialiased dark:bg-bgdark`} style={{opacity: 0}}>
         <ThemeProvider>
-          <main>
-            <Header />
-            <AppWrapper>{children}</AppWrapper>
-            <Footer />
-          </main>
-          <AppHooks />
+          <Header />
+          <AppWrapper>{children}</AppWrapper>
+          <Footer />
         </ThemeProvider>
+        <AppHooks />
       </body>
     </html>
   )

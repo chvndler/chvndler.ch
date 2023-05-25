@@ -8,9 +8,9 @@ export function Logo() {
       <div className='block'>
         <Link
           href='/'
-          className='items-center w-auto h-auto leading-[20px] transition-colors duration-300 ease-in-out text-grayscale-600 hover:text-grayscale-700'
+          className='h-auto w-auto items-center leading-[20px] text-grayscale-600 transition-colors duration-300 ease-in-out hover:text-grayscale-700'
         >
-          <CDCLogo width={'56'} height={'20'} />
+          <CDCLogo width={'58'} height={'20'} />
         </Link>
       </div>
     </>

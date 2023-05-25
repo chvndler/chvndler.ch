@@ -7,11 +7,11 @@ const altrdsgn = 'https://www.altrdsgn.com'
 
 export const Introduction = () => (
   <ComponentSection>
-    <h3 className='mb-2 text-2xl font-[800] tracking-tight uppercase md:text-2xl font-fraktion text-grayscale-900 dark:text-grayscale-500'>
-      Chandler Chappell
+    <h3 className='font-uncut text-[18px] font-extrabold leading-8 text-grayscale-900'>
+      Chandler.
     </h3>
 
-    <p className='max-w-md text-[18px] lg:text-[16px] font-[450] tracking-tight leading-6 lg:leading-5 font-fraktion text-grayscale-700 dark:text-grayscale-600'>
+    <p className='max-w-md font-uncut text-[16px] font-normal leading-5 text-grayscale-800 dark:text-grayscale-600 lg:text-[16px] lg:leading-5'>
       Creating cool and taking notes. Enjoying the internet and open-source, the focus in the moment
       is silencing the noise within design culture, with{' '}
       <Link

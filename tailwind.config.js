@@ -12,7 +12,7 @@ module.exports = {
     fontFamily: {
       inter: ['var(--font-inter)', 'sans-serif'],
       fraktion: ['Fraktion Sans V', 'sans-serif'],
-      uncut: ['var(--font-uncut)', 'sans-serif'],
+      uncut: ['Uncut Sans V', 'sans-serif'],
       atkinson: ['Atkinson Hyperlegible', 'sans-serif'],
     },
     colors: {

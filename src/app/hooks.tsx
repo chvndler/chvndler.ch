@@ -1,9 +1,8 @@
 'use client'
 
-import {useEffect, Suspense} from 'react'
+import * as React from 'react'
 import {isProd, isClient, isDev, siteLog} from '../lib/const'
 import {gaTrackingId} from '../lib/const'
-
 import {useAppStore} from '../components/hooks/use-app-store'
 import {AppAnalytics, GoogleAnalytics} from '../components/analytics'
 
@@ -15,16 +14,18 @@ export const AppHooks = () => {
   useFontsLoaded()
 
   return gaTrackingId ? (
-    <Suspense>
+    <>
       <AppAnalytics />
-      <GoogleAnalytics />
-    </Suspense>
+      <React.Suspense fallback={null}>
+        <GoogleAnalytics />
+      </React.Suspense>
+    </>
   ) : null
 }
 
 // AppHooks.
 const useFontsLoaded = () => {
-  useEffect(() => {
+  React.useEffect(() => {
     const maxWaitTime = 1500 // tweak this as needed.
 
     const timeout = window.setTimeout(() => {
