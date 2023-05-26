@@ -17,6 +17,19 @@ $stone-100: #f8f8f8;
 $stone-200: #e7e5e4;
 $stone-900: #1c1917;
 
+$cod-gray: #111111;
+$cod-gray: #161616;
+$cod-gray: #171717;
+$tundora: #404040;
+$dove-gray: #737373;
+$gable-green: #10292a;
+$outer-space: #263238;
+$river-bed: #4b5563;
+$alto: #d4d4d4;
+$concrete: #f2f2f2;
+$honeysuckle: #e2ff73;
+$heliotrope: #9680ff;
+
 @layer base {
   :root {
     --font-inter: $inter;
@@ -99,6 +112,11 @@ html.dark body {
   color: var(--bg-light) !important;
   background: var(--bg-dark) !important;
   background-color: var(--bg-dark) !important;
+}
+
+#color-bar,
+.color__bar {
+  background-color: rgba(235, 254, 188, 1);
 }
 
 .pre.code {

@@ -1,9 +1,11 @@
-import {ArchiveHeader} from '../../components/slices/archive-header'
-
-export default function ArchiveIndex() {
+export default function MediaIndex() {
   return (
     <>
-      <ArchiveHeader />
+      <section className='py-10 pv-3'>
+        <h3 className='mb-2 text-2xl font-normal tracking-tighter text-zinc8 font-inter'>
+          Play<span className='font-semibold'>ground</span>.
+        </h3>
+      </section>
     </>
   )
 }

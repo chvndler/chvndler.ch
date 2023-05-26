@@ -5,10 +5,10 @@ import {allProjects} from 'contentlayer/generated'
 import type {Projects} from 'contentlayer/generated'
 import type {Metadata} from 'next/types'
 
-import {PageSection} from '../../components/core'
 import {formatDateTime} from '../../components/hooks/use-date-time'
 import {compareDesc} from 'date-fns'
 import {ProjectsHeader} from '../../components/slices/projects-header'
+import ProjectGrid from '../../components/primi/project.grid'
 
 export const metadata: Metadata = {
   title: 'Chandler Ch - Projects',
@@ -19,21 +19,25 @@ interface ProjectListProps {
   post: Projects
 }
 
-const projectOrder = allProjects.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
+// const projectOrder = allProjects.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
 
 export default function ProjectsIndex() {
-  return (
-    <PageSection>
-      <ProjectsHeader />
+  const projectOrder = allProjects.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
 
-      <div className='mx-auto -mb-4 flex w-full flex-wrap justify-center'>
+  return (
+    <>
+      <ProjectsHeader />
+      <ProjectGrid />
+
+      {/* <!--
+      <div className='flex flex-wrap justify-center w-full mx-auto -mb-4'>
         {projectOrder.map((post) => (
-          <div key={post._id} className='mb-4 w-full px-2 sm:w-1/2 md:w-1/2'>
+          <div key={post._id} className='w-full px-2 mb-4 sm:w-1/2 md:w-1/2'>
             <Link href={post.url}>
               {post.image && (
                 <div className='aspect-ratio aspect-ratio--16x9 mb2'>
                   <Image
-                    className={'aspect-ratio--object cover br12'}
+                    className='border aspect-video rounded-2xl border-grayscale-600 hover:rounded-lg'
                     src={post.image}
                     alt={post.title}
                     width={400}
@@ -41,41 +45,22 @@ export default function ProjectsIndex() {
                   />
                 </div>
               )}
-              <div style={{paddingLeft: 4, paddingRight: 4}}>
-                <div className='f-row tween baseline flex'>
-                  <h4 className='font-mono link dim fw6 f6 mid-gray pb1 ttu'>{post.title}</h4>
-                  <small className='f8 fw5 mid-gray'>
-                    <FormattedDate post={post} />
-                  </small>
-                </div>
-              </div>
             </Link>
+
+            <div className='flex items-baseline justify-between py-3 mx-auto'>
+              <h2 className='font-medium text-left font-inter'>{post.title}</h2>
+              <FormattedDate post={post} />
+            </div>
           </div>
         ))}
       </div>
-    </PageSection>
+      --> */}
+    </>
   )
 }
 
 function FormattedDate({post}: ProjectListProps) {
   const publishedDate = formatDateTime(post.date)
 
-  return <>{publishedDate.asString}</>
+  return <p className='text-right font-fraktion text-xs font-[460]'>{publishedDate.asString}</p>
 }
-
-/*
-<div class="-mx-2 -mb-4 flex flex-wrap">
-  <div class="mb-4 w-full px-2 sm:w-1/2 md:w-1/2">
-    <div class="bg-indigo-400 h-12"></div>
-  </div>
-  <div class="mb-4 w-full px-2 sm:w-1/2 md:w-1/2">
-    <div class="bg-indigo-500 h-12"></div>
-  </div>
-  <div class="mb-4 w-full px-2 sm:w-1/2 md:w-1/2">
-    <div class="bg-indigo-400 h-12"></div>
-  </div>
-  <div class="mb-4 w-full px-2 sm:w-1/2 md:w-1/2">
-    <div class="bg-indigo-500 h-12"></div>
-  </div>
-</div>
-*/

@@ -2,7 +2,7 @@
 
 import React from 'react'
 import {PageSection} from '../components/core'
-import {Introduction} from '../components/core/introduction'
+import {AlternateIntroduction} from '../components/core/introduction'
 // import {FeaturedProjects} from '../components/core/featured-projects'
 import {UIProjectList} from '../components/core/project-list'
 
@@ -21,7 +21,7 @@ export default function Index() {
   return (
     <>
       <PageSection>
-        <Introduction />
+        <AlternateIntroduction />
         <UIProjectList />
       </PageSection>
     </>

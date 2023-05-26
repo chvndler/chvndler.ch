@@ -3,7 +3,6 @@
 import * as React from 'react'
 import {isProd, isClient, isDev, siteLog} from '../lib/const'
 import {gaTrackingId} from '../lib/const'
-import {useAppStore} from '../components/hooks/use-app-store'
 import {AppAnalytics, GoogleAnalytics} from '../components/analytics'
 
 export const AppHooks = () => {
@@ -11,7 +10,8 @@ export const AppHooks = () => {
     console.log(siteLog)
   }
 
-  useFontsLoaded()
+  // import {useAppStore} from '../components/hooks/use-app-store'
+  // useFontsLoaded()
 
   return gaTrackingId ? (
     <>
@@ -24,6 +24,8 @@ export const AppHooks = () => {
 }
 
 // AppHooks.
+
+/*
 const useFontsLoaded = () => {
   React.useEffect(() => {
     const maxWaitTime = 1500 // tweak this as needed.
@@ -53,3 +55,4 @@ const useFontsLoaded = () => {
     }
   }, [])
 }
+*/

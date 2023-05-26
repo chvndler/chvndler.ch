@@ -10,7 +10,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      inter: ['var(--font-inter)', 'sans-serif'],
+      inter: ['Inter V', 'sans-serif'],
       fraktion: ['Fraktion Sans V', 'sans-serif'],
       uncut: ['Uncut Sans V', 'sans-serif'],
       atkinson: ['Atkinson Hyperlegible', 'sans-serif'],

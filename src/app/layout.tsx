@@ -5,13 +5,25 @@ import {AppHooks} from './hooks'
 import {AppWrapper, ThemeProvider} from '../components/core'
 import {Header} from '../components/ui/header'
 import {Footer} from '../components/ui/footer'
+import {ColorBar} from '../components/ui/colorbar'
 import type {Metadata} from 'next'
+
+import {Inter} from 'next/font/google'
+
+const inter = Inter({
+  style: 'normal',
+  subsets: ['latin'],
+})
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={`bg-bglight font-uncut antialiased dark:bg-bgdark`} style={{opacity: 0}}>
+      <body
+        className={`${inter.className} bg-bglight font-inter antialiased dark:bg-bgdark`}
+        style={{opacity: 1}}
+      >
         <ThemeProvider>
+          <ColorBar />
           <Header />
           <AppWrapper>{children}</AppWrapper>
           <Footer />

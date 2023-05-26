@@ -58,8 +58,14 @@ const ListComponent = () => {
   featured.splice(4)
 
   const listItems = featured.map((project) => (
-    <li key={project._id} className='flex py-4 transition-all ease-out duration-400 gap-y-2'>
-      <Link href={project.url} className='font-bold text-md text-grayscale-800 uppercase'>
+    <li
+      key={project._id}
+      className='flex py-2 transition-all ease-out duration-400 gap-y-1 bg-blackA1 hover:bg-blackA3 dark:bg-whiteA1 dark:hover:bg-whiteA3'
+    >
+      <Link
+        href={project.url}
+        className='font-semibold tracking-tight capitalize text-md text-grayscale-800'
+      >
         {project.title}
       </Link>
     </li>
@@ -76,9 +82,8 @@ export const UIProjectList = () => {
   return (
     <>
       <ComponentSection>
-        <h3 className='mb-2 font-uncut text-[18px] font-semibold text-cdsbx-600'>Projects.</h3>
-
-        <div className='w-full mx-auto overflow-hidden rounded-lg'>
+        <h3 className='mb-2 font-inter text-[18px] font-semibold text-cdsbx-600'>Film.</h3>
+        <div className='w-full mx-auto overflow-hidden'>
           <ListComponent />
         </div>
       </ComponentSection>
