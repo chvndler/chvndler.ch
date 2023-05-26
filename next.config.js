@@ -21,15 +21,6 @@ const nextConfig = {
     appDir: true,
     mdxRs: true,
   },
-  async redirects() {
-    return [
-      {
-        source: '/github',
-        destination: 'https://github.com/chvndler',
-        permanent: false,
-      },
-    ];
-  },
 };
 
 const ContentSecurityPolicy = `

@@ -1,36 +1,23 @@
-import {Inter} from 'next/font/google'
-import localFont from 'next/font/local'
+import { Inter, Archivo, Inter_Tight } from 'next/font/google';
+import localFont from 'next/font/local';
 
-// define your variable fonts
-const inter = Inter()
-const aspekta = localFont({src: '/fonts/aspekta/AspektaVF.woff2'})
-
-const fraktion = localFont({
-  src: '/fonts/fraktion/sans/PPFraktionSans-Variable.ttf',
+// variable fonts
+const archivo = Archivo({
+  subsets: ['latin', 'latin-ext'],
   display: 'swap',
-  variable: '--font-fraktion',
-})
+  variable: '--font-archivo',
+});
 
-const uncut = localFont({
-  src: '../../public/fonts/uncut/UncutSans-Variable.ttf',
+const inter = Inter({
+  subsets: ['latin'],
   display: 'swap',
-  variable: '--font-uncut',
-})
+  variable: '--font-inter',
+});
 
-const atkinson = localFont({
-  src: '/fonts/atkinson/Akinson-Hyperlegible-Regular-102a.woff2',
+const interTight = Inter_Tight({
+  subsets: ['latin'],
   display: 'swap',
-  variable: '--font-hyperlegible',
-})
+  variable: '--font-inter-tight',
+});
 
-export {
-  uncut,
-  //
-  inter,
-  //
-  fraktion,
-  //
-  aspekta,
-  //
-  atkinson,
-}
+export { archivo, inter, interTight };

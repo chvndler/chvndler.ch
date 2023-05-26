@@ -9,8 +9,8 @@ const navigation = [
 ];
 
 export const Header = () => (
-  <header className="main-header sticky top-0 z-10 bg-header backdrop-blur-md dark:bg-dheader">
-    <nav className="mx-auto w-full px-3 py-0">
+  <header className="sticky top-0 z-10 main-header backdrop-blur-md">
+    <nav className="w-full px-3 py-0 mx-auto">
       <div className="mx-auto flex w-full max-w-[620px] flex-row items-center justify-between px-0 py-3">
         <span className="items-center justify-start">
           <Logo />
@@ -25,7 +25,7 @@ export const Header = () => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="duration-400 ml-2 font-uncut text-[15px] font-[600] leading-[20px] text-grayscale-800 transition-colors ease-in-out hover:text-blackA8 dark:text-grayscale-700 dark:hover:text-blackA9"
+                    className="duration-400 font-uncut ml-2 text-[15px] font-[600] leading-[20px] text-blackA11 transition-colors ease-in-out hover:text-blackA9 dark:text-whiteA11 dark:hover:text-whiteA9"
                     aria-current="page"
                   >
                     {item.name}

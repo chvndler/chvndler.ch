@@ -11,19 +11,13 @@ module.exports = {
   theme: {
     fontFamily: {
       inter: ['Inter V', 'sans-serif'],
+      archivo: ['var(--font-archivo)', 'sans-serif'],
       fraktion: ['Fraktion Sans V', 'sans-serif'],
-      uncut: ['Uncut Sans V', 'sans-serif'],
-      atkinson: ['Atkinson Hyperlegible', 'sans-serif'],
     },
 
     colors: {
-      bgdark: `rgba(23, 23, 23, 1)`,
-      bglight: `rgba(242, 242, 242, 1)`,
-
       transparent: 'transparent',
       current: 'currentColor',
-      header: 'rgba(242, 242, 242, 0.3)',
-      dheader: 'rgba(23, 23, 23, 0.2)',
 
       whiteA1: 'hsla(0, 0%, 100%, 0)',
       whiteA2: 'hsla(0, 0%, 100%, 0.013)',
@@ -51,6 +45,19 @@ module.exports = {
       blackA11: 'hsla(0, 0%, 0%, 0.565)',
       blackA12: 'hsla(0, 0%, 0%, 0.910)',
 
+      grayA1: 'hsla(0, 0%, 0%, 0.012)',
+      grayA2: 'hsla(0, 0%, 0%, 0.027)',
+      grayA3: 'hsla(0, 0%, 0%, 0.047)',
+      grayA4: 'hsla(0, 0%, 0%, 0.071)',
+      grayA5: 'hsla(0, 0%, 0%, 0.090)',
+      grayA6: 'hsla(0, 0%, 0%, 0.114)',
+      grayA7: 'hsla(0, 0%, 0%, 0.141)',
+      grayA8: 'hsla(0, 0%, 0%, 0.220)',
+      grayA9: 'hsla(0, 0%, 0%, 0.439)',
+      grayA10: 'hsla(0, 0%, 0%, 0.478)',
+      grayA11: 'hsla(0, 0%, 0%, 0.565)',
+      grayA12: 'hsla(0, 0%, 0%, 0.910)',
+
       cdsbx: {
         100: ` rgba(242, 242, 242, 1)`,
         200: `rgba(212, 212, 212, 1)`,
@@ -63,19 +70,6 @@ module.exports = {
         800: `rgba(17, 17, 17, 1)`,
         900: `rgba(14, 14, 14, 1)`,
       },
-
-      mauve1: 'hsl(300, 20.0%, 99.0%)',
-      mauve2: 'hsl(300, 7.7%, 97.5%)',
-      mauve3: 'hsl(294, 5.5%, 95.3%)',
-      mauve4: 'hsl(289, 4.7%, 93.3%)',
-      mauve5: 'hsl(283, 4.4%, 91.3%)',
-      mauve6: 'hsl(278, 4.1%, 89.1%)',
-      mauve7: 'hsl(271, 3.9%, 86.3%)',
-      mauve8: 'hsl(255, 3.7%, 78.8%)',
-      mauve9: 'hsl(252, 4.0%, 57.3%)',
-      mauve10: 'hsl(253, 3.5%, 53.5%)',
-      mauve11: 'hsl(252, 4.0%, 44.8%)',
-      mauve12: 'hsl(260, 25.0%, 11.0%)',
 
       grayscale: {
         50: 'rgb(253, 253, 253)',
@@ -111,6 +105,7 @@ module.exports = {
       backgroundColor: {
         'surface-action': 'hsl(var(--surface-action))',
         'surface-neutral': 'hsl(var(--surface-neutral))',
+        'color-bar': 'var(--color-bar)',
       },
       textDecorationColor: {
         underline: 'hsl(var(--underline))',
@@ -162,4 +157,4 @@ module.exports = {
       variantPrefix: 'rdxkit',
     }),
   ],
-}
+};

@@ -8,17 +8,18 @@ const link = {
 } as const;
 
 export const Connect = () => (
-  <div className="my-8 flex flex-grow flex-wrap justify-start text-left md:mt-0">
-    <div className="w-full space-y-4 text-cdsbx-400 md:w-1/2">
-      <p className="mb-2 font-inter text-[18px] font-semibold text-cdsbx-600">Connect.</p>
-      <nav className="mb-10 list-none underline-offset-4">
+  <div className="flex flex-wrap justify-start flex-grow py-6 text-left md:mt-0">
+    <div className="w-full space-y-4 md:w-1/2">
+      <p className="mb-2 text-[18px] font-semibold text-cdsbx-600">Connect.</p>
+      <nav className="mb-10 list-none text-grayA10 underline-offset-4">
         {connects.map((connect) => (
           <>
-            <li key={connect.title}>
+            <li key={connect.key}>
               <Link
+                key={connect.key}
                 href={connect.url}
                 target={connect.target}
-                className="text-sm font-medium capitalize tracking-tight"
+                className="text-sm font-medium lowercase font-archivo text-grayA10 hover:text-grayA11 dark:text-whiteA10 dark:hover:text-whiteA11"
               >
                 {connect.title}
               </Link>
@@ -29,15 +30,15 @@ export const Connect = () => (
     </div>
 
     <div className="w-full space-y-4 md:w-1/2">
-      <p className="mb-2 font-inter text-[18px] font-semibold text-cdsbx-600">Misc.</p>
-      <nav className="mb-10 list-none">
+      <p className="mb-2 text-[18px] font-semibold text-cdsbx-600">Misc.</p>
+      <nav className="mb-10 list-none text-grayA10 underline-offset-4">
         {profile.map((source) => (
           <>
             <li key={source.key}>
               <Link
                 href={source.url}
                 target={source.target}
-                className="text-sm font-medium capitalize tracking-tight"
+                className="text-sm font-medium lowercase font-archivo text-grayA10 hover:text-grayA11 dark:text-whiteA10 dark:hover:text-whiteA11"
               >
                 {source.title}
               </Link>
@@ -51,16 +52,19 @@ export const Connect = () => (
 
 const connects = [
   {
+    key: 'twitter',
     title: 'Twitter',
     url: 'https://twitter.com/chvndlerch',
     target: '_blank',
   },
   {
+    key: 'github',
     title: 'GitHub',
     url: '/github',
     target: '_blank',
   },
   {
+    key: 'resume',
     title: 'Resume / cv',
     url: '/',
     target: '_blank',

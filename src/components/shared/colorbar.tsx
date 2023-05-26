@@ -1,19 +1,19 @@
-import {cn} from '../../lib/utils'
+import { cn } from '../../lib/utils';
 
 export const ColorBar = () => {
   return (
     <div
       id={`color-bar`}
       className={cn(`
-        color__bar
+        color-bar
         absolute
         left-0
         right-0
         top-0
-        z-[9999]
-        h-[1px]
+        h-[0.3px]
         w-full
+        bg-color-bar
       `)}
     />
-  )
-}
+  );
+};

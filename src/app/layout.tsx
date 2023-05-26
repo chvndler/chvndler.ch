@@ -7,20 +7,13 @@ import { AppWrapper, Header, Footer } from '../components/layout';
 import { ColorBar } from '../components/shared';
 import type { Metadata } from 'next';
 
-import { Inter } from 'next/font/google';
-
-const inter = Inter({
-  style: 'normal',
-  subsets: ['latin'],
-});
+import { cn } from '../lib/utils';
+import { archivo } from './_scss/fonts';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.className} bg-bglight font-inter antialiased dark:bg-bgdark`}
-        style={{ opacity: 1 }}
-      >
+      <body className={cn(`${archivo.className}, font-archivo antialiased`)} style={{ opacity: 1 }}>
         <ThemeProvider>
           <ColorBar />
           <Header />

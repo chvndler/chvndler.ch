@@ -55,8 +55,10 @@ function ComponentSection({ children }: { children: React.ReactNode }) {
 export const UIProjectList = () => {
   return (
     <>
-      <h3 className="mb-2 font-inter text-[18px] font-semibold text-cdsbx-600">Film.</h3>
-      <div className="mx-auto w-full overflow-hidden">
+      {/*
+      <h3 className="mb-2 text-lg font-semibold font-archivo text-cdsbx-600">Projects.</h3>
+  */}
+      <div className="w-full mx-auto overflow-hidden">
         <ListComponent />
       </div>
     </>
@@ -71,11 +73,11 @@ const ListComponent = () => {
   const listItems = featured.map((project) => (
     <li
       key={project._id}
-      className="duration-400 flex gap-y-1 bg-blackA1 py-2 transition-all ease-out hover:bg-blackA3 dark:bg-whiteA1 dark:hover:bg-whiteA3"
+      className="flex py-2 transition-all ease-out duration-400 gap-y-1 bg-blackA1 hover:bg-blackA3 dark:bg-whiteA1 dark:hover:bg-whiteA3"
     >
       <Link
         href={project.url}
-        className="text-md font-semibold capitalize tracking-tight text-grayscale-800"
+        className="font-semibold tracking-tight capitalize text-md font-archivo text-blackA10 dark:text-whiteA10"
       >
         {project.title}
       </Link>
@@ -83,7 +85,7 @@ const ListComponent = () => {
   ));
 
   return (
-    <ul role="list" className="w-full divide-y divide-blackA4 dark:divide-whiteA3 ">
+    <ul role="list" className="w-full py-6 divide-y divide-blackA4 dark:divide-whiteA3 ">
       {listItems}
     </ul>
   );

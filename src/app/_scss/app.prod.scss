@@ -1,147 +1,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './_scss/fonts.min';
-@import './_scss/_color';
-
-$maxxx-width: 648px;
-$archivo: 'Archivo', sans-serif;
-$inter: 'Inter V', sans-serif;
-$fraktion: 'Fraktion Sans V', sans-serif;
-
-@layer base {
+@import url(_scss/fonts.min);
+@import url(_scss/_color);
+@media (prefers-color-scheme: dark) {
   :root {
-    --font-archivo: $archivo;
-    --font-inter: $inter;
-    --font-fraktion: $fraktion;
-    --bg-dark: $bg-dark;
-    --bg-light: $bg-light;
-    --color-bar: rgba(103, 119, 201, 1);
-  }
-  .main-header {
-    z-index: 20 !important;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg-dark: $bg-light;
-      --bg-light: $bg-dark;
-      --color-bar: rgba(235, 254, 188, 1);
-    }
+    --bg-dark: $bg-light;
+    --bg-light: $bg-dark;
+    --color-bar: $dark-color-bar;
   }
 }
-
-@layer utilities {
-  .font-variable-semibold {
-    font-variation-settings: 'wght' 575;
-  }
-}
-
-/**
- * @_scss
- * top-level css.
- */
-
-html,
 body {
   padding: 0;
   margin: 0;
   height: 100vh;
   width: 100vw;
   overflow: auto;
+  transition: opacity 0.6s ease-in-out !important;
 }
-
 html.fonts-loaded body {
   opacity: 1 !important;
 }
-
-body {
-  transition: opacity 0.6s ease-in-out !important;
-}
-
 html.dark body {
   color: $bg-light !important;
-  background: $bg-dark !important;
   background-color: $bg-dark !important;
 }
-
-/*
-.color-bar {
+#color-bar,
+.color__bar {
   z-index: 5 !important;
   background-color: $color-bar;
 }
-
-@media (prefers-color-scheme: dark) {
-  .color-bar {
-    background-color: $dark-color-bar !important;
-  }
-}
-*/
-
 .pre.code {
   font-family: 'SF Mono', 'Ubuntu Mono', monospace !important;
 }
-
 section.project-src h1,
 section.project-src h2,
 section.project-src h3,
 section.project-src h4 {
   font-family: $inter, sans-serif !important;
 }
-
 @layer components {
   .prose {
     @apply max-w-prose;
   }
-
+  .prose blockquote > * + *,
   .prose > * + * {
     @apply mt-4;
   }
-
   .prose > * + h2,
   .prose > * + h3,
   .prose > * + h4 {
     @apply mt-6 font-inter;
   }
-
   .prose h2 {
     @apply font-variable-semibold;
   }
-
   .prose pre[data-language] {
     @apply overflow-x-auto whitespace-pre rounded-md bg-surface-neutral py-4 text-sm;
   }
-
   .prose ul {
     @apply list-disc space-y-1 pl-7;
   }
-
   .prose ol {
     @apply list-decimal space-y-1 pl-7;
   }
-
   .prose blockquote {
     @apply border-l-4 pl-4;
   }
-
-  .prose blockquote > * + * {
-    @apply mt-4;
-  }
-
   .prose table thead th {
     @apply font-variable-semibold py-2;
   }
-
   .prose div[data-rehype-pretty-code-fragment] .syntax-line {
     @apply px-4;
   }
-
   .prose table {
     @apply w-full max-w-full;
   }
-
   .prose table tbody td {
     @apply border-t py-2;
   }

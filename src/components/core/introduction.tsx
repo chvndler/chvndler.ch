@@ -9,7 +9,7 @@ export const Introduction = () => (
   <ComponentSection>
     <h3 className="font-uncut text-[20px] font-[700] leading-8 text-cdsbx-600">Chandler.</h3>
 
-    <p className="max-w-md font-uncut text-[16px] font-medium leading-5 text-cdsbx-400 dark:text-grayscale-600 lg:text-[16px] lg:leading-5">
+    <p className="font-uncut max-w-md text-[16px] font-medium leading-5 text-cdsbx-400 dark:text-grayscale-600 lg:text-[16px] lg:leading-5">
       Creating cool and taking notes. Enjoying the internet and open-source, the focus in the moment
       is silencing the noise within design culture, with{' '}
       <Link
@@ -29,12 +29,12 @@ function ComponentSection({ children }: { children: React.ReactNode }) {
 }
 
 export const AlternateIntroduction = () => (
-  <div className="mx-auto flex flex-col items-center py-8">
-    <div className="prose prose-blue mx-auto flex w-full flex-col text-left">
-      <div className="mx-auto w-full">
-        <h3 className="font-inter text-[22px] font-[800] leading-5 text-cdsbx-600">Chandler.</h3>
+  <div className="flex flex-col items-center py-6 mx-auto">
+    <div className="flex flex-col w-full mx-auto prose text-left prose-blue">
+      <div className="w-full mx-auto">
+        <h3 className="text-[22px] font-bold leading-5 text-cdsbx-600">Chandler.</h3>
 
-        <p className="text-md max-w-lg font-inter font-medium leading-6 text-cdsbx-400 dark:text-grayscale-600">
+        <p className="max-w-lg font-medium leading-6 text-md font-archivo text-cdsbx-400 dark:text-grayscale-600">
           Creating cool and taking notes. Enjoying the internet and open-source, the focus in the
           moment is silencing the noise within design culture, with{' '}
           <Link
