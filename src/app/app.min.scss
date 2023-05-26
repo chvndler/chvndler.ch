@@ -85,6 +85,34 @@ html.dark body {
   height: 100vh;
 }
 
+.top-layer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border: 1px solid red;
+}
+
+.gc1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.gc2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.gc3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.gc4 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.gc5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.gc6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
 .color-bar {
   z-index: 5 !important;
   background-color: $color-bar;

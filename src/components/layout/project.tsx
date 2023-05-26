@@ -1,12 +1,13 @@
 import Link from 'next/link';
-
 import { allProjects } from 'contentlayer/generated';
 import type { Projects } from 'contentlayer/generated';
 import { formatDateTime } from '../../lib/hooks/use-date-time';
 import { compareDesc } from 'date-fns';
 
+type project = Projects[];
+
 type ProjectListProps = {
-  post: Projects;
+  post: project;
 };
 
 export default function ProjectGrid() {
@@ -24,7 +25,7 @@ function ProjectList() {
   const sourceGrid = projectOrder.map((post) => (
     <div
       key={post._id}
-      className="w-full border border-cdsbx-H500 bg-blackA1 px-2 hover:bg-blackA3 dark:border-whiteA3 dark:bg-whiteA1 dark:hover:bg-whiteA3 sm:w-1/2 md:w-1/2"
+      className="w-full border border-blackA3 bg-blackA1 px-2 hover:bg-blackA3 dark:border-whiteA3 dark:bg-whiteA1 dark:hover:bg-whiteA3 sm:w-1/2 md:w-1/2"
     >
       <div key={post._id} className="flex items-center justify-start">
         <p className="text-blackA5 dark:text-whiteA5">{post.title}</p>
@@ -46,7 +47,7 @@ function ProjectList() {
   return <>{sourceGrid}</>;
 }
 
-function FormattedDate({ post }: ProjectListProps) {
+function FormattedDate({ post }: { post: Projects }) {
   const publishedDate = formatDateTime(post.date);
 
   return (

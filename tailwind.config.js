@@ -114,6 +114,9 @@ module.exports = {
       textDecorationColor: {
         underline: 'hsl(var(--underline))',
       },
+      boxShadow: {
+        sminner: 'inset 0px 0px 0.2px 1px hsla(0, 0%, 0%, 0.114)',
+      },
       typography: (theme) => ({
         //..
         '--tw-prose-body': theme('colors.cdsbx[600]'),

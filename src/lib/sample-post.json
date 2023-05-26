@@ -30,5 +30,23 @@
     "renderer": "0x0000000000000000000000000000000000000000",
     "supply": 500,
     "symbol": "HOWTOLEARNANYTHING"
-  }
+  },
+  "title": "Arie.js",
+  "description": "Occaecat consectetur cillum amet pariatur et.",
+  "excerpt": "Tempor anim consequat qui minim elit velit esse.",
+  "date": "2023-05-18T00:00:00.000Z",
+  "tags": ["design", "scripts"],
+  "image": "/static/img/projects/arie.jpg",
+  "_id": "projects/arie.mdx",
+  "_raw": {
+    "sourceFilePath": "projects/arie.mdx",
+    "sourceFileName": "arie.mdx",
+    "sourceFileDir": "projects",
+    "contentType": "mdx",
+    "flattenedPath": "projects/arie"
+  },
+  "type": "Projects",
+  "slug": "/projects/arie",
+  "slugAsParams": "arie",
+  "url": "/projects/arie"
 }
