@@ -1,17 +1,18 @@
 {
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    ".contentlayer/generated"
-  ],
-  "exclude": ["node_modules"],
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/components/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/pages/*": ["./src/pages/*"],
+      "@/contentlayer/generated": ["./.contentlayer/generated"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
+    },
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
@@ -26,15 +27,14 @@
       {
         "name": "next"
       }
-    ],
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"],
-      /**
-       * mdx.content
-       */
-      "@/contentlayer/generated": ["./.contentlayer/generated"],
-      "contentlayer/generated": ["./.contentlayer/generated"]
-    }
-  }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".contentlayer/generated"
+  ],
+  "exclude": ["node_modules"]
 }

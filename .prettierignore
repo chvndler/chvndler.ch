@@ -1,7 +1,6 @@
-# - production.
-.next
-out
+yarn.lock
 node_modules
+.next
 
 # - yarn/berry/npm.
 .yarn/*
@@ -9,7 +8,6 @@ node_modules
 .yarnrc.yml
 .yarn-integrity
 .yarn-error.log
-yarn.lock
 package.json
 package-lock.json
 
