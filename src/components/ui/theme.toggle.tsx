@@ -7,8 +7,22 @@ import {SunFilled} from '../svg/sun'
 import {MoonOutlined} from '../svg/moon'
 
 function ThemeSwitch() {
-  const {setTheme, theme} = useTheme()
+  const [mounted, setMounted] = React.useState(false)
+  const {theme, setTheme} = useTheme()
+
   const [isHovering, setIsHovering] = React.useState(false)
+
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return null
+  }
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setTheme(e.target.value)
+  }
 
   return (
     <>
@@ -22,7 +36,9 @@ function ThemeSwitch() {
         id='theme-toggle'
         className='w-auto h-auto transition-colors duration-300 ease-in-out bg-transparent text-grayscale-700 dark:text-grayscale-600'
         onClick={(ev) => {
-          ev.preventDefault(), setTheme(theme === 'light' ? 'dark' : 'light')
+          ev.preventDefault(),
+            handleChange(ev as any),
+            setTheme(theme === 'light' ? 'dark' : 'light')
         }}
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => {

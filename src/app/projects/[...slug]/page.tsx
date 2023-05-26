@@ -70,31 +70,26 @@ export default async function PostPage({params}: PostProps) {
     <>
       <article
         key={post._id}
-        className='prose prose-neutral mb-20 dark:prose-invert prose-h3:font-inter prose-h3:font-bold prose-h3:tracking-tight'
+        className='mb-20 font-medium prose text-md prose-neutral font-uncut text-grayscale-800 dark:prose-invert prose-h2:text-4xl prose-h2:font-extrabold prose-h3:text-2xl prose-h3:font-bold prose-h3:tracking-tight'
       >
-        <section className=''>
-          <small className='flex flex-row items-center gap-1'>
-            <time className='font-fraktion text-xs uppercase'>
+        <div>
+          <span className='flex flex-row items-center gap-1 text-xs uppercase font-fraktion'>
+            <time>
               <FormattedDate post={post} />
-            </time>{' '}
-            <span className='uppercase'>
-              <span aria-hidden='true'>&middot;</span> <ProjectTags pro={post} />
+            </time>
+            <span>
+              <ProjectTags pro={post} />
             </span>
-          </small>
+          </span>
 
-          <h3 className='font-inter text-grayscale-800 dark:text-grayscale-700'>
-            <span className='font-extrabold'>{post.title}</span>
-          </h3>
-          {post.description && (
+          <div className='mt-4'>
+            <h2 className='font-uncut text-grayscale-800 dark:text-grayscale-700'>{post.title}</h2>
             <p className='text-md text-grayscale-700 dark:text-grayscale-600'>{post.description}</p>
-          )}
-        </section>
+          </div>
+        </div>
 
-        <section className='prose prose-neutral font-atkinson dark:prose-invert'>
-          <MDX code={post.body.code} />
-        </section>
+        <MDX code={post.body.code} />
       </article>
-      <StatCards />
     </>
   )
 }
@@ -103,9 +98,9 @@ function StatCards() {
   return (
     <>
       <div className='pb-20'>
-        <article className='rounded-xl border border-grayscale-400 py-3 dark:border-grayscale-900'>
-          <ul className='flex flex-col items-start justify-between gap-2 divide-y divide-grayscale-400 py-2 dark:divide-grayscale-900'>
-            <li className='w-full items-start justify-between px-4'>
+        <article className='py-3 border rounded-xl border-grayscale-400 dark:border-grayscale-900'>
+          <ul className='flex flex-col items-start justify-between gap-2 py-2 divide-y divide-grayscale-400 dark:divide-grayscale-900'>
+            <li className='items-start justify-between w-full px-4'>
               <p className='text-left font-fraktion text-[10px] font-semibold uppercase text-grayscale-700'>
                 arweave ⌝
               </p>
@@ -114,7 +109,7 @@ function StatCards() {
               </small>
             </li>
 
-            <li className='w-full items-start justify-between px-4'>
+            <li className='items-start justify-between w-full px-4'>
               <p className='text-left font-fraktion text-[10px] font-semibold uppercase text-grayscale-700'>
                 arweave ⌝
               </p>

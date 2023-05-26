@@ -15,13 +15,15 @@ module.exports = {
       uncut: ['Uncut Sans V', 'sans-serif'],
       atkinson: ['Atkinson Hyperlegible', 'sans-serif'],
     },
+
     colors: {
-      bgdark: `rgba(35, 42, 47, 1)`,
-      bglight: `rgba(244, 244, 245, 1)`,
+      bgdark: `rgba(23, 23, 23, 1)`,
+      bglight: `rgba(242, 242, 242, 1)`,
 
       transparent: 'transparent',
       current: 'currentColor',
-      header: '$bg-header',
+      header: 'rgba(242, 242, 242, 0.3)',
+      dheader: 'rgba(23, 23, 23, 0.2)',
 
       whiteA1: 'hsla(0, 0%, 100%, 0)',
       whiteA2: 'hsla(0, 0%, 100%, 0.013)',
@@ -49,18 +51,18 @@ module.exports = {
       blackA11: 'hsla(0, 0%, 0%, 0.565)',
       blackA12: 'hsla(0, 0%, 0%, 0.910)',
 
-      sage1: 'hsl(155, 30.0%, 98.8%)',
-      sage2: 'hsl(150, 16.7%, 97.6%)',
-      sage3: 'hsl(151, 10.6%, 95.2%)',
-      sage4: 'hsl(151, 8.8%, 93.0%)',
-      sage5: 'hsl(151, 7.8%, 90.8%)',
-      sage6: 'hsl(152, 7.2%, 88.4%)',
-      sage7: 'hsl(153, 6.7%, 85.3%)',
-      sage8: 'hsl(154, 6.1%, 77.5%)',
-      sage9: 'hsl(155, 3.5%, 55.5%)',
-      sage10: 'hsl(154, 2.8%, 51.7%)',
-      sage11: 'hsl(155, 3.0%, 43.0%)',
-      sage12: 'hsl(155, 24.0%, 9.0%)',
+      cdsbx: {
+        100: ` rgba(242, 242, 242, 1)`,
+        200: `rgba(212, 212, 212, 1)`,
+        300: `rgba(192, 192, 192, 1)`,
+        400: `rgba(115, 115, 115, 1)`,
+        S500: `rgba(226, 255, 115, 1)`,
+        H500: `rgba(150, 128, 255, 1)`,
+        600: `rgba(64, 64, 64, 1)`,
+        700: `rgba(23, 23, 23, 1)`,
+        800: `rgba(17, 17, 17, 1)`,
+        900: `rgba(14, 14, 14, 1)`,
+      },
 
       mauve1: 'hsl(300, 20.0%, 99.0%)',
       mauve2: 'hsl(300, 7.7%, 97.5%)',
@@ -74,47 +76,6 @@ module.exports = {
       mauve10: 'hsl(253, 3.5%, 53.5%)',
       mauve11: 'hsl(252, 4.0%, 44.8%)',
       mauve12: 'hsl(260, 25.0%, 11.0%)',
-
-      zinc1: '#fafafa',
-      zinc2: '#f4f4f5',
-      zinc3: '#e4e4e7',
-      zinc4: '#d4d4d8',
-      zinc5: '#a1a1aa',
-      zinc6: '#71717a',
-      zinc7: '#52525b',
-      zinc8: '#3f3f46',
-      zinc9: '#27272a',
-      zinc10: '#18181b',
-      zinc11: '#0f0f10',
-
-      zinc: {
-        50: '#fafafa',
-        100: '#f4f4f5',
-        200: '#e4e4e7',
-        300: '#d4d4d8',
-        400: '#a1a1aa',
-        500: '#71717a',
-        600: '#52525b',
-        700: '#3f3f46',
-        800: '#27272a',
-        900: '#18181b',
-        950: '#09090b',
-      },
-
-      // Grayscale Design palette: https://grayscale.design/app?lums=92.72,85.96,73.80,58.76,39.22,24.42,15.15,11.44,6.93,4.69&palettes=%23FF43EE&filters=0%7C0&names=hypergrape&labels=
-      stone: {
-        50: '#fafaf9',
-        100: '#f5f5f4',
-        200: '#e7e5e4',
-        300: '#d6d3d1',
-        400: '#a8a29e',
-        500: '#78716c',
-        600: '#57534e',
-        700: '#44403c',
-        800: '#292524',
-        900: '#1c1917',
-        950: '#0c0a09',
-      },
 
       grayscale: {
         50: 'rgb(253, 253, 253)',
@@ -130,6 +91,7 @@ module.exports = {
         1000: 'rgb(90, 90, 90)',
         1100: 'rgb(29, 29, 29)',
       },
+
       hypergrape: {
         50: 'rgb(255, 252, 255)',
         100: 'rgb(255, 249, 255)',
@@ -155,7 +117,8 @@ module.exports = {
       },
       typography: (theme) => ({
         //..
-        '--tw-prose-body': theme('colors.grayscale[800]'),
+        '--tw-prose-body': theme('colors.cdsbx[600]'),
+        '--tw-prose-pre-code': theme('colors.hypergrape[700]'),
         /*
             '--tw-prose-headings': theme('colors.pink[900]'),
             '--tw-prose-lead': theme('colors.pink[700]'),
@@ -168,7 +131,7 @@ module.exports = {
             '--tw-prose-quote-borders': theme('colors.pink[300]'),
             '--tw-prose-captions': theme('colors.pink[700]'),
             '--tw-prose-code': theme('colors.pink[900]'),
-            '--tw-prose-pre-code': theme('colors.pink[100]'),
+          
             '--tw-prose-pre-bg': theme('colors.pink[900]'),
             '--tw-prose-th-borders': theme('colors.pink[300]'),
             '--tw-prose-td-borders': theme('colors.pink[200]'),

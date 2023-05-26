@@ -4,7 +4,7 @@ import React from 'react'
 import {PageSection} from '../components/core'
 import {Introduction} from '../components/core/introduction'
 // import {FeaturedProjects} from '../components/core/featured-projects'
-import {UIProjectList} from '@/components/core/project-list'
+import {UIProjectList} from '../components/core/project-list'
 
 /*
  * Copyright (C) 2023 @chvndler

@@ -6,11 +6,9 @@ import {GitSha} from '../slices/git-sha'
 
 export const Footer = () => (
   <footer className='relative w-full'>
-    <div className='flex items-end max-w-xl px-3 pt-3 pb-6 mx-auto mt-3 font-mono text-xs text-center'>
-      <span className='text-[11px] font-semibold font-aspekta text-left uppercase'>
-        <span className='font-extrabold'>
-          © CHANDLER CH. {new Date().getFullYear()}
-        </span>
+    <div className='flex items-end max-w-screen-sm px-3 pt-3 pb-6 mx-auto mt-3 font-mono text-xs text-center'>
+      <span className='font-aspekta text-left text-[11px] font-semibold uppercase'>
+        <span className='font-extrabold'>© CHANDLER CH. {new Date().getFullYear()}</span>
         .
         <br />
         SOMETHING LIKE THIS BUT NOT THIS (
@@ -24,7 +22,7 @@ export const Footer = () => (
         ).
       </span>
 
-      <div className='font-extrabold text-[12px] tracking-wide text-right grow font-tstar uppercase text-grayA10 dark:text-whiteA10'>
+      <div className='font-tstar text-grayA10 grow text-right text-[12px] font-extrabold uppercase tracking-wide dark:text-whiteA10'>
         <Link target='_blank' href='https://twitter.com/chvndlerch'>
           – @chvndlerch
         </Link>

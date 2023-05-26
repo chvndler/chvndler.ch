@@ -10,9 +10,9 @@ const navigation = [
 ]
 
 export const Header = () => (
-  <header className='sticky top-0 z-10 main-header bg-header backdrop-blur-md'>
+  <header className='sticky top-0 z-10 main-header bg-header backdrop-blur-md dark:bg-dheader'>
     <nav className='w-full px-3 py-0 mx-auto'>
-      <div className='flex flex-row items-center justify-between w-full max-w-xl px-0 py-4 mx-auto'>
+      <div className='mx-auto flex w-full max-w-[620px] flex-row items-center justify-between px-0 py-3'>
         <span className='items-center justify-start'>
           <Logo />
         </span>
@@ -26,7 +26,7 @@ export const Header = () => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className='duration-400 ml-2 font-fraktion text-[14px] font-[520] uppercase leading-[20px] text-grayscale-800 transition-colors ease-in-out hover:text-blackA8 dark:text-grayscale-700 dark:hover:text-blackA9'
+                    className='duration-400 ml-2 font-uncut text-[15px] font-[600] leading-[20px] text-grayscale-800 transition-colors ease-in-out hover:text-blackA8 dark:text-grayscale-700 dark:hover:text-blackA9'
                     aria-current='page'
                   >
                     {item.name}

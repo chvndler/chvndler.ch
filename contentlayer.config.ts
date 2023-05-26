@@ -76,6 +76,7 @@ export const Projects = defineDocumentType(() => ({
   computedFields,
 }))
 
+/*
 const rehypePrettyCodeOptions = {
   theme: {
     light: 'github-light',
@@ -85,13 +86,16 @@ const rehypePrettyCodeOptions = {
     fn: 'entity.name.function',
     objKey: 'meta.object-literal.key',
   },
+
+  //
 }
+*/
 
 export default makeSource({
   contentDirPath: './collection',
   documentTypes: [Projects],
   mdx: {
     remarkPlugins: [remarkGfm],
-    rehypePlugins: [rehypeCodeTitles, [rehypePrettyCode, rehypePrettyCodeOptions]],
+    rehypePlugins: [rehypeCodeTitles, [rehypePrettyCode]],
   },
 })
