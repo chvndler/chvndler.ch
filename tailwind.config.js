@@ -11,13 +11,17 @@ module.exports = {
   theme: {
     fontFamily: {
       inter: ['Inter V', 'sans-serif'],
-      archivo: ['var(--font-archivo)', 'sans-serif'],
+      archivo: ['Archivo V', 'sans-serif'],
       fraktion: ['Fraktion Sans V', 'sans-serif'],
     },
 
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      B100: '#f4f4f4',
+      B500: '#6777c9',
+      B900: '#1d1d1d',
+      B600: '#ebfebc',
 
       whiteA1: 'hsla(0, 0%, 100%, 0)',
       whiteA2: 'hsla(0, 0%, 100%, 0.013)',

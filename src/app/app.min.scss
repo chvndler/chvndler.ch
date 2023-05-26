@@ -5,6 +5,14 @@
 @import './_scss/fonts.min';
 @import './_scss/_color';
 
+$bg-gray-100: hsl(0, 0%, 99%);
+$bg-dark: rgba(23, 23, 23, 1);
+$bg-light: rgba(244, 244, 245, 1);
+$bg-header: rgba(253, 253, 252, 0.2);
+$bg-header-dark: rgba(23, 23, 23, 0.2);
+$color-bar: rgba(103, 119, 201, 1);
+$dark-color-bar: rgba(235, 254, 188, 1);
+
 $maxxx-width: 648px;
 $archivo: 'Archivo', sans-serif;
 $inter: 'Inter V', sans-serif;
@@ -12,11 +20,11 @@ $fraktion: 'Fraktion Sans V', sans-serif;
 
 @layer base {
   :root {
-    --font-archivo: $archivo;
-    --font-inter: $inter;
+    --font-archivo: 'Archivo', sans-serif;
+    --font-inter: 'Inter', sans-serif;
     --font-fraktion: $fraktion;
-    --bg-dark: $bg-dark;
-    --bg-light: $bg-light;
+    --bg-dark: rgba(23, 23, 23, 1);
+    --bg-light: rgba(244, 244, 245, 1);
     --color-bar: rgba(103, 119, 201, 1);
   }
   .main-header {
@@ -26,8 +34,8 @@ $fraktion: 'Fraktion Sans V', sans-serif;
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg-dark: $bg-light;
-      --bg-light: $bg-dark;
+      --bg-dark: rgba(244, 244, 245, 1);
+      --bg-light: rgba(23, 23, 23, 1);
       --color-bar: rgba(235, 254, 188, 1);
     }
   }

@@ -55,10 +55,8 @@ function ComponentSection({ children }: { children: React.ReactNode }) {
 export const UIProjectList = () => {
   return (
     <>
-      {/*
-      <h3 className="mb-2 text-lg font-semibold font-archivo text-cdsbx-600">Projects.</h3>
-  */}
-      <div className="w-full mx-auto overflow-hidden">
+      <div className="w-full py-6 mx-auto overflow-hidden">
+        <p className="mb-2 text-[18px] font-semibold text-cdsbx-600">Projects.</p>
         <ListComponent />
       </div>
     </>
@@ -77,7 +75,7 @@ const ListComponent = () => {
     >
       <Link
         href={project.url}
-        className="font-semibold tracking-tight capitalize text-md font-archivo text-blackA10 dark:text-whiteA10"
+        className="text-lg font-semibold tracking-tight font-archivo text-blackA10 dark:text-whiteA10"
       >
         {project.title}
       </Link>
@@ -85,7 +83,7 @@ const ListComponent = () => {
   ));
 
   return (
-    <ul role="list" className="w-full py-6 divide-y divide-blackA4 dark:divide-whiteA3 ">
+    <ul role="list" className="w-full divide-y divide-blackA4 dark:divide-whiteA3 ">
       {listItems}
     </ul>
   );

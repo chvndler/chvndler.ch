@@ -6,7 +6,6 @@ import { ThemeProvider } from '../context/theme-provider';
 import { AppWrapper, Header, Footer } from '../components/layout';
 import { ColorBar } from '../components/shared';
 import type { Metadata } from 'next';
-
 import { cn } from '../lib/utils';
 import { archivo } from './_scss/fonts';
 
