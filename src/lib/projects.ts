@@ -35,8 +35,8 @@ export const projects = [
     name: 'Arie.js',
     // imageUrl: useColorGenerator('arie.js', matchColors),
   },
-]
+];
 
 export const projectsSorted = projects.sort((a, b) => {
-  return new Date(b.date).getTime() - new Date(a.date).getTime()
-})
+  return new Date(b.date).getTime() - new Date(a.date).getTime();
+});

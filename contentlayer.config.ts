@@ -1,9 +1,9 @@
-import {defineDocumentType, makeSource} from 'contentlayer/source-files'
-import type {ComputedFields} from 'contentlayer/source-files'
+import { defineDocumentType, makeSource } from 'contentlayer/source-files';
+import type { ComputedFields } from 'contentlayer/source-files';
 
-import remarkGfm from 'remark-gfm'
-import rehypeCodeTitles from 'rehype-code-titles'
-import rehypePrettyCode from 'rehype-pretty-code'
+import remarkGfm from 'remark-gfm';
+import rehypeCodeTitles from 'rehype-code-titles';
+import rehypePrettyCode from 'rehype-pretty-code';
 
 // computed.fields
 
@@ -22,7 +22,7 @@ const computedFields: ComputedFields = {
     description: 'The URL of the post, e.g. /projects/my-post',
     resolve: (ject) => `/${ject._raw.flattenedPath}`,
   },
-}
+};
 
 // make source
 
@@ -63,7 +63,7 @@ export const Projects = defineDocumentType(() => ({
     },
     tags: {
       type: 'list',
-      of: {type: 'string'},
+      of: { type: 'string' },
       description: 'A list of keywords that relate to the post',
       required: true,
     },
@@ -74,7 +74,7 @@ export const Projects = defineDocumentType(() => ({
     },
   },
   computedFields,
-}))
+}));
 
 /*
 const rehypePrettyCodeOptions = {
@@ -98,4 +98,4 @@ export default makeSource({
     remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypeCodeTitles, [rehypePrettyCode]],
   },
-})
+});

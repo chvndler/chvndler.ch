@@ -20,8 +20,8 @@ interface ProjectListProps {
 export default function ProjectsIndex() {
   return (
     <>
-      <section className="py-10 pv-3">
-        <h3 className="mb-2 text-2xl font-normal tracking-tighter text-zinc8 font-archivo">
+      <section className="pv-3 py-10">
+        <h3 className="text-zinc8 mb-2 font-archivo text-2xl font-normal tracking-tighter">
           Some of my <span className="font-semibold">work</span>.
         </h3>
       </section>

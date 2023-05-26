@@ -55,7 +55,7 @@ function ComponentSection({ children }: { children: React.ReactNode }) {
 export const UIProjectList = () => {
   return (
     <>
-      <div className="w-full py-6 mx-auto overflow-hidden">
+      <div className="mx-auto w-full overflow-hidden py-6">
         <p className="mb-2 text-[18px] font-semibold text-cdsbx-600">Projects.</p>
         <ListComponent />
       </div>
@@ -71,11 +71,11 @@ const ListComponent = () => {
   const listItems = featured.map((project) => (
     <li
       key={project._id}
-      className="flex py-2 transition-all ease-out duration-400 gap-y-1 bg-blackA1 hover:bg-blackA3 dark:bg-whiteA1 dark:hover:bg-whiteA3"
+      className="duration-400 flex gap-y-1 bg-blackA1 py-2 transition-all ease-out hover:bg-blackA3 dark:bg-whiteA1 dark:hover:bg-whiteA3"
     >
       <Link
         href={project.url}
-        className="text-lg font-semibold tracking-tight font-archivo text-blackA10 dark:text-whiteA10"
+        className="font-archivo text-lg font-semibold tracking-tight text-blackA10 dark:text-whiteA10"
       >
         {project.title}
       </Link>

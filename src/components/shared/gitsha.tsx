@@ -39,9 +39,9 @@ export const CommitSha = () => {
 };
 
 function useGitSha() {
-  const sha = '5dd284fa77c34328ce76ffeebe0022bd7a96ff08';
-  const owner = 'chvndler';
-  const slug = 'chvndler.ch';
+  const sha = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA;
+  const owner = process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_OWNER;
+  const slug = process.env.NEXT_PUBLIC_VERCEL_GIT_REPO_SLUG;
 
   return { sha, owner, slug };
 }

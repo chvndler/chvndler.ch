@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @import './_scss/fonts.min';
-@import './_scss/_color';
 
 $bg-gray-100: hsl(0, 0%, 99%);
 $bg-dark: rgba(23, 23, 23, 1);
@@ -75,7 +74,17 @@ html.dark body {
   background-color: $bg-dark !important;
 }
 
-/*
+.wrap-layer1 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 100px !important;
+}
+
+.wrap-layer2 {
+  height: 100vh;
+}
+
 .color-bar {
   z-index: 5 !important;
   background-color: $color-bar;
@@ -86,7 +95,6 @@ html.dark body {
     background-color: $dark-color-bar !important;
   }
 }
-*/
 
 .pre.code {
   font-family: 'SF Mono', 'Ubuntu Mono', monospace !important;

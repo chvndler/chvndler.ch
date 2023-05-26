@@ -1,13 +1,13 @@
-'use client'
+'use client';
 
-import * as React from 'react'
-import {isProd, isClient, isDev, siteLog} from '../lib/const'
-import {gaTrackingId} from '../lib/const'
-import {AppAnalytics, GoogleAnalytics} from '../components/analytics'
+import * as React from 'react';
+import { isProd, isClient, isDev, siteLog } from '../lib/const';
+import { gaTrackingId } from '../lib/const';
+import { AppAnalytics, GoogleAnalytics } from '../components/analytics';
 
 export const AppHooks = () => {
   if (isProd && isClient && isDev) {
-    console.log(siteLog)
+    console.log(siteLog);
   }
 
   // import {useAppStore} from '../components/hooks/use-app-store'
@@ -20,8 +20,8 @@ export const AppHooks = () => {
         <GoogleAnalytics />
       </React.Suspense>
     </>
-  ) : null
-}
+  ) : null;
+};
 
 // AppHooks.
 

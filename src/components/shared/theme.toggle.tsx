@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React from "react";
-import { useTheme } from "next-themes";
+import React from 'react';
+import { useTheme } from 'next-themes';
 
-import { SunFilled } from "../shared/svg/sun";
-import { MoonOutlined } from "../shared/svg/moon";
+import { SunFilled } from '../shared/svg/sun';
+import { MoonOutlined } from '../shared/svg/moon';
 
 function ThemeToggle() {
   const [mounted, setMounted] = React.useState(false);
@@ -28,7 +28,7 @@ function ThemeToggle() {
     <>
       {isHovering && (
         <span className="text-gray-400 my-auto mr-1 hidden items-center font-fraktion text-[9px] font-semibold uppercase transition-all duration-150 ease-linear md:inline">
-          {theme === null ? "System" : theme === "dark" ? "Dark" : "Light"}
+          {theme === null ? 'System' : theme === 'dark' ? 'Dark' : 'Light'}
         </span>
       )}
 
@@ -38,7 +38,7 @@ function ThemeToggle() {
         onClick={(ev) => {
           ev.preventDefault(),
             handleChange(ev as any),
-            setTheme(theme === "light" ? "dark" : "light");
+            setTheme(theme === 'light' ? 'dark' : 'light');
         }}
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => {
@@ -48,7 +48,7 @@ function ThemeToggle() {
         <span className="sr-only">Toggle mode</span>
 
         <span>
-          {theme !== "dark" ? (
+          {theme !== 'dark' ? (
             <>
               <MoonOutlined />
             </>

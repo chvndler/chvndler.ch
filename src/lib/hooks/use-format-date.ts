@@ -4,31 +4,31 @@ type DateTime = {
    * 'January 1, 2022'
    * 'December 31, 2022'
    */
-  asString: string
+  asString: string;
   /** The date formatted as an ISO string
    *
    * '2022-01-01T00:00:00.000Z'
    */
-  asISOString: string
+  asISOString: string;
   /** The date formatted as a relative time string
    *
    * '2 days ago'
    * '3 weeks ago'
    */
-  asRelativeTimeString: string
+  asRelativeTimeString: string;
   /** A boolean indicating if the date is fresh, i.e. less than 4 days old */
-  isFresh: boolean
-}
+  isFresh: boolean;
+};
 
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
   month: 'long',
   day: 'numeric',
   year: 'numeric',
-})
+});
 
 const relativeTimeFormatter = new Intl.RelativeTimeFormat('en-US', {
   numeric: 'auto',
-})
+});
 
 /**
  * Formats a date into a relative time.
@@ -40,37 +40,37 @@ const relativeTimeFormatter = new Intl.RelativeTimeFormat('en-US', {
  * // isFresh = false
  */
 function getRelativeTime(date: Date) {
-  const timeDiff = date.getTime() - new Date().getTime()
+  const timeDiff = date.getTime() - new Date().getTime();
 
-  const days = Math.ceil(timeDiff / (1000 * 60 * 60 * 24))
+  const days = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
   if (days > -14) {
     return {
       relativeTime: relativeTimeFormatter.format(days, 'day'),
       isFresh: days > -4,
-    }
+    };
   }
 
-  const weeks = Math.floor(days / 7)
+  const weeks = Math.floor(days / 7);
   if (weeks > -8) {
     return {
       relativeTime: relativeTimeFormatter.format(weeks, 'week'),
       isFresh: false,
-    }
+    };
   }
 
-  const months = Math.floor(days / 30)
+  const months = Math.floor(days / 30);
   if (months > -12) {
     return {
       relativeTime: relativeTimeFormatter.format(months, 'month'),
       isFresh: false,
-    }
+    };
   }
 
-  const years = Math.floor(days / 365)
+  const years = Math.floor(days / 365);
   return {
     relativeTime: relativeTimeFormatter.format(years, 'year'),
     isFresh: false,
-  }
+  };
 }
 
 /**
@@ -85,7 +85,7 @@ function getRelativeTime(date: Date) {
  * // }
  */
 export function formatDateTime(dateString: string): DateTime {
-  const date = new Date(dateString)
+  const date = new Date(dateString);
 
   if (isNaN(date.getTime())) {
     return {
@@ -93,15 +93,15 @@ export function formatDateTime(dateString: string): DateTime {
       asISOString: 'Invalid Date',
       asRelativeTimeString: 'Invalid Date',
       isFresh: false,
-    }
+    };
   }
 
-  const {relativeTime, isFresh} = getRelativeTime(date)
+  const { relativeTime, isFresh } = getRelativeTime(date);
 
   return {
     asString: dateFormatter.format(date),
     asISOString: date.toISOString(),
     asRelativeTimeString: relativeTime,
     isFresh,
-  }
+  };
 }
