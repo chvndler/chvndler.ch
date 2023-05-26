@@ -25,36 +25,32 @@ export default function ProjectsIndex() {
   return (
     <PageSection>
       <ProjectsHeader />
-      <div className='grid items-center w-full grid-cols-1 gap-4 mx-auto md:grid-cols-2'>
+
+      <div className='mx-auto -mb-4 flex w-full flex-wrap justify-center'>
         {projectOrder.map((post) => (
-          <article key={post._id} className='flex items-center w-full h-auto mx-auto'>
-            <div
-              key={post._id}
-              className='lh-copy pv1 ph1 mb2 mr2 bg-animate hover-bg-light-gray br14'
-            >
-              <Link href={post.url}>
-                {post.image && (
-                  <div className='aspect-ratio aspect-ratio--16x9 mb2'>
-                    <Image
-                      className={'aspect-ratio--object cover br12'}
-                      src={post.image}
-                      alt={post.title}
-                      width={400}
-                      height={200}
-                    />
-                  </div>
-                )}
-                <div style={{paddingLeft: 4, paddingRight: 4}}>
-                  <div className='flex f-row tween baseline'>
-                    <h4 className='font-mono link dim fw6 f6 mid-gray pb1 ttu'>{post.title}</h4>
-                    <small className='f8 fw5 mid-gray'>
-                      <FormattedDate post={post} />
-                    </small>
-                  </div>
+          <div key={post._id} className='mb-4 w-full px-2 sm:w-1/2 md:w-1/2'>
+            <Link href={post.url}>
+              {post.image && (
+                <div className='aspect-ratio aspect-ratio--16x9 mb2'>
+                  <Image
+                    className={'aspect-ratio--object cover br12'}
+                    src={post.image}
+                    alt={post.title}
+                    width={400}
+                    height={200}
+                  />
                 </div>
-              </Link>
-            </div>
-          </article>
+              )}
+              <div style={{paddingLeft: 4, paddingRight: 4}}>
+                <div className='f-row tween baseline flex'>
+                  <h4 className='font-mono link dim fw6 f6 mid-gray pb1 ttu'>{post.title}</h4>
+                  <small className='f8 fw5 mid-gray'>
+                    <FormattedDate post={post} />
+                  </small>
+                </div>
+              </div>
+            </Link>
+          </div>
         ))}
       </div>
     </PageSection>
@@ -66,3 +62,20 @@ function FormattedDate({post}: ProjectListProps) {
 
   return <>{publishedDate.asString}</>
 }
+
+/*
+<div class="-mx-2 -mb-4 flex flex-wrap">
+  <div class="mb-4 w-full px-2 sm:w-1/2 md:w-1/2">
+    <div class="bg-indigo-400 h-12"></div>
+  </div>
+  <div class="mb-4 w-full px-2 sm:w-1/2 md:w-1/2">
+    <div class="bg-indigo-500 h-12"></div>
+  </div>
+  <div class="mb-4 w-full px-2 sm:w-1/2 md:w-1/2">
+    <div class="bg-indigo-400 h-12"></div>
+  </div>
+  <div class="mb-4 w-full px-2 sm:w-1/2 md:w-1/2">
+    <div class="bg-indigo-500 h-12"></div>
+  </div>
+</div>
+*/
