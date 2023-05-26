@@ -1,8 +1,8 @@
-const {withContentlayer} = require('next-contentlayer')
-const withMDX = require('@next/mdx')()
+const { withContentlayer } = require('next-contentlayer');
+const withMDX = require('@next/mdx')();
 
-const isDev = process.env.NODE_ENV === 'development'
-const isProd = process.env.NODE_ENV === 'production'
+const isDev = process.env.NODE_ENV === 'development';
+const isProd = process.env.NODE_ENV === 'production';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -21,7 +21,16 @@ const nextConfig = {
     appDir: true,
     mdxRs: true,
   },
-}
+  async redirects() {
+    return [
+      {
+        source: '/github',
+        destination: 'https://github.com/chvndler',
+        permanent: false,
+      },
+    ];
+  },
+};
 
 const ContentSecurityPolicy = `
     default-src 'self';
@@ -32,7 +41,7 @@ const ContentSecurityPolicy = `
     media-src data: *.chvndler.ch api.chvndler.ch *.scdn.co stream.mux imagedelivery.net chvn.me image.mux.com *.mux.com cdn.usefathom.com *.usefathom.com vitals.vercel-insights.com;
     connect-src data: * *.chvndler.ch api.chvndler.ch vitals.vercel-insights.com *.usefathom.com;
     font-src 'self';
-`
+`;
 
 const securityHeaders = [
   {
@@ -71,6 +80,6 @@ const securityHeaders = [
     key: 'Referrer-Policy',
     value: 'origin-when-cross-origin',
   },
-]
+];
 
-module.exports = withContentlayer(withMDX(nextConfig))
+module.exports = withContentlayer(withMDX(nextConfig));

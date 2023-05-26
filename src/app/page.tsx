@@ -1,10 +1,8 @@
 // server.
 
-import React from 'react'
-import {PageSection} from '../components/core'
-import {AlternateIntroduction} from '../components/core/introduction'
-// import {FeaturedProjects} from '../components/core/featured-projects'
-import {UIProjectList} from '../components/core/project-list'
+import React from 'react';
+import { AlternateIntroduction, Connect } from '../components/core';
+import { UIProjectList } from '../components/layout';
 
 /*
  * Copyright (C) 2023 @chvndler
@@ -20,10 +18,25 @@ import {UIProjectList} from '../components/core/project-list'
 export default function Index() {
   return (
     <>
-      <PageSection>
-        <AlternateIntroduction />
-        <UIProjectList />
-      </PageSection>
+      <AlternateIntroduction />
+      <Connect />
+      <UIProjectList />
     </>
-  )
+  );
 }
+/*
+const features = [
+  {
+    title: 'Beautiful, reusable components',
+    description:
+      'Pre-built beautiful, a11y-first components, powered by [Tailwind CSS](https://tailwindcss.com/), [Radix UI](https://www.radix-ui.com/), and [Framer Motion](https://framer.com/motion)',
+    large: true,
+  },
+  {
+    title: 'Performance first',
+    description:
+      'Built on [Next.js](https://nextjs.org/) primitives like `@next/font` and `next/image` for stellar performance.',
+    demo: <WebVitals />,
+  },
+];
+*/

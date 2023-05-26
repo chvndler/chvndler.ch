@@ -1,26 +1,25 @@
-import './app.min.scss'
+import './app.min.scss';
 
-import {siteURL} from '../lib/const'
-import {AppHooks} from './hooks'
-import {AppWrapper, ThemeProvider} from '../components/core'
-import {Header} from '../components/ui/header'
-import {Footer} from '../components/ui/footer'
-import {ColorBar} from '../components/ui/colorbar'
-import type {Metadata} from 'next'
+import { siteURL } from '../lib/const';
+import { AppHooks } from './hooks';
+import { ThemeProvider } from '../context/theme-provider';
+import { AppWrapper, Header, Footer } from '../components/layout';
+import { ColorBar } from '../components/shared';
+import type { Metadata } from 'next';
 
-import {Inter} from 'next/font/google'
+import { Inter } from 'next/font/google';
 
 const inter = Inter({
   style: 'normal',
   subsets: ['latin'],
-})
+});
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.className} bg-bglight font-inter antialiased dark:bg-bgdark`}
-        style={{opacity: 1}}
+        style={{ opacity: 1 }}
       >
         <ThemeProvider>
           <ColorBar />
@@ -31,7 +30,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <AppHooks />
       </body>
     </html>
-  )
+  );
 }
 
 export const metadata: Metadata = {
@@ -60,8 +59,8 @@ export const metadata: Metadata = {
     type: 'website',
   },
   themeColor: [
-    {media: '(prefers-color-scheme: light)', color: '#F9F0F0'},
-    {media: '(prefers-color-scheme: dark)', color: '#111111'},
+    { media: '(prefers-color-scheme: light)', color: '#F9F0F0' },
+    { media: '(prefers-color-scheme: dark)', color: '#111111' },
   ],
   icons: {
     icon: '/favicon.svg',
@@ -84,4 +83,4 @@ export const metadata: Metadata = {
   other: {
     custom: 'none',
   },
-}
+};
