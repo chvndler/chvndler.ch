@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './_scss/fontface.css';
+@import './_scss/prism.css';
+
+:root {
+  --font-archivo: 'Archivo', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-fraktion: 'Fraktion Sans V', sans-serif;
+  --bg-dark: rgba(23, 23, 23, 1);
+  --bg-light: rgba(244, 244, 245, 1);
+  --color-bar: rgba(103, 119, 201, 1);
+}
+
+@layer base {
+  :root {
+    --font-archivo: 'Archivo', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-fraktion: 'Fraktion Sans V', sans-serif;
+    --bg-dark: rgba(23, 23, 23, 1);
+    --bg-light: rgba(244, 244, 245, 1);
+    --color-bar: rgba(103, 119, 201, 1);
+  }
+  .main-header {
+    z-index: 20 !important;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-dark: rgba(244, 244, 245, 1);
+      --bg-light: rgba(23, 23, 23, 1);
+      --color-bar: rgba(235, 254, 188, 1);
+    }
+  }
+}
+
+@layer utilities {
+  .font-variable-semibold {
+    font-variation-settings: 'wght' 575;
+  }
+}
+
+/**
+ * @_scss
+ * top-level css.
+ */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+html.fonts-loaded body {
+  opacity: 1 !important;
+}
+
+body {
+  transition: opacity 0.6s ease-in-out !important;
+}
+
+html.dark body {
+  color: var(--bg-light) !important;
+  background: var(--bg-dark) !important;
+  background-color: var(--bg-dark) !important;
+}
+
+.wrap-layer1 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 100px !important;
+}
+
+.wrap-layer2 {
+  height: 100vh;
+}
+
+.color-bar {
+  z-index: 5 !important;
+  background-color: var(--color-bar) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .color-bar {
+    background-color: var(--dark-color-bar) !important;
+  }
+}
+
+.pre.code {
+  font-family: 'SF Mono', 'Ubuntu Mono', monospace !important;
+}
+
+section.project-src h1,
+section.project-src h2,
+section.project-src h3,
+section.project-src h4 {
+  font-family: var(--font-inter), sans-serif !important;
+}
+
+@layer components {
+  .prose {
+    @apply max-w-prose;
+  }
+
+  .prose > * + * {
+    @apply mt-4;
+  }
+
+  .prose > * + h2,
+  .prose > * + h3,
+  .prose > * + h4 {
+    @apply mt-6 font-inter;
+  }
+
+  .prose h2 {
+    @apply font-variable-semibold;
+  }
+
+  .prose pre[data-language] {
+    @apply py-4 overflow-x-auto text-sm whitespace-pre rounded-md bg-surface-neutral;
+  }
+
+  .prose ul {
+    @apply space-y-1 list-disc pl-7;
+  }
+
+  .prose ol {
+    @apply space-y-1 list-decimal pl-7;
+  }
+
+  .prose blockquote {
+    @apply pl-4 border-l-4;
+  }
+
+  .prose blockquote > * + * {
+    @apply mt-4;
+  }
+
+  .prose table thead th {
+    @apply py-2 font-variable-semibold;
+  }
+
+  .prose div[data-rehype-pretty-code-fragment] .syntax-line {
+    @apply px-4;
+  }
+
+  .prose table {
+    @apply w-full max-w-full;
+  }
+
+  .prose table tbody td {
+    @apply py-2 border-t;
+  }
+}

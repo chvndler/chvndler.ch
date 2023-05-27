@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { compareDesc } from 'date-fns';
 import type { Projects } from '.contentlayer/generated/types';
-import { cn } from '@/lib/utils';
+import { cn } from '../../lib/utils';
 
 type ListProps = {
   projects: Projects[];
@@ -13,7 +13,10 @@ export const FeaturedList = ({ projects }: ListProps) => {
   const sortedProjects = projects.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
 
   const listItems = sortedProjects.map((project) => (
-    <li key={project._id} className=''>
+    <li
+      key={project._id}
+      className='bg-blackA1 hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'
+    >
       <div className='flex flex-row items-center justify-between w-full m-auto'>
         <Link
           href={project.url}
