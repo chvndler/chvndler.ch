@@ -1,6 +1,12 @@
 import { Inter, Archivo, Inter_Tight } from 'next/font/google';
 import localFont from 'next/font/local';
 
+const archivoo = localFont({
+  src: '../../../public/fonts/archivo/Archivo-Variable.ttf',
+  weight: '1 999',
+  style: 'normal',
+});
+
 // variable fonts
 const archivo = Archivo({
   subsets: ['latin', 'latin-ext'],
@@ -20,4 +26,4 @@ const interTight = Inter_Tight({
   variable: '--font-inter-tight',
 });
 
-export { archivo, inter, interTight };
+export { archivo, archivoo, inter, interTight };

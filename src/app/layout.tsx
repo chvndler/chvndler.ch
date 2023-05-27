@@ -1,4 +1,4 @@
-import './app.prod.scss';
+import './app.scss';
 
 import { siteURL } from '../lib/const';
 import { AppHooks } from './hooks';
