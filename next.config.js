@@ -8,6 +8,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  pageExtensions: ['ts', 'tsx', 'mdx'],
   /**
    * eventually transition to this:
    * assetPrefix: isProd ? 'https://cdn.chvndler.ch' : undefined,
