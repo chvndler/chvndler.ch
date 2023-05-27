@@ -1,15 +1,14 @@
-<!-- @format -->
-
 # chvndler.ch
 
 ### **personal site**.
 
 ### my stack
 
-- **Style:** [Stitches](https://stitches.dev/)
+- **Style:** [Tailwindcss](https://tailwindcss.com/)
 - **Back-end:** [Next.js](https://nextjs.org/)
 - **Front-end:** [React](https://reactjs.org/)
-- **3D:** [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/), [@react-three/drei](https://drei.pmnd.rs/), [three.js](https://threejs.org)
+- **3D:** [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/),
+  [@react-three/drei](https://drei.pmnd.rs/), [three.js](https://threejs.org)
 - **Deployment:** [Vercel](https://vercel.com/)
 
 ### running locally
@@ -32,16 +31,42 @@ cd chvndler.ch
 yarn install
 ```
 
-4. Notes
+4. Run locally:
+
+```sh
+yarn dev
+```
 
 ! Don't forget to check `.env.example` !
 
 ---
 
-5. Run locally:
+### Project Structure
 
-```sh
-yarn dev
+```
+Route (app)                                Size     First Load JS
+┌ ○ /                                      227 B           156 kB
+├ ○ /_not-found                            0 B                0 B
+├ ○ /archive                               137 B          80.2 kB
+├ ○ /media                                 178 B          85.9 kB
+├ ○ /projects                              178 B          85.9 kB
+└ ● /projects/[...slug]                    1.97 kB         145 kB
+    ├ /projects/arie
+    ├ /projects/arweave
+    ├ /projects/atelierkit
+    └ /projects/components
++ First Load JS shared by all              80 kB
+  ├ chunks/2443530c-d2aec7c3191112f3.js    50.5 kB
+  ├ chunks/488-373b808392478b82.js         27.6 kB
+  ├ chunks/main-app-075e98ceba500e37.js    216 B
+  └ chunks/webpack-d5f1339de20a6c94.js     1.68 kB
+Route (pages)                              Size     First Load JS
+─ ○ /404                                   181 B            75 kB
++ First Load JS shared by all              74.8 kB
+  ├ chunks/framework-8883d1e9be70c3da.js   45.1 kB
+  ├ chunks/main-6d0c3239fc6bbc8b.js        27.9 kB
+  ├ chunks/pages/_app-b555d5e1eab47959.js  195 B
+  └ chunks/webpack-d5f1339de20a6c94.js     1.68 kB
 ```
 
 ### license
