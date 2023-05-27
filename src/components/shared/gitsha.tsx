@@ -20,12 +20,12 @@ export const CommitSha = () => {
     const commitLink = `https://github.com/${owner}/${slug}/tree/${sha}`;
 
     return (
-      <div className="flex flex-row items-center justify-center gap-x-2">
-        <span className="text-blackA9 dark:text-whiteA7">SHA</span>
-        <span className="h-[13px] w-[13px] text-blackA9 dark:text-whiteA7">
+      <div className='flex flex-row items-center justify-center gap-x-2'>
+        <span className='text-blackA9 dark:text-whiteA7'>SHA</span>
+        <span className='h-[13px] w-[13px] text-blackA9 dark:text-whiteA7'>
           <GitShaIcon />
         </span>
-        <Link href={commitLink} target="_blank" rel="noreferrer noopener">
+        <Link href={commitLink} target='_blank' rel='noreferrer noopener'>
           <span className={cn(`text-[#${shortSha}]`)} style={{ color: `#${shortSha} !important` }}>
             {shortSha}
           </span>

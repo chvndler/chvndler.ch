@@ -49,15 +49,15 @@ const projects = [
 const allProjects = projects;
 
 function ComponentSection({ children }: { children: React.ReactNode }) {
-  return <section className="pt-8">{children}</section>;
+  return <section className='pt-8'>{children}</section>;
 }
 
 export const UIProjectList = () => {
   return (
     <>
-      <section id="proj-sect" className="py-6">
-        <div className="mx-auto w-full overflow-hidden py-6">
-          <p className="mb-2 text-[18px] font-semibold text-cdsbx-600">Projects.</p>
+      <section id='proj-sect' className='py-6'>
+        <div className='mx-auto w-full overflow-hidden py-6'>
+          <p className='text-cdsbx-600 mb-2 text-[18px] font-semibold'>Projects.</p>
           <ListComponent />
         </div>
       </section>
@@ -73,11 +73,11 @@ const ListComponent = () => {
   const listItems = featured.map((project) => (
     <li
       key={project._id}
-      className="duration-400 flex gap-y-1 bg-blackA1 py-2 transition-all ease-out hover:bg-blackA3 dark:bg-whiteA1 dark:hover:bg-whiteA3"
+      className='duration-400 flex gap-y-1 bg-blackA1 py-2 transition-all ease-out hover:bg-blackA3 dark:bg-whiteA1 dark:hover:bg-whiteA3'
     >
       <Link
         href={project.url}
-        className="font-archivo text-lg font-semibold tracking-tight text-blackA10 dark:text-whiteA10"
+        className='font-archivo text-lg font-semibold tracking-tight text-blackA10 dark:text-whiteA10'
       >
         {project.title}
       </Link>
@@ -85,7 +85,7 @@ const ListComponent = () => {
   ));
 
   return (
-    <ul role="list" className="w-full divide-y divide-blackA4 dark:divide-whiteA3 ">
+    <ul role='list' className='w-full divide-y divide-blackA4 dark:divide-whiteA3 '>
       {listItems}
     </ul>
   );

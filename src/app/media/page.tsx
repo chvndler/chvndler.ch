@@ -3,24 +3,24 @@ import Link from 'next/link';
 export default function MediaIndex() {
   return (
     <>
-      <section className="pv-3 py-10">
-        <h3 className="text-zinc8 mb-2 font-inter text-2xl font-normal tracking-tighter">
-          Play<span className="font-semibold">ground</span>.
+      <section className='pv-3 py-10'>
+        <h3 className='text-zinc8 mb-2 font-inter text-2xl font-normal tracking-tighter'>
+          Play<span className='font-semibold'>ground</span>.
         </h3>
       </section>
 
-      <section className="pb-10">
-        <div className="mx-auto -mb-4 flex w-full flex-wrap justify-start">
+      <section className='pb-10'>
+        <div className='mx-auto -mb-4 flex w-full flex-wrap justify-start'>
           {projects.map((project) => (
             <div
               key={project._id}
-              className="w-full bg-blackA1 px-2 shadow-sminner hover:bg-blackA3 dark:bg-whiteA1 dark:hover:bg-whiteA3 sm:w-1/2 md:w-1/2"
+              className='w-full bg-blackA1 px-2 shadow-sminner hover:bg-blackA3 dark:bg-whiteA1 dark:hover:bg-whiteA3 sm:w-1/2 md:w-1/2'
             >
               <>
                 <Link
                   key={project._id}
                   href={project.url}
-                  className="font-archivo text-lg font-semibold tracking-tight text-blackA10 dark:text-whiteA10"
+                  className='font-archivo text-lg font-semibold tracking-tight text-blackA10 dark:text-whiteA10'
                 >
                   {project.title}
                 </Link>

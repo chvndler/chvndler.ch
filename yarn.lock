@@ -21,12 +21,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.20.7, @babel/runtime@npm:^7.21.0":
+"@babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.20.7":
   version: 7.21.5
   resolution: "@babel/runtime@npm:7.21.5"
   dependencies:
     regenerator-runtime: ^0.13.11
   checksum: 358f2779d3187f5c67ad302e8f8d435412925d0b991d133c7d4a7b1ddd5a3fda1b6f34537cb64628dfd96a27ae46df105bed3895b8d754b88cacdded8d1129dd
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.21.0":
+  version: 7.22.3
+  resolution: "@babel/runtime@npm:7.22.3"
+  dependencies:
+    regenerator-runtime: ^0.13.11
+  checksum: 8fc50785ca4cba749fed90bffca7e6fd52d4709755654e95b8d2a945fc034b56fb8c2e8a0183fea7c4abb86bf5fa77678c0ea35163b6920649833d180c34c234
   languageName: node
   linkType: hard
 
@@ -2077,13 +2086,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"boring-avatars@npm:^1.7.0":
-  version: 1.7.0
-  resolution: "boring-avatars@npm:1.7.0"
-  checksum: 5f39a7b3a011ba8651c6bec22c453b42c58c0fc347b3dce5cfea7d4de4208b1296f1fb4efc66ebb598f805124a07c5b8e3b06766f5211e1deb545bbf889230b0
-  languageName: node
-  linkType: hard
-
 "bplist-parser@npm:^0.2.0":
   version: 0.2.0
   resolution: "bplist-parser@npm:0.2.0"
@@ -2320,7 +2322,6 @@ __metadata:
     "@typescript-eslint/parser": ^5.59.6
     "@vercel/analytics": ^1.0.1
     autoprefixer: ^10.4.14
-    boring-avatars: ^1.7.0
     clsx: ^1.2.1
     contentlayer: ^0.3.2
     date-fns: ^2.30.0

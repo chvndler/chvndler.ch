@@ -75,7 +75,7 @@ const TipContent = React.forwardRef<React.ElementRef<typeof TIP.Content>, Conten
       <TIP.Content
         {...props}
         ref={forwardedRef}
-        aria-label="atelier-tip"
+        aria-label='atelier-tip'
         side={side}
         sideOffset={sideOffset}
         align={align}
@@ -92,7 +92,7 @@ const TipContent = React.forwardRef<React.ElementRef<typeof TIP.Content>, Conten
           'bg-B100 dark:bg-B900',
         )}
       >
-        <span className="block text-xs leading-4 text-blackA11 dark:text-whiteA11">{children}</span>
+        <span className='block text-xs leading-4 text-blackA11 dark:text-whiteA11'>{children}</span>
       </TIP.Content>
     );
   },
@@ -149,7 +149,7 @@ export default function Tooltip({
     <>
       {isMobile && (
         <button
-          type="button"
+          type='button'
           className={`${fullWidth ? 'w-full' : 'inline-flex'} sm:hidden`}
           onClick={() => setOpenTooltip(true)}
         >
@@ -159,7 +159,7 @@ export default function Tooltip({
       {openTooltip && isMobile && (
         <Leaflet setShow={setOpenTooltip}>
           {typeof content === 'string' ? (
-            <span className="flex w-full items-center justify-center">{content}</span>
+            <span className='flex w-full items-center justify-center'>{content}</span>
           ) : (
             content
           )}
@@ -168,14 +168,14 @@ export default function Tooltip({
       {isDesktop && (
         <>
           <Tip>
-            <Tip.Trigger className="hidden sm:inline-flex" asChild>
+            <Tip.Trigger className='hidden sm:inline-flex' asChild>
               {children}
             </Tip.Trigger>
 
-            <Tip.Content sideOffset={4} className="animate-slide-up-fade z-30 hidden sm:block">
+            <Tip.Content sideOffset={4} className='animate-slide-up-fade z-30 hidden sm:block'>
               {typeof content === 'string' ? (
-                <div className="p-5">
-                  <span className="">{content}</span>
+                <div className='p-5'>
+                  <span className=''>{content}</span>
                 </div>
               ) : (
                 content

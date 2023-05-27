@@ -35,13 +35,13 @@ export default function Leaflet({
     <AnimatePresence>
       <motion.div
         ref={leafletRef}
-        key="leaflet"
-        className="bg-white group fixed inset-x-0 bottom-0 z-40 w-screen cursor-grab pb-5 active:cursor-grabbing sm:hidden"
+        key='leaflet'
+        className='bg-white group fixed inset-x-0 bottom-0 z-40 w-screen cursor-grab pb-5 active:cursor-grabbing sm:hidden'
         initial={{ y: '100%' }}
         animate={controls}
         exit={{ y: '100%' }}
         transition={transitionProps}
-        drag="y"
+        drag='y'
         dragDirectionLock
         onDragEnd={handleDragEnd}
         dragElastic={{ top: 0, bottom: 1 }}
@@ -50,14 +50,14 @@ export default function Leaflet({
         <div
           className={`rounded-t-4xl border-gray-200 -mb-1 flex h-7 w-full items-center justify-center border-t`}
         >
-          <div className="bg-gray-300 -mr-1 h-1 w-6 rounded-full transition-all group-active:rotate-12" />
-          <div className="bg-gray-300 h-1 w-6 rounded-full transition-all group-active:-rotate-12" />
+          <div className='bg-gray-300 -mr-1 h-1 w-6 rounded-full transition-all group-active:rotate-12' />
+          <div className='bg-gray-300 h-1 w-6 rounded-full transition-all group-active:-rotate-12' />
         </div>
         {children}
       </motion.div>
       <motion.div
-        key="leaflet-backdrop"
-        className="bg-gray-100 fixed inset-0 z-30 bg-opacity-10 backdrop-blur"
+        key='leaflet-backdrop'
+        className='bg-gray-100 fixed inset-0 z-30 bg-opacity-10 backdrop-blur'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}

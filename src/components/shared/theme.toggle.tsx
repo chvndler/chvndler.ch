@@ -27,14 +27,14 @@ function ThemeToggle() {
   return (
     <>
       {isHovering && (
-        <span className="text-gray-400 my-auto mr-1 hidden items-center font-fraktion text-[9px] font-semibold uppercase transition-all duration-150 ease-linear md:inline">
+        <span className='text-gray-400 my-auto mr-1 hidden items-center font-fraktion text-[9px] font-semibold uppercase transition-all duration-150 ease-linear md:inline'>
           {theme === null ? 'System' : theme === 'dark' ? 'Dark' : 'Light'}
         </span>
       )}
 
       <button
-        id="theme-toggle"
-        className="h-auto w-auto bg-transparent text-grayscale-700 transition-colors duration-300 ease-in-out dark:text-grayscale-600"
+        id='theme-toggle'
+        className='h-auto w-auto bg-transparent text-grayscale-700 transition-colors duration-300 ease-in-out dark:text-grayscale-600'
         onClick={(ev) => {
           ev.preventDefault(),
             handleChange(ev as any),
@@ -45,7 +45,7 @@ function ThemeToggle() {
           setIsHovering(false);
         }}
       >
-        <span className="sr-only">Toggle mode</span>
+        <span className='sr-only'>Toggle mode</span>
 
         <span>
           {theme !== 'dark' ? (

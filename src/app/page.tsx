@@ -21,7 +21,15 @@ export default function Index() {
     <>
       <Introduction />
       <Connect />
-      <FeaturedList projects={[allProjects[1], allProjects[2], allProjects[3]]} />
+      <FeaturedList
+        projects={[
+          //..
+          allProjects[1],
+          allProjects[2],
+          allProjects[3],
+          // ...allProjects.slice(1, 4)
+        ]}
+      />
     </>
   );
 }

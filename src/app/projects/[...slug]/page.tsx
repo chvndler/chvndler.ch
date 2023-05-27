@@ -43,10 +43,59 @@ export async function generateStaticParams(): Promise<PostProps['params'][]> {
   }));
 }
 
-function FormattedDate({ post }: { post: Projects }) {
-  const publishedDate = formatDateTime(post.date);
+export default async function PostPage({ params }: PostProps) {
+  const post = await getPostFromParams(params);
 
-  return <>{publishedDate.asRelativeTimeString}</>;
+  if (!post) {
+    notFound();
+  }
+
+  return (
+    <>
+      <article
+        key={post._id}
+        className='text-md prose prose-neutral mb-20 font-archivo font-medium text-blackA11 dark:prose-invert prose-h2:font-archivo prose-h2:text-4xl prose-h2:font-bold prose-h2:tracking-tight prose-h3:text-2xl prose-h3:font-[800] prose-h3:tracking-tight dark:text-whiteA10'
+      >
+        <section>
+          <div className='flex flex-row items-center gap-1 font-fraktion text-xs uppercase'>
+            <FormattedDateString postDate={post} />
+            <ProjectTags pro={post} />
+          </div>
+
+          <div className='mt-4'>
+            <h2 className='prose-h2 font-archivo leading-4 tracking-tight text-blackA11 dark:text-whiteA11'>
+              {post.title}
+            </h2>
+            <p className='text-md font-archivo text-blackA8 dark:text-whiteA8'>
+              {post.description}
+            </p>
+          </div>
+        </section>
+
+        {/**
+         * <!--
+         *
+         * MDX Start..
+         *
+         * --> */}
+
+        <MDX code={post.body.code} />
+
+        <Card />
+      </article>
+    </>
+  );
+}
+
+function FormattedDateString({ postDate }: { postDate: Projects }) {
+  const publishedDate = formatDateTime(postDate.date);
+  // const relativeDate = formatDateTime(postDate.date);
+
+  return (
+    <p className='mr-2 text-left font-archivo text-xs font-semibold text-blackA11 dark:text-whiteA10'>
+      {publishedDate.asString}
+    </p>
+  );
 }
 
 function ProjectTags({ pro }: { pro: Projects }) {
@@ -59,67 +108,42 @@ function ProjectTags({ pro }: { pro: Projects }) {
   );
 }
 
-export default async function PostPage({ params }: PostProps) {
-  const post = await getPostFromParams(params);
-
-  if (!post) {
-    notFound();
-  }
-
+function Card() {
   return (
     <>
-      <article
-        key={post._id}
-        className="text-md prose prose-neutral mb-20 font-archivo font-medium text-grayscale-800 dark:prose-invert prose-h2:font-archivo prose-h2:text-4xl prose-h2:font-[700] prose-h2:tracking-tight prose-h3:text-2xl prose-h3:font-[800] prose-h3:tracking-tight"
-      >
-        <section>
-          <div className="flex flex-row items-center gap-1 font-fraktion text-xs uppercase">
-            <FormattedDate post={post} />
-            <ProjectTags pro={post} />
+      <section>
+        <div className='relative mx-auto w-full items-center py-12'>
+          <div className='grid grid-cols-1'>
+            <div className='mx-auto my-4 w-full rounded-[18px] bg-blackA3 dark:bg-whiteA3'>
+              <div className='flex flex-col gap-y-2 p-6'>
+                <span className='text-sm font-semibold leading-3'>Verification</span>
+                <span className='text-xs font-medium leading-4'>
+                  This entry has been permanently stored on-chain and signed by its creator.
+                </span>
+
+                <div className='btn-group btn-group-vertical mx-auto w-full divide-y divide-blackA6 border border-blackA6'>
+                  <div className='mx-auto w-full py-2 text-left hover:bg-whiteA6'>
+                    <p className='text-left font-fraktion text-[10px] font-semibold uppercase text-grayscale-700'>
+                      arweave ⌝
+                    </p>
+                    <small className='truncate text-left font-fraktion text-[13px] font-[450] text-grayscale-700'>
+                      GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw
+                    </small>
+                  </div>
+                  <div className='mx-auto w-full py-2 text-left hover:bg-whiteA6'>
+                    <p className='text-left font-fraktion text-[10px] font-semibold uppercase text-grayscale-700'>
+                      arweave ⌝
+                    </p>
+                    <small className='truncate text-left font-fraktion text-[13px] font-[450] text-grayscale-700'>
+                      GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div className="mt-4">
-            <h2 className="prose-h2 font-archivo tracking-tight text-grayscale-800 dark:text-grayscale-700">
-              {post.title}
-            </h2>
-            <p className="text-md font-archivo text-grayscale-700 dark:text-grayscale-600">
-              {post.description}
-            </p>
-          </div>
-        </section>
-
-        <MDX code={post.body.code} />
-      </article>
-    </>
-  );
-}
-
-function StatCards() {
-  return (
-    <>
-      <div className="pb-20">
-        <article className="rounded-xl border border-grayscale-400 py-3 dark:border-grayscale-900">
-          <ul className="flex flex-col items-start justify-between gap-2 divide-y divide-grayscale-400 py-2 dark:divide-grayscale-900">
-            <li className="w-full items-start justify-between px-4">
-              <p className="text-left font-fraktion text-[10px] font-semibold uppercase text-grayscale-700">
-                arweave ⌝
-              </p>
-              <small className="truncate text-left font-fraktion text-[13px] font-[450] text-grayscale-700">
-                GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw
-              </small>
-            </li>
-
-            <li className="w-full items-start justify-between px-4">
-              <p className="text-left font-fraktion text-[10px] font-semibold uppercase text-grayscale-700">
-                arweave ⌝
-              </p>
-              <small className="truncate text-left font-fraktion text-[13px] font-[450] text-grayscale-700">
-                GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw
-              </small>
-            </li>
-          </ul>
-        </article>
-      </div>
+        </div>
+      </section>
     </>
   );
 }

@@ -91,9 +91,10 @@ module.exports = {
     },
     extend: {
       backgroundColor: {
-        'surface-action': 'hsl(var(--surface-action))',
-        'surface-neutral': 'hsl(var(--surface-neutral))',
+        'surface-action': 'var(--surface-action)',
+        'surface-neutral': 'var(--surface-neutral)',
         'color-bar': 'var(--color-bar)',
+        'dark-color-bar': 'var(--dark-color-bar)',
       },
       textDecorationColor: {
         underline: 'hsl(var(--underline))',
@@ -103,7 +104,6 @@ module.exports = {
       },
       typography: (theme) => ({
         //..
-        '--tw-prose-body': theme('colors.cdsbx[600]'),
         '--tw-prose-pre-code': theme('colors.hypergrape[700]'),
       }),
     },

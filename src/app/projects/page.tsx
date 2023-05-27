@@ -20,9 +20,9 @@ interface ProjectListProps {
 export default function ProjectsIndex() {
   return (
     <>
-      <section className="pv-3 py-10">
-        <h3 className="text-zinc8 mb-2 font-archivo text-2xl font-normal tracking-tighter">
-          Some of my <span className="font-semibold">work</span>.
+      <section className='pv-3 py-10'>
+        <h3 className='text-zinc8 mb-2 font-archivo text-2xl font-normal tracking-tighter'>
+          Some of my <span className='font-semibold'>work</span>.
         </h3>
       </section>
       <ProjectGrid />
@@ -60,5 +60,5 @@ export default function ProjectsIndex() {
 function FormattedDate({ post }: ProjectListProps) {
   const publishedDate = formatDateTime(post.date);
 
-  return <p className="text-right font-fraktion text-xs font-[460]">{publishedDate.asString}</p>;
+  return <p className='text-right font-fraktion text-xs font-[460]'>{publishedDate.asString}</p>;
 }
