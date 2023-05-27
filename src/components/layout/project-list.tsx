@@ -55,10 +55,12 @@ function ComponentSection({ children }: { children: React.ReactNode }) {
 export const UIProjectList = () => {
   return (
     <>
-      <div className="mx-auto w-full overflow-hidden py-6">
-        <p className="mb-2 text-[18px] font-semibold text-cdsbx-600">Projects.</p>
-        <ListComponent />
-      </div>
+      <section id="proj-sect" className="py-6">
+        <div className="mx-auto w-full overflow-hidden py-6">
+          <p className="mb-2 text-[18px] font-semibold text-cdsbx-600">Projects.</p>
+          <ListComponent />
+        </div>
+      </section>
     </>
   );
 };

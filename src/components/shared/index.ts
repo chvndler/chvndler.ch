@@ -1,3 +1,4 @@
+export { AriePosition } from './arie';
 export { BadgeDefault } from './badge';
 export { Canvas } from './canvas';
 export { ColorBar } from './colorbar';

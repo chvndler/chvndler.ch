@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { Introduction, Connect } from '../components/core';
-import { UIProjectList } from '../components/layout';
+import { FeaturedList } from '../components/layout';
+import { allProjects } from '@/contentlayer/generated';
 
 /*
  * Copyright (C) 2023 @chvndler
@@ -20,7 +21,7 @@ export default function Index() {
     <>
       <Introduction />
       <Connect />
-      <UIProjectList />
+      <FeaturedList projects={[allProjects[1], allProjects[2], allProjects[3]]} />
     </>
   );
 }
