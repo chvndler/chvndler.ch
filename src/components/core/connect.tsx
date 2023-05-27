@@ -1,11 +1,7 @@
 import Link from 'next/link';
+import Tooltip from '../shared/tooltip';
 
 // server
-
-const link = {
-  twitter: 'https://twitter.com/chvndlerch',
-  github: 'https://github.com/chvndler',
-} as const;
 
 export const Connect = () => (
   <div className="flex flex-grow flex-wrap justify-start gap-y-6 py-6 text-left md:mt-0">
@@ -15,14 +11,18 @@ export const Connect = () => (
         {connects.map((connect) => (
           <>
             <li key={connect.key}>
-              <Link
-                key={connect.key}
-                href={connect.url}
-                target={connect.target}
-                className="text-md font-archivo font-semibold lowercase text-grayA10 hover:text-grayA11 dark:text-whiteA10 dark:hover:text-whiteA11 md:text-sm"
-              >
-                {connect.title}
-              </Link>
+              <Tooltip content={connect.tip}>
+                <>
+                  <Link
+                    key={connect.key}
+                    href={connect.url}
+                    target={connect.target}
+                    className="text-md font-archivo font-semibold lowercase text-grayA10 hover:text-grayA11 dark:text-whiteA10 dark:hover:text-whiteA11 md:text-sm"
+                  >
+                    {connect.title}
+                  </Link>
+                </>
+              </Tooltip>
             </li>
           </>
         ))}
@@ -56,18 +56,21 @@ const connects = [
     title: 'Twitter',
     url: 'https://twitter.com/chvndlerch',
     target: '_blank',
+    tip: 'Twitter', // TODO: style some content here.
   },
   {
     key: 'github',
     title: 'GitHub',
     url: 'https://github.com/chvndler',
     target: '_blank',
+    tip: 'GitHub',
   },
   {
     key: 'resume',
     title: 'Resume / cv',
     url: 'https://read.cv/chvndler',
     target: '_blank',
+    tip: 'Resume / cv',
   },
 ];
 

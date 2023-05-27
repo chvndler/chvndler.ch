@@ -1,7 +1,7 @@
 {
   "name": "chvndler.ch",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "personal site",
   "scripts": {
     "dev": "next dev",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@next/mdx": "^13.4.3",
+    "@radix-ui/react-tooltip": "^1.0.6",
     "autoprefixer": "^10.4.14",
     "boring-avatars": "^1.7.0",
     "clsx": "^1.2.1",
