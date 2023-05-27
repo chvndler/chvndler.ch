@@ -1,4 +1,4 @@
-import './app.min.scss';
+import './app.prod.scss';
 
 import { siteURL } from '../lib/const';
 import { AppHooks } from './hooks';
@@ -11,7 +11,7 @@ import { archivo } from './_scss/fonts';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning>
       <body className={cn(`${archivo.className}, font-archivo antialiased`)} style={{ opacity: 1 }}>
         <ThemeProvider>
           <ColorBar />
