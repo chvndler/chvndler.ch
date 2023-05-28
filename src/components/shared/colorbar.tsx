@@ -6,7 +6,7 @@ export const ColorBar = () => {
       id={`color-bar`}
       className={cn(`
         color-bar
-        absolute
+        fixed
         left-0
         right-0
         top-0
@@ -17,3 +17,10 @@ export const ColorBar = () => {
     />
   );
 };
+
+/**
+ *
+ * #536976,#292E49
+ * #003973,#E5E5BE
+ *
+ */

@@ -31,7 +31,7 @@ export const Connect = () => (
       </div>
 
       <div className='w-full space-y-4 md:w-1/2'>
-        <p className='text-cdsbx-600 mb-2 text-[18px] font-semibold'>Misc.</p>
+        <p className='text-cdsbx-600 mb-2 text-[18px] font-semibold'>Other.</p>
         <nav className='mb-10 list-none text-grayA10 underline-offset-4'>
           {profile.map((source) => (
             <>

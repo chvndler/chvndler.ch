@@ -12,11 +12,10 @@ type ListProps = {
 
 export const FeaturedList = ({ projects }: ListProps) => {
   const sortedProjects = projects.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
-
   const listItems = sortedProjects.map((project) => (
     <li
       key={project._id}
-      className='bg-blackA1 hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'
+      className='bg-blackA1 transition-colors duration-300 ease-in-out hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'
     >
       <div className='m-auto flex w-full flex-row items-center justify-between'>
         <Link
@@ -26,7 +25,7 @@ export const FeaturedList = ({ projects }: ListProps) => {
           {project.title}
         </Link>
 
-        <div className='flex flex-row items-center justify-end gap-x-1'>
+        <div key={project.type} className='flex flex-row items-center justify-end gap-x-1'>
           <FormattedDate postDate={project} />
 
           {project.tags.map((tag) => (

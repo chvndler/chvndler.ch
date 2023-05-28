@@ -26,11 +26,14 @@
     --surface-neutral: rgba(31, 31, 31, 1);
     --surface-action: rgba(103, 119, 201, 1);
   }
+  .color-bar {
+    z-index: 5 !important;
+    background-color: var(--color-bar) !important;
+  }
   .main-header {
     z-index: 20 !important;
     -webkit-tap-highlight-color: transparent;
   }
-
   @media (prefers-color-scheme: dark) {
     :root {
       --bg-dark: rgba(244, 244, 245, 1);
@@ -172,15 +175,13 @@ section.project-src h4 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
   width: 100%;
 }
 
 .btn-group > :first-child {
   border-radius: 0;
-  border-bottom-left-radius: 0.75rem;
-  border-top-left-radius: 0.75rem;
+  border-bottom-left-radius: inherit;
+  border-top-left-radius: inherit;
 }
 .btn-group > .btn:not(.btn-active):hover {
   --tw-bg-opacity: 1;
@@ -192,14 +193,14 @@ section.project-src h4 {
 }
 .btn-group > :last-child {
   border-radius: 0;
-  border-bottom-right-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: inherit;
+  border-top-right-radius: inherit;
 }
 .btn-group > :not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 .btn-group > :only-child {
-  border-radius: 0.75rem;
+  border-radius: inherit;
 }
 
 .btn-group-vertical {
@@ -207,19 +208,19 @@ section.project-src h4 {
 }
 .btn-group-vertical > :first-child {
   border-radius: 0;
-  border-top-left-radius: 0.75rem;
-  border-top-right-radius: 0.75rem;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
 }
 .btn-group-vertical > :last-child {
   border-radius: 0;
-  border-bottom-left-radius: 0.75rem;
-  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
 }
 .btn-group-vertical > :not(:first-child):not(:last-child) {
   border-radius: 0;
 }
 .btn-group-vertical > :only-child {
-  border-radius: 0.75rem;
+  border-radius: inherit;
 }
 .btn-group > input[type='radio'] {
   appearance: none;

@@ -121,23 +121,19 @@ function Card() {
                   This entry has been permanently stored on-chain and signed by its creator.
                 </span>
 
-                <div className='btn-group btn-group-vertical mx-auto w-full divide-y divide-blackA6 border border-blackA6'>
-                  <div className='mx-auto w-full py-2 text-left hover:bg-whiteA6'>
-                    <p className='text-left font-fraktion text-[10px] font-semibold uppercase text-grayscale-700'>
-                      arweave ⌝
-                    </p>
-                    <small className='truncate text-left font-fraktion text-[13px] font-[450] text-grayscale-700'>
-                      GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw
-                    </small>
-                  </div>
-                  <div className='mx-auto w-full py-2 text-left hover:bg-whiteA6'>
-                    <p className='text-left font-fraktion text-[10px] font-semibold uppercase text-grayscale-700'>
-                      arweave ⌝
-                    </p>
-                    <small className='truncate text-left font-fraktion text-[13px] font-[450] text-grayscale-700'>
-                      GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw
-                    </small>
-                  </div>
+                <div className='btn-group btn-group-vertical mx-auto mt-4 flex w-full flex-col divide-y divide-blackA6 rounded-lg border border-blackA6 dark:divide-whiteA6 dark:border-whiteA6'>
+                  <TicketItem
+                    title={'arweave ⌝'}
+                    address={'GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw'}
+                  />
+                  <TicketItem
+                    title={'address ⌝'}
+                    address={'GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw'}
+                  />
+                  <TicketItem
+                    title={'digest ⌝'}
+                    address={'GjssNdA6XK7VYynkvwDem3KYwPACSU9nDWpR5rei3hw'}
+                  />
                 </div>
               </div>
             </div>
@@ -145,5 +141,24 @@ function Card() {
         </div>
       </section>
     </>
+  );
+}
+
+function TicketItem({ title, address }: { title: string; address: string }) {
+  return (
+    <div className='mx-auto flex h-auto w-full flex-col px-4 py-1 text-left hover:bg-blackA6 dark:hover:bg-whiteA6'>
+      <div className='py-[2px]'>
+        <span className='w-full text-left font-archivo text-[10px] font-semibold uppercase leading-3 text-grayscale-700'>
+          {/* arweave ⌝ */}
+
+          {title}
+        </span>
+      </div>
+      <div className='py-[2px]'>
+        <span className='wrap w-full truncate text-left font-archivo text-xs font-medium leading-3 text-grayscale-700'>
+          {address}
+        </span>
+      </div>
+    </div>
   );
 }
