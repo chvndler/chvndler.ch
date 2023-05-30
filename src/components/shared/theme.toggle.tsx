@@ -34,15 +34,15 @@ export default function ThemeSwitch() {
 
       <button
         id='theme-toggle'
-        className='w-auto h-auto transition-colors duration-300 ease-in-out bg-transparent text-grayscale-700 dark:text-grayscale-600'
+        className='h-auto w-auto bg-transparent text-grayscale-700 transition-colors duration-300 ease-in-out dark:text-grayscale-600'
+        onMouseEnter={() => setIsHovering(true)}
+        onMouseLeave={() => {
+          setIsHovering(false);
+        }}
         onClick={(ev) => {
           ev.preventDefault(),
             handleChange(ev as any),
             setTheme(theme === 'light' ? 'dark' : 'light');
-        }}
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => {
-          setIsHovering(false);
         }}
       >
         <span className='sr-only'>Toggle mode</span>

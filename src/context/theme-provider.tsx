@@ -20,7 +20,7 @@ export function ThemeProvider({ children, ...props }: ProviderProps) {
   return (
     <KitProvider
       {...props}
-      defaultTheme={'system'}
+      defaultTheme={'light'}
       attribute='class'
       enableSystem
       disableTransitionOnChange
