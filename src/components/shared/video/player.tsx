@@ -12,7 +12,7 @@ type MuxVideoPlayerProps = {
   metaTitle?: string;
 } & Omit<MuxPlayerProps, 'playbackId' | 'poster'>;
 
-const domain = 'video.chvndler.ch';
+// const domain = 'video.chvndler.ch';
 
 export default function MuxVideo({ id, poster, metaId, metaTitle, ...rest }: MuxVideoPlayerProps) {
   const [isMounted, setIsMounted] = useState(false);
@@ -32,7 +32,7 @@ export default function MuxVideo({ id, poster, metaId, metaTitle, ...rest }: Mux
         secondaryColor='transparent'
         autoPlay={false}
         streamType='on-demand'
-        customDomain={domain}
+        // customDomain={domain}
         playbackId={id}
         poster={poster}
         title={rest.title || '© Copyright CDC®'}

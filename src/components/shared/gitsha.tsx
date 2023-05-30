@@ -21,7 +21,7 @@ export const CommitSha = () => {
 
     return (
       <div className='flex flex-row items-center justify-center gap-x-2'>
-        <span className='text-blackA9 dark:text-whiteA7'>SHA</span>
+        <span className='text-carbon-500 dark:text-carbon-400'>SHA</span>
         <span className='h-[13px] w-[13px] text-blackA9 dark:text-whiteA7'>
           <GitShaIcon />
         </span>

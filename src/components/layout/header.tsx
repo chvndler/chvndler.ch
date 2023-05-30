@@ -6,7 +6,7 @@ import ThemeSwitch from '../shared/theme.toggle';
 
 const navigation = [
   { name: 'Projects', href: '/projects', current: false },
-  { name: 'Archive', href: '/archive', current: false },
+  { name: 'Media', href: '/media', current: false },
 ];
 
 export const Header = () => (
@@ -25,7 +25,7 @@ export const Header = () => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className='duration-400 font-uncut ml-2 text-[15px] font-[600] leading-[20px] text-blackA11 transition-colors ease-in-out hover:text-blackA9 dark:text-whiteA11 dark:hover:text-whiteA9'
+                    className='duration-400 font-uncut ml-2 text-[15px] font-[600] leading-[20px] text-carbon-500 transition-colors ease-in-out hover:text-carbon-700 dark:text-carbon-400 dark:hover:text-carbon-600'
                     aria-current='page'
                   >
                     {item.name}

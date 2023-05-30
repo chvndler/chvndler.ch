@@ -10,10 +10,10 @@ export const Introduction = () => (
     <div className='mx-auto flex flex-col items-center py-6'>
       <div className='prose-blue mx-auto flex w-full flex-col text-left'>
         <div className='mx-auto w-full'>
-          <h3 className='font-archivo text-[22px] font-semibold leading-10 text-grey-700 dark:text-grey-200'>
+          <h3 className='font-archivo text-[20px] font-semibold leading-10 tracking-tight text-carbon-700 dark:text-carbon-200'>
             Chandler Chappell.
           </h3>
-          <p className='text-md max-w-lg font-archivo font-medium leading-6 text-grey-500 dark:text-grey-500'>
+          <p className='text-md max-w-lg font-archivo font-medium leading-6 text-carbon-500 dark:text-carbon-500'>
             Creating cool and taking notes. Enjoying the internet and open-source, the focus in the
             moment is silencing the noise within design culture, with{' '}
             <Link
