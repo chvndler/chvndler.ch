@@ -102,7 +102,7 @@ function ProjectTags({ pro }: { pro: Projects }) {
   return (
     <>
       {pro.tags.map((tag, index) => (
-        <BadgeDefault key={pro._id}>{pro.tags.length - 1 === index ? tag : `${tag} `}</BadgeDefault>
+        <BadgeDefault key={pro._id}>{pro.tags.length - 1 === index ? tag : `${tag}`}</BadgeDefault>
       ))}
     </>
   );
