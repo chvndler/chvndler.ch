@@ -1,6 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 
+/**
+ *
+ * this source code is for the project index page.
+ * ./src/app/projects/[index]
+ */
+
 import { compareDesc } from 'date-fns';
 import type { Projects } from '.contentlayer/generated/types';
 import { formatDateTime } from '../../lib/hooks/use-date-time';
@@ -15,12 +21,12 @@ export const ProjectList = ({ projects }: ListProps) => {
   const listItems = sortedProjects.map((project) => (
     <li
       key={project._id}
-      className='bg-blackA1 transition-colors duration-300 ease-in-out hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'
+      className='transition-colors duration-300 ease-in-out bg-blackA1 hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'
     >
-      <div className='m-auto flex w-full flex-row items-center justify-between'>
+      <div key={project._id} className='flex flex-row items-center justify-between w-full m-auto'>
         <Link
           href={project.url}
-          className='text-md items-center justify-start py-2 font-archivo font-semibold capitalize tracking-tight text-blackA10 dark:text-whiteA10 md:text-lg'
+          className='items-center justify-start py-2 font-semibold tracking-tight text-md font-archivo text-grey-500 hover:text-grey-700 dark:hover:text-grey-300 md:text-lg'
         >
           {project.title}
         </Link>
@@ -42,14 +48,20 @@ export const ProjectList = ({ projects }: ListProps) => {
   ));
 
   return (
-    <section id='proj-sect' className='py-6'>
-      <div className='mx-auto w-full overflow-hidden py-6'>
-        <p className='text-18 text-cdsbx-600 mb-2 font-semibold'>Projects.</p>
-        <ul className='grid grid-cols-1 items-center divide-y divide-blackA6 dark:divide-whiteA4'>
-          {listItems}
-        </ul>
-      </div>
-    </section>
+    <>
+      <section className='py-10 pv-3'>
+        <h3 className='mb-2 text-2xl font-normal tracking-tighter font-archivo text-grey-600 dark:text-grey-300'>
+          Some of my <span className='font-bold'>work</span>.
+        </h3>
+      </section>
+      <section id='proj-sect' className='py-6'>
+        <div className='w-full py-6 mx-auto overflow-hidden'>
+          <ul className='grid items-center grid-cols-1 divide-y divide-blackA6 dark:divide-whiteA4'>
+            {listItems}
+          </ul>
+        </div>
+      </section>
+    </>
   );
 };
 

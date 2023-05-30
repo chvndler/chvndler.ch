@@ -18,9 +18,9 @@ export const Footer = () => (
         </span>
       </div>
 
-      <div className='grow text-right font-fraktion text-[13px] font-[680] tracking-wide text-blackA9 dark:text-whiteA7'>
+      <div className='grow text-right font-archivo text-[13px] font-semibold text-grey-500 hover:text-grey-700 dark:text-grey-400 dark:hover:text-grey-600'>
         <Link target='_blank' href='https://twitter.com/chvndlerch'>
-          ( @chvndlerch )
+          @chvndlerch
         </Link>
       </div>
     </div>

@@ -15,12 +15,12 @@ export const FeaturedList = ({ projects }: ListProps) => {
   const listItems = sortedProjects.map((project) => (
     <li
       key={project._id}
-      className='bg-blackA1 transition-colors duration-300 ease-in-out hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'
+      className='transition-colors duration-300 ease-in-out bg-blackA1 hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'
     >
-      <div className='m-auto flex w-full flex-row items-center justify-between'>
+      <div className='flex flex-row items-center justify-between w-full m-auto'>
         <Link
           href={project.url}
-          className='text-md items-center justify-start py-2 font-archivo font-semibold capitalize tracking-tight text-blackA10 dark:text-whiteA10 md:text-lg'
+          className='items-center justify-start py-2 font-semibold tracking-tight text-md font-archivo text-grey-500 hover:text-grey-700 dark:hover:text-grey-300 md:text-lg'
         >
           {project.title}
         </Link>
@@ -43,9 +43,9 @@ export const FeaturedList = ({ projects }: ListProps) => {
 
   return (
     <section id='proj-sect' className='py-6'>
-      <div className='mx-auto w-full overflow-hidden py-6'>
-        <p className='text-18 text-cdsbx-600 mb-2 font-semibold'>Projects.</p>
-        <ul className='grid grid-cols-1 items-center divide-y divide-blackA6 dark:divide-whiteA4'>
+      <div className='w-full py-6 mx-auto overflow-hidden'>
+        <p className='mb-2 font-semibold text-18 text-cdsbx-600'>Projects.</p>
+        <ul className='grid items-center grid-cols-1 divide-y divide-blackA6 dark:divide-whiteA4'>
           {listItems}
         </ul>
       </div>
@@ -70,7 +70,7 @@ function FormattedDate({ postDate }: { postDate: Projects }) {
   const publishedDate = formatDateTime(postDate.date);
 
   return (
-    <p className='mr-2 text-right font-archivo text-[10px] font-semibold uppercase text-blackA10 dark:text-whiteA8'>
+    <p className='mr-2 text-right font-archivo text-[10px] font-semibold uppercase text-grey-400 dark:text-grey-500'>
       {publishedDate.asString}
     </p>
   );

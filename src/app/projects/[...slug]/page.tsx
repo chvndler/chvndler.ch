@@ -1,8 +1,10 @@
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { allProjects } from 'contentlayer/generated';
 import type { Metadata } from 'next';
 import type { Projects } from 'contentlayer/generated';
 
+import RouterPrev from '../../../components/shared/router.back';
 import { formatDateTime } from '../../../lib/hooks/use-date-time';
 import { MDX } from '../../../components/core';
 import { BadgeDefault } from '../../../components/shared/badge';
@@ -57,6 +59,10 @@ export default async function PostPage({ params }: PostProps) {
         className='text-md prose prose-neutral mb-20 font-archivo font-medium text-blackA11 dark:prose-invert prose-h2:font-archivo prose-h2:text-4xl prose-h2:font-bold prose-h2:tracking-tight prose-h3:text-2xl prose-h3:font-[800] prose-h3:tracking-tight dark:text-whiteA10'
       >
         <section>
+          <Link href=''>
+            <RouterPrev />
+          </Link>
+
           <div className='flex flex-row items-center gap-1 font-fraktion text-xs uppercase'>
             <FormattedDateString postDate={post} />
             <ProjectTags pro={post} />

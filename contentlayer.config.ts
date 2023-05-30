@@ -61,12 +61,29 @@ export const Projects = defineDocumentType(() => ({
       type: 'date',
       required: true,
     },
+    /**
+     *
+     * key - the key, label, or order of the post.
+     */
+    key: {
+      type: 'string',
+      required: false,
+      description: 'The key, label, or order of the post',
+    },
+    /**
+     *
+     * tags - a list of keywords that relate to the post.
+     */
     tags: {
       type: 'list',
       of: { type: 'string' },
       description: 'A list of keywords that relate to the post',
       required: true,
     },
+    /**
+     *
+     * image - the main image for the post.
+     */
     image: {
       type: 'string',
       required: false,

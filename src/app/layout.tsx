@@ -5,7 +5,6 @@ import { cn } from '../lib/utils';
 import { AppHooks } from './hooks';
 import { ThemeProvider } from '../context/theme-provider';
 import { AppWrapper, Header, Footer } from '../components/layout';
-import { ColorBar } from '../components/shared';
 import { archivo } from './_scss/fonts';
 
 import type { Metadata } from 'next';
@@ -15,7 +14,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en' suppressHydrationWarning>
       <body className={cn(`${archivo.className}, font-archivo antialiased`)} style={{ opacity: 1 }}>
         <ThemeProvider>
-          <ColorBar />
           <Header />
           <AppWrapper>{children}</AppWrapper>
           <Footer />
