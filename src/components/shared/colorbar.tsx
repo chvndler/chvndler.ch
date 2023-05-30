@@ -1,10 +1,9 @@
 import { cn } from '../../lib/utils';
 
-export const ColorBar = () => {
-  return (
-    <div
-      id={`color-bar`}
-      className={cn(`
+export const ColorBar = () => (
+  <div
+    id={`color-bar`}
+    className={cn(`
         color-bar
         fixed
         left-0
@@ -14,9 +13,8 @@ export const ColorBar = () => {
         w-full
         bg-color-bar
       `)}
-    />
-  );
-};
+  />
+);
 
 /**
  *

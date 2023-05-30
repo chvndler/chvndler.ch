@@ -177,7 +177,6 @@ section.project-src h4 {
   flex-wrap: wrap;
   width: 100%;
 }
-
 .btn-group > :first-child {
   border-radius: 0;
   border-bottom-left-radius: inherit;
@@ -202,7 +201,6 @@ section.project-src h4 {
 .btn-group > :only-child {
   border-radius: inherit;
 }
-
 .btn-group-vertical {
   flex-direction: column;
 }
@@ -235,70 +233,4 @@ section.project-src h4 {
 .btn-group > input[type='radio']:checked.btn {
   --tw-bg-opacity: 1;
   background-color: rgb(var(--gray-5) / var(--tw-bg-opacity));
-}
-.btn-group-rounded > :first-child {
-  border-radius: 0;
-  border-bottom-left-radius: 9999px;
-  border-top-left-radius: 9999px;
-}
-.btn-group-rounded > :last-child {
-  border-radius: 0;
-  border-bottom-right-radius: 9999px;
-  border-top-right-radius: 9999px;
-}
-.btn-group-rounded.btn-group-vertical > :first-child {
-  border-radius: 0;
-  border-top-left-radius: 9999px;
-  border-top-right-radius: 9999px;
-}
-.btn-group-rounded.btn-group-vertical > :last-child {
-  border-radius: 0;
-  border-bottom-left-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-}
-
-.btn {
-  --tw-bg-opacity: 1;
-  --tw-text-opacity: 1;
-  align-items: center;
-  background-color: rgb(var(--gray-3) / var(--tw-bg-opacity));
-  border-radius: 0.75rem;
-  color: rgb(var(--content1) / var(--tw-text-opacity));
-  cursor: pointer;
-  display: inline-flex;
-  font-size: 0.875rem;
-  font-weight: 500;
-  height: 2.5rem;
-  justify-content: center;
-  line-height: 1.25rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  text-align: center;
-  transition-duration: 0.15s;
-  transition-property: color, transform, background-color, border-color;
-  transition-timing-function: ease-in;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  will-change: transform;
-}
-.btn:focus {
-  outline-width: 2px;
-}
-.btn:focus-visible {
-  outline-color: rgb(var(--gray-6));
-  outline-offset: 2px;
-  outline-style: solid;
-}
-.btn:active {
-  --tw-scale-x: 0.97;
-  --tw-scale-y: 0.97;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))
-    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
-    scaleY(var(--tw-scale-y));
-}
-.btn:where(.btn-primary, .btn-secondary, .btn-success, .btn-error, .btn-warning) {
-  --tw-text-opacity: 1;
-  border-style: none;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
