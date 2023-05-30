@@ -1,4 +1,4 @@
-import './app.scss';
+import './index.scss';
 
 import { siteURL } from '../lib/const';
 import { cn } from '../lib/utils';
@@ -12,7 +12,7 @@ import type { Metadata } from 'next';
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={cn(`${archivo.className}, font-archivo antialiased`)} style={{ opacity: 1 }}>
+      <body className={cn(`${archivo.className}, font-archivo antialiased`)} style={{ opacity: 0 }}>
         <ThemeProvider>
           <Header />
           <AppWrapper>{children}</AppWrapper>

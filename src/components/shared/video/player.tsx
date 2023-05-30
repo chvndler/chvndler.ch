@@ -22,7 +22,7 @@ export default function MuxVideo({ id, poster, ...rest }: MuxVideoPlayerProps) {
   return (
     <MuxPlayer
       {...rest}
-      className='w-full h-full rounded-md shadow-md'
+      className='z-0 w-full h-full rounded-md shadow-md'
       theme='minimal'
       autoPlay={false}
       streamType='on-demand'

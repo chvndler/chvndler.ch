@@ -1,0 +1,102 @@
+/**
+ * One Dark theme for prism.js
+ * Based on Atom's One Dark theme: https://github.com/atom/atom/tree/master/packages/one-dark-syntax
+ */
+
+html.dark div[data-theme='light'],
+html.dark pre[data-theme='light'],
+html.dark code[data-theme='light'] {
+  display: none;
+}
+
+html.light div[data-theme='dark'],
+html.light pre[data-theme='dark'],
+html.light code[data-theme='dark'] {
+  display: none;
+}
+
+.wrap-layer1 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 100px !important;
+}
+
+.wrap-layer2 {
+  height: 100vh;
+}
+
+mux-player {
+  aspect-ratio: 16 / 9;
+}
+
+mux-video > video {
+  border-radius: 1rem !important;
+}
+
+/**
+  * @_rippleUI CSS.
+  */
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.btn-group > :first-child {
+  border-radius: 0;
+  border-bottom-left-radius: inherit;
+  border-top-left-radius: inherit;
+}
+.btn-group > .btn:not(.btn-active):hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--gray-4) / var(--tw-bg-opacity));
+}
+.btn-group > .btn:not(.btn-active):active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--gray-5) / var(--tw-bg-opacity));
+}
+.btn-group > :last-child {
+  border-radius: 0;
+  border-bottom-right-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.btn-group > :not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.btn-group > :only-child {
+  border-radius: inherit;
+}
+.btn-group-vertical {
+  flex-direction: column;
+}
+.btn-group-vertical > :first-child {
+  border-radius: 0;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.btn-group-vertical > :last-child {
+  border-radius: 0;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.btn-group-vertical > :not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.btn-group-vertical > :only-child {
+  border-radius: inherit;
+}
+.btn-group > input[type='radio'] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.btn-group > input[type='radio']:after {
+  --tw-content: attr(data-content);
+  content: var(--tw-content);
+}
+.btn-group > .btn-active,
+.btn-group > input[type='radio']:checked.btn {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--gray-5) / var(--tw-bg-opacity));
+}
