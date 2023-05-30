@@ -78,15 +78,15 @@ const connects = [
 
 const profile = [
   {
-    key: 'web',
-    title: 'Archive',
-    url: '/projects',
-    target: '_blank',
+    key: 'media',
+    title: 'Film Projects',
+    url: '/media',
+    target: '_self',
   },
   {
-    key: 'media',
-    title: 'Other',
-    url: '/media',
-    target: '_blank',
+    key: 'archive',
+    title: 'Archive',
+    url: '/archive',
+    target: '_self',
   },
 ];

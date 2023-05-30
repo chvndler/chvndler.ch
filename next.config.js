@@ -16,7 +16,7 @@ const nextConfig = {
    */
   images: {
     formats: ['image/avif', 'image/webp'],
-    domains: ['*.chvndler.ch', 'pbs.twimg.com', 'source.boringavatars.com'],
+    domains: ['*.chvndler.ch', 'pbs.twimg.com', 'cdn-chvndler.s3.us-east-1.amazonaws.com'],
   },
   experimental: {
     appDir: true,
@@ -29,7 +29,7 @@ const ContentSecurityPolicy = `
     script-src 'self' 'unsafe-eval' 'unsafe-inline' *.chvndler.ch api.chvndler.ch *.spotify.com vitals.vercel-insights.com stream.mux cdn.usefathom.com *.usefathom.com *.mux.com;
     child-src *.chvndler.ch api.chvndler.ch *.youtube.com *.google.com vitals.vercel-insights.com *.twitter.com stream.mux image.mux.com cdn.usefathom.com *.usefathom.com;
     style-src 'self' 'unsafe-inline' *.chvndler.ch api.chvndler.ch *.mux.com vitals.vercel-insights.com;
-    img-src * blob: data: *.chvndler.ch api.chvndler.ch imagedelivery.net chvn.me image.mux.com vitals.vercel-insights.com;
+    img-src * blob: data: *.chvndler.ch api.chvndler.ch imagedelivery.net chvn.me cdn-chvndler.s3.us-east-1.amazonaws.com image.mux.com vitals.vercel-insights.com;
     media-src data: *.chvndler.ch api.chvndler.ch *.scdn.co stream.mux imagedelivery.net chvn.me image.mux.com *.mux.com cdn.usefathom.com *.usefathom.com vitals.vercel-insights.com;
     connect-src data: * *.chvndler.ch api.chvndler.ch vitals.vercel-insights.com *.usefathom.com;
     font-src 'self';
