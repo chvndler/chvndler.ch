@@ -2,7 +2,7 @@ export const films = [
   {
     title: '(nineteen) film reel.',
     id: 'QIknhH4mVuQiVYZdaObY4gFZOGSxJOCKTSwu02JemdAs',
-    poster: 'https://cdn.chvndler.ch/assets/img/reel.jpg',
+    poster: 'https://cdn.chvndler.ch/assets/img/film.reel.jpg',
     name: '2019 Film Reel.',
   },
   {
@@ -14,7 +14,7 @@ export const films = [
   {
     title: 'aquaman. (official music video)',
     id: 'Lr2BtEpVee015QBnDGPJzGuXfxBlujKXp9Q3mkkRYnEo',
-    poster: 'https://cdn.chvndler.ch/assets/img/aqua2.jpg',
+    poster: 'https://cdn.chvndler.ch/assets/img/aqua.jpg',
     name: 'Aquaman ft. Chris Buxton - Pharro (Official Music Video)',
   },
   {
@@ -26,7 +26,7 @@ export const films = [
   {
     title: 'atleast i told the truth.',
     id: 'AgJIkK2RpFPQ183up02vQjizlfTcQeV2Tv8RXFvNpWQo',
-    poster: 'https://cdn.chvndler.ch/assets/img/ph.jpg',
+    poster: 'https://cdn.chvndler.ch/assets/img/misc.jpg',
     name: 'atleast i told the truth.',
   },
   {
