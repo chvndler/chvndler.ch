@@ -28,6 +28,35 @@ html.light code[data-theme='dark'] {
 
 mux-player {
   aspect-ratio: 16 / 9;
+
+  /**
+    * active..
+    *
+    * --bottom-play-button: none;
+    * --play-button: none;
+    * --airplay-button: none;
+    * --pip-button: none;
+    */
+
+  --controls-background: blue;
+
+  /**
+    * inactive..
+    */
+  --loading-indicator: none;
+  --center-controls: none;
+  --dialog: none;
+  --media-object-fit: cover;
+  --live-button: none;
+  --seek-backward-button: none;
+  --seek-forward-button: none;
+  --captions-button: none;
+  --fullscreen-button: none;
+  --cast-button: none;
+  --playback-rate-button: none;
+  --mute-button: none;
+  --time-range: none;
+  --duration-display: none;
 }
 
 mux-video > video {

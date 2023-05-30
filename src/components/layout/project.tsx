@@ -21,12 +21,12 @@ export const ProjectList = ({ projects }: ListProps) => {
   const listItems = sortedProjects.map((project) => (
     <li
       key={project._id}
-      className='transition-colors duration-300 ease-in-out bg-blackA1 hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'
+      className='bg-blackA1 transition-colors duration-300 ease-in-out hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'
     >
-      <div key={project._id} className='flex flex-row items-center justify-between w-full m-auto'>
+      <div key={project._id} className='m-auto flex w-full flex-row items-center justify-between'>
         <Link
           href={project.url}
-          className='items-center justify-start py-2 font-semibold tracking-tight text-md font-archivo text-grey-500 hover:text-grey-700 dark:hover:text-grey-300 md:text-lg'
+          className='text-md items-center justify-start py-2 font-archivo font-semibold tracking-tight text-grey-500 hover:text-grey-700 dark:hover:text-grey-300 md:text-lg'
         >
           {project.title}
         </Link>
@@ -49,14 +49,9 @@ export const ProjectList = ({ projects }: ListProps) => {
 
   return (
     <>
-      <section className='py-10 pv-3'>
-        <h3 className='mb-2 text-2xl font-normal tracking-tighter font-archivo text-grey-600 dark:text-grey-300'>
-          Some of my <span className='font-bold'>work</span>.
-        </h3>
-      </section>
       <section id='proj-sect' className='py-6'>
-        <div className='w-full py-6 mx-auto overflow-hidden'>
-          <ul className='grid items-center grid-cols-1 divide-y divide-blackA6 dark:divide-whiteA4'>
+        <div className='mx-auto w-full overflow-hidden py-6'>
+          <ul className='grid grid-cols-1 items-center divide-y divide-blackA6 dark:divide-whiteA4'>
             {listItems}
           </ul>
         </div>

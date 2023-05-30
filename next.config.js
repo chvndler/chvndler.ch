@@ -30,7 +30,7 @@ const ContentSecurityPolicy = `
     child-src *.chvndler.ch api.chvndler.ch *.google.com vitals.vercel-insights.com *.twitter.com stream.mux image.mux.com cdn.usefathom.com *.usefathom.com;
     style-src 'self' 'unsafe-inline' *.chvndler.ch api.chvndler.ch *.mux.com vitals.vercel-insights.com;
     img-src * blob: data: *.chvndler.ch api.chvndler.ch imagedelivery.net chvn.me cdn.chvndler.ch image.mux.com vitals.vercel-insights.com;
-    media-src data: *.chvndler.ch api.chvndler.ch *.scdn.co stream.mux imagedelivery.net chvn.me cdn.chvndler.ch image.mux.com *.mux.com cdn.usefathom.com *.usefathom.com vitals.vercel-insights.com;
+    media-src data: *.chvndler.ch api.chvndler.ch *.scdn.co stream.mux chvn.me cdn.chvndler.ch stream.video.chvndler.com *.mux.com vitals.vercel-insights.com;
     connect-src data: * *.chvndler.ch api.chvndler.ch cdn.chvndler.ch vitals.vercel-insights.com *.usefathom.com;
     font-src 'self';
 `;
