@@ -20,15 +20,11 @@ export default function ThemeSwitch() {
     return null;
   }
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setTheme(e.target.value);
-  };
-
   return (
     <>
       {isHovering && (
         <span className='text-gray-400 my-auto mr-1 hidden items-center font-fraktion text-[9px] font-semibold uppercase transition-all duration-150 ease-linear md:inline'>
-          {theme === null ? 'System' : theme === 'dark' ? 'Dark' : 'Light'}
+          {theme === null ? 'Theme' : theme === 'dark' ? 'Dark' : 'Light'}
         </span>
       )}
 
@@ -40,9 +36,7 @@ export default function ThemeSwitch() {
           setIsHovering(false);
         }}
         onClick={(ev) => {
-          ev.preventDefault(),
-            handleChange(ev as any),
-            setTheme(theme === 'light' ? 'dark' : 'light');
+          ev.preventDefault(), setTheme(theme === 'light' ? 'dark' : 'light');
         }}
       >
         <span className='sr-only'>Toggle mode</span>
