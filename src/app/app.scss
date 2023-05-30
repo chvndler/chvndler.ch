@@ -79,6 +79,10 @@ html.dark body {
   background-color: var(--bg-dark) !important;
 }
 
+mux-player {
+  aspect-ratio: 16 / 9;
+}
+
 .wrap-layer1 {
   display: flex;
   flex-direction: column;

@@ -1,4 +1,4 @@
-import './app.css';
+import './app.scss';
 
 import { siteURL } from '../lib/const';
 import { cn } from '../lib/utils';
