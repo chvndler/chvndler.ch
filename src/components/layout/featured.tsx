@@ -44,7 +44,7 @@ export const FeaturedList = ({ projects }: ListProps) => {
   return (
     <section id='proj-sect' className='py-6'>
       <div className='mx-auto w-full overflow-hidden py-6'>
-        <p className='mb-2 text-[18px] font-semibold text-grey-600'>Projects.</p>
+        <p className='mb-2 text-[18px] font-semibold text-grey-600 dark:text-grey-400'>Projects.</p>
         <ul className='grid grid-cols-1 items-center divide-y divide-blackA6 dark:divide-whiteA4'>
           {listItems}
         </ul>
