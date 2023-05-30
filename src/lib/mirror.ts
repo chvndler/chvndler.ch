@@ -46,7 +46,7 @@ export async function getTransactionData(id: string) {
   const json = JSON.parse(data);
   return json;
 }
-
+/*
 export const getMirrorPostsByContributor = async (address: string, limit: number) => {
   // get the transaction ids for the addy
   const ids = await getTxnIds(address, limit);
@@ -62,6 +62,7 @@ export const getMirrorPostsByContributor = async (address: string, limit: number
   const posts: any[] = Object.values(uniquePosts);
   return posts as MirrorPost[];
 };
+
 
 export const getMirrorPostByDigest = async (digest: string, limit: number) => {
   // get the transaction ids for the addy
@@ -79,7 +80,7 @@ export const getMirrorPostByDigest = async (digest: string, limit: number) => {
   return posts as MirrorPost[];
 };
 
-
+*/
 /**
  *
  *
@@ -97,6 +98,8 @@ export const getMirrorPostByDigest = async (digest: string, limit: number) => {
  *
  *
  */
+
+/*
 
 export const getTxnIds = async (address: string, limit: number) => {
   const endpoint = 'https://arweave.net/graphql';
@@ -173,3 +176,5 @@ export const getTxnIdsByDigest = async (digest: string, limit: number) => {
 
   return ids;
 };
+
+*/
