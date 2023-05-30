@@ -6,4 +6,3 @@ export { CommitSha } from './gitsha';
 export { Logo } from './logo';
 export { Space, SpaceLarge } from './space';
 export { Tip } from './tooltip';
-export { ThemeSwitch } from './theme.toggle';

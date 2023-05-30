@@ -6,7 +6,7 @@ import { useTheme } from 'next-themes';
 import { SunFilled } from '../shared/svg/sun';
 import { MoonOutlined } from '../shared/svg/moon';
 
-function ThemeToggle() {
+export default function ThemeSwitch() {
   const [mounted, setMounted] = React.useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -34,7 +34,7 @@ function ThemeToggle() {
 
       <button
         id='theme-toggle'
-        className='h-auto w-auto bg-transparent text-grayscale-700 transition-colors duration-300 ease-in-out dark:text-grayscale-600'
+        className='w-auto h-auto transition-colors duration-300 ease-in-out bg-transparent text-grayscale-700 dark:text-grayscale-600'
         onClick={(ev) => {
           ev.preventDefault(),
             handleChange(ev as any),
@@ -62,6 +62,3 @@ function ThemeToggle() {
     </>
   );
 }
-
-const ThemeSwitch = ThemeToggle;
-export { ThemeSwitch };
