@@ -1,13 +1,14 @@
 import './app.css';
 
 import { siteURL } from '../lib/const';
+import { cn } from '../lib/utils';
 import { AppHooks } from './hooks';
 import { ThemeProvider } from '../context/theme-provider';
 import { AppWrapper, Header, Footer } from '../components/layout';
 import { ColorBar } from '../components/shared';
-import type { Metadata } from 'next';
-import { cn } from '../lib/utils';
 import { archivo } from './_scss/fonts';
+
+import type { Metadata } from 'next';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
