@@ -10,15 +10,96 @@ tags:
   - scripts
 ---
 
-### Markdown Syntax
+`v0.0.4-beta.1`
 
 <Space />
 
-Sit anim exercitation nisi sint. Ut ad dolore est cupidatat. Exercitation aliquip magna esse. Labore
-anim duis aliqua commodo esse aliqua enim voluptate in velit laboris sint. Id culpa exercitation
-deserunt in cillum eu est labore ea. Occaecat et exercitation consectetur qui veniam.
+A small component for displaying different data based on user scroll and pointer position.
 
 <Space />
 
-Labore anim duis aliqua commodo esse aliqua enim voluptate in velit laboris sint. Id culpa
-exercitation deserunt in cillum eu est labore ea. Occaecat et exercitation consectetur qui veniam.
+This component is particularly useful for creating dynamic and interactive interfaces, where the
+user's actions trigger changes in the displayed content. For example, imagine a website where the
+user can scroll through a list of products, and as they hover over each product, more details about
+it are displayed.
+
+<Space />
+
+Arie is built using event listeners to track the user's scroll and pointer position, and then update
+the component's state accordingly. Arie's string renders other unique elements giving a simple and
+modern look.
+
+<Space />
+
+## Installation
+
+```yarn
+yarn add arie-js
+```
+
+```pnpm
+pnpm install --save arie-js
+```
+
+```npm
+npm install --save arie-js
+```
+
+## Usage
+
+`default arie`
+
+```tsx
+import React from 'react';
+import { useArie } from 'arie-js';
+
+export const DefaultExample = () => {
+  const {
+    position: { client },
+  } = useArie();
+  return (
+    <>
+      <div>
+        <div>X.{client.x && client.x.toExponential(2)}</div>
+        <div>Y.{client.y && client.y.toPrecision(6)}</div>
+      </div>
+    </>
+  );
+};
+```
+
+`arie angle`
+
+```tsx
+import React from 'react';
+import { useArie } from 'arie-js';
+
+export const AngleExample = () => {
+  const {
+    selectedElement: {
+      position: { angle },
+    },
+  } = useArie(true, 'trackElement');
+  return (
+    <>
+      <div className='row'>{angle ? <div>{angle.toFixed(0)}°</div> : <div>0°</div>}</div>
+
+      <div id='trackElement' />
+    </>
+  );
+};
+```
+
+<Space />
+
+A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit`
+mode to run type-checking separately. You can then include this, for example, in your `test`
+scripts.
+
+`© MIT CHANDLER CHAPPELL`
+
+<Space />
+
+<Link href='https://github.com/chvndler/arie.js' target='_blank'>
+  Full Documentation
+</Link>
