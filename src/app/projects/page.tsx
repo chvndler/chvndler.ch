@@ -10,16 +10,17 @@ export const metadata: Metadata = {
 };
 
 export default function ProjectsIndex() {
+  const heading = internet_projects.heading;
   const web = internet_projects.copyright;
 
   return (
     <>
       <section className='py-10'>
-        <h3 className='mb-2 font-archivo text-2xl font-normal tracking-tight text-grey-500 dark:text-grey-400'>
-          Internet <span className='font-bold'>projects</span>.
+        <h3 className='mb-2 text-2xl font-normal tracking-tight font-archivo text-carbon-700 dark:text-carbon-300'>
+          {heading.partial} <span className='font-bold'>{heading.bold}</span>
         </h3>
-        <p className='max-w-md font-archivo text-[9px] font-medium text-grey-400 dark:text-grey-500'>
-          <span className='font-semibold text-grey-500'>{web.tag}</span>
+        <p className='max-w-md font-archivo text-[9px] font-medium text-carbon-400 dark:text-carbon-300'>
+          <span className='font-semibold'>{web.tag}</span>
         </p>
       </section>
       <ProjectList projects={allProjects} />

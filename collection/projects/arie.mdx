@@ -80,6 +80,7 @@ export const AngleExample = () => {
       position: { angle },
     },
   } = useArie(true, 'trackElement');
+
   return (
     <>
       <div className='row'>{angle ? <div>{angle.toFixed(0)}°</div> : <div>0°</div>}</div>

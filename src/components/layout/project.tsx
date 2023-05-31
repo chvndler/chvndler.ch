@@ -18,25 +18,25 @@ type ListProps = {
 
 export const ProjectList = ({ projects }: ListProps) => {
   const sortedProjects = projects.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
-  const listItems = sortedProjects.map((project) => (
+  const listItems = sortedProjects.map((project, i) => (
     <li
-      key={project._id}
-      className='bg-blackA1 transition-colors duration-300 ease-in-out hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'
+      key={i}
+      className='transition-colors duration-300 ease-in-out bg-blackA1 hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'
     >
-      <div key={project._id} className='m-auto flex w-full flex-row items-center justify-between'>
+      <div key={i} className='flex flex-row items-center justify-between w-full m-auto'>
         <Link
           href={project.url}
-          className='text-md items-center justify-start py-2 font-archivo font-semibold tracking-tight text-grey-500 hover:text-grey-700 dark:hover:text-grey-300 md:text-lg'
+          className='items-center justify-start py-2 font-semibold tracking-tight text-md font-archivo text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300 md:text-lg'
         >
           {project.title}
         </Link>
 
-        <div key={project.type} className='flex flex-row items-center justify-end gap-x-1'>
+        <div key={i} className='flex flex-row items-center justify-end gap-x-1'>
           <FormattedDate postDate={project} />
 
-          {project.tags.map((tag) => (
+          {project.tags.map((tag, ti) => (
             <TagChip
-              key={tag}
+              key={ti}
               className='hidden border border-slate-400 bg-blackA3 font-archivo text-[8.5px] font-bold uppercase text-blackA9 dark:border-slate-600 dark:bg-whiteA2 dark:text-whiteA8 sm:inline'
             >
               {tag}
@@ -50,8 +50,8 @@ export const ProjectList = ({ projects }: ListProps) => {
   return (
     <>
       <section id='proj-sect' className='py-6'>
-        <div className='mx-auto w-full overflow-hidden py-6'>
-          <ul className='grid grid-cols-1 items-center divide-y divide-blackA6 dark:divide-whiteA4'>
+        <div className='w-full py-6 mx-auto overflow-hidden'>
+          <ul className='grid items-center grid-cols-1 divide-y divide-blackA6 dark:divide-whiteA4'>
             {listItems}
           </ul>
         </div>
