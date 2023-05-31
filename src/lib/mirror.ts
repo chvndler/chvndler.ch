@@ -28,6 +28,39 @@ const arweave = Arweave.init({
   protocol: 'https',
 });
 
+const contributorAddresses = '0x7944425BC5118604ee369bA8B3C41cABb5C9D379';
+
+export const ensConfig = () => {
+  return {
+    ensDomain: 'chvndler.eth',
+    publicationAddress: contributorAddresses[0],
+  };
+};
+
+export const fetchPublication = gql`
+  query PublicationInfo($publicationAddress: String!) {
+    projectFeed(projectAddress: $publicationAddress) {
+      displayName
+      avatarURL
+      domain
+      headerImage {
+        url
+      }
+      theme {
+        colorMode
+        accent
+      }
+      description
+      mailingListURL
+      members {
+        address
+        displayName
+        avatarURL
+      }
+    }
+  }
+`;
+
 export async function getMirrorPosts(id: string) {
   // get all transactions from the mirror contract
   const transactions = (await arweave.transactions.getData(id, {
@@ -176,5 +209,4 @@ export const getTxnIdsByDigest = async (digest: string, limit: number) => {
 
   return ids;
 };
-
 */
