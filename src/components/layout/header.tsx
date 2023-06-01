@@ -10,8 +10,8 @@ const navigation = [
 ];
 
 export const Header = () => (
-  <header className='main-header sticky top-0 z-50 backdrop-blur-md'>
-    <nav className='mx-auto w-full px-3 py-1'>
+  <header className='fixed top-0 z-50 main-header backdrop-blur-md'>
+    <nav className='w-full px-3 py-1 mx-auto'>
       <div className='mx-auto flex w-full max-w-[620px] flex-row items-center justify-between px-0 py-3'>
         <span className='items-center justify-start'>
           <Logo />
