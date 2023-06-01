@@ -7,9 +7,9 @@ import { SunFilled } from '../shared/svg/sun';
 import { MoonOutlined } from '../shared/svg/moon';
 
 export default function ThemeSwitch() {
-  const [mounted, setMounted] = React.useState(false);
   const { theme, setTheme } = useTheme();
 
+  const [mounted, setMounted] = React.useState(false);
   const [isHovering, setIsHovering] = React.useState(false);
 
   React.useEffect(() => {

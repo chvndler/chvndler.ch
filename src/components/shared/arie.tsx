@@ -7,7 +7,7 @@ type MouseEvent = {
   clientY: number;
 };
 
-type ValueProps = {};
+type ValueProps = React.HTMLAttributes<HTMLDivElement>;
 
 function Value(props: ValueProps) {
   const [display, setDisplay] = React.useState('X 000000– Y 000000');
@@ -39,5 +39,9 @@ function Value(props: ValueProps) {
 export const AriePosition = React.memo(() => {
   return <Value />;
 });
+
+export default function useArie(ValueProps: ValueProps) {
+  return <Value {...ValueProps} />;
+}
 
 AriePosition.displayName = 'AriePosition';

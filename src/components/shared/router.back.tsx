@@ -12,8 +12,6 @@ function RouterPrev() {
   );
 }
 
-export default RouterPrev;
-
 function BackButton() {
   return (
     <span className='inline-flex items-center justify-center text-grey-500 hover:text-grey-600 dark:text-grey-400 dark:hover:text-grey-300'>
@@ -33,3 +31,5 @@ function BackButton() {
     </span>
   );
 }
+
+export default RouterPrev;
