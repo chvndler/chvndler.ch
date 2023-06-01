@@ -18,14 +18,14 @@ export default function MediaIndex() {
   return (
     <>
       <section className='py-10'>
-        <h3 className='mb-2 text-2xl font-normal tracking-tight font-archivo text-carbon-700 dark:text-carbon-300'>
-          {heading.partial} <span className='font-bold font-archivo'>{heading.bold}</span>
+        <h3 className='mb-2 font-archivo text-2xl font-normal tracking-tight text-carbon-700 dark:text-carbon-300'>
+          {heading.partial} <span className='font-archivo font-bold'>{heading.bold}</span>
         </h3>
         <p className='max-w-md font-archivo text-[9px] font-medium text-carbon-400 dark:text-carbon-300'>
           {media.text}
           <br />
           <br />
-          <span className='font-bold font-archivo text-carbon-500'>{media.tag}</span>
+          <span className='font-archivo font-bold text-carbon-500'>{media.tag}</span>
         </p>
       </section>
 

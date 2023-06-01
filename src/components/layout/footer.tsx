@@ -6,7 +6,7 @@ import { AriePosition, CommitSha } from '../shared';
 export const Footer = () => (
   <footer className='relative w-full px-3'>
     <div className='mx-auto mt-3 flex max-w-[620px] items-end pb-6 pt-3 text-center'>
-      <div className='flex flex-col items-start justify-start my-auto gap-y-1'>
+      <div className='my-auto flex flex-col items-start justify-start gap-y-1'>
         <span className='text-left font-fraktion text-[13px] font-[680] uppercase leading-4 tracking-wide'>
           <CommitSha />
         </span>

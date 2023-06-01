@@ -1,9 +1,9 @@
+@import './_scss/fontface';
+@import './_scss/helpers';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './_scss/fontface';
-@import './_scss/helpers';
 
 @layer base {
   :root {

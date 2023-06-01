@@ -63,13 +63,13 @@ export default async function PostPage({ params }: PostProps) {
             <RouterPrev />
           </Link>
 
-          <div className='flex flex-row items-center gap-1 text-xs uppercase font-fraktion'>
+          <div className='flex flex-row items-center gap-1 font-fraktion text-xs uppercase'>
             <FormattedDateString postDate={post} />
             <ProjectTags pro={post} />
           </div>
 
           <div className='mt-4'>
-            <h2 className='leading-4 tracking-tight prose-h2 font-archivo text-blackA11 dark:text-whiteA11'>
+            <h2 className='prose-h2 font-archivo leading-4 tracking-tight text-blackA11 dark:text-whiteA11'>
               {post.title}
             </h2>
             <p className='text-md font-archivo text-blackA8 dark:text-whiteA8'>
@@ -96,7 +96,7 @@ function FormattedDateString({ postDate }: { postDate: Projects }) {
   // const relativeDate = formatDateTime(postDate.date);
 
   return (
-    <p className='mr-2 text-xs font-semibold text-left font-archivo text-blackA11 dark:text-whiteA10'>
+    <p className='mr-2 text-left font-archivo text-xs font-semibold text-blackA11 dark:text-whiteA10'>
       {publishedDate.asString}
     </p>
   );
