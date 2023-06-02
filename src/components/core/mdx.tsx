@@ -1,20 +1,20 @@
 import Link from 'next/link';
 import { useMDXComponent } from 'next-contentlayer/hooks';
+import type { MDXComponents } from 'mdx/types';
 
 const Space = () => <div style={{ height: '1rem' }} />;
 const Code = (props: any) => <pre className='pre code language=*' {...props} />;
 
-interface MDXProps {
+type MDX = {
   code: string;
-}
+};
 
-const components = {
-  Code,
+const components: MDXComponents = {
   Link,
   Space,
-} as const;
+};
 
-export const MDX = ({ code }: MDXProps) => {
+export const MDX = ({ code }: MDX) => {
   const Component = useMDXComponent(code);
 
   return <Component components={components} />;
