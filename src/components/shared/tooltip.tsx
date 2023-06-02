@@ -92,7 +92,9 @@ const TipContent = React.forwardRef<React.ElementRef<typeof TIP.Content>, Conten
           'bg-B100 dark:bg-B900',
         )}
       >
-        <span className='block text-xs leading-4 text-blackA11 dark:text-whiteA11'>{children}</span>
+        <span className='block text-xs leading-4 text-carbon-700 dark:text-carbon-400'>
+          {children}
+        </span>
       </TIP.Content>
     );
   },
@@ -159,7 +161,7 @@ export default function Tooltip({
       {openTooltip && isMobile && (
         <Leaflet setShow={setOpenTooltip}>
           {typeof content === 'string' ? (
-            <span className='flex w-full items-center justify-center'>{content}</span>
+            <span className='flex items-center justify-center w-full'>{content}</span>
           ) : (
             content
           )}
@@ -172,9 +174,9 @@ export default function Tooltip({
               {children}
             </Tip.Trigger>
 
-            <Tip.Content sideOffset={4} className='animate-slide-up-fade z-30 hidden sm:block'>
+            <Tip.Content sideOffset={4} className='z-30 hidden animate-slide-up-fade sm:block'>
               {typeof content === 'string' ? (
-                <div className='p-5'>
+                <div className='p-4'>
                   <span className=''>{content}</span>
                 </div>
               ) : (
