@@ -161,6 +161,16 @@ module.exports = {
       boxShadow: {
         sminner: 'inset 0px 0px 0.2px 1px hsla(0, 0%, 0%, 0.114)',
       },
+      DEFAULT: {
+        css: {
+          'code::before': {
+            content: '""',
+          },
+          'code::after': {
+            content: '""',
+          },
+        },
+      },
     },
   },
   plugins: [

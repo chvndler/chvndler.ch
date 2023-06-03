@@ -113,6 +113,6 @@ export default makeSource({
   documentTypes: [Projects],
   mdx: {
     remarkPlugins: [remarkGfm],
-    rehypePlugins: [rehypeCodeTitles, [rehypePrettyCode]],
+    rehypePlugins: [rehypeCodeTitles, [rehypePrettyCode, { theme: 'github-dark' }]],
   },
 });
