@@ -24,3 +24,30 @@ export default gql`
     }
   }
 `;
+
+// query variables
+let addresses = [''];
+
+client.query({
+  transactions: {
+    __args: {
+      first: 100,
+      tags: [
+        { name: 'App-Name', values: ['MirrorXYZ'] },
+        { name: 'Contributor', values: addresses },
+      ],
+    },
+    edges: {
+      node: {
+        id: true,
+        block: {
+          timestamp: true,
+        },
+        tags: {
+          name: true,
+          value: true,
+        },
+      },
+    },
+  },
+});
