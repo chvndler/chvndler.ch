@@ -145,6 +145,10 @@ module.exports = {
       },
     },
     extend: {
+      typography: (theme) => ({
+        //..
+        '--tw-prose-pre-code': theme('colors.hypergrape[700]'),
+      }),
       backgroundColor: {
         'surface-action': 'var(--surface-action)',
         'surface-neutral': 'var(--surface-neutral)',
@@ -157,10 +161,6 @@ module.exports = {
       boxShadow: {
         sminner: 'inset 0px 0px 0.2px 1px hsla(0, 0%, 0%, 0.114)',
       },
-      typography: (theme) => ({
-        //..
-        '--tw-prose-pre-code': theme('colors.hypergrape[700]'),
-      }),
     },
   },
   plugins: [

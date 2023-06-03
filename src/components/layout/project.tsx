@@ -26,7 +26,7 @@ export const ProjectList = ({ projects }: ListProps) => {
       <div key={i} className='m-auto flex w-full flex-row items-center justify-between'>
         <Link
           href={project.url}
-          className='text-md items-center justify-start py-2 font-archivo font-semibold tracking-tight text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300 md:text-lg'
+          className='text-md items-center justify-start py-2 font-archivo font-semibold lowercase tracking-tight text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300 md:text-lg'
         >
           {project.title}
         </Link>

@@ -21,6 +21,9 @@ export default function Index() {
     <>
       <Introduction />
       <Connect />
+      <FeaturedList projects={...allProjects.slice(0, 4)} />
+
+      {/* <!--
       <FeaturedList
         projects={[
           //..
@@ -30,6 +33,7 @@ export default function Index() {
           // ...allProjects.slice(1, 4)
         ]}
       />
+      --> */}
     </>
   );
 }
