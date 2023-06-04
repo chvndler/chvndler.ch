@@ -3,17 +3,17 @@ import Link from 'next/link';
 
 // server
 
-const altrdsgn = 'https://www.altrdsgn.com';
+const altrdsgn = 'https://www.atlrdsgn.com/';
 
 export const Introduction = () => (
-  <section id='intro-sect' className='py-6 border-b border-blackA4 dark:border-whiteA4'>
-    <div className='flex flex-col items-center py-6 mx-auto'>
-      <div className='flex flex-col w-full mx-auto text-left prose-blue'>
-        <div className='w-full mx-auto'>
+  <section id='intro-sect' className='border-b border-blackA4 py-6 dark:border-whiteA4'>
+    <div className='mx-auto flex flex-col items-center py-6'>
+      <div className='prose-blue mx-auto flex w-full flex-col text-left'>
+        <div className='mx-auto w-full'>
           <h3 className='font-archivo text-[20px] font-semibold leading-10 tracking-tight text-carbon-700 dark:text-carbon-200'>
             Chandler Chappell.
           </h3>
-          <p className='max-w-lg font-medium leading-6 text-md font-archivo text-carbon-500 dark:text-carbon-500'>
+          <p className='text-md max-w-lg font-archivo font-medium leading-6 text-carbon-500 dark:text-carbon-500'>
             Creating cool and taking notes. Enjoying the internet and open-source, interested in
             design systems, component architectures, TypeScript, and React. The focus in the moment
             is silencing the noise within design culture, with{' '}
