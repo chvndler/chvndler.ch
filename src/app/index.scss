@@ -42,6 +42,10 @@
     @apply overflow-x-auto whitespace-pre rounded-lg border-whiteA8 bg-surface-neutral py-4 text-sm;
   }
 
+  .prose code {
+    @apply whitespace-pre;
+  }
+
   .prose ul {
     @apply list-disc space-y-1 pl-7;
   }

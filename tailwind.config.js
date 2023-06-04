@@ -12,6 +12,7 @@ module.exports = {
       inter: ['Inter V', 'sans-serif'],
       archivo: ['Archivo V', 'sans-serif'],
       fraktion: ['Fraktion Sans V', 'sans-serif'],
+      mono: ['SF Mono', 'monospace'],
     },
     colors: {
       transparent: 'transparent',
@@ -160,16 +161,6 @@ module.exports = {
       },
       boxShadow: {
         sminner: 'inset 0px 0px 0.2px 1px hsla(0, 0%, 0%, 0.114)',
-      },
-      DEFAULT: {
-        css: {
-          'code::before': {
-            content: '""',
-          },
-          'code::after': {
-            content: '""',
-          },
-        },
       },
     },
   },

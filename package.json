@@ -47,6 +47,7 @@
     "postcss-import": "^15.1.0",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
+    "rehype-autolink-headings": "^6.1.1",
     "rehype-code-titles": "^1.2.0",
     "rehype-pretty-code": "^0.9.5",
     "remark-gfm": "^3.0.1",

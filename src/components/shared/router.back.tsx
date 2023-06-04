@@ -14,7 +14,7 @@ function RouterPrev() {
 
 function BackButton() {
   return (
-    <span className='inline-flex items-center justify-center text-grey-500 hover:text-grey-600 dark:text-grey-400 dark:hover:text-grey-300'>
+    <span className='inline-flex items-center justify-center text-carbon-500 hover:text-carbon-600 dark:text-carbon-400 dark:hover:text-carbon-300'>
       <svg
         width='16'
         height='16'

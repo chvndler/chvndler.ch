@@ -59,6 +59,12 @@ mux-player {
   --duration-display: none;
 }
 
+code::before,
+code::after {
+  content: '' !important;
+  word-wrap: none !important;
+}
+
 /**
   * @_rippleUI CSS.
   */

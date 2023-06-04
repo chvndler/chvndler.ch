@@ -4,6 +4,7 @@ import type { ComputedFields } from 'contentlayer/source-files';
 import remarkGfm from 'remark-gfm';
 import rehypeCodeTitles from 'rehype-code-titles';
 import rehypePrettyCode from 'rehype-pretty-code';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 // computed.fields
 
@@ -113,6 +114,39 @@ export default makeSource({
   documentTypes: [Projects],
   mdx: {
     remarkPlugins: [remarkGfm],
-    rehypePlugins: [rehypeCodeTitles, [rehypePrettyCode, { theme: 'github-dark' }]],
+    rehypePlugins: [
+      rehypeCodeTitles,
+      [
+        rehypePrettyCode,
+        {
+          theme: 'github-dark',
+          // theme: 'one-dark-pro',
+          onVisitLine(node: { children: string | any[] }) {
+            /**
+             *
+             * Prevent lines from collapsing in `display: grid`
+             * mode, and allow empty lines to be copied properly.
+             */
+            if (node.children.length === 0) {
+              node.children = [{ type: 'text', value: '' }];
+            }
+          },
+          onVisitHighlightedLine(node: { properties: { className: string[] } }) {
+            node.properties.className.push('line--highlighted');
+          },
+          onVisitHighlightedWord(node: { properties: { className: string[] } }) {
+            node.properties.className = ['word--highlighted'];
+          },
+        },
+      ],
+      [
+        rehypeAutolinkHeadings,
+        {
+          properties: {
+            className: ['anchor'],
+          },
+        },
+      ],
+    ],
   },
 });
