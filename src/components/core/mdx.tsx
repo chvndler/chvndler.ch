@@ -9,6 +9,22 @@ function clsx(...args: any) {
   return args.filter(Boolean).join(' ');
 }
 
+/**
+ *
+ * build components.
+ */
+const Image = (props: MDXImageProps) => <NextImage {...props} />;
+const Space = (props: any) => <div {...props} style={{ height: '1rem' }} />;
+const Code = ({ className, ...props }: { className: string }) => (
+  <code
+    {...props}
+    className={clsx(
+      'relative rounded-md border border-grey-A5 bg-carbon-100 bg-opacity-25 px-[0.3rem] py-[0.2rem] font-mono text-sm text-carbon-700 dark:border-grey-A7 dark:bg-carbon-900 dark:text-carbon-300',
+      className,
+    )}
+  />
+);
+
 const Link = (props: any) => {
   const href = props.href;
 
@@ -30,22 +46,6 @@ const Link = (props: any) => {
 const RoundImage = ({ className, ...props }: MDXImageProps) => {
   return <NextImage className={clsx('rounded-lg', className)} {...props} />;
 };
-/**
- *
- * build components.
- */
-const Image = (props: MDXImageProps) => <NextImage {...props} />;
-const Space = (props: any) => <div {...props} style={{ height: '1rem' }} />;
-
-const Code = ({ className, ...props }: { className: string }) => (
-  <code
-    {...props}
-    className={clsx(
-      'relative rounded-md border border-grey-A5 bg-carbon-100 bg-opacity-25 px-[0.3rem] py-[0.2rem] font-mono text-sm text-carbon-700 dark:border-grey-A7 dark:bg-carbon-900 dark:text-carbon-300',
-      className,
-    )}
-  />
-);
 
 /**
  *
