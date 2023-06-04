@@ -15,6 +15,7 @@
     "@mux/blurhash": "^0.1.2",
     "@mux/mux-player-react": "latest",
     "@next/mdx": "^13.4.3",
+    "@radix-ui/react-collapsible": "^1.0.3",
     "@radix-ui/react-tooltip": "^1.0.6",
     "clsx": "^1.2.1",
     "contentlayer": "^0.3.2",

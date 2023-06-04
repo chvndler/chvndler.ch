@@ -44,7 +44,12 @@ const Link = (props: any) => {
 };
 
 const RoundImage = ({ className, ...props }: MDXImageProps) => {
-  return <NextImage className={clsx('rounded-lg', className)} {...props} />;
+  return (
+    <NextImage
+      className={clsx('rounded-xl border border-grey-A5 md:rounded-2xl', className)}
+      {...props}
+    />
+  );
 };
 
 /**
