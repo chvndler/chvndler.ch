@@ -21,7 +21,7 @@ export default function Index() {
     <>
       <Introduction />
       <Connect />
-      <FeaturedList projects={...allProjects.slice(0, 4)} />
+      <FeaturedList projects={...allProjects.slice(0, 3)} />
 
       {/* <!--
       <FeaturedList
