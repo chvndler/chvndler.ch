@@ -30,7 +30,7 @@ export default function MuxVideo({ id, poster, metaId, metaTitle, ...rest }: Mux
         secondaryColor='transparent'
         autoPlay={false}
         streamType='on-demand'
-        customDomain='video.chvndler.ch'
+        // customDomain='video.chvndler.ch'
         playbackId={id}
         poster={poster}
         title={rest.title || '© Copyright CDC®'}
