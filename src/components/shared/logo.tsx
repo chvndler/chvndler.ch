@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { CDCLogo } from './svg/cdc';
 
-export function Logo() {
+export default function Logo() {
   return (
     <>
       <div className='block'>

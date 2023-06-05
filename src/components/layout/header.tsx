@@ -1,8 +1,14 @@
 import Link from 'next/link';
-import { Logo } from '../shared';
+import Logo from '../shared/logo';
 import ThemeSwitch from '../shared/theme.toggle';
 
 // server
+
+type Navigation = {
+  name?: string;
+  href?: string;
+  current?: boolean;
+};
 
 const navigation = [
   { name: 'Projects', href: '/projects', current: false },
@@ -10,8 +16,8 @@ const navigation = [
 ];
 
 export const Header = () => (
-  <header className='fixed top-0 z-50 w-full main-header backdrop-blur-md'>
-    <nav className='w-full px-3 py-1 mx-auto'>
+  <header className='main-header fixed top-0 z-50 w-full backdrop-blur-md'>
+    <nav className='mx-auto w-full px-3 py-1'>
       <div className='mx-auto flex w-full max-w-[620px] flex-row items-center justify-between px-0 py-3'>
         <div className='items-center justify-start'>
           <Logo />

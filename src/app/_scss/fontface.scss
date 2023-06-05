@@ -24,6 +24,20 @@
 
 /**
  * 
+ * Archivo V
+ * @format
+ */
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/fonts/mona/Mona-Sans.woff2') format('woff2 supports variations'),
+    url('/fonts/mona/Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+  font-display: swap;
+}
+
+/**
+ * 
  * Inter V
  * @format
  */

@@ -12,6 +12,7 @@ const archivo = Archivo({
   subsets: ['latin', 'latin-ext'],
   display: 'swap',
   variable: '--font-archivo',
+  preload: true,
 });
 
 const inter = Inter({
