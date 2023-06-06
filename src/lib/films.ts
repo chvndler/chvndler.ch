@@ -2,19 +2,19 @@ export const films = [
   {
     title: '(nineteen) film reel.',
     id: 'QIknhH4mVuQiVYZdaObY4gFZOGSxJOCKTSwu02JemdAs',
-    poster: 'https://cdn.chvndler.ch/assets/img/film.reel.jpg',
+    poster: 'https://cdn.chvndler.ch/assets/img/reel.jpg',
     name: '2019 Film Reel.',
   },
   {
     title: 'alone with the Gods.',
     id: 'DLIx3q00lvWHvER8pO00wJQCxdk7xyzJ43aAVPqJe3BZ00',
-    poster: 'https://cdn.chvndler.ch/assets/img/alone.jpg',
+    poster: 'https://cdn.chvndler.ch/assets/img/alone3.jpg',
     name: 'Alone with the Gods.',
   },
   {
     title: 'aquaman. (official music video)',
     id: 'Lr2BtEpVee015QBnDGPJzGuXfxBlujKXp9Q3mkkRYnEo',
-    poster: 'https://cdn.chvndler.ch/assets/img/aqua.jpg',
+    poster: 'https://cdn.chvndler.ch/assets/img/aqua2.jpg',
     name: 'Aquaman ft. Chris Buxton - Pharro (Official Music Video)',
   },
   {
@@ -26,37 +26,37 @@ export const films = [
   {
     title: 'atleast i told the truth.',
     id: 'AgJIkK2RpFPQ183up02vQjizlfTcQeV2Tv8RXFvNpWQo',
-    poster: 'https://cdn.chvndler.ch/assets/img/misc.jpg',
+    poster: 'https://cdn.chvndler.ch/assets/img/v2-truth.jpg',
     name: 'atleast i told the truth.',
   },
   {
     title: 'days of truth.',
     id: 'fv00fLo01KSmZPEm9GPmrSijBtVgFdPqOy9y00hS6gg5uw',
-    poster: 'https://cdn.chvndler.ch/assets/img/ph.jpg',
+    poster: 'https://cdn.chvndler.ch/assets/img/dot-summer.jpg',
     name: 'days of truth.',
   },
   {
     title: 'live or die.',
     id: 'fv00fLo01KSmZPEm9GPmrSijBtVgFdPqOy9y00hS6gg5uw',
-    poster: 'https://cdn.chvndler.ch/assets/img/ph.jpg',
+    poster: 'https://cdn.chvndler.ch/assets/img/live-or-die.jpg',
     name: 'live or die.',
   },
   {
     title: 'Justin and Lauren.',
     id: '5LJXqmhDhExmOHFrwTa1lDQv0125boZxbCxLMMMhv8ac',
-    poster: 'https://cdn.chvndler.ch/assets/img/ph.jpg',
+    poster: 'https://cdn.chvndler.ch/assets/img/justin-lauren.jpg',
     name: 'Justin and Lauren.',
   },
   {
     title: 'trufest.',
     id: 'vGv02ap2HXSMaCGUwaSzDarW00N3ZRs48kE7y012FlGG2Y',
-    poster: 'https://cdn.chvndler.ch/assets/img/ph.jpg',
+    poster: 'https://cdn.chvndler.ch/assets/img/misc.jpg',
     name: 'trufest.',
   },
   {
     title: 'wolves in vancouver.',
     id: `hoT6g1iK4ypoiCEvCyvi5tDq201J2Ff8OHkp4lndz25Q`,
-    poster: 'https://cdn.chvndler.ch/assets/img/ph.jpg',
+    poster: 'https://cdn.chvndler.ch/assets/img/2019.jpg',
     name: 'wolves in vancouver.',
   },
 ];
