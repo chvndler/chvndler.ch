@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import React from 'react';
 
 type ButtonProps = {
@@ -12,7 +13,7 @@ export const Button = (props: ButtonProps) => {
     <>
       <div className='flex flex-col gap-8'>
         <a
-          className='transition-opacity pointer-events-auto super-title hover:opacity-80'
+          className='super-title pointer-events-auto transition-opacity hover:opacity-80'
           href='/login'
         >
           <button className='btn is-primary pointer-events-auto w-[150px] rounded-full bg-carbon-200 px-6 py-2 text-sm font-semibold text-carbon-800 shadow-lg hover:shadow-md dark:bg-carbon-300 dark:text-carbon-900'>
@@ -41,7 +42,22 @@ export const AlternateButton = ({ children, href, ...props }: ButtonProps) => (
       <a href={href}>
         <button
           {...props}
-          className='px-4 py-1 text-xs font-semibold border shadow-md rounded-xl border-carbon-200 bg-carbon-50 text-carbon-700 hover:opacity-80 dark:border-carbon-700 dark:bg-carbon-800 dark:text-carbon-100'
+          className='rounded-xl border border-carbon-200 bg-carbon-50 px-4 py-1 font-archivo text-xs text-carbon-700 shadow-md hover:opacity-80 dark:border-carbon-700 dark:bg-carbon-800 dark:text-carbon-100'
+        >
+          {children}
+        </button>
+      </a>
+    </div>
+  </>
+);
+
+export const GitButton = ({ children, href, ...props }: ButtonProps) => (
+  <>
+    <div>
+      <a href={href} target='_blank'>
+        <button
+          {...props}
+          className='rounded-xl border border-carbon-200 bg-carbon-50 px-4 py-1 font-archivo text-xs text-carbon-700 shadow-md hover:opacity-80 dark:border-carbon-700 dark:bg-carbon-800 dark:text-carbon-100'
         >
           {children}
         </button>

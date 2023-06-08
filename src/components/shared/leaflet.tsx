@@ -50,14 +50,14 @@ export default function Leaflet({
         <div
           className={`rounded-t-4xl border-gray-200 -mb-1 flex h-7 w-full items-center justify-center border-t`}
         >
-          <div className='bg-gray-300 -mr-1 h-1 w-6 rounded-full transition-all group-active:rotate-12' />
-          <div className='bg-gray-300 h-1 w-6 rounded-full transition-all group-active:-rotate-12' />
+          <div className='-mr-1 h-1 w-6 rounded-full bg-carbon-300 transition-all group-active:rotate-12' />
+          <div className='h-1 w-6 rounded-full bg-carbon-300 transition-all group-active:-rotate-12' />
         </div>
         {children}
       </motion.div>
       <motion.div
         key='leaflet-backdrop'
-        className='bg-gray-100 fixed inset-0 z-30 bg-opacity-10 backdrop-blur'
+        className='fixed inset-0 z-30 bg-carbon-400 bg-opacity-10 backdrop-blur'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}

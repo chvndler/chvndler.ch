@@ -11,7 +11,7 @@
     --font-inter: 'Inter', sans-serif;
     --font-fraktion: 'Fraktion Sans V', sans-serif;
     --bg-dark: rgba(23, 23, 23, 1);
-    --bg-light: rgba(244, 244, 245, 1);
+    --bg-light: rgba(255, 255, 255, 1);
     --color-bar: rgba(103, 119, 201, 1);
     --dark-color-bar: rgba(235, 254, 188, 1);
     --surface-neutral: rgba(31, 31, 31, 1);
@@ -97,6 +97,8 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: auto;
+  background: var(--bg-light) !important;
+  background-color: var(--bg-light) !important;
 }
 
 html.fonts-loaded body {
