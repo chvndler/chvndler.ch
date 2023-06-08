@@ -11,6 +11,7 @@ module.exports = {
     fontFamily: {
       inter: ['Inter V', 'sans-serif'],
       archivo: ['Archivo V', 'sans-serif'],
+      helmet: ['Helmet Neue', 'sans-serif'],
       archivoo: ['var(--font-archivo)', 'sans-serif'],
       fraktion: ['Fraktion Sans V', 'sans-serif'],
       mono: ['SF Mono', 'monospace'],

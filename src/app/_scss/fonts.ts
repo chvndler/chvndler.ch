@@ -7,6 +7,12 @@ const archivoo = localFont({
   style: 'normal',
 });
 
+const helmet = localFont({
+  src: '../../../public/fonts/helm/HelmetNeue-Regular.woff2',
+  display: 'swap',
+  style: 'normal',
+});
+
 // variable fonts
 const archivo = Archivo({
   subsets: ['latin', 'latin-ext'],
@@ -27,4 +33,4 @@ const interTight = Inter_Tight({
   variable: '--font-inter-tight',
 });
 
-export { archivo, archivoo, inter, interTight };
+export { archivo, archivoo, helmet, inter, interTight };

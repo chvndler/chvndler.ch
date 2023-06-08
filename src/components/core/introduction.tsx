@@ -13,7 +13,7 @@ export const Introduction = () => (
           <h3 className='font-archivo text-[20px] font-semibold leading-10 tracking-tight text-carbon-700 dark:text-carbon-200'>
             Chandler Chappell.
           </h3>
-          <p className='text-md max-w-lg font-archivo font-medium leading-6 text-carbon-500 dark:text-carbon-500'>
+          <p className='max-w-lg font-helmet text-lg font-medium leading-6 text-carbon-500 dark:text-carbon-500'>
             Creating cool and taking notes. Enjoying the internet and open-source, interested in
             design systems, component architectures, TypeScript, and React. The focus in the moment
             is silencing the noise within design culture, with{' '}
