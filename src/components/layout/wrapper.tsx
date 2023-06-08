@@ -15,3 +15,16 @@ export const AppWrapper = ({ children }: { children: React.ReactNode }) => {
     </div>
   );
 };
+
+export const UIWrapper = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <section className='mx-auto flex w-full flex-col items-center justify-center'>
+      <div
+        id='ui-one'
+        className='mx-auto w-full max-w-[620px] items-center justify-center px-3 pt-1'
+      >
+        {children}
+      </div>
+    </section>
+  );
+};

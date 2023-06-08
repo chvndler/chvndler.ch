@@ -1,4 +1,4 @@
-export { AppWrapper } from './wrapper';
+export { AppWrapper, UIWrapper } from './wrapper';
 export { MediaWrapper } from './media.wrapper';
 export { Header } from './header';
 export { Footer } from './footer';

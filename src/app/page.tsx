@@ -4,6 +4,7 @@ import React from 'react';
 import { Introduction, Connect } from '../components/core';
 import { FeaturedList } from '../components/layout';
 import { allProjects } from '@/contentlayer/generated';
+import { AppWrapper } from '../components/layout';
 
 /*
  * Copyright (C) 2023 @chvndler
@@ -19,10 +20,11 @@ import { allProjects } from '@/contentlayer/generated';
 export default function Index() {
   return (
     <>
-      <Introduction />
-      <Connect />
-      <FeaturedList projects={...allProjects.slice(0, 3)} />
-
+      <AppWrapper>
+        <Introduction />
+        <Connect />
+        <FeaturedList projects={...allProjects.slice(0, 3)} />
+      </AppWrapper>
       {/* <!--
       <FeaturedList
         projects={[

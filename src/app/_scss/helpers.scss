@@ -42,6 +42,8 @@ mux-player {
   /**
     * inactive..
     */
+  --media-title-display: none;
+  --media-text-display: none;
   --loading-indicator: none;
   --center-controls: none;
   --dialog: none;
@@ -56,6 +58,16 @@ mux-player {
   --mute-button: none;
   --time-range: none;
   --duration-display: none;
+}
+
+.media-text-display {
+  display: none !important;
+}
+
+:is(media-time-display, media-text-display, media-playback-rate-button[role='button']) {
+  color: inherit;
+  font-weight: 600 !important;
+  line-height: 24px;
 }
 
 code::before,
