@@ -23,7 +23,7 @@ export default function Index() {
       <AppWrapper>
         <Introduction />
         <Connect />
-        <FeaturedList projects={...allProjects.slice(0, 3)} />
+        <FeaturedList projects={...allProjects.slice(0, 4)} />
       </AppWrapper>
       {/* <!--
       <FeaturedList
