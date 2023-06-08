@@ -73,6 +73,14 @@ export const Projects = defineDocumentType(() => ({
     },
     /**
      *
+     * git - the projects GitHub link, if available.
+     */
+    git: {
+      type: 'string',
+      required: false,
+    },
+    /**
+     *
      * tags - a list of keywords that relate to the post.
      */
     tags: {

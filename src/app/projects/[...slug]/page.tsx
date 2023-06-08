@@ -8,6 +8,7 @@ import RouterPrev from '../../../components/shared/router.back';
 import { formatDateTime } from '../../../lib/hooks/use-date-time';
 import { MDX } from '../../../components/core';
 import { BadgeDefault } from '../../../components/shared/badge';
+import { AlternateButton, Space } from '@/components/shared';
 
 interface PostProps {
   params: {
@@ -75,6 +76,8 @@ export default async function PostPage({ params }: PostProps) {
             <p className='max-w-sm leading-6 text-md font-archivo text-carbon-800 dark:text-whiteA8'>
               {post.description}
             </p>
+            {post.git && <AlternateButton href={post.git}>View on GitHub</AlternateButton>}
+            <Space />
           </div>
         </section>
 

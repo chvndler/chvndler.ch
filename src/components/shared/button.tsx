@@ -3,6 +3,7 @@
 import React from 'react';
 
 type ButtonProps = {
+  href?: string;
   children?: React.ReactNode;
 };
 
@@ -33,3 +34,18 @@ export const Button = (props: ButtonProps) => {
     </>
   );
 };
+
+export const AlternateButton = ({ children, href, ...props }: ButtonProps) => (
+  <>
+    <div>
+      <a href={href}>
+        <button
+          {...props}
+          className='px-4 py-1 text-xs font-semibold border shadow-md rounded-xl border-carbon-200 bg-carbon-50 text-carbon-700 hover:opacity-80 dark:border-carbon-700 dark:bg-carbon-800 dark:text-carbon-100'
+        >
+          {children}
+        </button>
+      </a>
+    </div>
+  </>
+);
