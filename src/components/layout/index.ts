@@ -1,4 +1,5 @@
 export { AppWrapper } from './wrapper';
+export { MediaWrapper } from './media.wrapper';
 export { Header } from './header';
 export { Footer } from './footer';
 export { PageSection, ComponentSection } from './page';
