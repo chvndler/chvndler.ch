@@ -73,11 +73,11 @@ const connects = [
     tip: 'GitHub',
   },
   {
-    key: 'resume',
-    title: 'Read.cv',
-    url: 'https://read.cv/chvndler',
+    key: 'figma',
+    title: 'Figma',
+    url: 'https://www.figma.com/@chvndler',
     target: '_blank',
-    tip: 'Resume / cv',
+    tip: 'Figma',
   },
 ];
 
@@ -93,5 +93,11 @@ const profile = [
     title: 'Archive',
     url: '/archive',
     target: '_self',
+  },
+  {
+    key: 'resume',
+    title: 'Read.cv',
+    url: 'https://read.cv/chvndler',
+    target: '_blank',
   },
 ];

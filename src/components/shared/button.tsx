@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import React from 'react';
 
 type ButtonProps = {
@@ -8,13 +7,14 @@ type ButtonProps = {
   children?: React.ReactNode;
 };
 
-export const Button = (props: ButtonProps) => {
+export const DesignerButton = (props: ButtonProps) => {
   return (
     <>
       <div className='flex flex-col gap-8'>
         <a
-          className='super-title pointer-events-auto transition-opacity hover:opacity-80'
+          className='transition-opacity pointer-events-auto super-title hover:opacity-80'
           href='/login'
+          rel='noopener noreferrer'
         >
           <button className='btn is-primary pointer-events-auto w-[150px] rounded-full bg-carbon-200 px-6 py-2 text-sm font-semibold text-carbon-800 shadow-lg hover:shadow-md dark:bg-carbon-300 dark:text-carbon-900'>
             {props.children}
@@ -36,28 +36,13 @@ export const Button = (props: ButtonProps) => {
   );
 };
 
-export const AlternateButton = ({ children, href, ...props }: ButtonProps) => (
-  <>
-    <div>
-      <a href={href}>
-        <button
-          {...props}
-          className='rounded-xl border border-carbon-200 bg-carbon-50 px-4 py-1 font-archivo text-xs text-carbon-700 shadow-md hover:opacity-80 dark:border-carbon-700 dark:bg-carbon-800 dark:text-carbon-100'
-        >
-          {children}
-        </button>
-      </a>
-    </div>
-  </>
-);
-
 export const GitButton = ({ children, href, ...props }: ButtonProps) => (
   <>
     <div>
-      <a href={href} target='_blank'>
+      <a href={href} target='_blank' rel='noopener noreferrer'>
         <button
           {...props}
-          className='rounded-xl border border-carbon-200 bg-carbon-50 px-4 py-1 font-archivo text-xs text-carbon-700 shadow-md hover:opacity-80 dark:border-carbon-700 dark:bg-carbon-800 dark:text-carbon-100'
+          className='px-4 py-1 text-xs border shadow-md rounded-xl border-carbon-200 bg-carbon-50 font-archivo text-carbon-700 hover:opacity-80 dark:border-carbon-700 dark:bg-carbon-800 dark:text-carbon-100'
         >
           {children}
         </button>
