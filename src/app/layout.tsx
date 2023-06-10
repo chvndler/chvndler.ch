@@ -4,7 +4,7 @@ import { siteURL } from '../lib/const';
 import { cn } from '../lib/utils';
 import { AppHooks } from './hooks';
 import { ThemeProvider } from '../context/theme-provider';
-import { Header, Footer } from '../components/layout';
+import { Header, Footer, AppLiner } from '../components/layout';
 import { archivo } from './_scss/fonts';
 
 import type { Metadata } from 'next';
