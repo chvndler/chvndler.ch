@@ -2,6 +2,10 @@ import { ReactNode } from 'react';
 import ReactMarkdown from 'react-markdown';
 import Balancer from 'react-wrap-balancer';
 
+import type { Projects } from '.contentlayer/generated/types';
+import { formatDateTime } from '../../lib/hooks/use-date-time';
+import { cn } from '../../lib/utils';
+
 export default function Card({
   title,
   description,
@@ -41,7 +45,7 @@ export default function Card({
                     {...props}
                     // @ts-ignore (to fix "Received `true` for a non-boolean attribute `inline`." warning)
                     inline='true'
-                    className='bg-gray-100 font-mono text-gray-800 rounded-sm px-1 py-0.5 font-medium'
+                    className='bg-gray-100 text-gray-800 rounded-sm px-1 py-0.5 font-mono font-medium'
                   />
                 ),
               }}
@@ -54,3 +58,19 @@ export default function Card({
     </div>
   );
 }
+
+export const ProjectCard = ({ project }: { project: Projects }) => {
+  return (
+    <>
+      <article>
+        <a
+          className={cn('project-card ml-n16 flex flex-col gap-8 rounded-lg p-16')}
+          href={project.url}
+        >
+          <p>{project.title}</p>
+          <p>{project.description}</p>
+        </a>
+      </article>
+    </>
+  );
+};
