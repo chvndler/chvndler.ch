@@ -11,8 +11,9 @@ module.exports = {
     fontFamily: {
       inter: ['Inter V', 'sans-serif'],
       archivo: ['Archivo V', 'sans-serif'],
+      ibmSans: ['IBM Plex Sans', 'sans-serif'],
+      ibmMono: ['IBM Plex Mono', 'monospace'],
       helmet: ['Helmet Neue', 'sans-serif'],
-      archivoo: ['var(--font-archivo)', 'sans-serif'],
       fraktion: ['Fraktion Sans V', 'sans-serif'],
       mono: ['SF Mono', 'monospace'],
     },
@@ -153,6 +154,7 @@ module.exports = {
         '--tw-prose-pre-code': theme('colors.hypergrape[700]'),
       }),
       backgroundColor: {
+        'global-nav': 'var(--globalnav-bg)',
         'surface-action': 'var(--surface-action)',
         'surface-neutral': 'var(--surface-neutral)',
         'color-bar': 'var(--color-bar)',
@@ -163,6 +165,12 @@ module.exports = {
       },
       boxShadow: {
         sminner: 'inset 0px 0px 0.2px 1px hsla(0, 0%, 0%, 0.114)',
+      },
+      backdropBlur: {
+        gnav: '20px',
+      },
+      backdropSaturate: {
+        sat180: '1.8',
       },
     },
   },

@@ -16,7 +16,7 @@ export default function ProjectsIndex() {
     <>
       <AppController>
         <section className='py-10'>
-          <h3 className='mb-2 font-archivo text-2xl font-normal tracking-tight text-carbon-700 dark:text-carbon-300 lg:text-3xl'>
+          <h3 className='mb-2 text-2xl font-normal tracking-tight font-archivo text-carbon-700 dark:text-carbon-100 lg:text-3xl'>
             {copy.heading.partial} <span className='font-bold'>{copy.heading.bold}</span>
           </h3>
           <p className='max-w-md font-archivo text-[9px] font-medium text-carbon-400 dark:text-carbon-300'>

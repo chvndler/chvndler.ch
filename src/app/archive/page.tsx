@@ -39,7 +39,7 @@ function MenuInstance() {
     <>
       <Menubar>
         <MenubarMenu>
-          <MenubarTrigger>File</MenubarTrigger>
+          <MenubarTrigger>Projects</MenubarTrigger>
           <MenubarContent>
             <MenubarItem>
               New Tab <MenubarShortcut>⌘T</MenubarShortcut>
@@ -53,7 +53,7 @@ function MenuInstance() {
         </MenubarMenu>
 
         <MenubarMenu>
-          <MenubarTrigger>Settings</MenubarTrigger>
+          <MenubarTrigger>Media</MenubarTrigger>
           <MenubarContent>
             <MenubarItem>
               New Tab <MenubarShortcut>⌘T</MenubarShortcut>

@@ -1,11 +1,5 @@
-import { Inter, Archivo, Inter_Tight } from 'next/font/google';
+import { Inter, Archivo, Inter_Tight, IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google';
 import localFont from 'next/font/local';
-
-const archivoo = localFont({
-  src: '../../../public/fonts/archivo/Archivo-Variable.ttf',
-  weight: '1 999',
-  style: 'normal',
-});
 
 const helmet = localFont({
   src: '../../../public/fonts/helm/HelmetNeue-Regular.woff2',
@@ -13,7 +7,21 @@ const helmet = localFont({
   style: 'normal',
 });
 
-// variable fonts
+// variable Google fonts
+const IBMPlexSans = IBM_Plex_Sans({
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+  preload: true,
+  weight: '500',
+});
+
+const IBMPlexMono = IBM_Plex_Mono({
+  subsets: ['latin', 'latin-ext'],
+  display: 'swap',
+  // preload: true,
+  weight: '500',
+});
+
 const archivo = Archivo({
   subsets: ['latin', 'latin-ext'],
   display: 'swap',
@@ -33,4 +41,4 @@ const interTight = Inter_Tight({
   variable: '--font-inter-tight',
 });
 
-export { archivo, archivoo, helmet, inter, interTight };
+export { archivo, IBMPlexSans, IBMPlexMono, helmet, inter, interTight };

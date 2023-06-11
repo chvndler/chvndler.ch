@@ -20,7 +20,7 @@ export const Connect = () => (
                       key={k}
                       href={connect.url}
                       target={connect.target}
-                      className='font-semibold lowercase text-md font-archivo text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600 md:text-sm'
+                      className='font-semibold lowercase text-md font-ibmSans text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600 md:text-sm'
                     >
                       {connect.title}
                     </Link>
@@ -44,7 +44,7 @@ export const Connect = () => (
                   key={i}
                   href={source.url}
                   target={source.target}
-                  className='font-semibold lowercase text-md font-archivo text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600 md:text-sm'
+                  className='font-semibold lowercase text-md font-ibmSans text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600 md:text-sm'
                 >
                   {source.title}
                 </Link>

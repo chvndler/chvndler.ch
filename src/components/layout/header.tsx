@@ -16,9 +16,9 @@ const navigation = [
 ];
 
 export const Header = () => (
-  <header className='main-header fixed top-0 z-50 w-full backdrop-blur-md'>
-    <nav className='mx-auto w-full px-3 py-1'>
-      <div className='mx-auto flex w-full max-w-[620px] flex-row items-center justify-between px-0 py-3'>
+  <header className='fixed top-0 z-50 w-full main-header backdrop-blur-gnav backdrop-saturate-sat180'>
+    <nav className='w-full px-3 py-3 mx-auto'>
+      <div className='mx-auto flex w-full max-w-[620px] flex-row items-center justify-between px-0'>
         <div className='items-center justify-start'>
           <Logo />
         </div>
