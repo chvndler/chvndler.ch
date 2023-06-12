@@ -10,3 +10,11 @@ export const formatAddress = ({ address }: { address: string }) => {
 
   return `${chars.slice(0, 6).join('')}…${chars.slice(-6).join('')}`;
 };
+
+export default async function fetcher<JSON = any>(
+  input: RequestInfo,
+  init?: RequestInit,
+): Promise<JSON> {
+  const res = await fetch(input, init);
+  return res.json();
+}
