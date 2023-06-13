@@ -9,6 +9,7 @@ import {
   MenubarShortcut,
   MenubarTrigger,
 } from '../../components/primitives/menubar';
+import NowPlaying from '@/components/primitives/now-playing';
 
 export default function ArchiveIndex() {
   const copy = content.archive;
@@ -27,6 +28,10 @@ export default function ArchiveIndex() {
 
         <section className='pv-3 py-10'>
           <MenuInstance />
+        </section>
+
+        <section className='pv-3 py-10'>
+          <NowPlaying />
         </section>
       </AppController>
     </>

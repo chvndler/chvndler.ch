@@ -7,7 +7,7 @@ const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks`;
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
 
-export default async function getAccessToken() {
+async function getAccessToken() {
   // const getAccessToken = async () => {
   const response = await fetch(TOKEN_ENDPOINT, {
     method: 'POST',
