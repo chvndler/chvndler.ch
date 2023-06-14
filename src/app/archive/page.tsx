@@ -9,6 +9,7 @@ import {
   MenubarShortcut,
   MenubarTrigger,
 } from '../../components/primitives/menubar';
+import { ComponentContainer } from '@/components/shared/comp.container';
 import NowPlaying from '@/components/primitives/now-playing';
 
 export default function ArchiveIndex() {
@@ -26,8 +27,10 @@ export default function ArchiveIndex() {
           <p className='mb-6 text-xs text-carbon-500 dark:text-carbon-400'>playground</p>
         </section>
 
-        <section className='pv-3 py-10'>
-          <MenuInstance />
+        <section className=''>
+          <ComponentContainer>
+            <MenuInstance />
+          </ComponentContainer>
         </section>
 
         <section className='pv-3 py-10'>
