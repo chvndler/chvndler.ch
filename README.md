@@ -4,12 +4,13 @@
 
 ### my stack
 
-- **Style:** [Tailwindcss](https://tailwindcss.com/)
-- **Back-end:** [Next.js](https://nextjs.org/)
-- **Front-end:** [React](https://reactjs.org/)
-- **3D:** [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/),
-  [@react-three/drei](https://drei.pmnd.rs/), [three.js](https://threejs.org)
-- **Deployment:** [Vercel](https://vercel.com/)
+→ **CSS:** [Tailwindcss](https://tailwindcss.com/)
+
+→ **Back-end:** [Next.js](https://nextjs.org/)
+
+→ **Front-end:** [React](https://reactjs.org/)
+
+→ **Deployment:** [Vercel](https://vercel.com/)
 
 ### running locally
 
@@ -73,6 +74,6 @@ Route (pages)                              Size     First Load JS
 
 ---
 
-[MIT License]()
+[MIT License](/license)
 
 `© chvndler`

@@ -1,12 +1,11 @@
 import Link from 'next/link';
 import RouterPrev from '../../../components/shared/router.back';
+
 import { notFound } from 'next/navigation';
 import { allProjects } from 'contentlayer/generated';
 import { formatDateTime } from '../../../lib/hooks/use-date-time';
-
 import { MDX } from '../../../components/core';
 import { AppController } from '../../../components/layout';
-
 import { BadgeDefault } from '../../../components/shared/badge';
 import { GitButton } from '../../../components/shared';
 
@@ -83,13 +82,6 @@ export default async function PostPage({ params }: PostProps) {
               {post.git && <GitButton href={post.git}>View on GitHub</GitButton>}
             </div>
           </section>
-
-          {/**
-           * <!--
-           *
-           * MDX Start..
-           *
-           * --> */}
 
           <MDX code={post.body.code} />
         </article>
