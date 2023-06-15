@@ -91,7 +91,7 @@ const profile = [
   {
     key: 'design',
     title: 'Design',
-    url: 'https://www.are.na/chvndler-ch/design-su-ybzvundw',
+    url: 'https://www.are.na/chvndler-ch/dsgn-ioqy1my0luw',
     target: '_blank',
   },
   {
