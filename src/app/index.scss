@@ -20,6 +20,9 @@
     --globalnav-bg: rgba(251, 251, 253, 0.8);
     --globalnav-filter: blur(20px);
     --globalnav-saturate: saturate(180%);
+
+    --header-height: 48px;
+    --footer-height: 92px;
   }
 }
 
@@ -117,4 +120,8 @@ html.dark body {
   color: var(--bg-light) !important;
   background: var(--bg-dark) !important;
   background-color: var(--bg-dark) !important;
+}
+
+main {
+  min-height: calc(100vh - var(--footer-height));
 }

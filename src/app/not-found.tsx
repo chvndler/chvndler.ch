@@ -3,10 +3,12 @@ import { Canvas } from '../components/shared';
 export default function NotFound() {
   return (
     <Canvas>
-      <section className='bg-white dark:bg-gray-900 '>
+      <section>
         <div className='container mx-auto flex items-center px-0 py-12'>
           <div>
-            <p className='text-blue-500 dark:text-blue-400 text-sm font-medium'>404 error</p>
+            <p className='text-blue-500 dark:text-blue-400 text-sm font-medium'>
+              404 error
+            </p>
             <h1 className='text-gray-800 dark:text-white mt-3 text-2xl font-semibold md:text-3xl'>
               Page not found
             </h1>

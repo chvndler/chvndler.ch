@@ -1,5 +1,4 @@
 'use client';
-// import MuxPlayer from '@mux/mux-player-react';
 
 import MuxPlayer from '@mux/mux-player-react/lazy';
 import type { MuxPlayerProps } from '@mux/mux-player-react';

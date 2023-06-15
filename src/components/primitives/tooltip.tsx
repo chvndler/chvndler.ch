@@ -173,7 +173,10 @@ export default function Tooltip({
               {children}
             </Tip.Trigger>
 
-            <Tip.Content sideOffset={4} className='animate-slide-right-fade z-30 hidden sm:block'>
+            <Tip.Content
+              sideOffset={4}
+              className='animate-slide-right-fade z-30 hidden sm:block'
+            >
               {typeof content === 'string' ? (
                 <div className='rounded-md border border-carbon-200 p-4 shadow-md dark:border-carbon-800'>
                   <span className=''>{content}</span>

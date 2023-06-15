@@ -18,7 +18,7 @@ export default function MediaIndex() {
   return (
     <>
       <MediaWrapper>
-        <section className='container mx-auto max-w-[620px] pb-20 pt-10'>
+        <section className='container mx-auto max-w-[620px] py-10'>
           <h3 className='mb-2 font-archivo text-2xl font-normal tracking-tight text-carbon-700 dark:text-carbon-100 lg:text-3xl'>
             {copy.heading.partial}{' '}
             <span className='font-archivo font-bold'>{copy.heading.bold}</span>
@@ -27,7 +27,9 @@ export default function MediaIndex() {
             {copy.copyright.text}
             <br />
             <br />
-            <span className='font-archivo font-bold text-carbon-500'>{copy.copyright.tag}</span>
+            <span className='font-archivo font-bold text-carbon-500'>
+              {copy.copyright.tag}
+            </span>
           </p>
         </section>
 

@@ -16,7 +16,10 @@ const navigation = [
 ];
 
 export const Header = () => (
-  <header className='fixed top-0 z-50 w-full main-header backdrop-blur-gnav backdrop-saturate-sat180'>
+  <header
+    className='fixed top-0 z-50 w-full main-header backdrop-blur-gnav backdrop-saturate-sat180'
+    aria-hidden='true'
+  >
     <nav className='w-full px-3 py-3 mx-auto'>
       <div className='mx-auto flex w-full max-w-[620px] flex-row items-center justify-between px-0'>
         <div className='items-center justify-start'>
