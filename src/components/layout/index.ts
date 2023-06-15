@@ -9,3 +9,4 @@ export { TopLevelGrid } from './grid';
 // projects
 export { FeaturedList } from './featured';
 export { ProjectList } from './project';
+export { PrimitiveList } from './archive';
