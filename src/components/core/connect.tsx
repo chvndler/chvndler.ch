@@ -89,8 +89,14 @@ const connects = [
 
 const profile = [
   {
+    key: 'design',
+    title: 'Design',
+    url: 'https://www.are.na/chvndler-ch/design-su-ybzvundw',
+    target: '_blank',
+  },
+  {
     key: 'archive',
-    title: 'Archive',
+    title: 'Archive Gallery',
     url: '/archive',
     target: '_self',
   },
