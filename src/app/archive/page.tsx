@@ -23,7 +23,7 @@ export default function ArchiveIndex() {
         </section>
 
         <section className='py-10'>
-          <div className='grid grid-cols-1 gap-6 md:grid-cols-2'>
+          <div className='grid grid-cols-1 md:grid-cols-2 md:gap-6'>
             <PrimitiveList component={...components.slice(0, 4)} />
           </div>
         </section>

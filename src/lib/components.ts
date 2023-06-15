@@ -6,6 +6,7 @@ import {
   //
   MenuContext,
   SpotifyContext,
+  GitColourContext,
 } from '@/components/shared/archive';
 
 interface ComponentBase {
@@ -36,6 +37,15 @@ export const allComponents: ComponentBase[] = [
     slug: '/archive/spotify',
     url: '/archive/spotify',
     component: SpotifyContext,
+  },
+  {
+    type: 'Archive',
+    slugAsParams: 'git-colour',
+    title: 'Git Colour',
+    excerpt: 'Transform your commit SHA (GitHub) into a #HEX value.',
+    slug: '/archive/git-colour',
+    url: '/archive/git-colour',
+    component: GitColourContext,
   },
 ];
 

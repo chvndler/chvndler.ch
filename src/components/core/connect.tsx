@@ -5,7 +5,7 @@ import Tooltip from '../shared/tooltip';
 
 export const Connect = () => (
   <section id='connect-sect' className='py-6'>
-    <div className='flex flex-wrap justify-start flex-grow py-6 text-left gap-y-6 md:mt-0'>
+    <div className='flex flex-grow flex-wrap justify-start gap-y-6 py-6 text-left md:mt-0'>
       <div className='w-full space-y-4 md:w-1/2'>
         <p className='mb-2 text-[18px] font-semibold text-carbon-700 dark:text-carbon-300'>
           Connect.
@@ -20,7 +20,7 @@ export const Connect = () => (
                       key={k}
                       href={connect.url}
                       target={connect.target}
-                      className='font-semibold lowercase text-md font-ibmSans text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600 md:text-sm'
+                      className='text-md md:text-md font-ibmSans font-medium lowercase text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
                     >
                       {connect.title}
                     </Link>
@@ -44,7 +44,7 @@ export const Connect = () => (
                   key={i}
                   href={source.url}
                   target={source.target}
-                  className='font-semibold lowercase text-md font-ibmSans text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600 md:text-sm'
+                  className='text-md md:text-md font-ibmSans font-medium lowercase text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
                 >
                   {source.title}
                 </Link>
@@ -79,15 +79,15 @@ const connects = [
     target: '_blank',
     tip: 'Figma',
   },
+  {
+    key: 'resume',
+    title: 'Read.cv',
+    url: 'https://read.cv/chvndler',
+    target: '_blank',
+  },
 ];
 
 const profile = [
-  {
-    key: 'media',
-    title: 'Film Projects',
-    url: '/media',
-    target: '_self',
-  },
   {
     key: 'archive',
     title: 'Archive',
@@ -95,9 +95,9 @@ const profile = [
     target: '_self',
   },
   {
-    key: 'resume',
-    title: 'Read.cv',
-    url: 'https://read.cv/chvndler',
-    target: '_blank',
+    key: 'media',
+    title: 'Film Projects',
+    url: '/media',
+    target: '_self',
   },
 ];
