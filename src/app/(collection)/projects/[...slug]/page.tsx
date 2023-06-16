@@ -1,13 +1,12 @@
 import Link from 'next/link';
-import RouterPrev from '../../../components/shared/router.back';
+import RouterPrev from '@/components/shared/router.back';
 
 import { notFound } from 'next/navigation';
 import { allProjects } from 'contentlayer/generated';
-import { formatDateTime } from '../../../lib/hooks/use-date-time';
-import { MDX } from '../../../components/core';
-import { AppController } from '../../../components/layout';
-import { BadgeDefault } from '../../../components/shared/badge';
-import { GitButton } from '../../../components/shared';
+import { formatDateTime } from '@/lib/hooks/use-date-time';
+import { MDX } from '@/components/core';
+import { AppController } from '@/components/layout';
+import { GitButton, BadgeDefault } from '@/components/shared';
 
 import type { Metadata } from 'next';
 import type { Projects } from 'contentlayer/generated';

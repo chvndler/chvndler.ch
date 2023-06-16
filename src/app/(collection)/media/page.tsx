@@ -1,10 +1,9 @@
-import MuxVideo from '../../components/shared/video/player';
+import MuxVideo from '@/components/shared/video/player';
 import type { Metadata } from 'next/types';
-import { MediaWrapper, TopLevelGrid } from '../../components/layout';
 
-import { films } from '../../lib/films';
-import { content } from '../../lib/website.config';
-import clsx from 'clsx';
+import { MediaWrapper, TopLevelGrid } from '@/components/layout';
+import { films } from '@/lib/films';
+import { content } from '@/lib/website.config';
 
 export const metadata: Metadata = {
   title: 'Chandler. Film and Media.',

@@ -1,8 +1,8 @@
 import { allProjects } from 'contentlayer/generated';
-import { AppController, ProjectList } from '../../components/layout';
+import { AppController, ProjectList } from '@/components/layout';
 
 import type { Metadata } from 'next/types';
-import { content } from '../../lib/website.config';
+import { content } from '@/lib/website.config';
 
 export const metadata: Metadata = {
   title: 'Chandler Chappell. Projects.',

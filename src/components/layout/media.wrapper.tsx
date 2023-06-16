@@ -7,7 +7,7 @@ export const MediaWrapper = ({ children }: { children: React.ReactNode }) => {
       <div id='wrap-two' className={cn(`wrap-layer2 max-h-fit flex-1 px-3 pb-12 pt-16`)}>
         <div
           id='wrap-one'
-          className='container items-center w-full h-auto max-w-screen-lg min-h-screen mx-auto'
+          className='container mx-auto h-auto min-h-screen w-full max-w-screen-lg items-center'
         >
           {children}
         </div>

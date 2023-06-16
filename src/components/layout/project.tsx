@@ -17,7 +17,9 @@ type ListProps = {
 };
 
 export const ProjectList = ({ projects }: ListProps) => {
-  const sortedProjects = projects.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
+  const sortedProjects = projects.sort((a, b) =>
+    compareDesc(new Date(a.date), new Date(b.date)),
+  );
   const listItems = sortedProjects.map((project, i) => (
     <li
       key={i}
@@ -60,7 +62,13 @@ export const ProjectList = ({ projects }: ListProps) => {
   );
 };
 
-function TagChip({ children, className }: { children: React.ReactNode; className: string }) {
+function TagChip({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className: string;
+}) {
   return (
     <span
       className={cn(

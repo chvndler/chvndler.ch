@@ -12,7 +12,6 @@
     "clean": "rm -rf node_modules/ .yarn/ .next/ out/"
   },
   "dependencies": {
-    "@mux/blurhash": "^0.1.2",
     "@mux/mux-player-react": "latest",
     "@next/mdx": "^13.4.3",
     "@radix-ui/react-collapsible": "^1.0.3",

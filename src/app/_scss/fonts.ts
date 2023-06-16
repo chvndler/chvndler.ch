@@ -1,4 +1,10 @@
-import { Inter, Archivo, Inter_Tight, IBM_Plex_Sans, IBM_Plex_Mono } from 'next/font/google';
+import {
+  Inter,
+  Archivo,
+  Inter_Tight,
+  IBM_Plex_Sans,
+  IBM_Plex_Mono,
+} from 'next/font/google';
 import localFont from 'next/font/local';
 
 const helmet = localFont({

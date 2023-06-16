@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import RouterPrev from '../../../components/shared/router.back';
+import RouterPrev from '@/components/shared/router.back';
+
 import { notFound } from 'next/navigation';
 import { AppController } from '@/components/layout';
 import { allComponents } from '@/lib/components';

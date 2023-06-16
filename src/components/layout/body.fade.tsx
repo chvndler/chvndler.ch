@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-export const MyComponent = () => {
+export const BodyFader = () => {
   const [isVisible, setIsVisible] = React.useState(false);
 
   React.useEffect(() => {

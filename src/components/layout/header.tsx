@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Logo from '../shared/logo';
 import ThemeSwitch from '../shared/theme.toggle';
+import { cn } from '@/lib/utils';
 
 // server
 
@@ -17,10 +18,12 @@ const navigation = [
 
 export const Header = () => (
   <header
-    className='fixed top-0 z-50 w-full main-header backdrop-blur-gnav backdrop-saturate-sat180'
+    className={cn(
+      'header sticky top-0 z-50 w-full backdrop-blur-gnav backdrop-saturate-sat180',
+    )}
     aria-hidden='true'
   >
-    <nav className='w-full px-3 py-3 mx-auto'>
+    <nav className={cn('nav mx-auto w-full px-3 py-3')}>
       <div className='mx-auto flex w-full max-w-[620px] flex-row items-center justify-between px-0'>
         <div className='items-center justify-start'>
           <Logo />
@@ -29,17 +32,7 @@ export const Header = () => (
           <div className='block'>
             <div className='flex flex-row gap-1'>
               <ThemeSwitch />
-
-              {navigation.map((item, it) => (
-                <Link
-                  key={it}
-                  href={item.href}
-                  className='duration-400 font-uncut ml-2 text-[15px] font-[600] leading-[20px] text-carbon-500 transition-colors ease-in-out hover:text-carbon-700 dark:text-carbon-400 dark:hover:text-carbon-600'
-                  aria-current='page'
-                >
-                  {item.name}
-                </Link>
-              ))}
+              <NavLinks />
             </div>
           </div>
         </div>
@@ -47,3 +40,20 @@ export const Header = () => (
     </nav>
   </header>
 );
+
+function NavLinks() {
+  return (
+    <>
+      {navigation.map((item, it) => (
+        <Link
+          key={it}
+          href={item.href}
+          className='duration-400 font-uncut ml-2 text-[15px] font-[600] leading-[20px] text-carbon-500 transition-colors ease-in-out hover:text-carbon-700 dark:text-carbon-400 dark:hover:text-carbon-600'
+          aria-current='page'
+        >
+          {item.name}
+        </Link>
+      ))}
+    </>
+  );
+}

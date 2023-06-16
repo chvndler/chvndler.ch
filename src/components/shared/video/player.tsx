@@ -11,7 +11,13 @@ type MuxVideoPlayerProps = {
   metaTitle?: string;
 } & Omit<MuxPlayerProps, 'playbackId' | 'poster'>;
 
-export default function MuxVideo({ id, poster, metaId, metaTitle, ...rest }: MuxVideoPlayerProps) {
+export default function MuxVideo({
+  id,
+  poster,
+  metaId,
+  metaTitle,
+  ...rest
+}: MuxVideoPlayerProps) {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -30,6 +36,11 @@ export default function MuxVideo({ id, poster, metaId, metaTitle, ...rest }: Mux
         autoPlay={false}
         streamType='on-demand'
         // customDomain='video.chvndler.ch'
+        /**
+         *
+         * not sure why custom domain isnt working..
+         * need to look into this.
+         */
         playbackId={id}
         poster={poster}
         title={rest.title || '© Copyright CDC®'}

@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 import { compareDesc } from 'date-fns';
 import type { Projects } from '.contentlayer/generated/types';
-import { formatDateTime } from '../../lib/hooks/use-date-time';
-import { cn } from '../../lib/utils';
+import { formatDateTime } from '@/lib/hooks/use-date-time';
+import { cn } from '@/lib/utils';
 
 type ListProps = {
   projects: Projects[];

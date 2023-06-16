@@ -26,7 +26,10 @@ export const CommitSha = () => {
           <GitShaIcon />
         </span>
         <Link href={commitLink} target='_blank' rel='noreferrer noopener'>
-          <span className={cn(`text-[#${shortSha}]`)} style={{ color: `#${shortSha} !important` }}>
+          <span
+            className={cn(`text-[#${shortSha}]`)}
+            style={{ color: `#${shortSha} !important` }}
+          >
             {shortSha}
           </span>
         </Link>

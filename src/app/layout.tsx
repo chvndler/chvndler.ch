@@ -53,8 +53,8 @@ export const metadata: Metadata = {
     type: 'website',
   },
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#F9F0F0' },
-    { media: '(prefers-color-scheme: dark)', color: '#111111' },
+    { media: '(prefers-color-scheme: light)', color: '#FFFFFF' },
+    { media: '(prefers-color-scheme: dark)', color: '#171717' },
   ],
   icons: {
     icon: '/favicon.svg',

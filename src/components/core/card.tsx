@@ -3,7 +3,6 @@ import ReactMarkdown from 'react-markdown';
 import Balancer from 'react-wrap-balancer';
 
 import type { Projects } from '.contentlayer/generated/types';
-import { formatDateTime } from '../../lib/hooks/use-date-time';
 import { cn } from '../../lib/utils';
 
 export default function Card({

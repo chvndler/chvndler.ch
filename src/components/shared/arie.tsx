@@ -10,7 +10,7 @@ type MouseEvent = {
 type ValueProps = React.HTMLAttributes<HTMLDivElement>;
 
 function Value(props: ValueProps) {
-  const [display, setDisplay] = React.useState('X 000000– Y 000000');
+  const [display, setDisplay] = React.useState('X000000 → Y000000');
 
   const format = React.useCallback((num: string | number, pad: number) => {
     return num.toString().padStart(pad, '0');
@@ -20,7 +20,7 @@ function Value(props: ValueProps) {
     (event: MouseEvent) => {
       const x = format(event.clientX, 6);
       const y = format(event.clientY, 6);
-      setDisplay(`X ${x}– Y ${y}`);
+      setDisplay(`X${x} → Y${y}`);
     },
     [format],
   );

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Tooltip from '../shared/tooltip';
+import Tooltip from '@/components/primitives/tooltip';
 
 // server
 
