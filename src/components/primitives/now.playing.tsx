@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';
+
 import useSWR from 'swr';
 import fetcher from '@/lib/utils';
 import type { SpotifyNowPlaying } from '@/lib/spotify';
@@ -37,7 +37,7 @@ function SpotifyPlayer() {
   );
 }
 
-export default function NowPlaying() {
+export const NowPlaying = () => {
   return (
     <>
       <SmallSkeleton>
@@ -45,4 +45,4 @@ export default function NowPlaying() {
       </SmallSkeleton>
     </>
   );
-}
+};
