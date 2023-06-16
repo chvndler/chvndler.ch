@@ -7,6 +7,7 @@ import {
   MenuContext,
   SpotifyContext,
   GitColourContext,
+  SelectContext,
 } from '@/components/shared/archive';
 
 interface ComponentBase {
@@ -46,6 +47,16 @@ export const allComponents: ComponentBase[] = [
     slug: '/archive/git-colour',
     url: '/archive/git-colour',
     component: GitColourContext,
+  },
+  {
+    type: 'Archive',
+    slugAsParams: 'kit-select',
+    title: 'Select Kit',
+    excerpt:
+      'UI Element that allows users to choose one or more options from a dropdown list.',
+    slug: '/archive/kit-select',
+    url: '/archive/kit-select',
+    component: SelectContext,
   },
 ];
 
