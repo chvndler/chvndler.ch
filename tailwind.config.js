@@ -11,6 +11,7 @@ module.exports = {
     fontFamily: {
       inter: ['Inter V', 'sans-serif'],
       archivo: ['Archivo V', 'sans-serif'],
+      sohne: ['Sohne', 'sans-serif'],
       ibmSans: ['IBM Plex Sans', 'sans-serif'],
       ibmMono: ['IBM Plex Mono', 'monospace'],
       helmet: ['Helmet Neue', 'sans-serif'],

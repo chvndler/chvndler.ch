@@ -25,7 +25,7 @@ const nextConfig = {
 };
 
 const ContentSecurityPolicy = `
-    default-src 'self';
+    default-src 'self' *;
     script-src 'self' 'unsafe-eval' 'unsafe-inline' *.chvndler.ch api.chvndler.ch vitals.vercel-insights.com *.usefathom.com *.mux.com stream.mux;
     child-src *.chvndler.ch api.chvndler.ch *.google.com vitals.vercel-insights.com *.twitter.com stream.mux image.mux.com cdn.usefathom.com *.usefathom.com;
     style-src 'self' 'unsafe-inline' *.chvndler.ch api.chvndler.ch *.mux.com vitals.vercel-insights.com;

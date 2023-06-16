@@ -6,14 +6,14 @@ import Link from 'next/link';
 const altrdsgn = 'https://www.atlrdsgn.com/';
 
 export const Introduction = () => (
-  <section id='intro-sect' className='border-b border-blackA4 py-6 dark:border-whiteA4'>
-    <div className='mx-auto flex flex-col items-center py-6'>
-      <div className='prose-blue mx-auto flex w-full flex-col text-left'>
-        <div className='mx-auto w-full'>
-          <h3 className='font-archivo text-[20px] font-semibold leading-10 tracking-tight text-carbon-700 dark:text-carbon-50'>
+  <section id='intro-sect' className='py-6 border-b border-blackA4 dark:border-whiteA4'>
+    <div className='flex flex-col items-center py-6 mx-auto'>
+      <div className='flex flex-col w-full mx-auto text-left prose-blue'>
+        <div className='w-full mx-auto'>
+          <h3 className='font-sohne text-[20px] font-semibold leading-10 tracking-tight text-carbon-700 dark:text-carbon-50'>
             Chandler Chappell.
           </h3>
-          <p className='text-md font-ibmSans font-normal leading-6 text-carbon-500 dark:text-carbon-200'>
+          <p className='font-normal leading-6 text-md font-ibmSans text-carbon-500 dark:text-carbon-200'>
             Creating cool and taking notes. Enjoying the internet and open-source,
             interested in design systems, component architectures, TypeScript, and React.
             The focus in the moment is silencing the noise within design culture, with{' '}

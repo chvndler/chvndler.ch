@@ -56,7 +56,7 @@ export const getNowPlaying = async () => {
   });
 };
 
-export default async function spotify(req: NextApiRequest, res: NextApiResponse) {
+export async function spotify(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'GET') {
     const response = await getNowPlaying();
 
@@ -83,3 +83,5 @@ export default async function spotify(req: NextApiRequest, res: NextApiResponse)
     return res.status(200).json(data);
   }
 }
+
+// export default spotify;
