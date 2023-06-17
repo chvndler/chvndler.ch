@@ -3,7 +3,7 @@
 import React from 'react';
 import * as Collapsible from '@radix-ui/react-collapsible';
 
-const Collapse = () => {
+export const Collapse = () => {
   const [open, setOpen] = React.useState(false);
   return (
     <Collapsible.Root className='w-[300px]' open={open} onOpenChange={setOpen}>
@@ -38,8 +38,6 @@ const Collapse = () => {
     </Collapsible.Root>
   );
 };
-
-export default Collapse;
 
 /**
  *
