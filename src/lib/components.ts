@@ -34,7 +34,7 @@ export const allComponents: ComponentBase[] = [
     type: 'Archive',
     slugAsParams: 'spotify',
     title: 'Spotify Now',
-    excerpt: 'Display the currently playing song on a user(s) Spotify account.',
+    excerpt: 'Display the currently streaming track of a Spotify account(s) or user(s).',
     slug: '/archive/spotify',
     url: '/archive/spotify',
     component: SpotifyContext,

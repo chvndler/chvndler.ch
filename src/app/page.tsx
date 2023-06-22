@@ -1,4 +1,3 @@
-// server.
 import React from 'react';
 
 /*
@@ -28,18 +27,3 @@ export default function Index() {
   );
 }
 
-/**
- *
- * To sort and chose projects to show..
- *
- * <FeaturedList
- *    projects={[
- *
- *         allProjects[1],
- *         allProjects[2],
- *         allProjects[3],
- *
- *         // or → ...allProjects.slice(1, 4)
- *     ]}
- *  />
- */

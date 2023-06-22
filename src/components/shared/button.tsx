@@ -12,7 +12,7 @@ export const DesignerButton = (props: ButtonProps) => {
     <>
       <div className='flex flex-col gap-8'>
         <a
-          className='super-title pointer-events-auto transition-opacity hover:opacity-80'
+          className='transition-opacity pointer-events-auto super-title hover:opacity-80'
           href='/login'
           rel='noopener noreferrer'
         >
@@ -47,7 +47,7 @@ export const GitButton = ({ children, href, ...props }: ButtonProps) => (
       <a href={href} target='_blank' rel='noopener noreferrer'>
         <button
           {...props}
-          className='rounded-xl border border-carbon-200 bg-carbon-50 px-4 py-1 font-archivo text-xs text-carbon-700 shadow-md hover:opacity-80 dark:border-carbon-700 dark:bg-carbon-800 dark:text-carbon-100'
+          className='px-4 py-1 text-xs border rounded-lg border-carbon-200 bg-carbon-50 font-archivo text-carbon-700 hover:shadow-sm hover:opacity-80 dark:border-carbon-700 dark:bg-carbon-800 dark:text-carbon-100'
         >
           {children}
         </button>

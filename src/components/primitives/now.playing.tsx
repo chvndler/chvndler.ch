@@ -17,8 +17,8 @@ function SpotifyPlayer() {
           <SpotifyLogo height={'18'} width={'18'} />
           {data?.isPlaying === false ? (
             <>
-              <p className='text-sm font-semibold text-carbon-800 dark:text-carbon-600'>
-                Not Streaming
+              <p className='text-sm font-semibold text-carbon-600 dark:text-carbon-600'>
+                Not streaming
               </p>
             </>
           ) : (
