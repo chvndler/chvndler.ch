@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     creator: '@chvndler',
     images: ['/static/img/og.jpg'],
   },
-  category: 'technology',
+  category: '',
   verification: {},
   other: {
     custom: 'none',

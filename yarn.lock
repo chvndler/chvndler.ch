@@ -2664,7 +2664,7 @@ __metadata:
     eslint-config-prettier: ^8.8.0
     framer-motion: ^10.12.16
     lucide-react: ^0.245.0
-    next: ^13.4.4
+    next: ^13.4.7
     next-contentlayer: ^0.3.2
     next-themes: ^0.2.1
     postcss: ^8.4.24
@@ -6230,7 +6230,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:^13.4.4":
+"next@npm:^13.4.7":
   version: 13.4.7
   resolution: "next@npm:13.4.7"
   dependencies:
