@@ -17,12 +17,12 @@ export const FeaturedList = ({ projects }: ListProps) => {
   const listItems = sortedProjects.map((project, z) => (
     <li
       key={z}
-      className='transition-colors duration-300 ease-in-out bg-blackA1 hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'
+      className='bg-blackA1 transition-colors duration-300 ease-in-out hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'
     >
-      <div key={z} className='flex flex-row items-center justify-between w-full m-auto'>
+      <div key={z} className='m-auto flex w-full flex-row items-center justify-between'>
         <Link
           href={project.slug}
-          className='items-center justify-start py-2 font-medium tracking-tight text-md font-ibmSans text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300 md:text-lg'
+          className='text-md items-center justify-start py-2 font-ibmSans font-medium tracking-tight text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300 md:text-lg'
         >
           {project.title}
         </Link>
@@ -45,11 +45,11 @@ export const FeaturedList = ({ projects }: ListProps) => {
 
   return (
     <section id='proj-sect' className='py-6'>
-      <div className='w-full py-6 mx-auto overflow-hidden'>
-        <p className='mb-2 text-[18px] font-semibold tracking-tight text-carbon-700 dark:text-carbon-300'>
-          Projects.
+      <div className='mx-auto w-full overflow-hidden py-6'>
+        <p className='mb-2 font-unica text-[16px] font-[600] tracking-tight text-carbon-700 dark:text-carbon-300'>
+          Projects
         </p>
-        <ul className='grid items-center grid-cols-1 py-2 divide-y divide-blackA6 dark:divide-whiteA4'>
+        <ul className='grid grid-cols-1 items-center divide-y divide-blackA6 py-2 dark:divide-whiteA4'>
           {listItems}
         </ul>
       </div>
@@ -57,7 +57,7 @@ export const FeaturedList = ({ projects }: ListProps) => {
       <div className='flex justify-start'>
         <Link
           href='/projects'
-          className='text-sm font-medium tracking-tight text-left font-ibmSans text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300'
+          className='text-left font-ibmSans text-sm font-medium tracking-tight text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300'
         >
           view all projects →
         </Link>

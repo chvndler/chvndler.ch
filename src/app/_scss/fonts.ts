@@ -25,14 +25,14 @@ const inter = Inter({
 const IBMPlexSans = IBM_Plex_Sans({
   subsets: ['latin', 'latin-ext'],
   display: 'swap',
-  weight: '500',
+  weight: ['100', '200', '300', '400', '500', '600', '700'],
 });
 
 const IBMPlexMono = IBM_Plex_Mono({
   subsets: ['latin', 'latin-ext'],
   display: 'swap',
   // preload: true,
-  weight: '500',
+  weight: ['100', '200', '300', '400', '500', '600', '700'],
 });
 
 /**

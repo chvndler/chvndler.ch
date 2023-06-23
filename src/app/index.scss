@@ -1,4 +1,4 @@
-@import './_scss/plex';
+// @import './_scss/plex';
 @import './_scss/fontface';
 @import './_scss/helpers';
 
@@ -11,6 +11,7 @@
     --font-archivo: 'Archivo', sans-serif;
     --font-inter: 'Inter', sans-serif;
     --font-sohne: 'Sohne', sans-serif;
+    --font-unica: 'Unica', sans-serif;
     --font-plex-sans: 'IBM Plex Sans', sans-serif;
     --font-plex-mono: 'IBM Plex Mono', monospace;
     --font-s: 0.875rem; // 14px
@@ -28,6 +29,31 @@
     --footer-height: 54px;
 
     --header-bg: rgba(19, 20, 21, 0.45);
+  }
+}
+
+@media print {
+  :root {
+    --bg: #fff;
+    --fg: #000;
+    --gray: #888;
+    --light-gray: #dedede;
+    --lighter-gray: #f5f5f5;
+    --lightest-gray: #fafafa;
+    --article-color: #212121;
+    --header-bg: rgba(255, 255, 255, 0.8);
+    --gray-alpha: rgba(19, 20, 21, 0.5);
+    --selection: rgba(0, 0, 0, 0.99);
+
+    --token: #666;
+    --comment: #999;
+    --keyword: #000;
+    --name: #333;
+    --highlight: #eaeaea;
+  }
+
+  * {
+    text-shadow: none !important;
   }
 }
 
@@ -99,7 +125,7 @@
 
 /**
  * @_scss
- * top-level css.
+ * top-level pure-css.
  */
 
 * {
@@ -183,29 +209,4 @@ small {
   border-radius: 2px !important;
   -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
-}
-
-@media print {
-  :root {
-    --bg: #fff;
-    --fg: #000;
-    --gray: #888;
-    --light-gray: #dedede;
-    --lighter-gray: #f5f5f5;
-    --lightest-gray: #fafafa;
-    --article-color: #212121;
-    --header-bg: rgba(255, 255, 255, 0.8);
-    --gray-alpha: rgba(19, 20, 21, 0.5);
-    --selection: rgba(0, 0, 0, 0.99);
-
-    --token: #666;
-    --comment: #999;
-    --keyword: #000;
-    --name: #333;
-    --highlight: #eaeaea;
-  }
-
-  * {
-    text-shadow: none !important;
-  }
 }
