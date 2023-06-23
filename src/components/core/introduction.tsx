@@ -7,10 +7,10 @@ import { NumberEmail } from './number.email';
 const altrdsgn = 'https://www.atlrdsgn.com/';
 
 export const Introduction = () => (
-  <section id='intro-sect' className='py-6 border-b border-blackA4 dark:border-whiteA4'>
-    <div className='flex flex-col items-center py-6 mx-auto'>
-      <div className='flex flex-col w-full mx-auto text-left prose-blue'>
-        <div className='w-full mx-auto'>
+  <section id='intro-sect' className='py-6'>
+    <div className='mx-auto flex flex-col items-center py-6'>
+      <div className='prose-blue mx-auto flex w-full flex-col text-left'>
+        <div className='mx-auto w-full'>
           <NumberEmail />
           <p className='max-w-lg font-ibmSans text-[15px] font-normal leading-5 text-carbon-500 dark:text-carbon-200'>
             Creating cool and taking notes. Enjoying the internet and open-source,

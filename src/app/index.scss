@@ -13,6 +13,7 @@
     --font-sohne: 'Sohne', sans-serif;
     --font-plex-sans: 'IBM Plex Sans', sans-serif;
     --font-plex-mono: 'IBM Plex Mono', monospace;
+    --font-s: 0.875rem; // 14px
     --bg-dark: rgba(23, 23, 23, 1);
     --bg-light: rgba(255, 255, 255, 1);
     --color-bar: rgba(103, 119, 201, 1);
@@ -144,6 +145,12 @@ html.dark body {
   color: var(--bg-light) !important;
   background: var(--bg-dark) !important;
   background-color: var(--bg-dark) !important;
+}
+
+small {
+  font-size: var(--font-s);
+  line-height: 1.5;
+  display: block;
 }
 
 ::selection {
