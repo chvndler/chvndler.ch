@@ -5,7 +5,7 @@ import Tooltip from '@/components/primitives/tooltip';
 
 export const Connect = () => (
   <section id='connect-sect' className='py-6'>
-    <div className='flex flex-wrap justify-start flex-grow py-6 text-left gap-y-6 md:mt-0'>
+    <div className='flex flex-grow flex-wrap justify-start gap-y-6 py-6 text-left md:mt-0'>
       <div className='w-full space-y-4 md:w-1/2'>
         <p className='mb-2 text-[18px] font-semibold tracking-tight text-carbon-700 dark:text-carbon-300'>
           Connect.
@@ -15,16 +15,14 @@ export const Connect = () => (
             <>
               <li key={k}>
                 <Tooltip content={connect.tip}>
-                  <>
-                    <Link
-                      key={k}
-                      href={connect.url}
-                      target={connect.target}
-                      className='text-xs font-semibold uppercase md:text-md font-archivo text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
-                    >
-                      {connect.title}
-                    </Link>
-                  </>
+                  <Link
+                    key={k}
+                    href={connect.url}
+                    target={connect.target}
+                    className='md:text-md font-archivo text-xs font-semibold uppercase text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
+                  >
+                    {connect.title}
+                  </Link>
                 </Tooltip>
               </li>
             </>
@@ -34,7 +32,8 @@ export const Connect = () => (
 
       <div className='w-full space-y-4 md:w-1/2'>
         <p className='mb-2 text-[18px] font-semibold tracking-tight text-carbon-700 dark:text-carbon-300'>
-          Other.
+          Mediums.
+          
         </p>
         <nav className='mb-10 list-none text-grayA10 underline-offset-4'>
           {profile.map((source, i) => (
@@ -44,7 +43,7 @@ export const Connect = () => (
                   key={i}
                   href={source.url}
                   target={source.target}
-                  className='text-xs font-semibold uppercase md:text-md font-archivo text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
+                  className='md:text-md font-archivo text-xs font-semibold uppercase text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
                 >
                   {source.title}
                 </Link>
