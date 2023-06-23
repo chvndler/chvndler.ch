@@ -5,9 +5,9 @@ import Tooltip from '@/components/primitives/tooltip';
 
 export const Connect = () => (
   <section id='connect-sect' className='py-6'>
-    <div className='flex flex-grow flex-wrap justify-start gap-y-6 py-6 text-left md:mt-0'>
+    <div className='flex flex-wrap justify-start flex-grow py-6 text-left gap-y-6 md:mt-0'>
       <div className='w-full space-y-4 md:w-1/2'>
-        <p className='mb-2 text-[18px] font-semibold text-carbon-700 dark:text-carbon-300'>
+        <p className='mb-2 text-[18px] font-semibold tracking-tight text-carbon-700 dark:text-carbon-300'>
           Connect.
         </p>
         <nav className='mb-10 list-none text-grayA10 underline-offset-4'>
@@ -20,7 +20,7 @@ export const Connect = () => (
                       key={k}
                       href={connect.url}
                       target={connect.target}
-                      className='text-md md:text-md font-ibmSans font-medium lowercase text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
+                      className='text-xs font-semibold uppercase md:text-md font-archivo text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
                     >
                       {connect.title}
                     </Link>
@@ -33,7 +33,7 @@ export const Connect = () => (
       </div>
 
       <div className='w-full space-y-4 md:w-1/2'>
-        <p className='mb-2 text-[18px] font-semibold text-carbon-700 dark:text-carbon-300'>
+        <p className='mb-2 text-[18px] font-semibold tracking-tight text-carbon-700 dark:text-carbon-300'>
           Other.
         </p>
         <nav className='mb-10 list-none text-grayA10 underline-offset-4'>
@@ -44,7 +44,7 @@ export const Connect = () => (
                   key={i}
                   href={source.url}
                   target={source.target}
-                  className='text-md md:text-md font-ibmSans font-medium lowercase text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
+                  className='text-xs font-semibold uppercase md:text-md font-archivo text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
                 >
                   {source.title}
                 </Link>

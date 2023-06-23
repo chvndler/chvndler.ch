@@ -8,6 +8,7 @@ import {
   SpotifyContext,
   GitColourContext,
   SelectContext,
+  TimeContext,
 } from '@/components/shared/archive';
 
 interface ComponentBase {
@@ -57,6 +58,15 @@ export const allComponents: ComponentBase[] = [
     slug: '/archive/kit-select',
     url: '/archive/kit-select',
     component: SelectContext,
+  },
+  {
+    type: 'Archive',
+    slugAsParams: 'time',
+    title: 'Current Time',
+    excerpt: 'UI Element that displays the current time.',
+    slug: '/archive/time',
+    url: '/archive/time',
+    component: TimeContext,
   },
 ];
 

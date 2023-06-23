@@ -46,7 +46,7 @@ export const FeaturedList = ({ projects }: ListProps) => {
   return (
     <section id='proj-sect' className='py-6'>
       <div className='w-full py-6 mx-auto overflow-hidden'>
-        <p className='mb-2 text-[18px] font-semibold text-carbon-700 dark:text-carbon-300'>
+        <p className='mb-2 text-[18px] font-semibold tracking-tight text-carbon-700 dark:text-carbon-300'>
           Projects.
         </p>
         <ul className='grid items-center grid-cols-1 py-2 divide-y divide-blackA6 dark:divide-whiteA4'>
@@ -55,8 +55,11 @@ export const FeaturedList = ({ projects }: ListProps) => {
       </div>
 
       <div className='flex justify-start'>
-        <Link href="/projects" className='text-sm font-medium tracking-tight text-left font-ibmSans text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300'>
-            view all projects →
+        <Link
+          href='/projects'
+          className='text-sm font-medium tracking-tight text-left font-ibmSans text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300'
+        >
+          view all projects →
         </Link>
       </div>
     </section>
