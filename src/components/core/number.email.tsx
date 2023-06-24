@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const NumberEmail = () => (
-  <div className='mb-16 flex flex-col gap-2'>
+  <div className='flex flex-col gap-2 mb-8'>
     <p className='font-unica text-[15px] font-[600] leading-3 text-carbon-600 dark:text-carbon-50'>
       Chandler Chappell
     </p>
@@ -20,13 +20,13 @@ function Links() {
     <>
       <a
         href='tel:3362448939'
-        className='max-w-fit font-mono text-xs font-medium leading-3 text-carbon-700 dark:text-carbon-50'
+        className='font-mono text-xs font-medium leading-3 max-w-fit text-carbon-700 dark:text-carbon-50'
       >
         +33 62 44 89 39
       </a>
       <a
         href='mailto:chan@atlrdsgn.com'
-        className='max-w-fit font-mono text-xs font-medium lowercase leading-3 text-carbon-700 dark:text-carbon-50'
+        className='font-mono text-xs font-medium leading-3 lowercase max-w-fit text-carbon-700 dark:text-carbon-50'
       >
         CHAN@ATLRDSGN.COM
       </a>

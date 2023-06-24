@@ -5,12 +5,14 @@ import Tooltip from '@/components/primitives/tooltip';
 
 export const Connect = () => (
   <section id='connect-sect' className='py-6'>
-    <div className='flex flex-grow flex-wrap justify-start gap-y-6 py-6 text-left md:mt-0'>
-      <div className='w-full space-y-4 md:w-1/2'>
-        <p className='mb-2 font-unica text-[16px] font-[600] tracking-tight text-carbon-700 dark:text-carbon-300'>
+    {/* <!-- <div className='flex flex-wrap justify-start flex-grow py-6 text-left gap-y-6 md:mt-0'> --> */}
+
+    <div className='grid justify-start grid-cols-1 py-6 text-left gap-y-6 md:grid-cols-3'>
+      <div className='w-full h-auto gap-y-3'>
+        <p className='font-unica text-[16px] font-[600] tracking-tight text-carbon-700 dark:text-carbon-300'>
           Connect
         </p>
-        <nav className='mb-10 list-none text-grayA10 underline-offset-4'>
+        <nav className='mb-4 list-none text-grayA10 underline-offset-4'>
           {connects.map((connect, k) => (
             <>
               <li key={k}>
@@ -19,7 +21,7 @@ export const Connect = () => (
                     key={k}
                     href={connect.url}
                     target={connect.target}
-                    className='md:text-md font-archivo text-xs font-semibold uppercase text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
+                    className='text-xs font-semibold uppercase md:text-md font-archivo text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
                   >
                     {connect.title}
                   </Link>
@@ -30,11 +32,11 @@ export const Connect = () => (
         </nav>
       </div>
 
-      <div className='w-full space-y-4 md:w-1/2'>
-        <p className='mb-2 font-unica text-[16px] font-[600] tracking-tight text-carbon-700 dark:text-carbon-300'>
+      <div className='w-full h-auto gap-y-3'>
+        <p className='font-unica text-[16px] font-[600] tracking-tight text-carbon-700 dark:text-carbon-300'>
           Media
         </p>
-        <nav className='mb-10 list-none text-grayA10 underline-offset-4'>
+        <nav className='mb-2 list-none text-grayA10 underline-offset-4'>
           {profile.map((source, i) => (
             <>
               <li key={i}>
@@ -42,7 +44,7 @@ export const Connect = () => (
                   key={i}
                   href={source.url}
                   target={source.target}
-                  className='md:text-md font-archivo text-xs font-semibold uppercase text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
+                  className='text-xs font-semibold uppercase md:text-md font-archivo text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
                 >
                   {source.title}
                 </Link>
