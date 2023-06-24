@@ -37,8 +37,7 @@ export default function ThemeSwitch() {
         }}
         onClick={(ev) => {
           ev.preventDefault(), setTheme(theme === 'light' ? 'dark' : 'light');
-        }}
-      >
+        }}>
         <span className='sr-only'>Toggle mode</span>
 
         <span>

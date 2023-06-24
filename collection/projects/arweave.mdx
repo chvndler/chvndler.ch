@@ -16,36 +16,36 @@ tags:
 
 <Space />
 
-All of Mirror’s posts are available to access on Arweave, an on-chain decentralized
-storage layer that makes it so that your posts exist forever (even if Mirror does not)!
+All of Mirror’s posts are available to access on Arweave, an on-chain decentralized storage layer
+that makes it so that your posts exist forever (even if Mirror does not)!
 
 Here’s a basic tutorial on how to get data published on Mirror directly from Arweave:
 
 <Space />
 
-1. Grab the Mirror content digest from the end of a Mirror post URL. The URL for this post
-   is `dev.mirror.xyz/Gj...mhw` and so the digest is `Gjss...3hw`.
-2. We’re going to plug this digest value into a query against Arweave’s graphQL endpoint
-   to render the data
-3. We’re going to make use of a couple of tags to get the Arweave transaction via GraphQL.
-   Every post on Mirror has a few tags we can use to filter for the content:
+1. Grab the Mirror content digest from the end of a Mirror post URL. The URL for this post is
+   `dev.mirror.xyz/Gj...mhw` and so the digest is `Gjss...3hw`.
+2. We’re going to plug this digest value into a query against Arweave’s graphQL endpoint to render
+   the data
+3. We’re going to make use of a couple of tags to get the Arweave transaction via GraphQL. Every
+   post on Mirror has a few tags we can use to filter for the content:
 4. `App-Name`: `MirrorXYZ` tells Arweave to scope the results to all posts on Mirror
-   Original-Content-Digest: Gjs..rei3hw tells Arweave to return every single transaction
-   that matches the requested content digest
-5. By default, we upload every single published update on a post to Arweave, so the query
-   returns a list. To get the most recently published update sent to Arweave, we just sort
-   the results by block height and grab the newest transaction.
-6. Once, we have the Transaction ID we need, we can use the getData function in the
-   Arweave JS SDK to render the JSON content
+   Original-Content-Digest: Gjs..rei3hw tells Arweave to return every single transaction that
+   matches the requested content digest
+5. By default, we upload every single published update on a post to Arweave, so the query returns a
+   list. To get the most recently published update sent to Arweave, we just sort the results by
+   block height and grab the newest transaction.
+6. Once, we have the Transaction ID we need, we can use the getData function in the Arweave JS SDK
+   to render the JSON content
 7. We can also verify that we have the correct transaction ID navigating to
    `arweave.net/<TRANSACTION_ID>` which will render the JSON
-8. Our digest Gj..hw returns a transaction ID of
-   dysIrCovgAHJ6siGA5_r27Q59j2tv5wD4kqc1bxRFVE, which renders the content you see here.
+8. Our digest Gj..hw returns a transaction ID of dysIrCovgAHJ6siGA5_r27Q59j2tv5wD4kqc1bxRFVE, which
+   renders the content you see here.
 
 <Space />
 
-**This site is a work in progress.** If you see lorem ipsum text or any ph images on a
-page, it means I'm still working on it.
+**This site is a work in progress.** If you see lorem ipsum text or any ph images on a page, it
+means I'm still working on it.
 
 You can follow updates on Twitter [@chvndlerch](https://twitter.com/chvndlerch).
 
@@ -53,8 +53,8 @@ You can follow updates on Twitter [@chvndlerch](https://twitter.com/chvndlerch).
 
 The GraphQL query is available as a gist here.
 
-In order to bypass requiring content digests to populate Mirror posts, you can use the
-Contributor tag to query for all posts made by a specific wallet. A full list of available
-tags is available on the Transaction GraphQL object.
+In order to bypass requiring content digests to populate Mirror posts, you can use the Contributor
+tag to query for all posts made by a specific wallet. A full list of available tags is available on
+the Transaction GraphQL object.
 
 <Space />

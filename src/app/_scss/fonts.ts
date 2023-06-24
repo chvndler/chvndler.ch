@@ -1,11 +1,4 @@
-import {
-  Inter,
-  Archivo,
-  IBM_Plex_Sans,
-  IBM_Plex_Mono,
-  DM_Sans,
-  DM_Mono,
-} from 'next/font/google';
+import { Inter, Archivo, IBM_Plex_Sans, IBM_Plex_Mono, DM_Sans, DM_Mono } from 'next/font/google';
 import localFont from 'next/font/local';
 
 /**

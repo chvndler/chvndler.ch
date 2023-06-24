@@ -84,8 +84,7 @@ function PrimitiveWrapper({ children }: { children: React.ReactNode }) {
     <>
       <div
         id='primitive-x'
-        className='mx-auto w-full rounded-md bg-carbon-50 px-4 py-14 shadow-sminner dark:bg-carbon-900 md:px-[92px]'
-      >
+        className='mx-auto w-full rounded-md bg-carbon-50 px-4 py-14 shadow-sminner dark:bg-carbon-900 md:px-[92px]'>
         <div className={cn('primitive_inner px-0 py-3')}>{children}</div>
       </div>
     </>

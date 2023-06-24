@@ -16,8 +16,7 @@ export const SpotifyLogo = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         height={height}
         viewBox='0 0 18 18'
         fill='none'
-        xmlns='http://www.w3.org/2000/svg'
-      >
+        xmlns='http://www.w3.org/2000/svg'>
         <g clipPath='url(#clip0_265_394)'>
           <path
             fill={color}
@@ -31,7 +30,7 @@ export const SpotifyLogo = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         </defs>
       </svg>
     );
-  },
+  }
 );
 
 SpotifyLogo.displayName = 'SpotifyLogo';

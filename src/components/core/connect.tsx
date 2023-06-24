@@ -7,8 +7,8 @@ export const Connect = () => (
   <section id='connect-sect' className='py-6'>
     {/* <!-- <div className='flex flex-wrap justify-start flex-grow py-6 text-left gap-y-6 md:mt-0'> --> */}
 
-    <div className='grid justify-start grid-cols-1 py-6 text-left gap-y-6 md:grid-cols-3'>
-      <div className='w-full h-auto gap-y-3'>
+    <div className='grid grid-cols-1 justify-start gap-y-6 py-6 text-left md:grid-cols-3'>
+      <div className='h-auto w-full gap-y-3'>
         <p className='font-unica text-[16px] font-[600] tracking-tight text-carbon-700 dark:text-carbon-300'>
           Connect
         </p>
@@ -21,8 +21,7 @@ export const Connect = () => (
                     key={k}
                     href={connect.url}
                     target={connect.target}
-                    className='text-xs font-semibold uppercase md:text-md font-archivo text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
-                  >
+                    className='md:text-md font-archivo text-xs font-semibold uppercase text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'>
                     {connect.title}
                   </Link>
                 </Tooltip>
@@ -32,7 +31,7 @@ export const Connect = () => (
         </nav>
       </div>
 
-      <div className='w-full h-auto gap-y-3'>
+      <div className='h-auto w-full gap-y-3'>
         <p className='font-unica text-[16px] font-[600] tracking-tight text-carbon-700 dark:text-carbon-300'>
           Media
         </p>
@@ -44,8 +43,7 @@ export const Connect = () => (
                   key={i}
                   href={source.url}
                   target={source.target}
-                  className='text-xs font-semibold uppercase md:text-md font-archivo text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'
-                >
+                  className='md:text-md font-archivo text-xs font-semibold uppercase text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'>
                   {source.title}
                 </Link>
               </li>

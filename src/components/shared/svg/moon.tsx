@@ -19,8 +19,7 @@ const MoonOutlined = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         height={height}
         viewBox='0 0 16 16'
         fill='none'
-        xmlns='http://www.w3.org/2000/svg'
-      >
+        xmlns='http://www.w3.org/2000/svg'>
         <path
           d='M8 14.125C6.37555 14.125 4.81763 13.4797 3.66897 12.331C2.52031 11.1824 1.875 9.62445 1.875 8C1.875 6.37555 2.52031 4.81763 3.66897 3.66897C4.81763 2.52031 6.37555 1.875 8 1.875C9.62445 1.875 11.1824 2.52031 12.331 3.66897C13.4797 4.81763 14.125 6.37555 14.125 8C14.125 9.62445 13.4797 11.1824 12.331 12.331C11.1824 13.4797 9.62445 14.125 8 14.125ZM8 15C9.85652 15 11.637 14.2625 12.9497 12.9497C14.2625 11.637 15 9.85652 15 8C15 6.14348 14.2625 4.36301 12.9497 3.05025C11.637 1.7375 9.85652 1 8 1C6.14348 1 4.36301 1.7375 3.05025 3.05025C1.7375 4.36301 1 6.14348 1 8C1 9.85652 1.7375 11.637 3.05025 12.9497C4.36301 14.2625 6.14348 15 8 15V15Z'
           fill={color}
@@ -42,7 +41,7 @@ const MoonOutlined = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         </defs>
       </svg>
     );
-  },
+  }
 );
 
 const MoonFilled = React.forwardRef<SVGSVGElement, SVGLogoProps>(
@@ -57,8 +56,7 @@ const MoonFilled = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         height={height}
         viewBox='0 0 16 16'
         fill='none'
-        xmlns='http://www.w3.org/2000/svg'
-      >
+        xmlns='http://www.w3.org/2000/svg'>
         <path
           d='M7.99655 14.9931C11.8241 14.9931 14.9931 11.8173 14.9931 7.99655C14.9931 4.16903 11.8173 1 7.9897 1C4.16903 1 1 4.16903 1 7.99655C1 11.8173 4.17589 14.9931 7.99655 14.9931Z'
           fill={color}
@@ -85,7 +83,7 @@ const MoonFilled = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         </defs>
       </svg>
     );
-  },
+  }
 );
 
 MoonOutlined.displayName = 'SVG-MoonOutlined';

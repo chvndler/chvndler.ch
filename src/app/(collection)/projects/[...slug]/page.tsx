@@ -60,8 +60,7 @@ export default async function PostPage({ params }: PostProps) {
       <AppController>
         <article
           key={post._id}
-          className='text-md prose prose-neutral mb-20 font-archivo font-medium text-blackA11 dark:prose-invert prose-h2:font-archivo prose-h2:text-4xl prose-h2:font-bold prose-h2:tracking-tight prose-h3:text-2xl prose-h3:font-[800] prose-h3:tracking-tight dark:text-whiteA10'
-        >
+          className='text-md prose prose-neutral mb-20 font-archivo font-medium text-blackA11 dark:prose-invert prose-h2:font-archivo prose-h2:text-4xl prose-h2:font-bold prose-h2:tracking-tight prose-h3:text-2xl prose-h3:font-[800] prose-h3:tracking-tight dark:text-whiteA10'>
           <ScrollTopbar>
             <section>
               <Link href=''>
@@ -107,9 +106,7 @@ function ProjectTags({ pro }: { pro: Projects }) {
   return (
     <>
       {pro.tags.map((tag, index) => (
-        <BadgeDefault key={pro._id}>
-          {pro.tags.length - 1 === index ? tag : `${tag}`}
-        </BadgeDefault>
+        <BadgeDefault key={pro._id}>{pro.tags.length - 1 === index ? tag : `${tag}`}</BadgeDefault>
       ))}
     </>
   );

@@ -18,8 +18,7 @@ export const GitShaIcon = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         height={height}
         viewBox='0 0 13 13'
         fill='none'
-        xmlns='http://www.w3.org/2000/svg'
-      >
+        xmlns='http://www.w3.org/2000/svg'>
         <g clipPath='url(#clip0_214_6734)'>
           <path
             fillRule='evenodd'
@@ -35,7 +34,7 @@ export const GitShaIcon = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         </defs>
       </svg>
     );
-  },
+  }
 );
 
 GitShaIcon.displayName = 'GitShaIcon';

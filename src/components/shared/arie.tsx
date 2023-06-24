@@ -22,7 +22,7 @@ function Value(props: ValueProps) {
       const y = format(event.clientY, 6);
       setDisplay(`X${x} → Y${y}`);
     },
-    [format],
+    [format]
   );
 
   React.useEffect(() => {

@@ -23,8 +23,7 @@ const TipRoot = ({ children, ...props }: RootProps) => {
     <TIP.Provider
       delayDuration={DEFAULT_DELAY_DURATION}
       skipDelayDuration={DEFAULT_SKIP_DELAY}
-      disableHoverableContent={DISABLE_HOVERABLE_CONTENT}
-    >
+      disableHoverableContent={DISABLE_HOVERABLE_CONTENT}>
       <TIP.Root {...props}>{children}</TIP.Root>
     </TIP.Provider>
   );
@@ -69,7 +68,7 @@ const TipContent = React.forwardRef<React.ElementRef<typeof TIP.Content>, Conten
       ...props
     },
     //..
-    forwardedRef,
+    forwardedRef
   ) => {
     return (
       <TIP.Content
@@ -88,15 +87,14 @@ const TipContent = React.forwardRef<React.ElementRef<typeof TIP.Content>, Conten
           'radix-side-right:animate-slide-left-fade',
           'radix-side-bottom:animate-slide-up-fade',
           'radix-side-left:animate-slide-right-fade',
-          'inline-flex items-center rounded-lg px-1 py-2.5',
-        )}
-      >
+          'inline-flex items-center rounded-lg px-1 py-2.5'
+        )}>
         <span className='font-semiboldz block text-lg leading-4 text-carbon-700 dark:text-carbon-400'>
           {children}
         </span>
       </TIP.Content>
     );
-  },
+  }
 );
 
 type TriggerProps = {
@@ -110,7 +108,7 @@ const TipTrigger = React.forwardRef<React.ElementRef<typeof TIP.Trigger>, Trigge
         {children}
       </TIP.Trigger>
     );
-  },
+  }
 );
 
 export type TipProps = {
@@ -152,8 +150,7 @@ export default function Tooltip({
         <button
           type='button'
           className={`${fullWidth ? 'w-full' : 'inline-flex'} sm:hidden`}
-          onClick={() => setOpenTooltip(true)}
-        >
+          onClick={() => setOpenTooltip(true)}>
           {children}
         </button>
       )}
@@ -173,10 +170,7 @@ export default function Tooltip({
               {children}
             </Tip.Trigger>
 
-            <Tip.Content
-              sideOffset={4}
-              className='animate-slide-right-fade z-30 hidden sm:block'
-            >
+            <Tip.Content sideOffset={4} className='animate-slide-right-fade z-30 hidden sm:block'>
               {typeof content === 'string' ? (
                 <div className='rounded-md border border-carbon-200 p-4 shadow-md dark:border-carbon-800'>
                   <span className=''>{content}</span>

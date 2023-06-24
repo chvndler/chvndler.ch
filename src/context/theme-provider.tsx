@@ -23,8 +23,7 @@ export function ThemeProvider({ children, ...props }: ProviderProps) {
       defaultTheme={'light'}
       attribute='class'
       enableSystem
-      disableTransitionOnChange
-    >
+      disableTransitionOnChange>
       <>{children}</>
     </KitProvider>
   );

@@ -26,9 +26,7 @@ export default function MediaIndex() {
             {copy.copyright.text}
             <br />
             <br />
-            <span className='font-archivo font-bold text-carbon-500'>
-              {copy.copyright.tag}
-            </span>
+            <span className='font-archivo font-bold text-carbon-500'>{copy.copyright.tag}</span>
           </p>
         </section>
 

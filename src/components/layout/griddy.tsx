@@ -81,8 +81,7 @@ const GridLayout = ({ item }: { item: string }) => {
                 index === 30
               ? 'span-3'
               : 'grid-item-'.concat(index.toString())
-          }`}
-        >
+          }`}>
           <h3>{item}</h3>
         </div>
       ))}

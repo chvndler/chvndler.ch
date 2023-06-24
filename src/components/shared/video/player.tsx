@@ -11,13 +11,7 @@ type MuxVideoPlayerProps = {
   metaTitle?: string;
 } & Omit<MuxPlayerProps, 'playbackId' | 'poster'>;
 
-export default function MuxVideo({
-  id,
-  poster,
-  metaId,
-  metaTitle,
-  ...rest
-}: MuxVideoPlayerProps) {
+export default function MuxVideo({ id, poster, metaId, metaTitle, ...rest }: MuxVideoPlayerProps) {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {

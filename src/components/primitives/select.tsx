@@ -18,10 +18,9 @@ const SelectTrigger = React.forwardRef<
     ref={ref}
     className={cn(
       'ring-offset-background focus:ring-ring flex h-10 w-full items-center justify-between rounded-xl border border-carbon-100 bg-transparent px-3 py-2 font-archivo text-sm font-medium text-carbon-500 placeholder:text-carbon-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
-      className,
+      className
     )}
-    {...props}
-  >
+    {...props}>
     {children}
     <SelectPrimitive.Icon asChild>
       <ChevronDown className='h-4 w-4 opacity-50' />
@@ -40,18 +39,16 @@ const SelectContent = React.forwardRef<
       className={cn(
         'animate-in fade-in-80 relative z-50 min-w-[8rem] overflow-hidden rounded-xl border border-carbon-100 bg-carbon-50 text-carbon-600 shadow-lg dark:bg-carbon-800 dark:text-carbon-50',
         position === 'popper' && 'translate-y-1',
-        className,
+        className
       )}
       position={position}
-      {...props}
-    >
+      {...props}>
       <SelectPrimitive.Viewport
         className={cn(
           'p-1',
           position === 'popper' &&
-            'h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]',
-        )}
-      >
+            'h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]'
+        )}>
         {children}
       </SelectPrimitive.Viewport>
     </SelectPrimitive.Content>
@@ -79,10 +76,9 @@ const SelectItem = React.forwardRef<
     ref={ref}
     className={cn(
       'relative flex w-full cursor-default select-none items-center rounded-md py-1.5 pl-8 pr-2 text-sm outline-none focus:bg-grape-100 focus:text-carbon-700 data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
-      className,
+      className
     )}
-    {...props}
-  >
+    {...props}>
     <span className='absolute left-2 flex h-3.5 w-3.5 items-center justify-center'>
       <SelectPrimitive.ItemIndicator>
         <Check className='h-4 w-4' />

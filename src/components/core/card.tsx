@@ -20,8 +20,7 @@ export default function Card({
     <div
       className={`border-gray-200 bg-white relative col-span-1 h-96 overflow-hidden rounded-xl border shadow-md ${
         large ? 'md:col-span-2' : ''
-      }`}
-    >
+      }`}>
       <div className='flex h-60 items-center justify-center'>{demo}</div>
       <div className='mx-auto max-w-md text-center'>
         <h2 className='from-black to-stone-500 font-display bg-gradient-to-br bg-clip-text text-xl font-bold text-transparent md:text-3xl md:font-normal'>
@@ -47,8 +46,7 @@ export default function Card({
                     className='bg-gray-100 text-gray-800 rounded-sm px-1 py-0.5 font-mono font-medium'
                   />
                 ),
-              }}
-            >
+              }}>
               {description}
             </ReactMarkdown>
           </Balancer>
@@ -64,8 +62,7 @@ export const ProjectCard = ({ project }: { project: Projects }) => {
       <article>
         <a
           className={cn('project-card ml-n16 flex flex-col gap-8 rounded-lg p-16')}
-          href={project.url}
-        >
+          href={project.url}>
           <p>{project.title}</p>
           <p>{project.description}</p>
         </a>

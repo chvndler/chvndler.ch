@@ -11,9 +11,7 @@ export const isClient = typeof document !== 'undefined';
 export const isServer = !isClient;
 
 if (typeof process.env.NEXT_PUBLIC_SITE_URL !== 'string') {
-  throw new Error(
-    `Please set the NEXT_PUBLIC_SITE_URL environment variable to your site's URL.`,
-  );
+  throw new Error(`Please set the NEXT_PUBLIC_SITE_URL environment variable to your site's URL.`);
 }
 
 export const siteURL = new URL(process.env.NEXT_PUBLIC_SITE_URL);

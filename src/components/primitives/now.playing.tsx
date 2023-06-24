@@ -25,8 +25,7 @@ function SpotifyPlayer() {
             <>
               <a href={data?.songUrl} target='_blank' rel='noopener noreferrer'>
                 <p className='text-sm font-semibold text-carbon-800 dark:text-carbon-400'>
-                  {data?.artist} –{' '}
-                  <span className='font-normal opacity-80'>{data?.title}</span>
+                  {data?.artist} – <span className='font-normal opacity-80'>{data?.title}</span>
                 </p>
               </a>
             </>
