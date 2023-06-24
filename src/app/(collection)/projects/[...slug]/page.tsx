@@ -60,23 +60,23 @@ export default async function PostPage({ params }: PostProps) {
       <AppController>
         <article
           key={post._id}
-          className='text-md prose prose-neutral mb-20 font-archivo font-medium text-blackA11 dark:prose-invert prose-h2:font-archivo prose-h2:text-4xl prose-h2:font-bold prose-h2:tracking-tight prose-h3:text-2xl prose-h3:font-[800] prose-h3:tracking-tight dark:text-whiteA10'>
+          className='text-md prose prose-neutral mb-20 font-unica font-[400] text-blackA11 dark:prose-invert prose-h2:font-archivo prose-h2:text-4xl prose-h2:font-bold prose-h2:tracking-tight prose-h3:text-2xl prose-h3:font-[800] prose-h3:tracking-tight dark:text-whiteA10'>
           <ScrollTopbar>
             <section>
               <Link href=''>
                 <RouterPrev />
               </Link>
 
-              <div className='flex flex-row items-center gap-1 font-fraktion text-xs uppercase'>
+              <div className='flex flex-row items-center gap-1 font-mono text-xs uppercase'>
                 <FormattedDateString postDate={post} />
                 <ProjectTags pro={post} />
               </div>
 
               <div className='my-6'>
-                <h2 className='prose-h2 font-archivo leading-4 tracking-tight text-blackA11 dark:text-whiteA11'>
+                <h2 className='prose-h2 font-unica leading-4 tracking-tight text-blackA11 dark:text-whiteA11'>
                   {post.title}
                 </h2>
-                <p className='text-md max-w-sm font-archivo leading-6 text-carbon-800 dark:text-whiteA8'>
+                <p className='text-md max-w-sm font-unica leading-6 text-carbon-800 dark:text-whiteA8'>
                   {post.description}
                 </p>
                 {post.git && <GitButton href={post.git}>View on GitHub</GitButton>}
@@ -96,7 +96,7 @@ function FormattedDateString({ postDate }: { postDate: Projects }) {
   // const relativeDate = formatDateTime(postDate.date);
 
   return (
-    <p className='mr-2 text-left font-archivo text-xs font-semibold text-blackA11 dark:text-whiteA10'>
+    <p className='mr-2 text-left font-unica text-xs font-semibold text-blackA11 dark:text-whiteA10'>
       {publishedDate.asString}
     </p>
   );

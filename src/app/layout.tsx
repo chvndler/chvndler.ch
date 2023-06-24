@@ -5,14 +5,14 @@ import { cn } from '../lib/utils';
 import { AppHooks } from './hooks';
 import { ThemeProvider } from '../context/theme-provider';
 import { Header, Footer } from '../components/layout';
-import { archivo } from './_scss/fonts';
+import { unica } from './_scss/fonts';
 
 import type { Metadata } from 'next';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={cn(`${archivo.className}, font-archivo antialiased`)} style={{ opacity: 0 }}>
+      <body className={cn(`${unica.className}, font-archivo antialiased`)} style={{ opacity: 0 }}>
         <ThemeProvider>
           <Header />
           <main>{children}</main>

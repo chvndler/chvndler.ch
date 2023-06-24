@@ -19,7 +19,7 @@ export const FeaturedList = ({ projects }: ListProps) => {
       <div key={z} className='m-auto flex w-full flex-row items-center justify-between'>
         <Link
           href={project.slug}
-          className='text-md items-center justify-start py-2 font-ibmSans font-medium tracking-tight text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300 md:text-lg'>
+          className='items-center justify-start py-2 font-unica text-sm font-medium tracking-tight text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300 md:text-lg'>
           {project.title}
         </Link>
 
@@ -29,7 +29,7 @@ export const FeaturedList = ({ projects }: ListProps) => {
           {project.tags.map((tag, p) => (
             <TagChip
               key={p}
-              className='hidden border border-slate-400 bg-blackA3 font-archivo text-[8.5px] font-bold uppercase text-blackA9 dark:border-slate-600 dark:bg-whiteA2 dark:text-whiteA8 sm:inline'>
+              className='hidden border border-slate-400 bg-blackA3 font-unica text-[8.5px] font-[600] uppercase text-blackA9 dark:border-slate-600 dark:bg-whiteA2 dark:text-whiteA8 sm:inline'>
               {tag}
             </TagChip>
           ))}
@@ -52,7 +52,7 @@ export const FeaturedList = ({ projects }: ListProps) => {
       <div className='flex justify-start'>
         <Link
           href='/projects'
-          className='text-left font-ibmSans text-sm font-medium tracking-tight text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300'>
+          className='text-left font-unica text-sm font-[500] tracking-tight text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300'>
           view all projects →
         </Link>
       </div>
@@ -65,7 +65,7 @@ function TagChip({ children, className }: { children: React.ReactNode; className
     <span
       className={cn(
         className,
-        'duration-400 items-center whitespace-nowrap rounded-full px-2.5 py-0.5 leading-normal transition-all ease-in-out hover:cursor-pointer hover:rounded-md'
+        'duration-400 items-center justify-center whitespace-nowrap rounded-full px-2.5 py-0.5 align-middle transition-all ease-in-out hover:cursor-pointer hover:rounded-md'
       )}>
       {children}
     </span>
@@ -76,7 +76,7 @@ function FormattedDate({ postDate }: { postDate: Projects }) {
   const publishedDate = formatDateTime(postDate.date);
 
   return (
-    <p className='mr-2 text-right font-archivo text-[10px] font-semibold uppercase text-carbon-400 dark:text-carbon-500'>
+    <p className='mr-2 text-right font-unica text-[10px] font-semibold uppercase text-carbon-400 dark:text-carbon-500'>
       {publishedDate.asString}
     </p>
   );

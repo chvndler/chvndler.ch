@@ -62,8 +62,15 @@ const helmet = localFont({
   style: 'normal',
 });
 
+const unica = localFont({
+  src: '../../../public/fonts/unica/NeueHaasUnica-Regular.woff2',
+  display: 'swap',
+  style: 'normal',
+});
+
 export {
   inter,
+  unica,
   archivo,
   //
   DMSans,
