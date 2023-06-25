@@ -26,7 +26,7 @@ function BackButton() {
           fill='currentColor'
         />
       </svg>
-      <span className='ml-1 text-sm'>Back</span>
+      <span className='ml-1 text-sm'></span>
     </span>
   );
 }

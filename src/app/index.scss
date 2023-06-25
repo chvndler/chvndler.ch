@@ -1,4 +1,5 @@
 @import './_scss/fontface';
+@import './_scss/colours.scss';
 
 @tailwind base;
 @tailwind components;
@@ -146,6 +147,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  height: -webkit-fill-available;
   overflow: auto;
   background: var(--bg-light) !important;
   background-color: var(--bg-light) !important;
@@ -163,9 +165,10 @@ html.fonts-loaded body {
 }
 
 body {
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
   height: 100vh;
   width: 100vw;
-  min-height: 100vh;
   font-family: var(--font-unica);
   display: flex;
   flex-direction: column;
@@ -176,6 +179,19 @@ html.dark body {
   color: var(--bg-light) !important;
   background: var(--bg-dark) !important;
   background-color: var(--bg-dark) !important;
+}
+
+.nav:dark {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  background-color: var(--header-bg);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
 }
 
 small {
@@ -222,7 +238,7 @@ html::-webkit-scrollbar {
   background-clip: padding-box;
 }
 
-html.dark ::-webkit-scrollbar-thumb {
+html.dark::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-dark);
 }
 

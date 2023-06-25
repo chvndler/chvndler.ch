@@ -19,8 +19,8 @@ const navigation = [
 
 export const Header = () => (
   <>
-    <div className={cn('topblur')} aria-hidden='true'></div>
     {/* <!--
+    <div className={cn('topblur')} aria-hidden='true'></div>
     <header
       className={cn(
         'header sticky top-0 z-50 w-full backdrop-blur-gnav backdrop-saturate-sat180',
@@ -36,7 +36,7 @@ export const Header = () => (
           </div>
           <div className='items-center justify-end'>
             <div className='block'>
-              <div className='flex flex-row gap-1'>
+              <div className='flex flex-row items-center gap-1'>
                 <ThemeSwitch />
                 <NavLinks />
               </div>

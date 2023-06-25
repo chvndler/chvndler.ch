@@ -1,24 +1,3 @@
-/**
- * One Dark theme for prism.js
- * Based on Atom's One Dark theme: https://github.com/atom/atom/tree/master/packages/one-dark-syntax
- */
-
-/*
-html.dark div[data-theme='light'],
-html.dark pre[data-theme='light'],
-html.dark code[data-theme='light'] {
-  display: none;
-}
-
-html.light div[data-theme='dark'],
-html.light pre[data-theme='dark'],
-html.light code[data-theme='dark'] {
-  display: none;
-}
-*/
-
-// used in use-prevents-scroll hook
-
 html.no-scroll {
   overflow: hidden;
 
@@ -33,6 +12,7 @@ html.no-scroll {
   flex-direction: column;
   overflow: scroll;
   padding: 0;
+  margin: 0;
 }
 
 .wrap-layer2 {
@@ -41,15 +21,6 @@ html.no-scroll {
 
 mux-player {
   aspect-ratio: 16 / 9;
-
-  /**
-    * active..
-    *
-    * --bottom-play-button: none;
-    * --play-button: none;
-    * --airplay-button: none;
-    * --pip-button: none;
-    */
 
   /**
     * inactive..
@@ -70,6 +41,15 @@ mux-player {
   --mute-button: none;
   --time-range: none;
   --duration-display: none;
+
+  /**
+    * active..
+    *
+    * --bottom-play-button: none;
+    * --play-button: none;
+    * --airplay-button: none;
+    * --pip-button: none;
+    */
 }
 
 .media-text-display {
@@ -92,7 +72,7 @@ code::after {
   pointer-events: none;
 }
 
-#nprogress .bar {
+#nprogress.bar {
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -123,17 +103,4 @@ code::after {
   left: 0;
   right: 0;
   transform-origin: 0%;
-}
-
-.nav:dark {
-  z-index: 10;
-  position: sticky;
-  top: 0;
-  background-color: var(--header-bg);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-
-.header {
-  display: flex;
-  align-items: center;
 }

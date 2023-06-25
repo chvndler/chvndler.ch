@@ -12,7 +12,7 @@ import type { Metadata } from 'next';
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={cn(`${unica.className}, font-archivo antialiased`)} style={{ opacity: 0 }}>
+      <body className={cn(`${unica.className} font-unica antialiased`)} style={{ opacity: 0 }}>
         <ThemeProvider>
           <Header />
           <main>{children}</main>
