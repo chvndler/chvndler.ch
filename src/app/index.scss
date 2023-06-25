@@ -239,7 +239,7 @@ html::-webkit-scrollbar {
   background-clip: padding-box;
 }
 
-html.dark::-webkit-scrollbar-thumb {
+html.dark ::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-dark);
 }
 
