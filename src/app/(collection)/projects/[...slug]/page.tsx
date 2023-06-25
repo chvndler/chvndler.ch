@@ -59,7 +59,7 @@ export default async function PostPage({ params }: PostProps) {
       <AppController>
         <article
           key={post._id}
-          className='text-md prose-h2:font-archivo prose prose-neutral mb-20 font-unica font-[400] text-blackA11 dark:prose-invert prose-h2:text-4xl prose-h2:font-bold prose-h2:tracking-tight prose-h3:text-2xl prose-h3:font-[800] prose-h3:tracking-tight dark:text-whiteA10'>
+          className='text-md prose prose-neutral mb-20 font-[400] text-blackA11 dark:prose-invert prose-h2:font-unica prose-h2:text-4xl prose-h2:font-[600] prose-h2:tracking-tight prose-h3:text-2xl prose-h3:font-[800] prose-h3:tracking-tight dark:text-whiteA10'>
           <section>
             <Link href=''>
               <RouterPrev />

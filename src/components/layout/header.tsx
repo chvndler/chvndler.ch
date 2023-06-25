@@ -19,15 +19,6 @@ const navigation = [
 
 export const Header = () => (
   <>
-    {/* <!--
-    <div className={cn('topblur')} aria-hidden='true'></div>
-    <header
-      className={cn(
-        'header sticky top-0 z-50 w-full backdrop-blur-gnav backdrop-saturate-sat180',
-      )}
-      aria-hidden='true'
-    >
-      --> */}
     <header className={cn('header relative z-50 w-full')} aria-hidden='true'>
       <nav className={cn('nav mx-auto w-full px-3 py-3')}>
         <div className='mx-auto flex w-full max-w-[620px] flex-row items-center justify-between px-0'>

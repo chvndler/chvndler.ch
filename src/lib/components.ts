@@ -9,6 +9,7 @@ import {
   GitColourContext,
   SelectContext,
   TimeContext,
+  AriePositionContext,
 } from '@/components/shared/archive';
 
 interface ComponentBase {
@@ -66,6 +67,15 @@ export const allComponents: ComponentBase[] = [
     slug: '/archive/time',
     url: '/archive/time',
     component: TimeContext,
+  },
+  {
+    type: 'Archive',
+    slugAsParams: 'position',
+    title: 'Arie Position',
+    excerpt: 'Small component that returns a string of information based on users cursor position.',
+    slug: '/archive/postion',
+    url: '/archive/position',
+    component: AriePositionContext,
   },
 ];
 

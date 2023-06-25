@@ -29,7 +29,7 @@ export const FeaturedList = ({ projects }: ListProps) => {
           {project.tags.map((tag, p) => (
             <TagChip
               key={p}
-              className='hidden border border-slate-400 bg-blackA3 font-unica text-[8.5px] font-[600] uppercase text-blackA9 dark:border-slate-600 dark:bg-whiteA2 dark:text-whiteA8 sm:inline'>
+              className='hidden border border-slate-400 bg-blackA3 font-mono text-[8.5px] font-[500] uppercase text-blackA9 dark:border-slate-600 dark:bg-whiteA2 dark:text-whiteA8 sm:inline'>
               {tag}
             </TagChip>
           ))}

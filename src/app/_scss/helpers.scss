@@ -7,6 +7,11 @@ html.no-scroll {
   }
 }
 
+.font-unica,
+.unica {
+  text-rendering: geometricPrecision !important;
+}
+
 .wrap-layer1 {
   display: flex;
   flex-direction: column;

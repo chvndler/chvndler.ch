@@ -9,7 +9,7 @@ export const Connect = () => (
 
     <div className='grid grid-cols-1 justify-start gap-y-6 py-6 text-left md:grid-cols-3'>
       <div className='h-auto w-full gap-y-3'>
-        <p className='pb-3 font-unica text-[16px] font-[600] tracking-tight text-carbon-700 dark:text-carbon-300'>
+        <p className='pb-3 font-inter text-[16px] font-[600] tracking-tight text-carbon-700 dark:text-carbon-300'>
           Connect
         </p>
         <nav className='mb-4 list-none text-grayA10 underline-offset-4'>
@@ -21,7 +21,7 @@ export const Connect = () => (
                     key={k}
                     href={connect.url}
                     target={connect.target}
-                    className='md:text-md font-unica text-[13px] font-[500] text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'>
+                    className='md:text-md font-inter text-[13px] font-[500] text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600 md:text-[14px]'>
                     {connect.title}
                   </Link>
                 </Tooltip>
@@ -32,7 +32,7 @@ export const Connect = () => (
       </div>
 
       <div className='h-auto w-full gap-y-3'>
-        <p className='pb-3 font-unica text-[16px] font-[600] tracking-tight text-carbon-700 dark:text-carbon-300'>
+        <p className='pb-3 font-inter text-[16px] font-[600] tracking-tight text-carbon-700 dark:text-carbon-300'>
           Media
         </p>
         <nav className='mb-2 list-none text-grayA10 underline-offset-4'>
@@ -43,7 +43,7 @@ export const Connect = () => (
                   key={i}
                   href={source.url}
                   target={source.target}
-                  className='md:text-md font-unica text-[13px] font-[500] text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600'>
+                  className='md:text-md font-inter text-[13px]  font-[500] text-carbon-400 hover:text-carbon-500 dark:text-carbon-500 dark:hover:text-carbon-600 md:text-[14px]'>
                   {source.title}
                 </Link>
               </li>
