@@ -12,7 +12,7 @@ export const Introduction = () => (
       <div className='prose-blue mx-auto flex w-full flex-col text-left'>
         <div className='mx-auto w-full'>
           <NumberEmail />
-          <p className='max-w-[510px] font-unica text-[15px] font-[500] leading-5 text-carbon-500 dark:text-carbon-200'>
+          <p className='max-w-[510px] font-unica text-[16px] font-[400] leading-5 text-carbon-500 dark:text-carbon-200'>
             Creating cool and taking notes. Enjoying the internet and open-source, interested in
             design systems, component architectures, TypeScript, and React. The focus in the moment
             is silencing the noise within design culture, with{' '}
@@ -20,7 +20,7 @@ export const Introduction = () => (
               href={altrdsgn}
               target='_blank'
               className='font-semibold text-B500 hover:opacity-80 dark:text-B600 dark:hover:opacity-80'>
-              atlrdsgn
+              atlrdsgn⌝
             </Link>
             .
           </p>

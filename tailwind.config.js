@@ -2,7 +2,6 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    // using `src` directory:
     './src/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -10,15 +9,9 @@ module.exports = {
   theme: {
     fontFamily: {
       inter: ['Inter V', 'sans-serif'],
-      archivo: ['Archivo V', 'sans-serif'],
       sohne: ['Sohne', 'sans-serif'],
       unica: ['Unica', 'sans-serif'],
-      dm: ['DM Sans', 'sans-serif'],
-      dmMono: ['DM Mono', 'monospace'],
-      ibmSans: ['IBM Plex Sans', 'sans-serif'],
-      ibmMono: ['IBM Plex Mono', 'monospace'],
       helmet: ['Helmet Neue', 'sans-serif'],
-      fraktion: ['Fraktion Sans V', 'sans-serif'],
       mono: ['SF Mono', 'monospace'],
     },
     colors: {

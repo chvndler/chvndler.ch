@@ -8,12 +8,25 @@ import { Header, Footer } from '../components/layout';
 import { unica } from './_scss/fonts';
 
 import type { Metadata } from 'next';
+// import TopBar from '@/components/shared/topbar';
+import NextTopLoader from 'nextjs-toploader';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en' suppressHydrationWarning>
       <body className={cn(`${unica.className} font-unica antialiased`)} style={{ opacity: 0 }}>
         <ThemeProvider>
+          <NextTopLoader
+            color='#2299DD'
+            initialPosition={0.08}
+            crawlSpeed={200}
+            height={2}
+            crawl={true}
+            showSpinner={false}
+            easing='ease'
+            speed={300}
+            // shadow='0 0 10px #2299DD,0 0 5px #2299DD'
+          />
           <Header />
           <main>{children}</main>
           <Footer />
