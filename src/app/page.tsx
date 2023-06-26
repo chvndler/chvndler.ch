@@ -11,7 +11,7 @@ import React from 'react';
  * See https://github.com/chvndler/chvndler.ch/license
  */
 
-import { Introduction, Connect, ConnectAlternateView } from '../components/core';
+import { Introduction, Connect, ConnectAlternateView, MediaLine } from '../components/core';
 import { AppController, FeaturedList } from '../components/layout';
 import { allProjects } from '@/contentlayer/generated';
 
@@ -21,9 +21,9 @@ export default function Index() {
       <AppController>
         <Introduction />
         <ConnectAlternateView />
-        {/* <!--
+        <MediaLine />
+
         <FeaturedList projects={...allProjects.slice(0, 4)} />
-        --> */}
       </AppController>
     </>
   );

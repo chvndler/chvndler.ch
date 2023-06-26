@@ -14,7 +14,7 @@ function RouterPrev() {
 
 function BackButton() {
   return (
-    <span className='inline-flex items-center justify-center text-carbon-500 hover:text-carbon-600 dark:text-carbon-400 dark:hover:text-carbon-300'>
+    <div className='inline-flex items-center justify-center text-carbon-500 hover:text-carbon-600 dark:text-carbon-400 dark:hover:text-carbon-300'>
       <svg
         width='16'
         height='16'
@@ -26,8 +26,8 @@ function BackButton() {
           fill='currentColor'
         />
       </svg>
-      <span className='ml-1 text-sm'></span>
-    </span>
+      <span className='text-md ml-1 font-sohne'>Previous</span>
+    </div>
   );
 }
 
