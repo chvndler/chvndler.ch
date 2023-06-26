@@ -46,7 +46,7 @@ function NavLinks() {
         <Link
           key={it}
           href={item.href}
-          className='duration-400 ml-2 font-unica text-[14px] font-[500] leading-[20px] text-carbon-500 transition-colors ease-in-out hover:text-carbon-700 dark:text-carbon-400 dark:hover:text-carbon-600'
+          className='duration-400 ml-2 font-sohne text-[14px] font-[500] leading-[20px] text-carbon-500 transition-colors ease-in-out hover:text-carbon-700 dark:text-carbon-400 dark:hover:text-carbon-600'
           aria-current='page'>
           {item.name}
         </Link>

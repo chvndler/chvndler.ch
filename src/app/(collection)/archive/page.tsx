@@ -12,12 +12,12 @@ export default function ArchiveIndex() {
     <>
       <AppController>
         <section className='py-10'>
-          <h3 className='font-unica text-2xl font-[400] tracking-tight text-carbon-700 dark:text-carbon-300'>
+          <h3 className='font-sohne text-2xl font-[400] tracking-tight text-carbon-700 dark:text-carbon-300'>
             {copy.heading.partial}{' '}
-            <span className='font-unica font-[600]'>{copy.heading.bold}</span>
+            <span className='font-sohne font-[600]'>{copy.heading.bold}</span>
           </h3>
 
-          <p className='text-md mb-6 font-unica text-carbon-500 dark:text-carbon-400'>
+          <p className='text-md mb-6 font-sohne text-carbon-500 dark:text-carbon-400'>
             Implementing interfaces and interactions.
           </p>
         </section>

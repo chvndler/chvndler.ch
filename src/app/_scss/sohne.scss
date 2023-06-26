@@ -1,0 +1,69 @@
+$prefix: '/fonts/' !default;
+
+/**
+
+  * Sōhne Font
+  */
+@font-face {
+  font-family: 'Söhne';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Sohne-extraleicht-superlight'), local('Sohne'),
+    url('#{$prefix}sohne/Sohne-extraleicht-superlight.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Söhne';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Sohne-leicht-light'), local('Sohne'),
+    url('#{$prefix}sohne/Sohne-leicht-light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Söhne';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sohne-buch-regular'), local('Sohne'),
+    url('#{$prefix}sohne/Sohne-buch-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Söhne';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Sohne-kraftig-medium'), local('Sohne'),
+    url('#{$prefix}sohne/Sohne-kraftig-medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Söhne';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Sohne-halbfett-semibold'), local('Sohne'),
+    url('#{$prefix}sohne/Sohne-halbfett-semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Söhne';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Sohne-dreiviertelfett-bold'), local('Sohne'),
+    url('#{$prefix}sohne/Sohne-dreiviertelfett-bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Söhne';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Sohne-fett-black'), local('Sohne'),
+    url('#{$prefix}sohne/Sohne-fett-black.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Söhne';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Sohne-extrafett-extrablack'), local('Sohne'),
+    url('#{$prefix}sohne/Sohne-extrafett-extrablack.woff2') format('woff2');
+}

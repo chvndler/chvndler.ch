@@ -1,4 +1,4 @@
-import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import localFont from 'next/font/local';
 
 /**
@@ -11,10 +11,10 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ['latin'],
+const sohne = localFont({
+  src: '../../../public/fonts/sohne/Sohne-buch-regular.woff2',
   display: 'swap',
-  variable: '--font-jakarta',
+  style: 'normal',
 });
 
 const helmet = localFont({
@@ -23,16 +23,9 @@ const helmet = localFont({
   style: 'normal',
 });
 
-const unica = localFont({
-  src: '../../../public/fonts/unica/NeueHaasUnica-Regular.woff2',
-  display: 'swap',
-  style: 'normal',
-});
-
 export {
   inter,
-  jakarta,
-  unica,
+  sohne,
 
   // locals..
   helmet,

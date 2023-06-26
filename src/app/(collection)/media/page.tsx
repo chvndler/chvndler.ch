@@ -18,15 +18,15 @@ export default function MediaIndex() {
     <>
       <AppController>
         <section className='container mx-auto max-w-[620px] py-10'>
-          <h3 className='mb-2 font-unica text-2xl font-[400] tracking-tight text-carbon-700 dark:text-carbon-100 lg:text-3xl'>
+          <h3 className='mb-2 font-sohne text-2xl font-[400] tracking-tight text-carbon-700 dark:text-carbon-100 lg:text-3xl'>
             {copy.heading.partial}{' '}
-            <span className='font-unica font-[600]'>{copy.heading.bold}</span>
+            <span className='font-sohne font-[600]'>{copy.heading.bold}</span>
           </h3>
-          <p className='max-w-md font-unica text-[9px] font-medium text-carbon-400 dark:text-carbon-500 lg:text-[10px]'>
+          <p className='max-w-md font-sohne text-[9px] font-medium text-carbon-400 dark:text-carbon-500 lg:text-[10px]'>
             {copy.copyright.text}
             <br />
             <br />
-            <span className='font-unica font-[500] text-carbon-500'>{copy.copyright.tag}</span>
+            <span className='font-sohne font-[500] text-carbon-500'>{copy.copyright.tag}</span>
           </p>
         </section>
 

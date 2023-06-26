@@ -10,7 +10,7 @@ export const Footer = () => {
           <ModularTime />
         </span>
 
-        <div className='grow text-right font-unica text-[14px] font-medium text-carbon-500 hover:text-carbon-700 dark:text-carbon-600 dark:hover:text-carbon-600'>
+        <div className='grow text-right font-sohne text-[14px] font-medium text-carbon-500 hover:text-carbon-700 dark:text-carbon-600 dark:hover:text-carbon-600'>
           <Link target='_blank' href='https://twitter.com/chvndlerch'>
             @chvndlerch
           </Link>
