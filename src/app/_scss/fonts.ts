@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google';
+import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
 import localFont from 'next/font/local';
 
 /**
@@ -9,6 +9,12 @@ const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
+});
+
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-jakarta',
 });
 
 const helmet = localFont({
@@ -25,6 +31,7 @@ const unica = localFont({
 
 export {
   inter,
+  jakarta,
   unica,
 
   // locals..

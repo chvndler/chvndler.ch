@@ -5,7 +5,7 @@ import { cn } from '../lib/utils';
 import { AppHooks } from './hooks';
 import { ThemeProvider } from '../context/theme-provider';
 import { Header, Footer } from '../components/layout';
-import { inter } from './_scss/fonts';
+import { jakarta } from './_scss/fonts';
 
 import type { Metadata } from 'next';
 // import TopBar from '@/components/shared/topbar';
@@ -14,7 +14,7 @@ import NextTopLoader from 'nextjs-toploader';
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={cn(`${inter.className} font-unica antialiased`)} style={{ opacity: 0 }}>
+      <body className={cn(`${jakarta.className} font-unica antialiased`)} style={{ opacity: 0 }}>
         <ThemeProvider>
           <NextTopLoader
             color='#2299DD'

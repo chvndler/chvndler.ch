@@ -21,7 +21,9 @@ export default function Index() {
       <AppController>
         <Introduction />
         <Connect />
+        {/* <!--
         <FeaturedList projects={...allProjects.slice(0, 4)} />
+        --> */}
       </AppController>
     </>
   );

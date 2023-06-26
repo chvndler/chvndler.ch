@@ -2,7 +2,7 @@ import React from 'react';
 
 export const NumberEmail = () => (
   <div className='mb-14 flex flex-col gap-1.5'>
-    <p className='font-inter text-[16px] font-[600] leading-4 text-carbon-700 dark:text-carbon-50'>
+    <p className='font-inter text-[16px] font-[680] leading-4 text-carbon-700 dark:text-carbon-50'>
       Chandler Chappell
     </p>
 

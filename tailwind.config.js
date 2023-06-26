@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     fontFamily: {
       inter: ['Inter V', 'sans-serif'],
+      jakarta: [`var('--font-jakarta')`, 'sans-serif'],
       sohne: ['Sohne', 'sans-serif'],
       unica: ['Unica', 'sans-serif'],
       helmet: ['Helmet Neue', 'sans-serif'],
