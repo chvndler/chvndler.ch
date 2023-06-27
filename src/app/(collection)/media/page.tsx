@@ -26,13 +26,20 @@ export default function MediaIndex() {
             {copy.copyright.text}
             <br />
             <br />
-            <span className='font-sohne font-[500] text-carbon-500'>{copy.copyright.tag}</span>
+            <span className='font-sohne font-[500] text-carbon-500'>
+              {copy.copyright.tag}
+            </span>
           </p>
         </section>
 
         <TopLevelGrid>
           {films.map((video, i) => (
-            <MuxVideo key={i} title={video.title} id={video.id} poster={video.poster} />
+            <MuxVideo
+              key={i}
+              title={video.title}
+              id={video.id}
+              poster={video.poster}
+            />
           ))}
         </TopLevelGrid>
       </AppController>

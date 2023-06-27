@@ -28,7 +28,9 @@ async function getPostFromParams(params: PostProps['params']) {
   return post;
 }
 
-export async function generateMetadata({ params }: PostProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PostProps): Promise<Metadata> {
   const post = await getPostFromParams(params);
 
   if (!post) {
@@ -77,7 +79,9 @@ export default async function PostPage({ params }: PostProps) {
               <p className='text-md max-w-sm font-sohne leading-6 text-carbon-800 dark:text-whiteA8'>
                 {post.description}
               </p>
-              {post.git && <GitButton href={post.git}>View on GitHub</GitButton>}
+              {post.git && (
+                <GitButton href={post.git}>View on GitHub</GitButton>
+              )}
             </div>
           </section>
 
@@ -103,7 +107,9 @@ function ProjectTags({ pro }: { pro: Projects }) {
   return (
     <>
       {pro.tags.map((tag, index) => (
-        <BadgeDefault key={pro._id}>{pro.tags.length - 1 === index ? tag : `${tag}`}</BadgeDefault>
+        <BadgeDefault key={pro._id}>
+          {pro.tags.length - 1 === index ? tag : `${tag}`}
+        </BadgeDefault>
       ))}
     </>
   );

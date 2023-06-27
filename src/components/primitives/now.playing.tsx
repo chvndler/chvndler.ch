@@ -14,7 +14,10 @@ function SpotifyPlayer() {
     <>
       <div className='items-center justify-start'>
         <div className='flex flex-row items-center justify-start gap-2'>
-          <SpotifyLogo height={'18'} width={'18'} />
+          <SpotifyLogo
+            height={'18'}
+            width={'18'}
+          />
           {data?.isPlaying === false ? (
             <>
               <p className='text-sm font-semibold text-carbon-600 dark:text-carbon-600'>
@@ -23,9 +26,13 @@ function SpotifyPlayer() {
             </>
           ) : (
             <>
-              <a href={data?.songUrl} target='_blank' rel='noopener noreferrer'>
+              <a
+                href={data?.songUrl}
+                target='_blank'
+                rel='noopener noreferrer'>
                 <p className='text-sm font-semibold text-carbon-800 dark:text-carbon-400'>
-                  {data?.artist} – <span className='font-normal opacity-80'>{data?.title}</span>
+                  {data?.artist} –{' '}
+                  <span className='font-normal opacity-80'>{data?.title}</span>
                 </p>
               </a>
             </>

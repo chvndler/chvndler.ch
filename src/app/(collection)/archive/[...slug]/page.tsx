@@ -24,13 +24,17 @@ async function getPostFromParams(params: PrimitiveXProps['params']) {
   return comp;
 }
 
-export async function generateStaticParams(): Promise<PrimitiveXProps['params'][]> {
+export async function generateStaticParams(): Promise<
+  PrimitiveXProps['params'][]
+> {
   return allComponents.map((compo) => ({
     slug: compo.slugAsParams.split('/'),
   }));
 }
 
-export async function generateMetadata({ params }: PrimitiveXProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PrimitiveXProps): Promise<Metadata> {
   const prime = await getPostFromParams(params);
 
   if (!prime) {
@@ -56,7 +60,9 @@ export default async function ViewPrimitivePage({ params }: PrimitiveXProps) {
 
   return (
     <AppController>
-      <article key={x.title} className='text-md prose prose-neutral mb-20'>
+      <article
+        key={x.title}
+        className='text-md prose prose-neutral mb-20'>
         <Link href=''>
           <RouterPrev />
         </Link>
@@ -70,7 +76,11 @@ export default async function ViewPrimitivePage({ params }: PrimitiveXProps) {
       </article>
       <>
         <PrimitiveWrapper>
-          <Component key={x.slug} path={x.url} component={compo} />
+          <Component
+            key={x.slug}
+            path={x.url}
+            component={compo}
+          />
         </PrimitiveWrapper>
       </>
     </AppController>

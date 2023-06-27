@@ -29,7 +29,9 @@ export const ModularTime = () => {
   return (
     <>
       <time>
-        <span className='font-mono text-xs font-[500] text-carbon-600'>{timeString} EST USA</span>
+        <span className='font-mono text-xs font-[500] text-carbon-600'>
+          {timeString} EST USA
+        </span>
       </time>
     </>
   );

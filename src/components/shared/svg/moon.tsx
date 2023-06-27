@@ -36,12 +36,17 @@ const MoonOutlined = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         </g>
         <defs>
           <clipPath id='clip0_131_442'>
-            <rect width='7.55' height='7.92' fill={color} transform='translate(4 4)' />
+            <rect
+              width='7.55'
+              height='7.92'
+              fill={color}
+              transform='translate(4 4)'
+            />
           </clipPath>
         </defs>
       </svg>
     );
-  }
+  },
 );
 
 const MoonFilled = React.forwardRef<SVGSVGElement, SVGLogoProps>(
@@ -78,12 +83,17 @@ const MoonFilled = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         </g>
         <defs>
           <clipPath id='clip0_131_463'>
-            <rect width='7.55' height='7.92' fill={color} transform='translate(4 4)' />
+            <rect
+              width='7.55'
+              height='7.92'
+              fill={color}
+              transform='translate(4 4)'
+            />
           </clipPath>
         </defs>
       </svg>
     );
-  }
+  },
 );
 
 MoonOutlined.displayName = 'SVG-MoonOutlined';

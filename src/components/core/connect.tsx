@@ -1,19 +1,22 @@
 import Link from 'next/link';
 import Tooltip from '@/components/primitives/tooltip';
+import { connects } from '@/lib/data/connect';
 
 // server
 
 export const Connect = () => (
-  <section id='connect-sect' className='py-6'>
+  <section
+    id='connect-sect'
+    className='py-6'>
     {/* <!-- <div className='flex flex-wrap justify-start flex-grow py-6 text-left gap-y-6 md:mt-0'> --> */}
 
-    <div className='grid grid-cols-1 justify-start gap-y-6 py-6 text-left md:grid-cols-3'>
-      <div className='h-auto w-full gap-y-3'>
-        <p className='pb-3 font-sohne text-[16px] font-[600] text-carbon-700 dark:text-carbon-300'>
+    <div className='grid justify-start grid-cols-1 py-6 text-left gap-y-6 md:grid-cols-3'>
+      <div className='w-full h-auto gap-y-3'>
+        <p className='pb-3 font-sohne text-[18px] font-[600] text-[#00C454] dark:text-carbon-300'>
           Connect
         </p>
         <nav className='mb-4 list-none text-grayA10 underline-offset-4'>
-          {connects.map((connect, k) => (
+          {connect.map((connect, k) => (
             <>
               <li key={k}>
                 <Tooltip content={connect.tip}>
@@ -31,7 +34,7 @@ export const Connect = () => (
         </nav>
       </div>
 
-      <div className='h-auto w-full gap-y-3'>
+      <div className='w-full h-auto gap-y-3'>
         <p className='pb-3 font-sohne text-[16px] font-[600] text-carbon-700 dark:text-carbon-300'>
           Gallery
         </p>
@@ -56,9 +59,11 @@ export const Connect = () => (
 );
 
 export const ConnectAlternateView = () => (
-  <section id='connect-sect' className='py-6'>
+  <section
+    id='connect-sect'
+    className='py-6'>
     <div className='py-6 text-left'>
-      <div className='h-auto w-full gap-y-3'>
+      <div className='w-full h-auto gap-y-3'>
         <p className='pb-3 font-sohne text-[18px] font-[600] text-carbon-700 dark:text-carbon-300'>
           Connect
         </p>
@@ -66,19 +71,19 @@ export const ConnectAlternateView = () => (
           {connects.map((connect, k) => (
             <>
               <li key={k}>
-                <div className='my-2 flex w-full flex-row items-center justify-start gap-x-4 gap-y-2'>
+                <div className='flex flex-row items-center justify-start w-full my-2 gap-x-4 gap-y-2'>
                   <div
                     key={k}
                     id='label'
                     className='user-select-none w-1/3 font-sohne text-[15px] font-[500] text-carbon-400 dark:text-carbon-600 md:text-[16px]'>
-                    {connect.title}
+                    {connect.type}
                   </div>
                   <Link
                     key={k}
                     href={connect.url}
                     target={connect.target}
                     className='font-sohne text-[15px] font-[400] tracking-tight text-carbon-500 transition-all duration-300 hover:text-carbon-600 hover:underline hover:underline-offset-1 dark:text-carbon-50 dark:hover:text-carbon-600 md:text-[16px]'>
-                    {connect.handle}
+                    {connect.title}
                   </Link>
                 </div>
               </li>
@@ -92,7 +97,7 @@ export const ConnectAlternateView = () => (
 
 export const MediaLine = () => (
   <section className='py-6'>
-    <div className='h-auto w-full gap-y-3'>
+    <div className='w-full h-auto gap-y-3'>
       <p className='pb-3 font-sohne text-[18px] font-[600] text-carbon-700 dark:text-carbon-300'>
         Gallery
       </p>
@@ -115,7 +120,41 @@ export const MediaLine = () => (
   </section>
 );
 
-const connects = [
+export const ConnectDev = () => (
+  <>
+    {/* <!-- Connect --> */}
+    <div className='text-sm font-sohne'>
+      <p className='pb-4 text-[16px] font-[500] leading-6 text-[#00C454] dark:text-carbon-50'>
+        Connect
+      </p>
+      <div className='grid gap-4 mt-3'>
+        {connects.map((template) => (
+          <>
+            <div className='grid items-start grid-cols-1 text-carbon-500 md:grid-cols-3'>
+              <div>
+                <p className='font-sohne text-[15px] font-[500] text-carbon-400 dark:text-carbon-400'>
+                  {template.type}
+                </p>
+              </div>
+              <div className='w-full md:col-span-2'>
+                <p className='text-black dark:text-white'>
+                  <a
+                    href={template.url}
+                    title={template.type}
+                    className='font-sohne text-[15px] font-[400] underline underline-offset-2 transition-all duration-200 hover:no-underline'>
+                    {template.title}
+                  </a>
+                </p>
+              </div>
+            </div>
+          </>
+        ))}
+      </div>
+    </div>
+  </>
+);
+
+const connect = [
   {
     key: 'twitter',
     title: 'Twitter',

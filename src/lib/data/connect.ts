@@ -1,29 +1,34 @@
 export interface Template {
-  link: string;
+  url: string;
+  target?: string;
   type: string;
   title: string;
 }
 
 const one: Template = {
-  link: 'mailto:chan@chvndler.ch',
+  url: 'mailto:chan@chvndler.ch',
+  target: '_blank',
   type: 'email',
   title: 'chan@chvndler.ch',
 };
 
 const two: Template = {
-  link: 'https://twitter.com/chvndlerch',
+  url: 'https://twitter.com/chvndlerch',
+  target: '_blank',
   type: 'twitter',
   title: '@chvndlerch',
 };
 
 const three: Template = {
-  link: 'https://github.com/chvndler',
+  url: 'https://github.com/chvndler',
+  target: '_blank',
   type: 'github',
   title: 'gh.com/chvndler',
 };
 
 const four: Template = {
-  link: 'https://read.cv/chvndler',
+  url: 'https://read.cv/chvndler',
+  target: '_blank',
   type: 'read.cv',
   title: 'read.cv/chvndler',
 };

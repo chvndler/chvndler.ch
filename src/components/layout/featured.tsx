@@ -11,12 +11,16 @@ type ListProps = {
 };
 
 export const FeaturedList = ({ projects }: ListProps) => {
-  const sortedProjects = projects.sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)));
+  const sortedProjects = projects.sort((a, b) =>
+    compareDesc(new Date(a.date), new Date(b.date)),
+  );
   const listItems = sortedProjects.map((project, z) => (
     <li
       key={z}
       className='bg-blackA1 transition-colors duration-300 ease-in-out hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'>
-      <div key={z} className='m-auto flex w-full flex-row items-center justify-between'>
+      <div
+        key={z}
+        className='m-auto flex w-full flex-row items-center justify-between'>
         <Link
           href={project.slug}
           className='items-center justify-start py-2 font-sohne text-sm font-[500] text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300 md:text-lg'>
@@ -39,7 +43,9 @@ export const FeaturedList = ({ projects }: ListProps) => {
   ));
 
   return (
-    <section id='proj-sect' className='py-6'>
+    <section
+      id='proj-sect'
+      className='py-6'>
       <div className='mx-auto w-full overflow-hidden py-6'>
         <p className='mb-2 font-sohne text-[18px] font-[600] tracking-tight text-carbon-700 dark:text-carbon-300'>
           Projects
@@ -60,12 +66,18 @@ export const FeaturedList = ({ projects }: ListProps) => {
   );
 };
 
-function TagChip({ children, className }: { children: React.ReactNode; className: string }) {
+function TagChip({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className: string;
+}) {
   return (
     <span
       className={cn(
         className,
-        'duration-400 items-center justify-center whitespace-nowrap rounded-full px-2.5 py-0.5 align-middle transition-all ease-in-out hover:cursor-pointer hover:rounded-md'
+        'duration-400 items-center justify-center whitespace-nowrap rounded-full px-2.5 py-0.5 align-middle transition-all ease-in-out hover:cursor-pointer hover:rounded-md',
       )}>
       {children}
     </span>

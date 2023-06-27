@@ -29,12 +29,16 @@ export const GitShaIcon = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         </g>
         <defs>
           <clipPath id='clip0_214_6734'>
-            <rect width='13' height='13' fill='none' />
+            <rect
+              width='13'
+              height='13'
+              fill='none'
+            />
           </clipPath>
         </defs>
       </svg>
     );
-  }
+  },
 );
 
 GitShaIcon.displayName = 'GitShaIcon';

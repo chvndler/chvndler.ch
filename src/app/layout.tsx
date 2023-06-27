@@ -10,10 +10,18 @@ import { sohne } from './_scss/fonts';
 import type { Metadata } from 'next';
 import TopLoader from '@/components/primitives/loader';
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang='en' suppressHydrationWarning>
-      <body className={cn(`${sohne.className} font-unica antialiased`)} style={{ opacity: 0 }}>
+    <html
+      lang='en'
+      suppressHydrationWarning>
+      <body
+        className={cn(`${sohne.className} font-unica antialiased`)}
+        style={{ opacity: 0 }}>
         <ThemeProvider>
           <TopLoader />
           <Header />

@@ -17,7 +17,9 @@ const DISABLE_HOVERABLE_CONTENT = false;
  * The main component that wraps the trigger and content.
  * Do not provide styles.
  * --------------------------------------------- */
-type RootProps = { children?: React.ReactNode } & React.ComponentProps<typeof TIP.Root>;
+type RootProps = { children?: React.ReactNode } & React.ComponentProps<
+  typeof TIP.Root
+>;
 const TipRoot = ({ children, ...props }: RootProps) => {
   return (
     <TIP.Provider
@@ -49,7 +51,10 @@ type ContentProps = {
   hideWhenDetached?: boolean;
 } & React.ComponentProps<typeof TIP.Content>;
 
-const TipContent = React.forwardRef<React.ElementRef<typeof TIP.Content>, ContentProps>(
+const TipContent = React.forwardRef<
+  React.ElementRef<typeof TIP.Content>,
+  ContentProps
+>(
   (
     {
       children,
@@ -68,7 +73,7 @@ const TipContent = React.forwardRef<React.ElementRef<typeof TIP.Content>, Conten
       ...props
     },
     //..
-    forwardedRef
+    forwardedRef,
   ) => {
     return (
       <TIP.Content
@@ -87,29 +92,32 @@ const TipContent = React.forwardRef<React.ElementRef<typeof TIP.Content>, Conten
           'radix-side-right:animate-slide-left-fade',
           'radix-side-bottom:animate-slide-up-fade',
           'radix-side-left:animate-slide-right-fade',
-          'inline-flex items-center rounded-lg px-1 py-2.5'
+          'inline-flex items-center rounded-lg px-1 py-2.5',
         )}>
         <span className='font-semiboldz block text-lg leading-4 text-carbon-700 dark:text-carbon-400'>
           {children}
         </span>
       </TIP.Content>
     );
-  }
+  },
 );
 
 type TriggerProps = {
   children?: React.ReactNode;
 } & React.ComponentProps<typeof TIP.Trigger>;
 
-const TipTrigger = React.forwardRef<React.ElementRef<typeof TIP.Trigger>, TriggerProps>(
-  ({ children, ...props }, forwardedRef) => {
-    return (
-      <TIP.Trigger {...props} ref={forwardedRef}>
-        {children}
-      </TIP.Trigger>
-    );
-  }
-);
+const TipTrigger = React.forwardRef<
+  React.ElementRef<typeof TIP.Trigger>,
+  TriggerProps
+>(({ children, ...props }, forwardedRef) => {
+  return (
+    <TIP.Trigger
+      {...props}
+      ref={forwardedRef}>
+      {children}
+    </TIP.Trigger>
+  );
+});
 
 export type TipProps = {
   children?: React.ReactNode;
@@ -157,7 +165,9 @@ export default function Tooltip({
       {openTooltip && isMobile && (
         <Leaflet setShow={setOpenTooltip}>
           {typeof content === 'string' ? (
-            <span className='flex w-full items-center justify-center'>{content}</span>
+            <span className='flex w-full items-center justify-center'>
+              {content}
+            </span>
           ) : (
             content
           )}
@@ -166,11 +176,15 @@ export default function Tooltip({
       {isDesktop && (
         <>
           <Tip>
-            <Tip.Trigger className='hidden sm:inline-flex' asChild>
+            <Tip.Trigger
+              className='hidden sm:inline-flex'
+              asChild>
               {children}
             </Tip.Trigger>
 
-            <Tip.Content sideOffset={4} className='animate-slide-right-fade z-30 hidden sm:block'>
+            <Tip.Content
+              sideOffset={4}
+              className='animate-slide-right-fade z-30 hidden sm:block'>
               {typeof content === 'string' ? (
                 <div className='rounded-md border border-carbon-200 p-4 shadow-md dark:border-carbon-800'>
                   <span className=''>{content}</span>

@@ -3,7 +3,9 @@ import React from 'react';
 // PageSection.
 const PAGE_SECTION = ({ children }: { children: React.ReactNode }) => (
   <>
-    <div className='container mx-auto w-full items-center px-0 py-8'>{children}</div>
+    <div className='container mx-auto w-full items-center px-0 py-8'>
+      {children}
+    </div>
   </>
 );
 

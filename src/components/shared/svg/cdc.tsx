@@ -8,7 +8,10 @@ import type { SVGLogoProps } from './svg';
  */
 const logoColor = 'currentColor';
 export const CDCLogo = React.forwardRef<SVGSVGElement, SVGLogoProps>(
-  ({ color = logoColor, width = 'auto', height = 'auto', ...props }, forwardedRef) => {
+  (
+    { color = logoColor, width = 'auto', height = 'auto', ...props },
+    forwardedRef,
+  ) => {
     return (
       <svg
         {...props}
@@ -28,7 +31,7 @@ export const CDCLogo = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         />
       </svg>
     );
-  }
+  },
 );
 
 CDCLogo.displayName = 'CDCLogo';

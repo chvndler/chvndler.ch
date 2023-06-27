@@ -62,7 +62,7 @@ const SunOutlined = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         />
       </svg>
     );
-  }
+  },
 );
 
 const SunFilled = React.forwardRef<SVGSVGElement, SVGLogoProps>(
@@ -125,7 +125,7 @@ const SunFilled = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         />
       </svg>
     );
-  }
+  },
 );
 
 SunOutlined.displayName = 'SVG-SunOutlined';

@@ -21,6 +21,12 @@ module.exports = {
       B600: 'rgba(224, 255, 158, 1)',
       B900: '#1d1d1d',
 
+
+      charcoal: '#343433',
+      carbon: '#484645',
+      jade: '#00C454',
+      azure: '#0086FC',
+
       carbon: {
         50: 'rgba(246, 248, 250, 1)',
         100: 'rgba(223, 233, 233, 1)',

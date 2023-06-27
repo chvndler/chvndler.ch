@@ -7,7 +7,10 @@ import type { SVGLogoProps } from './svg';
  */
 const logoColor = '#1DB954';
 export const SpotifyLogo = React.forwardRef<SVGSVGElement, SVGLogoProps>(
-  ({ color = logoColor, width = 'auto', height = 'auto', ...props }, forwardedRef) => {
+  (
+    { color = logoColor, width = 'auto', height = 'auto', ...props },
+    forwardedRef,
+  ) => {
     return (
       <svg
         {...props}
@@ -25,12 +28,16 @@ export const SpotifyLogo = React.forwardRef<SVGSVGElement, SVGLogoProps>(
         </g>
         <defs>
           <clipPath id='clip0_265_394'>
-            <rect width='18' height='18' fill='none' />
+            <rect
+              width='18'
+              height='18'
+              fill='none'
+            />
           </clipPath>
         </defs>
       </svg>
     );
-  }
+  },
 );
 
 SpotifyLogo.displayName = 'SpotifyLogo';

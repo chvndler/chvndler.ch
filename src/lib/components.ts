@@ -36,7 +36,8 @@ export const allComponents: ComponentBase[] = [
     type: 'Archive',
     slugAsParams: 'spotify',
     title: 'Spotify Now',
-    excerpt: 'Display the currently streaming track of a Spotify account(s) or user(s).',
+    excerpt:
+      'Display the currently streaming track of a Spotify account(s) or user(s).',
     slug: '/archive/spotify',
     url: '/archive/spotify',
     component: SpotifyContext,
@@ -54,7 +55,8 @@ export const allComponents: ComponentBase[] = [
     type: 'Archive',
     slugAsParams: 'kit-select',
     title: 'Select Kit',
-    excerpt: 'UI Element that allows users to choose one or more options from a dropdown list.',
+    excerpt:
+      'UI Element that allows users to choose one or more options from a dropdown list.',
     slug: '/archive/kit-select',
     url: '/archive/kit-select',
     component: SelectContext,
@@ -72,7 +74,8 @@ export const allComponents: ComponentBase[] = [
     type: 'Archive',
     slugAsParams: 'position',
     title: 'Arie Position',
-    excerpt: 'Small component that returns a string of information based on users cursor position.',
+    excerpt:
+      'Small component that returns a string of information based on users cursor position.',
     slug: '/archive/postion',
     url: '/archive/position',
     component: AriePositionContext,

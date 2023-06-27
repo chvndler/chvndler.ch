@@ -61,7 +61,9 @@ export const ProjectCard = ({ project }: { project: Projects }) => {
     <>
       <article>
         <a
-          className={cn('project-card ml-n16 flex flex-col gap-8 rounded-lg p-16')}
+          className={cn(
+            'project-card ml-n16 flex flex-col gap-8 rounded-lg p-16',
+          )}
           href={project.url}>
           <p>{project.title}</p>
           <p>{project.description}</p>

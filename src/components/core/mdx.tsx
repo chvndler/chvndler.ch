@@ -14,13 +14,18 @@ function clsx(...args: any) {
  * build components.
  */
 const Image = (props: MDXImageProps) => <NextImage {...props} />;
-const Space = (props: any) => <div {...props} style={{ height: '1rem' }} />;
+const Space = (props: any) => (
+  <div
+    {...props}
+    style={{ height: '1rem' }}
+  />
+);
 const Code = ({ className, ...props }: { className: string }) => (
   <code
     {...props}
     className={clsx(
       'relative rounded-md border border-grey-A5 bg-carbon-100 bg-opacity-25 px-[0.3rem] py-[0.2rem] font-mono text-sm text-carbon-700 dark:border-grey-A7 dark:bg-carbon-900 dark:text-carbon-300',
-      className
+      className,
     )}
   />
 );
@@ -30,7 +35,9 @@ const Link = (props: any) => {
 
   if (href.startsWith('/')) {
     return (
-      <NextLink href={href} {...props}>
+      <NextLink
+        href={href}
+        {...props}>
         {props.children}
       </NextLink>
     );
@@ -40,13 +47,22 @@ const Link = (props: any) => {
     return <a {...props} />;
   }
 
-  return <a target='_blank' rel='noopener noreferrer' {...props} />;
+  return (
+    <a
+      target='_blank'
+      rel='noopener noreferrer'
+      {...props}
+    />
+  );
 };
 
 const RoundImage = ({ className, ...props }: MDXImageProps) => {
   return (
     <NextImage
-      className={clsx('rounded-xl border border-grey-A5 md:rounded-2xl', className)}
+      className={clsx(
+        'rounded-xl border border-grey-A5 md:rounded-2xl',
+        className,
+      )}
       {...props}
     />
   );

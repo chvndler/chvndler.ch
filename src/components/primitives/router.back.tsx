@@ -6,7 +6,9 @@ function RouterPrev() {
   const router = useRouter();
 
   return (
-    <button type='button' onClick={() => router.back()}>
+    <button
+      type='button'
+      onClick={() => router.back()}>
       <BackButton />
     </button>
   );

@@ -8,7 +8,10 @@ export default function ScrollTopbar() {
 
   return (
     <>
-      <motion.div className='scroll-topbar' style={{ scaleX: scrollYProgress }} />
+      <motion.div
+        className='scroll-topbar'
+        style={{ scaleX: scrollYProgress }}
+      />
     </>
   );
 }

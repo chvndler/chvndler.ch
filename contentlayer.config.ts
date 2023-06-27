@@ -139,10 +139,14 @@ export default makeSource({
               node.children = [{ type: 'text', value: '' }];
             }
           },
-          onVisitHighlightedLine(node: { properties: { className: string[] } }) {
+          onVisitHighlightedLine(node: {
+            properties: { className: string[] };
+          }) {
             node.properties.className.push('line--highlighted');
           },
-          onVisitHighlightedWord(node: { properties: { className: string[] } }) {
+          onVisitHighlightedWord(node: {
+            properties: { className: string[] };
+          }) {
             node.properties.className = ['word--highlighted'];
           },
         },

@@ -19,7 +19,9 @@ const navigation = [
 
 export const Header = () => (
   <>
-    <header className={cn('header relative z-50 w-full')} aria-hidden='true'>
+    <header
+      className={cn('header relative z-50 w-full')}
+      aria-hidden='true'>
       <nav className={cn('nav mx-auto w-full px-3 py-3')}>
         <div className='mx-auto flex w-full max-w-[620px] flex-row items-center justify-between px-0'>
           <div className='items-center justify-start'>
