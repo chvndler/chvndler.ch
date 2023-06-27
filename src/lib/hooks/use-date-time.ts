@@ -1,3 +1,5 @@
+import { mn } from 'date-fns/locale';
+
 type DateTime = {
   /** The date formatted as a string
    * @example
@@ -18,6 +20,12 @@ type DateTime = {
   asRelativeTimeString: string;
   /** A boolean indicating if the date is fresh, i.e. less than 4 days old */
   isFresh: boolean;
+
+  /**
+   * @example
+   * '2022-01-01'
+   */
+  asDate: Date;
 };
 
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
@@ -50,6 +58,7 @@ export function formatDateTime(dateString: string): DateTime {
       asISOString: 'Invalid Date',
       asRelativeTimeString: 'Invalid Date',
       isFresh: false,
+      asDate: new Date(NaN),
     };
   }
 
@@ -60,6 +69,7 @@ export function formatDateTime(dateString: string): DateTime {
     asISOString: date.toISOString(),
     asRelativeTimeString: relativeTime,
     isFresh,
+    asDate: date,
   };
 }
 
@@ -115,5 +125,35 @@ function getRelativeTime(date: Date) {
   return {
     relativeTime: relativeTimeFormatter.format(years, 'year'),
     isFresh: false,
+  };
+}
+
+export function mnmlDateFormatter(dateString: string): DateTime {
+  const date = new Date(dateString);
+
+  if (isNaN(date.getTime())) {
+    return {
+      asString: 'Invalid Date',
+      asISOString: 'Invalid Date',
+      asRelativeTimeString: 'Invalid Date',
+      isFresh: false,
+      asDate: new Date(NaN),
+    };
+  }
+
+  const mnmlDate: string = date.toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  });
+
+  const finalDate: string = mnmlDate.replace(/\//g, '.');
+
+  return {
+    asString: finalDate,
+    asISOString: date.toISOString(),
+    asRelativeTimeString: `not implemented for ${finalDate}`,
+    isFresh: true,
+    asDate: date,
   };
 }
