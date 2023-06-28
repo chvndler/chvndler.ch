@@ -8,6 +8,8 @@ import {
   Section,
 } from '@/components/core';
 import { allProjects } from '@/contentlayer/generated';
+import Leaflet from '@/components/primitives/leaflet';
+import Logo from '@/components/shared/logo';
 
 export const metadata: Metadata = {
   title: 'dev.chandler.',

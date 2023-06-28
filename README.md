@@ -1,14 +1,14 @@
 # chvndler.ch
 
-### **personal site**.
+## **personal site**.
 
-### my stack
+### stack
 
 → **CSS:** [Tailwindcss](https://tailwindcss.com/)
 
 → **Back-end:** [Next.js](https://nextjs.org/)
 
-→ **Front-end:** [React](https://reactjs.org/)
+→ **Front-end:** [React](https://reactjs.org/), [Next.js](https://nextjs.org/)
 
 → **Deployment:** [Vercel](https://vercel.com/)
 
@@ -44,7 +44,7 @@ yarn dev
 
 ### Project Structure
 
-```
+```plain-text
 Route (app)                                Size     First Load JS
 ┌ ○ /                                      227 B           156 kB
 ├ ○ /_not-found                            0 B                0 B
