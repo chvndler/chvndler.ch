@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     title: 'Chandler Chappell',
     description: 'Personal site.',
     creator: '@chvndler',
-    images: ['/static/img/og.jpg'],
+    images: ['/og-green.jpg'],
   },
   category: '',
   verification: {},

@@ -6,7 +6,7 @@ import { films } from '@/lib/films';
 import { content } from '@/lib/website.config';
 
 export const metadata: Metadata = {
-  title: 'Chandler. Film and Media.',
+  title: '©2023 Media',
   description:
     'Media displayed on this page is designed, directed, and edited by myself – © 2023. ALL RIGHTS RESERVED.',
 };
