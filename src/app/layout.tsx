@@ -35,7 +35,7 @@ export default function RootLayout({
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.chvndler.ch/'),
+  metadataBase: new URL('https://www.chvndler.ch'),
   title: 'Chandler Chappell',
   description: 'Personal site.',
   manifest: `${siteURL}/manifest.webmanifest`,
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
     siteName: 'Chandler Chappell',
     images: [
       {
-        url: `${siteURL}/static/img/og.jpg`,
-        width: 1800,
-        height: 945,
+        url: `${siteURL}/og-green.jpg`,
+        width: 1920,
+        height: 1080,
       },
     ],
     locale: 'en-US',
