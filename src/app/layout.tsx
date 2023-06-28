@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: `${siteURL}/og-green.jpg`,
-        width: 1920,
-        height: 1080,
+        width: 1200,
+        height: 627,
       },
     ],
     locale: 'en-US',
