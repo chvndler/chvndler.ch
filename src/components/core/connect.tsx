@@ -10,8 +10,8 @@ export const Connect = () => (
     className='py-6'>
     {/* <!-- <div className='flex flex-wrap justify-start flex-grow py-6 text-left gap-y-6 md:mt-0'> --> */}
 
-    <div className='grid justify-start grid-cols-1 py-6 text-left gap-y-6 md:grid-cols-3'>
-      <div className='w-full h-auto gap-y-3'>
+    <div className='grid grid-cols-1 justify-start gap-y-6 py-6 text-left md:grid-cols-3'>
+      <div className='h-auto w-full gap-y-3'>
         <p className='pb-3 font-sohne text-[18px] font-[600] text-[#00C454] dark:text-carbon-300'>
           Connect
         </p>
@@ -34,7 +34,7 @@ export const Connect = () => (
         </nav>
       </div>
 
-      <div className='w-full h-auto gap-y-3'>
+      <div className='h-auto w-full gap-y-3'>
         <p className='pb-3 font-sohne text-[16px] font-[600] text-carbon-700 dark:text-carbon-300'>
           Gallery
         </p>
@@ -63,7 +63,7 @@ export const ConnectAlternateView = () => (
     id='connect-sect'
     className='py-6'>
     <div className='py-6 text-left'>
-      <div className='w-full h-auto gap-y-3'>
+      <div className='h-auto w-full gap-y-3'>
         <p className='pb-3 font-sohne text-[18px] font-[600] text-carbon-700 dark:text-carbon-300'>
           Connect
         </p>
@@ -71,7 +71,7 @@ export const ConnectAlternateView = () => (
           {connects.map((connect, k) => (
             <>
               <li key={k}>
-                <div className='flex flex-row items-center justify-start w-full my-2 gap-x-4 gap-y-2'>
+                <div className='my-2 flex w-full flex-row items-center justify-start gap-x-4 gap-y-2'>
                   <div
                     key={k}
                     id='label'
@@ -97,7 +97,7 @@ export const ConnectAlternateView = () => (
 
 export const MediaLine = () => (
   <section className='py-6'>
-    <div className='w-full h-auto gap-y-3'>
+    <div className='h-auto w-full gap-y-3'>
       <p className='pb-3 font-sohne text-[18px] font-[600] text-carbon-700 dark:text-carbon-300'>
         Gallery
       </p>
@@ -123,14 +123,12 @@ export const MediaLine = () => (
 export const ConnectDev = () => (
   <>
     {/* <!-- Connect --> */}
-    <div className='text-sm font-sohne'>
-      <p className='pb-4 text-[16px] font-[500] leading-6 text-[#00C454] dark:text-carbon-50'>
-        Connect
-      </p>
-      <div className='grid gap-4 mt-3'>
+    <div className='font-sohne text-sm'>
+      <p className='pb-4 text-[16px] font-[500] leading-6 text-jade'>Connect</p>
+      <div className='mt-3 grid gap-4'>
         {connects.map((template) => (
           <>
-            <div className='grid items-start grid-cols-1 text-carbon-500 md:grid-cols-3'>
+            <div className='grid grid-cols-1 items-start text-carbon-500 md:grid-cols-3'>
               <div>
                 <p className='font-sohne text-[15px] font-[500] text-carbon-400 dark:text-carbon-400'>
                   {template.type}

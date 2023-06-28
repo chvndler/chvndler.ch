@@ -26,6 +26,7 @@ module.exports = {
       carbon: '#484645',
       jade: '#00C454',
       azure: '#0086FC',
+      paleSky: '#6A7280',
 
       carbon: {
         50: 'rgba(246, 248, 250, 1)',
