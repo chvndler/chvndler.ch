@@ -14,7 +14,7 @@ export const Introduction = () => (
       <div className='flex flex-col w-full mx-auto text-left prose-blue'>
         <div className='w-full mx-auto'>
           <NumberEmail />
-          <p className='max-w-[510px] font-sohne text-[16px] font-[400] leading-6 text-carbon-500 dark:text-carbon-200'>
+          <p className='max-w-[510px] font-sohne text-[15px] md:text-[16px] font-[400] leading-6 text-carbon-500 dark:text-carbon-200'>
             Creating cool and taking notes. Enjoying the internet and
             open-source, interested in design systems, component architectures,
             TypeScript, and React. The focus in the moment is silencing the

@@ -1,79 +1,33 @@
+$prefix: '/fonts/' !default;
+
 /**
- * 
- * Neue Haas Unica
- * @format
- */
+
+  * Aro Archive Font
+  */
 
 @font-face {
-  font-family: 'Unica';
-  src: url('/fonts/unica/NeueHaasUnica-Thin.woff2') format('woff2');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Unica';
-  src: url('/fonts/unica/NeueHaasUnica-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Unica';
-  src: url('/fonts/unica/NeueHaasUnica-Regular.woff2') format('woff2');
+  font-family: 'Aro';
+  src: url('/fonts/aro/BSTAroProp050721V43-Normal.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Unica';
-  src: url('/fonts/unica/NeueHaasUnica-Medium.woff2') format('woff2');
-  font-weight: 500;
+  font-family: 'Aro';
+  src: url('/fonts/aro/BSTAroProportional050721V43-Lite.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
+
 @font-face {
-  font-family: 'Unica';
-  src: url('/fonts/unica/NeueHaasUnica-Bold.woff2') format('woff2');
-  font-weight: 600;
+  font-family: 'Aro Mono';
+  src: url('/fonts/aro/BSTAroMono290621V41-Lite.woff2') format('woff2');
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
-
-@font-face {
-  font-family: 'Unica';
-  src: url('/fonts/unica/NeueHaasUnica-Black.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/**
- * 
- * Archivo V
- * @format
- */
-
-@font-face {
-  font-family: Archivo V;
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: normal;
-  font-named-instance: 'Regular';
-  src: url('/fonts/archivo/Archivo-Variable.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: Archivo V;
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: italic;
-  font-named-instance: 'Italic';
-  src: url('/fonts/archivo/Archivo-Italic.ttf') format('truetype');
 }
 
 /**

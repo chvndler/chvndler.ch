@@ -8,10 +8,11 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
+      aro: ['Aro', 'sans-serif'],
       inter: ['Inter V', 'sans-serif'],
       sohne: ['Söhne', 'sans-serif'],
       helmet: ['Helmet Neue', 'sans-serif'],
-      mono: ['SF Mono', 'monospace'],
+      mono: ['Aro Mono', 'monospace'],
     },
     colors: {
       transparent: 'transparent',

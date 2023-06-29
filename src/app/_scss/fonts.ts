@@ -11,6 +11,12 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
+const aro = localFont({
+  src: '../../../public/fonts/aro/BSTAroProp050721V43-Normal.woff2',
+  display: 'swap',
+  style: 'normal',
+});
+
 const sohne = localFont({
   src: '../../../public/fonts/sohne/Sohne-buch-regular.woff2',
   display: 'swap',
@@ -25,6 +31,7 @@ const helmet = localFont({
 
 export {
   inter,
+  aro,
   sohne,
 
   // locals..
