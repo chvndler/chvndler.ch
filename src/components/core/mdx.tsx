@@ -49,6 +49,9 @@ const Link = (props: any) => {
 
   return (
     <a
+      className={clsx(
+        'mdx-link text-carbon-400 hover:text-carbon-600 dark:text-carbon-400',
+      )}
       target='_blank'
       rel='noopener noreferrer'
       {...props}
