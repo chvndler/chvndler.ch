@@ -2,7 +2,7 @@ import { AppController } from '@/components/layout';
 
 import type { Metadata } from 'next/types';
 import {
-  ConnectDev,
+  Connect,
   Introduction,
   ProjectHighlights,
   Section,
@@ -22,7 +22,7 @@ export default function DevIndex() {
       <AppController>
         <Section>
           <Introduction />
-          <ConnectDev />
+          <Connect />
           <ProjectHighlights projects={...allProjects.slice(0, 4)} />
         </Section>
       </AppController>

@@ -5,6 +5,7 @@ import { compareDesc } from 'date-fns';
 import type { Projects } from '.contentlayer/generated/types';
 import { formatDateTime } from '@/lib/hooks/use-date-time';
 import { pages } from '@/lib/data/other';
+import { SmallArrowRight } from '@/components/shared/svg/arrows';
 
 type ListProps = {
   projects: Projects[];
@@ -21,7 +22,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
       className='grid gap-6'>
       <div
         key={z}
-        className='grid items-start justify-start grid-cols-1 text-carbon-400 md:grid-cols-3'>
+        className='grid grid-cols-1 items-start justify-start text-carbon-400 md:grid-cols-3'>
         <p className='font-mono text-xs leading-6 text-carbon-600 dark:text-carbon-600'>
           <ProjectDateFormat postDate={prxjxct} />
         </p>
@@ -32,7 +33,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
           <Link
             key={z}
             href={prxjxct.slug}
-            className='font-sohne text-[15px] font-[600] lowercase leading-5 text-carbon-600 hover:underline dark:text-carbon-400 md:leading-normal'>
+            className='font-sohne text-[15px] font-[600] lowercase leading-5 text-carbon-600 transition-all duration-300 hover:underline hover:decoration-azure dark:text-carbon-400 md:leading-normal'>
             {prxjxct.title}
           </Link>
 
@@ -56,24 +57,27 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
 
   return (
     <>
-      <div className='text-sm font-sohne'>
+      <div className='font-sohne text-sm'>
         <p className='pb-4 text-[16px] font-[500] leading-6 text-[#00C454]'>
           Projects
         </p>
 
-        <div className='grid gap-2 gap-y-3 pb-6 mt-3 mb-3 border-b border-carbon-100 dark:border-carbon-800'>
+        <div className='mb-3 mt-3 grid gap-2 gap-y-3 border-b border-carbon-100 pb-6 dark:border-carbon-800'>
           {pages.map((arch, i) => (
             <>
               <div
                 key={i}
-                className='grid items-start grid-cols-1 gap-y-0 md:grid-cols-3'>
-                <div key={i}>
+                className='grid grid-cols-1 items-start gap-y-0 md:grid-cols-3'>
+                <div
+                  key={i}
+                  className='mx-auto flex w-full flex-row items-center justify-start gap-x-1 leading-5'>
                   <Link
                     href={arch.url}
                     key={i}
-                    className='font-sohne text-[15px] font-[500] leading-5 text-carbon-600 dark:text-carbon-400'>
+                    className='text-left font-sohne text-[15px] font-[500] leading-5 text-carbon-600 dark:text-carbon-400'>
                     {arch.type}
                   </Link>
+                  <SmallArrowRight />
                 </div>
 
                 <div className='w-full md:col-span-2'>
@@ -86,7 +90,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
           ))}
         </div>
 
-        <div className='grid gap-6 pt-2 mt-3'>{list}</div>
+        <div className='mt-3 grid gap-6 pt-2'>{list}</div>
       </div>
 
       <div className='flex justify-start'>

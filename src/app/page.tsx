@@ -14,7 +14,7 @@ import React from 'react';
 import { AppController } from '@/components/layout';
 
 import {
-  ConnectDev,
+  Connect,
   Introduction,
   ProjectHighlights,
   Section,
@@ -27,7 +27,7 @@ export default function Index() {
       <AppController>
         <Section>
           <Introduction />
-          <ConnectDev />
+          <Connect />
           <ProjectHighlights projects={...allProjects.slice(0, 4)} />
         </Section>
       </AppController>
