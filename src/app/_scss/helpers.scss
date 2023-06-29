@@ -126,15 +126,3 @@ code::after {
   background: transparent;
 }
 
-.scroll-topbar {
-  z-index: 999999999 !important;
-  max-height: 0.2rem; // 3px
-  height: 100%;
-  background-color: var(--color-bar);
-  background: var(--color-bar);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  transform-origin: 0%;
-}
