@@ -26,17 +26,21 @@ export const TextSwitcher = ({
 
   return (
     <div
-      className={clsx('w-fit transition duration-300 ease-in-out', className)}
+      className={clsx('w-fit transition duration-100 ease-in-out', className)}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}>
       {isHovered ? (
         <HoverableTextElement
-          className={clsx('font-[500] text-azure dark:text-azure')}
+          className={clsx(
+            'font-mono text-[14px] font-[500] text-sun dark:text-sun',
+          )}
           text={hoverText}
         />
       ) : (
         <HoverableTextElement
-          className={clsx('font-[500] text-charcoal dark:text-carbon-50')}
+          className={clsx(
+            'font-sohne text-[16px] font-[500] text-charcoal dark:text-carbon-50',
+          )}
           text={defaultText}
         />
       )}
@@ -56,7 +60,7 @@ export const HoverableTextElement = ({
   return (
     <p
       className={clsx(
-        'cursor-pointer font-sohne text-[16px] leading-4 transition-all duration-150',
+        'cursor-pointer leading-4 transition-all duration-100',
         className,
       )}>
       {text}

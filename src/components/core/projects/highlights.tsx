@@ -33,11 +33,11 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
           <Link
             key={z}
             href={prxjxct.slug}
-            className='font-sohne text-[15px] font-[600] lowercase leading-5 text-carbon-600 transition-all duration-300 hover:underline hover:decoration-azure dark:text-carbon-400 md:leading-normal'>
+            className='font-sohne text-[15px] font-[600] lowercase leading-5 text-carbon-500 transition-all duration-300 hover:text-carbon-700 hover:underline hover:decoration-azure dark:text-carbon-300 dark:hover:text-carbon-300 md:leading-normal'>
             {prxjxct.title}
           </Link>
 
-          <p className='text-[14px] font-[400] leading-5 text-carbon-400 dark:text-carbon-400'>
+          <p className='text-[14px] font-[400] leading-5 text-carbon-400 dark:text-carbon-500'>
             {prxjxct.excerpt}
           </p>
 
@@ -74,14 +74,14 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
                   <Link
                     href={arch.url}
                     key={i}
-                    className='text-left font-sohne text-[15px] font-[600] leading-5 text-carbon-500 hover:text-carbon-400 dark:text-carbon-500 dark:hover:text-carbon-400'>
+                    className='text-left font-sohne text-[15px] font-[600] leading-5 text-carbon-500 hover:text-carbon-700 dark:text-carbon-300 dark:hover:text-carbon-300'>
                     {arch.type}
                   </Link>
                   <SmallArrowRight />
                 </div>
 
                 <div className='w-full md:col-span-2'>
-                  <p className='font-sohne text-[15px] font-[400] leading-5 text-carbon-500 transition-all duration-200 dark:text-carbon-600'>
+                  <p className='font-sohne text-[15px] font-[400] leading-5 text-carbon-400 transition-all duration-200 dark:text-carbon-500'>
                     {arch.content}
                   </p>
                 </div>

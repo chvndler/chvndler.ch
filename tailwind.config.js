@@ -35,6 +35,7 @@ module.exports = {
       charcoal: '#343433',
       carbon: '#484645',
       jade: '#00C454',
+      jaded: '#44C67F',
       azure: '#0086FC',
       sun: '#FF3F00',
       paleSky: '#6A7280',
