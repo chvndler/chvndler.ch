@@ -13,6 +13,15 @@ module.exports = {
       sohne: ['Söhne', 'sans-serif'],
       helmet: ['Helmet Neue', 'sans-serif'],
       mono: ['Aro Mono', 'monospace'],
+
+      /**
+       * 
+       * testing fonts
+       */
+      favorit: ['Favorit', 'sans-serif'],
+      walter: ['Walter Neue', 'sans-serif'],
+      repro: ['Repro', 'sans-serif'],
+      reproMono: ['Repro Mono', 'monospace']
     },
     colors: {
       transparent: 'transparent',

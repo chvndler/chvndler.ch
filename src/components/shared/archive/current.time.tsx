@@ -1,10 +1,10 @@
 'use client';
 
-import { ModularTime } from '../../primitives/modul.ar';
+import ModularTime from '../../primitives/modul.ar';
 
 export const TimeContext = () => (
   <>
-    <div className='mx-auto flex w-full items-center justify-center'>
+    <div className='flex items-center justify-center w-full mx-auto'>
       <ModularTime />
     </div>
   </>

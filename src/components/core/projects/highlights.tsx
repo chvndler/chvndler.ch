@@ -23,7 +23,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
       <div
         key={z}
         className='grid items-start justify-start grid-cols-1 text-carbon-400 md:grid-cols-3'>
-        <p className='font-mono text-xs leading-6 text-carbon-600 dark:text-carbon-600'>
+        <p className='font-reproMono text-xs font-[600] leading-6 text-carbon-600 dark:text-carbon-600'>
           <ProjectDateFormat postDate={prxjxct} />
         </p>
 
@@ -57,8 +57,8 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
 
   return (
     <>
-      <div className='text-sm font-sohne'>
-        <p className='pb-4 text-[16px] font-[500] leading-6 text-[#00C454]'>
+      <div className='text-sm font-favorit'>
+        <p className='pb-4 text-[16px] font-[600] leading-6 text-[#00C454]'>
           Projects
         </p>
 
@@ -74,14 +74,14 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
                   <Link
                     href={arch.url}
                     key={i}
-                    className='text-left font-sohne text-[15px] font-[500] leading-5 text-carbon-600 dark:text-carbon-400'>
+                    className='text-left font-favorit text-[15px] font-[600] leading-5 text-carbon-600 dark:text-carbon-400'>
                     {arch.type}
                   </Link>
                   <SmallArrowRight />
                 </div>
 
                 <div className='w-full md:col-span-2'>
-                  <p className='font-sohne text-[15px] font-[400] leading-5 text-carbon-500 transition-all duration-200 dark:text-carbon-600'>
+                  <p className='font-favorit text-[15px] font-[400] leading-5 text-carbon-500 transition-all duration-200 dark:text-carbon-600'>
                     {arch.content}
                   </p>
                 </div>

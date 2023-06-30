@@ -1,11 +1,11 @@
 'use client';
 
-import * as React from 'react';
+import React, { useEffect, useState } from 'react';
 
-export const ModularTime = () => {
-  const [currentTime, setCurrentTime] = React.useState(new Date());
+export default function ModularTime() {
+  const [currentTime, setCurrentTime] = useState(new Date());
 
-  React.useEffect(() => {
+  useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentTime(new Date());
     }, 1000);
@@ -19,20 +19,14 @@ export const ModularTime = () => {
     second: 'numeric',
   });
 
-  /** ---------------------------- 
-  const timezoneString = currentTime.toLocaleString('en-US', {
-    timeZoneName: 'short',
-  });
-
-  ** ---------------------------- */
-
   return (
-    <>
+    <div>
       <time>
         <span className='font-mono text-xs font-[500] text-carbon-600'>
           {timeString} EST USA
         </span>
       </time>
-    </>
+    </div>
   );
 };
+

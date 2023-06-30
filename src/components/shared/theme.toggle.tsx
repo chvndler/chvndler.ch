@@ -30,7 +30,7 @@ export default function ThemeSwitch() {
 
       <button
         id='theme-toggle'
-        className='h-auto w-auto bg-transparent text-carbon-700 transition-colors duration-300 ease-in-out dark:text-carbon-600'
+        className='w-auto h-auto transition-colors duration-300 ease-in-out bg-transparent text-carbon-700 dark:text-carbon-600'
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => {
           setIsHovering(false);

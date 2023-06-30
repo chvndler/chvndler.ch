@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { ModularTime } from '../primitives/modul.ar';
+import ModularTime from '../primitives/modul.ar';
 
 export const Footer = () => {
   return (

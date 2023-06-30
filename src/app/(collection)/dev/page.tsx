@@ -10,6 +10,7 @@ import {
 import { allProjects } from '@/contentlayer/generated';
 import Leaflet from '@/components/primitives/leaflet';
 import Logo from '@/components/shared/logo';
+import { TextSwitcher } from '@/components/primitives/hover.switch';
 
 export const metadata: Metadata = {
   title: 'dev.chandler.',

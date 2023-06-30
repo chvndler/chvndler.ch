@@ -1,7 +1,59 @@
 $prefix: '/fonts/' !default;
 
-/**
 
+  /**
+  *
+  * Favorite Variable Font
+  */
+@font-face {
+  font-family: 'Favorit';
+  font-style: normal;
+  font-weight: normal;
+  src: local('ABCFavorit-Variable'), local('favorit-variable'),
+    url('#{$prefix}var/favorit-variable.woff2') format('woff2');
+}
+
+
+.font-favorit { font-feature-settings: "ss01", "ss04" !important;}
+
+
+/**
+  *
+  * Repro Variable Font
+  */
+@font-face {
+  font-family: 'Repro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('ABCRepro-Variable'), local('repro-variable'),
+    url('#{$prefix}var/repro-variable.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Repro Mono';
+  font-style: normal;
+  font-weight: normal;
+  src: local('ABCRepro-Mono-Variable'), local('repro-mono'),
+    url('#{$prefix}var/repro-mono.woff2') format('woff2');
+}
+
+/**
+  *
+  * Walter Variable Font
+  */
+
+@font-face {
+  font-family: 'Walter Neue';
+  font-style: normal;
+  font-weight: normal;
+  src: local('ABCWalterNeue-Variable'), local('walter-neue-variable'),
+    url('#{$prefix}var/walter-neue-variable.woff2') format('woff2');
+}
+
+
+
+
+/**
   * Aro Archive Font
   */
 

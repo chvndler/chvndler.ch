@@ -25,9 +25,9 @@ const arch002: OtherPage = {
 const arch003: OtherPage = {
   url: '/projects',
   target: '_self',
-  type: 'all projects',
-  title: 'all projects',
-  content: 'complete list of active projects',
+  type: 'internet projects',
+  title: 'internet projects',
+  content: 'complete list of all active web projects',
 };
 
 export const bytype = {

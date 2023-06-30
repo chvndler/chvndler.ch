@@ -8,7 +8,7 @@ export default function Logo() {
       <div className='block'>
         <Link
           href='/'
-          className='h-auto w-auto items-center leading-[20px] transition-all duration-500 ease-in-out hover:text-jade hover:blur-[2.8px] dark:hover:text-jade'>
+          className='h-auto w-auto items-center leading-[20px] transition-all duration-200 ease-in-out hover:text-jade hover:blur-[2px] dark:hover:text-jade'>
           {/* <!--
           <CDCLogo
             width={'58'}
