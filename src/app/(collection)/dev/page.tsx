@@ -2,7 +2,7 @@ import { AppController } from '@/components/layout';
 
 import type { Metadata } from 'next/types';
 import { Introduction, TestSection } from '@/components/core';
-import { StoryComponent } from '@/components/primitives/stories';
+import { CommandMenu } from '@/components/core/cmdk';
 
 export const metadata: Metadata = {
   title: 'dev.chandler.',
@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 export default function DevIndex() {
   return (
     <>
+      <CommandMenu />
       <AppController>
         <TestSection>
           <span className='mx-auto w-fit whitespace-nowrap rounded-full bg-graphicGreen px-2.5 py-0.5'>
@@ -20,35 +21,12 @@ export default function DevIndex() {
             </p>
           </span>
 
-          <section>
-            <StoryComponent />
-          </section>
+          <section></section>
 
-          <div className='font-walter font-normal'>
-            <p className='text-[18px] font-semibold leading-[4rem] text-azure'>
-              Walter Neue
-            </p>
-            Strawberries Bracciano Or Bust: A Cruise-Holmes Wedding Round-Up.
-            Strawberries are really bad right now, are they out of season? Oh my
-            god I’m going to cry my diamond earrings. This room is like the vibe
-            for how all houses should be.
-          </div>
-          <div className='font-walter font-semibold'>
-            Strawberries Bracciano Or Bust: A Cruise-Holmes Wedding Round-Up.
-            Strawberries are really bad right now, are they out of season? Oh my
-            god I’m going to cry my diamond earrings. This room is like the vibe
-            for how all houses should be.
-          </div>
           <div className='font-favorit font-[400]'>
             <p className='text-[18px] font-[600] leading-[4rem] text-jade'>
               Favorit
             </p>
-            The cozy cabin nestled amidst towering pines, exuding rustic charm
-            and tranquility. Sunbeams pierced through ancient branches, casting
-            ethereal patterns on weathered floorboards. A crackling hearth
-            danced with warmth, inviting laughter and storytelling.
-          </div>
-          <div className='font-favorit font-[600]'>
             The cozy cabin nestled amidst towering pines, exuding rustic charm
             and tranquility. Sunbeams pierced through ancient branches, casting
             ethereal patterns on weathered floorboards. A crackling hearth
@@ -110,29 +88,6 @@ export default function DevIndex() {
             world bathed in twilight's tender glow.
           </div>
 
-          <div className='font-repro font-[400]'>
-            <p className='text-[18px] font-[600] leading-[4rem] text-paleSky'>
-              Repro
-            </p>
-            Dawn's golden rays embraced dew-kissed petals, awakening a garden in
-            bloom. Fragrant blossoms danced in the gentle breeze, as butterflies
-            painted the air with vibrant strokes. Nature's masterpiece unfolded,
-            inviting hearts to find solace and inspiration in the exquisite
-            harmony of its tranquil sanctuary.
-          </div>
-          <div className='font-repro font-[700]'>
-            Dawn's golden rays embraced dew-kissed petals, awakening a garden in
-            bloom. Fragrant blossoms danced in the gentle breeze, as butterflies
-            painted the air with vibrant strokes. Nature's masterpiece unfolded,
-            inviting hearts to find solace and inspiration in the exquisite
-            harmony of its tranquil sanctuary.
-          </div>
-          <div className='font-reproMono text-xs font-[400] uppercase'>
-            Fragrant blossoms danced in the gentle breeze.
-          </div>
-          <div className='font-reproMono text-xs font-[700] uppercase'>
-            Fragrant blossoms danced in the gentle breeze.
-          </div>
           <div className='font-helmet text-sm font-[700] uppercase'>
             Fragrant blossoms danced in the gentle breeze.
           </div>

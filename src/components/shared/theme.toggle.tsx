@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 
 import { SunFilled } from '../shared/svg/sun';
@@ -9,10 +9,10 @@ import { MoonOutlined } from '../shared/svg/moon';
 export default function ThemeSwitch() {
   const { theme, setTheme } = useTheme();
 
-  const [mounted, setMounted] = React.useState(false);
-  const [isHovering, setIsHovering] = React.useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [isHovering, setIsHovering] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setMounted(true);
   }, []);
 
@@ -30,7 +30,7 @@ export default function ThemeSwitch() {
 
       <button
         id='theme-toggle'
-        className='w-auto h-auto transition-colors duration-300 ease-in-out bg-transparent text-carbon-700 dark:text-carbon-600'
+        className='h-auto w-auto bg-transparent text-carbon-700 transition-colors duration-300 ease-in-out dark:text-carbon-600'
         onMouseEnter={() => setIsHovering(true)}
         onMouseLeave={() => {
           setIsHovering(false);

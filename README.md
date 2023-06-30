@@ -6,9 +6,7 @@
 
 → **CSS:** [Tailwindcss](https://tailwindcss.com/)
 
-→ **Back-end:** [Next.js](https://nextjs.org/)
-
-→ **Front-end:** [React](https://reactjs.org/), [Next.js](https://nextjs.org/)
+→ **Front/Back:** [React](https://reactjs.org/), [Next.js](https://nextjs.org/)
 
 → **Deployment:** [Vercel](https://vercel.com/)
 
@@ -68,6 +66,34 @@ Route (pages)                              Size     First Load JS
   ├ chunks/main-6d0c3239fc6bbc8b.js        27.9 kB
   ├ chunks/pages/_app-b555d5e1eab47959.js  195 B
   └ chunks/webpack-d5f1339de20a6c94.js     1.68 kB
+```
+
+
+### More Reference
+
+```plain-text
+.
+├── app
+│   ├── layout.tsx
+│   └── page.tsx
+├── components
+│   ├── ui
+│   │   ├── alert-dialog.tsx
+│   │   ├── button.tsx
+│   │   ├── dropdown-menu.tsx
+│   │   └── ...
+│   ├── main-nav.tsx
+│   ├── page-header.tsx
+│   └── ...
+├── lib
+│   └── utils.ts
+├── styles
+│   └── globals.css
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+└── tsconfig.json
 ```
 
 ### license

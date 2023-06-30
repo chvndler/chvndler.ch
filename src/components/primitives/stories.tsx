@@ -2,8 +2,6 @@
 
 import React, { Component } from 'react';
 
-import s1 from '@public/static/img/projects/htla.jpeg';
-
 import Stories from 'react-insta-stories';
 import { siteURL } from '@/lib/const';
 
