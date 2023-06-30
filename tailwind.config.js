@@ -12,7 +12,7 @@ module.exports = {
       inter: ['Inter V', 'sans-serif'],
       sohne: ['Söhne', 'sans-serif'],
       helmet: ['Helmet Neue', 'sans-serif'],
-      mono: ['Aro Mono', 'monospace'],
+      mono: ['SF Mono', 'monospace'],
 
       /**
        * 

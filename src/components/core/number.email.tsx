@@ -9,10 +9,10 @@ export const NumberEmail = () => (
       className=''
     />
 
-    <p className='font-walter text-[16px] font-[500] leading-4 text-carbon-500 dark:text-carbon-100'>
+    <p className='font-sohne text-[16px] font-[400] leading-4 text-carbon-500 dark:text-carbon-100'>
       frontend developer, designer
     </p>
-    <p className='font-walter text-[16px] font-[500] leading-4 text-carbon-500 dark:text-carbon-100'>
+    <p className='font-sohne text-[16px] font-[400] leading-4 text-carbon-500 dark:text-carbon-100'>
       chan@atlrdsgn.com
     </p>
   </div>
