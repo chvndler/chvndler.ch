@@ -2,6 +2,7 @@ import { AppController } from '@/components/layout';
 
 import type { Metadata } from 'next/types';
 import { Introduction, TestSection } from '@/components/core';
+import { MotionTabs } from '@/components/primitives/motion.tabs';
 
 export const metadata: Metadata = {
   title: 'dev.chandler.',
@@ -18,6 +19,10 @@ export default function DevIndex() {
               Developer Test Suite
             </p>
           </span>
+
+          <section>
+            <MotionTabs />
+          </section>
 
           <div className='font-normal font-walter'>
             <p className='text-[18px] font-semibold leading-[4rem] text-azure'>
