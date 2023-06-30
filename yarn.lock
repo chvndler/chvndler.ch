@@ -4697,6 +4697,7 @@ __metadata:
     react: ^18.2.0
     react-aria-components: 1.0.0-alpha.3
     react-dom: ^18.2.0
+    react-insta-stories: ^2.6.1
     react-markdown: ^8.0.7
     react-wrap-balancer: ^1.0.0
     rehype-autolink-headings: ^6.1.1
@@ -9638,6 +9639,15 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
+  languageName: node
+  linkType: hard
+
+"react-insta-stories@npm:^2.6.1":
+  version: 2.6.1
+  resolution: "react-insta-stories@npm:2.6.1"
+  peerDependencies:
+    react: ">=16.8.2"
+  checksum: 29dd5fa2e6707f88c812602612717dea40b778b8c57ab0d13a07d4bcab0a97d88f13ddd31121ce8bb64ab072a61f8c2450542d223aaa6c4bf62b6db84f404912
   languageName: node
   linkType: hard
 

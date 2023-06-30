@@ -2,7 +2,7 @@ import { AppController } from '@/components/layout';
 
 import type { Metadata } from 'next/types';
 import { Introduction, TestSection } from '@/components/core';
-import { MotionTabs } from '@/components/primitives/motion.tabs';
+import { StoryComponent } from '@/components/primitives/stories';
 
 export const metadata: Metadata = {
   title: 'dev.chandler.',
@@ -21,10 +21,10 @@ export default function DevIndex() {
           </span>
 
           <section>
-            <MotionTabs />
+            <StoryComponent />
           </section>
 
-          <div className='font-normal font-walter'>
+          <div className='font-walter font-normal'>
             <p className='text-[18px] font-semibold leading-[4rem] text-azure'>
               Walter Neue
             </p>
@@ -33,7 +33,7 @@ export default function DevIndex() {
             god I’m going to cry my diamond earrings. This room is like the vibe
             for how all houses should be.
           </div>
-          <div className='font-semibold font-walter'>
+          <div className='font-walter font-semibold'>
             Strawberries Bracciano Or Bust: A Cruise-Holmes Wedding Round-Up.
             Strawberries are really bad right now, are they out of season? Oh my
             god I’m going to cry my diamond earrings. This room is like the vibe
