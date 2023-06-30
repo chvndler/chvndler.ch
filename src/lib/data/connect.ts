@@ -27,6 +27,13 @@ const three: Template = {
 };
 
 const four: Template = {
+  url: 'https://codesandbox.io/u/chvndler',
+  target: '_blank',
+  type: 'codesandbox',
+  title: 'codesandbox.io',
+};
+
+const five: Template = {
   url: 'https://read.cv/chvndler',
   target: '_blank',
   type: 'read.cv',
@@ -38,6 +45,7 @@ export const bytype = {
   two,
   three,
   four,
+  five,
 };
 
 export const connects = Object.values(bytype);
