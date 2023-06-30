@@ -20,6 +20,7 @@ export const Connect = () => (
               </div>
               <div className='w-full md:col-span-2'>
                 <Link
+                  target={template.target}
                   href={template.url}
                   title={template.type}
                   className='font-sohne text-[15px] font-[400] underline decoration-carbon-200 underline-offset-2 transition-all duration-300 hover:decoration-azure dark:decoration-carbon-700 dark:hover:decoration-azure'>
