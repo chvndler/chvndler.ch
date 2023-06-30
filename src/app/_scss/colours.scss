@@ -3,16 +3,16 @@
   --app-gray: rgba(116, 116, 132, 1);
   --app-blue: rgba(1, 141, 255, 1);
   --app-pink: rgba(249, 102, 172, 1);
+  --app-red: rgba(239, 68, 68, 1);
+  --app-yellow: rgba(255, 190, 76, 1);
 
   --blue: rgba(55, 132, 244, 1);
   --green: rgba(68, 198, 127, 1);
-  --yellow: rgba(255, 190, 76, 1);
   --gold: rgba(202, 146, 48, 1);
   --orange: rgba(255, 83, 16, 1);
   --orange-dark: rgba(255, 43, 0, 1);
-  --red: rgba(239, 68, 68, 1);
 
-  --graphic-green: rgba(68, 198, 127, 1);
+  --graphic-green: rgba(68, 198, 127, 0.4);
   --graphic-blue: rgba(125, 196, 255, 1);
   --graphic-yellow: rgba(255, 207, 123, 1);
   --graphic-gray: rgba(226, 214, 197, 1);
@@ -21,3 +21,12 @@
 
   --topbar: rgba(158, 135, 197, 1);
 }
+
+.app-green {color: var(--app-green);}
+.app-gray {color: var(--app-gray);}
+.app-blue {color: var(--app-blue);}
+.app-pink {color: var(--app-pink);}
+.app-red {color: var(--app-red);}
+.app-yellow {color: var(--app-yellow);}
+.app-graphic-green {color: var(--graphic-green);}
+

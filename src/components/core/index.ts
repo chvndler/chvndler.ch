@@ -5,4 +5,4 @@ export { NumberEmail } from './number.email';
 export { ProjectHighlights } from './projects';
 
 // elements
-export { Section } from './section';
+export { Section, TestSection } from './section';
