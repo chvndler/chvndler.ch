@@ -11,7 +11,7 @@ const arch001: OtherPage = {
   target: '_self',
   type: 'primitives',
   title: 'lab',
-  content: 'component architecture space',
+  content: 'implementing interfaces and interactions',
 };
 
 const arch002: OtherPage = {

@@ -12,7 +12,7 @@ export const DesignerButton = (props: ButtonProps) => {
     <>
       <div className='flex flex-col gap-8'>
         <a
-          className='super-title pointer-events-auto transition-opacity hover:opacity-80'
+          className='transition-opacity pointer-events-auto super-title hover:opacity-80'
           href='/login'
           rel='noopener noreferrer'>
           <button className='btn is-primary pointer-events-auto w-[150px] rounded-full bg-carbon-200 px-6 py-2 text-sm font-semibold text-carbon-800 shadow-lg hover:shadow-md dark:bg-carbon-300 dark:text-carbon-900'>
@@ -47,7 +47,7 @@ export const GitButton = ({ children, href, ...props }: ButtonProps) => (
         rel='noopener noreferrer'>
         <button
           {...props}
-          className='font-archivo rounded-lg border border-carbon-200 bg-carbon-50 px-4 py-1 text-xs text-carbon-700 hover:opacity-80 hover:shadow-sm dark:border-carbon-700 dark:bg-carbon-800 dark:text-carbon-100'>
+          className='rounded-xl border border-carbon-200 bg-carbon-50 px-4 py-1 font-sohne text-[12px] font-[500] text-carbon-700 shadow hover:opacity-80 hover:shadow-sm dark:border-carbon-700 dark:bg-carbon-800 dark:text-carbon-100'>
           {children}
         </button>
       </a>

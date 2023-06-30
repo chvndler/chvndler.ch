@@ -1,12 +1,14 @@
 import { allProjects } from 'contentlayer/generated';
-import { AppController, ProjectList } from '@/components/layout';
+import { AppController } from '@/components/layout';
+import { ProjectLibrary } from '@/components/core/projects';
 
 import type { Metadata } from 'next/types';
 import { content } from '@/lib/website.config';
 
 export const metadata: Metadata = {
-  title: 'Chandler Chappell. Projects.',
-  description: 'Projects I have worked on, and am currently working on.',
+  title: 'All Projects',
+  description:
+    'Internet projects that I have completed or are currently in progress.',
 };
 
 export default function ProjectsIndex() {
@@ -24,7 +26,7 @@ export default function ProjectsIndex() {
             <span className='font-[500]'>{copy.copyright.tag}</span>
           </p>
         </section>
-        <ProjectList projects={allProjects} />
+        <ProjectLibrary projects={allProjects} />
       </AppController>
     </>
   );

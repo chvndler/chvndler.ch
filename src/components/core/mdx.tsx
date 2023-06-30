@@ -3,7 +3,7 @@ import NextImage from 'next/image';
 import NextLink from 'next/link';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import type { MDXComponents } from 'mdx/types';
-import type { MDXImageProps, MDXLinkProps } from '@/lib/mdx';
+import type { MDXImageProps } from '@/lib/mdx';
 
 function clsx(...args: any) {
   return args.filter(Boolean).join(' ');

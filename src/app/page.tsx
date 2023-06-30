@@ -28,7 +28,7 @@ export default function Index() {
         <Section>
           <Introduction />
           <Connect />
-          <ProjectHighlights projects={...allProjects.slice(0, 4)} />
+          <ProjectHighlights projects={...allProjects.slice(0, 5)} />
         </Section>
       </AppController>
     </>

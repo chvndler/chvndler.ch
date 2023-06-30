@@ -67,7 +67,7 @@ export const Projects = defineDocumentType(() => ({
      * key - the key, label, or order of the post.
      */
     key: {
-      type: 'string',
+      type: 'number',
       required: false,
       description: 'The key, label, or order of the post',
     },
