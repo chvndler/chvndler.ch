@@ -22,36 +22,38 @@ export default function ThemeSwitch() {
 
   return (
     <>
-      {isHovering && (
-        <span className='text-gray-400 my-auto mr-1 hidden items-center font-sohne text-[9px] font-semibold uppercase transition-all duration-150 ease-linear md:inline'>
-          {theme === null ? 'Theme' : theme === 'dark' ? 'Dark' : 'Light'}
-        </span>
-      )}
+      <div className='flex flex-row items-center justify-center gap-1'>
+        {isHovering && (
+          <span className='text-gray-400 my-auto mr-1 hidden items-center font-sohne text-[9px] font-semibold uppercase transition-all duration-150 ease-linear md:inline'>
+            {theme === null ? 'Theme' : theme === 'dark' ? 'Dark' : 'Light'}
+          </span>
+        )}
 
-      <button
-        id='theme-toggle'
-        className='h-auto w-auto bg-transparent text-carbon-700 transition-colors duration-300 ease-in-out dark:text-carbon-600'
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => {
-          setIsHovering(false);
-        }}
-        onClick={(ev) => {
-          ev.preventDefault(), setTheme(theme === 'light' ? 'dark' : 'light');
-        }}>
-        <span className='sr-only'>Theme mode</span>
+        <button
+          id='theme-toggle'
+          className='h-auto w-auto bg-transparent text-carbon-700 transition-colors duration-300 ease-in-out dark:text-carbon-600'
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => {
+            setIsHovering(false);
+          }}
+          onClick={(ev) => {
+            ev.preventDefault(), setTheme(theme === 'light' ? 'dark' : 'light');
+          }}>
+          <span className='sr-only'>Theme mode</span>
 
-        <span>
-          {theme !== 'dark' ? (
-            <>
-              <MoonOutlined />
-            </>
-          ) : (
-            <>
-              <SunFilled />
-            </>
-          )}
-        </span>
-      </button>
+          <span>
+            {theme !== 'dark' ? (
+              <>
+                <MoonOutlined />
+              </>
+            ) : (
+              <>
+                <SunFilled />
+              </>
+            )}
+          </span>
+        </button>
+      </div>
     </>
   );
 }

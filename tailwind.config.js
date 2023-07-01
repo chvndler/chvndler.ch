@@ -17,6 +17,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
+      iron: '#DDDDDD',
       B100: '#f4f4f4',
       B500: 'rgba(103, 119, 201, 1)',
       B600: 'rgba(224, 255, 158, 1)',

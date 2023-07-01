@@ -9,6 +9,7 @@ import { favorit } from './_scss/fonts';
 
 import type { Metadata } from 'next';
 import TopLoader from '@/components/primitives/loader';
+import { CommandMenu } from '@/components/core/cmdk';
 
 export default function RootLayout({
   children,
@@ -27,6 +28,8 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <Footer />
+
+          <CommandMenu />
         </ThemeProvider>
         <AppHooks />
       </body>

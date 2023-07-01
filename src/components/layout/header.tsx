@@ -29,8 +29,11 @@ export const Header = () => (
           </div>
           <div className='items-center justify-end'>
             <div className='block'>
-              <div className='flex flex-row items-center gap-1'>
+              <div className='flex flex-row items-center justify-center gap-2'>
                 <ThemeSwitch />
+                <p className='text-right font-favorit text-[11px] font-[500] uppercase leading-[20px] text-carbon-800 dark:text-carbon-200'>
+                  use ⌘ K to navigate
+                </p>
               </div>
             </div>
           </div>
@@ -55,3 +58,5 @@ function NavLinks() {
     </>
   );
 }
+
+

@@ -28,8 +28,8 @@ interface CommandDialogProps extends DialogProps {}
 const CommandDialog = ({ children, ...props }: CommandDialogProps) => {
   return (
     <Dialog {...props}>
-      <DialogContent className='overflow-hidden p-0 shadow-lg'>
-        <Command className='[&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5'>
+      <DialogContent className='overflow-hidden p-0 shadow-xl'>
+        <Command className='[&_[cmd-item]]:font-sohne [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-[500] [&_[cmdk-group-heading]]:text-carbon-400 [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-1 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5'>
           {children}
         </Command>
       </DialogContent>
@@ -42,7 +42,7 @@ const CommandInput = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.Input>
 >(({ className, ...props }, ref) => (
   <div
-    className='flex items-center border-b px-3'
+    className='flex items-center border-b border-carbon-200 px-3'
     cmdk-input-wrapper=''>
     <Search className='mr-2 h-4 w-4 shrink-0 opacity-50' />
     <CommandPrimitive.Input
@@ -91,7 +91,7 @@ const CommandGroup = React.forwardRef<
   <CommandPrimitive.Group
     ref={ref}
     className={cn(
-      'text-foreground [&_[cmdk-group-heading]]:text-muted-foreground overflow-hidden p-1 [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium',
+      'text-foreground overflow-hidden p-1 font-favorit [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-2 [&_[cmdk-group-heading]]:text-[10px] [&_[cmdk-group-heading]]:font-[600] [&_[cmdk-group-heading]]:text-azure',
       className,
     )}
     {...props}
@@ -106,7 +106,7 @@ const CommandSeparator = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <CommandPrimitive.Separator
     ref={ref}
-    className={cn('bg-border -mx-1 h-px', className)}
+    className={cn('-mx-1 h-px bg-carbon-100', className)}
     {...props}
   />
 ));
@@ -119,7 +119,7 @@ const CommandItem = React.forwardRef<
   <CommandPrimitive.Item
     ref={ref}
     className={cn(
-      'aria-selected:bg-accent aria-selected:text-accent-foreground relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+      'aria-selected:text-white relative flex cursor-default select-none items-center rounded-md px-2 py-1 font-favorit text-[16px] font-[500] lowercase leading-6 text-carbon-600 outline-none aria-selected:bg-iron data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
       className,
     )}
     {...props}
@@ -156,26 +156,6 @@ export {
   CommandSeparator,
 };
 
-export const DefaultCommand = () => (
-  <Command>
-    <CommandInput placeholder='Type a command or search...' />
-    <CommandList>
-      <CommandEmpty>No results found.</CommandEmpty>
-      <CommandGroup heading='Suggestions'>
-        <CommandItem>Calendar</CommandItem>
-        <CommandItem>Search Emoji</CommandItem>
-        <CommandItem>Calculator</CommandItem>
-      </CommandGroup>
-      <CommandSeparator />
-      <CommandGroup heading='Settings'>
-        <CommandItem>Profile</CommandItem>
-        <CommandItem>Billing</CommandItem>
-        <CommandItem>Settings</CommandItem>
-      </CommandGroup>
-    </CommandList>
-  </Command>
-);
-
 export function CommandMenu() {
   const [open, setOpen] = React.useState(false);
 
@@ -193,13 +173,19 @@ export function CommandMenu() {
     <CommandDialog
       open={open}
       onOpenChange={setOpen}>
-      <CommandInput placeholder='Type a command or search...' />
+      <CommandInput placeholder='Type or search a command.' />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
-        <CommandGroup heading='Suggestions'>
-          <CommandItem>Calendar</CommandItem>
-          <CommandItem>Search Emoji</CommandItem>
-          <CommandItem>Calculator</CommandItem>
+        <CommandGroup heading='SUGGESTIONS'>
+          <CommandItem>Twitter</CommandItem>
+        </CommandGroup>
+        <CommandGroup heading='PROJECTS'>
+          <CommandItem value='prj-web'>Internet Projects</CommandItem>
+          <CommandItem value='prj-film'>Film Projects</CommandItem>
+          <CommandItem value='prj-comp'>Component Gallery</CommandItem>
+        </CommandGroup>
+        <CommandGroup heading='CONNECT'>
+          <CommandItem value='con-tw'>Twitter</CommandItem>
         </CommandGroup>
       </CommandList>
     </CommandDialog>
