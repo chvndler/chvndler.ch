@@ -8,20 +8,11 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      aro: ['Aro', 'sans-serif'],
+      favorit: ['ABC Favorit', 'sans-serif'],
       inter: ['Inter V', 'sans-serif'],
       sohne: ['Söhne', 'sans-serif'],
       helmet: ['Helmet Neue', 'sans-serif'],
       mono: ['SF Mono', 'monospace'],
-
-      /**
-       * 
-       * testing fonts
-       */
-      favorit: ['Favorit', 'sans-serif'],
-      walter: ['Walter Neue', 'sans-serif'],
-      repro: ['Repro', 'sans-serif'],
-      reproMono: ['Repro Mono', 'monospace']
     },
     colors: {
       transparent: 'transparent',

@@ -1,86 +1,102 @@
 $prefix: '/fonts/' !default;
-
-
   /**
   *
-  * Favorite Variable Font
+  * Favorit Font
   */
+
 @font-face {
-  font-family: 'Favorit';
+  font-family: 'ABC Favorit';
   font-style: normal;
-  font-weight: normal;
-  src: local('ABCFavorit-Variable'), local('favorit-variable'),
-    url('#{$prefix}var/favorit-variable.woff2') format('woff2');
+  font-weight: 300;
+  src: local('ABCFavorit-Light'), local('ABCFavorit-Light'),
+    url('#{$prefix}favorit/ABCFavorit-Light.woff2') format('woff2'),
+    url('#{$prefix}favorit/ABCFavorit-Light.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'ABC Favorit';
+  font-style: italic;
+  font-weight: 300;
+  src: local('ABCFavorit-LightItalic'), local('ABCFavorit-LightItalic'),
+    url('#{$prefix}favorit/ABCFavorit-LightItalic.woff2') format('woff2'),
+    url('#{$prefix}favorit/ABCFavorit-LightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ABC Favorit';
+  font-style: normal;
+  font-weight: 350;
+  src: local('ABCFavorit-Book'), local('ABCFavorit-Book'),
+    url('#{$prefix}favorit/ABCFavorit-Book.woff2') format('woff2'),
+    url('#{$prefix}favorit/ABCFavorit-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ABC Favorit';
+  font-style: italic;
+  font-weight: 350;
+  src: local('ABCFavorit-BookItalic'), local('ABCFavorit-BookItalic'),
+    url('#{$prefix}favorit/ABCFavorit-BookItalic.woff2') format('woff2'),
+    url('#{$prefix}favorit/ABCFavorit-BookItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ABC Favorit';
+  font-style: normal;
+  font-weight: normal;
+  src: local('ABCFavorit-Regular'), local('ABCFavorit-Regular'),
+    url('#{$prefix}favorit/ABCFavorit-Regular.woff2') format('woff2'),
+    url('#{$prefix}favorit/ABCFavorit-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ABC Favorit';
+  font-style: italic;
+  font-weight: normal;
+  src: local('ABCFavorit-RegularItalic'), local('ABCFavorit-RegularItalic'),
+    url('#{$prefix}favorit/ABCFavorit-RegularItalic.woff2') format('woff2'),
+    url('#{$prefix}favorit/ABCFavorit-RegularItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ABC Favorit';
+  font-style: normal;
+  font-weight: 500;
+  src: local('ABCFavorit-Medium'), local('ABCFavorit-Medium'),
+    url('#{$prefix}favorit/ABCFavorit-Medium.woff2') format('woff2'),
+    url('#{$prefix}favorit/ABCFavorit-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ABC Favorit';
+  font-style: italic;
+  font-weight: 500;
+  src: local('ABCFavorit-MediumItalic'), local('ABCFavorit-MediumItalic'),
+    url('#{$prefix}favorit/ABCFavorit-MediumItalic.woff2') format('woff2'),
+    url('#{$prefix}favorit/ABCFavorit-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ABC Favorit';
+  font-style: normal;
+  font-weight: bold;
+  src: local('ABCFavorit-Bold'), local('ABCFavorit-Bold'),
+    url('#{$prefix}favorit/ABCFavorit-Bold.woff2') format('woff2'),
+    url('#{$prefix}favorit/ABCFavorit-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ABC Favorit';
+  font-style: italic;
+  font-weight: bold;
+  src: local('ABCFavorit-BoldItalic'), local('ABCFavorit-BoldItalic'),
+    url('#{$prefix}favorit/ABCFavorit-BoldItalic.woff2') format('woff2'),
+    url('#{$prefix}favorit/ABCFavorit-BoldItalic.woff') format('woff');
+}
 
 .font-favorit { font-feature-settings: "ss01", "ss04" !important;}
 
 
-/**
-  *
-  * Repro Variable Font
-  */
-@font-face {
-  font-family: 'Repro';
-  font-style: normal;
-  font-weight: normal;
-  src: local('ABCRepro-Variable'), local('repro-variable'),
-    url('#{$prefix}var/repro-variable.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Repro Mono';
-  font-style: normal;
-  font-weight: normal;
-  src: local('ABCRepro-Mono-Variable'), local('repro-mono'),
-    url('#{$prefix}var/repro-mono.woff2') format('woff2');
-}
-
-/**
-  *
-  * Walter Variable Font
-  */
-
-@font-face {
-  font-family: 'Walter Neue';
-  font-style: normal;
-  font-weight: normal;
-  src: local('ABCWalterNeue-Variable'), local('walter-neue-variable'),
-    url('#{$prefix}var/walter-neue-variable.woff2') format('woff2');
-}
-
-
-
-
-/**
-  * Aro Archive Font
-  */
-
-@font-face {
-  font-family: 'Aro';
-  src: url('/fonts/aro/BSTAroProp050721V43-Normal.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Aro';
-  src: url('/fonts/aro/BSTAroProportional050721V43-Lite.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-@font-face {
-  font-family: 'Aro Mono';
-  src: url('/fonts/aro/BSTAroMono290621V41-Lite.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 
 /**
  * 
@@ -119,19 +135,6 @@ $prefix: '/fonts/' !default;
     url('/fonts/other/helm/HelmetNeue-Regular.woff2') format('woff2'),
     url('/fonts/other/helm/HelmetNeue-Regular.woff') format('woff'),
     url('/fonts/other/helm/HelmetNeue-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-/**
- * 
- * Sohne
- * @format
- */
-@font-face {
-  font-family: 'Sohne';
-  src: url('/fonts/other/sohne.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

@@ -33,7 +33,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
           <Link
             key={z}
             href={prxjxct.slug}
-            className='font-sohne text-[15px] font-[600] lowercase leading-5 text-carbon-500 transition-all duration-300 hover:text-carbon-700 hover:underline hover:decoration-azure dark:text-carbon-300 dark:hover:text-carbon-300 md:leading-normal'>
+            className='font-favorit text-[15px] font-[600] lowercase leading-5 text-carbon-500 transition-all duration-300 hover:text-carbon-700 hover:underline hover:decoration-azure dark:text-carbon-300 dark:hover:text-carbon-300 md:leading-normal'>
             {prxjxct.title}
           </Link>
 
@@ -45,7 +45,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
             {prxjxct.tags.map((tag, i) => (
               <span
                 key={i}
-                className='mr-[2px] items-center justify-center whitespace-nowrap rounded-full border border-carbon-200 px-2 py-0.5 align-middle font-sohne text-[8px] font-[600] uppercase tracking-wide hover:cursor-not-allowed hover:rounded-md dark:border-carbon-800'>
+                className='mr-[2px] items-center justify-center whitespace-nowrap rounded-full border border-carbon-200 px-2 py-0.5 align-middle font-favorit text-[8px] font-[600] uppercase tracking-wide hover:cursor-not-allowed hover:rounded-md dark:border-carbon-800'>
                 {tag}
               </span>
             ))}
@@ -57,7 +57,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
 
   return (
     <>
-      <div className='font-sohne text-sm'>
+      <div className='font-favorit text-sm'>
         <p className='pb-4 text-[16px] font-[600] leading-6 text-[#00C454]'>
           Projects
         </p>
@@ -74,14 +74,14 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
                   <Link
                     href={arch.url}
                     key={i}
-                    className='text-left font-sohne text-[15px] font-[600] leading-5 text-carbon-500 hover:text-carbon-700 dark:text-carbon-300 dark:hover:text-carbon-300'>
+                    className='text-left font-favorit text-[15px] font-[600] leading-5 text-carbon-500 hover:text-carbon-700 dark:text-carbon-300 dark:hover:text-carbon-300'>
                     {arch.type}
                   </Link>
                   <SmallArrowRight />
                 </div>
 
                 <div className='w-full md:col-span-2'>
-                  <p className='font-sohne text-[15px] font-[400] leading-5 text-carbon-400 transition-all duration-200 dark:text-carbon-500'>
+                  <p className='font-favorit text-[15px] font-[400] leading-5 text-carbon-400 transition-all duration-200 dark:text-carbon-500'>
                     {arch.content}
                   </p>
                 </div>
@@ -96,7 +96,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
       <div className='flex justify-start'>
         <Link
           href='/projects'
-          className='text-left font-sohne text-sm font-[500] text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300'>
+          className='text-left font-favorit text-sm font-[500] text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300'>
           view all projects →
         </Link>
       </div>

@@ -5,7 +5,7 @@ import { cn } from '../lib/utils';
 import { AppHooks } from './hooks';
 import { ThemeProvider } from '../context/theme-provider';
 import { Header, Footer } from '../components/layout';
-import { sohne } from './_scss/fonts';
+import { favorit } from './_scss/fonts';
 
 import type { Metadata } from 'next';
 import TopLoader from '@/components/primitives/loader';
@@ -20,7 +20,7 @@ export default function RootLayout({
       lang='en'
       suppressHydrationWarning>
       <body
-        className={cn(`${sohne.className} font-unica antialiased`)}
+        className={cn(`${favorit.className} font-unica antialiased`)}
         style={{ opacity: 0 }}>
         <ThemeProvider>
           <TopLoader />

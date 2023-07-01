@@ -67,10 +67,10 @@ export default async function ViewPrimitivePage({ params }: PrimitiveXProps) {
           <RouterPrev />
         </Link>
 
-        <h3 className='font-sohne leading-4 tracking-tight text-carbon-800 dark:text-carbon-100'>
+        <h3 className='font-favorit leading-4 tracking-tight text-carbon-800 dark:text-carbon-100'>
           {x.title}
         </h3>
-        <p className='font-sohne text-sm leading-5 text-carbon-600 dark:text-carbon-300'>
+        <p className='font-favorit text-sm leading-5 text-carbon-600 dark:text-carbon-300'>
           {x.excerpt}
         </p>
       </article>

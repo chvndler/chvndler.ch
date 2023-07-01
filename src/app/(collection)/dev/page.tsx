@@ -16,12 +16,37 @@ export default function DevIndex() {
       <AppController>
         <TestSection>
           <span className='mx-auto w-fit whitespace-nowrap rounded-full bg-graphicGreen px-2.5 py-0.5'>
-            <p className='text-center font-walter text-[14px] font-semibold text-carbon-900'>
+            <p className='font-walter text-center text-[14px] font-semibold text-carbon-900'>
               Developer Test Suite
             </p>
           </span>
 
-          <section></section>
+          <section className='font-favorit'>
+            <p className='text-[20px] font-[350] leading-[4rem] text-carbon-600'>
+              Favorit Book
+            </p>
+            <p className='text-[20px] font-[400] leading-[4rem] text-carbon-600'>
+              Favorit Regular
+            </p>
+            <p className='text-[20px] font-[500] leading-[4rem] text-carbon-600'>
+              Favorit Medium
+            </p>
+            <p className='text-[20px] font-[600] leading-[4rem] text-carbon-600'>
+              Favorit Bold
+            </p>
+            <p className='text-[20px] font-[350] italic leading-[4rem] text-carbon-600'>
+              Favorit Book Italic
+            </p>
+            <p className='text-[20px] font-[400] italic leading-[4rem] text-carbon-600'>
+              Favorit Regular Italic
+            </p>
+            <p className='text-[20px] font-[500] italic leading-[4rem] text-carbon-600'>
+              Favorit Medium Italic
+            </p>
+            <p className='text-[20px] font-[600] italic leading-[4rem] text-carbon-600'>
+              Favorit Bold Italic
+            </p>
+          </section>
 
           <div className='font-favorit font-[400]'>
             <p className='text-[18px] font-[600] leading-[4rem] text-jade'>
@@ -88,7 +113,7 @@ export default function DevIndex() {
             world bathed in twilight's tender glow.
           </div>
 
-          <div className='font-helmet text-sm font-[700] uppercase'>
+          <div className='font-favorit text-sm font-bold uppercase'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
           <Introduction />

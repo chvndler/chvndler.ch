@@ -26,9 +26,7 @@ package-lock.json
 now.json
 
 # - sass. minified.
-_scss/*.prod.scss
-*.prod.scss
-./src/app/*.prod.scss
+
 
 # - contentlayer.
 .contentlayer
