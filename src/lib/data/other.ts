@@ -9,15 +9,15 @@ export interface OtherPage {
 const arch001: OtherPage = {
   url: '/archive',
   target: '_self',
-  type: 'primitives',
-  title: 'lab',
+  type: 'Primitives',
+  title: 'primitives',
   content: 'implementing interfaces and interactions',
 };
 
 const arch002: OtherPage = {
   url: '/media',
   target: '_self',
-  type: 'motion',
+  type: 'Motion',
   title: 'media',
   content: 'some of my films',
 };
@@ -25,7 +25,7 @@ const arch002: OtherPage = {
 const arch003: OtherPage = {
   url: '/projects',
   target: '_self',
-  type: 'internet projects',
+  type: 'Internet Projects',
   title: 'internet projects',
   content: 'complete list of all active web projects',
 };

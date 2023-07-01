@@ -22,8 +22,8 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
       className='grid gap-6'>
       <div
         key={z}
-        className='grid grid-cols-1 items-start justify-start text-carbon-400 md:grid-cols-3'>
-        <p className='font-mono text-xs font-[600] leading-6 text-carbon-600 dark:text-carbon-600'>
+        className='grid items-start justify-start grid-cols-1 text-carbon-400 md:grid-cols-3'>
+        <p className='font-mono text-xs font-[600] leading-4 text-carbon-600 dark:text-carbon-600'>
           <ProjectDateFormat postDate={prxjxct} />
         </p>
 
@@ -33,11 +33,11 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
           <Link
             key={z}
             href={prxjxct.slug}
-            className='font-favorit text-[15px] font-[600] lowercase leading-5 text-carbon-500 transition-all duration-300 hover:text-carbon-700 hover:underline hover:decoration-azure dark:text-carbon-300 dark:hover:text-carbon-300 md:leading-normal'>
+            className='font-favorit text-[14px] font-[600] uppercase leading-5 text-carbon-500 transition-all duration-300 hover:text-carbon-700 hover:underline hover:decoration-azure dark:text-carbon-300 dark:hover:text-carbon-300 md:leading-normal'>
             {prxjxct.title}
           </Link>
 
-          <p className='text-[14px] font-[400] leading-5 text-carbon-400 dark:text-carbon-500'>
+          <p className='text-[14px] font-[400] lowercase leading-5 text-carbon-400 dark:text-carbon-500'>
             {prxjxct.excerpt}
           </p>
 
@@ -57,31 +57,31 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
 
   return (
     <>
-      <div className='font-favorit text-sm'>
-        <p className='pb-4 text-[16px] font-[600] leading-6 text-[#00C454]'>
+      <div className='text-sm font-favorit'>
+        <p className='pb-4 text-[14px] font-[600] uppercase leading-6 text-jade'>
           Projects
         </p>
 
-        <div className='mb-3 mt-3 grid gap-2 gap-y-3 border-b border-carbon-100 pb-6 dark:border-carbon-800'>
+        <div className='grid gap-2 pb-8 mt-3 border-b gap-y-3 border-carbon-100 dark:border-carbon-800'>
           {pages.map((arch, i) => (
             <>
               <div
                 key={i}
-                className='grid grid-cols-1 items-start gap-y-0 md:grid-cols-3'>
+                className='grid items-start grid-cols-1 gap-y-0 md:grid-cols-3'>
                 <div
                   key={i}
-                  className='mx-auto flex w-full flex-row items-center justify-start gap-x-1 leading-5'>
+                  className='flex flex-row items-center justify-start w-full mx-auto leading-5 gap-x-1'>
                   <Link
                     href={arch.url}
                     key={i}
-                    className='text-left font-favorit text-[15px] font-[600] leading-5 text-carbon-500 hover:text-carbon-700 dark:text-carbon-300 dark:hover:text-carbon-300'>
+                    className='text-left font-favorit text-[12px] font-[600] uppercase leading-5 text-carbon-500 hover:text-carbon-700 dark:text-carbon-300 dark:hover:text-carbon-300'>
                     {arch.type}
                   </Link>
                   <SmallArrowRight />
                 </div>
 
                 <div className='w-full md:col-span-2'>
-                  <p className='font-favorit text-[15px] font-[400] leading-5 text-carbon-400 transition-all duration-200 dark:text-carbon-500'>
+                  <p className='font-favorit text-[14px] font-[400] lowercase leading-5 text-carbon-400 transition-all duration-200 dark:text-carbon-500'>
                     {arch.content}
                   </p>
                 </div>
@@ -90,7 +90,9 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
           ))}
         </div>
 
-        <div className='mt-3 grid gap-6 pt-2'>{list}</div>
+        {/* <!-- RENDERED PROJECT LIST --> */}
+        <div className='grid gap-6 pt-8'>{list}</div>
+        {/* <!-- END RENDERED PROJECT LIST --> */}
       </div>
 
       <div className='flex justify-start'>
