@@ -160,6 +160,9 @@ module.exports = {
         //..
         '--tw-prose-pre-code': theme('colors.hypergrape[700]'),
       }),
+      animation: {
+        zippulse: 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
       backgroundColor: {
         'global-nav': 'var(--globalnav-bg)',
         'surface-action': 'var(--surface-action)',

@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { cn } from '@/lib/utils';
 
 const SmallSkeleton = ({ children }: { children: React.ReactNode }) => {
   const [loading, setLoading] = useState(true);
@@ -12,14 +13,27 @@ const SmallSkeleton = ({ children }: { children: React.ReactNode }) => {
     }, 2000);
   }, []);
 
-  return <div>{loading ? <SkeletonComponent /> : <>{children}</>}</div>;
+  return (
+    <div className='flex flex-row items-center justify-start w-full mx-auto text-left gap-x-2'>
+      {loading ? (
+        <>
+          <Spinner />
+          <SkeletonBar className='relative h-[8px] w-[140px] rounded-[12px]' />
+        </>
+      ) : (
+        <>{children}</>
+      )}
+    </div>
+  );
 };
 
-function SkeletonComponent() {
+function Spinner() {
   return (
-    <div className='skeleton items-center justify-start'>
-      <div className='h-auto w-auto rounded-lg bg-transparent'>
-        <div role='status'>
+    <div className='items-center justify-start'>
+      <div className='w-auto h-auto bg-transparent rounded-lg'>
+        <div
+          role='status'
+          className='skeleton'>
           <svg
             aria-hidden='true'
             className='h-[16px] w-[16px] animate-spin fill-B500 text-carbon-200 dark:fill-B600 dark:text-carbon-600'
@@ -44,4 +58,21 @@ function SkeletonComponent() {
   );
 }
 
+function SkeletonBar({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      className={cn(
+        'h-auto w-auto animate-zippulse items-center bg-jaded',
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
 export default SmallSkeleton;
+
+
