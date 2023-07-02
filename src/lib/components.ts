@@ -10,7 +10,7 @@ import {
   SelectContext,
   TimeContext,
   AriePositionContext,
-} from '@/components/shared/archive';
+} from '@/components/core/interact/archive';
 
 interface ComponentBase {
   type: string;
@@ -28,8 +28,8 @@ export const allComponents: ComponentBase[] = [
     slugAsParams: 'menubar',
     title: 'Menu bar',
     excerpt: 'Provides a set of navigation options for the user.',
-    slug: '/archive/menubar',
-    url: '/archive/menubar',
+    slug: '/interact/menubar',
+    url: '/interact/menubar',
     component: MenuContext,
   },
   {
@@ -38,8 +38,8 @@ export const allComponents: ComponentBase[] = [
     title: 'Spotify now',
     excerpt:
       'Display the currently streaming track of a Spotify account(s) or user(s).',
-    slug: '/archive/spotify',
-    url: '/archive/spotify',
+    slug: '/interact/spotify',
+    url: '/interact/spotify',
     component: SpotifyContext,
   },
   {
@@ -47,8 +47,8 @@ export const allComponents: ComponentBase[] = [
     slugAsParams: 'git-colour',
     title: 'Git colour',
     excerpt: 'Transform your commit SHA (GitHub) into a #HEX value.',
-    slug: '/archive/git-colour',
-    url: '/archive/git-colour',
+    slug: '/interact/git-colour',
+    url: '/interact/git-colour',
     component: GitColourContext,
   },
   {
@@ -57,8 +57,8 @@ export const allComponents: ComponentBase[] = [
     title: 'Select kit',
     excerpt:
       'UI Element that allows users to choose one or more options from a dropdown list.',
-    slug: '/archive/kit-select',
-    url: '/archive/kit-select',
+    slug: '/interact/kit-select',
+    url: '/interact/kit-select',
     component: SelectContext,
   },
   {
@@ -66,8 +66,8 @@ export const allComponents: ComponentBase[] = [
     slugAsParams: 'time',
     title: 'Modul.ar time',
     excerpt: 'UI Element that displays the current time.',
-    slug: '/archive/time',
-    url: '/archive/time',
+    slug: '/interact/time',
+    url: '/interact/time',
     component: TimeContext,
   },
   {
@@ -76,8 +76,8 @@ export const allComponents: ComponentBase[] = [
     title: 'Arie position',
     excerpt:
       'Small component that returns a string of information based on users cursor position.',
-    slug: '/archive/postion',
-    url: '/archive/position',
+    slug: '/interact/postion',
+    url: '/interact/position',
     component: AriePositionContext,
   },
 ];
