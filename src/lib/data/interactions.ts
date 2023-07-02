@@ -19,7 +19,7 @@ const arch002: InteractionsGalleryProps = {
   target: '_self',
   type: 'Motion',
   title: 'media',
-  content: 'visual desing and communication',
+  content: 'visual design and communication',
 };
 
 const arch003: InteractionsGalleryProps = {
