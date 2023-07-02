@@ -26,7 +26,7 @@ export const allComponents: ComponentBase[] = [
   {
     type: 'Archive',
     slugAsParams: 'menubar',
-    title: 'Menu Bar',
+    title: 'Menu bar',
     excerpt: 'Provides a set of navigation options for the user.',
     slug: '/archive/menubar',
     url: '/archive/menubar',
@@ -35,7 +35,7 @@ export const allComponents: ComponentBase[] = [
   {
     type: 'Archive',
     slugAsParams: 'spotify',
-    title: 'Spotify Now',
+    title: 'Spotify now',
     excerpt:
       'Display the currently streaming track of a Spotify account(s) or user(s).',
     slug: '/archive/spotify',
@@ -45,7 +45,7 @@ export const allComponents: ComponentBase[] = [
   {
     type: 'Archive',
     slugAsParams: 'git-colour',
-    title: 'Git Colour',
+    title: 'Git colour',
     excerpt: 'Transform your commit SHA (GitHub) into a #HEX value.',
     slug: '/archive/git-colour',
     url: '/archive/git-colour',
@@ -54,7 +54,7 @@ export const allComponents: ComponentBase[] = [
   {
     type: 'Archive',
     slugAsParams: 'kit-select',
-    title: 'Select Kit',
+    title: 'Select kit',
     excerpt:
       'UI Element that allows users to choose one or more options from a dropdown list.',
     slug: '/archive/kit-select',
@@ -64,7 +64,7 @@ export const allComponents: ComponentBase[] = [
   {
     type: 'Archive',
     slugAsParams: 'time',
-    title: 'Current Time',
+    title: 'Modul.ar time',
     excerpt: 'UI Element that displays the current time.',
     slug: '/archive/time',
     url: '/archive/time',
@@ -73,7 +73,7 @@ export const allComponents: ComponentBase[] = [
   {
     type: 'Archive',
     slugAsParams: 'position',
-    title: 'Arie Position',
+    title: 'Arie position',
     excerpt:
       'Small component that returns a string of information based on users cursor position.',
     slug: '/archive/postion',

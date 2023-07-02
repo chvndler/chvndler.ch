@@ -2,8 +2,6 @@ import { AppController } from '@/components/layout';
 
 import type { Metadata } from 'next/types';
 import { Introduction, TestSection } from '@/components/core';
-import { CommandMenu } from '@/components/core/cmdk';
-
 export const metadata: Metadata = {
   title: 'dev.chandler.',
   description: 'Projects I have worked on, and am currently working on.',
@@ -12,7 +10,6 @@ export const metadata: Metadata = {
 export default function DevIndex() {
   return (
     <>
-      <CommandMenu />
       <AppController>
         <TestSection>
           <span className='mx-auto w-fit whitespace-nowrap rounded-full bg-graphicGreen px-2.5 py-0.5'>

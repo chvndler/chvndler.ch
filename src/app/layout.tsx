@@ -9,7 +9,7 @@ import { favorit } from './_scss/fonts';
 
 import type { Metadata } from 'next';
 import TopLoader from '@/components/primitives/loader';
-import { CommandMenu } from '@/components/core/cmdk';
+import { CommandMenu } from '@/components/shared/cmdk';
 
 export default function RootLayout({
   children,

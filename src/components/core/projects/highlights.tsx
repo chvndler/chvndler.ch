@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { compareDesc } from 'date-fns';
 import type { Projects } from '.contentlayer/generated/types';
 import { formatDateTime } from '@/lib/hooks/use-date-time';
-import { pages } from '@/lib/data/other';
+import { interactions } from '@/lib/data/interactions';
 import { SmallArrowRight } from '@/components/shared/svg/arrows';
 
 type ListProps = {
@@ -22,7 +22,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
       className='grid gap-6'>
       <div
         key={z}
-        className='grid items-start justify-start grid-cols-1 text-carbon-400 md:grid-cols-3'>
+        className='grid grid-cols-1 items-start justify-start text-carbon-400 md:grid-cols-3'>
         <p className='font-mono text-xs font-[600] leading-4 text-carbon-600 dark:text-carbon-600'>
           <ProjectDateFormat postDate={prxjxct} />
         </p>
@@ -57,20 +57,20 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
 
   return (
     <>
-      <div className='text-sm font-favorit'>
+      <div className='font-favorit text-sm'>
         <p className='pb-4 text-[14px] font-[600] uppercase leading-6 text-jade'>
           Projects
         </p>
 
-        <div className='grid gap-2 pb-8 mt-3 border-b gap-y-3 border-carbon-100 dark:border-carbon-800'>
-          {pages.map((arch, i) => (
+        <div className='mt-3 grid gap-2 gap-y-3 border-b border-carbon-100 pb-8 dark:border-carbon-800'>
+          {interactions.map((arch, i) => (
             <>
               <div
                 key={i}
-                className='grid items-start grid-cols-1 gap-y-0 md:grid-cols-3'>
+                className='grid grid-cols-1 items-start gap-y-0 md:grid-cols-3'>
                 <div
                   key={i}
-                  className='flex flex-row items-center justify-start w-full mx-auto leading-5 gap-x-1'>
+                  className='mx-auto flex w-full flex-row items-center justify-start gap-x-1 leading-5'>
                   <Link
                     href={arch.url}
                     key={i}
