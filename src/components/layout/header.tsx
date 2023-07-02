@@ -3,6 +3,7 @@ import Logo from '../shared/logo';
 import ThemeSwitch from '../shared/theme.toggle';
 
 import { cn } from '@/lib/utils';
+import clsx from 'clsx';
 
 // server
 
@@ -31,7 +32,7 @@ export const Header = () => (
             <div className='block'>
               <div className='flex flex-row items-center justify-center gap-2'>
                 <ThemeSwitch />
-                <p className='text-right font-favorit text-[11px] font-[500] uppercase leading-[20px] text-carbon-800 dark:text-carbon-200'>
+                <p className='pt-0.5 text-right font-favorit text-[10px] font-[500] uppercase leading-[20px] text-carbon-800 dark:text-carbon-200'>
                   use ⌘ K to navigate
                 </p>
               </div>
@@ -50,7 +51,10 @@ function NavLinks() {
         <Link
           key={it}
           href={item.href}
-          className='duration-400 ml-2 font-mono text-[13px] font-normal lowercase leading-[20px] tracking-tight text-carbon-800 transition-colors ease-in-out hover:text-carbon-600 dark:text-carbon-200 dark:hover:text-carbon-600'
+          className={clsx(
+            'duration-400 ml-2 font-mono text-[13px] font-normal lowercase leading-[20px] tracking-tight',
+            'text-carbon-800 transition-colors ease-in-out hover:text-carbon-600 dark:text-carbon-200 dark:hover:text-carbon-600',
+          )}
           aria-current='page'>
           {item.name}
         </Link>

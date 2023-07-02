@@ -24,8 +24,8 @@ export default function ThemeSwitch() {
     <>
       <div className='flex flex-row items-center justify-center gap-1'>
         {isHovering && (
-          <span className='text-gray-400 my-auto mr-1 hidden items-center font-sohne text-[9px] font-semibold uppercase transition-all duration-150 ease-linear md:inline'>
-            {theme === null ? 'Theme' : theme === 'dark' ? 'Dark' : 'Light'}
+          <span className='my-auto mr-1 hidden items-center pt-0.5 font-favorit text-[10px] font-semibold uppercase text-carbon-400 transition-all duration-150 ease-linear md:inline'>
+            {theme === null ? 'Theme' : theme === 'dark' ? 'DARK' : 'LITE'}
           </span>
         )}
 
@@ -41,16 +41,8 @@ export default function ThemeSwitch() {
           }}>
           <span className='sr-only'>Theme mode</span>
 
-          <span>
-            {theme !== 'dark' ? (
-              <>
-                <MoonOutlined />
-              </>
-            ) : (
-              <>
-                <SunFilled />
-              </>
-            )}
+          <span className=''>
+            {theme !== 'dark' ? <MoonOutlined /> : <SunFilled />}
           </span>
         </button>
       </div>
