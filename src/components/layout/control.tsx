@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import useWindowSize from '../../lib/hooks/use-window-size';
+import useWindowSize from '@/lib/hooks/use-window-size';
 
 export const AppController = ({ children }: { children: React.ReactNode }) => {
   const windowSize = useWindowSize();

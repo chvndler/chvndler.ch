@@ -23,7 +23,6 @@ module.exports = {
       B600: 'rgba(224, 255, 158, 1)',
       B900: '#1d1d1d',
 
-
       charcoal: '#343433',
       carbon: '#484645',
       jade: '#00C454',
@@ -32,6 +31,8 @@ module.exports = {
       sun: '#FF3F00',
       paleSky: '#6A7280',
       graphicGreen: 'var(--graphic-green)',
+
+      twitter: '#1DA1F2',
 
       carbon: {
         50: 'rgba(246, 248, 250, 1)',

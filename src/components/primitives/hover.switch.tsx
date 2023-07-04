@@ -32,14 +32,14 @@ export const TextSwitcher = ({
       {isHovered ? (
         <HoverableTextElement
           className={clsx(
-            'font-favorit text-[14px] font-[600] uppercase text-sun dark:text-sun',
+            'font-favorit text-[15px] font-[600] uppercase text-sun dark:text-sun',
           )}
           text={hoverText}
         />
       ) : (
         <HoverableTextElement
           className={clsx(
-            'font-favorit text-[14px] font-[600] uppercase text-carbon-800 dark:text-carbon-50',
+            'font-favorit text-[15px] font-[600] uppercase text-carbon-800 dark:text-carbon-50',
           )}
           text={defaultText}
         />

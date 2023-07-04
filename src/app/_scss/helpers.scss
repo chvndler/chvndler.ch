@@ -66,7 +66,11 @@ mux-player {
   display: none !important;
 }
 
-:is(media-time-display, media-text-display, media-playback-rate-button[role='button']) {
+:is(
+    media-time-display,
+    media-text-display,
+    media-playback-rate-button[role='button']
+  ) {
   color: inherit;
   font-weight: 600 !important;
   line-height: 24px;
@@ -101,4 +105,3 @@ code::after {
   height: 5px;
   background: transparent;
 }
-

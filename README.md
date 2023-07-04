@@ -2,6 +2,16 @@
 
 ## **personal site**.
 
+<div align="center">
+    <a href="https://www.dylanmeivis.com"><img src="https://cdn.chvndler.ch/assets/other/chan.memoji.gif" alt="Chandler Chappell" width="200"></a>
+    <br>
+    <h3><strong><a href="https://twitter.com/chvndlerch">@chvndlerch</a></strong></h3>
+    <sub>enjoying the internet
+    </sub>
+</div>
+
+<hr />
+
 ### stack
 
 → **CSS:** [Tailwindcss](https://tailwindcss.com/)
@@ -67,7 +77,6 @@ Route (pages)                              Size     First Load JS
   ├ chunks/pages/_app-b555d5e1eab47959.js  195 B
   └ chunks/webpack-d5f1339de20a6c94.js     1.68 kB
 ```
-
 
 ### More Reference
 

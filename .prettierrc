@@ -14,6 +14,5 @@
   "trailingComma": "all",
   "embeddedLanguageFormatting": "auto",
   "htmlWhitespaceSensitivity": "css",
-  "rangeStart": 5,
   "plugins": ["prettier-plugin-tailwindcss"]
 }
