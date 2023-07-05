@@ -1,5 +1,5 @@
 $prefix: '/fonts/' !default;
-  /**
+/**
   *
   * Favorit Font
   */
@@ -94,7 +94,9 @@ $prefix: '/fonts/' !default;
     url('#{$prefix}favorit/ABCFavorit-BoldItalic.woff') format('woff');
 }
 
-.font-favorit { font-feature-settings: "ss01", "ss04" !important;}
+.font-favorit {
+  font-feature-settings: 'ss01', 'ss04' !important;
+}
 
 /**
 
@@ -176,7 +178,7 @@ $prefix: '/fonts/' !default;
   font-display: block;
   font-style: normal;
   font-named-instance: 'Regular';
-  src: url('/fonts/inter/Inter-roman.var.woff2?v=3.15') format('woff2');
+  src: url('#{$prefix}inter/Inter-roman.var.woff2?v=3.15') format('woff2');
 }
 
 @font-face {
@@ -185,23 +187,5 @@ $prefix: '/fonts/' !default;
   font-display: block;
   font-style: italic;
   font-named-instance: 'Italic';
-  src: url('/fonts/inter/Inter-italic.var.woff2?v=3.15') format('woff2');
-}
-
-/**
- * 
- * Helmet Neue
- * @format
- */
-@font-face {
-  font-family: 'Helmet Neue';
-  src: url('/fonts/other/helm/HelmetNeue-Regular.eot');
-  src: local('Helmet Neue Regular'), local('HelmetNeue-Regular'),
-    url('/fonts/other/helm/HelmetNeue-Regular.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/other/helm/HelmetNeue-Regular.woff2') format('woff2'),
-    url('/fonts/other/helm/HelmetNeue-Regular.woff') format('woff'),
-    url('/fonts/other/helm/HelmetNeue-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  src: url('#{$prefix}inter/Inter-italic.var.woff2?v=3.15') format('woff2');
 }
