@@ -25,8 +25,12 @@ const computedFields: ComputedFields = {
   },
 };
 
-// make source
-
+/**
+ *
+ * define types
+ *
+ * [Projects]
+ */
 export const Projects = defineDocumentType(() => ({
   name: 'Projects',
   filePathPattern: `projects/**/*.mdx`,
@@ -102,24 +106,36 @@ export const Projects = defineDocumentType(() => ({
   computedFields,
 }));
 
-/*
-const rehypePrettyCodeOptions = {
-  theme: {
-    light: 'github-light',
-    dark: 'github-dark',
+/**
+ *
+ * define types
+ *
+ * [Articles]
+ */
+export const Articles = defineDocumentType(() => ({
+  name: 'Articles',
+  filePathPattern: `misc/**/*.mdx`,
+  contentType: 'mdx',
+  fields: {
+    title: { type: 'string', required: true },
+    description: { type: 'string' },
+    date: { type: 'date', required: true },
+    image: {
+      type: 'string',
+      required: false,
+      description: 'The main image for the post',
+    },
   },
-  tokensMap: {
-    fn: 'entity.name.function',
-    objKey: 'meta.object-literal.key',
-  },
+  computedFields,
+}));
 
-  //
-}
-*/
-
+/**
+ *
+ * make source
+ */
 export default makeSource({
   contentDirPath: './collection',
-  documentTypes: [Projects],
+  documentTypes: [Projects, Articles],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
