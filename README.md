@@ -52,57 +52,38 @@ yarn dev
 
 ### Project Structure
 
-```plain-text
+```
 Route (app)                                Size     First Load JS
-┌ ○ /                                      227 B           156 kB
+┌ ○ /                                      4.46 kB         109 kB
 ├ ○ /_not-found                            0 B                0 B
-├ ○ /archive                               137 B          80.2 kB
-├ ○ /media                                 178 B          85.9 kB
-├ ○ /projects                              178 B          85.9 kB
-└ ● /projects/[...slug]                    1.97 kB         145 kB
+├ ○ /dev                                   3.71 kB         108 kB
+├ ○ /interact                              237 B           135 kB
+├ ● /interact/[...slug]                    1.08 kB         136 kB
+├   ├ /interact/menubar
+├   ├ /interact/spotify
+├   ├ /interact/git-colour
+├   └ [+3 more paths]
+├ ○ /media                                 1.29 kB        89.3 kB
+├ ○ /projects                              4.24 kB         101 kB
+└ ● /projects/[...slug]                    4.34 kB         109 kB
+    ├ /projects/are.na
     ├ /projects/arie
     ├ /projects/arweave
-    ├ /projects/atelierkit
-    └ /projects/components
-+ First Load JS shared by all              80 kB
-  ├ chunks/2443530c-d2aec7c3191112f3.js    50.5 kB
-  ├ chunks/488-373b808392478b82.js         27.6 kB
-  ├ chunks/main-app-075e98ceba500e37.js    216 B
-  └ chunks/webpack-d5f1339de20a6c94.js     1.68 kB
+    └ [+3 more paths]
++ First Load JS shared by all              77.7 kB
+  ├ chunks/769-459c8437ffe56edf.js         25.1 kB
+  ├ chunks/bce60fc1-ae1cef3915316b9c.js    50.5 kB
+  ├ chunks/main-app-dde81206f717071b.js    216 B
+  └ chunks/webpack-baa0616e1c56ab7f.js     1.76 kB
+
 Route (pages)                              Size     First Load JS
-─ ○ /404                                   181 B            75 kB
-+ First Load JS shared by all              74.8 kB
-  ├ chunks/framework-8883d1e9be70c3da.js   45.1 kB
-  ├ chunks/main-6d0c3239fc6bbc8b.js        27.9 kB
-  ├ chunks/pages/_app-b555d5e1eab47959.js  195 B
-  └ chunks/webpack-d5f1339de20a6c94.js     1.68 kB
-```
-
-### More Reference
-
-```plain-text
-.
-├── app
-│   ├── layout.tsx
-│   └── page.tsx
-├── components
-│   ├── ui
-│   │   ├── alert-dialog.tsx
-│   │   ├── button.tsx
-│   │   ├── dropdown-menu.tsx
-│   │   └── ...
-│   ├── main-nav.tsx
-│   ├── page-header.tsx
-│   └── ...
-├── lib
-│   └── utils.ts
-├── styles
-│   └── globals.css
-├── next.config.js
-├── package.json
-├── postcss.config.js
-├── tailwind.config.js
-└── tsconfig.json
+┌ ○ /404                                   182 B          75.6 kB
+└ λ /api/spotify                           0 B            75.4 kB
++ First Load JS shared by all              75.4 kB
+  ├ chunks/framework-8883d1e9be70c3da.js   45 kB
+  ├ chunks/main-41b639713b40d111.js        28.4 kB
+  ├ chunks/pages/_app-998b8fceeadee23e.js  195 B
+  └ chunks/webpack-baa0616e1c56ab7f.js     1.76 kB
 ```
 
 ### license
