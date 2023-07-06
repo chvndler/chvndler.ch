@@ -6,6 +6,7 @@ import type { Projects } from '.contentlayer/generated/types';
 import { formatDateTime } from '@/lib/hooks/use-date-time';
 import { interactions } from '@/lib/data/interactions';
 import { SmallArrowRight } from '@/components/shared/svg/arrows';
+import { BadgeDefault } from '@/components/shared';
 
 type ListProps = {
   projects: Projects[];
@@ -96,11 +97,13 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
       </div>
 
       <div className='flex justify-start'>
-        <Link
-          href='/projects'
-          className='text-left font-favorit text-sm font-[500] text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300'>
-          view all projects →
-        </Link>
+        <BadgeDefault>
+          <Link
+            href='/projects'
+            className='text-left font-favorit text-sm font-[500] text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300'>
+            view all projects →
+          </Link>
+        </BadgeDefault>
       </div>
     </>
   );
@@ -117,5 +120,3 @@ function ProjectDateFormat({ postDate }: { postDate: Projects }) {
 
   return <>{formattedDate}</>;
 }
-
-

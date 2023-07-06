@@ -2,7 +2,7 @@ import { AppController } from '@/components/layout';
 
 import type { Metadata } from 'next/types';
 import { Introduction, TestSection } from '@/components/core';
-import { Space } from '@/components/shared';
+import { BadgeDefault, Space } from '@/components/shared';
 export const metadata: Metadata = {
   title: 'dev.chandler.',
   description: 'Projects I have worked on, and am currently working on.',
@@ -83,7 +83,7 @@ export default function DevIndex() {
               Favorit
             </p>
 
-            <p className='text-[16px] font-[400] leading-6 text-carbon-600'>
+            <p className='text-[17px] font-[400] leading-6 text-carbon-600'>
               The cozy cabin nestled amidst towering pines, exuding rustic charm
               and tranquility. Sunbeams pierced through ancient branches,
               casting ethereal patterns on weathered floorboards. A crackling
@@ -96,7 +96,7 @@ export default function DevIndex() {
               Söhne
             </p>
 
-            <p className='text-[16px] font-[400] leading-6 text-carbon-600'>
+            <p className='text-[17px] font-[400] leading-6 text-carbon-600'>
               Whispering wind rustled autumn leaves, painting a tapestry of
               fiery hues. Nature's farewell symphony echoed through the serene
               woodland, an ode to the fleeting beauty of the passing season.
@@ -119,6 +119,14 @@ export default function DevIndex() {
           <div className='font-favorit text-sm font-bold uppercase'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
+
+          <BadgeDefault>Default</BadgeDefault>
+
+          <BadgeDefault>
+            <p className='pt-0.5 text-right font-favorit text-[10px] font-[500] uppercase leading-[20px] text-carbon-800 dark:text-carbon-200'>
+              use ⌘ K to navigate
+            </p>
+          </BadgeDefault>
         </TestSection>
       </AppController>
     </>

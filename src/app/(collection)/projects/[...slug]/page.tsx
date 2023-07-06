@@ -67,16 +67,16 @@ export default async function PostPage({ params }: PostProps) {
               <RouterPrev />
             </Link>
 
-            <div className='flex flex-row items-center gap-1 font-mono text-xs uppercase'>
+            <div className='mt-4 flex flex-row items-center gap-1 font-mono uppercase'>
               <FormattedDateString postDate={post} />
               <ProjectTags pro={post} />
             </div>
 
             <div className='my-6'>
-              <h2 className='leading-4 tracking-tight prose-h2 font-favorit text-blackA11 dark:text-whiteA11'>
+              <h2 className='prose-h2 font-favorit leading-4 tracking-tight text-blackA11 dark:text-whiteA11'>
                 {post.title}
               </h2>
-              <p className='max-w-sm leading-6 text-md font-favorit text-carbon-800 dark:text-whiteA8'>
+              <p className='text-md max-w-sm font-favorit leading-6 text-carbon-800 dark:text-whiteA8'>
                 {post.description}
               </p>
               {post.git && (
@@ -97,9 +97,9 @@ function FormattedDateString({ postDate }: { postDate: Projects }) {
   // const relativeDate = formatDateTime(postDate.date);
 
   return (
-    <p className='mr-2 text-xs font-semibold text-left font-favorit text-blackA11 dark:text-whiteA10'>
-      {publishedDate.asString}
-    </p>
+    <span className='not-prose mr-2 text-left font-mono text-[11px] font-semibold text-blackA11 dark:text-whiteA10'>
+      <time>{publishedDate.asString}</time>
+    </span>
   );
 }
 

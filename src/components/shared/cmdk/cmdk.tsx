@@ -15,7 +15,7 @@ const Command = React.forwardRef<
   <CommandPrimitive
     ref={ref}
     className={cn(
-      'bg-popover text-popover-foreground flex h-full w-full flex-col overflow-hidden rounded-md',
+      'flex h-full w-full flex-col overflow-hidden rounded-lg',
       className,
     )}
     {...props}
@@ -29,7 +29,13 @@ const CommandDialog = ({ children, ...props }: CommandDialogProps) => {
   return (
     <Dialog {...props}>
       <DialogContent className='overflow-hidden p-0 shadow-xl'>
-        <Command className='[&_[cmd-item]]:font-sohne [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-[500] [&_[cmdk-group-heading]]:text-carbon-400 [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-1 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5'>
+        <Command
+          className={cn(
+            '[&_[cmd-item]]:font-sohne [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-[500]',
+            '[&_[cmdk-group-heading]]:text-carbon-400 [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-1',
+            '[&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2',
+            '[&_[cmdk-item]]:py-1 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5',
+          )}>
           {children}
         </Command>
       </DialogContent>
@@ -42,13 +48,13 @@ const CommandInput = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof CommandPrimitive.Input>
 >(({ className, ...props }, ref) => (
   <div
-    className='flex items-center border-b border-carbon-200 px-3'
+    className='flex items-center border-b border-carbon-200 px-3 dark:border-carbon-800'
     cmdk-input-wrapper=''>
     <Search className='mr-2 h-4 w-4 shrink-0 opacity-50' />
     <CommandPrimitive.Input
       ref={ref}
       className={cn(
-        'placeholder:text-muted-foreground flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none disabled:cursor-not-allowed disabled:opacity-50',
+        'flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:font-inter placeholder:text-[13px] placeholder:text-carbon-400 disabled:cursor-not-allowed disabled:opacity-50',
         className,
       )}
       {...props}
@@ -91,7 +97,8 @@ const CommandGroup = React.forwardRef<
   <CommandPrimitive.Group
     ref={ref}
     className={cn(
-      'text-foreground overflow-hidden p-1 font-favorit [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-2 [&_[cmdk-group-heading]]:text-[10px] [&_[cmdk-group-heading]]:font-[600] [&_[cmdk-group-heading]]:text-azure',
+      'overflow-hidden p-1 font-inter [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-2',
+      '[&_[cmdk-group-heading]]:text-[10px] [&_[cmdk-group-heading]]:font-[600] [&_[cmdk-group-heading]]:text-azure',
       className,
     )}
     {...props}
@@ -119,7 +126,7 @@ const CommandItem = React.forwardRef<
   <CommandPrimitive.Item
     ref={ref}
     className={cn(
-      'aria-selected:text-white relative flex cursor-default select-none items-center rounded-md px-2 py-1 font-favorit text-[16px] font-[500] lowercase leading-6 text-carbon-600 outline-none aria-selected:bg-iron data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+      'aria-selected:text-white relative flex cursor-default select-none items-center rounded-md px-2 py-1 font-inter text-[14px] font-[500] lowercase leading-6 text-carbon-600 outline-none aria-selected:bg-iron data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
       className,
     )}
     {...props}
@@ -134,10 +141,7 @@ const CommandShortcut = ({
 }: React.HTMLAttributes<HTMLSpanElement>) => {
   return (
     <span
-      className={cn(
-        'text-muted-foreground ml-auto text-xs tracking-widest',
-        className,
-      )}
+      className={cn('ml-auto text-xs tracking-widest', className)}
       {...props}
     />
   );
@@ -155,4 +159,3 @@ export {
   CommandShortcut,
   CommandSeparator,
 };
-
