@@ -12,7 +12,7 @@ interface BlurredImageProps {
 const prefix = 'https://cdn.chvndler.ch/assets/';
 const twitter = 'https://twitter.com/chvndlerch';
 
-const MemojiBlur: React.FC<BlurredImageProps> = ({ src }) => {
+export const MemojiBlur: React.FC<BlurredImageProps> = ({ src }) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const imageRef = useRef<HTMLImageElement>(null);
 
@@ -40,7 +40,7 @@ const MemojiBlur: React.FC<BlurredImageProps> = ({ src }) => {
   }, []);
 
   return (
-    <div className='items-center justify-center hidden w-auto mx-auto memoji md:flex md:flex-col'>
+    <div className='items-center justify-center w-auto mx-auto memoji md:flex md:flex-col'>
       <Image
         ref={imageRef}
         src={isIntersecting ? src : `${prefix}other/chan.memoji.gif`}
@@ -69,5 +69,3 @@ const MemojiBlur: React.FC<BlurredImageProps> = ({ src }) => {
     </div>
   );
 };
-
-export { MemojiBlur };

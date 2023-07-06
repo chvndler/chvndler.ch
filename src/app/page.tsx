@@ -1,5 +1,4 @@
 import React from 'react';
-import { MemojiBlur } from '@/components/shared/memoji';
 /*
  * Copyright (C) 2023 @chvndler
  * All Rights Reserved.
@@ -10,7 +9,7 @@ import { MemojiBlur } from '@/components/shared/memoji';
  *
  * See https://github.com/chvndler/chvndler.ch/license
  */
-
+import { MemojiBlur } from '@/components/shared/memoji';
 import { AppController } from '@/components/layout';
 
 import {
@@ -20,6 +19,8 @@ import {
   Section,
 } from '@/components/core';
 import { allProjects } from '@/contentlayer/generated';
+
+const prefix = 'https://cdn.chvndler.ch/assets/';
 
 export default function Index() {
   return (
@@ -33,7 +34,7 @@ export default function Index() {
 
         <Section>
           <MemojiBlur
-            src='https://cdn.chvndler.ch/assets/other/chan.memoji.gif'
+            src={`${prefix}other/chan.memoji.gif`}
             alt={'memoji'}
           />
         </Section>
