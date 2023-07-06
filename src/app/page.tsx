@@ -1,5 +1,5 @@
 import React from 'react';
-import { Memoji, MemojiBlur } from '@/components/shared/memoji';
+import { MemojiBlur } from '@/components/shared/memoji';
 /*
  * Copyright (C) 2023 @chvndler
  * All Rights Reserved.
@@ -32,8 +32,6 @@ export default function Index() {
         </Section>
 
         <Section>
-          <Memoji />
-
           <MemojiBlur
             src='https://cdn.chvndler.ch/assets/other/chan.memoji.gif'
             alt={'memoji'}

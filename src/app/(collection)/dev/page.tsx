@@ -2,6 +2,7 @@ import { AppController } from '@/components/layout';
 
 import type { Metadata } from 'next/types';
 import { Introduction, TestSection } from '@/components/core';
+import { Space } from '@/components/shared';
 export const metadata: Metadata = {
   title: 'dev.chandler.',
   description: 'Projects I have worked on, and am currently working on.',
@@ -18,6 +19,29 @@ export default function DevIndex() {
             </p>
           </span>
 
+          <section>
+            <p className='font-favorit text-[60px] font-[600] uppercase leading-[4rem] text-carbon-600'>
+              Favorit
+            </p>
+            <p className='font-sohne text-[60px] font-[500] uppercase leading-[4rem] text-carbon-600'>
+              Söhne
+            </p>
+            <p className='font-inter text-[60px] font-[600] uppercase leading-[4rem] text-carbon-600'>
+              Inter
+            </p>
+            <Space />
+            <Space />
+            <p className='font-favorit text-[42px] font-[600] leading-[4rem] text-carbon-600'>
+              Favorit Bold / 42px / 600
+            </p>
+            <p className='font-sohne text-[42px] font-[600] leading-[4rem] text-carbon-600'>
+              Söhne Bold / 42px / 600
+            </p>
+            <p className='font-inter text-[42px] font-[600] leading-[4rem] text-carbon-600'>
+              Inter Bold / 42px / 600
+            </p>
+          </section>
+
           <section className='font-favorit'>
             <p className='text-[20px] font-[350] leading-[4rem] text-carbon-600'>
               Favorit Book
@@ -31,17 +55,26 @@ export default function DevIndex() {
             <p className='text-[20px] font-[600] leading-[4rem] text-carbon-600'>
               Favorit Bold
             </p>
+
             <p className='text-[20px] font-[350] italic leading-[4rem] text-carbon-600'>
               Favorit Book Italic
             </p>
-            <p className='text-[20px] font-[400] italic leading-[4rem] text-carbon-600'>
-              Favorit Regular Italic
+          </section>
+
+          <Space />
+          <Space />
+          <section className='font-sohne'>
+            <p className='text-[20px] font-[350] leading-[4rem] text-carbon-600'>
+              Sohne Regular
             </p>
-            <p className='text-[20px] font-[500] italic leading-[4rem] text-carbon-600'>
-              Favorit Medium Italic
+            <p className='text-[20px] font-[400] leading-[4rem] text-carbon-600'>
+              Sohne Regular
             </p>
-            <p className='text-[20px] font-[600] italic leading-[4rem] text-carbon-600'>
-              Favorit Bold Italic
+            <p className='text-[20px] font-[500] leading-[4rem] text-carbon-600'>
+              Sohne Medium
+            </p>
+            <p className='text-[20px] font-[600] leading-[4rem] text-carbon-600'>
+              Sohne Bold
             </p>
           </section>
 
@@ -49,75 +82,43 @@ export default function DevIndex() {
             <p className='text-[18px] font-[600] leading-[4rem] text-jade'>
               Favorit
             </p>
-            The cozy cabin nestled amidst towering pines, exuding rustic charm
-            and tranquility. Sunbeams pierced through ancient branches, casting
-            ethereal patterns on weathered floorboards. A crackling hearth
-            danced with warmth, inviting laughter and storytelling.
+
+            <p className='text-[16px] font-[400] leading-6 text-carbon-600'>
+              The cozy cabin nestled amidst towering pines, exuding rustic charm
+              and tranquility. Sunbeams pierced through ancient branches,
+              casting ethereal patterns on weathered floorboards. A crackling
+              hearth danced with warmth, inviting laughter and storytelling.
+            </p>
           </div>
+
           <div className='font-sohne font-[400]'>
             <p className='text-[18px] font-[500] leading-[4rem] text-sun'>
               Söhne
             </p>
-            Whispering wind rustled autumn leaves, painting a tapestry of fiery
-            hues. Nature's farewell symphony echoed through the serene woodland,
-            an ode to the fleeting beauty of the passing season.
-          </div>
-          <div className='font-sohne font-[500]'>
-            Whispering wind rustled autumn leaves, painting a tapestry of fiery
-            hues. Nature's farewell symphony echoed through the serene woodland,
-            an ode to the fleeting beauty of the passing season.
-          </div>
-          <div className='font-sohne font-[600]'>
-            Whispering wind rustled autumn leaves, painting a tapestry of fiery
-            hues. Nature's farewell symphony echoed through the serene woodland,
-            an ode to the fleeting beauty of the passing season.
-          </div>
-          <div className='font-sohne font-[700]'>
-            Whispering wind rustled autumn leaves, painting a tapestry of fiery
-            hues. Nature's farewell symphony echoed through the serene woodland,
-            an ode to the fleeting beauty of the passing season.
+
+            <p className='text-[16px] font-[400] leading-6 text-carbon-600'>
+              Whispering wind rustled autumn leaves, painting a tapestry of
+              fiery hues. Nature's farewell symphony echoed through the serene
+              woodland, an ode to the fleeting beauty of the passing season.
+            </p>
           </div>
 
           <div className='font-inter font-[400]'>
-            <p className='app-yellow text-[18px] font-[600] leading-[4rem]'>
+            <p className='app-blue text-[18px] font-[600] leading-[4rem]'>
               Inter
             </p>
-            Sunset's embrace kissed the horizon, melting hues of gold and
-            crimson into a breathtaking canvas. The ocean whispered its secrets,
-            serenading wanderers captivated by its tranquil allure. In this
-            fleeting moment, time stood still, wrapped in the serene beauty of a
-            world bathed in twilight's tender glow.
-          </div>
-          <div className='font-inter font-[500]'>
-            Sunset's embrace kissed the horizon, melting hues of gold and
-            crimson into a breathtaking canvas. The ocean whispered its secrets,
-            serenading wanderers captivated by its tranquil allure. In this
-            fleeting moment, time stood still, wrapped in the serene beauty of a
-            world bathed in twilight's tender glow.
-          </div>
-          <div className='font-inter font-[600]'>
-            Sunset's embrace kissed the horizon, melting hues of gold and
-            crimson into a breathtaking canvas. The ocean whispered its secrets,
-            serenading wanderers captivated by its tranquil allure. In this
-            fleeting moment, time stood still, wrapped in the serene beauty of a
-            world bathed in twilight's tender glow.
-          </div>
-          <div className='font-inter font-[700]'>
-            Sunset's embrace kissed the horizon, melting hues of gold and
-            crimson into a breathtaking canvas. The ocean whispered its secrets,
-            serenading wanderers captivated by its tranquil allure. In this
-            fleeting moment, time stood still, wrapped in the serene beauty of a
-            world bathed in twilight's tender glow.
+            <p className='text-[16px] font-[400] leading-6 text-carbon-600'>
+              Sunset's embrace kissed the horizon, melting hues of gold and
+              crimson into a breathtaking canvas. The ocean whispered its
+              secrets, serenading wanderers captivated by its tranquil allure.
+              In this fleeting moment, time stood still, wrapped in the serene
+              beauty of a world bathed in twilight's tender glow.
+            </p>
           </div>
 
           <div className='font-favorit text-sm font-bold uppercase'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
-          <Introduction />
-
-          {/*}
-          <ProjectHighlights projects={...allProjects.slice(0, 4)} />
-  */}
         </TestSection>
       </AppController>
     </>
