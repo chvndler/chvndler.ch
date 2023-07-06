@@ -1,5 +1,5 @@
 const { withContentlayer } = require('next-contentlayer');
-const withMDX = require('@next/mdx')();
+const withMDX = require('@next/mdx');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = process.env.NODE_ENV === 'production';
@@ -9,14 +9,28 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   pageExtensions: ['ts', 'tsx', 'mdx'],
+
   /**
    * eventually transition to this:
    * assetPrefix: isProd ? 'https://cdn.chvndler.ch' : undefined,
    *
    */
   images: {
-    formats: ['image/avif', 'image/webp'],
-    domains: ['*.chvndler.ch', 'pbs.twimg.com', 'cdn.chvndler.ch'],
+    domains: ['cdn.chvndler.ch', 'pbs.twimg.com', 'chvn.me', 'image.mux.com'],
+    formats: ['image/webp'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.chvndler.ch',
+        port: '',
+        pathname: '/assets/**/*',
+      },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '3000',
+      },
+    ],
   },
   experimental: {
     appDir: true,

@@ -14,7 +14,7 @@ export default function DevIndex() {
       <AppController>
         <TestSection>
           <span className='mx-auto w-fit whitespace-nowrap rounded-full bg-graphicGreen px-2.5 py-0.5'>
-            <p className='font-walter text-center text-[14px] font-semibold text-carbon-900'>
+            <p className='text-center font-sohne text-[14px] font-semibold text-carbon-900'>
               Developer Test Suite
             </p>
           </span>
@@ -116,7 +116,7 @@ export default function DevIndex() {
             </p>
           </div>
 
-          <div className='font-favorit text-sm font-bold uppercase'>
+          <div className='text-sm font-bold uppercase font-favorit'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
 

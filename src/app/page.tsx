@@ -9,7 +9,6 @@ import React from 'react';
  *
  * See https://github.com/chvndler/chvndler.ch/license
  */
-import { MemojiBlur } from '@/components/shared/memoji';
 import { AppController } from '@/components/layout';
 
 import {
@@ -20,8 +19,6 @@ import {
 } from '@/components/core';
 import { allProjects } from '@/contentlayer/generated';
 
-const prefix = 'https://cdn.chvndler.ch/assets/';
-
 export default function Index() {
   return (
     <>
@@ -30,13 +27,6 @@ export default function Index() {
           <Introduction />
           <Connect />
           <ProjectHighlights projects={...allProjects.slice(0, 5)} />
-        </Section>
-
-        <Section>
-          <MemojiBlur
-            src={`${prefix}other/chan.memoji.gif`}
-            alt={'memoji'}
-          />
         </Section>
       </AppController>
     </>

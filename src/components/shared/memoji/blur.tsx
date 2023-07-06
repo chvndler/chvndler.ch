@@ -1,6 +1,7 @@
 'use client';
 
-import Image from 'next/image';
+import NextImage from 'next/image';
+// import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 
@@ -9,12 +10,11 @@ interface BlurredImageProps {
   alt: string;
 }
 
-const prefix = 'https://cdn.chvndler.ch/assets/';
-const twitter = 'https://twitter.com/chvndlerch';
-
-export const MemojiBlur: React.FC<BlurredImageProps> = ({ src }) => {
+export const MemojiBlur: React.FC<BlurredImageProps> = ({ src, alt }) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
   const imageRef = useRef<HTMLImageElement>(null);
+
+  const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -41,10 +41,15 @@ export const MemojiBlur: React.FC<BlurredImageProps> = ({ src }) => {
 
   return (
     <div className='items-center justify-center w-auto mx-auto memoji md:flex md:flex-col'>
-      <Image
+      <NextImage
+        onError={() => setHasError(true)}
         ref={imageRef}
-        src={isIntersecting ? src : `${prefix}other/chan.memoji.gif`}
-        alt='Chan Memoji'
+        src={
+          isIntersecting
+            ? src
+            : `https://cdn.chvndler.ch/assets/other/chan.memoji.gif`
+        }
+        alt={alt}
         width={200}
         height={200}
         className='memoji-desktop'
@@ -59,7 +64,7 @@ export const MemojiBlur: React.FC<BlurredImageProps> = ({ src }) => {
       <p className='text-center font-favorit text-[15px] font-[500] tracking-tight text-carbon-600'>
         follow me{' '}
         <Link
-          href={twitter}
+          href='https://twitter.com/chvndlerch'
           className='text-twitter hover:opacity-75'
           rel='norefferer noopener'
           target='_blank'>
