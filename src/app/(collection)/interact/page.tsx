@@ -22,7 +22,7 @@ export default function Interactive() {
 
         <section className='py-10'>
           <div className='grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-x-2 md:gap-y-2'>
-            <ComponentList component={...components} />
+            <ComponentList component={components} />
           </div>
         </section>
       </AppController>

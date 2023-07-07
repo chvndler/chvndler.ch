@@ -1,9 +1,12 @@
 'use client';
 
-import { useRouter } from 'next/router';
+import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 
-function RouterPrev() {
+export default function RouterPrev() {
   const router = useRouter();
+
+  // const pathname = usePathname();
+  // const searchParams = useSearchParams();
 
   return (
     <button
@@ -28,9 +31,7 @@ function BackButton() {
           fill='currentColor'
         />
       </svg>
-      <span className='ml-1 text-md font-sohne'>Previous</span>
+      <span className='text-md ml-1 font-sohne'>Previous</span>
     </div>
   );
 }
-
-export default RouterPrev;

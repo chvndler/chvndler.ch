@@ -18,7 +18,7 @@ interface PostProps {
   };
 }
 
-async function getPostFromParams(params: PostProps['params']) {
+async function getProjects(params: PostProps['params']) {
   const slug = params?.slug?.join('/');
   const post = allProjects.find((post) => post.slugAsParams === slug);
 
@@ -32,7 +32,7 @@ async function getPostFromParams(params: PostProps['params']) {
 export async function generateMetadata({
   params,
 }: PostProps): Promise<Metadata> {
-  const post = await getPostFromParams(params);
+  const post = await getProjects(params);
 
   if (!post) {
     return {};
@@ -51,7 +51,7 @@ export async function generateStaticParams(): Promise<PostProps['params'][]> {
 }
 
 export default async function PostPage({ params }: PostProps) {
-  const post = await getPostFromParams(params);
+  const post = await getProjects(params);
 
   if (!post) {
     notFound();
@@ -68,16 +68,16 @@ export default async function PostPage({ params }: PostProps) {
               <RouterPrev />
             </Link>
 
-            <div className='flex flex-row items-center gap-1 mt-4 font-mono uppercase'>
+            <div className='mt-4 flex flex-row items-center gap-1 font-mono uppercase'>
               <FormattedDateString postDate={post} />
               <ProjectTags pro={post} />
             </div>
 
             <div className='my-6'>
-              <h2 className='leading-4 tracking-tight prose-h2 font-favorit text-blackA11 dark:text-whiteA11'>
+              <h2 className='prose-h2 font-favorit leading-4 tracking-tight text-blackA11 dark:text-whiteA11'>
                 {post.title}
               </h2>
-              <p className='max-w-sm leading-6 text-md font-favorit text-carbon-800 dark:text-whiteA8'>
+              <p className='text-md max-w-sm font-favorit leading-6 text-carbon-800 dark:text-whiteA8'>
                 {post.description}
               </p>
               {post.git && (

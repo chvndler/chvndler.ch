@@ -14,7 +14,7 @@ export const ComponentList = ({ component }: ARProps) => {
       {allComponents.map((compo, comp) => (
         <Link
           key={comp}
-          href={compo.slugAsParams}
+          href={compo.url}
           className='h-full'>
           <div
             key={comp}

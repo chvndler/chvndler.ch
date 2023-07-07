@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { compareDesc } from 'date-fns';
 import type { Projects } from '.contentlayer/generated/types';
 import { formatDateTime } from '@/lib/hooks/use-date-time';
-import { interactions } from '@/lib/data/interactions';
+import { otherPages } from '@/lib/data/pages';
 import { SmallArrowRight } from '@/components/shared/svg/arrows';
 import { BadgeDefault } from '@/components/shared';
 
@@ -64,7 +64,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
         </p>
 
         <div className='mt-3 grid gap-2 gap-y-3 border-b border-carbon-100 pb-8 dark:border-carbon-800'>
-          {interactions.map((arch, i) => (
+          {otherPages.map((page, i) => (
             <>
               <div
                 key={i}
@@ -73,17 +73,17 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
                   key={i}
                   className='mx-auto flex w-full flex-row items-center justify-start gap-x-1 leading-5'>
                   <Link
-                    href={arch.url}
+                    href={page.url}
                     key={i}
                     className='text-left font-favorit text-[12px] font-[600] uppercase leading-5 text-carbon-500 hover:text-carbon-700 dark:text-carbon-300 dark:hover:text-carbon-300'>
-                    {arch.type}
+                    {page.type}
                   </Link>
                   <SmallArrowRight />
                 </div>
 
                 <div className='w-full md:col-span-2'>
                   <p className='font-favorit text-[14px] font-[400] lowercase leading-5 text-carbon-400 transition-all duration-200 dark:text-carbon-500'>
-                    {arch.content}
+                    {page.content}
                   </p>
                 </div>
               </div>

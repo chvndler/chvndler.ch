@@ -1,12 +1,6 @@
-export interface InteractionsGalleryProps {
-  url: string;
-  target?: string;
-  type: string;
-  title: string;
-  content: string;
-}
+import { type OtherPagesProps } from './types';
 
-const arch001: InteractionsGalleryProps = {
+const interact: OtherPagesProps = {
   url: '/interact',
   target: '_self',
   type: 'Interactions',
@@ -14,7 +8,7 @@ const arch001: InteractionsGalleryProps = {
   content: 'implementing interfaces and interactions',
 };
 
-const arch002: InteractionsGalleryProps = {
+const media: OtherPagesProps = {
   url: '/media',
   target: '_self',
   type: 'Motion',
@@ -22,7 +16,7 @@ const arch002: InteractionsGalleryProps = {
   content: 'visual design and communication',
 };
 
-const arch003: InteractionsGalleryProps = {
+const projects: OtherPagesProps = {
   url: '/projects',
   target: '_self',
   type: 'Internet Projects',
@@ -30,10 +24,10 @@ const arch003: InteractionsGalleryProps = {
   content: 'various internet projects, libraries and experiments',
 };
 
-export const interactionTypes: Record<string, InteractionsGalleryProps> = {
-  arch001,
-  arch002,
-  arch003,
+export const pageTypes: Record<string, OtherPagesProps> = {
+  interact,
+  media,
+  projects,
 };
 
-export const interactions = Object.values(interactionTypes);
+export const otherPages = Object.values(pageTypes);

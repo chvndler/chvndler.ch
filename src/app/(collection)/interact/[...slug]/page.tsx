@@ -1,6 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
-import RouterPrev from '@/components/shared/router.back';
+import { RouterPrev } from '@/components/primitives';
 
 import { notFound } from 'next/navigation';
 import { AppController } from '@/components/layout';
@@ -15,7 +14,7 @@ interface PrimitiveXProps {
   };
 }
 
-async function getPostFromParams(params: PrimitiveXProps['params']) {
+async function getInteractions(params: PrimitiveXProps['params']) {
   const slug = params?.slug?.join('/');
   const comp = allComponents.find((comp) => comp.slugAsParams === slug);
   if (!comp) {
@@ -35,7 +34,7 @@ export async function generateStaticParams(): Promise<
 export async function generateMetadata({
   params,
 }: PrimitiveXProps): Promise<Metadata> {
-  const prime = await getPostFromParams(params);
+  const prime = await getInteractions(params);
 
   if (!prime) {
     return {
@@ -51,7 +50,7 @@ export async function generateMetadata({
 }
 
 export default async function ViewPrimitivePage({ params }: PrimitiveXProps) {
-  const x = await getPostFromParams(params);
+  const x = await getInteractions(params);
   if (!x) {
     notFound();
   }
@@ -62,15 +61,13 @@ export default async function ViewPrimitivePage({ params }: PrimitiveXProps) {
     <AppController>
       <article
         key={x.title}
-        className='mb-20 prose text-md prose-neutral'>
-        <Link href=''>
-          <RouterPrev />
-        </Link>
+        className='text-md prose prose-neutral mb-20'>
+        <RouterPrev />
 
-        <h3 className='leading-4 tracking-tight font-favorit text-carbon-800 dark:text-carbon-100'>
+        <h3 className='font-favorit leading-4 tracking-tight text-carbon-800 dark:text-carbon-100'>
           {x.title}
         </h3>
-        <p className='text-sm leading-5 font-favorit text-carbon-600 dark:text-carbon-300'>
+        <p className='font-favorit text-sm leading-5 text-carbon-600 dark:text-carbon-300'>
           {x.excerpt}
         </p>
       </article>
@@ -102,11 +99,10 @@ function PrimitiveWrapper({ children }: { children: React.ReactNode }) {
 function Component({ path, component }: { path: string; component: any }) {
   return (
     <div>
-      {component
-        ? React.createElement(component, {
-            path,
-          })
-        : null}
+      {component &&
+        React.createElement(component, {
+          path,
+        })}
     </div>
   );
 }

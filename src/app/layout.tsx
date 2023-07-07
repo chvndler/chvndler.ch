@@ -8,7 +8,7 @@ import { Header, Footer } from '@/components/layout';
 import { favorit } from './_scss/fonts';
 import { CommandMenu } from '@/components/shared/cmdk';
 import { TopLoader } from '@/components/primitives';
-import type { Metadata } from 'next/';
+import type { Metadata } from 'next';
 
 export default function RootLayout({
   children,

@@ -1,39 +1,34 @@
-export interface Template {
-  url: string;
-  target?: string;
-  type: string;
-  title: string;
-}
+import { type ConnectTemplate } from './types';
 
-const one: Template = {
+const one: ConnectTemplate = {
   url: 'mailto:chan@chvndler.ch',
   target: '_blank',
   type: 'email',
   title: 'chan@chvndler.ch',
 };
 
-const two: Template = {
+const two: ConnectTemplate = {
   url: 'https://twitter.com/chvndlerch',
   target: '_blank',
   type: 'twitter',
   title: '@chvndlerch',
 };
 
-const three: Template = {
+const three: ConnectTemplate = {
   url: 'https://github.com/chvndler',
   target: '_blank',
   type: 'github',
   title: 'gh.com/chvndler',
 };
 
-const four: Template = {
+const four: ConnectTemplate = {
   url: 'https://codesandbox.io/u/chvndler',
   target: '_blank',
   type: 'codesandbox',
   title: 'codesandbox.io',
 };
 
-const five: Template = {
+const five: ConnectTemplate = {
   url: 'https://read.cv/chvndler',
   target: '_blank',
   type: 'read.cv',
