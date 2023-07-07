@@ -20,26 +20,71 @@ export default function DevIndex() {
           </span>
 
           <section>
-            <p className='font-favorit text-[60px] font-[600] uppercase leading-[4rem] text-carbon-600'>
+            <p className='font-favorit text-[40px] font-[600] uppercase leading-[4rem] text-carbon-600'>
               Favorit
             </p>
-            <p className='font-sohne text-[60px] font-[500] uppercase leading-[4rem] text-carbon-600'>
+            <p className='font-sohne text-[40px] font-[500] uppercase leading-[4rem] text-carbon-600'>
               Söhne
             </p>
-            <p className='font-inter text-[60px] font-[600] uppercase leading-[4rem] text-carbon-600'>
+            <p className='font-inter text-[40px] font-[600] uppercase leading-[4rem] text-carbon-600'>
               Inter
             </p>
             <Space />
             <Space />
-            <p className='font-favorit text-[42px] font-[600] leading-[4rem] text-carbon-600'>
-              Favorit Bold / 42px / 600
+            <p className='font-favorit text-[40px] font-[600] leading-[4rem] text-carbon-600'>
+              Favorit Bold / 40px / 600
             </p>
-            <p className='font-sohne text-[42px] font-[600] leading-[4rem] text-carbon-600'>
-              Söhne Bold / 42px / 600
+            <p className='font-sohne text-[40px] font-[600] leading-[4rem] text-carbon-600'>
+              Söhne Bold / 40px / 600
             </p>
-            <p className='font-inter text-[42px] font-[600] leading-[4rem] text-carbon-600'>
-              Inter Bold / 42px / 600
+            <p className='font-inter text-[40px] font-[600] leading-[4rem] text-carbon-600'>
+              Inter Bold / 40px / 600
             </p>
+          </section>
+
+          <section>
+            <div className='font-favorit font-[400]'>
+              <p className='text-[18px] font-[600] leading-[4rem] text-jade'>
+                Favorit
+              </p>
+
+              <p className='text-[17px] font-[400] leading-6 text-carbon-600'>
+                The cozy cabin nestled amidst towering pines, exuding rustic
+                charm and tranquility. Sunbeams pierced through ancient
+                branches, casting ethereal patterns on weathered floorboards. A
+                crackling hearth danced with warmth, inviting laughter and
+                storytelling.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div className='font-sohne font-[400]'>
+              <p className='text-[18px] font-[500] leading-[4rem] text-sun'>
+                Söhne
+              </p>
+
+              <p className='text-[17px] font-[400] leading-6 text-carbon-600'>
+                Whispering wind rustled autumn leaves, painting a tapestry of
+                fiery hues. Nature's farewell symphony echoed through the serene
+                woodland, an ode to the fleeting beauty of the passing season.
+              </p>
+            </div>
+          </section>
+
+          <section>
+            <div className='font-inter font-[400]'>
+              <p className='app-blue text-[18px] font-[600] leading-[4rem]'>
+                Inter
+              </p>
+              <p className='text-[16px] font-[400] leading-6 text-carbon-600'>
+                Sunset's embrace kissed the horizon, melting hues of gold and
+                crimson into a breathtaking canvas. The ocean whispered its
+                secrets, serenading wanderers captivated by its tranquil allure.
+                In this fleeting moment, time stood still, wrapped in the serene
+                beauty of a world bathed in twilight's tender glow.
+              </p>
+            </div>
           </section>
 
           <section className='font-favorit'>
@@ -78,45 +123,30 @@ export default function DevIndex() {
             </p>
           </section>
 
-          <div className='font-favorit font-[400]'>
-            <p className='text-[18px] font-[600] leading-[4rem] text-jade'>
-              Favorit
+          <Space />
+          <Space />
+          <section className='font-inter'>
+            <p className='text-[20px] font-[350] leading-[4rem] text-carbon-600'>
+              Inter Regular
             </p>
+            <p className='text-[20px] font-[400] leading-[4rem] text-carbon-600'>
+              Inter Regular
+            </p>
+            <p className='text-[20px] font-[500] leading-[4rem] text-carbon-600'>
+              Inter Medium
+            </p>
+            <p className='text-[20px] font-[600] leading-[4rem] text-carbon-600'>
+              Inter Bold
+            </p>
+          </section>
 
-            <p className='text-[17px] font-[400] leading-6 text-carbon-600'>
-              The cozy cabin nestled amidst towering pines, exuding rustic charm
-              and tranquility. Sunbeams pierced through ancient branches,
-              casting ethereal patterns on weathered floorboards. A crackling
-              hearth danced with warmth, inviting laughter and storytelling.
-            </p>
+          <div className='font-favorit text-sm font-bold uppercase'>
+            Fragrant blossoms danced in the gentle breeze.
           </div>
-
-          <div className='font-sohne font-[400]'>
-            <p className='text-[18px] font-[500] leading-[4rem] text-sun'>
-              Söhne
-            </p>
-
-            <p className='text-[17px] font-[400] leading-6 text-carbon-600'>
-              Whispering wind rustled autumn leaves, painting a tapestry of
-              fiery hues. Nature's farewell symphony echoed through the serene
-              woodland, an ode to the fleeting beauty of the passing season.
-            </p>
+          <div className='font-sohne text-sm font-bold uppercase'>
+            Fragrant blossoms danced in the gentle breeze.
           </div>
-
-          <div className='font-inter font-[400]'>
-            <p className='app-blue text-[18px] font-[600] leading-[4rem]'>
-              Inter
-            </p>
-            <p className='text-[16px] font-[400] leading-6 text-carbon-600'>
-              Sunset's embrace kissed the horizon, melting hues of gold and
-              crimson into a breathtaking canvas. The ocean whispered its
-              secrets, serenading wanderers captivated by its tranquil allure.
-              In this fleeting moment, time stood still, wrapped in the serene
-              beauty of a world bathed in twilight's tender glow.
-            </p>
-          </div>
-
-          <div className='text-sm font-bold uppercase font-favorit'>
+          <div className='font-inter text-sm font-bold uppercase'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
 
