@@ -1,12 +1,12 @@
-export { MDX } from './mdx';
-
-// index
-export { Connect } from './connect';
+// core components
 export { Introduction } from './introduction';
+export { Connect } from './connect';
+export { MDX } from './mdx';
 export { NumberEmail } from './number.email';
+export { Section, TestSection } from './section';
 
 // projects
 export { ProjectHighlights, ProjectLibrary } from './projects';
 
-// elements
-export { Section, TestSection } from './section';
+// other
+export { default as WebVitals } from './vitals';

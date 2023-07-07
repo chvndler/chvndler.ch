@@ -1,8 +1,9 @@
 import { allProjects } from 'contentlayer/generated';
+
 import { AppController } from '@/components/layout';
 import { ProjectLibrary } from '@/components/core/projects';
 
-import type { Metadata } from 'next/types';
+import type { Metadata } from 'next/';
 import { content } from '@/lib/website.config';
 
 export const metadata: Metadata = {

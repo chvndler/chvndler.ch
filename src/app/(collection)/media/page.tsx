@@ -1,5 +1,5 @@
 import MuxVideo from '@/components/shared/video/player';
-import type { Metadata } from 'next/types';
+import type { Metadata } from 'next';
 
 import { AppController, TopLevelGrid } from '@/components/layout';
 import { films } from '@/lib/data/film.constants';

@@ -1,10 +1,10 @@
 'use client';
 
 import * as React from 'react';
-import { isProd, isClient, siteLog } from '../lib/const';
-import { gaTrackingId } from '../lib/const';
-import { AppAnalytics, GoogleAnalytics } from '../components/analytics';
-import { useFontsLoaded } from '../lib/hooks/use-fonts-loaded';
+
+import { isProd, isClient, siteLog, gaTrackingId } from '@/lib/const';
+import { AppAnalytics, GoogleAnalytics } from '@/components/analytics';
+import { useFontsLoaded } from '@/lib/hooks/use-fonts-loaded';
 
 export const AppHooks = () => {
   useFontsLoaded();

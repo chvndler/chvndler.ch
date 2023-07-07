@@ -1,6 +1,6 @@
 import { AppController } from '@/components/layout';
 
-import type { Metadata } from 'next/types';
+import type { Metadata } from 'next';
 import { Introduction, TestSection } from '@/components/core';
 import { BadgeDefault, Space } from '@/components/shared';
 export const metadata: Metadata = {

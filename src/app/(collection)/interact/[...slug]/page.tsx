@@ -62,15 +62,15 @@ export default async function ViewPrimitivePage({ params }: PrimitiveXProps) {
     <AppController>
       <article
         key={x.title}
-        className='text-md prose prose-neutral mb-20'>
+        className='mb-20 prose text-md prose-neutral'>
         <Link href=''>
           <RouterPrev />
         </Link>
 
-        <h3 className='font-favorit leading-4 tracking-tight text-carbon-800 dark:text-carbon-100'>
+        <h3 className='leading-4 tracking-tight font-favorit text-carbon-800 dark:text-carbon-100'>
           {x.title}
         </h3>
-        <p className='font-favorit text-sm leading-5 text-carbon-600 dark:text-carbon-300'>
+        <p className='text-sm leading-5 font-favorit text-carbon-600 dark:text-carbon-300'>
           {x.excerpt}
         </p>
       </article>

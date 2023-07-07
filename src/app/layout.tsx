@@ -1,15 +1,14 @@
 import './index.scss';
 
-import { siteURL } from '../lib/const';
-import { cn } from '../lib/utils';
+import { cn } from '@/lib/utils';
+import { siteURL } from '@/lib/const';
 import { AppHooks } from './hooks';
-import { ThemeProvider } from '../context/theme-provider';
-import { Header, Footer } from '../components/layout';
+import { ThemeProvider } from '@/context/theme-provider';
+import { Header, Footer } from '@/components/layout';
 import { favorit } from './_scss/fonts';
-
-import type { Metadata } from 'next';
-import TopLoader from '@/components/primitives/loader';
 import { CommandMenu } from '@/components/shared/cmdk';
+import { TopLoader } from '@/components/primitives';
+import type { Metadata } from 'next/';
 
 export default function RootLayout({
   children,

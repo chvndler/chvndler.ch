@@ -1,3 +1,5 @@
+'use client';
+
 import { useEffect, useRef, ReactNode, Dispatch, SetStateAction } from 'react';
 import { AnimatePresence, motion, useAnimation } from 'framer-motion';
 
