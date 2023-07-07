@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
-import { CLogo } from './svg/c';
+// import { CLogo } from './svg/c';
+import { CDCPill } from './svg/pill.cdc';
 
 export default function Logo() {
   return (
@@ -9,14 +10,14 @@ export default function Logo() {
         <Link
           href='/'
           className='h-auto w-auto items-center leading-[20px] transition-all duration-200 ease-in-out hover:text-jade hover:blur-[2px] dark:hover:text-jade'>
-          {/* <!--
-          <CDCLogo
-            width={'58'}
-            height={'20'}
+          <CDCPill
+            height='22'
+            width='60'
           />
-          --> */}
 
+          {/* <!--
           <CLogo />
+          --> */}
         </Link>
       </div>
     </>
