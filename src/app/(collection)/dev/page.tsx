@@ -1,7 +1,7 @@
 import { AppController } from '@/components/layout';
 
 import type { Metadata } from 'next';
-import { Introduction, TestSection } from '@/components/core';
+import { TestSection } from '@/components/core';
 import { BadgeDefault, Space } from '@/components/shared';
 export const metadata: Metadata = {
   title: 'dev.chandler.',
