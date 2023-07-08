@@ -30,7 +30,12 @@ modern look.
 
 You can view the source code for this project on [GitHub](https://github.com/chvndler/arie-js)
 
-<RoundImage alt={`Arie.js`} src={`/static/img/projects/arie.jpg`} width={1920} height={960} />
+<RoundImage
+  alt={`Arie.js`}
+  src={`/static/img/projects/arie.jpg`}
+  width={1920}
+  height={960}
+/>
 
 <Space />
 
@@ -90,7 +95,9 @@ export const AngleExample = () => {
 
   return (
     <>
-      <div className='row'>{angle ? <div>{angle.toFixed(0)}°</div> : <div>0°</div>}</div>
+      <div className='row'>
+        {angle ? <div>{angle.toFixed(0)}°</div> : <div>0°</div>}
+      </div>
 
       <div id='trackElement' />
     </>
@@ -103,8 +110,8 @@ export const AngleExample = () => {
 
 A _type-check_ script is also added to <Code>package.json</Code>, which runs TypeScript's
 
-<Code>tsc-cli</Code> in <Code>noEmit</Code> mode to run type-checking separately. You can then include
-this, for example, in your _test_ scripts.
+<Code>tsc-cli</Code> in <Code>noEmit</Code> mode to run type-checking separately.
+You can then include this, for example, in your _test_ scripts.
 
 <Space />
 

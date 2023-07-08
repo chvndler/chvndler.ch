@@ -28,5 +28,4 @@ export default function ModularTime() {
       </time>
     </div>
   );
-};
-
+}

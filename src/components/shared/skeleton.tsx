@@ -14,7 +14,7 @@ const SmallSkeleton = ({ children }: { children: React.ReactNode }) => {
   }, []);
 
   return (
-    <div className='flex flex-row items-center justify-start w-full mx-auto text-left gap-x-2'>
+    <div className='mx-auto flex w-full flex-row items-center justify-start gap-x-2 text-left'>
       {loading ? (
         <>
           <Spinner />
@@ -30,7 +30,7 @@ const SmallSkeleton = ({ children }: { children: React.ReactNode }) => {
 function Spinner() {
   return (
     <div className='items-center justify-start'>
-      <div className='w-auto h-auto bg-transparent rounded-lg'>
+      <div className='h-auto w-auto rounded-lg bg-transparent'>
         <div
           role='status'
           className='skeleton'>
@@ -74,5 +74,3 @@ function SkeletonBar({
 }
 
 export default SmallSkeleton;
-
-

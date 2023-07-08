@@ -56,7 +56,8 @@ const MenubarSubTrigger = React.forwardRef<
   <MenubarPrimitive.SubTrigger
     ref={ref}
     className={cn(
-      'focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none',
+      'focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground',
+      'flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none',
       inset && 'pl-8',
       className,
     )}
@@ -74,7 +75,9 @@ const MenubarSubContent = React.forwardRef<
   <MenubarPrimitive.SubContent
     ref={ref}
     className={cn(
-      'bg-popover text-popover-foreground animate-in data-[side=bottom]:slide-in-from-top-1 data-[side=left]:slide-in-from-right-1 data-[side=right]:slide-in-from-left-1 data-[side=top]:slide-in-from-bottom-1 z-50 min-w-[8rem] overflow-hidden rounded-md border p-1 shadow-md',
+      'bg-popover text-popover-foreground animate-in data-[side=bottom]:slide-in-from-top-1',
+      'data-[side=left]:slide-in-from-right-1 data-[side=right]:slide-in-from-left-1',
+      'data-[side=top]:slide-in-from-bottom-1 z-50 min-w-[8rem] overflow-hidden rounded-md border p-1 shadow-md',
       className,
     )}
     {...props}
@@ -116,7 +119,9 @@ const MenubarItem = React.forwardRef<
   <MenubarPrimitive.Item
     ref={ref}
     className={cn(
-      'relative flex cursor-default select-none items-center rounded-lg px-2 py-1.5 text-sm font-medium outline-none hover:bg-slate-300 focus:bg-slate-400 focus:text-slate-700 data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+      'relative flex cursor-default select-none items-center rounded-lg px-2 py-1.5 text-sm font-medium',
+      'outline-none hover:bg-slate-300 focus:bg-slate-400 focus:text-slate-700',
+      'data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
       inset && 'pl-8',
       className,
     )}

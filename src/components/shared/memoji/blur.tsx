@@ -40,7 +40,7 @@ export const MemojiBlur: React.FC<BlurredImageProps> = ({ src, alt }) => {
   }, []);
 
   return (
-    <div className='items-center justify-center w-auto mx-auto memoji md:flex md:flex-col'>
+    <div className='memoji mx-auto w-auto items-center justify-center md:flex md:flex-col'>
       <NextImage
         onError={() => setHasError(true)}
         ref={imageRef}

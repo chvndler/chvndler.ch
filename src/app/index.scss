@@ -3,7 +3,6 @@
 @import './_scss/helpers';
 @import './_scss/colours';
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -133,8 +132,6 @@
  * top-level pure-css.
  */
 
-
-
 * {
   box-sizing: border-box;
 }
@@ -214,8 +211,6 @@ small {
   color: white;
   -webkit-text-fill-color: white;
 }
-
-
 
 /*
 html::-webkit-scrollbar {

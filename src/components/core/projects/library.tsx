@@ -26,10 +26,10 @@ export const ProjectLibrary = ({ projects }: ListProps) => {
   const listItems = sortedProjects.map((project, i) => (
     <li
       key={i}
-      className='transition-colors duration-300 ease-in-out bg-blackA1 hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'>
+      className='bg-blackA1 transition-colors duration-300 ease-in-out hover:bg-blackA4 dark:bg-whiteA1 dark:hover:bg-whiteA4'>
       <div
         key={i}
-        className='flex flex-row items-center justify-between w-full m-auto'>
+        className='m-auto flex w-full flex-row items-center justify-between'>
         <Link
           href={project.url}
           className='items-center justify-start py-2 font-favorit text-[15px] font-[500] uppercase text-carbon-600 hover:text-carbon-700 dark:hover:text-carbon-300 md:font-[600]'>
@@ -58,8 +58,8 @@ export const ProjectLibrary = ({ projects }: ListProps) => {
       <section
         id='proj-sect'
         className='py-6'>
-        <div className='w-full py-6 mx-auto overflow-hidden'>
-          <ul className='grid items-center grid-cols-1 divide-y divide-blackA6 dark:divide-whiteA4'>
+        <div className='mx-auto w-full overflow-hidden py-6'>
+          <ul className='grid grid-cols-1 items-center divide-y divide-blackA6 dark:divide-whiteA4'>
             {listItems}
           </ul>
         </div>

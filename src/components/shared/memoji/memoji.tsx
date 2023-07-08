@@ -6,7 +6,7 @@ const prefix = 'https://cdn.chvndler.ch/assets/';
 const Memoji = () => {
   return (
     <>
-      <div className='items-center justify-center w-auto mx-auto memoji sm:flex md:hidden'>
+      <div className='memoji mx-auto w-auto items-center justify-center sm:flex md:hidden'>
         <Image
           src={`${prefix}other/chan.memoji.gif`}
           alt='memoji'

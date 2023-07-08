@@ -3,7 +3,7 @@ import React from 'react';
 // PageSection.
 const Page = ({ children }: { children: React.ReactNode }) => (
   <>
-    <div className='container items-center w-full px-0 py-8 mx-auto'>
+    <div className='container mx-auto w-full items-center px-0 py-8'>
       {children}
     </div>
   </>

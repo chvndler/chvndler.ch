@@ -19,7 +19,7 @@ export const ComponentList = ({ component }: ARProps) => {
           <div
             key={comp}
             className={cn(
-              'rounded-lg bg-transparent px-4 py-6 hover:bg-carbon-100 hover:shadow-sm',
+              'rounded-lg bg-carbon-50 px-4 py-6 hover:bg-carbon-100 hover:shadow-sm',
               'dark:border-carbon-800 dark:bg-carbon-900 dark:hover:bg-carbon-800 md:py-4 md:shadow-none',
             )}>
             <h2

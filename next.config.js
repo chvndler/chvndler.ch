@@ -8,6 +8,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  env: { NODE_ENV: isDev ? 'development' : 'production' },
   pageExtensions: ['ts', 'tsx', 'mdx'],
 
   /**
