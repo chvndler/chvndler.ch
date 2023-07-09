@@ -21,7 +21,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
     <div
       key={z}
       className='grid gap-6'>
-      <div className='grid grid-cols-1 items-start justify-start text-carbon-400 md:grid-cols-3'>
+      <div className='grid items-start justify-start grid-cols-1 text-carbon-400 md:grid-cols-3'>
         <p className='font-mono text-xs font-[600] leading-4 text-carbon-600 dark:text-carbon-600'>
           <ProjectDateFormat postDate={prxjxct} />
         </p>
@@ -56,18 +56,18 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
 
   return (
     <>
-      <div className='font-favorit text-sm'>
+      <div className='text-sm font-favorit'>
         <p className='pb-4 text-[14px] font-[600] uppercase leading-6 text-jade'>
           Projects
         </p>
 
-        <div className='mt-3 grid gap-2 gap-y-3 border-b border-carbon-100 pb-8 dark:border-carbon-800'>
+        <div className='grid gap-2 pb-8 mt-3 border-b gap-y-3 border-carbon-100 dark:border-carbon-800'>
           {otherPages.map((page, i) => (
             <>
               <div
                 key={i}
-                className='grid grid-cols-1 items-start gap-y-0 md:grid-cols-3'>
-                <div className='mx-auto flex w-full flex-row items-center justify-start gap-x-1 leading-5'>
+                className='grid items-start grid-cols-1 gap-y-0 md:grid-cols-3'>
+                <div className='flex flex-row items-center justify-start w-full mx-auto leading-5 gap-x-1'>
                   <Link
                     href={page.url}
                     key={page.url}
@@ -98,7 +98,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
         <BadgeDefault>
           <Link
             href='/projects'
-            className='text-left font-sohne text-sm font-[500] text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300'>
+            className='text-left font-twk text-sm font-[500] text-carbon-500 hover:text-carbon-700 dark:hover:text-carbon-300'>
             view all projects →
           </Link>
         </BadgeDefault>

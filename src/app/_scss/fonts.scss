@@ -1,9 +1,9 @@
 $prefix: '/fonts/' !default;
+
 /**
   *
   * Favorit Font
   */
-
 @font-face {
   font-family: 'ABC Favorit';
   font-style: normal;
@@ -99,7 +99,7 @@ $prefix: '/fonts/' !default;
 }
 
 /**
-
+  *
   * Sōhne Font
   */
 @font-face {
@@ -171,7 +171,6 @@ $prefix: '/fonts/' !default;
  * Inter V
  * @format
  */
-
 @font-face {
   font-family: Inter V;
   font-weight: 100 900;
@@ -188,4 +187,135 @@ $prefix: '/fonts/' !default;
   font-style: italic;
   font-named-instance: 'Italic';
   src: url('#{$prefix}inter/Inter-italic.var.woff2?v=3.15') format('woff2');
+}
+
+/**
+ * 
+ * TWK Lausanne
+ */
+
+ @font-face {
+  font-family: TWK Lausanne;
+  font-weight: 300;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-300.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-300.woff') format('woff');
+}
+
+@font-face {
+  font-family: TWK Lausanne;
+  font-weight: 450;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-350.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-350.woff') format('woff');
+}
+
+@font-face {
+  font-family: TWK Lausanne;
+  font-weight: 400;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-400.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-400.woff') format('woff');
+}
+
+@font-face {
+  font-family: TWK Lausanne;
+  font-weight: 450;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-450.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-450.woff') format('woff');
+}
+
+@font-face {
+  font-family: TWK Lausanne;
+  font-weight: 500;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-500.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: TWK Lausanne;
+  font-weight: 550;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-550.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-550.woff') format('woff');
+}
+
+@font-face {
+  font-family: TWK Lausanne;
+  font-weight: 600;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-600.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-600.woff') format('woff');
+}
+
+@font-face {
+  font-family: TWK Lausanne;
+  font-weight: 650;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-650.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-650.woff') format('woff');
+}
+
+@font-face {
+  font-family: TWK Lausanne;
+  font-weight: 700;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-700.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: TWK Lausanne;
+  font-weight: 750;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-750.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-750.woff') format('woff');
+}
+
+@font-face {
+  font-family: TWK Lausanne;
+  font-weight: 800;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-800.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-800.woff') format('woff');
+}
+
+@font-face {
+  font-family: TWK Lausanne;
+  font-weight: 850;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-850.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-850.woff') format('woff');
+}
+
+@font-face {
+  font-family: TWK Lausanne;
+  font-weight: 900;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-900.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-900.woff') format('woff');
+}
+
+@font-face {
+  font-family: TWK Lausanne;
+  font-weight: 950;
+  font-display: block;
+  font-style: normal;
+  src: url('#{$prefix}twk/TWKLausanne-950.woff2') format('woff2'),
+    url('#{$prefix}twk/TWKLausanne-950.woff') format('woff');
 }

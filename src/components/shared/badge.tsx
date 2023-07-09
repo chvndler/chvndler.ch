@@ -10,7 +10,7 @@ const BadgeDefault = ({
 }) => (
   <span
     className={cn(
-      'font-archivo items-center whitespace-nowrap rounded-full',
+      'font-twk items-center whitespace-nowrap rounded-full',
       'bg-blackA4 px-2.5 py-0.5 text-[11px] font-[580] leading-4 text-grayscale-700',
       'align-middle dark:bg-whiteA4 dark:text-grayscale-800',
     )}>

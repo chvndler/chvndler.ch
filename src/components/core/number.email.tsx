@@ -9,13 +9,12 @@ export const NumberEmail = () => (
       href='tel:3362448939'
       className=''
     />
-
-    <p className='font-sohne text-[16px] font-[400] leading-4 text-carbon-600 dark:text-carbon-400'>
+    <p className='font-twk text-[18px] lowercase font-[350] leading-4 text-carbon-600 dark:text-carbon-400'>
       Frontend developer, Designer
     </p>
     <a
       href='mailto:chan@atlrdsgn.com'
-      className='font-sohne text-[16px] font-[400] leading-4 text-carbon-600 dark:text-carbon-400'>
+      className='font-twk text-[18px] lowercase font-[350] leading-4 text-carbon-600 dark:text-carbon-400'>
       chan@atlrdsgn.com
     </a>
   </div>
@@ -26,12 +25,12 @@ function Links() {
     <>
       <a
         href='tel:3362448939'
-        className='max-w-fit font-mono text-xs font-medium leading-3 text-carbon-700 dark:text-carbon-50'>
+        className='font-mono text-xs font-medium leading-3 max-w-fit text-carbon-700 dark:text-carbon-50'>
         +33 62 44 89 39
       </a>
       <a
         href='mailto:chan@atlrdsgn.com'
-        className='max-w-fit font-mono text-xs font-medium lowercase leading-3 text-carbon-700 dark:text-carbon-50'>
+        className='font-mono text-xs font-medium leading-3 lowercase max-w-fit text-carbon-700 dark:text-carbon-50'>
         CHAN@ATLRDSGN.COM
       </a>
     </>

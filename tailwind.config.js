@@ -11,6 +11,7 @@ module.exports = {
       favorit: ['ABC Favorit', 'sans-serif'],
       inter: ['Inter V', 'sans-serif'],
       sohne: ['Söhne', 'sans-serif'],
+      twk: ['TWK Lausanne', 'sans-serif'],
       mono: ['SF Mono', 'monospace'],
     },
     colors: {

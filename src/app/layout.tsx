@@ -5,7 +5,7 @@ import { siteURL } from '@/lib/const';
 import { AppHooks } from './hooks';
 import { ThemeProvider } from '@/context/theme-provider';
 import { Header, Footer } from '@/components/layout';
-import { sohne } from './_scss/fonts';
+import { twk } from '@/lib/fonts';
 import { CommandMenu } from '@/components/shared/cmdk';
 import { TopLoader } from '@/components/primitives';
 import type { Metadata } from 'next';
@@ -20,7 +20,7 @@ export default function RootLayout({
       lang='en'
       suppressHydrationWarning>
       <body
-        className={cn(`${sohne.className} align-middle antialiased`)}
+        className={cn(`${twk.className} align-middle antialiased`)}
         style={{ opacity: 0 }}>
         <ThemeProvider>
           <TopLoader />

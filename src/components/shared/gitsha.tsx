@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { GitShaIcon } from './svg/git';
 import { useTheme } from 'next-themes';
+import useRefreshOnFocus from '@/lib/hooks/use-refresh-focus';
 
 // client
 
@@ -14,6 +15,8 @@ export const CommitSha = () => {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
+  useRefreshOnFocus();
+
   useEffect(() => {
     const newColor = isDark ? 'currentColor' : 'currentColor';
     setColor(newColor);
@@ -22,6 +25,7 @@ export const CommitSha = () => {
   if (sha && owner && slug) {
     const shortSha = sha.substring(0, 6);
     const commitLink = `https://github.com/${owner}/${slug}/tree/${sha}`;
+
 
     return (
       <div className='flex flex-row items-center justify-center gap-x-2'>

@@ -20,6 +20,9 @@ export default function DevIndex() {
           </span>
 
           <section>
+            <p className='font-twk text-[40px] font-[550] uppercase leading-[4rem] text-carbon-600'>
+              TWK Lausanne
+            </p>
             <p className='font-favorit text-[40px] font-[600] uppercase leading-[4rem] text-carbon-600'>
               Favorit
             </p>
@@ -40,6 +43,22 @@ export default function DevIndex() {
             <p className='font-inter text-[40px] font-[600] leading-[4rem] text-carbon-600'>
               Inter Bold / 40px / 600
             </p>
+          </section>
+
+                    <section>
+            <div className='font-twk font-[400]'>
+              <p className='text-[18px] font-[600] leading-[4rem] text-jade'>
+                TWK Lausanne
+              </p>
+
+              <p className='text-[17px] font-[400] leading-6 text-carbon-600'>
+                The cozy cabin nestled amidst towering pines, exuding rustic
+                charm and tranquility. Sunbeams pierced through ancient
+                branches, casting ethereal patterns on weathered floorboards. A
+                crackling hearth danced with warmth, inviting laughter and
+                storytelling.
+              </p>
+            </div>
           </section>
 
           <section>
@@ -140,13 +159,13 @@ export default function DevIndex() {
             </p>
           </section>
 
-          <div className='font-favorit text-sm font-bold uppercase'>
+          <div className='text-sm font-bold uppercase font-favorit'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
-          <div className='font-sohne text-sm font-bold uppercase'>
+          <div className='text-sm font-bold uppercase font-sohne'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
-          <div className='font-inter text-sm font-bold uppercase'>
+          <div className='text-sm font-bold uppercase font-inter'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
 
