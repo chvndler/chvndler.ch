@@ -18,10 +18,14 @@ type MDXVideoProps = {
   id?: MuxPlayerProps['playbackId'];
 } & React.ComponentProps<typeof MuxPlayer>;
 
+interface IFrameProps {
+  src: string;
+}
+
 /**
  *
  *
  * types
  */
 
-export type { MDXImageProps, MDXLinkProps, MDXVideoProps };
+export type { MDXImageProps, MDXLinkProps, MDXVideoProps, IFrameProps };
