@@ -1,7 +1,7 @@
-export const themeEffect = function () {
-  const pref = localStorage.getItem('theme');
+export const themeEffect = function (): 'dark' | 'light' {
+  const pref: string | null = localStorage.getItem('theme');
 
-  if (null === pref) {
+  if (pref === null) {
     document.documentElement.classList.add('theme-system');
   } else {
     document.documentElement.classList.remove('theme-system');
@@ -13,23 +13,34 @@ export const themeEffect = function () {
   ) {
     document.documentElement.classList.add('pause-transitions');
     document.documentElement.classList.add('dark');
-    document.head
-      .querySelector('meta[name=theme-color]')
-      ?.setAttribute('content', '#1c1c1c');
+
+    const themeColorMeta = document.head.querySelector(
+      'meta[name=theme-color]',
+    );
+    if (themeColorMeta !== null) {
+      themeColorMeta.setAttribute('content', '#1c1c1c');
+    }
 
     requestAnimationFrame(() => {
       document.documentElement.classList.remove('pause-transitions');
     });
+
     return 'dark';
   } else {
     document.documentElement.classList.add('pause-transitions');
     document.documentElement.classList.remove('dark');
-    document.head
-      .querySelector('meta[name=theme-color]')
-      ?.setAttribute('content', '#fcfcfc');
+
+    const themeColorMeta = document.head.querySelector(
+      'meta[name=theme-color]',
+    );
+    if (themeColorMeta !== null) {
+      themeColorMeta.setAttribute('content', '#fcfcfc');
+    }
+
     requestAnimationFrame(() => {
       document.documentElement.classList.remove('pause-transitions');
     });
+
     return 'light';
   }
 };
