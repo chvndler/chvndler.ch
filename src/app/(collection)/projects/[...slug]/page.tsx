@@ -11,6 +11,7 @@ import { GitButton, BadgeDefault } from '@/components/shared';
 
 import { type Metadata } from 'next';
 import type { Projects } from 'contentlayer/generated';
+import { cn } from '@/lib/utils';
 
 interface PostProps {
   params: {
@@ -62,7 +63,11 @@ export default async function PostPage({ params }: PostProps) {
       <AppController>
         <article
           key={post._id}
-          className='text-md prose prose-neutral mb-20 font-[400] text-blackA11 dark:prose-invert prose-h2:font-sohne prose-h2:text-4xl prose-h2:font-[600] prose-h2:tracking-tight prose-h3:text-2xl prose-h3:font-[800] prose-h3:tracking-tight prose-p:font-sohne dark:text-whiteA10'>
+          className={cn(
+            'text-md prose prose-neutral mb-20 font-[400] text-blackA11 dark:prose-invert',
+            'prose-h2:font-sohne prose-h2:text-4xl prose-h2:font-[600] prose-h2:tracking-tight prose-h3:text-2xl',
+            'prose-h3:font-[800] prose-h3:tracking-tight prose-p:font-sohne dark:text-whiteA10',
+          )}>
           <section>
             <Link href=''>
               <RouterPrev />
@@ -77,7 +82,7 @@ export default async function PostPage({ params }: PostProps) {
               <h2 className='prose-h2 font-favorit leading-4 tracking-tight text-blackA11 dark:text-whiteA11'>
                 {post.title}
               </h2>
-              <p className='text-md max-w-sm font-favorit leading-6 text-carbon-800 dark:text-whiteA8'>
+              <p className='text-md max-w-lg font-favorit leading-6 text-carbon-800 dark:text-whiteA8'>
                 {post.description}
               </p>
               {post.git && (

@@ -6,15 +6,18 @@ export const NumberEmail = () => (
     <TextSwitcher
       defaultText={'chandler chappell'}
       hoverText={'+33 62 44 89 39'}
+      href='tel:3362448939'
       className=''
     />
 
-    <p className='font-sohne text-[15px] font-[400] leading-4 text-carbon-600 dark:text-carbon-400'>
-      frontend developer, designer
+    <p className='font-sohne text-[16px] font-[400] leading-4 text-carbon-600 dark:text-carbon-400'>
+      Frontend developer, Designer
     </p>
-    <p className='font-sohne text-[15px] font-[400] leading-4 text-carbon-600 dark:text-carbon-400'>
+    <a
+      href='mailto:chan@atlrdsgn.com'
+      className='font-sohne text-[16px] font-[400] leading-4 text-carbon-600 dark:text-carbon-400'>
       chan@atlrdsgn.com
-    </p>
+    </a>
   </div>
 );
 

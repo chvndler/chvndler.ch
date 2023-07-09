@@ -7,12 +7,14 @@ export type TextSwitcherProps = {
   hoverText: string;
   defaultText: string;
   className?: string;
+  href?: string;
 };
 
 export const TextSwitcher = ({
   hoverText,
   defaultText,
   className,
+  href,
 }: TextSwitcherProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -34,6 +36,7 @@ export const TextSwitcher = ({
           className={clsx(
             'font-favorit text-[15px] font-[600] uppercase text-sun dark:text-sun',
           )}
+          href={href}
           text={hoverText}
         />
       ) : (
@@ -51,19 +54,22 @@ export const TextSwitcher = ({
 export type HoverableTextElementProps = {
   className?: string;
   text: string;
+  href?: string;
 };
 
 export const HoverableTextElement = ({
   text,
   className,
+  href,
 }: HoverableTextElementProps) => {
   return (
-    <p
+    <a
+      href={href}
       className={clsx(
         'cursor-pointer leading-4 transition-all duration-100',
         className,
       )}>
       {text}
-    </p>
+    </a>
   );
 };

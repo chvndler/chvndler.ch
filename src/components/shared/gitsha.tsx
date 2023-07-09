@@ -1,7 +1,7 @@
 'use client';
 
 import { cn } from '../../lib/utils';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { GitShaIcon } from './svg/git';
 import { useTheme } from 'next-themes';
@@ -10,10 +10,14 @@ import { useTheme } from 'next-themes';
 
 export const CommitSha = () => {
   const { sha, owner, slug } = useGitSha();
-
+  const [color, setColor] = useState('currentColor');
   const { theme } = useTheme();
   const isDark = theme === 'dark';
-  const color = isDark ? 'currentColor' : 'currentColor';
+
+  useEffect(() => {
+    const newColor = isDark ? 'currentColor' : 'currentColor';
+    setColor(newColor);
+  }, [isDark]);
 
   if (sha && owner && slug) {
     const shortSha = sha.substring(0, 6);
@@ -39,7 +43,11 @@ export const CommitSha = () => {
     );
   } else {
     // fallback
-    return <span style={{ color: `${color}` }}>ERROR</span>;
+    return (
+      <span style={{ color }}>
+        {color === 'currentColor' ? 'ERROR' : 'Loading'}
+      </span>
+    );
   }
 };
 
