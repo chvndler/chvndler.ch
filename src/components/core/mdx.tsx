@@ -3,7 +3,7 @@ import NextImage from 'next/image';
 import NextLink from 'next/link';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import type { MDXComponents } from 'mdx/types';
-import type { MDXImageProps, IFrameProps } from '@/lib/mdx';
+import type { MDXImageProps, MDXIFrameProps } from '@/lib/mdx';
 
 function clsx(...args: any) {
   return args.filter(Boolean).join(' ');
@@ -16,13 +16,14 @@ function clsx(...args: any) {
 
 
 
-const IFrame: React.FC<IFrameProps> = ({ src }) => {
+
+const IFrame = ({ src }: MDXIFrameProps) => {
   return (
-    <section className="w-full aspect-video">
+    <section className="w-full">
       <iframe src={src} allowFullScreen className='w-full aspect-video' />
     </section>
   );
-};
+}
 
 const Image = (props: MDXImageProps) => <NextImage {...props} />;
 const Space = (props: any) => (

@@ -1,6 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "prettier"],
   "extends": ["next", "prettier", "next/core-web-vitals"],
   "rules": {
     "react/jsx-no-target-blank": 0,
