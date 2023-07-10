@@ -9,12 +9,12 @@ export const NumberEmail = () => (
       href='tel:3362448939'
       className=''
     />
-    <p className='font-twk text-[18px] lowercase font-[350] leading-4 text-carbon-600 dark:text-carbon-400'>
+    <p className='font-twk text-[16px] md:text-[18px] lowercase font-[300] leading-4 text-carbon-600 dark:text-carbon-400'>
       Frontend developer, Designer
     </p>
     <a
       href='mailto:chan@atlrdsgn.com'
-      className='font-twk text-[18px] lowercase font-[350] leading-4 text-carbon-600 dark:text-carbon-400'>
+      className='font-twk text-[16px] md:text-[18px] lowercase font-[300] leading-4 text-carbon-600 dark:text-carbon-400'>
       chan@atlrdsgn.com
     </a>
   </div>
