@@ -5,7 +5,7 @@
   "description": "personal site",
   "scripts": {
     "dev": "NODE_ENV=development next dev",
-    "prod": "cross-env NODE_ENV=production next build && next start",
+    "prod": "NODE_ENV=production next build && next start",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
