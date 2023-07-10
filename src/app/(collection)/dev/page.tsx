@@ -32,6 +32,9 @@ export default function DevIndex() {
             <p className='font-inter text-[40px] font-[600] uppercase leading-[4rem] text-carbon-600'>
               Inter
             </p>
+            <p className='font-mono text-[40px] font-[600] uppercase leading-[4rem] text-carbon-600'>
+              IBM Plex Mono
+            </p>
             <Space />
             <Space />
             <p className='font-favorit text-[40px] font-[600] leading-[4rem] text-carbon-600'>
@@ -42,6 +45,9 @@ export default function DevIndex() {
             </p>
             <p className='font-inter text-[40px] font-[600] leading-[4rem] text-carbon-600'>
               Inter Bold / 40px / 600
+            </p>
+                        <p className='font-mono text-[30px] font-[600] leading-[4rem] text-carbon-600'>
+              IBM Plex Mono Bold / 30px / 600
             </p>
           </section>
 
@@ -106,6 +112,22 @@ export default function DevIndex() {
             </div>
           </section>
 
+
+          <section>
+            <div className='font-mono font-[400]'>
+              <p className='app-blue text-[18px] font-[600] leading-[4rem]'>
+                IBM Plex Mono (Text)
+              </p>
+              <p className='text-[14px] font-[450] leading-6 text-carbon-600'>
+                Sunset's embrace kissed the horizon, melting hues of gold and
+                crimson into a breathtaking canvas. The ocean whispered its
+                secrets, serenading wanderers captivated by its tranquil allure.
+                In this fleeting moment, time stood still, wrapped in the serene
+                beauty of a world bathed in twilight's tender glow.
+              </p>
+            </div>
+          </section>
+
           <section className='font-favorit'>
             <p className='text-[20px] font-[350] leading-[4rem] text-carbon-600'>
               Favorit Book
@@ -159,6 +181,28 @@ export default function DevIndex() {
             </p>
           </section>
 
+
+          <Space />
+          <Space />
+          <section className='font-mono'>
+            <p className='text-[20px] font-[400] leading-[4rem] text-carbon-600'>
+              IBM Plex Mono Regular
+            </p>
+            <p className='text-[20px] font-[450] leading-[4rem] text-carbon-600'>
+              IBM Plex Mono Text
+            </p>
+            <p className='text-[20px] font-[500] leading-[4rem] text-carbon-600'>
+              IBM Plex Mono Medium
+            </p>
+            <p className='text-[20px] font-[600] leading-[4rem] text-carbon-600'>
+              IBM Plex Mono SemiBold
+            </p>
+
+                        <p className='text-[20px] font-[700] leading-[4rem] text-carbon-600'>
+             IBM Plex Mono Bold
+            </p>
+          </section>
+
           <div className='text-sm font-bold uppercase font-favorit'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
@@ -166,6 +210,10 @@ export default function DevIndex() {
             Fragrant blossoms danced in the gentle breeze.
           </div>
           <div className='text-sm font-bold uppercase font-inter'>
+            Fragrant blossoms danced in the gentle breeze.
+          </div>
+
+          <div className='font-mono text-sm font-[450] uppercase'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
 

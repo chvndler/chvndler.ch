@@ -23,4 +23,8 @@ const twk = localFont({
   style: 'normal',
 });
 
-export { inter, favorit, sohne, twk };
+const mono = localFont({
+  src: '../../public/fonts/ibm-plex-mono/IBMPlexMono-Text.woff2',
+});
+
+export { inter, favorit, sohne, twk, mono };

@@ -10,11 +10,12 @@
 
 @layer base {
   :root {
-    --font-mono: 'SF Mono', monospace;
+    --font-mono: 'IBM Plex Mono', monospace;
     --font-inter: 'Inter', sans-serif;
     --font-favorit: 'ABC Favorit', sans-serif;
     --font-sohne: 'Söhne', sans-serif;
     --font-twk: 'TWK Lausanne', sans-serif;
+    
     --font-s: 0.875rem; // 14px
     --bg-dark: rgba(23, 23, 23, 1);
     --bg-light: rgba(255, 255, 255, 1);

@@ -12,7 +12,7 @@ module.exports = {
       inter: ['Inter V', 'sans-serif'],
       sohne: ['Söhne', 'sans-serif'],
       twk: ['TWK Lausanne', 'sans-serif'],
-      mono: ['SF Mono', 'monospace'],
+      mono: ['IBM Plex Mono', 'monospace'],
     },
     colors: {
       transparent: 'transparent',
