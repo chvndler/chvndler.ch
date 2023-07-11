@@ -105,3 +105,42 @@ code::after {
   height: 5px;
   background: transparent;
 }
+
+/*
+html::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar {
+  z-index: 999999 !important;
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  min-height: var(--scrollbar-size-min);
+  min-width: var(--scrollbar-size-min);
+  background-color: var(--scrollbar-color);
+  border-radius: var(--scrollbar-size);
+  border: 5px solid transparent;
+  background-clip: padding-box;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-dark);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+::-webkit-resizer {
+  display: none;
+}
+*/

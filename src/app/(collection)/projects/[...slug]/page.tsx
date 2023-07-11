@@ -64,9 +64,9 @@ export default async function PostPage({ params }: PostProps) {
         <article
           key={post._id}
           className={cn(
-            'text-md prose prose-neutral mb-20 font-[400] text-blackA11 dark:prose-invert',
+            'text-md prose prose-neutral mb-20 text-blackA11 dark:prose-invert',
             'prose-h2:font-sohne prose-h2:text-4xl prose-h2:font-[600] prose-h2:tracking-tight prose-h3:text-2xl',
-            'prose-h3:font-[800] prose-h3:tracking-tight prose-p:font-twf dark:text-whiteA10',
+            'prose-h3:font-[800] prose-h3:tracking-tight prose-p:font-twf prose-p:text-[350] dark:text-whiteA10',
           )}>
           <section>
             <Link href=''>

@@ -36,7 +36,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
 
           <p
             key={prxjxct.excerpt}
-            className='text-[14px] font-[400] lowercase leading-5 text-carbon-400 dark:text-carbon-500'>
+            className='text-[14px] font-twk font-[400] lowercase leading-5 text-carbon-400 dark:text-carbon-500'>
             {prxjxct.excerpt}
           </p>
 
@@ -56,8 +56,8 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
 
   return (
     <>
-      <div className='text-sm font-favorit'>
-        <p className='pb-4 text-[14px] font-[600] uppercase leading-6 text-jade'>
+      <div className='font-favorit'>
+        <p className='pb-4 text-[15px] font-favorit font-[600] uppercase leading-6 text-jade'>
           Projects
         </p>
 
@@ -80,7 +80,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
                 <div className='w-full md:col-span-2'>
                   <p
                     key={page.content}
-                    className='font-favorit text-[14px] font-[400] lowercase leading-5 text-carbon-400 transition-all duration-200 dark:text-carbon-500'>
+                    className='font-twk text-[14px] font-[400] lowercase leading-5 text-carbon-400 transition-all duration-200 dark:text-carbon-500'>
                     {page.content}
                   </p>
                 </div>

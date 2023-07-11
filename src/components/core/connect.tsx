@@ -5,8 +5,8 @@ import { te } from 'date-fns/locale';
 // server
 
 export const Connect = () => (
-  <div className='text-sm font-favorit'>
-    <p className='pb-4 text-[14px] font-[600] uppercase leading-6 text-jade'>
+  <div className='font-favorit'>
+    <p className='pb-4 text-[15px] font-favorit font-[600] uppercase leading-6 text-jade'>
       Connect
     </p>
     <div className='grid gap-2 mt-3 gap-y-3'>
