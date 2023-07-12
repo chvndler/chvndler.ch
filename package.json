@@ -54,7 +54,7 @@
     "axios": "^1.4.0",
     "cross-env": "^7.0.3",
     "date-fns": "^2.30.0",
-    "esbuild": "0.17.0",
+    "esbuild": "0.18.11",
     "eslint": "^8.41.0",
     "eslint-config-next": "^13.4.3",
     "eslint-config-prettier": "^8.8.0",
