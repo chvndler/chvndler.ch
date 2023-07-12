@@ -15,7 +15,7 @@ export const Connect = () => (
     </p>
     <div className='mt-3 grid gap-2 gap-y-3'>
       {connects.map((template, id) => (
-        <div key={id}>
+        <div key={template.title}>
           <div className='grid grid-cols-1 items-start text-carbon-500 md:grid-cols-3'>
             <p
               key={template.type}
