@@ -1,5 +1,8 @@
 import React from 'react';
+import Link from 'next/link';
 import { TextSwitcher } from '@/components/primitives/hover.switch';
+
+import { cn } from '@/lib/utils';
 
 export const NumberEmail = () => (
   <div className='mb-14 flex flex-col gap-1.5'>
@@ -9,14 +12,16 @@ export const NumberEmail = () => (
       href='tel:3362448939'
       className=''
     />
-    <p className='font-twk text-[16px] md:text-[18px] lowercase font-[300] leading-4 text-carbon-600 dark:text-carbon-400'>
+    <p className={cn(
+      'font-twk text-[16px] md:text-[18px] lowercase font-[300] leading-4',
+      'text-carbon-600 dark:text-carbon-400')}>
       Frontend developer, Designer
     </p>
-    <a
+    <Link
       href='mailto:chan@atlrdsgn.com'
       className='font-twk text-[16px] md:text-[18px] lowercase font-[300] leading-4 text-carbon-600 dark:text-carbon-400'>
       chan@atlrdsgn.com
-    </a>
+    </Link>
   </div>
 );
 
