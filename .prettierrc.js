@@ -14,10 +14,5 @@ module.exports = {
   trailingComma: 'all',
   embeddedLanguageFormatting: 'auto',
   htmlWhitespaceSensitivity: 'css',
-  parsers: 'babel',
-  tailwindConfig: "./tailwind.config.js",
   plugins: ['prettier-plugin-tailwindcss'],
-  pluginSearchDirs: [
- 		"."
- 	],
 };

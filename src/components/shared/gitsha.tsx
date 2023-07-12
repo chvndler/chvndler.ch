@@ -26,7 +26,6 @@ export const CommitSha = () => {
     const shortSha = sha.substring(0, 6);
     const commitLink = `https://github.com/${owner}/${slug}/tree/${sha}`;
 
-
     return (
       <div className='flex flex-row items-center justify-center gap-x-2'>
         <span className='text-carbon-500 dark:text-carbon-400'>SHA</span>

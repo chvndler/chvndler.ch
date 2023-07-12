@@ -3,6 +3,8 @@ import { AppController } from '@/components/layout';
 import type { Metadata } from 'next';
 import { TestSection } from '@/components/core';
 import { BadgeDefault, Space } from '@/components/shared';
+import { MobileArkMenu } from '@/components/primitives/dropdown/ark.menu';
+import { MobileRadixMenu } from '@/components/primitives/dropdown/drop.menu';
 export const metadata: Metadata = {
   title: 'dev.chandler.',
   description: 'Projects I have worked on, and am currently working on.',
@@ -18,6 +20,9 @@ export default function DevIndex() {
               Developer Test Suite
             </p>
           </span>
+
+          <MobileArkMenu />
+          <MobileRadixMenu />
 
           <section>
             <p className='font-twk text-[40px] font-[550] uppercase leading-[4rem] text-carbon-600'>
@@ -46,12 +51,12 @@ export default function DevIndex() {
             <p className='font-inter text-[40px] font-[600] leading-[4rem] text-carbon-600'>
               Inter Bold / 40px / 600
             </p>
-                        <p className='font-mono text-[30px] font-[600] leading-[4rem] text-carbon-600'>
+            <p className='font-mono text-[30px] font-[600] leading-[4rem] text-carbon-600'>
               IBM Plex Mono Bold / 30px / 600
             </p>
           </section>
 
-                    <section>
+          <section>
             <div className='font-twk font-[400]'>
               <p className='text-[18px] font-[600] leading-[4rem] text-jade'>
                 TWK Lausanne
@@ -111,7 +116,6 @@ export default function DevIndex() {
               </p>
             </div>
           </section>
-
 
           <section>
             <div className='font-mono font-[400]'>
@@ -181,7 +185,6 @@ export default function DevIndex() {
             </p>
           </section>
 
-
           <Space />
           <Space />
           <section className='font-mono'>
@@ -198,18 +201,18 @@ export default function DevIndex() {
               IBM Plex Mono SemiBold
             </p>
 
-                        <p className='text-[20px] font-[700] leading-[4rem] text-carbon-600'>
-             IBM Plex Mono Bold
+            <p className='text-[20px] font-[700] leading-[4rem] text-carbon-600'>
+              IBM Plex Mono Bold
             </p>
           </section>
 
-          <div className='text-sm font-bold uppercase font-favorit'>
+          <div className='font-favorit text-sm font-bold uppercase'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
-          <div className='text-sm font-bold uppercase font-sohne'>
+          <div className='font-sohne text-sm font-bold uppercase'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
-          <div className='text-sm font-bold uppercase font-inter'>
+          <div className='font-inter text-sm font-bold uppercase'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
 

@@ -1,8 +1,8 @@
 // src/app/components/refresh-on-focus.tsx
-"use client";
+'use client';
 
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 function useRefreshOnFocus() {
   const { refresh } = useRouter();
@@ -12,10 +12,10 @@ function useRefreshOnFocus() {
       refresh();
     };
 
-    window.addEventListener("focus", onFocus);
+    window.addEventListener('focus', onFocus);
 
     return () => {
-      window.removeEventListener("focus", onFocus);
+      window.removeEventListener('focus', onFocus);
     };
   }, [refresh]);
 

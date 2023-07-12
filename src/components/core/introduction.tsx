@@ -10,11 +10,11 @@ export const Introduction = () => (
   <section
     id='intro-sect'
     className=''>
-    <div className='flex flex-col items-center mx-auto'>
-      <div className='flex flex-col w-full mx-auto text-left'>
-        <div className='w-full mx-auto'>
+    <div className='mx-auto flex flex-col items-center'>
+      <div className='mx-auto flex w-full flex-col text-left'>
+        <div className='mx-auto w-full'>
           <NumberEmail />
-          <p className='max-w-[510px] font-twk text-[16px] md:text-[18px] lowercase font-[300] leading-5 md:leading-6 text-carbon-600 dark:text-carbon-400'>
+          <p className='max-w-[510px] font-twk text-[16px] font-[300] lowercase leading-5 text-carbon-600 dark:text-carbon-400 md:text-[18px] md:leading-6'>
             Creating cool and taking notes, enjoying the internet and
             open-source. Interested in design systems, component architectures,
             TypeScript, and React. The focus in the moment is silencing the

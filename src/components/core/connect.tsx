@@ -6,16 +6,17 @@ import { cn } from '@/lib/utils';
 
 export const Connect = () => (
   <div className='font-favorit'>
-    <p className={cn(
-      'pb-4 text-[15px] font-favorit font-[600]', 
-      'uppercase leading-6 text-jade'
+    <p
+      className={cn(
+        'pb-4 font-favorit text-[15px] font-[600]',
+        'uppercase leading-6 text-jade',
       )}>
       Connect
     </p>
-    <div className='grid gap-2 mt-3 gap-y-3'>
+    <div className='mt-3 grid gap-2 gap-y-3'>
       {connects.map((template, id) => (
         <div key={id}>
-          <div className='grid items-start grid-cols-1 text-carbon-500 md:grid-cols-3'>
+          <div className='grid grid-cols-1 items-start text-carbon-500 md:grid-cols-3'>
             <p
               key={template.type}
               className='font-favorit text-[13px] font-[500] uppercase text-carbon-500 dark:text-carbon-300'>

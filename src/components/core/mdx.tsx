@@ -14,16 +14,17 @@ function clsx(...args: any) {
  * build components.
  */
 
-
-
-
 const IFrame = ({ src }: MDXIFrameProps) => {
   return (
-    <section className="w-full">
-      <iframe src={src} allowFullScreen className='w-full aspect-video' />
+    <section className='w-full'>
+      <iframe
+        src={src}
+        allowFullScreen
+        className='aspect-video w-full'
+      />
     </section>
   );
-}
+};
 
 const Image = (props: MDXImageProps) => <NextImage {...props} />;
 const Space = (props: any) => (
