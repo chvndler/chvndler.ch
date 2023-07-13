@@ -1,7 +1,7 @@
 import { AppController } from '@/components/layout';
 import type { Metadata } from 'next';
 import { TestSection } from '@/components/core';
-import { MobileRadixMenu } from '@/components/primitives/dropdown/drop.menu';
+import { MobileMenu } from '@/components/primitives/drop.menu';
 
 export const metadata: Metadata = {
   title: 'dev.chandler.',
@@ -18,7 +18,7 @@ export default function PreviewIndex() {
               Preview Suite
             </p>
           </span>
-          <MobileRadixMenu />
+          <MobileMenu />
         </TestSection>
       </AppController>
     </>
