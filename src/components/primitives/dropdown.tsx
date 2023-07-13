@@ -29,7 +29,7 @@ const DropdownMenuSubTrigger = React.forwardRef<
     )}
     {...props}>
     {children}
-    <ChevronRight className='w-4 h-4 ml-auto' />
+    <ChevronRight className='ml-auto h-4 w-4' />
   </DropdownMenuPrimitive.SubTrigger>
 ));
 DropdownMenuSubTrigger.displayName =
@@ -61,11 +61,11 @@ const DropdownMenuContent = React.forwardRef<
       sideOffset={sideOffset}
       align={align}
       className={cn(
-        'bg-carbon-50 dark:bg-carbon-800 text-carbon-600 dark:text-carbon-100 data-[state=open]:animate-in data-[state=closed]:animate-out', 
-        'data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95', 
-        'data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2', 
-        'data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50', 
-        'overflow-hidden rounded-[9px] p-1 shadow-md min-w-[200px] outline-none',
+        'data-[state=open]:animate-in data-[state=closed]:animate-out bg-carbon-50 text-carbon-600 dark:bg-carbon-800 dark:text-carbon-100',
+        'data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95',
+        'data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2',
+        'data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50',
+        'min-w-[200px] overflow-hidden rounded-[9px] p-1 shadow-md outline-none',
         className,
       )}
       {...props}
@@ -83,9 +83,9 @@ const DropdownMenuItem = React.forwardRef<
   <DropdownMenuPrimitive.Item
     ref={ref}
     className={cn(
-      'focus:text-carbon-100 relative flex cursor-default select-none items-center rounded-[6px]',
-      'px-2 py-1.5 text-sm outline-none transition-colors data-[disabled]:pointer-events-none', 
-      'data-[disabled]:opacity-50 data-[highlighted]:bg-jade data-[highlighted]:text-carbon-50 data-[highlighted]:dark:text-carbon-800',
+      'relative flex cursor-default select-none items-center rounded-[6px] focus:text-carbon-100',
+      'px-2 py-1.5 text-sm outline-none transition-colors data-[disabled]:pointer-events-none',
+      'data-[highlighted]:bg-jade data-[highlighted]:text-carbon-50 data-[disabled]:opacity-50 data-[highlighted]:dark:text-carbon-800',
       inset && 'pl-8',
       className,
     )}
@@ -108,7 +108,7 @@ const DropdownMenuCheckboxItem = React.forwardRef<
     {...props}>
     <span className='absolute left-2 flex h-3.5 w-3.5 items-center justify-center'>
       <DropdownMenuPrimitive.ItemIndicator>
-        <Check className='w-4 h-4' />
+        <Check className='h-4 w-4' />
       </DropdownMenuPrimitive.ItemIndicator>
     </span>
     {children}
@@ -124,15 +124,15 @@ const DropdownMenuRadioItem = React.forwardRef<
   <DropdownMenuPrimitive.RadioItem
     ref={ref}
     className={cn(
-      'focus:bg-accent focus:text-accent-foreground relative flex cursor-default', 
-      'select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none', 
+      'focus:bg-accent focus:text-accent-foreground relative flex cursor-default',
+      'select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none',
       'transition-colors data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
       className,
     )}
     {...props}>
     <span className='absolute left-2 flex h-3.5 w-3.5 items-center justify-center'>
       <DropdownMenuPrimitive.ItemIndicator>
-        <Circle className='w-2 h-2 fill-current' />
+        <Circle className='h-2 w-2 fill-current' />
       </DropdownMenuPrimitive.ItemIndicator>
     </span>
     {children}
@@ -199,32 +199,4 @@ export {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuRadioGroup,
-};
-
-export const MobileRadixMenu = () => {
-  return (
-    <>
-     <div className='flex items-end justify-end'>
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-        <p
-            className={clsx(
-              'pt-0.5 text-right font-favorit text-[10px] font-[500] hover:cursor-pointer',
-              'uppercase leading-[20px] text-carbon-800 dark:text-carbon-200 ring-1', 
-              'ring-transparent',
-            )}>
-          MENU
-        </p>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent>
-            <DropdownMenuItem>Contact</DropdownMenuItem>
-          <DropdownMenuItem>Internet Projects</DropdownMenuItem>
-          <DropdownMenuItem>Film Projects</DropdownMenuItem>
-          <DropdownMenuItem>Interactions</DropdownMenuItem>
-          <DropdownMenuItem>Theme</DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
-    </div>
-    </>
-  );
 };

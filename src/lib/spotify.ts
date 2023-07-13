@@ -12,7 +12,7 @@ async function getAccessToken() {
   const response = await fetch(TOKEN_ENDPOINT, {
     method: 'POST',
     headers: {
-      'Authorization': `Basic ${basic}`,
+      Authorization: `Basic ${basic}`,
       'Content-Type': 'application/x-www-form-urlencoded',
     },
     // body:JSON.stringify(body)

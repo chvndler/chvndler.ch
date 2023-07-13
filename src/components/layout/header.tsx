@@ -1,6 +1,6 @@
 'use client';
 
-import { MobileRadixMenu } from '../primitives/dropdown/drop.menu';
+import { MobileMenu } from '../primitives/drop.menu';
 import Logo from '../shared/logo';
 import ThemeSwitch from '../shared/theme.toggle';
 import useWindowSize from '@/lib/hooks/use-window-size';
@@ -36,7 +36,7 @@ const Navigation = () => {
   if (windowSize.isMobile) {
     return (
       <>
-      <MobileRadixMenu />
+        <MobileMenu />
       </>
     );
   } else {
@@ -51,37 +51,3 @@ const Navigation = () => {
     );
   }
 };
-
-/*
-type Navigation = {
-  name?: string;
-  href?: string;
-  current?: boolean;
-};
-
-const navigation = [
-  { name: 'Projects', href: '/projects', current: false },
-  { name: 'Media', href: '/media', current: false },
-];
-
-
-function NavLinks() {
-  return (
-    <>
-      {navigation.map((item, it) => (
-        <Link
-          key={it}
-          href={item.href}
-          className={clsx(
-            'duration-400 ml-2 font-mono text-[13px] font-normal lowercase leading-[20px] tracking-tight',
-            'text-carbon-800 transition-colors ease-in-out hover:text-carbon-600 dark:text-carbon-200 dark:hover:text-carbon-600',
-          )}
-          aria-current='page'>
-          {item.name}
-        </Link>
-      ))}
-    </>
-  );
-}
-
-*/

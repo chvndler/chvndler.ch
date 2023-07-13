@@ -3,8 +3,7 @@ import { AppController } from '@/components/layout';
 import type { Metadata } from 'next';
 import { TestSection } from '@/components/core';
 import { BadgeDefault, Space } from '@/components/shared';
-import { MobileArkMenu } from '@/components/primitives/dropdown/ark.menu';
-import { MobileRadixMenu } from '@/components/primitives/dropdown/drop.menu';
+
 export const metadata: Metadata = {
   title: 'dev.chandler.',
   description: 'Projects I have worked on, and am currently working on.',
@@ -20,9 +19,6 @@ export default function DevIndex() {
               Developer Test Suite
             </p>
           </span>
-
-          <MobileArkMenu />
-          <MobileRadixMenu />
 
           <section>
             <p className='font-twk text-[40px] font-[550] uppercase leading-[4rem] text-carbon-600'>

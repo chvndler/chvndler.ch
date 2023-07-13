@@ -37,7 +37,7 @@ const getAccessToken = async () => {
     }),
     {
       headers: {
-        'Authorization': `Basic ${token}`,
+        Authorization: `Basic ${token}`,
         'Content-Type': 'application/x-www-form-urlencoded',
       },
     },
