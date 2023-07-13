@@ -1,5 +1,6 @@
 'use client';
 
+import { MobileRadixMenu } from '../primitives/dropdown/drop.menu';
 import Logo from '../shared/logo';
 import ThemeSwitch from '../shared/theme.toggle';
 import useWindowSize from '@/lib/hooks/use-window-size';
@@ -34,14 +35,9 @@ const Navigation = () => {
 
   if (windowSize.isMobile) {
     return (
-      <p
-        className={clsx(
-          'pt-0.5 text-right font-favorit text-[10px] font-[500]',
-          'uppercase leading-[20px] text-carbon-800 dark:text-carbon-200',
-        )}>
-        {/* <!-- we'll add a menu drop here --> */}
-        mobile
-      </p>
+      <>
+      <MobileRadixMenu />
+      </>
     );
   } else {
     return (

@@ -5,17 +5,13 @@ import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
 import { Check, ChevronRight, Circle } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
+import clsx from 'clsx';
 
 const DropdownMenu = DropdownMenuPrimitive.Root;
-
 const DropdownMenuTrigger = DropdownMenuPrimitive.Trigger;
-
 const DropdownMenuGroup = DropdownMenuPrimitive.Group;
-
 const DropdownMenuPortal = DropdownMenuPrimitive.Portal;
-
 const DropdownMenuSub = DropdownMenuPrimitive.Sub;
-
 const DropdownMenuRadioGroup = DropdownMenuPrimitive.RadioGroup;
 
 const DropdownMenuSubTrigger = React.forwardRef<
@@ -33,7 +29,7 @@ const DropdownMenuSubTrigger = React.forwardRef<
     )}
     {...props}>
     {children}
-    <ChevronRight className='ml-auto h-4 w-4' />
+    <ChevronRight className='w-4 h-4 ml-auto' />
   </DropdownMenuPrimitive.SubTrigger>
 ));
 DropdownMenuSubTrigger.displayName =
@@ -58,13 +54,18 @@ DropdownMenuSubContent.displayName =
 const DropdownMenuContent = React.forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Content>
->(({ className, sideOffset = 4, ...props }, ref) => (
+>(({ className, sideOffset = 4, align = 'end', ...props }, ref) => (
   <DropdownMenuPrimitive.Portal>
     <DropdownMenuPrimitive.Content
       ref={ref}
       sideOffset={sideOffset}
+      align={align}
       className={cn(
-        'bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[8rem] overflow-hidden rounded-md border p-1 shadow-md',
+        'bg-carbon-50 dark:bg-carbon-800 text-carbon-600 dark:text-carbon-100 data-[state=open]:animate-in data-[state=closed]:animate-out', 
+        'data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95', 
+        'data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2', 
+        'data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50', 
+        'overflow-hidden rounded-[9px] p-1 shadow-md min-w-[200px] outline-none',
         className,
       )}
       {...props}
@@ -82,7 +83,9 @@ const DropdownMenuItem = React.forwardRef<
   <DropdownMenuPrimitive.Item
     ref={ref}
     className={cn(
-      'focus:bg-accent focus:text-accent-foreground relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+      'focus:text-carbon-100 relative flex cursor-default select-none items-center rounded-[6px]',
+      'px-2 py-1.5 text-sm outline-none transition-colors data-[disabled]:pointer-events-none', 
+      'data-[disabled]:opacity-50 data-[highlighted]:bg-jade data-[highlighted]:text-carbon-50 data-[highlighted]:dark:text-carbon-800',
       inset && 'pl-8',
       className,
     )}
@@ -105,7 +108,7 @@ const DropdownMenuCheckboxItem = React.forwardRef<
     {...props}>
     <span className='absolute left-2 flex h-3.5 w-3.5 items-center justify-center'>
       <DropdownMenuPrimitive.ItemIndicator>
-        <Check className='h-4 w-4' />
+        <Check className='w-4 h-4' />
       </DropdownMenuPrimitive.ItemIndicator>
     </span>
     {children}
@@ -121,13 +124,15 @@ const DropdownMenuRadioItem = React.forwardRef<
   <DropdownMenuPrimitive.RadioItem
     ref={ref}
     className={cn(
-      'focus:bg-accent focus:text-accent-foreground relative flex cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
+      'focus:bg-accent focus:text-accent-foreground relative flex cursor-default', 
+      'select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none', 
+      'transition-colors data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
       className,
     )}
     {...props}>
     <span className='absolute left-2 flex h-3.5 w-3.5 items-center justify-center'>
       <DropdownMenuPrimitive.ItemIndicator>
-        <Circle className='h-2 w-2 fill-current' />
+        <Circle className='w-2 h-2 fill-current' />
       </DropdownMenuPrimitive.ItemIndicator>
     </span>
     {children}
@@ -199,17 +204,27 @@ export {
 export const MobileRadixMenu = () => {
   return (
     <>
+     <div className='flex items-end justify-end'>
       <DropdownMenu>
-        <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+        <DropdownMenuTrigger asChild>
+        <p
+            className={clsx(
+              'pt-0.5 text-right font-favorit text-[10px] font-[500] hover:cursor-pointer',
+              'uppercase leading-[20px] text-carbon-800 dark:text-carbon-200 ring-1', 
+              'ring-transparent',
+            )}>
+          MENU
+        </p>
+        </DropdownMenuTrigger>
         <DropdownMenuContent>
-          <DropdownMenuLabel>My Account</DropdownMenuLabel>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem>Profile</DropdownMenuItem>
-          <DropdownMenuItem>Billing</DropdownMenuItem>
-          <DropdownMenuItem>Team</DropdownMenuItem>
-          <DropdownMenuItem>Subscription</DropdownMenuItem>
+            <DropdownMenuItem>Contact</DropdownMenuItem>
+          <DropdownMenuItem>Internet Projects</DropdownMenuItem>
+          <DropdownMenuItem>Film Projects</DropdownMenuItem>
+          <DropdownMenuItem>Interactions</DropdownMenuItem>
+          <DropdownMenuItem>Theme</DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
+    </div>
     </>
   );
 };

@@ -36,14 +36,15 @@ export const MobileArkMenu = () => {
           <p
             className={clsx(
               'pt-0.5 text-right font-favorit text-[10px] font-[500] hover:cursor-pointer',
-              'uppercase leading-[20px] text-carbon-800 dark:text-carbon-200',
+              'uppercase leading-[20px] text-carbon-800 dark:text-carbon-200 ring-1', 
+              'ring-transparent',
             )}>
             MENU
           </p>
         </MenuTrigger>
         <Portal>
           <MenuPositioner>
-            <MenuContent className='min-w-[200px] rounded-[12px] bg-carbon-50 p-[2px] shadow-lg dark:bg-carbon-800'>
+            <MenuContent className='min-w-[200px] rounded-[8px] bg-carbon-50 p-[2px] shadow-lg dark:bg-carbon-800 ring-transparent'>
               <DropdownMenuItem id='edit'>Edit</DropdownMenuItem>
               <DropdownMenuItem id='delete'>Delete</DropdownMenuItem>
             </MenuContent>
@@ -63,7 +64,7 @@ const DropdownMenuItem = React.forwardRef<
   <DropdownItem
     ref={ref}
     className={cn(
-      'rounded-[9px] bg-transparent dark:hover:bg-carbon-900',
+      'rounded-[6px] bg-transparent dark:hover:bg-carbon-900',
       'px-3 py-1.5 text-left text-sm transition-colors hover:bg-carbon-100',
       'data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
       inset && 'pl-8',
