@@ -1,4 +1,5 @@
 import React from 'react';
+import { AppController } from '@/components/layout';
 /*
  * Copyright (C) 2023 @chvndler
  * All Rights Reserved.
@@ -9,7 +10,6 @@ import React from 'react';
  *
  * See https://github.com/chvndler/chvndler.ch/license
  */
-import { AppController } from '@/components/layout';
 
 import {
   Connect,
