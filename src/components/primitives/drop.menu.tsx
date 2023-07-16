@@ -47,6 +47,9 @@ export const MobileMenu = () => {
             <DropdownMenuItem>
               <Link href='/interact'>Interactions</Link>
             </DropdownMenuItem>
+            <DropdownMenuItem onClick={handleTheme}>
+              {theme === 'light' ? 'Dark' : 'Light'} Mode
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
