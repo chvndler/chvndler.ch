@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { NumberEmail } from './number.email';
+import { cn } from '@/lib/utils';
 
 // server
 
@@ -14,7 +15,11 @@ export const Introduction = () => (
       <div className='mx-auto flex w-full flex-col text-left'>
         <div className='mx-auto w-full'>
           <NumberEmail />
-          <p className='max-w-[510px] font-twk text-[16px] font-[300] lowercase leading-5 text-carbon-600 dark:text-carbon-400 md:text-[18px] md:leading-6'>
+          <p
+            className={cn(
+              'max-w-[510px] font-twk text-[16px] font-[300] lowercase leading-5 text-carbon-600',
+              'dark:text-carbon-400 md:text-[18px] md:leading-6',
+            )}>
             Creating cool and taking notes, enjoying the internet and
             open-source. Interested in design systems, component architectures,
             TypeScript, and React. The focus in the moment is silencing the

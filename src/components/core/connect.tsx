@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 // server
 
 export const Connect = () => (
-  <div className='font-favorit'>
+  <div className=''>
     <p
       className={cn(
         'pb-4 font-favorit text-[15px] font-[600]',

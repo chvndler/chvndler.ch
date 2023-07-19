@@ -1,7 +1,4 @@
 import type { ComponentType } from 'react';
-
-// import all components..
-
 import {
   //
   MenuContext,

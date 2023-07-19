@@ -13,7 +13,7 @@
     "pretty": "prettier --write ."
   },
   "dependencies": {
-    "@mux/mux-player-react": "latest",
+    "@mux/mux-player-react": "^1.11.4",
     "@next/mdx": "^13.4.3",
     "@radix-ui/react-collapsible": "^1.0.3",
     "@radix-ui/react-dialog": "^1.0.4",
