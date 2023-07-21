@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Chandler Chappell',
     description: 'Personal site.',
-    creator: '@chvndler',
+    creator: '@chvndlerch',
     images: ['/og-green.jpg'],
   },
   category: '',
