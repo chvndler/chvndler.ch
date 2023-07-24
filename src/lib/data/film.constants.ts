@@ -1,6 +1,7 @@
 import { type MuxVideoProperties } from './types';
 
 const urlPosterPrefix = 'https://cdn.chvndler.ch/assets/img/';
+const thumbnailPrefix = 'https://image.mux.com/';
 
 const film001: MuxVideoProperties = {
   name: '2019 Film Reel.',
@@ -51,10 +52,10 @@ const film006: MuxVideoProperties = {
 };
 
 const film007: MuxVideoProperties = {
-  name: 'live or die.',
-  title: 'live or die.',
-  id: 'fv00fLo01KSmZPEm9GPmrSijBtVgFdPqOy9y00hS6gg5uw',
-  poster: `${urlPosterPrefix}live-or-die.jpg`,
+  name: 'champions® gymnastics',
+  title: 'champions® gymnastics',
+  id: 'OeaRWaw3MMWE8x6qPvaL9zvr02vRpwu1ffh6e2gF4qBY',
+  poster: `${thumbnailPrefix}OeaRWaw3MMWE8x6qPvaL9zvr02vRpwu1ffh6e2gF4qBY/thumbnail.png?width=1920&height=1080&time=01`,
   url: '',
 };
 
@@ -78,7 +79,7 @@ const film010: MuxVideoProperties = {
   name: 'road to 400.',
   title: 'road to 400.',
   id: '1O9NitmAaQkZDHVCjPXsxM5zKCPhixPTzDgoQBJCmhw',
-  poster: `https://image.mux.com/1O9NitmAaQkZDHVCjPXsxM5zKCPhixPTzDgoQBJCmhw/thumbnail.png?width=214&height=121&time=29&fit_mode=smartcrop`,
+  poster: `${thumbnailPrefix}1O9NitmAaQkZDHVCjPXsxM5zKCPhixPTzDgoQBJCmhw/thumbnail.png?width=214&height=121&time=29&fit_mode=smartcrop`,
   url: '',
 };
 
@@ -87,6 +88,14 @@ const film011: MuxVideoProperties = {
   title: 'wolves in vancouver.',
   id: 'hoT6g1iK4ypoiCEvCyvi5tDq201J2Ff8OHkp4lndz25Q',
   poster: `${urlPosterPrefix}2019.jpg`,
+  url: '',
+};
+
+const film012: MuxVideoProperties = {
+  name: 'pharro: fill my cup up.',
+  title: 'pharro: fill my cup up.',
+  id: 'vGDpLoXU4gbyNPQlHK5S7jWEFbIVej75YYuT012wdStM',
+  poster: `${urlPosterPrefix}aqua.jpg`,
   url: '',
 };
 
@@ -102,6 +111,7 @@ export const filmTypes: Record<string, MuxVideoProperties> = {
   film009,
   film010,
   film011,
+  film012,
 };
 
 export const films = Object.values(filmTypes);

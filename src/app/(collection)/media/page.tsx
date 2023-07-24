@@ -19,7 +19,7 @@ export default function MediaIndex() {
       <AppController>
         <section className='container mx-auto max-w-[620px] py-10'>
           <h3 className='mb-2 font-favorit text-2xl font-[400] uppercase tracking-tight text-carbon-700 dark:text-carbon-100 lg:text-3xl'>
-            SOME OF MY <span className='font-favorit font-[600]'>FILMS</span>
+            MOTION <span className='font-favorit font-[600]'>PROJECTS</span>
           </h3>
           <p className='max-w-md font-favorit text-[9px] font-medium text-carbon-400 dark:text-carbon-500 lg:text-[10px]'>
             {copy.copyright.text}
