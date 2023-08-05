@@ -21,6 +21,9 @@ export default function DevIndex() {
           </span>
 
           <section>
+            <p className='font-baikal text-[40px] font-[550] uppercase leading-[4rem] text-carbon-600'>
+              Baikal
+            </p>
             <p className='font-twk text-[40px] font-[550] uppercase leading-[4rem] text-carbon-600'>
               TWK Lausanne
             </p>
@@ -50,6 +53,22 @@ export default function DevIndex() {
             <p className='font-mono text-[30px] font-[600] leading-[4rem] text-carbon-600'>
               IBM Plex Mono Bold / 30px / 600
             </p>
+          </section>
+
+          <section>
+            <div className='font-baikal font-[400]'>
+              <p className='text-[18px] font-[600] leading-[4rem] text-carbon-800'>
+                Baikal
+              </p>
+
+              <p className='font-baikal text-[17px] font-[350] leading-6 text-carbon-600'>
+                The cozy cabin nestled amidst towering pines, exuding rustic
+                charm and tranquility. Sunbeams pierced through ancient
+                branches, casting ethereal patterns on weathered floorboards. A
+                crackling hearth danced with warmth, inviting laughter and
+                storytelling.
+              </p>
+            </div>
           </section>
 
           <section>
@@ -128,6 +147,36 @@ export default function DevIndex() {
             </div>
           </section>
 
+          <section className='font-baikal'>
+            <p className='text-[20px] font-[350] leading-[4rem] text-carbon-600'>
+              Baikal Book
+            </p>
+            <p className='text-[20px] font-[400] leading-[4rem] text-carbon-600'>
+              Baikal Regular
+            </p>
+            <p className='text-[20px] font-[500] leading-[4rem] text-carbon-600'>
+              Baikal Medium
+            </p>
+            <p className='text-[20px] font-[600] leading-[4rem] text-carbon-600'>
+              Baikal Bold
+            </p>
+          </section>
+
+          <section className='font-twk'>
+            <p className='text-[20px] font-[350] leading-[4rem] text-carbon-600'>
+              TWK Lausanne Book
+            </p>
+            <p className='text-[20px] font-[400] leading-[4rem] text-carbon-600'>
+              TWK Lausanne Regular
+            </p>
+            <p className='text-[20px] font-[500] leading-[4rem] text-carbon-600'>
+              TWK Lausanne Medium
+            </p>
+            <p className='text-[20px] font-[600] leading-[4rem] text-carbon-600'>
+              TWK Lausanne Bold
+            </p>
+          </section>
+
           <section className='font-favorit'>
             <p className='text-[20px] font-[350] leading-[4rem] text-carbon-600'>
               Favorit Book
@@ -147,8 +196,6 @@ export default function DevIndex() {
             </p>
           </section>
 
-          <Space />
-          <Space />
           <section className='font-sohne'>
             <p className='text-[20px] font-[350] leading-[4rem] text-carbon-600'>
               Sohne Regular
@@ -164,8 +211,6 @@ export default function DevIndex() {
             </p>
           </section>
 
-          <Space />
-          <Space />
           <section className='font-inter'>
             <p className='text-[20px] font-[350] leading-[4rem] text-carbon-600'>
               Inter Regular
@@ -181,8 +226,6 @@ export default function DevIndex() {
             </p>
           </section>
 
-          <Space />
-          <Space />
           <section className='font-mono'>
             <p className='text-[20px] font-[400] leading-[4rem] text-carbon-600'>
               IBM Plex Mono Regular
@@ -202,6 +245,15 @@ export default function DevIndex() {
             </p>
           </section>
 
+          <Space />
+          <Space />
+
+          <div className='font-baikal text-sm font-medium uppercase'>
+            Fragrant blossoms danced in the gentle breeze.
+          </div>
+          <div className='font-twk text-sm font-bold uppercase'>
+            Fragrant blossoms danced in the gentle breeze.
+          </div>
           <div className='font-favorit text-sm font-bold uppercase'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
@@ -211,10 +263,33 @@ export default function DevIndex() {
           <div className='font-inter text-sm font-bold uppercase'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
-
           <div className='font-mono text-sm font-[450] uppercase'>
             Fragrant blossoms danced in the gentle breeze.
           </div>
+
+          <Space />
+
+          <div className='font-baikal text-sm font-medium lowercase'>
+            Fragrant blossoms danced in the gentle breeze.
+          </div>
+          <div className='font-twk text-sm font-bold lowercase'>
+            Fragrant blossoms danced in the gentle breeze.
+          </div>
+          <div className='font-favorit text-sm font-bold lowercase'>
+            Fragrant blossoms danced in the gentle breeze.
+          </div>
+          <div className='font-sohne text-sm font-bold lowercase'>
+            Fragrant blossoms danced in the gentle breeze.
+          </div>
+          <div className='font-inter text-sm font-bold lowercase'>
+            Fragrant blossoms danced in the gentle breeze.
+          </div>
+          <div className='font-mono text-sm font-[450] lowercase'>
+            Fragrant blossoms danced in the gentle breeze.
+          </div>
+
+          <Space />
+          <Space />
 
           <BadgeDefault>Default</BadgeDefault>
 

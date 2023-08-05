@@ -8,6 +8,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
+      baikal: ['Baikal', 'sans-serif'],
       favorit: ['ABC Favorit', 'sans-serif'],
       inter: ['Inter V', 'sans-serif'],
       sohne: ['Söhne', 'sans-serif'],

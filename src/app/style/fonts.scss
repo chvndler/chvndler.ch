@@ -1,6 +1,22 @@
 $prefix: '/fonts/' !default;
 
 /**
+ * 
+ * Baikal
+ */
+
+@font-face {
+  font-family: 'Baikal';
+  font-weight: 100 900;
+  font-stretch: 25% 100%;
+  font-display: block;
+  font-style: normal;
+  src:
+    url('#{$prefix}baikal/Baikal-VF.woff2') format('woff2'),
+    url('#{$prefix}baikal/Baikal-VF.ttf') format('ttf');
+}
+
+/**
   *
   * Favorit Font
   */
