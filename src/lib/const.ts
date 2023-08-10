@@ -20,15 +20,17 @@ export const siteURL = new URL(process.env.NEXT_PUBLIC_SITE_URL);
 export const siteOrigin = siteURL.origin;
 
 export const siteLog = `
-      (           
-   (  )\ )   (    
-   )\(()/(   )\   
- (((_)/(_))(((_)  
- )\__(_))_ )\___  
-((/ __|   ((/ __| 
- | (__| |) | (__  
-  \___|___/ \___| 
-                                                                                   
-   © 2023 CDC®. All rights reserved. 
-   https://www.chvndler.ch/
+
+      ::::::::  :::::::::   :::::::: 
+    :+:    :+: :+:    :+: :+:    :+: 
+   +:+        +:+    +:+ +:+         
+  +#+        +#+    +:+ +#+          
+ +#+        +#+    +#+ +#+           
+#+#    #+# #+#    #+# #+#    #+#     
+########  #########   ########       
+
+--------------------------------------
+
+© 2023 CDC®. All rights reserved. 
+https://www.chvndler.ch/
 `;
