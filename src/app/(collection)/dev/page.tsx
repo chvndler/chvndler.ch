@@ -243,19 +243,19 @@ export default function DevIndex() {
         <Space />
         <Space />
 
-        <div className='text-sm font-medium uppercase font-baikal'>
+        <div className='font-baikal text-sm font-medium uppercase'>
           Fragrant blossoms danced in the gentle breeze.
         </div>
-        <div className='text-sm font-bold uppercase font-twk'>
+        <div className='font-twk text-sm font-bold uppercase'>
           Fragrant blossoms danced in the gentle breeze.
         </div>
-        <div className='text-sm font-bold uppercase font-favorit'>
+        <div className='font-favorit text-sm font-bold uppercase'>
           Fragrant blossoms danced in the gentle breeze.
         </div>
-        <div className='text-sm font-bold uppercase font-sohne'>
+        <div className='font-sohne text-sm font-bold uppercase'>
           Fragrant blossoms danced in the gentle breeze.
         </div>
-        <div className='text-sm font-bold uppercase font-inter'>
+        <div className='font-inter text-sm font-bold uppercase'>
           Fragrant blossoms danced in the gentle breeze.
         </div>
         <div className='font-mono text-sm font-[450] uppercase'>
@@ -264,19 +264,19 @@ export default function DevIndex() {
 
         <Space />
 
-        <div className='text-sm font-medium lowercase font-baikal'>
+        <div className='font-baikal text-sm font-medium lowercase'>
           Fragrant blossoms danced in the gentle breeze.
         </div>
-        <div className='text-sm font-bold lowercase font-twk'>
+        <div className='font-twk text-sm font-bold lowercase'>
           Fragrant blossoms danced in the gentle breeze.
         </div>
-        <div className='text-sm font-bold lowercase font-favorit'>
+        <div className='font-favorit text-sm font-bold lowercase'>
           Fragrant blossoms danced in the gentle breeze.
         </div>
-        <div className='text-sm font-bold lowercase font-sohne'>
+        <div className='font-sohne text-sm font-bold lowercase'>
           Fragrant blossoms danced in the gentle breeze.
         </div>
-        <div className='text-sm font-bold lowercase font-inter'>
+        <div className='font-inter text-sm font-bold lowercase'>
           Fragrant blossoms danced in the gentle breeze.
         </div>
         <div className='font-mono text-sm font-[450] lowercase'>
@@ -288,7 +288,7 @@ export default function DevIndex() {
         <Space />
         <Space />
 
-        <div className='flex flex-col w-full md:flex-row'>
+        <div className='flex w-full flex-col md:flex-row'>
           <div className='p-4 md:w-1/2'>
             <h3 className='font-baikal text-3xl font-[620]'>
               Let's make cool shit.

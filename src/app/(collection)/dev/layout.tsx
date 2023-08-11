@@ -5,7 +5,7 @@ export default function FullWidthLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <div className='flex flex-col w-full md:flex-row'>{children}</div>;
+  return <div className='flex w-full flex-col md:flex-row'>{children}</div>;
 }
 
 /*

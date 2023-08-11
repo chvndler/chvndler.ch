@@ -8,7 +8,7 @@ export const Connect = () => (
   <div className=''>
     <p
       className={cn(
-        'pb-4 font-twk text-[15px] font-[600]',
+        'pb-4 font-inter text-[16px] font-[700]',
         'leading-6 text-jade',
       )}>
       Connect

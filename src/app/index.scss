@@ -25,7 +25,6 @@
     --globalnav-filter: blur(20px);
     --globalnav-saturate: saturate(180%);
 
-
     --header-height: 48px;
     --footer-height: 50px;
     --page-top: 128px;
@@ -163,7 +162,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 html.dark,
 html[data-theme='dark'] {
   --kit-bg: rgba(23, 23, 23, 1);
@@ -201,7 +199,6 @@ body {
   transition: opacity 0.6s ease-in-out !important;
 }
 
-
 html.dark body {
   color: var(--kit-color);
   background: var(--kit-bg) !important;
@@ -209,19 +206,31 @@ html.dark body {
 }
 
 html.dark div.verticalFade {
-    &[data-side='top'] {
-      top: 0;
-      background: linear-gradient(to top, transparent, var(--v-fade-dark)) !important;
-      mask-image: linear-gradient(to bottom, var(--v-fade-dark) 25%, transparent) !important;
-    }
+  &[data-side='top'] {
+    top: 0;
+    background: linear-gradient(
+      to top,
+      transparent,
+      var(--v-fade-dark)
+    ) !important;
+    mask-image: linear-gradient(
+      to bottom,
+      var(--v-fade-dark) 25%,
+      transparent
+    ) !important;
+  }
 }
 
 html.light div.verticalFade {
-    &[data-side='top'] {
-      top: 0;
-      background: linear-gradient(to top, transparent, var(--v-fade)) !important;
-      mask-image: linear-gradient(to bottom, var(--v-fade) 25%, transparent) !important;
-    }
+  &[data-side='top'] {
+    top: 0;
+    background: linear-gradient(to top, transparent, var(--v-fade)) !important;
+    mask-image: linear-gradient(
+      to bottom,
+      var(--v-fade) 25%,
+      transparent
+    ) !important;
+  }
 }
 
 .nav.dark {
@@ -255,4 +264,3 @@ small {
   color: var(--kit-color) !important;
   -webkit-text-fill-color: var(--kit-color) !important;
 }
-

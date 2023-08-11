@@ -17,7 +17,7 @@ export const Introduction = () => (
           <NumberEmail />
           <p
             className={cn(
-              'font-sogne max-w-[510px] text-[15px] font-[400] lowercase leading-5 text-carbon-600',
+              'font-sogne max-w-[510px] text-[15px] font-[500] lowercase leading-5 text-carbon-400',
               'dark:text-carbon-400 md:text-[16px] md:leading-6',
             )}>
             Creating cool and taking notes, enjoying the internet and
@@ -27,7 +27,7 @@ export const Introduction = () => (
             <Link
               href={altrdsgn}
               target='_blank'
-              className='text-carbon font-[500] hover:opacity-70 dark:text-carbon-500 dark:hover:opacity-70'>
+              className='text-carbon font-[600] hover:text-azure hover:opacity-70 dark:text-carbon-500 dark:hover:opacity-70'>
               atlrdsgn⌝
             </Link>
             .

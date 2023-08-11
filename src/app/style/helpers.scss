@@ -61,8 +61,15 @@ mux-player {
     * --pip-button: none;
     */
 }
+.media-control-bar {
+  display: none !important;
+}
 
-.media-text-display {
+.media-text-display.title-display {
+  display: none !important;
+}
+
+.title-display {
   display: none !important;
 }
 
@@ -71,6 +78,7 @@ mux-player {
     media-text-display,
     media-playback-rate-button[role='button']
   ) {
+  display: none !important;
   color: inherit;
   font-weight: 600 !important;
   line-height: 24px;
@@ -122,19 +130,17 @@ code::after {
   backdrop-filter: blur(1px);
   will-change: transform;
 
-    &[data-side='top'] {
-      top: 0;
-      background: linear-gradient(to top, transparent, var(--v-fade));
-      mask-image: linear-gradient(to bottom, var(--v-fade) 25%, transparent);
-    }
+  &[data-side='top'] {
+    top: 0;
+    background: linear-gradient(to top, transparent, var(--v-fade));
+    mask-image: linear-gradient(to bottom, var(--v-fade) 25%, transparent);
+  }
 
   &[data-side='bottom'] {
     bottom: 0;
     background: linear-gradient(to bottom, transparent, hsl(0 0% 99%));
     mask-image: linear-gradient(to top, var(--gray12) 25%, transparent);
   }
-
-
 }
 
 .horizontalFade {
