@@ -64,7 +64,7 @@ export default async function PostPage({ params }: PostProps) {
         <article
           key={post._id}
           className={cn(
-            'text-md prose prose-neutral mb-20 text-blackA11 dark:prose-invert',
+            'text-md prose prose-neutral mb-20 py-10 text-blackA11 dark:prose-invert',
             'prose-h2:font-sohne prose-h2:text-4xl prose-h2:font-[600] prose-h2:tracking-tight prose-h3:text-2xl',
             'prose-h3:font-[800] prose-h3:tracking-tight prose-p:font-sohne prose-p:text-[400] dark:text-whiteA9',
           )}>
@@ -73,16 +73,16 @@ export default async function PostPage({ params }: PostProps) {
               <RouterPrev />
             </Link>
 
-            <div className='flex flex-row items-center gap-1 mt-4 font-mono uppercase'>
+            <div className='mt-4 flex flex-row items-center gap-1 font-mono uppercase'>
               <FormattedDateString postDate={post} />
               <ProjectTags pro={post} />
             </div>
 
             <div className='my-6'>
-              <h2 className='leading-4 tracking-tight prose-h2 font-favorit text-blackA11 dark:text-whiteA11'>
+              <h2 className='prose-h2 font-favorit leading-4 tracking-tight text-blackA11 dark:text-whiteA11'>
                 {post.title}
               </h2>
-              <p className='max-w-lg leading-6 text-md font-favorit text-carbon-800 dark:text-whiteA8'>
+              <p className='text-md max-w-lg font-favorit leading-6 text-carbon-800 dark:text-whiteA8'>
                 {post.description}
               </p>
               {post.git && (

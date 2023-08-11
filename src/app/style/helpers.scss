@@ -106,41 +106,90 @@ code::after {
   background: transparent;
 }
 
-/*
-html::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+@media (max-width: 960px) {
+  .horizontalFade {
+    display: none;
+  }
 }
 
-::-webkit-scrollbar {
-  z-index: 999999 !important;
-  width: var(--scrollbar-size);
-  height: var(--scrollbar-size);
+.verticalFade {
+  position: fixed;
+  pointer-events: none;
+  user-select: none;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+  backdrop-filter: blur(1px);
+  will-change: transform;
+
+    &[data-side='top'] {
+      top: 0;
+      background: linear-gradient(to top, transparent, var(--v-fade));
+      mask-image: linear-gradient(to bottom, var(--v-fade) 25%, transparent);
+    }
+
+  &[data-side='bottom'] {
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, hsl(0 0% 99%));
+    mask-image: linear-gradient(to top, var(--gray12) 25%, transparent);
+  }
+
+
 }
 
-::-webkit-scrollbar-button,
-::-webkit-scrollbar-corner {
-  display: none;
+.horizontalFade {
+  ---fadeColor: rgba(255, 255, 255, 0.00001);
+  width: 20vw;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 3;
+  opacity: 1;
+  min-width: 120px;
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+  user-select: none;
+
+  &[data-side='left'] {
+    background: linear-gradient(to left, var(---fadeColor), var(--gray1));
+    mask-image: linear-gradient(to right, var(--gray1), var(---fadeColor));
+    left: -24px;
+  }
+
+  &[data-side='right'] {
+    background: linear-gradient(to right, var(---fadeColor), var(--gray1));
+    mask-image: linear-gradient(to left, var(--gray1), var(---fadeColor));
+    right: 0;
+  }
 }
 
-::-webkit-scrollbar-thumb {
-  min-height: var(--scrollbar-size-min);
-  min-width: var(--scrollbar-size-min);
-  background-color: var(--scrollbar-color);
-  border-radius: var(--scrollbar-size);
-  border: 5px solid transparent;
-  background-clip: padding-box;
-}
+.line {
+  position: absolute;
+  z-index: 2;
 
-html.dark ::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-dark);
-}
+  &[data-variant='defined'] {
+    opacity: 0.8;
+  }
 
-::-webkit-scrollbar-track {
-  background-color: transparent !important;
-}
+  &[data-variant='subtle'] {
+    opacity: 0.6;
+  }
 
-::-webkit-resizer {
-  display: none;
+  &[data-direction='horizontal'] {
+    height: 1px;
+    width: 500vw;
+    background: var(--app-gray);
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  &[data-direction='vertical'] {
+    width: 1px;
+    height: 500vw;
+    background: linear-gradient(
+      to bottom,
+      var(--app-gray) 0%,
+      transparent 100%
+    );
+  }
 }
-*/

@@ -25,9 +25,8 @@ module.exports = {
       B900: '#1d1d1d',
 
       charcoal: '#343433',
-      carbon: '#484645',
-      jade: '#00C454',
-      jaded: '#44C67F',
+      jade: '#81B85B',
+      jaded: '#81B85B',
       azure: '#0086FC',
       sun: '#FF3F00',
       paleSky: '#6A7280',
@@ -159,14 +158,20 @@ module.exports = {
       },
     },
     extend: {
-      typography: (theme) => ({
+      typography: (theme: (arg0: string) => any) => ({
         //..
         '--tw-prose-pre-code': theme('colors.hypergrape[700]'),
       }),
       animation: {
         zippulse: 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       },
+      minHeight: {
+        main: 'calc(100vh - 50px - 46px)',
+      },
       backgroundColor: {
+        'v-fade': 'var(--fade-light)',
+        'v-fade-dark': 'var(--fade-dark)',
+        
         'global-nav': 'var(--globalnav-bg)',
         'surface-action': 'var(--surface-action)',
         'surface-neutral': 'var(--surface-neutral)',

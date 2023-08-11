@@ -10,7 +10,7 @@ import clsx from 'clsx';
 
 export const Header = () => (
   <header
-    className={clsx('header relative z-50 w-full')}
+    className={clsx('header fixed top-0 z-50 w-full')}
     aria-hidden='true'>
     <nav className={clsx('nav mx-auto w-full px-3 py-3')}>
       <div className='mx-auto flex w-full max-w-[620px] flex-row items-center justify-between px-0'>

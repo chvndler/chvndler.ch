@@ -8,6 +8,7 @@ import { Header, Footer } from '@/components/layout';
 import { twk } from '@/lib/fonts';
 import { CommandMenu } from '@/components/shared/cmdk';
 import { TopLoader } from '@/components/primitives';
+import { VerticalFade } from '@/components/shared/faders';
 import type { Metadata } from 'next';
 
 export default function RootLayout({
@@ -25,6 +26,12 @@ export default function RootLayout({
         <ThemeProvider>
           <TopLoader />
           <Header />
+          <VerticalFade
+            side='top'
+            style={{
+              height: 140,
+            }}
+          />
           <main>{children}</main>
           <Footer />
           <CommandMenu />

@@ -4,6 +4,9 @@
 
 @layer base {
   :root {
+    --kit-bg: rgba(255, 255, 255, 1);
+    --kit-color: rgba(23, 23, 23, 1);
+
     --font-mono: 'IBM Plex Mono', monospace;
     --font-inter: 'Inter', sans-serif;
     --font-favorit: 'ABC Favorit', sans-serif;
@@ -12,6 +15,8 @@
     --font-s: 0.875rem; // 14px
     --bg-dark: rgba(23, 23, 23, 1);
     --bg-light: rgba(255, 255, 255, 1);
+    --v-fade: hsl(0 0% 99%);
+    --v-fade-dark: hsl(0 0% 8.5%);
     --color-bar: rgba(103, 119, 201, 1);
     --dark-color-bar: rgba(235, 254, 188, 1);
     --surface-neutral: rgba(31, 31, 31, 1);
@@ -19,6 +24,7 @@
     --globalnav-bg: rgba(251, 251, 253, 0.8);
     --globalnav-filter: blur(20px);
     --globalnav-saturate: saturate(180%);
+
 
     --header-height: 48px;
     --footer-height: 50px;
@@ -50,6 +56,21 @@
     --graphic-gray: rgba(226, 214, 197, 1);
     --graphic-orange: rgba(255, 83, 16, 1);
     --graphic-outline: rgba(178, 167, 154, 1);
+
+    --gray1: hsl(0 0% 99%);
+    --gray2: hsl(0 0% 97.3%);
+    --gray3: hsl(0 0% 95.1%);
+    --gray4: hsl(0 0% 93%);
+    --gray5: hsl(0 0% 90.9%);
+    --gray6: hsl(0 0% 88.7%);
+    --gray7: hsl(0 0% 85.8%);
+    --gray8: hsl(0 0% 78%);
+    --gray9: hsl(0 0% 56.1%);
+    --gray10: hsl(0 0% 52.3%);
+    --gray11: hsl(0 0% 43.5%);
+    --gray12: hsl(0 0% 9%);
+    //
+    --grayA2: hsl(0 0% 0% / 0.027);
   }
 }
 
@@ -142,14 +163,21 @@ html {
   scroll-behavior: smooth;
 }
 
+
+html.dark,
+html[data-theme='dark'] {
+  --kit-bg: rgba(23, 23, 23, 1);
+  --kit-color: rgba(255, 255, 255, 1);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   height: -webkit-fill-available;
   overflow: auto;
-  background: var(--bg-light) !important;
-  background-color: var(--bg-light) !important;
+  background: var(--kit-bg) !important;
+  background-color: var(--kit-bg) !important;
   line-height: 1.4;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
@@ -173,13 +201,30 @@ body {
   transition: opacity 0.6s ease-in-out !important;
 }
 
+
 html.dark body {
-  color: var(--bg-light) !important;
-  background: var(--bg-dark) !important;
-  background-color: var(--bg-dark) !important;
+  color: var(--kit-color);
+  background: var(--kit-bg) !important;
+  background-color: var(--kit-bg) !important;
 }
 
-.nav:dark {
+html.dark div.verticalFade {
+    &[data-side='top'] {
+      top: 0;
+      background: linear-gradient(to top, transparent, var(--v-fade-dark)) !important;
+      mask-image: linear-gradient(to bottom, var(--v-fade-dark) 25%, transparent) !important;
+    }
+}
+
+html.light div.verticalFade {
+    &[data-side='top'] {
+      top: 0;
+      background: linear-gradient(to top, transparent, var(--v-fade)) !important;
+      mask-image: linear-gradient(to bottom, var(--v-fade) 25%, transparent) !important;
+    }
+}
+
+.nav.dark {
   z-index: 10;
   position: sticky;
   top: 0;
@@ -199,14 +244,15 @@ small {
 }
 
 ::selection {
-  background-color: white;
-  color: black;
-  -webkit-text-fill-color: black;
+  background-color: var(--kit-color) !important;
+  color: var(--kit-bg) !important;
+  -webkit-text-fill-color: var(--bg-light) !important;
 }
 
 .invert-selection::selection,
 .invert-selection *::selection {
-  background-color: black;
-  color: white;
-  -webkit-text-fill-color: white;
+  background-color: var(--kit-bg) !important;
+  color: var(--kit-color) !important;
+  -webkit-text-fill-color: var(--kit-color) !important;
 }
+

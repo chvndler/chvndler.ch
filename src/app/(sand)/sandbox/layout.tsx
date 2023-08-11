@@ -1,4 +1,5 @@
 import React from 'react';
+import { VerticalFade, PageLine } from '@/components/shared/faders';
 
 export default function SandboxLayout({
   children,
@@ -6,8 +7,25 @@ export default function SandboxLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className='flex h-auto w-full flex-col gap-[6px] px-[6px] md:flex-row'>
-      {children}
-    </div>
+    <>
+      <VerticalFade
+        side='top'
+        style={{
+          height: 100,
+        }}
+      />
+      <PageLine
+        direction='vertical'
+        style={{
+          position: 'fixed',
+          height: '100vh',
+          top: 0,
+          left: 'calc(50% - 320px)',
+        }}
+      />
+      <div className='mx-auto flex h-full min-h-main w-full max-w-[620px] flex-col gap-[6px] px-[4px] pt-[80px] md:flex-row'>
+        {children}
+      </div>
+    </>
   );
 }
