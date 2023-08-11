@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
+import { cn } from '@/lib/utils';
 
 import { SunFilled } from '../shared/svg/sun';
 import { MoonOutlined } from '../shared/svg/moon';
@@ -24,8 +25,12 @@ export default function ThemeSwitch() {
     <>
       <div className='flex flex-row items-center justify-center gap-1'>
         {isHovering && (
-          <span className='my-auto mr-1 hidden items-center pt-0.5 font-favorit text-[10px] font-semibold uppercase text-carbon-400 transition-all duration-150 ease-linear md:inline'>
-            {theme === null ? 'Theme' : theme === 'dark' ? 'DARK' : 'LITE'}
+          <span
+            className={cn(
+              'my-auto mr-1 hidden items-center pt-0.5 font-favorit text-[10px] font-semibold',
+              'uppercase text-carbon-400 transition-all duration-150 ease-linear md:inline',
+            )}>
+            {theme === null ? 'Theme' : theme === 'dark' ? '→ LITE' : '→ DARK'}
           </span>
         )}
 
