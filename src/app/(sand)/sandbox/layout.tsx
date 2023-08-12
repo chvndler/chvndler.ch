@@ -1,5 +1,6 @@
 import React from 'react';
 import { VerticalFade, PageLine } from '@/components/shared/faders';
+import { BodyFader } from '@/components/layout';
 
 export default function SandboxLayout({
   children,
@@ -14,6 +15,7 @@ export default function SandboxLayout({
           height: 100,
         }}
       />
+      {/*
       <PageLine
         direction='vertical'
         style={{
@@ -23,7 +25,10 @@ export default function SandboxLayout({
           left: 'calc(50% - 320px)',
         }}
       />
-      <div className='mx-auto flex h-full min-h-main w-full max-w-[620px] flex-col gap-[6px] px-[4px] pt-[80px] md:flex-row'>
+      */}
+
+      <BodyFader />
+      <div className='mx-auto flex h-full min-h-main w-full flex-col px-[4px] pt-[80px]'>
         {children}
       </div>
     </>

@@ -31,7 +31,11 @@ export const Connect = () => (
               target={template.target}
               href={template.url}
               title={template.type}
-              className='font-twk text-[15px] font-[400] text-carbon-400 underline decoration-carbon-200 underline-offset-2 transition-all duration-300 hover:text-carbon-500 hover:decoration-azure dark:text-carbon-500 dark:decoration-carbon-700 dark:hover:text-carbon-300 dark:hover:decoration-azure'>
+              className={cn(
+                'font-twk text-[15px] font-[400] text-carbon-400 underline decoration-carbon-200',
+                'underline-offset-2 transition-all duration-300 hover:text-carbon-500 hover:decoration-azure',
+                'dark:text-carbon-500 dark:decoration-carbon-700 dark:hover:text-carbon-300 dark:hover:decoration-azure',
+              )}>
               {template.title}
             </Link>
           </div>

@@ -34,7 +34,7 @@ export const TextSwitcher = ({
       {isHovered ? (
         <HoverableTextElement
           className={clsx(
-            'font-baikal text-[18px] font-[600] lowercase text-paleSky dark:text-sun',
+            'font-baikal text-[18px] font-[600] lowercase text-azure dark:text-sun',
           )}
           href={href}
           text={hoverText}

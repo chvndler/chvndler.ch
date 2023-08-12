@@ -32,8 +32,8 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
             key={prxjxct.slug}
             href={prxjxct.slug}
             className={cn(
-              'font-favorit text-[14px] font-[600] uppercase leading-5 text-carbon-500 decoration-2 underline-offset-2',
-              'transition-all duration-200 hover:text-carbon-700 hover:underline hover:decoration-jade dark:text-carbon-300',
+              'decoration font-favorit text-[14px] font-[600] uppercase leading-5 text-carbon-500 underline-offset-2',
+              'transition-all duration-200 hover:text-carbon-700 hover:underline hover:decoration-azure dark:text-carbon-300',
               'dark:hover:text-carbon-300 md:leading-normal',
             )}>
             {prxjxct.title}
@@ -81,6 +81,14 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
                 key={i}
                 className='grid grid-cols-1 items-start gap-y-0 md:grid-cols-3'>
                 <div className='mx-auto flex w-full flex-row items-center justify-start gap-x-1 leading-5'>
+                  {/**
+                   *
+                   * ex.
+                   *
+                   * "Interactions"
+                   * "Motion"
+                   * "Internet Projects"
+                   */}
                   <Link
                     href={page.url}
                     key={page.url}

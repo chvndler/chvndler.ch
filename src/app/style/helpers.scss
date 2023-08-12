@@ -1,6 +1,5 @@
 html.no-scroll {
   overflow: hidden;
-
   body {
     overflow: hidden;
     touch-action: none;
@@ -32,9 +31,6 @@ html.no-scroll {
 mux-player {
   aspect-ratio: 16 / 9;
 
-  /**
-    * inactive..
-    */
   --media-title-display: none;
   --media-text-display: none;
   --loading-indicator: none;
@@ -61,6 +57,7 @@ mux-player {
     * --pip-button: none;
     */
 }
+
 .media-control-bar {
   display: none !important;
 }
@@ -139,7 +136,7 @@ code::after {
   &[data-side='bottom'] {
     bottom: 0;
     background: linear-gradient(to bottom, transparent, hsl(0 0% 99%));
-    mask-image: linear-gradient(to top, var(--gray12) 25%, transparent);
+    mask-image: linear-gradient(to top, var(--v-fade) 25%, transparent);
   }
 }
 

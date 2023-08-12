@@ -1,6 +1,9 @@
+import MuxVideo from '@/components/shared/video/player';
 import type { Metadata } from 'next';
-import Link from 'next/link';
-import { cn } from '@/lib/utils';
+
+import { TopLevelGrid } from '@/components/layout';
+import { films } from '@/lib/data/film.constants';
+import { content } from '@/lib/website.config';
 
 export const metadata: Metadata = {
   title: '(sand) Sandbox',
@@ -10,34 +13,35 @@ export const metadata: Metadata = {
 const altrdsgn = 'https://www.atlrdsgn.com/';
 
 export default function SandboxEnvironment() {
+  const copy = content.media;
+
   return (
     <>
-      <div className='grid grid-cols-1 gap-4 px-[12px] md:grid-cols-3 md:px-0'>
-        <div className=''>
-          Chandler Chappell
-          <br />
-          Position
-        </div>
-        <div className='col-span-2'>
-          <p
-            className={cn(
-              'max-w-[510px] font-sohne text-[15px] font-[400] lowercase leading-5 text-carbon-500',
-              'dark:text-carbon-400 md:text-[18px] md:leading-6',
-            )}>
-            Creating cool and taking notes, enjoying the internet and
-            open-source. Interested in design systems, component architectures,
-            TypeScript, and React. The focus in the moment is silencing the
-            noise surrounding design, with{' '}
-            <Link
-              href={altrdsgn}
-              target='_blank'
-              className='font-[500] text-carbon-400 hover:opacity-70 dark:text-carbon-500 dark:hover:opacity-70'>
-              atlrdsgn⌝
-            </Link>
-            .
+      <section>
+        <section className='container mx-auto py-10'>
+          <h3 className='mb-2 font-favorit text-2xl font-[400] uppercase tracking-tight text-carbon-700 dark:text-carbon-100 lg:text-3xl'>
+            MOTION <span className='font-favorit font-[600]'>PROJECTS</span>
+          </h3>
+          <p className='max-w-md font-favorit text-[9px] font-medium text-carbon-400 dark:text-carbon-500 lg:text-[10px]'>
+            {copy.copyright.text}
+            <br />
+            <br />
+            <span className='font-favorit font-[500] text-carbon-500'>
+              {copy.copyright.tag}
+            </span>
           </p>
-        </div>
-      </div>
+        </section>
+        <TopLevelGrid>
+          {films.map((video, i) => (
+            <MuxVideo
+              key={i}
+              title={video.title}
+              id={video.id}
+              poster={video.poster}
+            />
+          ))}
+        </TopLevelGrid>
+      </section>
     </>
   );
 }
