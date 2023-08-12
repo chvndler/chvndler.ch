@@ -103,7 +103,7 @@ const film013: MuxVideoProperties = {
   name: 'wrld',
   title: 'wrld',
   id: '2Hd1hfF01gokb92UomAsmJL3lAdmO0102JJp007kAq005xIQ',
-  poster: `${urlPosterPrefix}aqua.jpg`,
+  poster: `${thumbnailPrefix}2Hd1hfF01gokb92UomAsmJL3lAdmO0102JJp007kAq005xIQ/thumbnail.png?width=214&height=121&time=0&fit_mode=smartcrop`,
   url: '',
 };
 
@@ -120,6 +120,7 @@ export const filmTypes: Record<string, MuxVideoProperties> = {
   film010,
   film011,
   film012,
+  film013,
 };
 
 export const films = Object.values(filmTypes);

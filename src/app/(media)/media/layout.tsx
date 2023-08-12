@@ -11,8 +11,9 @@ export default function MediaLayout({
       <PageLine
         direction='vertical'
         style={{
+          opacity: 0.3,
           position: 'fixed',
-          height: '100vh',
+          height: '90vh',
           top: 0,
           left: 'calc(50% - 320px)',
         }}

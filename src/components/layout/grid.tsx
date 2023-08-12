@@ -5,7 +5,7 @@ export const TopLevelGrid = ({ children }: { children: React.ReactNode }) => {
     <>
       <section>
         <div className='relative mx-auto w-full items-center pt-12'>
-          <div className='mx-auto grid w-full grid-cols-1 gap-[4px] md:grid-cols-2 lg:grid-cols-3'>
+          <div className='mx-auto grid w-full grid-cols-1 gap-[4px]'>
             {children}
           </div>
         </div>

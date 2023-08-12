@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { connects } from '@/lib/data/connect';
 import { cn } from '@/lib/utils';
 
-export const Connect = () => (
+export const Cnnct = () => (
   <div>
     <p
       className={cn(
