@@ -3,17 +3,12 @@
 import * as React from 'react';
 import * as MenubarPrimitive from '@radix-ui/react-menubar';
 import { Check, ChevronRight, Circle } from 'lucide-react';
-
 import { cn } from '../../lib/utils';
 
 const MenubarMenu = MenubarPrimitive.Menu;
-
 const MenubarGroup = MenubarPrimitive.Group;
-
 const MenubarPortal = MenubarPrimitive.Portal;
-
 const MenubarSub = MenubarPrimitive.Sub;
-
 const MenubarRadioGroup = MenubarPrimitive.RadioGroup;
 
 const Menubar = React.forwardRef<
@@ -39,7 +34,7 @@ const MenubarTrigger = React.forwardRef<
   <MenubarPrimitive.Trigger
     ref={ref}
     className={cn(
-      'focus:text-accent-foreground flex cursor-default select-none items-center rounded-lg px-3 py-1.5 text-sm font-medium outline-none focus:bg-slate-200 data-[state=open]:bg-slate-200 data-[state=open]:text-slate-700 dark:bg-transparent dark:data-[state=open]:bg-slate-600 dark:data-[state=open]:text-slate-100',
+      'focus:text-accent-foreground focus:bg-slate-200 data-[state=open]:bg-slate-200 data-[state=open]:text-slate-700 dark:data-[state=open]:bg-slate-600 dark:data-[state=open]:text-slate-100 flex cursor-default select-none items-center rounded-lg px-3 py-1.5 text-sm font-medium outline-none dark:bg-transparent',
       className,
     )}
     {...props}
@@ -120,7 +115,7 @@ const MenubarItem = React.forwardRef<
     ref={ref}
     className={cn(
       'relative flex cursor-default select-none items-center rounded-lg px-2 py-1.5 text-sm font-medium',
-      'outline-none hover:bg-slate-300 focus:bg-slate-400 focus:text-slate-700',
+      'hover:bg-slate-300 focus:bg-slate-400 focus:text-slate-700 outline-none',
       'data-[disabled]:pointer-events-none data-[disabled]:opacity-50',
       inset && 'pl-8',
       className,
@@ -197,7 +192,7 @@ const MenubarSeparator = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <MenubarPrimitive.Separator
     ref={ref}
-    className={cn('-mx-1 my-1 h-px bg-slate-300 dark:bg-slate-600', className)}
+    className={cn('bg-slate-300 dark:bg-slate-600 -mx-1 my-1 h-px', className)}
     {...props}
   />
 ));

@@ -1,8 +1,12 @@
-import { clsx, type ClassValue } from 'clsx';
+import { clsx as stylx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
 export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
+  return twMerge(stylx(inputs));
+}
+
+export function clsx(...inputs: ClassValue[]) {
+  return twMerge(stylx(inputs));
 }
 
 export const formatAddress = ({ address }: { address: string }) => {

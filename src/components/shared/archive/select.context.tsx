@@ -6,7 +6,6 @@ import {
   SelectContent,
   SelectLabel,
   SelectItem,
-  SelectSeparator,
 } from '../../primitives/select';
 
 export function SelectContext() {
