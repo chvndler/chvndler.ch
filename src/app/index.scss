@@ -13,10 +13,10 @@
     --font-sohne: 'Söhne', sans-serif;
     --font-twk: 'TWK Lausanne', sans-serif;
     --font-s: 0.875rem; // 14px
-    --bg-dark: rgba(23, 23, 23, 1);
-    --bg-light: rgba(255, 255, 255, 1);
+
     --v-fade: hsl(0 0% 99%);
     --v-fade-dark: hsl(0 0% 8.5%);
+
     --color-bar: rgba(103, 119, 201, 1);
     --dark-color-bar: rgba(235, 254, 188, 1);
     --surface-neutral: rgba(31, 31, 31, 1);
@@ -68,7 +68,6 @@
     --gray10: hsl(0 0% 52.3%);
     --gray11: hsl(0 0% 43.5%);
     --gray12: hsl(0 0% 9%);
-    //
     --grayA2: hsl(0 0% 0% / 0.027);
   }
 }
@@ -254,7 +253,7 @@ small {
 ::selection {
   background-color: var(--kit-color) !important;
   color: var(--kit-bg) !important;
-  -webkit-text-fill-color: var(--bg-light) !important;
+  -webkit-text-fill-color: var(--kit-bg) !important;
 }
 
 .invert-selection::selection,

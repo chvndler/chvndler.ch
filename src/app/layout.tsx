@@ -32,6 +32,7 @@ export default function RootLayout({
               height: 140,
             }}
           />
+
           <main>{children}</main>
           <Footer />
           <CommandMenu />
