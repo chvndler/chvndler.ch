@@ -21,7 +21,7 @@ export default function Interactive() {
         </section>
 
         <section className='py-10'>
-          <div className='grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-x-2 md:gap-y-2'>
+          <div className='grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-2'>
             <ComponentList component={components} />
           </div>
         </section>

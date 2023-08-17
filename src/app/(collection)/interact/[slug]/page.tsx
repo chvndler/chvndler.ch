@@ -27,7 +27,7 @@ export async function generateStaticParams(): Promise<
   PrimitiveXProps['params'][]
 > {
   return allComponents.map((compo) => ({
-    slug: compo.slugAsParams.split('/'),
+    slug: compo.slugAsParams.split('/'), // split returns an array of strings
   }));
 }
 

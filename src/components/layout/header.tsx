@@ -12,7 +12,7 @@ export const Header = () => (
   <header
     className={clsx('header fixed top-0 z-50 w-full')}
     aria-hidden='true'>
-    <nav className={clsx('nav mx-auto w-full px-3 py-3')}>
+    <nav className={clsx('nav mx-auto w-full p-3')}>
       <div className='mx-auto flex w-full max-w-[620px] flex-row items-center justify-between px-0'>
         <div className='items-center justify-start text-carbon-400 dark:text-carbon-500'>
           <Logo />
