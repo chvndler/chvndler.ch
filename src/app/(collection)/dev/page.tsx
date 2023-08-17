@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { TestSection } from '@/components/core';
-import { BadgeDefault, Space } from '@/components/shared';
-import { SP } from 'next/dist/shared/lib/utils';
+import { Space } from '@/components/shared';
 
 export const metadata: Metadata = {
   title: 'dev.chandler.',
