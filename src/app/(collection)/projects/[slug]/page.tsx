@@ -24,7 +24,7 @@ async function getProjects(params: PostProps['params']) {
   const post = allProjects.find((post) => post.slugAsParams === slug);
 
   if (!post) {
-    null;
+    return null; // Explicitly return null when post is not found
   }
 
   return post;
@@ -36,7 +36,7 @@ export async function generateMetadata({
   const post = await getProjects(params);
 
   if (!post) {
-    return {};
+    return {}; // Return an empty object or handle the case where post is not found
   }
 
   return {

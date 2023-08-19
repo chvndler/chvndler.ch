@@ -1,8 +1,9 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-export const Loading: React.FC = () => {
-  const [showLoading, setShowLoading] = useState(true);
+
+export const Loading = () => {
+  const [showLoading, setShowLoading] = useState<boolean>(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -15,7 +16,9 @@ export const Loading: React.FC = () => {
       {showLoading ? (
         <div>Loading...</div>
       ) : (
-        <div>{/* Your main content */}</div>
+        <div>
+          <h1>Loaded</h1>
+        </div>
       )}
     </div>
   );

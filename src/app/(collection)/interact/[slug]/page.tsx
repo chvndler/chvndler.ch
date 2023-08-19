@@ -18,7 +18,7 @@ async function getInteractions(params: PrimitiveXProps['params']) {
   const slug = params?.slug?.join('/');
   const comp = allComponents.find((comp) => comp.slugAsParams === slug);
   if (!comp) {
-    null;
+    return null;
   }
   return comp;
 }
@@ -26,9 +26,12 @@ async function getInteractions(params: PrimitiveXProps['params']) {
 export async function generateStaticParams(): Promise<
   PrimitiveXProps['params'][]
 > {
-  return allComponents.map((compo) => ({
-    slug: compo.slugAsParams.split('/'), // split returns an array of strings
-  }));
+  return allComponents.map((compo) => {
+    const slugArray = compo.slugAsParams.split('/');
+    return {
+      slug: slugArray,
+    };
+  });
 }
 
 export async function generateMetadata({
