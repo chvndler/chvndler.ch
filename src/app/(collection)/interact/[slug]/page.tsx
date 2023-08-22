@@ -26,12 +26,9 @@ async function getInteractions(params: PrimitiveXProps['params']) {
 export async function generateStaticParams(): Promise<
   PrimitiveXProps['params'][]
 > {
-  return allComponents.map((compo) => {
-    const slugArray = compo.slugAsParams.split('/');
-    return {
-      slug: slugArray,
-    };
-  });
+  return allComponents.map((compo) => ({
+    slug: compo.slugAsParams.split('/'),
+  }));
 }
 
 export async function generateMetadata({
