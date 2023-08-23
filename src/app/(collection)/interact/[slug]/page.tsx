@@ -7,6 +7,7 @@ import { allComponents, type ComponentSlug } from '@/lib/components';
 import { cn } from '@/lib/utils';
 
 import type { Metadata } from 'next';
+import { ErrorComponent } from '@/components/core/error.component';
 
 interface PrimitiveXProps {
   params: {
@@ -14,7 +15,7 @@ interface PrimitiveXProps {
   };
 }
 
-async function getInteractions(params: PrimitiveXProps['params']) {
+function getComponent(params: PrimitiveXProps['params']) {
   const slug = params?.slug?.join('/');
   const comp = allComponents.find((comp) => comp.slugAsParams === slug);
   if (!comp) {
@@ -23,7 +24,7 @@ async function getInteractions(params: PrimitiveXProps['params']) {
   return comp;
 }
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return allComponents.map((compo) => ({
     params: {
       slug: compo.slugAsParams.split('/'),
@@ -31,10 +32,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({
-  params,
-}: PrimitiveXProps): Promise<Metadata> {
-  const prime = await getInteractions(params);
+export function generateMetadata({ params }: PrimitiveXProps): Metadata {
+  const prime = getComponent(params);
 
   if (!prime) {
     return {
@@ -81,6 +80,16 @@ export default function ViewPrimitivePage({
   const x = allComponents.find((comp) => comp.slugAsParams === slug);
   if (!x) {
     notFound();
+    return (
+      <>
+        <ErrorComponent
+          error={Error('Not Found')}
+          reset={() => {
+            console.log('reset');
+          }}
+        />
+      </>
+    );
   }
 
   // const compo = x.component;
