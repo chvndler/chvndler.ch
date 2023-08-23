@@ -3,7 +3,7 @@ import { RouterPrev } from '@/components/primitives';
 
 import { notFound } from 'next/navigation';
 import { AppController } from '@/components/layout';
-import { allComponents } from '@/lib/components';
+import { allComponents, type ComponentSlug } from '@/lib/components';
 import { cn } from '@/lib/utils';
 
 import type { Metadata } from 'next';
@@ -23,11 +23,11 @@ async function getInteractions(params: PrimitiveXProps['params']) {
   return comp;
 }
 
-export async function generateStaticParams(): Promise<
-  PrimitiveXProps['params'][]
-> {
+export async function generateStaticParams() {
   return allComponents.map((compo) => ({
-    slug: compo.slugAsParams.split('/'),
+    params: {
+      slug: compo.slugAsParams.split('/'),
+    },
   }));
 }
 
@@ -47,41 +47,6 @@ export async function generateMetadata({
     title: prime.title,
     description: prime.excerpt,
   };
-}
-
-export default async function ViewPrimitivePage({ params }: PrimitiveXProps) {
-  const x = await getInteractions(params);
-  if (!x) {
-    notFound();
-  }
-
-  const compo = x.component;
-
-  return (
-    <AppController>
-      <article
-        key={x.title}
-        className='text-md prose prose-neutral mb-20 py-10'>
-        <RouterPrev />
-
-        <h3 className='font-favorit leading-4 tracking-tight text-carbon-800 dark:text-carbon-100'>
-          {x.title}
-        </h3>
-        <p className='font-favorit text-sm leading-5 text-carbon-600 dark:text-carbon-300'>
-          {x.excerpt}
-        </p>
-      </article>
-      <>
-        <PrimitiveWrapper>
-          <Component
-            key={x.slug}
-            path={x.url}
-            component={compo}
-          />
-        </PrimitiveWrapper>
-      </>
-    </AppController>
-  );
 }
 
 function PrimitiveWrapper({ children }: { children: React.ReactNode }) {
@@ -104,5 +69,45 @@ function Component({ path, component }: { path: string; component: any }) {
           path,
         })}
     </div>
+  );
+}
+
+export default function ViewPrimitivePage({
+  params,
+}: {
+  params: { slug: string[] };
+}) {
+  const slug = params.slug.join('/');
+  const x = allComponents.find((comp) => comp.slugAsParams === slug);
+  if (!x) {
+    notFound();
+  }
+
+  // const compo = x.component;
+
+  return (
+    <AppController>
+      <article
+        key={x.title}
+        className='text-md prose prose-neutral mb-20 py-10'>
+        <RouterPrev />
+
+        <h3 className='font-favorit leading-4 tracking-tight text-carbon-800 dark:text-carbon-100'>
+          {x.title}
+        </h3>
+        <p className='font-favorit text-sm leading-5 text-carbon-600 dark:text-carbon-300'>
+          {x.excerpt}
+        </p>
+      </article>
+      <>
+        <PrimitiveWrapper>
+          <Component
+            key={x.slug}
+            path={x.url}
+            component={x.component}
+          />
+        </PrimitiveWrapper>
+      </>
+    </AppController>
   );
 }

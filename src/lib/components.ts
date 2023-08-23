@@ -73,7 +73,7 @@ export const allComponents: ComponentBase[] = [
     title: 'Arie position',
     excerpt:
       'Small component that returns a string of information based on users cursor position.',
-    slug: '/interact/postion',
+    slug: '/interact/position',
     url: '/interact/position',
     component: AriePositionContext,
   },
