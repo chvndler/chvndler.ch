@@ -18,16 +18,15 @@ interface PostProps {
   };
 }
 
-export function generateStaticParams() {
-  return allProjects.map((project) => ({
-    slug: project.slugAsParams,
+export async function generateStaticParams() {
+  return allProjects.map((project: Projects) => ({
+    slug: [project.slugAsParams], // Convert the slug to an array
   }));
 }
 
 function getProjects(params: PostProps['params']) {
   const slug = params?.slug?.join('/'); // Use join to convert array to string
-
-  const post = allProjects.find((post) => post.slug === slug);
+  const post = allProjects.find((post: Projects) => post.slugAsParams === slug);
 
   if (!post) {
     return null; // Explicitly return null when post is not found
@@ -78,7 +77,6 @@ function ProjectTags({ pro }: { pro: Projects }) {
 
 export default async function PostPage({ params }: PostProps) {
   const slug = params?.slug?.join('/'); // Correct usage of join
-
   const post = allProjects.find((post) => post.slug === slug);
 
   if (!post) {
