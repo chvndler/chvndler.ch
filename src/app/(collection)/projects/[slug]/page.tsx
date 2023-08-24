@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import { RouterPrev } from '@/components/primitives';
 
 import { notFound } from 'next/navigation';
@@ -12,17 +11,23 @@ import { GitButton, BadgeDefault } from '@/components/shared';
 
 import { type Metadata } from 'next';
 import { cn } from '@/lib/utils';
-import { ErrorComponent } from '@/components/core/error.component';
 
 interface PostProps {
   params: {
-    slug: string[];
+    slug: string[]; // Make sure slug is an array
   };
 }
 
+export function generateStaticParams() {
+  return allProjects.map((project) => ({
+    slug: project.slugAsParams,
+  }));
+}
+
 function getProjects(params: PostProps['params']) {
-  const slug = params?.slug?.join('/');
-  const post = allProjects.find((post) => post.slugAsParams === slug);
+  const slug = params?.slug?.join('/'); // Use join to convert array to string
+
+  const post = allProjects.find((post) => post.slug === slug);
 
   if (!post) {
     return null; // Explicitly return null when post is not found
@@ -31,7 +36,9 @@ function getProjects(params: PostProps['params']) {
   return post;
 }
 
-export function generateMetadata({ params }: PostProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PostProps): Promise<Metadata> {
   const post = getProjects(params);
 
   if (!post) {
@@ -45,12 +52,6 @@ export function generateMetadata({ params }: PostProps): Promise<Metadata> {
     title: post.title,
     description: post.description,
   });
-}
-
-export function generateStaticParams(): PostProps['params'][] {
-  return allProjects.map((post) => ({
-    slug: post.slugAsParams.split('/'),
-  }));
 }
 
 function FormattedDateString({ postDate }: { postDate: Projects }) {
@@ -75,21 +76,13 @@ function ProjectTags({ pro }: { pro: Projects }) {
   );
 }
 
-export default function PostPage({ params }: PostProps) {
-  const post = getProjects(params);
+export default async function PostPage({ params }: PostProps) {
+  const slug = params?.slug?.join('/'); // Correct usage of join
+
+  const post = allProjects.find((post) => post.slug === slug);
 
   if (!post) {
     notFound();
-    return (
-      <>
-        <ErrorComponent
-          error={Error('Post Not Found')}
-          reset={() => {
-            console.log('reset');
-          }}
-        />
-      </>
-    );
   }
 
   return (

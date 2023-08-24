@@ -17,7 +17,7 @@ interface PrimitiveXProps {
 
 function getComponent(params: PrimitiveXProps['params']) {
   const slug = params?.slug?.join('/');
-  const comp = allComponents.find((comp) => comp.slugAsParams === slug);
+  const comp = allComponents.find((comp) => comp.slug === slug);
   if (!comp) {
     return null;
   }
@@ -26,9 +26,7 @@ function getComponent(params: PrimitiveXProps['params']) {
 
 export function generateStaticParams() {
   return allComponents.map((compo) => ({
-    params: {
-      slug: compo.slugAsParams.split('/'),
-    },
+    slug: compo.slugAsParams,
   }));
 }
 
@@ -50,13 +48,11 @@ export function generateMetadata({ params }: PrimitiveXProps): Metadata {
 
 function PrimitiveWrapper({ children }: { children: React.ReactNode }) {
   return (
-    <>
-      <div
-        id='primitive-x'
-        className='mx-auto w-full rounded-md bg-carbon-50 px-4 py-14 shadow-sminner dark:bg-carbon-900 md:px-[92px]'>
-        <div className={cn('primitive_inner px-0 py-3')}>{children}</div>
-      </div>
-    </>
+    <div
+      id='primitive-x'
+      className='mx-auto w-full rounded-md bg-carbon-50 px-4 py-14 shadow-sminner dark:bg-carbon-900 md:px-[92px]'>
+      <div className={cn('primitive_inner px-0 py-3')}>{children}</div>
+    </div>
   );
 }
 
@@ -71,25 +67,12 @@ function Component({ path, component }: { path: string; component: any }) {
   );
 }
 
-export default function ViewPrimitivePage({
-  params,
-}: {
-  params: { slug: string[] };
-}) {
-  const slug = params.slug.join('/');
+export default function ViewPrimitivePage({ params }: PrimitiveXProps) {
+  const slug = Array.isArray(params?.slug) ? params.slug.join('/') : '';
+
   const x = allComponents.find((comp) => comp.slugAsParams === slug);
   if (!x) {
     notFound();
-    return (
-      <>
-        <ErrorComponent
-          error={Error('Not Found')}
-          reset={() => {
-            console.log('reset');
-          }}
-        />
-      </>
-    );
   }
 
   // const compo = x.component;
