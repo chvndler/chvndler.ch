@@ -29,7 +29,6 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
 
         <div className='w-full md:col-span-2'>
           <Link
-            key={prxjxct.slug}
             href={prxjxct.slug}
             className={cn(
               'decoration font-favorit text-[14px] font-[600] uppercase leading-5 text-carbon-500 underline-offset-2',
@@ -39,9 +38,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
             {prxjxct.title}
           </Link>
 
-          <p
-            key={prxjxct.excerpt}
-            className='font-baikal text-[14px] font-[400] lowercase leading-5 text-carbon-400 dark:text-carbon-500'>
+          <p className='font-baikal text-[14px] font-[400] lowercase leading-5 text-carbon-400 dark:text-carbon-500'>
             {prxjxct.excerpt}
           </p>
 

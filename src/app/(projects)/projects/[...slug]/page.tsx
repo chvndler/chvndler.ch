@@ -77,7 +77,7 @@ function ProjectTags({ pro }: { pro: Projects }) {
 
 export default async function PostPage({ params }: PostProps) {
   const slug = params?.slug?.join('/'); // Correct usage of join
-  const post = allProjects.find((post) => post.slug === slug);
+  const post = allProjects.find((post) => post.slugAsParams === slug);
 
   if (!post) {
     notFound();
