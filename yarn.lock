@@ -1425,12 +1425,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mux/mux-player-react@npm:^1.12.1":
-  version: 1.12.1
-  resolution: "@mux/mux-player-react@npm:1.12.1"
+"@mux/mux-player-react@npm:^1.14.0":
+  version: 1.14.0
+  resolution: "@mux/mux-player-react@npm:1.14.0"
   dependencies:
-    "@mux/mux-player": 1.12.1
-    "@mux/playback-core": 0.19.1
+    "@mux/mux-player": 1.14.0
+    "@mux/playback-core": 0.20.0
     prop-types: ^15.7.2
   peerDependencies:
     "@types/react": ^17.0.0 || ^18
@@ -1441,41 +1441,41 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 4b7901bf577072e455aee4d78630f0404d82e11a670a6a9d89051e6bb84cfe76ad296a9657537240cc5c5b2a2677dc11d4c8d0646f28d6b6f1a9b9da510ed9bb
+  checksum: 296267cf76de5a5cc1779c584e5178c65281be8e5f381624036c4ebe672ffa153d9c9e3dbadf679a8ebd987c17e05a8f5c2848e3ed721dda5c37a2bd85abbf60
   languageName: node
   linkType: hard
 
-"@mux/mux-player@npm:1.12.1":
-  version: 1.12.1
-  resolution: "@mux/mux-player@npm:1.12.1"
+"@mux/mux-player@npm:1.14.0":
+  version: 1.14.0
+  resolution: "@mux/mux-player@npm:1.14.0"
   dependencies:
-    "@mux/mux-video": 0.16.1
-    "@mux/playback-core": 0.19.1
-    media-chrome: ^1.2.4
-  checksum: cb142e7fafef6fcdeaf1c79095a42c52a03396d60c94be84574c34b106954a9607a6f797ee110238ad2fd74faf26a65e52228590468e073b6d44d7e73cab3be6
+    "@mux/mux-video": 0.16.2
+    "@mux/playback-core": 0.20.0
+    media-chrome: ^1.4.1
+  checksum: 18140aa8a1dc74faa611374f77d3f5ed41cf92c99e2a56bd3e70eb7ec8a938ff9ca84defbed52b8195c94fdd5e1cf2035d2b3b0a37c2920418fd33a402d44762
   languageName: node
   linkType: hard
 
-"@mux/mux-video@npm:0.16.1":
-  version: 0.16.1
-  resolution: "@mux/mux-video@npm:0.16.1"
+"@mux/mux-video@npm:0.16.2":
+  version: 0.16.2
+  resolution: "@mux/mux-video@npm:0.16.2"
   dependencies:
-    "@mux/playback-core": 0.19.1
+    "@mux/playback-core": 0.20.0
     castable-video: 0.5.2
     custom-media-element: 0.2.0
     media-tracks: ">=0.2.3"
-  checksum: 60c83fa40a54268a4912ad2a731c8a72b4a09ea0f1ec82003da91179a7c60e98b7b75d55d5fbc00dcb755c732970821eef75b28c38dbf816d87131c2db9b827f
+  checksum: 2ece6bf7d4ddb012b500189bee139ea0b18d4298bb4df07399bc908cb5d2cea22f48c39a6b4d6d58c8439284edf2225f3e24b9f921ea4b61d57564ce2280dcd3
   languageName: node
   linkType: hard
 
-"@mux/playback-core@npm:0.19.1":
-  version: 0.19.1
-  resolution: "@mux/playback-core@npm:0.19.1"
+"@mux/playback-core@npm:0.20.0":
+  version: 0.20.0
+  resolution: "@mux/playback-core@npm:0.20.0"
   dependencies:
     hls.js: ^1.4.8
     media-tracks: 0.2.3
     mux-embed: ^4.24.0
-  checksum: 43d1d8457a800c4187cb23bc845261eea1f9e63e50b6057687690a538247a7d1828121f77297417e0eef6d597b2a51326c76af3e1aca8de8fbea204b04c5e449
+  checksum: 6fe497baff4ef2d3e564fc99b0c9cbb91278da6918ea45277dd1c9156b210519d8545b1d623c739f808a2072fc725bff63163b702c25ee901ad7f67a6b8f7fa6
   languageName: node
   linkType: hard
 
@@ -3134,10 +3134,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:>=12.12.47, @types/node@npm:>=13.7.0, @types/node@npm:^20.5.1":
+"@types/node@npm:>=12.12.47, @types/node@npm:>=13.7.0":
   version: 20.5.3
   resolution: "@types/node@npm:20.5.3"
   checksum: fe67a0fd7402218bdf91523a2b1c2e41d619f7294b1a471e0a778b8bc7bb3fcf291aed12041bcbe9622d50a3d1295a9adea0e7e19bb9386a246bf66071404721
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^20.5.4":
+  version: 20.5.4
+  resolution: "@types/node@npm:20.5.4"
+  checksum: 18de76c990e1c298183661cfc7cf16c9384531538c8090cc27bc3cab801e7c46b9f6943591ab0433955dd57961601684cc0fb19ba2deee9609e137c91afd2e25
   languageName: node
   linkType: hard
 
@@ -4007,7 +4014,7 @@ __metadata:
   resolution: "chvndler.ch@workspace:."
   dependencies:
     "@ianvs/prettier-plugin-sort-imports": ^4.1.0
-    "@mux/mux-player-react": ^1.12.1
+    "@mux/mux-player-react": ^1.14.0
     "@next/mdx": ^13.4.3
     "@radix-ui/react-collapsible": ^1.0.3
     "@radix-ui/react-dialog": ^1.0.4
@@ -4022,7 +4029,7 @@ __metadata:
     "@t3-oss/env-nextjs": ^0.6.1
     "@tailwindcss/typography": ^0.5.9
     "@types/mdx": ^2.0.6
-    "@types/node": ^20.5.1
+    "@types/node": ^20.5.4
     "@types/react": ^18.2.6
     "@types/react-dom": ^18.2.4
     "@typescript-eslint/eslint-plugin": ^6.4.1
@@ -7268,7 +7275,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"media-chrome@npm:^1.2.4":
+"media-chrome@npm:^1.4.1":
   version: 1.4.1
   resolution: "media-chrome@npm:1.4.1"
   checksum: 3f5f0b83cbd276c476240d4ae5c51f8f6d2599b281c76d01808b769a9811aa1f16ca3c5bd17e35d18300cfd3099527b5ea1d07f671df7bc8f6128975bb03e277

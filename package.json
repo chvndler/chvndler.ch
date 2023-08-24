@@ -14,7 +14,7 @@
     "pretty": "prettier --write ."
   },
   "dependencies": {
-    "@mux/mux-player-react": "^1.12.1",
+    "@mux/mux-player-react": "^1.14.0",
     "@next/mdx": "^13.4.3",
     "@radix-ui/react-collapsible": "^1.0.3",
     "@radix-ui/react-dialog": "^1.0.4",
@@ -47,7 +47,7 @@
     "@t3-oss/env-nextjs": "^0.6.1",
     "@tailwindcss/typography": "^0.5.9",
     "@types/mdx": "^2.0.6",
-    "@types/node": "^20.5.1",
+    "@types/node": "^20.5.4",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "@typescript-eslint/eslint-plugin": "^6.4.1",
