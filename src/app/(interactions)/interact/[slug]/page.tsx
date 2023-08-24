@@ -80,6 +80,7 @@ export default function ViewPrimitivePage({ params }: PrimitiveXProps) {
       <article
         key={x.title}
         className='text-md prose prose-neutral mb-20 py-10'>
+        <RouterPrev />
         <h3 className='font-favorit leading-4 tracking-tight text-carbon-800 dark:text-carbon-100'>
           {x.title}
         </h3>
@@ -87,7 +88,6 @@ export default function ViewPrimitivePage({ params }: PrimitiveXProps) {
           {x.excerpt}
         </p>
       </article>
-      <RouterPrev />
       <PrimitiveWrapper>
         <Component
           key={x.slug}
