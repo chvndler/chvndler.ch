@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { cn } from '@/lib/utils';
 
 type ButtonProps = {
   href?: string;
@@ -47,7 +48,11 @@ export const GitButton = ({ children, href, ...props }: ButtonProps) => (
         rel='noopener noreferrer'>
         <button
           {...props}
-          className='rounded-xl border border-jaded bg-jade px-4 py-[0.18rem] font-inter text-[13px] font-semibold text-carbon-50 shadow hover:opacity-80 hover:shadow-sm dark:border-carbon-700 dark:bg-carbon-800 dark:text-carbon-100'>
+          className={cn(
+            'rounded-[10px] border border-jaded bg-jade px-4 py-[0.18rem]',
+            'font-inter text-[13px] font-semibold text-carbon-50 shadow hover:opacity-80',
+            'hover:shadow-sm dark:border-carbon-700 dark:bg-carbon-800 dark:text-carbon-100',
+          )}>
           {children}
         </button>
       </a>

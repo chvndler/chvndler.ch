@@ -9,7 +9,7 @@ export const AppController = ({ children }: { children: React.ReactNode }) => {
   if (windowSize.isMobile) {
     return (
       <div className='flex-1 px-3'>
-        <div className='container mx-auto h-auto w-full max-w-[620px] py-10'>
+        <div className='container mx-auto h-auto w-full max-w-[620px] pb-10 pt-16'>
           {children}
         </div>
       </div>
@@ -17,7 +17,7 @@ export const AppController = ({ children }: { children: React.ReactNode }) => {
   } else
     return (
       <div className='flex-1 px-3'>
-        <div className='container mx-auto h-full min-h-[90vh] w-full max-w-[620px] py-10'>
+        <div className='container mx-auto h-full min-h-[90vh] w-full max-w-[620px] pb-10 pt-16'>
           {children}
         </div>
       </div>

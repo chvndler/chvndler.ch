@@ -19,7 +19,7 @@ export const Connect = () => (
             key={template.title}
             className='grid grid-cols-1 items-start gap-y-0 md:grid-cols-3'>
             <div className='mx-auto flex w-full flex-row items-center justify-start gap-x-1 leading-5'>
-              <p className='font-favorit text-[13px] font-[500] uppercase text-carbon-500 dark:text-carbon-300'>
+              <p className='font-favorit text-[15px] font-[500] lowercase text-carbon-500 dark:text-carbon-300'>
                 {template.type}
               </p>
             </div>
@@ -30,7 +30,7 @@ export const Connect = () => (
                 target={template.target}
                 title={template.type}
                 className={cn(
-                  'font-twk text-[15px] font-[400] text-carbon-400 underline decoration-carbon-200',
+                  'font-twk text-[14px] font-[400] text-carbon-400 underline decoration-carbon-200',
                   'underline-offset-2 transition-all duration-300 hover:text-carbon-500 hover:decoration-azure',
                   'dark:text-carbon-500 dark:decoration-carbon-700 dark:hover:text-carbon-300 dark:hover:decoration-azure',
                 )}>

@@ -37,7 +37,7 @@ const Code = ({ className, ...props }: { className: string }) => (
   <code
     {...props}
     className={clsx(
-      'relative rounded-md border border-grey-A5 bg-carbon-100 bg-opacity-25 px-[0.3rem] py-[0.2rem] font-mono text-sm text-carbon-700 dark:border-grey-A7 dark:bg-carbon-900 dark:text-carbon-300',
+      'border-grey-A5 dark:border-grey-A7 relative rounded-md border bg-carbon-100 bg-opacity-25 px-[0.3rem] py-[0.2rem] font-mono text-sm text-carbon-700 dark:bg-carbon-900 dark:text-carbon-300',
       className,
     )}
   />
@@ -76,7 +76,7 @@ const RoundImage = ({ className, ...props }: MDXImageProps) => {
   return (
     <NextImage
       className={clsx(
-        'rounded-xl border border-grey-A5 md:rounded-2xl',
+        'rounded-xl border border-blackA5 md:rounded-2xl',
         className,
       )}
       {...props}
