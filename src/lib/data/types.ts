@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 export interface MuxVideoProperties {
   name?: string;
   title: string;
@@ -19,4 +21,12 @@ export interface ConnectTemplate {
   target?: string;
   type: string;
   title: string;
+}
+
+export interface ComponentBase {
+  slug: string;
+  title: string;
+  excerpt: string;
+  url: string;
+  component: React.ComponentType<any>;
 }
