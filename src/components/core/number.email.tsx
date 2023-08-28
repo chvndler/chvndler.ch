@@ -14,14 +14,17 @@ export const NumberEmail = () => (
     />
     <p
       className={cn(
-        'font-sohne text-[15px] font-[400] lowercase leading-4 md:text-[16px]',
+        'font-twk text-[16px] font-[400] lowercase leading-4 md:text-[16px]',
         'text-carbon-400 dark:text-carbon-400',
       )}>
       Frontend developer, Designer
     </p>
     <Link
       href='mailto:chan@atlrdsgn.com'
-      className='font-sohne text-[15px] font-[400] lowercase leading-4 text-carbon-400 hover:text-azure dark:text-carbon-400 md:text-[16px]'>
+      className={cn(
+        'font-twk text-[16px] font-[400] lowercase leading-4 text-carbon-400',
+        'hover:text-azure dark:text-carbon-400 md:text-[16px]',
+      )}>
       chan@atlrdsgn.com
     </Link>
   </div>

@@ -2,10 +2,9 @@
 
 import React, { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
-import { cn } from '@/lib/utils';
-
 import { SunFilled } from '../shared/svg/sun';
 import { MoonOutlined } from '../shared/svg/moon';
+import { cn } from '@/lib/utils';
 
 export default function ThemeSwitch() {
   const { theme, setTheme } = useTheme();
@@ -30,7 +29,7 @@ export default function ThemeSwitch() {
               'my-auto mr-1 hidden items-center pt-0.5 font-favorit text-[10px] font-semibold',
               'uppercase text-carbon-400 transition-all duration-150 ease-linear md:inline',
             )}>
-            {theme === null ? 'Theme' : theme === 'dark' ? '→ LITE' : '→ DARK'}
+            {theme === null ? 'Theme' : theme === 'dark' ? 'LITE' : 'DARK'}
           </span>
         )}
 

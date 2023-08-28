@@ -1,9 +1,9 @@
 import { AppController } from '@/components/layout';
 
-import { allComponents } from '@/lib/components';
+import { allComponents } from '@/lib/data/components';
 import { ComponentList } from '@/components/core/interact';
 
-export default function Interactive() {
+export default function InteractPage() {
   const components = allComponents;
 
   return (

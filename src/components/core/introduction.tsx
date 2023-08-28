@@ -17,7 +17,7 @@ export const Introduction = () => (
           <NumberEmail />
           <p
             className={cn(
-              'max-w-[510px] font-sohne text-[15px] font-[450] lowercase leading-5 text-carbon-400',
+              'max-w-[510px] font-twk text-[16px] font-[400] lowercase leading-6 text-carbon-400',
               'dark:text-carbon-400 md:text-[16px] md:leading-6',
             )}>
             Creating cool and taking notes, enjoying the internet and

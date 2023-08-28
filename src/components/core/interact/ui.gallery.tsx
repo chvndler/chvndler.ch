@@ -16,7 +16,7 @@ export const ComponentList = ({ component }: ARProps) => {
           key={comp}
           href={compo.url}
           passHref>
-          <a className='h-full'>
+          <span className='h-full'>
             <div
               key={comp}
               className={cn(
@@ -34,7 +34,7 @@ export const ComponentList = ({ component }: ARProps) => {
                 {compo.excerpt}
               </p>
             </div>
-          </a>
+          </span>
         </Link>
       ))}
     </>
