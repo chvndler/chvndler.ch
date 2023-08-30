@@ -2,7 +2,6 @@ const { withContentlayer } = require('next-contentlayer');
 const withMDX = require('@next/mdx');
 
 const isDev = process.env.NODE_ENV === 'development';
-const isProd = process.env.NODE_ENV === 'production';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
