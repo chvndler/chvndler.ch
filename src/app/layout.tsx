@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.chvndler.ch'),
   title: 'Chandler Chappell',
   description: 'Personal site.',
-  manifest: `${siteURL}manifest.webmanifest`,
+  manifest: '/manifest.webmanifest',
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     siteName: 'Chandler Chappell',
     images: [
       {
-        url: `${siteURL}og.png`,
+        url: '/og.png',
         width: 1200,
         height: 627,
       },
