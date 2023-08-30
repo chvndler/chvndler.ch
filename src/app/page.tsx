@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppController } from '@/components/layout';
+import { allProjects } from '@/contentlayer/generated';
 /*
  * Copyright (C) 2023 @chvndler
  * All Rights Reserved.
@@ -17,7 +18,6 @@ import {
   ProjectHighlights,
   Section,
 } from '@/components/core';
-import { allProjects } from '@/contentlayer/generated';
 
 export default function Index() {
   return (

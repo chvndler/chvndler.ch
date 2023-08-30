@@ -44,12 +44,19 @@ export async function generateMetadata({
     return Promise.resolve({
       title: '404',
       description: '404',
+
+      openGraph: {
+        title: '404',
+      },
     });
   }
 
   return Promise.resolve({
     title: post.title,
     description: post.description,
+    openGraph: {
+      title: post.title,
+    },
   });
 }
 

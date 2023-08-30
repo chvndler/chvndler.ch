@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   title: '©2023 Media',
   description:
     'Media displayed on this page is designed, directed, and edited by myself – © 2023. ALL RIGHTS RESERVED.',
+  openGraph: {
+    title: '©2023 Media',
+    description:
+      'Media displayed on this page is designed, directed, and edited by myself – © 2023. ALL RIGHTS RESERVED.',
+  },
 };
 
 export default function MediaIndex() {

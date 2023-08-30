@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     siteName: 'Chandler Chappell',
     images: [
       {
-        url: `${siteURL}/og-green.jpg`,
+        url: `${siteURL}/og.png`,
         width: 1200,
         height: 627,
       },
@@ -77,10 +77,6 @@ export const metadata: Metadata = {
     icon: '/favicon.svg',
     shortcut: '/shortcut-icon.png',
     apple: '/static/favicon/apple-touch-icon.png',
-    other: {
-      rel: 'apple-touch-icon-precomposed',
-      url: '/apple-touch-icon-precomposed.png',
-    },
   },
   twitter: {
     card: 'summary_large_image',

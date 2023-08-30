@@ -1,5 +1,5 @@
 import React from 'react';
-import { VerticalFade, PageLine } from '@/components/shared/faders';
+import { PageLine } from '@/components/shared/faders';
 
 export default function MediaLayout({
   children,
