@@ -16,18 +16,18 @@ import {
   Connect,
   Introduction,
   ProjectHighlights,
-  Section,
+  ColumnSection,
 } from '@/components/core';
 
 export default function Index() {
   return (
     <>
       <AppController>
-        <Section>
+        <ColumnSection>
           <Introduction />
           <Connect />
           <ProjectHighlights projects={...allProjects.slice(0, 5)} />
-        </Section>
+        </ColumnSection>
       </AppController>
     </>
   );

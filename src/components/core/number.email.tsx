@@ -14,7 +14,7 @@ export const NumberEmail = () => (
     />
     <p
       className={cn(
-        'font-twk text-[16px] font-[400] lowercase leading-4 md:text-[16px]',
+        'font-twk text-[17px] font-[400] lowercase leading-4 md:text-[17px]',
         'text-carbon-400 dark:text-carbon-400',
       )}>
       Frontend developer, Designer
@@ -22,8 +22,8 @@ export const NumberEmail = () => (
     <Link
       href='mailto:chan@atlrdsgn.com'
       className={cn(
-        'font-twk text-[16px] font-[400] lowercase leading-4 text-carbon-400',
-        'hover:text-azure dark:text-carbon-400 md:text-[16px]',
+        'font-twk text-[17px] font-[400] lowercase leading-4 text-carbon-400',
+        'hover:text-azure dark:text-carbon-400 md:text-[17px]',
       )}>
       chan@atlrdsgn.com
     </Link>

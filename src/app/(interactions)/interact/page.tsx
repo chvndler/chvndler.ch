@@ -15,8 +15,8 @@ export default function InteractPage() {
             <span className='font-favorit font-[600]'>ARCHIVE</span>
           </h3>
 
-          <p className='text-md mb-6 font-favorit text-carbon-500 dark:text-carbon-400'>
-            an ever-expanding collection of archived interfaces and patterns.
+          <p className='text-md mb-6 mt-2 font-twk leading-normal text-carbon-500 dark:text-carbon-400'>
+            an endlessly growing archive of user interface designs and patterns.
           </p>
         </section>
 

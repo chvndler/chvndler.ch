@@ -32,7 +32,7 @@ export const ProjectLibrary = ({ projects }: ListProps) => {
         className='m-auto flex w-full flex-row items-center justify-between'>
         <Link
           href={project.url}
-          className='items-center justify-start py-2 font-favorit text-[15px] font-[500] uppercase text-carbon-600 hover:text-carbon-700 dark:hover:text-carbon-300 md:font-[600]'>
+          className='items-center justify-start py-2 font-twk text-[15px] font-[500] uppercase text-carbon-600 hover:text-carbon-700 dark:hover:text-carbon-300 md:font-[600]'>
           {project.title}
         </Link>
 
@@ -44,7 +44,7 @@ export const ProjectLibrary = ({ projects }: ListProps) => {
           {project.tags.map((tag, ti) => (
             <TagChip
               key={ti}
-              className='hidden border border-slate-400 bg-blackA3 font-mono text-[9px] font-[600] uppercase leading-3 text-blackA9 dark:border-slate-600 dark:bg-whiteA2 dark:text-whiteA8 sm:inline'>
+              className='border-slate-400 dark:border-slate-600 hidden border bg-blackA3 font-mono text-[9px] font-[600] uppercase leading-3 text-blackA9 dark:bg-whiteA2 dark:text-whiteA8 sm:inline'>
               {tag}
             </TagChip>
           ))}

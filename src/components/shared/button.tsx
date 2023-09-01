@@ -41,7 +41,7 @@ export const DesignerButton = (props: ButtonProps) => {
 
 export const GitButton = ({ children, href, ...props }: ButtonProps) => (
   <>
-    <div>
+    <div className='py-4'>
       <a
         href={href}
         target='_blank'

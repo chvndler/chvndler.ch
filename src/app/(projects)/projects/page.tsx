@@ -23,7 +23,7 @@ export default function ProjectsIndex() {
             {copy.heading.partial}{' '}
             <span className='font-[600]'>{copy.heading.bold}</span>
           </h3>
-          <p className='max-w-md font-favorit text-[9px] font-medium text-carbon-400 dark:text-carbon-300'>
+          <p className='max-w-md font-twk text-[9px] font-medium text-carbon-400 dark:text-carbon-300'>
             <span className='font-[500]'>{copy.copyright.tag}</span>
           </p>
         </section>

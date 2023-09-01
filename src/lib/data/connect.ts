@@ -8,9 +8,9 @@ const one: ConnectTemplate = {
 };
 
 const two: ConnectTemplate = {
-  url: 'https://twitter.com/chvndlerch',
+  url: 'https://x.com/chvndlerch',
   target: '_blank',
-  type: 'twitter',
+  type: 'x',
   title: '@chvndlerch',
 };
 

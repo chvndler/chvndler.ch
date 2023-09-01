@@ -31,14 +31,14 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
           <Link
             href={prxjxct.slug}
             className={cn(
-              'decoration font-favorit text-[14px] font-[600] uppercase leading-5 text-carbon-500 underline-offset-2',
+              'decoration font-twk text-[14px] font-[600] uppercase leading-5 text-carbon-500 underline-offset-2',
               'transition-all duration-200 hover:text-carbon-700 hover:underline hover:decoration-azure dark:text-carbon-300',
               'dark:hover:text-carbon-300 md:leading-normal',
             )}>
             {prxjxct.title}
           </Link>
 
-          <p className='font-baikal text-[14px] font-[400] lowercase leading-5 text-carbon-400 dark:text-carbon-500'>
+          <p className='font-twk text-[15px] font-[400] lowercase leading-5 text-carbon-400 dark:text-carbon-500'>
             {prxjxct.excerpt}
           </p>
 
@@ -65,7 +65,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
       <div className='font-favorit'>
         <p
           className={cn(
-            'pb-4 font-inter text-[16px] font-[700]',
+            'pb-4 font-twk text-[18px] font-[700]',
             'leading-6 text-jade',
           )}>
           Projects
@@ -89,7 +89,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
                   <Link
                     href={page.url}
                     key={page.url}
-                    className='text-left font-favorit text-[13px] font-[600] uppercase leading-5 text-carbon-500 hover:text-carbon-700 dark:text-carbon-300 dark:hover:text-carbon-300'>
+                    className='text-left font-twk text-[16px] font-[500] leading-5 text-carbon-500 hover:text-carbon-700 dark:text-carbon-300 dark:hover:text-carbon-300'>
                     {page.type}
                   </Link>
                   <SmallArrowRight />
@@ -98,7 +98,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
                 <div className='w-full md:col-span-2'>
                   <p
                     key={page.content}
-                    className='font-baikal text-[14px] font-[400] lowercase leading-5 text-carbon-400 transition-all duration-200 dark:text-carbon-500'>
+                    className='font-twk text-[15px] font-[400] lowercase leading-5 text-carbon-400 transition-all duration-200 dark:text-carbon-500'>
                     {page.content}
                   </p>
                 </div>

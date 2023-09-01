@@ -97,7 +97,7 @@ export default async function PostPage({ params }: PostProps) {
         className={cn(
           'text-md prose prose-neutral mb-20 py-10 text-blackA11 dark:prose-invert',
           'prose-h2:font-sohne prose-h2:text-4xl prose-h2:font-[600] prose-h2:tracking-tight prose-h3:text-2xl',
-          'prose-h3:font-[800] prose-h3:tracking-tight prose-p:font-sohne prose-p:text-[400] dark:text-whiteA9',
+          'prose-h3:font-[800] prose-h3:tracking-tight prose-p:font-twk prose-p:text-[400] dark:text-whiteA9',
         )}>
         <RouterPrev />
 

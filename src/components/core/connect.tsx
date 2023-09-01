@@ -6,7 +6,7 @@ export const Connect = () => (
   <div>
     <p
       className={cn(
-        'pb-4 font-inter text-[16px] font-[700]',
+        'pb-4 font-twk text-[18px] font-[700]',
         'leading-6 text-jade md:mr-4',
       )}>
       Connect
@@ -19,7 +19,7 @@ export const Connect = () => (
             key={template.title}
             className='grid grid-cols-1 items-start gap-y-0 md:grid-cols-3'>
             <div className='mx-auto flex w-full flex-row items-center justify-start gap-x-1 leading-5'>
-              <p className='font-favorit text-[15px] font-[500] lowercase text-carbon-500 dark:text-carbon-300'>
+              <p className='font-twk text-[15px] font-[500] lowercase text-carbon-500 dark:text-carbon-300'>
                 {template.type}
               </p>
             </div>
