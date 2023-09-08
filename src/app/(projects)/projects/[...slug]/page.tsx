@@ -97,7 +97,7 @@ export default async function PostPage({ params }: PostProps) {
         className={cn(
           'text-md prose prose-neutral mb-20 py-10 text-blackA11 dark:prose-invert',
           'prose-h2:font-sohne prose-h2:text-4xl prose-h2:font-[600] prose-h2:tracking-tight prose-h3:text-2xl',
-          'prose-h3:font-[800] prose-h3:tracking-tight prose-p:font-twk prose-p:text-[400] dark:text-whiteA9',
+          'prose-h3:font-inter prose-h3:font-semibold prose-h3:tracking-tight prose-p:font-twk prose-p:text-[400] dark:text-whiteA9',
         )}>
         <RouterPrev />
 
@@ -107,9 +107,9 @@ export default async function PostPage({ params }: PostProps) {
         </div>
 
         <section>
-          <h2 className='prose-h2 font-favorit leading-4 tracking-tight text-blackA11 dark:text-whiteA11'>
+          <h3 className='prose-h3 font-favorit leading-4 tracking-tight text-blackA11 dark:text-whiteA11'>
             {post.title}
-          </h2>
+          </h3>
           <p className='text-md max-w-lg font-favorit leading-6 text-carbon-800 dark:text-whiteA8'>
             {post.description}
           </p>
