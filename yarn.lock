@@ -1426,10 +1426,10 @@ __metadata:
   linkType: hard
 
 "@mux/mux-player-react@npm:^1.14.0":
-  version: 1.14.1
-  resolution: "@mux/mux-player-react@npm:1.14.1"
+  version: 1.14.2
+  resolution: "@mux/mux-player-react@npm:1.14.2"
   dependencies:
-    "@mux/mux-player": 1.14.1
+    "@mux/mux-player": 1.14.2
     "@mux/playback-core": 0.20.1
     prop-types: ^15.7.2
   peerDependencies:
@@ -1441,30 +1441,30 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: a76bec88f6f0a410c4f37d6da2af4e067c971481dccc14a0c981d72571620f335d7648a78da62462cc3cb1ad5d1cba8201c43c020196348e7b8527be9fa0b2d0
+  checksum: d8b82b6a7ea5a8767fba60ff1bde2edec4353b1882d5e7557d981a9780dd8f79f975bf58a7621427717d80c351191202458ed780e99fcb6894c92aa4727a7924
   languageName: node
   linkType: hard
 
-"@mux/mux-player@npm:1.14.1":
-  version: 1.14.1
-  resolution: "@mux/mux-player@npm:1.14.1"
+"@mux/mux-player@npm:1.14.2":
+  version: 1.14.2
+  resolution: "@mux/mux-player@npm:1.14.2"
   dependencies:
-    "@mux/mux-video": 0.16.3
+    "@mux/mux-video": 0.16.4
     "@mux/playback-core": 0.20.1
-    media-chrome: ^1.4.1
-  checksum: dc6535c2546090516efec76da23484e1b4b7543c1dfe36c9ca8b9126e7ab703087955b7931e71054d5e0064d1d6829bc0e996c2fd78e86d3b9181b398f702226
+    media-chrome: ^1.4.2
+  checksum: 5620cfe51dfc9f5998f4b6159cee129c6c7ecfee526f3437951b48ace0db96a8763be5c5cea935f4eeeef6f05f37a2477727d26e76bad03b5e949453da7c3d3b
   languageName: node
   linkType: hard
 
-"@mux/mux-video@npm:0.16.3":
-  version: 0.16.3
-  resolution: "@mux/mux-video@npm:0.16.3"
+"@mux/mux-video@npm:0.16.4":
+  version: 0.16.4
+  resolution: "@mux/mux-video@npm:0.16.4"
   dependencies:
     "@mux/playback-core": 0.20.1
     castable-video: 0.5.2
     custom-media-element: 0.2.0
     media-tracks: ">=0.2.3"
-  checksum: 5fc434c258118c0d2a7e0d6371d3d3b5174bc9210806d7caa0c3436d665450bb03fe813d49e3da283ef6335fcd9d48d6c494f8f11b1fac8dbd3f616f3c8893a2
+  checksum: 11982d877d24e5a5397900b03e0015ee66375198b0592b2c1a91c2e3407c46016dfc9ef39effc7d3f9701d3a0f2a827b9b72b142722324a7ef53ceb94d514cb5
   languageName: node
   linkType: hard
 
@@ -7276,10 +7276,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"media-chrome@npm:^1.4.1":
-  version: 1.4.1
-  resolution: "media-chrome@npm:1.4.1"
-  checksum: 3f5f0b83cbd276c476240d4ae5c51f8f6d2599b281c76d01808b769a9811aa1f16ca3c5bd17e35d18300cfd3099527b5ea1d07f671df7bc8f6128975bb03e277
+"media-chrome@npm:^1.4.2":
+  version: 1.4.2
+  resolution: "media-chrome@npm:1.4.2"
+  checksum: cdfa7ce3efe91024f5f13023b8e138b7dedb6fb03e9b87bab4c40ccbf916f220ca78efd1bf618e5509ea109a5b8b3d65a5bb7897f813f93194565578a0fb9da8
   languageName: node
   linkType: hard
 
