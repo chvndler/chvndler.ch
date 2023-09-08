@@ -108,7 +108,17 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
         </div>
 
         {/* <!-- RENDERED PROJECT LIST --> */}
-        <div className='grid gap-6 pt-8'>{list}</div>
+        <div className='grid gap-6 pt-8'>
+          <p
+            className={cn(
+              'pb-4 font-twk text-[18px] font-[700]',
+              'leading-6 text-jade',
+            )}>
+            Articles
+          </p>
+
+          {list}
+        </div>
         {/* <!-- END RENDERED PROJECT LIST --> */}
       </div>
 
