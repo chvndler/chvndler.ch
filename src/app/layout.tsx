@@ -1,4 +1,4 @@
-import './index.scss';
+import '@/scss/index.scss';
 
 import { cn } from '@/lib/utils';
 import { siteURL } from '@/lib/const';
