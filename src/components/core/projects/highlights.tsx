@@ -62,10 +62,10 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
 
   return (
     <>
-      <div className='font-favorit'>
+      <div>
         <p
           className={cn(
-            'pb-4 font-twk text-[18px] font-[700]',
+            'pb-4 font-twk text-[17px] font-[500]',
             'leading-6 text-jade',
           )}>
           Projects
@@ -78,14 +78,6 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
                 key={i}
                 className='grid grid-cols-1 items-start gap-y-0 md:grid-cols-3'>
                 <div className='mx-auto flex w-full flex-row items-center justify-start gap-x-1 leading-5'>
-                  {/**
-                   *
-                   * ex.
-                   *
-                   * "Interactions"
-                   * "Motion"
-                   * "Internet Projects"
-                   */}
                   <Link
                     href={page.url}
                     key={page.url}
@@ -111,7 +103,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
         <div className='grid gap-6 pt-8'>
           <p
             className={cn(
-              'pb-4 font-twk text-[18px] font-[700]',
+              'pb-4 font-twk text-[17px] font-[500]',
               'leading-6 text-jade',
             )}>
             Articles
