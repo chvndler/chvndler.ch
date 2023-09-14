@@ -17,13 +17,12 @@ export const Introduction = () => (
           <NumberEmail />
           <p
             className={cn(
-              'max-w-[560px] font-twk text-[17px] font-[400] lowercase leading-normal text-carbon-400',
-              'dark:text-carbon-400 md:text-[17px] md:leading-normal',
+              'max-w-[560px] font-twk text-[16px] font-[400] lowercase leading-normal text-carbon-400',
+              'dark:text-carbon-400 md:text-[16px] md:leading-normal',
             )}>
-            Creating cool and taking notes, enjoying the internet and
-            open-source. Interested in design systems, component architectures,
-            TypeScript, and React. The focus in the moment is silencing the
-            noise surrounding design, with{' '}
+            creating cool and taking notes, enjoying the internet and
+            open-source. passionate about systems, component architectures,
+            TypeScript, and React. exploring ideas and practicing design with{' '}
             <Link
               href={altrdsgn}
               target='_blank'
