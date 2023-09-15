@@ -64,7 +64,7 @@ function FormattedDateString({ postDate }: { postDate: Projects }) {
   const publishedDate = formatDateTime(postDate.date);
 
   return (
-    <span className='not-prose mr-2 text-left font-mono text-[11px] font-semibold text-blackA11 dark:text-whiteA10'>
+    <span className='not-prose mr-2 text-left font-mono text-[11px] font-semibold uppercase text-blackA11 dark:text-whiteA10'>
       <time>{publishedDate.asString}</time>
     </span>
   );
@@ -101,11 +101,6 @@ export default async function PostPage({ params }: PostProps) {
         )}>
         <RouterPrev />
 
-        <div className='mt-4 flex flex-row items-center gap-1 font-mono uppercase'>
-          <FormattedDateString postDate={post} />
-          <ProjectTags pro={post} />
-        </div>
-
         <section>
           <h3 className='prose-h3 font-favorit leading-4 tracking-tight text-blackA11 dark:text-whiteA11'>
             {post.title}
@@ -117,6 +112,11 @@ export default async function PostPage({ params }: PostProps) {
         </section>
 
         <MDX code={post.body.code} />
+
+        <div className='mt-4 flex flex-row items-center gap-1 font-mono uppercase'>
+          <FormattedDateString postDate={post} />
+          <ProjectTags pro={post} />
+        </div>
       </article>
     </AppController>
   );
