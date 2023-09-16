@@ -95,17 +95,20 @@ export default async function PostPage({ params }: PostProps) {
       <article
         key={post._id}
         className={cn(
-          'text-md prose prose-neutral mb-20 py-10 text-blackA11 dark:prose-invert',
-          'prose-h2:font-sohne prose-h2:text-4xl prose-h2:font-[600] prose-h2:tracking-tight prose-h3:text-2xl',
-          'prose-h3:font-inter prose-h3:font-semibold prose-h3:tracking-tight prose-p:font-twk prose-p:text-[400] dark:text-whiteA9',
+          'md:w-[95%]',
+          'text-md prose prose-neutral mb-20 py-10 leading-5 text-blackA11 dark:prose-invert dark:text-whiteA9',
+          'prose-h2:font-inter prose-h2:text-3xl prose-h2:font-[700] prose-h2:tracking-tight',
+          'prose-h3:font-inter prose-h3:text-2xl prose-h3:font-bold prose-h3:tracking-tight prose-h3:text-carbon-900 prose-h3:dark:text-carbon-50',
+          'prose-h4:font-inter prose-h4:text-[20px] prose-h4:font-bold prose-h4:tracking-tight prose-h4:text-carbon-900 prose-h4:dark:text-carbon-50',
+          'prose-p:font-twk prose-p:font-[500] prose-p:leading-6',
         )}>
         <RouterPrev />
 
         <section>
-          <h3 className='prose-h3 font-favorit leading-4 tracking-tight text-blackA11 dark:text-whiteA11'>
+          <h2 className='prose-h2 font-bold leading-4 tracking-tight'>
             {post.title}
-          </h3>
-          <p className='text-md max-w-lg font-favorit leading-6 text-carbon-800 dark:text-whiteA8'>
+          </h2>
+          <p className='text-md max-w-lg pb-6 text-carbon-600 dark:text-whiteA8'>
             {post.description}
           </p>
           {post.git && <GitButton href={post.git}>View on GitHub</GitButton>}
