@@ -66,7 +66,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
         <p
           className={cn(
             'pb-4 font-twk text-[17px] font-[500]',
-            'leading-6 text-jade',
+            'leading-6 text-carbon-800 dark:text-carbon-50',
           )}>
           Projects
         </p>
@@ -104,7 +104,7 @@ export const ProjectHighlights = ({ projects }: ListProps) => {
           <p
             className={cn(
               'pb-4 font-twk text-[17px] font-[500]',
-              'leading-6 text-jade',
+              'leading-6 text-carbon-800 dark:text-carbon-50',
             )}>
             Articles
           </p>

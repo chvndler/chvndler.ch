@@ -13,7 +13,7 @@ import { allProjects } from '@/contentlayer/generated';
  */
 
 import {
-  Connect,
+  // Connect,
   Introduction,
   ProjectHighlights,
   ColumnSection,
@@ -25,7 +25,6 @@ export default function Index() {
       <AppController>
         <ColumnSection>
           <Introduction />
-          <Connect />
           <ProjectHighlights projects={...allProjects.slice(0, 5)} />
         </ColumnSection>
       </AppController>
