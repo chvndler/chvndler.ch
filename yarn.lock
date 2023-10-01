@@ -2373,43 +2373,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-menu@npm:2.0.5":
-  version: 2.0.5
-  resolution: "@radix-ui/react-menu@npm:2.0.5"
-  dependencies:
-    "@babel/runtime": ^7.13.10
-    "@radix-ui/primitive": 1.0.1
-    "@radix-ui/react-collection": 1.0.3
-    "@radix-ui/react-compose-refs": 1.0.1
-    "@radix-ui/react-context": 1.0.1
-    "@radix-ui/react-direction": 1.0.1
-    "@radix-ui/react-dismissable-layer": 1.0.4
-    "@radix-ui/react-focus-guards": 1.0.1
-    "@radix-ui/react-focus-scope": 1.0.3
-    "@radix-ui/react-id": 1.0.1
-    "@radix-ui/react-popper": 1.1.2
-    "@radix-ui/react-portal": 1.0.3
-    "@radix-ui/react-presence": 1.0.1
-    "@radix-ui/react-primitive": 1.0.3
-    "@radix-ui/react-roving-focus": 1.0.4
-    "@radix-ui/react-slot": 1.0.2
-    "@radix-ui/react-use-callback-ref": 1.0.1
-    aria-hidden: ^1.1.1
-    react-remove-scroll: 2.5.5
-  peerDependencies:
-    "@types/react": "*"
-    "@types/react-dom": "*"
-    react: ^16.8 || ^17.0 || ^18.0
-    react-dom: ^16.8 || ^17.0 || ^18.0
-  peerDependenciesMeta:
-    "@types/react":
-      optional: true
-    "@types/react-dom":
-      optional: true
-  checksum: 938623497ffa4dc5290e572dc80bd0b36af910adfe15632290b6e081543e9a7158db954ccced0c9ab0f68bac512dfb772c057a55ece0e1d1e20633cd21057afe
-  languageName: node
-  linkType: hard
-
 "@radix-ui/react-menu@npm:2.0.6":
   version: 2.0.6
   resolution: "@radix-ui/react-menu@npm:2.0.6"
@@ -2448,8 +2411,8 @@ __metadata:
   linkType: hard
 
 "@radix-ui/react-menubar@npm:^1.0.3":
-  version: 1.0.3
-  resolution: "@radix-ui/react-menubar@npm:1.0.3"
+  version: 1.0.4
+  resolution: "@radix-ui/react-menubar@npm:1.0.4"
   dependencies:
     "@babel/runtime": ^7.13.10
     "@radix-ui/primitive": 1.0.1
@@ -2458,7 +2421,7 @@ __metadata:
     "@radix-ui/react-context": 1.0.1
     "@radix-ui/react-direction": 1.0.1
     "@radix-ui/react-id": 1.0.1
-    "@radix-ui/react-menu": 2.0.5
+    "@radix-ui/react-menu": 2.0.6
     "@radix-ui/react-primitive": 1.0.3
     "@radix-ui/react-roving-focus": 1.0.4
     "@radix-ui/react-use-controllable-state": 1.0.1
@@ -2472,7 +2435,7 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 48873bd0ea7d2615137f7d95658eb5a78bd735050d8e460e5b670e756a3130f35ce73a3ca651c6916969ae2f54f6ffffdc7f75c2729a2b2f64e460a12b99387a
+  checksum: 6967796045b70ecca99c6bac3e72eb7308a88312a7311056f225145b3ef66511e4ceb63c5384a20d67b2d879ac18e085e15bb3e6a353d70fc2690792b8bd7503
   languageName: node
   linkType: hard
 
