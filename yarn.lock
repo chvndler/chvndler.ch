@@ -2998,17 +2998,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@t3-oss/env-core@npm:0.6.1":
-  version: 0.6.1
-  resolution: "@t3-oss/env-core@npm:0.6.1"
-  peerDependencies:
-    typescript: ">=4.7.2"
-    zod: ^3.0.0
-  checksum: 6a1dd9d2f88643f6315a3add7eb6053a436a953a3c2b59b9743a2d8f28dbafcdaf4f6bccf0e7dfe424189834f75fbb53b9ac3891076a19b289468e4b406a340b
-  languageName: node
-  linkType: hard
-
-"@t3-oss/env-core@npm:^0.7.0":
+"@t3-oss/env-core@npm:0.7.0, @t3-oss/env-core@npm:^0.7.0":
   version: 0.7.0
   resolution: "@t3-oss/env-core@npm:0.7.0"
   peerDependencies:
@@ -3021,15 +3011,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@t3-oss/env-nextjs@npm:^0.6.1":
-  version: 0.6.1
-  resolution: "@t3-oss/env-nextjs@npm:0.6.1"
+"@t3-oss/env-nextjs@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@t3-oss/env-nextjs@npm:0.7.0"
   dependencies:
-    "@t3-oss/env-core": 0.6.1
+    "@t3-oss/env-core": 0.7.0
   peerDependencies:
     typescript: ">=4.7.2"
     zod: ^3.0.0
-  checksum: c103a501b186c2a1633ead602fbd4e2d3096f736dceecba2f88a8c7b016c6f982a42bb8eb948e8069df93bf8d51a8a973e49a0a497d3da9282933683ced665e5
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 84faa85f4620d97500918667aa3d8d8458d683933daf3ac56f705eeaaf0b8bb468f609f746722129dbddc54bf98f89b29e28d5cbbd4a63b787facc0aba63ca54
   languageName: node
   linkType: hard
 
@@ -4101,7 +4094,7 @@ __metadata:
     "@radix-ui/react-tooltip": ^1.0.6
     "@swc/core": ^1.3.66
     "@t3-oss/env-core": ^0.7.0
-    "@t3-oss/env-nextjs": ^0.6.1
+    "@t3-oss/env-nextjs": ^0.7.0
     "@tailwindcss/typography": ^0.5.9
     "@types/mdx": ^2.0.8
     "@types/node": ^20.8.4
