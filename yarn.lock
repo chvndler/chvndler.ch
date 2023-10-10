@@ -1425,11 +1425,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mux/mux-player-react@npm:^1.14.0":
-  version: 1.15.0
-  resolution: "@mux/mux-player-react@npm:1.15.0"
+"@mux/mux-player-react@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "@mux/mux-player-react@npm:2.0.1"
   dependencies:
-    "@mux/mux-player": 1.15.0
+    "@mux/mux-player": 2.0.1
     "@mux/playback-core": 0.20.2
     prop-types: ^15.7.2
   peerDependencies:
@@ -1441,18 +1441,18 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: caacbb95f2c876ae6be905d119ad289aeb8f9a1bfef0b650ed2562f5337181dd0419670bc6aa15210e809ee01a0b2096851123d9264d226ae228575376cf3f5c
+  checksum: 014abcd3a05b2669b0928a629798bdc3c1044962010af1a96bdec69091d5d6eb7a2d8bbcda0c679d73b9648a364cd4b1ef9adeedb3dbf84014aa292b76125b83
   languageName: node
   linkType: hard
 
-"@mux/mux-player@npm:1.15.0":
-  version: 1.15.0
-  resolution: "@mux/mux-player@npm:1.15.0"
+"@mux/mux-player@npm:2.0.1":
+  version: 2.0.1
+  resolution: "@mux/mux-player@npm:2.0.1"
   dependencies:
     "@mux/mux-video": 0.16.5
     "@mux/playback-core": 0.20.2
     media-chrome: ^1.4.3
-  checksum: 3131a96d4d3add940b45793bf4996383d5508d869b4c7ae8859e03a6713609bc33baa02befa86b1aff773ca6c67f703c30c13433ec30c1f6c2e60474d65c70bc
+  checksum: 8fb57a61289e644fb0ea26de486e28882b37cdbaf51d5e95efb3be03b2fdc47cf3a9e46d595f148a0cb5c87675d29a05e4e04b566c30ee3c389e0c3412f22e00
   languageName: node
   linkType: hard
 
@@ -4089,7 +4089,7 @@ __metadata:
   resolution: "chvndler.ch@workspace:."
   dependencies:
     "@ianvs/prettier-plugin-sort-imports": ^4.1.0
-    "@mux/mux-player-react": ^1.14.0
+    "@mux/mux-player-react": ^2.0.0
     "@next/mdx": ^13.4.3
     "@radix-ui/react-collapsible": ^1.0.3
     "@radix-ui/react-dialog": ^1.0.4
