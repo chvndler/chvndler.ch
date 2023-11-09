@@ -2998,20 +2998,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@t3-oss/env-core@npm:0.7.0":
-  version: 0.7.0
-  resolution: "@t3-oss/env-core@npm:0.7.0"
-  peerDependencies:
-    typescript: ">=4.7.2"
-    zod: ^3.0.0
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: e8925dfc33607d8648f0f7400846a9aebb4f9da2806ea4bf8914d4556c1074c8e217b72c6dc10e757e500331812a5f47f275fa5ce5a352400724a39bd49847ce
-  languageName: node
-  linkType: hard
-
-"@t3-oss/env-core@npm:^0.7.0":
+"@t3-oss/env-core@npm:0.7.1, @t3-oss/env-core@npm:^0.7.0":
   version: 0.7.1
   resolution: "@t3-oss/env-core@npm:0.7.1"
   peerDependencies:
@@ -3025,17 +3012,17 @@ __metadata:
   linkType: hard
 
 "@t3-oss/env-nextjs@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "@t3-oss/env-nextjs@npm:0.7.0"
+  version: 0.7.1
+  resolution: "@t3-oss/env-nextjs@npm:0.7.1"
   dependencies:
-    "@t3-oss/env-core": 0.7.0
+    "@t3-oss/env-core": 0.7.1
   peerDependencies:
     typescript: ">=4.7.2"
     zod: ^3.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 84faa85f4620d97500918667aa3d8d8458d683933daf3ac56f705eeaaf0b8bb468f609f746722129dbddc54bf98f89b29e28d5cbbd4a63b787facc0aba63ca54
+  checksum: a1183bca68de4c3670a6e2e61839a9e54ab6472fbe49d4fc34665e43f2f05b379ae9b1880a122eb1bc42f7d6bd1160a543bbd3727543022d8f1fdc5b26290984
   languageName: node
   linkType: hard
 
