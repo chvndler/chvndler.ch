@@ -2998,7 +2998,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@t3-oss/env-core@npm:0.7.0, @t3-oss/env-core@npm:^0.7.0":
+"@t3-oss/env-core@npm:0.7.0":
   version: 0.7.0
   resolution: "@t3-oss/env-core@npm:0.7.0"
   peerDependencies:
@@ -3008,6 +3008,19 @@ __metadata:
     typescript:
       optional: true
   checksum: e8925dfc33607d8648f0f7400846a9aebb4f9da2806ea4bf8914d4556c1074c8e217b72c6dc10e757e500331812a5f47f275fa5ce5a352400724a39bd49847ce
+  languageName: node
+  linkType: hard
+
+"@t3-oss/env-core@npm:^0.7.0":
+  version: 0.7.1
+  resolution: "@t3-oss/env-core@npm:0.7.1"
+  peerDependencies:
+    typescript: ">=4.7.2"
+    zod: ^3.0.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 1a8447f5009931eb24a2e653723acd817585539d882c6c97b1df590df605045dee0e9abb3e6af083ec1492a6c143469947c4e4fef8d6c4a7e64cdf61ee8748d0
   languageName: node
   linkType: hard
 
