@@ -3188,10 +3188,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/nprogress@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "@types/nprogress@npm:0.2.0"
-  checksum: 561384775008ae58111f038f8f9468b3de8987cd753feef9bf6d07af0e1343390d492a078bb08a7b53ac7370208e31e06ac069cb852c435d49f5fe218e9769c4
+"@types/nprogress@npm:^0.2.1":
+  version: 0.2.2
+  resolution: "@types/nprogress@npm:0.2.2"
+  checksum: 441eff4b29c3596b85c125950da3fd3408167a0baf9415905c7a74a294a1dff95dcc03c990e852292055c882d15e1d2687668ccbf77a74cdaec38f57387ec4d1
   languageName: node
   linkType: hard
 
@@ -8492,17 +8492,17 @@ __metadata:
   linkType: hard
 
 "nextjs-toploader@npm:^1.4.2":
-  version: 1.4.2
-  resolution: "nextjs-toploader@npm:1.4.2"
+  version: 1.6.4
+  resolution: "nextjs-toploader@npm:1.6.4"
   dependencies:
-    "@types/nprogress": ^0.2.0
+    "@types/nprogress": ^0.2.1
     nprogress: ^0.2.0
     prop-types: ^15.8.1
   peerDependencies:
     next: ">= 6.0.0"
     react: ">= 16.0.0"
     react-dom: ">= 16.0.0"
-  checksum: dab1d3327791fe772d63ab1cad56c0bc6071e72339cd85cfa03a668485490604acd70ddd9744c084323f95abcc495e6ee5e135a19fd5f45ae09b744202f4ba7d
+  checksum: 43801c844494f508b31a02e202dc3f063e9ded5968edff0ed298118b2c5ad3f2bc200712ca3c693fe27fe5acb5363646c10e937710e3a27ba2fe284fd31a0665
   languageName: node
   linkType: hard
 
