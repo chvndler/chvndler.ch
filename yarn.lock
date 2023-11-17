@@ -9493,8 +9493,8 @@ __metadata:
   linkType: hard
 
 "rehype-autolink-headings@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "rehype-autolink-headings@npm:7.0.0"
+  version: 7.1.0
+  resolution: "rehype-autolink-headings@npm:7.1.0"
   dependencies:
     "@types/hast": ^3.0.0
     "@ungap/structured-clone": ^1.0.0
@@ -9502,7 +9502,7 @@ __metadata:
     hast-util-is-element: ^3.0.0
     unified: ^11.0.0
     unist-util-visit: ^5.0.0
-  checksum: b7cbbfa06612632cba99eb6ed58e0d539a24bac75d5efb697fffe941d187650ad17126d9168913e0a9809e90640430b5ba3a2ed4ba53f2414c0f3654883c7182
+  checksum: 546fb14ffac628a4bfa8cf7549a2b94d921e392393441d602154ca3131549737bf21af6fddcd15abb4f50272ca9a90dad8bd66e7122e58bea85e81e79dce793a
   languageName: node
   linkType: hard
 
