@@ -1504,11 +1504,11 @@ __metadata:
   linkType: hard
 
 "@mux/mux-player-react@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "@mux/mux-player-react@npm:2.0.1"
+  version: 2.2.0
+  resolution: "@mux/mux-player-react@npm:2.2.0"
   dependencies:
-    "@mux/mux-player": 2.0.1
-    "@mux/playback-core": 0.20.2
+    "@mux/mux-player": 2.2.0
+    "@mux/playback-core": 0.21.0
     prop-types: ^15.7.2
   peerDependencies:
     "@types/react": ^17.0.0 || ^18
@@ -1519,41 +1519,41 @@ __metadata:
       optional: true
     "@types/react-dom":
       optional: true
-  checksum: 014abcd3a05b2669b0928a629798bdc3c1044962010af1a96bdec69091d5d6eb7a2d8bbcda0c679d73b9648a364cd4b1ef9adeedb3dbf84014aa292b76125b83
+  checksum: 80bca73988853df3744bdcb5b5ef8421105b64c090eca05e95e45632ad14342a8a5515f86dfc1be5c08b733a89c9797f7315b684ec0beb3670e7117281576a46
   languageName: node
   linkType: hard
 
-"@mux/mux-player@npm:2.0.1":
-  version: 2.0.1
-  resolution: "@mux/mux-player@npm:2.0.1"
+"@mux/mux-player@npm:2.2.0":
+  version: 2.2.0
+  resolution: "@mux/mux-player@npm:2.2.0"
   dependencies:
-    "@mux/mux-video": 0.16.5
-    "@mux/playback-core": 0.20.2
-    media-chrome: ^1.4.3
-  checksum: 8fb57a61289e644fb0ea26de486e28882b37cdbaf51d5e95efb3be03b2fdc47cf3a9e46d595f148a0cb5c87675d29a05e4e04b566c30ee3c389e0c3412f22e00
+    "@mux/mux-video": 0.17.0
+    "@mux/playback-core": 0.21.0
+    media-chrome: ^1.5.0
+  checksum: 94b997db199dd163536970bde13bd4d152f45d565b51f9150519ccb581f38c495ab9f500cf4b220491087dbd1e9d2edc7dad594d87bbbfc947fd9136886d74b8
   languageName: node
   linkType: hard
 
-"@mux/mux-video@npm:0.16.5":
-  version: 0.16.5
-  resolution: "@mux/mux-video@npm:0.16.5"
+"@mux/mux-video@npm:0.17.0":
+  version: 0.17.0
+  resolution: "@mux/mux-video@npm:0.17.0"
   dependencies:
-    "@mux/playback-core": 0.20.2
+    "@mux/playback-core": 0.21.0
     castable-video: 0.5.2
     custom-media-element: 0.2.0
     media-tracks: ">=0.2.3"
-  checksum: e2930cd97f0810f39fc3f69b1cf622b8b4d5dcdd5a2c04ee0f6d64cf52c3cabd44f605d39049944f6591fe0b4bbdf62369874251b8f754f27986d35503dcffdd
+  checksum: 1ca1b9340d5a20fd3517e5d9b6891ae6dfeeb079bb1251f1bcb16d90c5957c296fe9df8ef21d3dc22659a78884a557d729a5430b72e6c2ddd7936a5e1e18ee1a
   languageName: node
   linkType: hard
 
-"@mux/playback-core@npm:0.20.2":
-  version: 0.20.2
-  resolution: "@mux/playback-core@npm:0.20.2"
+"@mux/playback-core@npm:0.21.0":
+  version: 0.21.0
+  resolution: "@mux/playback-core@npm:0.21.0"
   dependencies:
     hls.js: ^1.4.10
     media-tracks: 0.2.3
     mux-embed: ^4.27.0
-  checksum: efcb6b61d68b9dcfdaf24efc1d2498c3860843885db3e4eda1c9da9bba8b6938ef8fae10cba45982ab661427b152b639557b54ea07814bcf3e3b15625807f40c
+  checksum: af085ebf9c1184c90226c7557d668a7ce4d568f287a6d42257177e3860fb513f8e9f4ca059ee3dfce97604ed2335be8ae4a5ca2982f6f812fd9a5ee0c9daa443
   languageName: node
   linkType: hard
 
@@ -7525,10 +7525,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"media-chrome@npm:^1.4.3":
-  version: 1.4.3
-  resolution: "media-chrome@npm:1.4.3"
-  checksum: 62303c5b5e9bddf80efc70dd5fc1245ca33d936040402453db6d3f0bd7978a0fc2d3f2eb782c6f5970aceb3974ee21badeb7a9a172632cedb66e5a21ce00dcbe
+"media-chrome@npm:^1.5.0":
+  version: 1.5.3
+  resolution: "media-chrome@npm:1.5.3"
+  checksum: 6f1d586cfa50ed2f3994c2d720e20ef1f996591a58f24c5261272aa09758961dcc70cc2901d89b49ed7ed1828e9c10ee1aa347277f5c0599129d0714aeb1968c
   languageName: node
   linkType: hard
 
