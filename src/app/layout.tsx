@@ -9,7 +9,7 @@ import { twk } from '@/lib/fonts';
 import { CommandMenu } from '@/components/shared/cmdk';
 import { TopLoader } from '@/components/primitives';
 import { VerticalFade } from '@/components/shared/faders';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 
 export default function RootLayout({
   children,
@@ -44,17 +44,23 @@ export default function RootLayout({
   );
 }
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#FFFFFF' },
+    { media: '(prefers-color-scheme: dark)', color: '#171717' },
+  ],
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.chvndler.ch'),
   title: 'Chandler Chappell',
   description: 'Personal site.',
   manifest: '/manifest.webmanifest',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
   openGraph: {
     title: 'Chandler Chappell',
     description: 'Personal site.',
@@ -70,10 +76,6 @@ export const metadata: Metadata = {
     locale: 'en-US',
     type: 'website',
   },
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#FFFFFF' },
-    { media: '(prefers-color-scheme: dark)', color: '#171717' },
-  ],
   icons: {
     icon: '/favicon.ico',
     shortcut: '/shortcut-icon.png',

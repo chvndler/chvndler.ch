@@ -111,10 +111,10 @@ export const Projects = defineDocumentType(() => ({
  * define types
  *
  * [Articles]
- */
+ 
 export const Articles = defineDocumentType(() => ({
   name: 'Articles',
-  filePathPattern: `misc/**/*.mdx`,
+  filePathPattern: `misc/*.mdx`,
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
@@ -128,6 +128,7 @@ export const Articles = defineDocumentType(() => ({
   },
   computedFields,
 }));
+*/
 
 /**
  *
@@ -135,7 +136,7 @@ export const Articles = defineDocumentType(() => ({
  */
 export default makeSource({
   contentDirPath: './collection',
-  documentTypes: [Projects, Articles],
+  documentTypes: [Projects],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
