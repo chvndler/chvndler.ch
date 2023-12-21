@@ -3,12 +3,14 @@ import Image from 'next/image';
 
 const prefix = 'https://cdn.chvndler.ch/assets/';
 
+import Me from '@public/static/img/chan.memoji.gif';
+
 const Memoji = () => {
   return (
     <>
-      <div className='memoji mx-auto w-auto items-center justify-center sm:flex md:hidden'>
+      <div className='memoji mx-auto flex w-auto items-center justify-center'>
         <Image
-          src={`${prefix}other/chan.memoji.gif`}
+          src={Me}
           alt='memoji'
           width={200}
           height={200}
