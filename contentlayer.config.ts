@@ -1,3 +1,4 @@
+import { Element } from 'hast';
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
 import type { ComputedFields } from 'contentlayer/source-files';
 
@@ -134,6 +135,30 @@ export const Articles = defineDocumentType(() => ({
  *
  * make source
  */
+
+/** @type {import('rehype-pretty-code').Options} */
+
+const options = {
+  theme: 'one-dark-pro',
+  // keepBackground: false,
+
+  onVisitLine(node: Element) {
+    console.log('Visited line');
+  },
+  onVisitHighlightedLine(node: Element) {
+    console.log('Visited highlighted line');
+  },
+  onVisitHighlightedChars(node: Element) {
+    console.log('Visited highlighted chars');
+  },
+  onVisitTitle(node: Element) {
+    console.log('Visited title');
+  },
+  onVisitCaption(node: Element) {
+    console.log('Visited caption');
+  },
+};
+
 export default makeSource({
   contentDirPath: './collection',
   documentTypes: [Projects],
@@ -141,33 +166,7 @@ export default makeSource({
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
       rehypeCodeTitles,
-      [
-        rehypePrettyCode,
-        {
-          theme: 'github-dark',
-          // theme: 'one-dark-pro',
-          onVisitLine(node: { children: string | any[] }) {
-            /**
-             *
-             * Prevent lines from collapsing in `display: grid`
-             * mode, and allow empty lines to be copied properly.
-             */
-            if (node.children.length === 0) {
-              node.children = [{ type: 'text', value: '' }];
-            }
-          },
-          onVisitHighlightedLine(node: {
-            properties: { className: string[] };
-          }) {
-            node.properties.className.push('line--highlighted');
-          },
-          onVisitHighlightedWord(node: {
-            properties: { className: string[] };
-          }) {
-            node.properties.className = ['word--highlighted'];
-          },
-        },
-      ],
+      [rehypePrettyCode, options],
       [
         rehypeAutolinkHeadings,
         {

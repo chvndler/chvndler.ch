@@ -1,0 +1,31 @@
+---
+title: AE Expressions
+description: A collection of After Effects expressions.
+excerpt: A collection of After Effects expressions.
+date: '2023-12-21'
+image: /static/img/projects/arie.jpg
+key: 4
+tags:
+  - app
+  - scripts
+---
+
+<Space />
+<Space />
+
+A small component for displaying different data based on user scroll and pointer position.
+
+<Space />
+
+#### Get the current time.
+
+```js showLineNumbers
+d = new Date();
+
+currentTime = d.toLocaleTimeString('en-US', {
+  hour: 'numeric',
+  minute: '2-digit',
+});
+
+currentTime;
+```

@@ -97,20 +97,18 @@ export default async function PostPage({ params }: PostProps) {
         className={cn(
           'md:w-[95%]',
           'text-md prose prose-neutral mb-20 py-10 leading-5 text-blackA11 dark:prose-invert dark:text-whiteA9',
-          'prose-h2:font-inter prose-h2:text-3xl prose-h2:font-[700] prose-h2:tracking-tight',
+          'prose-h2:font-inter prose-h2:text-3xl prose-h2:font-semibold prose-h2:tracking-tight',
           'prose-h3:font-inter prose-h3:text-2xl prose-h3:font-bold prose-h3:tracking-tight prose-h3:text-carbon-900 prose-h3:dark:text-carbon-50',
-          'prose-h4:font-inter prose-h4:text-[20px] prose-h4:font-bold prose-h4:tracking-tight prose-h4:text-carbon-900 prose-h4:dark:text-carbon-50',
+          'prose-h4:font-inter prose-h4:text-[20px] prose-h4:font-medium prose-h4:tracking-tight prose-h4:text-carbon-700 prose-h4:dark:text-whiteA8',
           'prose-p:font-twk prose-p:font-[500] prose-p:leading-6',
         )}>
         <RouterPrev />
 
         <section>
-          <h2 className='prose-h2 font-bold leading-4 tracking-tight'>
+          <h2 className='prose-h2 font-inter leading-4 text-carbon-800 dark:text-carbon-200'>
             {post.title}
           </h2>
-          <p className='text-md max-w-lg pb-6 text-carbon-600 dark:text-whiteA8'>
-            {post.description}
-          </p>
+          <h4 className='text-md prose-h4 max-w-lg pb-6'>{post.description}</h4>
           {post.git && <GitButton href={post.git}>View on GitHub</GitButton>}
         </section>
 
