@@ -109,54 +109,41 @@ export const Projects = defineDocumentType(() => ({
 
 /**
  *
- * define types
- *
- * [Articles]
- 
-export const Articles = defineDocumentType(() => ({
-  name: 'Articles',
-  filePathPattern: `misc/*.mdx`,
-  contentType: 'mdx',
-  fields: {
-    title: { type: 'string', required: true },
-    description: { type: 'string' },
-    date: { type: 'date', required: true },
-    image: {
-      type: 'string',
-      required: false,
-      description: 'The main image for the post',
-    },
-  },
-  computedFields,
-}));
-*/
-
-/**
- *
  * make source
  */
 
-/** @type {import('rehype-pretty-code').Options} */
+interface LineElement {
+  children: any[];
+  properties?: { className: string[] };
+}
+
+interface CharsElement {
+  properties: { className: string[] };
+}
 
 const options = {
   theme: 'one-dark-pro',
   // keepBackground: false,
 
-  onVisitLine(node: Element) {
-    console.log('Visited line');
+  onVisitLine(node: LineElement) {
+    /**
+     * Prevent lines from collapsing in `display: grid`
+     * mode, and allow empty lines to be copied properly.
+     */
+    if (node.children.length === 0) {
+      node.children.push({ type: 'text', value: '' });
+    }
   },
-  onVisitHighlightedLine(node: Element) {
-    console.log('Visited highlighted line');
+  onVisitHighlightedLine(node: LineElement) {
+    if (!node.properties) node.properties = { className: [] };
+    node.properties.className.push('line--highlighted');
   },
-  onVisitHighlightedChars(node: Element) {
-    console.log('Visited highlighted chars');
+  onVisitHighlightedChars(node: CharsElement, id: string | undefined) {
+    // Implementation for highlighted characters
+    // This is just a placeholder; adjust according to actual functionality
+    node.properties.className.push('word--highlighted');
   },
-  onVisitTitle(node: Element) {
-    console.log('Visited title');
-  },
-  onVisitCaption(node: Element) {
-    console.log('Visited caption');
-  },
+  // Add other options as needed
 };
 
 export default makeSource({
@@ -166,7 +153,6 @@ export default makeSource({
     remarkPlugins: [remarkGfm],
     rehypePlugins: [
       rehypeCodeTitles,
-      [rehypePrettyCode, options],
       [
         rehypeAutolinkHeadings,
         {
@@ -175,6 +161,7 @@ export default makeSource({
           },
         },
       ],
+      [rehypePrettyCode, options],
     ],
   },
 });
