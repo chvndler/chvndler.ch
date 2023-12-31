@@ -161,7 +161,7 @@ export default makeSource({
           },
         },
       ],
-      [rehypePrettyCode, options],
+      [rehypePrettyCode, ...options],
     ],
   },
 });
