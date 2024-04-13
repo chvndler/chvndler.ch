@@ -3,7 +3,6 @@
   "private": true,
   "version": "1.4.0",
   "description": "personal site",
-  "packageManager": "yarn@3.7.0",
   "scripts": {
     "dev": "NODE_ENV=development next dev",
     "prod": "NODE_ENV=production next build && next start",
