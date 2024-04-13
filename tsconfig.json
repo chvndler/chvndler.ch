@@ -16,6 +16,8 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "contentlayer/generated": ["./.contentlayer/generated"],
+      // ..
       "@public/*": ["./public/*"],
       // ..
       "@/*": ["./src/*"],
@@ -23,8 +25,7 @@
       "@/components/*": ["./src/components/*"],
       "@/lib/*": ["./src/lib/*"],
       "@/pages/*": ["./src/pages/*"],
-      "@/contentlayer/generated": ["./.contentlayer/generated"],
-      "contentlayer/generated": ["./.contentlayer/generated"]
+      "@/contentlayer/generated": ["./.contentlayer/generated"]
     },
     "plugins": [
       {

@@ -10,16 +10,16 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 const computedFields: ComputedFields = {
   slug: {
     type: 'string',
-    resolve: (ject) => `/${ject._raw.flattenedPath}`,
+    resolve: (doc) => `/${doc._raw.flattenedPath}`,
   },
   slugAsParams: {
     type: 'string',
-    resolve: (ject) => ject._raw.flattenedPath.split('/').slice(1).join('/'),
+    resolve: (doc) => doc._raw.flattenedPath.split('/').slice(1).join('/'),
   },
   url: {
     type: 'string',
     description: 'The URL of the post, e.g. /projects/my-post',
-    resolve: (ject) => `/${ject._raw.flattenedPath}`,
+    resolve: (doc) => `/${doc._raw.flattenedPath}`,
   },
 };
 
@@ -81,6 +81,7 @@ export const Projects = defineDocumentType(() => ({
       type: 'string',
       required: false,
     },
+
     /**
      *
      * tags - a list of keywords that relate to the post.
@@ -109,8 +110,13 @@ export const Projects = defineDocumentType(() => ({
  * make source
  */
 
+interface TextNode {
+  type: 'text';
+  value: string;
+}
+
 interface LineElement {
-  children: any[];
+  children: TextNode[];
   properties?: { className: string[] };
 }
 
