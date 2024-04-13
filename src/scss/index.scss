@@ -74,9 +74,9 @@
 
 //  ─────────────────────────────────── @imports
 
-@import '../scss/fonts';
-@import '../scss/resets';
-@import '../scss/helpers';
+@import './fonts';
+@import './resets';
+@import './helpers';
 
 @layer components {
   .prose {
