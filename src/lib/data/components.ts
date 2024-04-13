@@ -55,6 +55,22 @@ export const allComponents: ComponentBase[] = [
     url: '/interact/position',
     component: AriePositionContext,
   },
+  {
+    slug: 'buttons',
+    title: 'Buttons',
+    excerpt:
+      'A variety of styled buttons, each designed to enhance user interactions within applications.',
+    url: '/interact/buttons',
+    component: TimeContext,
+  },
+  {
+    slug: 'navigation',
+    title: 'Navigation',
+    excerpt:
+      'Selected navigation components that I have built and collected over time.',
+    url: '/interact/navigation',
+    component: TimeContext,
+  },
 ];
 
 export type ComponentSlug = ComponentBase['slug'];

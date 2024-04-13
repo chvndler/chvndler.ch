@@ -1,13 +1,10 @@
-import { Element } from 'hast';
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
 import type { ComputedFields } from 'contentlayer/source-files';
 
 import remarkGfm from 'remark-gfm';
 import rehypeCodeTitles from 'rehype-code-titles';
-import rehypePrettyCode from 'rehype-pretty-code';
-import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
-// computed.fields
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
 const computedFields: ComputedFields = {
@@ -161,7 +158,6 @@ export default makeSource({
           },
         },
       ],
-      [rehypePrettyCode, ...options],
     ],
   },
 });

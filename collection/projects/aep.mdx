@@ -11,7 +11,6 @@ tags:
 ---
 
 <Space />
-<Space />
 
 A small component for displaying different data based on user scroll and pointer position.
 
@@ -28,4 +27,24 @@ currentTime = d.toLocaleTimeString('en-US', {
 });
 
 currentTime;
+```
+
+<Space />
+
+#### Render the current date, formatted as `mm/dd/yyyy`.
+
+```js showLineNumbers
+// Render the current date, formatted → DD/MM/YYYY
+d = new Date();
+currentDate = d.getDate() + '/' + (d.getMonth() + 1) + '/' + d.getFullYear();
+currentDate;
+
+// Render the current date, formatted → Thursday, December 21
+d = new Date();
+currentDate = d.toLocaleDateString('en-US', {
+  weekday: 'long',
+  month: 'long',
+  day: 'numeric',
+});
+currentDate;
 ```

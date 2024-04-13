@@ -32,10 +32,6 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    appDir: true,
-    mdxRs: true,
-  },
 };
 
 const ContentSecurityPolicy = `

@@ -1,7 +1,7 @@
 {
   "name": "chvndler.ch",
   "private": true,
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "personal site",
   "packageManager": "yarn@3.7.0",
   "scripts": {

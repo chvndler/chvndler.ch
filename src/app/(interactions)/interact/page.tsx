@@ -20,8 +20,8 @@ export default function InteractPage() {
           </p>
         </section>
 
-        <section className='py-10'>
-          <div className='grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-2'>
+        <section className='w-full py-10'>
+          <div className='grid grid-cols-1 gap-y-2 md:grid-cols-2 md:gap-1'>
             <ComponentList component={components} />
           </div>
         </section>
