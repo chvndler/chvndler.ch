@@ -6843,10 +6843,10 @@ tailwind-merge@^2.0.0:
   dependencies:
     "@babel/runtime" "^7.24.0"
 
-tailwindcss-radix@^2.8.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-radix/-/tailwindcss-radix-2.9.0.tgz#5c820e5ec88f9b80be0f8087eb5e719ed521368b"
-  integrity sha512-N49SnciSeRgLC+VK+Fu5VULNJIvJUvN7tUKF1kEHPXrS76WAlwrSVthCbJ9NUw0Cj/ptxs73pdVEdosomAN5Lg==
+tailwindcss-radix@^3.0.0:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/tailwindcss-radix/-/tailwindcss-radix-3.0.3.tgz#8d3ddb083a722f1da70f5648a3a18a53e987e5cc"
+  integrity sha512-uueKWJIY98tU4Fip2FTL2eXBqX428e5HBwbu+8rqqJ9H3NuhkcAGS66wNHZjeix56f6nNBhkhMLpQeIrmVxH/w==
 
 tailwindcss@^3.3.3:
   version "3.4.3"
