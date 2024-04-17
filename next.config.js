@@ -1,5 +1,4 @@
 const { withContentlayer } = require('next-contentlayer');
-const withMDX = require('@next/mdx');
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -7,7 +6,7 @@ const isDev = process.env.NODE_ENV === 'development';
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  env: { NODE_ENV: isDev ? 'development' : 'production' },
+
   pageExtensions: ['ts', 'tsx', 'mdx'],
 
   /**
@@ -84,4 +83,4 @@ const securityHeaders = [
   },
 ];
 
-module.exports = withContentlayer(withMDX(nextConfig));
+module.exports = withContentlayer(nextConfig);
