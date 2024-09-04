@@ -27,7 +27,7 @@
     "cmdk": "^1.0.0",
     "contentlayer": "^0.3.4",
     "framer-motion": "^11.0.0",
-    "jimp": "^0.22.8",
+    "jimp": "^1.0.0",
     "next": "14.1",
     "next-contentlayer": "^0.3.4",
     "next-themes": "^0.3.0",
